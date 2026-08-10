@@ -155,6 +155,7 @@
     <item type="id" name="bt_team_voice_talk_item_text" />
     <item type="id" name="bt_team_voice_talking" />
     <item type="id" name="btn_close" />
+    <item type="id" name="btn_build_show" />
     <item type="id" name="btn_connect" />
     <item type="id" name="btn_dest_know" />
     <item type="id" name="btn_dis_connect" />
@@ -162,6 +163,7 @@
     <item type="id" name="btn_register" />
     <item type="id" name="btn_saved" />
     <item type="id" name="btn_upload_share" />
+    <item type="id" name="building_card" />
     <item type="id" name="button" />
     <item type="id" name="buttonPanel" />
     <item type="id" name="bydTitleScrollView" />

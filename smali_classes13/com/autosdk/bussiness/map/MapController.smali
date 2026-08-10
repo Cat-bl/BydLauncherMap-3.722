@@ -4842,6 +4842,60 @@
     return-void
 .end method
 
+.method public setBuildingNormal(IZ)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/autosdk/bussiness/map/MapController;->mapService:Lcom/autonavi/gbl/map/MapService;
+
+    if-eqz v0, :cond_0
+
+    invoke-static {p1}, Lcom/autosdk/bussiness/map/SurfaceViewID;->transform2EngineID(I)I
+
+    move-result p1
+
+    invoke-virtual {v0, p1}, Lcom/autonavi/gbl/map/MapService;->getMapView(I)Lcom/autonavi/gbl/map/MapView;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1}, Lcom/autonavi/gbl/map/MapView;->getOperatorBusiness()Lcom/autonavi/gbl/map/OperatorBusiness;
+
+    move-result-object p1
+
+    invoke-virtual {p1, p2}, Lcom/autonavi/gbl/map/OperatorBusiness;->showBuildingNormal(Z)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public setBuildingTexture(IZ)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/autosdk/bussiness/map/MapController;->mapService:Lcom/autonavi/gbl/map/MapService;
+
+    if-eqz v0, :cond_0
+
+    invoke-static {p1}, Lcom/autosdk/bussiness/map/SurfaceViewID;->transform2EngineID(I)I
+
+    move-result p1
+
+    invoke-virtual {v0, p1}, Lcom/autonavi/gbl/map/MapService;->getMapView(I)Lcom/autonavi/gbl/map/MapView;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1}, Lcom/autonavi/gbl/map/MapView;->getOperatorBusiness()Lcom/autonavi/gbl/map/OperatorBusiness;
+
+    move-result-object p1
+
+    invoke-virtual {p1, p2}, Lcom/autonavi/gbl/map/OperatorBusiness;->showBuildingTexture(Z)V
+
+    :cond_0
+    return-void
+.end method
+
 .method public set3Dobj(Lcom/autonavi/gbl/map/MapView;Z)V
     .locals 0
 

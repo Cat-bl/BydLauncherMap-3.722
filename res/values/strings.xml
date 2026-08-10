@@ -428,6 +428,7 @@
     <string name="base_map_loading">正在加载</string>
     <string name="basic_function_package">基础功能包</string>
     <string name="batch_active">批量激活</string>
+    <string name="bd_building_show">显示建筑物</string>
     <string name="bend_over_speed">弯道速度过高，请注意</string>
     <string name="bluetooth_login">高德账号已登录，可从手机发送地点到车</string>
     <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>

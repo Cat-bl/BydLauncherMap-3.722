@@ -80,6 +80,42 @@
     sput-object v0, Lcom/autosdk/bussiness/aosmanager/AosManager;->VID_TEST:Ljava/lang/String;
 
     :cond_0
+
+    :try_start_spdefault
+    new-instance v0, Lcom/autosdk/common/storage/MapSharePreference;
+
+    sget-object v1, Lcom/autosdk/common/storage/MapSharePreference$SharePreferenceName;->laneNavi:Lcom/autosdk/common/storage/MapSharePreference$SharePreferenceName;
+
+    invoke-direct {v0, v1}, Lcom/autosdk/common/storage/MapSharePreference;-><init>(Lcom/autosdk/common/storage/MapSharePreference$SharePreferenceName;)V
+
+    sget-object v1, Lcom/autosdk/common/storage/MapSharePreference$SharePreferenceKeyEnum;->laneNaviEnable:Lcom/autosdk/common/storage/MapSharePreference$SharePreferenceKeyEnum;
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, v1, v2}, Lcom/autosdk/common/storage/MapSharePreference;->j(Lcom/autosdk/common/storage/MapSharePreference$SharePreferenceKeyEnum;Z)V
+
+    sget-object v1, Lcom/autosdk/common/storage/MapSharePreference$SharePreferenceKeyEnum;->laneOpen:Lcom/autosdk/common/storage/MapSharePreference$SharePreferenceKeyEnum;
+
+    invoke-virtual {v0, v1}, Lcom/autosdk/common/storage/MapSharePreference;->c(Lcom/autosdk/common/storage/MapSharePreference$SharePreferenceKeyEnum;)Z
+
+    move-result v2
+
+    if-nez v2, :spdefault_skip
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, v1, v2}, Lcom/autosdk/common/storage/MapSharePreference;->j(Lcom/autosdk/common/storage/MapSharePreference$SharePreferenceKeyEnum;Z)V
+
+    :spdefault_skip
+    :try_end_spdefault
+    .catch Ljava/lang/Throwable; {:try_start_spdefault .. :try_end_spdefault} :catch_spdefault
+
+    goto :goto_spdefault_done
+
+    :catch_spdefault
+    move-exception v0
+
+    :goto_spdefault_done
     return-void
 .end method
 

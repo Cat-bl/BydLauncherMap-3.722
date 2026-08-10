@@ -1406,6 +1406,8 @@
 .method public initLaneAndAR(Z)V
     .locals 2
 
+    const/4 p1, 0x1
+
     if-nez p1, :cond_0
 
     const/4 p1, 0x0

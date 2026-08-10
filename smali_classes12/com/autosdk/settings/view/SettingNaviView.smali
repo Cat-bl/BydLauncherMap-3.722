@@ -1314,6 +1314,8 @@
 
     move-result v1
 
+    goto :cond_0
+
     if-nez v1, :cond_1
 
     if-nez v0, :cond_0

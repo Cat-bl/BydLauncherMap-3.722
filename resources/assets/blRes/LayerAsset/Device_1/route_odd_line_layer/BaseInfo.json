@@ -1,0 +1,15 @@
+{
+	"id":	6036,
+	"layer_priority":	{
+	},
+	"layer_scale":	{
+		"min_scale":	12,
+		"max_scale":	19
+	},
+	"layer_filter":	{
+		"enable":	0,
+		"type":	1
+	},
+	"enable_click":	1,
+	"item":	"LineLayerItem"
+}

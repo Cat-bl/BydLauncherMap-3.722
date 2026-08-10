@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/custom_traffic_jam_black_rectangle_corner_normal_night" />
+    <solid android:color="@color/custom_traffic_jam_black_rectangle_solid_normal_night" />
+</shape>

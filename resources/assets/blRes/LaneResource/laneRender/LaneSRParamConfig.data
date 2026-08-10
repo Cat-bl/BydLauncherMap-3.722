@@ -1,0 +1,47 @@
+{
+  "decisionConfig": {
+    "useAutomaticCalculations": false,
+    "useAxleOffsetValue": false,
+    "axleOffsetValue": 0.0
+  },
+  "speedKalmanConfig":{
+        "useConfig": false,
+        "speedConfig": [{
+            "speed": 5,
+            "QMatrix": 0.3,
+            "RMatrix": 1.0
+        },
+        {
+            "speed": 999,
+            "QMatrix": 0.5,
+            "RMatrix": 1.0
+        }  
+    ]
+    }
+}
+
+
+/* 注释
+{
+  "decisionConfig": {
+    "useAutomaticCalculations": false,# 使用自动计算
+    "useAxleOffsetValue": false,      # 使用轴偏移值
+    "axleOffsetValue": 0.0          # 轴偏移值
+  },
+  "speedKalmanConfig":{
+        "useConfig": false, # 是否使用卡尔曼配置
+        "speedConfig": [{
+            "speed": 5,     # 速度 <=
+            "QMatrix": 0.3, # Q
+            "RMatrix": 1.40 # R
+        },
+        {
+            "speed": 999,
+            "QMatrix": 0.5,
+            "RMatrix": 1.0
+        }  
+    ]
+    }
+}
+}
+*/

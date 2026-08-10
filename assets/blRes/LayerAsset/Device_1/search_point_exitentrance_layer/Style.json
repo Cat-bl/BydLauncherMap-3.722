@@ -1,0 +1,62 @@
+{
+    "marker_info": {
+        "marker_info_search_park": {
+            "anchor": 9,
+            "x_ratio": 0.5,
+            "y_ratio": 0.78
+        }
+    },
+    "layer_item_info": {
+        "search_park_double": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_search_park",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_mark_park_double_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "出入口"
+        },
+        "search_park_in": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_search_park",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_mark_park_in_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 1,
+            "name_cn": "入口"
+        },
+        "search_park_out": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_search_park",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_mark_park_out_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 2,
+            "name_cn": "出口"
+        }
+    }
+}

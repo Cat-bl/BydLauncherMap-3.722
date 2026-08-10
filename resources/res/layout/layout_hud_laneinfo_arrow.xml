@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_auto_navi_drive_item_arrow"
+    android:background="@color/transparent_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.autonavi.skin.view.SkinImageView
+        android:id="@+id/siv_drive_way_arrow"
+        android:layout_width="37px"
+        android:layout_height="60px"
+        android:layout_marginLeft="2px"
+        android:layout_marginRight="2px"
+        android:scaleType="fitCenter"
+        android:layout_marginHorizontal="2px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</com.autonavi.skin.view.SkinConstraintLayout>

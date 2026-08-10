@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/widget_set_parent" android:background="@color/dark_gray" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="@dimen/auto_dimen2_10"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/widget_set_title_container_parent" android:background="@drawable/custom_bar_title_short_light3_night" android:layout_width="fill_parent" android:layout_height="@dimen/auto_dimen2_70" android:layout_alignParentTop="true">
+        <include layout="@layout/widget_set_tittle_layout" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/auto_dimen2_100" android:layout_below="@id/widget_set_title_container_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/wei_chat_connect_layout" android:background="@color/auto_color_b2bdcb_30" android:padding="@dimen/auto_dimen2_50" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.autonavi.skin.view.SkinTextView android:textSize="@dimen/auto_font_size_28" android:textColor="@color/auto_color_ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_connect_wei_chat" app:textColor4Night="@color/text_450_2_textcolor_night_selector" app:textColor4Skin="@color/text_450_2_textcolor_day_selector" />
+            <com.autonavi.skin.view.SkinTextView android:textSize="@dimen/auto_font_size_20" android:textColor="@color/text_450_2_textcolor_day_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/auto_dimen2_10" android:text="@string/user_connect_wei_chat_tip" app:textColor4Night="@color/text_450_2_textcolor_night_selector" app:textColor4Skin="@color/text_450_2_textcolor_day_selector" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/warning_sign_connect_layout" android:background="@color/auto_color_b2bdcb_30" android:padding="@dimen/auto_dimen2_50" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/auto_dimen2_100" android:layout_weight="1.0">
+            <com.autonavi.skin.view.SkinTextView android:textSize="@dimen/auto_font_size_28" android:textColor="@color/auto_color_ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_connect_warning_sign" app:textColor4Night="@color/text_450_2_textcolor_night_selector" app:textColor4Skin="@color/text_450_2_textcolor_day_selector" />
+            <com.autonavi.skin.view.SkinTextView android:textSize="@dimen/auto_font_size_20" android:textColor="@color/text_450_2_textcolor_day_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/auto_dimen2_10" android:text="@string/user_connect_warning_sign_tip" app:textColor4Night="@color/text_450_2_textcolor_night_selector" app:textColor4Skin="@color/text_450_2_textcolor_day_selector" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

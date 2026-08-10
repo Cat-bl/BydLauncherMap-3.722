@@ -1,0 +1,96 @@
+{
+  "v": "5.7.1",
+  "fr": 60,
+  "ip": 0,
+  "op": 30,
+  "w": 192,
+  "h": 192,
+  "nm": "SW5.0_完成",
+  "ddd": 0,
+  "assets": [{
+    "id": "image_0",
+    "w": 96,
+    "h": 96,
+    "u": "",
+    "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAABAAAAAQBPJcTWAAAAJHpUWHRDcmVhdG9yAAAImXNMyU9KVXBMK0ktUnBNS0tNLikGAEF6Bs5qehXFAAADj0lEQVR4nO3bMYgcVRwG8O//LgeKFzzDjig6m2J3REFBTROrRC1ilc4qdqZKClECHlZpDRgrU9poerGRFIFLpSARQVFk3CI3MYTMqieneGTv5rNIcpm7jGey+3beO/P9upnHvPcx3+27He4GEBERERERERERERERERERERHxzkIHaDIofntuvapOw/gSiIcmmszwF2hfzjj3Ti/d852niN5EV0BRDJ9YrfA9wXmf8xps+QGHZ9O084vPeSflQgfYahV21PfNBwCC86uwo77nnVR0BZDV0ztx7nHtCh1gK6PNELx9bHYGs/bRWJONeJzksfrckyf0K7oC7kCW2eOdH8a5NL9Ulr7j+BbdFnS/UQGBxb8Fmb2QF7++2TjGqsy6yectJ/Iq+gJIHgZ5uHHQ7GsAO7oAbUGBqYDAot+CzKwAcbl5lGN9PY1J9AWA/Djbm5wMHWNatAUFFv8nwHAkXxrubxoi8dNTeztvtR3Jp+gLINEH2G8cNNvTchzvtAUFpgICi34LMtg5mJ1rGnOwq23n8S36AgB+lXU7H4ZOMS1BCsiL8iAql2ycsJlvsu78oNUMS8s9cP3FjRPOXcvSRy60mQEI9QkgThLVgVuHBh4HcKbdEGuHCG78pc1YXQBwsN0M+iUcnAoITAUEpgICUwGBqYDA4n8QMxzLLw1fH+9aJrX/8YpSdAWYwxVWt49JJACTf79iG1tuvjlcmSDaVES3BRH8bCfOPa7oCsjSZNEZTgA28jerjZzhRJYmi/7m9CPQFmTX6/sDDXP10X43+eDnqyufYDTax4pzd1x+Lys5+xOzsxf7j+2+Vj9Pw9zmLcquT7LOuIIUQGzei418GcCp+rmbN+yLaWUw4pX6/d+aqS1BtiAHLNaPSbyWLw3fIzn1PCTdzbUObZepLUFeUSrLcvfy3xjc+IazKc0QwI8GVM1XToY3fuCeAdHZtKyhnH8QvSRJVqax7naCvSOWF+URVvg01Pp15vBGliZnQ6wd7FtQliZnDbZgZsEelcyMBlsIdfOBCN6SHFwevlqt830C+9pc14CLbsbe7T3ZOd/mug054jAo/siqau15GDu4q1zWJ6u3N45gKzAs/MdFBG3o3K5ve+nD+WSJ/YimgHuVF78fYLW2eOvYDGXWTR4NGGks0T0J329UQGAqIDAVEJgKCEwFBKYCAlMBIiIiIiIiIiIiIiIiIiIiIiL/P/8ANPr81GIpIYAAAAAASUVORK5CYII=",
+    "e": 1
+  }],
+  "layers": [{
+    "ddd": 0,
+    "ind": 1,
+    "ty": 2,
+    "nm": "icon_dark_control_song_48.png",
+    "cl": "png",
+    "refId": "image_0",
+    "sr": 1,
+    "ks": {
+      "o": {
+        "a": 0,
+        "k": 100,
+        "ix": 11
+      },
+      "r": {
+        "a": 0,
+        "k": 0,
+        "ix": 10
+      },
+      "p": {
+        "a": 0,
+        "k": [96, 96, 0],
+        "ix": 2
+      },
+      "a": {
+        "a": 0,
+        "k": [48, 48, 0],
+        "ix": 1
+      },
+      "s": {
+        "a": 1,
+        "k": [{
+          "i": {
+            "x": [0.2, 0.2, 0.833],
+            "y": [1, 1, 1]
+          },
+          "o": {
+            "x": [0.2, 0.2, 0.167],
+            "y": [0, 0, 0]
+          },
+          "t": 0,
+          "s": [0, 0, 100]
+        }, {
+          "i": {
+            "x": [0.2, 0.2, 0.833],
+            "y": [1, 1, 1]
+          },
+          "o": {
+            "x": [0.2, 0.2, 0.167],
+            "y": [0, 0, 0]
+          },
+          "t": 12,
+          "s": [110, 110, 100]
+        }, {
+          "i": {
+            "x": [0.2, 0.2, 0.833],
+            "y": [1, 1, 1]
+          },
+          "o": {
+            "x": [0.2, 0.2, 0.167],
+            "y": [0, 0, 0]
+          },
+          "t": 22,
+          "s": [90, 90, 100]
+        }, {
+          "t": 30,
+          "s": [100, 100, 100]
+        }],
+        "ix": 6
+      }
+    },
+    "ao": 0,
+    "ip": 0,
+    "op": 30,
+    "st": 0,
+    "bm": 0
+  }],
+  "markers": []
+}

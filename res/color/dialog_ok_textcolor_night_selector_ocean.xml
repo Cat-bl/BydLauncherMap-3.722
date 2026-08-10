@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:color="@color/byd_custom_color_dialog_main_btn_text_pressed_night_ocean" />
+    <item android:color="@color/byd_custom_color_dialog_main_btn_text_normal_night_ocean" />
+</selector>

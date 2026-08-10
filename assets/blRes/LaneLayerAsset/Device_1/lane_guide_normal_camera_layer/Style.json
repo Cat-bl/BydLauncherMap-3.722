@@ -1,0 +1,67 @@
+{
+    "layer_item_info": {
+        "point_lane_guide_normal_camera": {
+            "index": 0,
+            "name_cn": "小电子眼",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "poi_marker_id": "lane_guide_camera.xml",
+                    "poi_marker_info": "marker_info_lane_guide_camera_normal"
+                }
+            }
+        }
+    },
+    "marker_info": {
+        "marker_info_lane_guide_camera_normal": {
+            "anchor": 9,
+            "day_style": {
+                "color": [
+                    {
+                        "speed_text2": "#E6000000"
+                    },
+                    {
+                        "speed_text3": "#E6000000"
+                    }
+                ]
+            },
+            "image_style": {
+                "camera_type_image": {
+                    "camera_type_breakrule_courtesy_crossing": "global_image_autonavi_lane_camera_bubble_sidewalk_day_night",
+                    "camera_type_breakrule_dial_phone_when_driving": "global_image_autonavi_lane_camera_bubble_phone_day_night",
+                    "camera_type_breakrule_illegal_parking": "global_image_autonavi_lane_camera_bubble_parking_day_night",
+                    "camera_type_breakrule_illegal_use_safety_belt": "global_image_autonavi_lane_camera_bubble_seatbelt_day_night",
+                    "camera_type_breakrule_occupied_bus_lane": "global_image_autonavi_lane_camera_bubble_busway_day_night",
+                    "camera_type_breakrule_occupied_emergency_lane": "global_image_autonavi_lane_camera_bubble_emergencylane_day_night",
+                    "camera_type_breakrule_occupied_emergency_lane_en": "global_image_autonavi_lane_camera_bubble_emergencylane_en_day_night",
+                    "camera_type_breakrule_occupied_non_motorized_lane": "global_image_autonavi_lane_camera_bubble_bicyclelane_day_night",
+                    "camera_type_breakrule_run_red_light": "global_image_autonavi_lane_camera_bubble_trafficlight_day_night",
+                    "camera_type_breakrule_speaker": "global_image_autonavi_lane_camera_bubble_speaker_day_night",
+                    "camera_type_breakrule_violate_prohibited_markings": "global_image_autonavi_lane_camera_bubble_line_day_night",
+                    "camera_type_car_spacing": "global_image_autonavi_lane_camera_bubble_space_day_night",
+                    "camera_type_end_number_limit": "global_image_autonavi_lane_camera_bubble_tail_day_night",
+                    "camera_type_environmental_limit": "global_image_autonavi_lane_camera_bubble_recycle_day_night",
+                    "camera_type_etc": "global_image_autonavi_lane_camera_bubble_etc_day_night",
+                    "camera_type_hov_lane": "global_image_autonavi_lane_camera_bubble_hov_day_night",
+                    "camera_type_illegal_use_light": "global_image_autonavi_lane_camera_bubble_lamp_day_night",
+                    "camera_type_railway_crossing": "global_image_autonavi_lane_camera_bubble_railway_day_night",
+                    "camera_type_reverse_driving": "global_image_autonavi_lane_camera_bubble_reverse_day_night",
+                    "camera_type_speed": "global_image_autonavi_lane_icon_speed_warning_circle_day_night",
+                    "camera_type_speed_unknown": "global_image_autonavi_lane_camera_bubble_speed_unknown_day_night"
+                }
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "speed_text2": "#FF242F45"
+                    },
+                    {
+                        "speed_text3": "#FF242F45"
+                    }
+                ]
+            },
+            "x_ratio": 0.5,
+            "y_ratio": 0.9
+        }
+    }
+}

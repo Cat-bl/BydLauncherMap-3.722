@@ -1,0 +1,505 @@
+{
+  "data": {
+    "type": "adaptor_point",
+    "value": [],
+    "rule": [
+      {
+        "type": "data_duplicate",
+        "brief": "数据去重",
+        "value": [
+          "$item_data.position.lon",
+          "$item_data.position.lat"
+        ]
+      }
+    ]
+  },
+  "biz": [
+    {
+      "brief": "设置多飘向图层避让算法",
+      "type": "biz_set_avoid_algorithm",
+      "value": 2
+    },
+    {
+      "brief": "设置图元优先级是否升序",
+      "type": "biz_item_priority_asc",
+      "value": false
+    }
+  ],
+  "style": {
+    "style_name": {
+      "prefix_name": "",
+      "rule": [
+        {
+          "brief": "样式规则",
+          "type": "style_switch",
+          "value": {
+            "condition": "$item_data.quadrantType",
+            "case": {
+              "1": {
+                "if": {
+                  "condition": {
+                    "fact": "$biz_data.isSimple",
+                    "operator": "equal",
+                    "value": true
+                  },
+                  "case": {
+                    "true": "search_recommend_end_park_point_simple_left",
+                    "false": "search_recommend_end_park_point_left"
+                  }
+                }
+              },
+              "2": {
+                "if": {
+                  "condition": {
+                    "fact": "$biz_data.isSimple",
+                    "operator": "equal",
+                    "value": true
+                  },
+                  "case": {
+                    "true": "search_recommend_end_park_point_simple_right",
+                    "false": "search_recommend_end_park_point_right"
+                  }
+                }
+              },
+              "10": "search_recommend_end_park_point_mini",
+              "default": {
+                "if": {
+                  "condition": {
+                    "fact": "$biz_data.isSimple",
+                    "operator": "equal",
+                    "value": true
+                  },
+                  "case": {
+                    "true": "search_recommend_end_park_point_simple_right",
+                    "false": "search_recommend_end_park_point_right"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "dynamic_marker": {
+      "rule": [
+        {
+          "brief": "停车到达率显示",
+          "type": "marker_if",
+          "value": {
+            "condition": {
+              "fact": "$biz_data.arrivalRatio",
+              "operator": "ge",
+              "value": 0
+            },
+            "case": {
+              "true": {
+                "id": "parking_info_number_text",
+                "display": true,
+                "value": "$biz_data.arrivalRatio"
+              },
+              "false": {
+                "if": {
+                  "condition": {
+                    "func": {
+                      "name": "StringLength",
+                      "param": {
+                        "value": "$biz_data.labelCategory"
+                      }
+                    },
+                    "operator": "gt",
+                    "value": 0
+                  },
+                  "case": {
+                    "true": [
+                      {
+                        "id": "parking_info_number_text",
+                        "display": true,
+                        "value": "$biz_data.labelCategory"
+                      },
+                      {
+                        "id": "parking_info_unit_text",
+                        "display": false
+                      },
+                      {
+                        "id": "parking_info_word_text",
+                        "display": false
+                      }
+                    ],
+                    "false": {
+                      "id": "parking_info_hot_div",
+                      "display": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "brief": "步行信息显示",
+          "type": "marker_if",
+          "value": {
+            "condition": {
+              "func": {
+                "name": "StringLength",
+                "param": {
+                  "value": "$biz_data.walkNumber"
+                }
+              },
+              "operator": "gt",
+              "value": 0
+            },
+            "case": {
+              "true": [
+                {
+                  "id": "parking_info_walk_number_text",
+                  "display": true,
+                  "value": "$biz_data.walkNumber"
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "fact": "$biz_data.isWalkKilometer",
+                      "operator": "equal",
+                      "value": true
+                    },
+                    "case": {
+                      "true": {
+                        "id": "parking_info_walk_unit_text",
+                        "display": true,
+                        "value": "BlRes::string::kilometers"
+                      },
+                      "false": {
+                        "id": "parking_info_walk_unit_text",
+                        "display": true,
+                        "value": "BlRes::string::meters"
+                      }
+                    }
+                  }
+                }
+              ],
+              "false": {
+                "id": "parking_info_walk_div",
+                "display": false
+              }
+            }
+          }
+        },
+        {
+          "brief": "停车位空闲和总数显示",
+          "type": "marker_if",
+          "value": {
+            "condition": {
+              "fact": "$biz_data.freeSpace",
+              "operator": "ge",
+              "value": 0
+            },
+            "case": {
+              "true": {
+                "if": {
+                  "condition": {
+                    "fact": "$biz_data.freeSpace",
+                    "operator": "gt",
+                    "value": 0
+                  },
+                  "case": {
+                    "true": [
+                      {
+                        "id": "parking_label_idle_number_text",
+                        "display": true,
+                        "value": "$biz_data.freeSpace"
+                      },
+                      {
+                        "if": {
+                          "condition": {
+                            "fact": "$biz_data.totalSpace",
+                            "operator": "gt",
+                            "value": 0
+                          },
+                          "case": {
+                            "true": {
+                              "id": "parking_label_idle_number_all_text",
+                              "display": true,
+                              "value": "$biz_data.totalSpace"
+                            },
+                            "false": [
+                              {
+                                "id": "parking_label_idle_title_text",
+                                "display": false
+                              },
+                              {
+                                "id": "parking_label_idle_number_all_text",
+                                "display": false
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    ],
+                    "false": {
+                      "if": {
+                        "condition": {
+                          "func": {
+                            "name": "IsNightMode"
+                          },
+                          "operator": "equal",
+                          "value": false
+                        },
+                        "case": {
+                          "true": [
+                            {
+                              "id": "parking_label_idle_text",
+                              "display": true,
+                              "style": "color:#F62020"
+                            },
+                            {
+                              "id": "parking_label_idle_number_text",
+                              "display": true,
+                              "value": "$biz_data.freeSpace",
+                              "style": "color:#F62020"
+                            },
+                            {
+                              "if": {
+                                "condition": {
+                                  "fact": "$biz_data.totalSpace",
+                                  "operator": "gt",
+                                  "value": 0
+                                },
+                                "case": {
+                                  "true": [
+                                    {
+                                      "id": "parking_label_idle_title_text",
+                                      "display": true,
+                                      "style": "color:#80F62020"
+                                    },
+                                    {
+                                      "id": "parking_label_idle_number_all_text",
+                                      "display": true,
+                                      "value": "$biz_data.totalSpace",
+                                      "style": "color:#80F62020"
+                                    }
+                                  ],
+                                  "false": [
+                                    {
+                                      "id": "parking_label_idle_title_text",
+                                      "display": false
+                                    },
+                                    {
+                                      "id": "parking_label_idle_number_all_text",
+                                      "display": false
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          ],
+                          "false": [
+                            {
+                              "id": "parking_label_idle_text",
+                              "display": true,
+                              "style": "color:#E8584C"
+                            },
+                            {
+                              "id": "parking_label_idle_number_text",
+                              "display": true,
+                              "value": "$biz_data.freeSpace",
+                              "style": "color:#E8584C"
+                            },
+                            {
+                              "if": {
+                                "condition": {
+                                  "fact": "$biz_data.totalSpace",
+                                  "operator": "gt",
+                                  "value": 0
+                                },
+                                "case": {
+                                  "true": [
+                                    {
+                                      "id": "parking_label_idle_title_text",
+                                      "display": true,
+                                      "style": "color:#80E8584C"
+                                    },
+                                    {
+                                      "id": "parking_label_idle_number_all_text",
+                                      "display": true,
+                                      "value": "$biz_data.totalSpace",
+                                      "style": "color:#80E8584C"
+                                    }
+                                  ],
+                                  "false": [
+                                    {
+                                      "id": "parking_label_idle_title_text",
+                                      "display": false
+                                    },
+                                    {
+                                      "id": "parking_label_idle_number_all_text",
+                                      "display": false
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "false": {
+                "if": {
+                  "condition": {
+                    "fact": "$biz_data.totalSpace",
+                    "operator": "gt",
+                    "value": 0
+                  },
+                  "case": {
+                    "true": [
+                      {
+                        "id": "parking_label_idle_text",
+                        "display": true,
+                        "value": "BlRes::string::in_total"
+                      },
+                      {
+                        "id": "parking_label_idle_number_text",
+                        "display": true,
+                        "value": "$biz_data.totalSpace"
+                      },
+                      {
+                        "id": "parking_label_idle_title_text",
+                        "display": false
+                      },
+                      {
+                        "id": "parking_label_idle_number_all_text",
+                        "display": false
+                      }
+                    ],
+                    "false": {
+                      "id": "parking_label_infototal_div",
+                      "display": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "brief": "停车位足够状态显示",
+          "type": "marker_if",
+          "value": {
+            "condition": {
+              "func": {
+                "name": "StringLength",
+                "param": {
+                  "value": "$biz_data.labelEnough"
+                }
+              },
+              "operator": "gt",
+              "value": 0
+            },
+            "case": {
+              "true": {
+                "id": "parking_label_enough_text",
+                "display": true,
+                "value": "$biz_data.labelEnough"
+              },
+              "false": {
+                "id": "parking_label_enough_div",
+                "display": false
+              }
+            }
+          }
+        },
+        {
+          "brief": "停车位非足够状态显示",
+          "type": "marker_if",
+          "value": {
+            "condition": {
+              "func": {
+                "name": "StringLength",
+                "param": {
+                  "value": "$biz_data.labelNoEnough"
+                }
+              },
+              "operator": "gt",
+              "value": 0
+            },
+            "case": {
+              "true": {
+                "id": "parking_label_no_enough_text",
+                "display": true,
+                "value": "$biz_data.labelNoEnough"
+              },
+              "false": {
+                "id": "parking_label_no_enough_div",
+                "display": false
+              }
+            }
+          }
+        },
+        {
+          "brief": "停车场名字显示",
+          "type": "marker_if",
+          "value": {
+            "condition": {
+              "func": {
+                "name": "StringLength",
+                "param": {
+                  "value": "$biz_data.name"
+                }
+              },
+              "operator": "gt",
+              "value": 0
+            },
+            "case": {
+              "true": {
+                "id": "name_text",
+                "display": true,
+                "value": "$biz_data.name"
+              },
+              "false": {
+                "id": "name_text",
+                "display": false
+              }
+            }
+          }
+        },
+        {
+          "brief": "可充电显示",
+          "type": "marker_if",
+          "value": {
+            "condition": {
+              "func": {
+                "name": "StringLength",
+                "param": {
+                  "value": "$biz_data.labelCharge"
+                }
+              },
+              "operator": "gt",
+              "value": 0
+            },
+            "case": {
+              "true": {
+                "id": "parking_label_charge_text",
+                "display": true,
+                "value": "$biz_data.labelCharge"
+              },
+              "false": {
+                "id": "parking_label_charge_div",
+                "display": false
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "abstract": {
+    "brief": "搜索终点推荐停车场",
+    "name": "recommend_end_park_layer",
+    "biz_type": 2505,
+    "update_card": false
+  },
+  "dataSource": "{\"item_data\":{\"position\":{\"lon\":116.351,\"lat\":39.94,\"z\":0}},\"biz_data\":{\"name\":\"停车场1\",\"isSimple\":false,\"arrivalRatio\":1,\"walkNumber\":\"1\",\"isWalkKilometer\":false,\"freeSpace\":10,\"totalSpace\":100,\"labelEnough\":\"车位充足\",\"labelNoEnough\":\"车位已满\",\"labelCharge\":\"\"}}"
+}

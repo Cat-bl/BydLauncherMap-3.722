@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/auto_dimen2_15" />
+    <solid android:color="@color/custom_normal_day_color_2" />
+</shape>

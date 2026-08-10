@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:autoSkin="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.autonavi.skin.view.SkinTextView
+        android:textSize="@dimen/auto_font_size_20"
+        android:textColor="@color/auto_color_board_label_normal_day"
+        android:gravity="center"
+        android:id="@+id/tv_route_board"
+        android:paddingLeft="@dimen/auto_font_size_3"
+        android:paddingTop="@dimen/auto_font_size_5"
+        android:paddingRight="@dimen/auto_font_size_3"
+        android:paddingBottom="@dimen/auto_font_size_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxEms="7"
+        android:lineSpacingExtra="@dimen/auto_font_size_1"
+        android:paddingHorizontal="@dimen/auto_font_size_3"
+        android:paddingVertical="@dimen/auto_font_size_5"
+        autoSkin:textColor4Night="@color/auto_color_guide_label_normal_night"
+        autoSkin:textColor4Skin="@color/auto_color_board_label_normal_day"/>
+</LinearLayout>

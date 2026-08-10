@@ -1,0 +1,35 @@
+{
+    "marker_info": {
+        "marker_info_cruise_congestion_event": {
+            "anchor": 13,
+            "x_offset": 20,
+            "y_offset": 0,
+            "day_style": {
+                "color": [
+                    {
+                        "name_text": "#000000"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "name_text": "#ffffff"
+                    }
+                ]
+            }
+        }
+    },
+    "layer_item_info": {
+        "point_cruise_congestion_event": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "cruise_congestion_event.xml",
+                    "poi_marker_info": "marker_info_cruise_congestion_event"
+                }
+            },
+            "index": 0,
+            "name_cn": "巡航拥堵事件"
+        }
+    }
+}

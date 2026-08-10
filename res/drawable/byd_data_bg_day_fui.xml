@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/byd_user_bg_day_fui" />
+    <item>
+        <bitmap android:gravity="center" android:src="@drawable/byd_user_bg_day_fui" />
+    </item>
+</layer-list>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:translationZ="@dimen/byd_pvt_popup_menu_cardview_shadow_height" android:outlineSpotShadowColor="?bydPvtPopupMenuShadowColor" app:cardBackgroundColor="?bydPvtPopupMenuBgColor" app:cardCornerRadius="@dimen/sys_border_radius_s" app:cardElevation="@dimen/byd_pvt_popup_menu_cardview_shadow_height" app:contentPaddingBottom="@dimen/sys_padding_s" app:contentPaddingTop="@dimen/sys_padding_s"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/pw_recycler_view" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintHeight_max="@dimen/byd_pvt_popup_menu_maxHT" app:layout_constraintHeight_min="@dimen/byd_pvt_popup_menu_item_minHT" app:layout_constraintWidth_max="@dimen/byd_pvt_popup_menu_maxWH" app:layout_constraintWidth_min="@dimen/byd_pvt_popup_menu_minWH" style="?sysPopupMenuScrollThumbSt" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

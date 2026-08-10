@@ -1,0 +1,65 @@
+{
+    "marker_info": {
+        "marker_info_cruise_traffic_event": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "event_name": "#3a3a3a"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "event_name": "#d8d8d8"
+                    }
+                ]
+            },
+            "y_offset": 19,
+            "x_offset": 19
+        }
+    },
+    "layer_item_info": {
+        "cruise_traffic_event_accident": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "cruise_traffic_event_accident.xml",
+                    "poi_marker_info": "marker_info_cruise_traffic_event"
+                }
+            },
+            "index": 0,
+            "name_cn": "车祸"
+        },
+        "cruise_traffic_event_malfunction": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "cruise_traffic_event_malfunction.xml",
+                    "poi_marker_info": "marker_info_cruise_traffic_event"
+                }
+            },
+            "index": 1,
+            "name_cn": "故障"
+        },
+        "cruise_traffic_event_project": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "cruise_traffic_event_project.xml",
+                    "poi_marker_info": "marker_info_cruise_traffic_event"
+                }
+            },
+            "index": 2,
+            "name_cn": "施工"
+        },
+        "cruise_traffic_event_water": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "cruise_traffic_event_water.xml",
+                    "poi_marker_info": "marker_info_cruise_traffic_event"
+                }
+            },
+            "index": 3,
+            "name_cn": "积水"
+        }
+    }
+}

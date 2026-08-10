@@ -1,0 +1,47 @@
+{
+    "layer_item_info": {
+        "point_lane_guide_odd_end": {
+            "index": 1,
+            "name_cn": "odd终点",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_autonavi_lane_odd_end_icon_day_night"
+                            }
+                        ]
+                    },
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_lane_point_center_up_2"
+                }
+            }
+        },
+        "point_lane_guide_odd_start": {
+            "index": 0,
+            "name_cn": "odd起点",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_autonavi_lane_odd_start_icon_day_night"
+                            }
+                        ]
+                    },
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_lane_point_center_up_2"
+                }
+            }
+        }
+    },
+    "marker_info": {
+        "marker_info_lane_point_center_up_2": {
+            "anchor": 9,
+            "x_ratio": 0.5,
+            "y_ratio": 0.9
+        }
+    }
+}

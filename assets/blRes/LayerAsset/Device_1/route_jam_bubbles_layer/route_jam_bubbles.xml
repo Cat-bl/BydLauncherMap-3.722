@@ -1,0 +1,6 @@
+<div id="jam_bubbles" style="display:flex;flex-direction:row;justify-content:center;align-items:center;width:auto;height:auto;background-image:global_image_bubble_left_top_day_night;">
+  <div id="travel_information_div" style="display:flex;flex-direction:column;justify-content:center;align-items:center;margin-right:12px;margin-left:12px;">
+    <label id="main_title_slow" style="font-size:24px;color:#ed390d;font-family:SDK_Font-Medium;" lines="1">即将拥堵</label>
+    <label id="main_title_smooth" style="font-size:24px;color:#00804e;font-family:SDK_Font-Medium;" lines="1">即将通畅</label>
+  </div>
+</div>

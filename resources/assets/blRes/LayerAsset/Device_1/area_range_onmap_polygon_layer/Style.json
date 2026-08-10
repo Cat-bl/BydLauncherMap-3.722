@@ -1,0 +1,61 @@
+{
+    "marker_info": {},
+    "layer_item_info": {
+        "polygon_range_on_map_style_normal": {
+            "polygon_layer_item_style": {
+                "color": "0x00E15050"
+            },
+            "index": 0,
+            "name_cn": "普通 外圈 白天"
+        },
+        "polygon_range_on_map_style_normal_night": {
+            "polygon_layer_item_style": {
+                "color": "0x00B73F3F"
+            },
+            "index": 1,
+            "name_cn": "普通 外圈 黑夜"
+        },
+        "polygon_range_on_map_style_normal_alert": {
+            "polygon_layer_item_style": {
+                "color": "0x00F18A29"
+            },
+            "index": 2,
+            "name_cn": "普通 内圈 白天"
+        },
+        "polygon_range_on_map_style_normal_night_alert": {
+            "polygon_layer_item_style": {
+                "color": "0x00DC8432"
+            },
+            "index": 3,
+            "name_cn": "普通 内圈 黑夜"
+        },
+        "polygon_range_on_map_style_alert": {
+            "polygon_layer_item_style": {
+                "color":"0x00F18A29"
+            },
+            "index": 4,
+            "name_cn": "警告 内圈 白天"
+        },
+        "polygon_range_on_map_style_alert_range": {
+            "polygon_layer_item_style": {
+                "color":"0x00E15050"
+            },
+            "index": 5,
+            "name_cn": "警告 外圈 白天"
+        },
+        "polygon_range_on_map_style_alert_night": {
+            "polygon_layer_item_style": {
+                "color":"0x00DC8432"
+            },
+            "index": 6,
+            "name_cn": "警告 内圈 黑夜"
+        },
+        "polygon_range_on_map_style_alert_range_night": {
+            "polygon_layer_item_style": {
+                "color":"0x00B73F3F"
+            },
+            "index": 7,
+            "name_cn": "警告 外圈 黑夜"
+        }
+    }
+}

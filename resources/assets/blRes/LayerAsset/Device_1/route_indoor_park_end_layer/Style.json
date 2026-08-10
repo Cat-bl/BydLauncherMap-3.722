@@ -1,0 +1,41 @@
+{
+    "marker_info": {
+        "marker_info_route_indoor_park_end": {
+            "anchor": 6,
+            "x_offset": 0,
+            "y_offset": 0,
+            "night_style": {
+                "color": [
+                    {
+                        "showtip": "#ffffffff"
+                    },
+                    {
+                        "floor": "#ffffffff"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "showtip": "#f0ffffff"
+                    },
+                    {
+                        "floor": "#f0ffffff"
+                    }
+                ]
+            }
+        }
+    },
+    "layer_item_info": {
+        "point_route_indoor_park_end": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "route_indoor_park_end.xml",
+                    "poi_marker_info": "marker_info_route_indoor_park_end"
+                }
+            },
+            "index": 0,
+            "name_cn": "室内停车场终点"
+        }
+    }
+}

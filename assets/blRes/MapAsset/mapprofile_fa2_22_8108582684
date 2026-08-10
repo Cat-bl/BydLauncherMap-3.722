@@ -1,0 +1,1381 @@
+{
+    "CONFIG_TYPE_CONTENT": [
+        {
+            "order": 1,
+            "name": "Road",
+            "priority": 0,
+            "value": 1,
+            "note": "道路",
+            "key": 0
+        },
+        {
+            "order": 2,
+            "name": "Building",
+            "priority": 1,
+            "value": 1,
+            "note": "建筑物",
+            "key": 1
+        },
+        {
+            "order": 3,
+            "name": "Satellite",
+            "priority": 0,
+            "value": 1,
+            "note": "卫星图",
+            "key": 2
+        },
+        {
+            "order": 4,
+            "name": "Traffic",
+            "priority": 0,
+            "value": 1,
+            "note": "实时交通tmc",
+            "key": 3
+        },
+        {
+            "order": 5,
+            "name": "Region",
+            "priority": 0,
+            "value": 1,
+            "note": "背景区域面",
+            "key": 4
+        },
+        {
+            "order": 6,
+            "name": "label",
+            "priority": 0,
+            "value": 1,
+            "note": "标注（poi+道路名称）",
+            "key": 5
+        },
+        {
+            "order": 7,
+            "name": "Indoor",
+            "priority": 1,
+            "value": 1,
+            "note": "室内地图",
+            "key": 6
+        },
+        {
+            "order": 8,
+            "name": "OpenLayer",
+            "priority": 0,
+            "value": 1,
+            "note": "开放图层",
+            "key": 7
+        },
+        {
+            "order": 9,
+            "name": "ScenicGuide",
+            "priority": 1,
+            "value": 1,
+            "note": "景区导览图",
+            "key": 8
+        },
+        {
+            "order": 10,
+            "name": "MapHeat",
+            "priority": 1,
+            "value": 1,
+            "note": "景区热力图",
+            "key": 9
+        },
+        {
+            "order": 11,
+            "name": "Realcity",
+            "priority": 4,
+            "value": 1,
+            "note": "精品三维路口大图",
+            "key": 10
+        },
+        {
+            "order": 12,
+            "name": "SimpleThreeD",
+            "priority": 3,
+            "value": 1,
+            "note": "简易三维",
+            "key": 11
+        },
+        {
+            "order": 13,
+            "name": "ThreeDObject",
+            "priority": 1,
+            "value": 1,
+            "note": "3DObj建筑物",
+            "key": 12
+        },
+        {
+            "order": 14,
+            "name": "BuildingTexture",
+            "priority": 1,
+            "value": 1,
+            "note": "建筑物纹理绘制",
+            "key": 13
+        },
+        {
+            "order": 15,
+            "name": "BuildingCollision",
+            "priority": 1,
+            "value": 1,
+            "note": "建筑物碰撞",
+            "key": 14
+        },
+        {
+            "order": 16,
+            "name": "roadArrow",
+            "priority": 1,
+            "value": 1,
+            "note": "二维道路箭头",
+            "key": 15
+        },
+        {
+            "order": 17,
+            "name": "BuildingSideLine",
+            "priority": 1,
+            "value": 0,
+            "note": "建筑物屋顶边线绘制",
+            "key": 16
+        },
+        {
+            "order": 18,
+            "name": "RealcityShadow",
+            "priority": 1,
+            "value": 0,
+            "note": "精品三维阴影挥掷",
+            "key": 17
+        },
+        {
+            "order": 19,
+            "name": "DrawBackGrid",
+            "priority": 4,
+            "value": 0,
+            "note": "图幅网格",
+            "key": 18
+        },
+        {
+            "order": 20,
+            "name": "DrawRoadNameBoard",
+            "priority": 4,
+            "value": 0,
+            "note": "道路名称背景",
+            "key": 19
+        },
+        {
+            "order": 21,
+            "name": "TMC_DEPTH_INFO",
+            "priority": 4,
+            "value": 1,
+            "note": "tmc深度信息",
+            "key": 20
+        },
+        {
+            "order": 22,
+            "name": "HDMAP",
+            "priority": 4,
+            "value": 1,
+            "note": "景区手绘地图",
+            "key": 21
+        },
+        {
+            "order": 23,
+            "name": "WaterWave",
+            "priority": 4,
+            "value": 1,
+            "note": "水波纹，value =0关闭，value=1开启",
+            "key": 22
+        },
+        {
+            "order": 24,
+            "name": "topography",
+            "priority": 0,
+            "value": 1,
+            "note": "地形图",
+            "key": 23
+        },
+        {
+            "order": 25,
+            "name": "lanerender",
+            "priority": 0,
+            "value": 1,
+            "note": "车道级",
+            "key": 24
+        },
+        {
+            "order": 26,
+            "name": "earth",
+            "priority": 4,
+            "value": 1,
+            "note": "球形地图",
+            "key": 25
+        },
+        {
+            "order": 27,
+            "name": "landmark",
+            "note": "地标建筑",
+            "value": 1,
+            "priority": 0,
+            "key": 26
+        },
+        {
+            "order": 28,
+            "name": "dem",
+            "note": "高程数据",
+            "value": 1,
+            "priority": 0,
+            "key": 27
+        },
+        {
+            "order": 29,
+            "name": "BuildingReflection",
+            "priority": 4,
+            "value": 0,
+            "note": "建筑倒影，value=0关闭，value=1开启",
+            "key": 28
+        },
+        {
+            "order": 30,
+            "name": "LaneElectronicEye",
+            "priority": 4,
+            "value": 0,
+            "note": "车道电子眼，value=0关闭，value=1开启",
+            "key": 29
+        }
+    ],
+    "CONFIG_TYPE_OPTION": [
+        {
+            "order": 1,
+            "name": "fboControl",
+            "priority": 4,
+            "value": 1,
+            "note": "是否fbo绘制",
+            "key": 0
+        },
+        {
+            "order": 2,
+            "name": "naviFboControl",
+            "priority": 4,
+            "value": 1,
+            "note": "是否导航场景使用fbo绘制",
+            "key": 1
+        },
+        {
+            "order": 3,
+            "name": "DrawUseFbo",
+            "priority": 4,
+            "value": 1,
+            "note": "鹰眼使用fbo或者截图方式",
+            "key": 2
+        },
+        {
+            "order": 4,
+            "name": "IndoorPark",
+            "priority": 4,
+            "value": 0,
+            "note": "是否停车场",
+            "key": 3
+        }
+    ],
+    "CONFIG_TYPE_STATE_LANDSCAPE": [
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 1,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60.1,
+            "MapClipFov": 46,
+            "key": 0
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 2,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 1
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 3,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 2
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 4,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 3
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 5,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 4
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 6,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 5
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 7,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 6
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 8,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 7
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 9,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 8
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 10,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 9
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 11,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 10
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 12,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 11
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 13,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 12
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 14,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 13
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 15,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 14
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 16,
+            "MapHeadingAngle": 55,
+            "MapFovAngle": 42.09260559082031,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 15
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 17,
+            "MapHeadingAngle": 70,
+            "MapFovAngle": 42.09260559082031,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 48,
+            "key": 16
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 18,
+            "MapHeadingAngle": 73,
+            "MapFovAngle": 42.09260559082031,
+            "MapClipRefAngle": 62,
+            "MapClipFov": 60,
+            "key": 17
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 19,
+            "MapHeadingAngle": 76,
+            "MapFovAngle": 42.09260559082031,
+            "MapClipRefAngle": 68,
+            "MapClipFov": 60,
+            "key": 18
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 20,
+            "MapHeadingAngle": 76,
+            "MapFovAngle": 42.09260559082031,
+            "MapClipRefAngle": 68,
+            "MapClipFov": 52,
+            "key": 19
+        }
+    ],
+    "CONFIG_TYPE_STATE_LANDSCAPE_NAVI": [
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 1,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60.1,
+            "MapClipFov": 46,
+            "key": 0
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 2,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 1
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 3,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 2
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 4,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 3
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 5,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 4
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 6,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 5
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 7,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 6
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 8,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 7
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 9,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 8
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 10,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 9
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 11,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 10
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 12,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 11
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 13,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 12
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 14,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 13
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 15,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36.079376220703125,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 14
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 16,
+            "MapHeadingAngle": 55,
+            "MapFovAngle": 42.09260559082031,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 15
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 17,
+            "MapHeadingAngle": 70,
+            "MapFovAngle": 42.09260559082031,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 48,
+            "key": 16
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 18,
+            "MapHeadingAngle": 73,
+            "MapFovAngle": 42.09260559082031,
+            "MapClipRefAngle": 62,
+            "MapClipFov": 60,
+            "key": 17
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 19,
+            "MapHeadingAngle": 76,
+            "MapFovAngle": 42.09260559082031,
+            "MapClipRefAngle": 68,
+            "MapClipFov": 60,
+            "key": 18
+        },
+        {
+            "SenceLandscape": 1,
+            "SenceLevel": 20,
+            "MapHeadingAngle": 76,
+            "MapFovAngle": 42.09260559082031,
+            "MapClipRefAngle": 68,
+            "MapClipFov": 52,
+            "key": 19
+        }
+    ],
+    "CONFIG_TYPE_STATE_VERTICAL": [
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 1,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 46,
+            "key": 0
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 2,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 46,
+            "key": 1
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 3,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 50,
+            "key": 2
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 4,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 50,
+            "key": 3
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 5,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 50,
+            "key": 4
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 6,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 50,
+            "key": 5
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 7,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 50,
+            "key": 6
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 8,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 50,
+            "key": 7
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 9,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 50,
+            "key": 8
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 10,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 46,
+            "key": 9
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 11,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 46,
+            "key": 10
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 12,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 46,
+            "key": 11
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 13,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 46,
+            "key": 12
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 14,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 46,
+            "key": 13
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 15,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36,
+            "MapClipRefAngle": 50,
+            "MapClipFov": 46,
+            "key": 14
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 16,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 42,
+            "MapClipRefAngle": 54,
+            "MapClipFov": 46,
+            "key": 15
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 17,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 42,
+            "MapClipRefAngle": 56,
+            "MapClipFov": 46,
+            "key": 16
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 18,
+            "MapHeadingAngle": 50,
+            "MapFovAngle": 42,
+            "MapClipRefAngle": 58,
+            "MapClipFov": 46,
+            "key": 17
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 19,
+            "MapHeadingAngle": 60,
+            "MapFovAngle": 42,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 18
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 20,
+            "MapHeadingAngle": 60,
+            "MapFovAngle": 42,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 19
+        }
+    ],
+    "CONFIG_TYPE_STATE_VERTICAL_NAVI": [
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 1,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 46,
+            "key": 0
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 2,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 46,
+            "key": 1
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 3,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 50,
+            "key": 2
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 4,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 50,
+            "key": 3
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 5,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 50,
+            "key": 4
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 6,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 50,
+            "key": 5
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 7,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 50,
+            "key": 6
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 8,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 50,
+            "key": 7
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 9,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 50,
+            "key": 8
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 10,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 46,
+            "key": 9
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 11,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 46,
+            "key": 10
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 12,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 46,
+            "key": 11
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 13,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 46,
+            "key": 12
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 14,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 60,
+            "MapClipRefAngle": 40,
+            "MapClipFov": 46,
+            "key": 13
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 15,
+            "MapHeadingAngle": 40,
+            "MapFovAngle": 36,
+            "MapClipRefAngle": 50,
+            "MapClipFov": 46,
+            "key": 14
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 16,
+            "MapHeadingAngle": 50,
+            "MapFovAngle": 42,
+            "MapClipRefAngle": 54,
+            "MapClipFov": 46,
+            "key": 15
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 17,
+            "MapHeadingAngle": 66,
+            "MapFovAngle": 42,
+            "MapClipRefAngle": 56,
+            "MapClipFov": 46,
+            "key": 16
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 18,
+            "MapHeadingAngle": 70,
+            "MapFovAngle": 42,
+            "MapClipRefAngle": 58,
+            "MapClipFov": 46,
+            "key": 17
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 19,
+            "MapHeadingAngle": 72,
+            "MapFovAngle": 42,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 18
+        },
+        {
+            "SenceLandscape": 0,
+            "SenceLevel": 20,
+            "MapHeadingAngle": 74,
+            "MapFovAngle": 42,
+            "MapClipRefAngle": 60,
+            "MapClipFov": 46,
+            "key": 19
+        }
+    ],
+    "CONFIG_TYPE_PLATFORM": [
+        {
+            "order": 1,
+            "name": "platform",
+            "value": 3,
+            "note": "auto",
+            "key": 0
+        },
+        {
+            "order": 2,
+            "name": "vectorCrossShowCar",
+            "value": 1,
+            "note": "非环岛矢量路口显示车标",
+            "key": 1
+        },
+        {
+            "order": 3,
+            "name": "vectorCrossUseCapture",
+            "value": 0,
+            "note": "矢量路口采用截图方式",
+            "key": 2
+        },
+        {
+            "order": 4,
+            "name": "fontSize",
+            "value": 48,
+            "note": "字模大小",
+            "key": 3
+        },
+        {
+            "order": 5,
+            "name": "labelbordwidth",
+            "value": 3,
+            "note": "非ios平台文字描边宽度",
+            "key": 4
+        },
+        {
+            "order": 6,
+            "name": "labelbordwidth_ios",
+            "value": 3,
+            "note": "ios平台文字描边宽度",
+            "key": 5
+        }, 
+        {
+            "order": 7,
+            "name": "farplaneMoveOffset",
+            "value": 0,
+            "note": "天空挡板向地图中心点移动的比例",
+            "key": 6
+        },
+        {
+            "order": 8,
+            "name": "viewportClipfactorLevel0",
+            "note": "默认远处裁剪系数",
+            "value": 1000,
+            "key": 7
+        },
+        {
+            "order": 9,
+            "name": "viewportClipfactorLevel1",
+            "value": 1500,
+            "note": "标注远处裁剪系数",
+            "key": 8
+        },
+        {
+            "order": 10,
+            "name": "viewportClipfactorLevel2",
+            "value": 1600,
+            "note": "建筑物远处裁剪系数",
+            "key": 9
+        },
+        {
+            "order": 11,
+            "name": "simple3dExpendRoadNameLevel",
+            "value": 18,
+            "note": "简易三维道路名称展开层级，和样式匹配",
+            "key": 10
+        },
+        {
+            "order": 12,
+            "name": "autoAdaptMapScale",
+            "value": 1,
+            "note": "自适应比例尺",
+            "key": 11
+        },
+        {
+            "order": 13,
+            "name": "lowmemorymode",
+            "value": 0,
+            "note": "低显存模式",
+            "key": 12
+        },
+        {
+            "order": 14,
+            "name": "totalstyle",
+            "value": 1,
+            "note": "全量样式开关:0关闭,1开启",
+            "key": 13
+        },
+        {
+            "order": 15,
+            "name": "CFG_PLATFORM_MAP_EFFECT_VERSION",
+            "value": 5,
+            "note": "MAP_EFFECT_UNITY3D",
+            "key": 14
+        },
+        {
+            "order": 16,
+            "name": "simple3dShowLevel",
+            "value": 17,
+            "note": "简易三维显示比例尺16级=100米",
+            "key": 15
+        },
+        {
+            "order": 17,
+            "name": "lableFadeOute",
+            "value": 1,
+            "note": "标注淡出",
+            "key": 16
+        }
+    ],
+    "CONFIG_TYPE_POIHALFLEVEL": [
+        {
+            "index": 0,
+            "mode": 0,
+            "state": 0,
+            "time": 0,
+            "showhalflabel": 1,
+            "key": 0
+        },
+        {
+            "index": 1,
+            "mode": 1,
+            "state": 0,
+            "time": 0,
+            "showhalflabel": 1,
+            "key": 1
+        },
+        {
+            "index": 2,
+            "mode": 2,
+            "state": 0,
+            "time": 0,
+            "showhalflabel": 1,
+            "key": 2
+        },
+        {
+            "index": 3,
+            "mode": 0,
+            "state": 10,
+            "time": 0,
+            "showhalflabel": 1,
+            "key": 3
+        }
+    ],
+    "CONFIG_TYPE_GRID": [
+        {
+            "order": 1,
+            "name": "naviAngle",
+            "value": 1,
+            "key": 0
+        },
+        {
+            "order": 2,
+            "name": "notScreenSortedArraySize",
+            "value": 489,
+            "key": 1
+        },
+        {
+            "order": 3,
+            "name": "sortedArrayMaxSize",
+            "value": 441,
+            "key": 2
+        },
+        {
+            "order": 4,
+            "name": "gridDescriptionSize",
+            "value": 169,
+            "key": 3
+        }
+    ],
+    "CONFIG_TYPE_DPI": [
+        {
+            "order": 1,
+            "name": "SCALE_LEVEL_2000KM",
+            "value": 12897480,
+            "key": 0
+        },
+        {
+            "order": 2,
+            "name": "SCALE_LEVEL_1500KM",
+            "value": 9673110,
+            "key": 1
+        },
+        {
+            "order": 3,
+            "name": "SCALE_LEVEL_1000KM",
+            "value": 6448740,
+            "key": 2
+        },
+        {
+            "order": 4,
+            "name": "SCALE_LEVEL_500KM",
+            "value": 3224370,
+            "key": 3
+        },
+        {
+            "order": 5,
+            "name": "SCALE_LEVEL_200KM",
+            "value": 1612180,
+            "key": 4
+        },
+        {
+            "order": 6,
+            "name": "SCALE_LEVEL_100KM",
+            "value": 806090,
+            "key": 5
+        },
+        {
+            "order": 7,
+            "name": "SCALE_LEVEL_50KM",
+            "value": 403040,
+            "key": 6
+        },
+        {
+            "order": 8,
+            "name": "SCALE_LEVEL_30KM",
+            "value": 201520,
+            "key": 7
+        },
+        {
+            "order": 9,
+            "name": "SCALE_LEVEL_20KM",
+            "value": 100760,
+            "key": 8
+        },
+        {
+            "order": 10,
+            "name": "SCALE_LEVEL_10KM",
+            "value": 50380,
+            "key": 9
+        },
+        {
+            "order": 11,
+            "name": "SCALE_LEVEL_5KM",
+            "value": 25190,
+            "key": 10
+        },
+        {
+            "order": 12,
+            "name": "SCALE_LEVEL_2KM",
+            "value": 12590,
+            "key": 11
+        },
+        {
+            "order": 13,
+            "name": "SCALE_LEVEL_1KM",
+            "value": 6290,
+            "key": 12
+        },
+        {
+            "order": 14,
+            "name": "SCALE_LEVEL_500M",
+            "value": 3000,
+            "key": 13
+        },
+        {
+            "order": 15,
+            "name": "SCALE_LEVEL_200M",
+            "value": 1500,
+            "key": 14
+        },
+        {
+            "order": 16,
+            "name": "SCALE_LEVEL_100M",
+            "value": 760,
+            "key": 15
+        },
+        {
+            "order": 17,
+            "name": "SCALE_LEVEL_50M",
+            "value": 360,
+            "key": 16
+        },
+        {
+            "order": 18,
+            "name": "SCALE_LEVEL_25M",
+            "value": 200,
+            "key": 17
+        },
+        {
+            "order": 19,
+            "name": "SCALE_LEVEL_10M",
+            "value": 100,
+            "key": 18
+        },
+        {
+            "order": 20,
+            "name": "SCALE_LEVEL_5M",
+            "value": 50,
+            "key": 19
+        }
+    ],
+    "CONFIG_TYPE_DEBUG": [
+        {
+            "order": 8,
+            "name": "CFG_DEBUG_DMAP",
+            "value": 1
+        }
+    ],
+    "CONFIG_TYPE_DEM":[
+        {
+            "key":0,
+            "Level":3,
+            "BaseNormalScale":0.5,
+            "NormalScale":1,
+            "ElevationScale":1,
+            "LatitudeHideNormalLow":55,
+            "LatitudeHideNormalHigh":60
+        },
+        {
+            "key":1,
+            "Level":4,
+            "BaseNormalScale":0.5,
+            "NormalScale":1,
+            "ElevationScale":1,
+            "LatitudeHideNormalLow":55,
+            "LatitudeHideNormalHigh":60
+        },
+        {
+            "key":2,
+            "Level":5,
+            "BaseNormalScale":1,
+            "NormalScale":1,
+            "ElevationScale":1,
+            "LatitudeHideNormalLow":55,
+            "LatitudeHideNormalHigh":60
+        },
+        {
+            "key":3,
+            "Level":6,
+            "BaseNormalScale":1.5,
+            "NormalScale":1,
+            "ElevationScale":1,
+            "LatitudeHideNormalLow":55,
+            "LatitudeHideNormalHigh":60
+        },
+        {
+            "key":4,
+            "Level":7,
+            "BaseNormalScale":2,
+            "NormalScale":1,
+            "ElevationScale":1,
+            "LatitudeHideNormalLow":55,
+            "LatitudeHideNormalHigh":60
+        },
+        {
+            "key":5,
+            "Level":8,
+            "BaseNormalScale":4,
+            "NormalScale":1,
+            "ElevationScale":1,
+            "LatitudeHideNormalLow":55,
+            "LatitudeHideNormalHigh":60
+        },
+        {
+            "key":6,
+            "Level":9,
+            "BaseNormalScale":5,
+            "NormalScale":1,
+            "ElevationScale":1,
+            "LatitudeHideNormalLow":55,
+            "LatitudeHideNormalHigh":60
+        }
+    ]
+}

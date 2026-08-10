@@ -1,0 +1,17 @@
+{
+	"id":	1002,
+	"layer_priority":	{
+		"draw_priority":	60,
+		"sub_priority":	2500
+	},
+	"layer_scale":	{
+		"min_scale":	1,
+		"max_scale":	22
+	},
+	"layer_filter":	{
+		"enable":	0,
+		"type":	1
+	},
+	"enable_click":	0,
+	"item":	"PolygonLayerItem"
+}

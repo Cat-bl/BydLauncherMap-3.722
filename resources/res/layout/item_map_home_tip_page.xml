@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_all_service_toll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:designHeight="600"
+    app:designWidth="1024">
+    <com.autonavi.skin.view.SkinImageView
+        android:id="@+id/item_iv_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</com.autonavi.skin.view.SkinConstraintLayout>

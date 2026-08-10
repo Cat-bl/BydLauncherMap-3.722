@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/cl_custom_cruise_traffic_ar_lane" android:layout_width="fill_parent" android:layout_height="fill_parent" app:designHeight="600" app:designWidth="1024"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.autonavi.skin.view.SkinImageView android:id="@id/siv_stightoff7" android:layout_width="@dimen/auto_dimen2_44" android:layout_height="@dimen/auto_dimen2_58" />
+    <com.autonavi.skin.view.SkinImageView android:id="@id/siv_stighton2" android:layout_width="@dimen/auto_dimen2_44" android:layout_height="@dimen/auto_dimen2_58" />
+    <com.autonavi.skin.view.SkinImageView android:id="@id/siv_stighton" android:layout_width="@dimen/auto_dimen2_44" android:layout_height="@dimen/auto_dimen2_58" />
+    <com.autonavi.skin.view.SkinImageView android:id="@id/siv_stightoff5" android:layout_width="@dimen/auto_dimen2_44" android:layout_height="@dimen/auto_dimen2_58" />
+    <com.autonavi.skin.view.SkinImageView android:id="@id/siv_stightoff8" android:layout_width="@dimen/auto_dimen2_44" android:layout_height="@dimen/auto_dimen2_58" />
+    <com.autonavi.skin.view.SkinImageView android:id="@id/siv_stightoff6" android:layout_width="@dimen/auto_dimen2_44" android:layout_height="@dimen/auto_dimen2_58" />
+    <com.autonavi.skin.view.SkinImageView android:id="@id/siv_stightoff2" android:layout_width="@dimen/auto_dimen2_44" android:layout_height="@dimen/auto_dimen2_58" />
+    <com.autonavi.skin.view.SkinImageView android:id="@id/siv_stightoff1" android:layout_width="@dimen/auto_dimen2_44" android:layout_height="@dimen/auto_dimen2_58" />
+    <com.autonavi.skin.view.SkinImageView android:id="@id/siv_divide7" android:layout_width="@dimen/auto_dimen2_2" android:layout_height="@dimen/auto_dimen2_54" />
+</merge>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.auto.common.view.NoScrollGridView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:id="@+id/gv_search_result_child_station_gridview"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/auto_dimen2_10"
+    android:layout_marginBottom="@dimen/auto_dimen2_10"
+    android:listSelector="@android:color/transparent"
+    android:cacheColorHint="@color/auto_ui_000000_00"
+    android:horizontalSpacing="@dimen/auto_dimen2_8"
+    android:verticalSpacing="@dimen/auto_dimen2_8"
+    android:numColumns="2"/>

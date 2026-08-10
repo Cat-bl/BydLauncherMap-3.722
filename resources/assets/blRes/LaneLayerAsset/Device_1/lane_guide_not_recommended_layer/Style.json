@@ -1,0 +1,90 @@
+{
+    "layer_item_info": {
+        "point_lane_guide_warning_left_up": {
+            "index": 0,
+            "name_cn": "左飘",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "poi_marker_id": "lane_guide_warning_left_up.xml",
+                    "poi_marker_info": "marker_info_lane_guide_warning_left"
+                }
+            }
+        },
+        "point_lane_guide_warning_right_up": {
+            "index": 0,
+            "name_cn": "右飘",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "poi_marker_id": "lane_guide_warning_right_up.xml",
+                    "poi_marker_info": "marker_info_lane_guide_warning_right"
+                }
+            }
+        }
+    },
+    "marker_info": {
+        "marker_info_lane_guide_warning_left": {
+            "anchor": 13,
+            "day_style": {
+                "color": [
+                    {
+                        "name": "#99000000"
+                    },
+                    {
+                        "limit_text": "#FF720E"
+                    }
+                ]
+            },
+            "image_style": {
+                "image": {
+                    "left_inward": "global_image_autonavi_lane_icon_left_inward_day_night",
+                    "right_inward": "global_image_autonavi_lane_icon_right_inward_day_night"
+                }
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "name": "#99000000"
+                    },
+                    {
+                        "limit_text": "#F2821B"
+                    }
+                ]
+            },
+            "x_offset": 16,
+            "y_offset": 26
+        },
+        "marker_info_lane_guide_warning_right": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "name": "#99000000"
+                    },
+                    {
+                        "limit_text": "#FF720E"
+                    }
+                ]
+            },
+            "image_style": {
+                "image": {
+                    "left_inward": "global_image_autonavi_lane_icon_left_inward_day_night",
+                    "right_inward": "global_image_autonavi_lane_icon_right_inward_day_night"
+                }
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "name": "#99000000"
+                    },
+                    {
+                        "limit_text": "#F2821B"
+                    }
+                ]
+            },
+            "x_offset": 16,
+            "y_offset": 26
+        }
+    }
+}

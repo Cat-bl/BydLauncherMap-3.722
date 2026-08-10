@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:id="@+id/cl_auto_search_more_child_image_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:designHeight="610"
+    app:designWidth="1024"
+    style="@style/SysBtnMediumSecondary">
+    <com.autonavi.skin.view.SkinImageView
+        android:id="@+id/siv_bathroom"
+        android:layout_width="@dimen/auto_dimen2_24"
+        android:layout_height="@dimen/auto_dimen2_24"
+        android:layout_marginTop="@dimen/sys_padding_l"
+        android:src="@drawable/global_image_icon_gas_station"/>
+    <com.autonavi.skin.view.SkinTextView
+        android:textSize="@dimen/auto_font_size_16"
+        android:textColor="@color/sys_inverseColor_default"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/stv_text_bathroom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/auto_dimen2_24"
+        android:layout_marginTop="@dimen/auto_dimen2_2"
+        android:layout_marginBottom="@dimen/auto_dimen2_10"
+        android:text="@string/search_category_text_bathroom"
+        android:singleLine="true"
+        app:textColor4Night="@color/sys_color_default"
+        app:textColor4Skin="@color/sys_inverseColor_default"/>
+</com.autonavi.skin.view.SkinLinearLayout>

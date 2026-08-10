@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="32.0dip" android:width="32.0dip" android:viewportWidth="32.0" android:viewportHeight="32.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="#ffd8d8d8" android:pathData="M0,0h32v32h-32z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillAlpha="0.0" android:fillType="evenOdd" />
+    <path android:fillColor="#ffc1c6d1" android:pathData="M16,16m-12,0a12,12 0,1 1,24 0a12,12 0,1 1,-24 0" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="@drawable/$icon_common_route_selected_night__0" android:pathData="M22.09,8.733L22.522,10.686C20.474,11.139 19.056,12.482 19.014,15.098L19.013,15.27L18.998,25.429L17.283,25.429L17.283,15.243C17.283,11.695 18.962,9.493 21.93,8.771L22.09,8.733Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+    <path android:fillColor="#e6000000" android:pathData="M14.023,8.24L14.078,8.256C14.175,8.302 14.217,8.418 14.171,8.516L12.953,11.094C16.546,12.294 19,15.666 19,19.493L19,25.429L17.286,25.429L17.286,19.493C17.286,16.58 15.522,13.994 12.888,12.899L13.246,15.095C13.256,15.152 13.239,15.211 13.201,15.254C13.13,15.336 13.007,15.344 12.925,15.273L8.255,11.204C8.234,11.186 8.218,11.164 8.206,11.139C8.16,11.042 8.203,10.926 8.3,10.88L13.912,8.256C13.964,8.231 14.025,8.231 14.078,8.256Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+</vector>

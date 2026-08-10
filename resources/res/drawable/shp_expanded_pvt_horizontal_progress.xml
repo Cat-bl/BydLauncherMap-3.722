@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="@dimen/sys_expanded_border_radius_xs"/>
+            <size android:height="@dimen/byd_expanded_pvt_progressBar_horizontal_minHT"/>
+            <solid android:color="?attr/bydPvtProgressBarBgColor"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="@dimen/sys_expanded_border_radius_xs"/>
+                <size android:height="@dimen/byd_expanded_pvt_progressBar_horizontal_minHT"/>
+                <solid android:color="@android:color/transparent"/>
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/sys_expanded_border_radius_xs"/>
+                <size android:height="@dimen/byd_expanded_pvt_progressBar_horizontal_minHT"/>
+                <solid android:color="?attr/bydPvtProgressBarColor"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

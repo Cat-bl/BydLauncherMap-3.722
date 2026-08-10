@@ -1,0 +1,16 @@
+<div id="guide_camera_bicyclelane_left" style="display:flex;flex-direction:row;justify-content:center;align-items:center;width:auto;height:auto;">
+  <div id="bg_div" style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;width:auto;height:103px;background-image:global_image_guide_camera_bubble_red_right_day_night;">
+    <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-right:1px;margin-left:1px;width:60px;height:60px;">
+      <image id="camera_type_image" style="margin-right:1px;margin-left:1px;width:60px;height:60px;position:absolute;" src="global_image_guide_camera_bubble_speed_day_night" />
+      <label id="speed_text2" style="font-size:34px;color:#000000;font-family:SDK_Font-Bold;" lines="1">80</label>
+      <label id="speed_text3" style="font-size:29px;color:#000000;font-family:SDK_Font-Bold;" lines="1">120</label>
+    </div>
+    <div style="display:flex;flex-direction:column;justify-content:center;align-items:flex-start;margin-right:16px;margin-left:3px;">
+      <label id="distance_text_hint" style="font-size:24px;color:#b3ff0000;font-family:SDK_Font-Medium;" lines="1">多人被拍</label>
+      <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-top:-8px;">
+        <label id="distance_text_penalty" style="font-size:24px;color:#e6000000;font-family:SDK_Font-Bold;" lines="1">346</label>
+        <label id="distance_text_unit" style="margin-left:2px;font-size:20px;color:#e6000000;font-family:SDK_Font-Medium;" lines="1">米</label>
+      </div>
+    </div>
+  </div>
+</div>

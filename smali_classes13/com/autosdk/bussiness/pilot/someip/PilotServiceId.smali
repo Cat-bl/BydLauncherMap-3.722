@@ -1,0 +1,116 @@
+.class public Lcom/autosdk/bussiness/pilot/someip/PilotServiceId;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final CLIENT_MATE_SERVICE:Ljava/util/HashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashMap<",
+            "Ljava/lang/Long;",
+            "Ljava/lang/Long;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final HUD_NAVI_INFO_SERVICE_EVENT_HUD_MAPPATH_INFO_EG_ID:J = 0x4010a00018002L
+
+.field public static final HUD_NAVI_INFO_SERVICE_EVENT_HUD_NAVIGATIONMAP_ID:J = 0x4010a00018003L
+
+.field public static final HUD_NAVI_INFO_SERVICE_EVENT_HUD_ROAD_INFO_EG_ID:J = 0x4010a00018001L
+
+.field public static final NAVIGATION_PATH_MATCH_STATUS_SERVICE_EVENT_NAVIGATION_PATH_MATCH_STATUS_NOTIFY_ID:J = 0x4002c002c8001L
+
+.field public static final NAVIGATION_PATH_MATCH_STATUS_SERVICE_EVENT_NAVI_PATH_USER_SELECT_STS_CONFIRM_NOTIFY_ID:J = 0x4002c002c8002L
+
+.field public static final NAVIGATION_SD_LINK2_SERVICE_EVENT_NAVIGATION_HD_LINK2_NOTIFY_ID:J = 0x4002b002b8001L
+
+.field public static final NAVIGATION_SD_LINK2_SERVICE_EVENT_NAVI_SD_ROUTE_NOTIFY_ID:J = 0x4002b002b8002L
+
+.field public static final NAVIGATION_STATUS_LINK_INFO_SERVICE_EVENT_ADASISV2_NOTIFY_ID:J = 0x4000700078002L
+
+.field public static final NAVIGATION_STATUS_LINK_INFO_SERVICE_EVENT_ADV_AUTO_FUN_INFO_NOTIFY_ID:J = 0x4000700078004L
+
+.field public static final NAVIGATION_STATUS_LINK_INFO_SERVICE_EVENT_GENERNAL_NAVIGATION_NOTIFY_ID:J = 0x4000700078006L
+
+.field public static final NAVIGATION_STATUS_LINK_INFO_SERVICE_EVENT_NAVIGATION_DATA_INFO_NOTIFIY_ID:J = 0x4000700078005L
+
+.field public static final NAVIGATION_STATUS_LINK_INFO_SERVICE_EVENT_NAVIGATION_STATUS_LINK_INFO_NOTIFY_ID:J = 0x4000700078001L
+
+.field public static final NAVIGATION_STATUS_LINK_INFO_SERVICE_EVENT_TRAFFIC_INFO_NOTIFY_ID:J = 0x4000700078003L
+
+.field public static final NAVI_PATH_USER_SELECT_STS_SERVICE_EVENT_NAVI_PATH_USER_SELECT_STS_NOTIFY_ID:J = 0x4002d002d8001L
+
+.field public static final OBSTACLE_LANE_LINE_INFO_SERVICE_EVENT_LANE_LINE_DATA_NOTIFY_ID:J = 0x4000c000c8002L
+
+.field public static final OBSTACLE_LANE_LINE_INFO_SERVICE_EVENT_OBSTACLE_INFO_NOTIFY_ID:J = 0x4000c000c8001L
+
+.field public static final PILOT_STATUS_ALARM_INFO_SERVICE_EVENT_CHANGE_LANE_DATA_NOTIFY_ID:J = 0x4000d000d8001L
+
+.field public static final PILOT_STATUS_ALARM_INFO_SERVICE_EVENT_DRIVING_JOURNEY_DATA_NOTIFY_ID:J = 0x4000d000d8007L
+
+.field public static final PILOT_STATUS_ALARM_INFO_SERVICE_EVENT_NEW_BROADCAST_INFO_NOTIFY_ID:J = 0x4000d000d8005L
+
+.field public static final PILOT_STATUS_ALARM_INFO_SERVICE_EVENT_PILOT_ALARM_AND_NOTICE_INFO_NOTIFY_ID:J = 0x4000d000d8003L
+
+.field public static final PILOT_STATUS_ALARM_INFO_SERVICE_EVENT_PILOT_STATUS_NOTIFY_ID:J = 0x4000d000d8002L
+
+.field public static final PILOT_STATUS_ALARM_INFO_SERVICE_REQ_ODD_REGION_CODE_ID:J = 0x2000d000d0002L
+
+.field public static final PILOT_STATUS_ALARM_INFO_SERVICE_REQ_SWITCH_NOTIFY_ID:J = 0x2000d000d0001L
+
+.field public static final PLANNING_LINE_INFO_SERVICE_EVENT_PLANNING_LINE_INFO_NOTIFY_ID:J = 0x4000e000e8001L
+
+.field public static final SD_MAP_INFORM_SERVICE_EVENT_AHEAD_INTERSECTIONS_LANES_INFO_NOTIFY_ID:J = 0x482028202800eL
+
+.field public static final SD_MAP_INFORM_SERVICE_EVENT_INTERSECTION_NOTIFY_ID:J = 0x4820282028006L
+
+.field public static final SD_MAP_INFORM_SERVICE_EVENT_MIX_FORK_INFO_LIST_NOTIFY_ID:J = 0x482028202800dL
+
+.field public static final SD_MAP_INFORM_SERVICE_EVENT_NAVI_ACTION_AND_CAMERA_NOTIFY_ID:J = 0x482028202800bL
+
+.field public static final SD_MAP_INFORM_SERVICE_EVENT_NEXT_INTERSECTION_LANES_INFO_NOTIFY_ID:J = 0x482028202800cL
+
+.field public static final SD_MAP_INFORM_SERVICE_EVENT_REGIONAL_AND_WEATHER_NOTIFY_ID:J = 0x4820282028009L
+
+.field public static final SD_MAP_INFORM_SERVICE_EVENT_ROAD_FACILITIES_NOTIFY_ID:J = 0x4820282028005L
+
+.field public static final SD_MAP_INFORM_SERVICE_EVENT_SD_TRAFFIC_LIGHT_NOTIFY_ID:J = 0x4820282028001L
+
+.field public static final SD_MAP_INFORM_SERVICE_EVENT_SD_TRAFFI_INCIDENT_NOTIFY_ID:J = 0x4820282028002L
+
+.field public static final SD_MAP_INFORM_SERVICE_EVENT_SD_VEHICLE_LOCATION_NOTIFY_ID:J = 0x4820282028008L
+
+.field public static final SD_MAP_INFORM_SERVICE_EVENT_SERVICE_AREA_AND_TOLL_STATION_NOTIFY_ID:J = 0x4820282028003L
+
+.field public static final SD_MAP_INFORM_SERVICE_EVENT_SPEED_INTERSECTION_INFORMATION_NOTIFY_ID:J = 0x482028202800aL
+
+.field public static final SD_MAP_INFORM_SERVICE_EVENT_TIDAL_LANE_NOTIFY_ID:J = 0x4820282028007L
+
+.field public static final SD_MAP_INFORM_SERVICE_EVENT_TUNNEL_NOTIFY_ID:J = 0x4820282028004L
+
+.field public static final VEHICLE_POSITION_INFO_SERVICE_EVENT_VEHICLE_POSITION_INFO_NOTIFY_ID:J = 0x4000a000a8001L
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lcom/autosdk/bussiness/pilot/someip/PilotServiceId$1;
+
+    invoke-direct {v0}, Lcom/autosdk/bussiness/pilot/someip/PilotServiceId$1;-><init>()V
+
+    sput-object v0, Lcom/autosdk/bussiness/pilot/someip/PilotServiceId;->CLIENT_MATE_SERVICE:Ljava/util/HashMap;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

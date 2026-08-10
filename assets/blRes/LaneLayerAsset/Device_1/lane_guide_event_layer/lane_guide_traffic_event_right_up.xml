@@ -1,0 +1,7 @@
+<div id="" style="display:flex;flex-direction:row;justify-content:flex-end;align-items:center;width:auto;height:auto;background-image:global_image_autonavi_lane_bubble_container_traffic_event_right_up_day_night;">
+  <image id="event_image" style="width:40px;height:40px;" src="global_image_autonavi_lane_icon_traffic_event_accident_day_night"/>
+  <div style="display:flex;flex-direction:column;justify-content:center;align-items:flex-start;margin-left:6px;margin-top:4px;margin-bottom:4px;">
+    <label id="event_name" style="color:#e6000000;font-size:24px;font-family:SDK_Font-Medium;" text="右侧2车道施工"/>
+    <label id="event_length" style="color:#99000000;font-size:20px;font-family:SDK_Font-Medium;margin-top:-2px;" text="长度300米"/>
+  </div>
+</div>

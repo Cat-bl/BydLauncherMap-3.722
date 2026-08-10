@@ -1,0 +1,12 @@
+<div id="" style="display:flex;flex-direction:row;align-items:center;width:auto;height:auto;">
+  <div id="" style="display:flex;flex-direction:row;justify-content:center;width:auto;height:auto;">
+    <div id="" style="display:flex;flex-direction:row;justify-content:center;width:63px;height:76px;">
+      <image id="bg" style="width:63px;height:76px;position:absolute;" src="global_image_autonavi_lane_bubble_location_mark_midd_plus_day_night"/> 
+      <label id="icon_cn" style="color:#ccffffff;font-size:38px;font-family:SDK_Font-Bold;margin-top:4px;" text="经"/>
+      <label id="icon_num" style="color:#ccffffff;font-size:41px;font-family:SDK_Font-Bold;margin-top:3px;" text="1"/>
+      <label id="icon_en" style="color:#ccffffff;font-size:24px;font-family:SDK_Font-Bold;margin-top:15px;" text="VIA"/>
+    </div>
+    <image id="click_delete_focus" style="width:18px;height:18px;margin-top:-16px;margin-left:-11px;" src="global_image_autonavi_lane_bubble_location_mark_close_day_night"/>
+  </div>
+</div>
+

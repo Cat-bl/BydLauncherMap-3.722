@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/widget_map_bg" android:background="@drawable/byd_widget_card_medium_bg_denza" android:layout_width="@dimen/auto_dimen2_328" android:layout_height="@dimen/auto_dimen2_174"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/widget_map_bg_foreground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/widget_map_icon" android:layout_width="@dimen/auto_dimen2_48" android:layout_height="@dimen/auto_dimen2_48" android:layout_marginTop="@dimen/auto_dimen2_8" android:src="@drawable/byd_map_widget_icon_map_2_denza" android:layout_marginStart="@dimen/auto_dimen2_8" />
+    <TextView android:textSize="@dimen/auto_dimen2_16" android:textColor="@color/byd_map_widget_title_color_denza" android:gravity="center_vertical" android:id="@id/navi_name" android:layout_width="wrap_content" android:layout_height="@dimen/auto_dimen2_56" android:layout_marginTop="@dimen/auto_dimen2_3" android:text="@string/app_widget_name" android:layout_marginStart="@dimen/auto_dimen2_3" android:layout_toEndOf="@id/widget_map_icon" />
+    <LinearLayout android:orientation="vertical" android:id="@id/along_way_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/auto_dimen2_15" android:minWidth="@dimen/auto_dimen2_92" android:layout_below="@id/navi_name" android:layout_marginStart="@dimen/auto_dimen2_60">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/widget_map_along_way_icon" android:layout_width="@dimen/auto_dimen2_48" android:layout_height="@dimen/auto_dimen2_48" android:src="@drawable/byd_map_widget_icon_way_along" />
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/auto_font_size_14" android:textColor="@color/byd_map_widget_text_color_denza" android:gravity="center_horizontal" android:id="@id/widget_map_along_way_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/along_search" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/charge_station_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/auto_dimen2_15" android:minWidth="@dimen/auto_dimen2_92" android:layout_below="@id/navi_name" android:layout_centerVertical="true" android:layout_marginStart="@dimen/auto_dimen2_25" android:layout_toEndOf="@id/along_way_layout">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/widget_map_charge_station_icon" android:layout_width="@dimen/auto_dimen2_48" android:layout_height="@dimen/auto_dimen2_48" android:src="@drawable/byd_map_widget_icon_charge_station" />
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/auto_font_size_14" android:textColor="@color/byd_map_widget_text_color_denza" android:gravity="center_horizontal" android:id="@id/widget_map_charge_station_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/charge_station" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

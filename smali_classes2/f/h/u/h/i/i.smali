@@ -1,0 +1,34 @@
+.class public final synthetic Lf/h/u/h/i/i;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Lcom/autosdk/user/presenter/team/TeamInviteMemberPresenter;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/autosdk/user/presenter/team/TeamInviteMemberPresenter;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lf/h/u/h/i/i;->a:Lcom/autosdk/user/presenter/team/TeamInviteMemberPresenter;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 1
+
+    iget-object v0, p0, Lf/h/u/h/i/i;->a:Lcom/autosdk/user/presenter/team/TeamInviteMemberPresenter;
+
+    invoke-virtual {v0}, Lcom/autosdk/user/presenter/team/TeamInviteMemberPresenter;->H0()V
+
+    return-void
+.end method

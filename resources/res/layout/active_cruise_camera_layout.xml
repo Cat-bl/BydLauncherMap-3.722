@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/active_camera_info_img"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/auto_font_size_16"
+        android:textStyle="bold"
+        android:textColor="@color/auto_ui_111111"
+        android:gravity="center"
+        android:id="@+id/active_camera_speed"
+        android:background="@drawable/global_image_guide_camera_speed_big_right_day"
+        android:paddingLeft="@dimen/auto_dimen2_2"
+        android:paddingRight="@dimen/auto_dimen2_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/auto_dimen2_0"
+        android:minHeight="@dimen/auto_dimen2_0"
+        android:letterSpacing="-0.05"/>
+</LinearLayout>

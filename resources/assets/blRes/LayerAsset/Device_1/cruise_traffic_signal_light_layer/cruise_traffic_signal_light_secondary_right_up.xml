@@ -1,0 +1,7 @@
+<div id="background_image" style="display:flex;flex-direction:row;justify-content:center;align-items:center;width:auto;height:auto;background-image:global_image_cruise_traffic_signal_light_bg_right_day_night;">
+  <div id="div_text_mid" style="display:flex;flex-direction:row;justify-content:center;align-items:center;height:58px;margin-left:2px;margin-top:2px;">
+   <image id="image_light_circle" style="width:58px;height:58px;" src="global_image_cruise_traffic_signal_light_bg_circle_green" />
+    <image id="image_light_ellipse" style="width:77px;height:58px;" src="global_image_cruise_traffic_signal_light_bg_ellipse_green" />
+    <label id="text_seconds_mid" style="margin-top:1px;font-size:28px;color:#e6ffffff;position:absolute;font-family:SDK_Font-Bold;" lines="1">137</label>
+  </div>
+</div>

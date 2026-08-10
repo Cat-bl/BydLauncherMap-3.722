@@ -1,0 +1,33 @@
+{
+    "marker_info": {
+        "marker_info_route_energy_keypoint": {
+            "anchor": 5,
+            "night_style": {
+                "color": [
+                    {
+                        "energy_text": "#e8ffffff"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "energy_text": "#ffffffff"
+                    }
+                ]
+            }
+        }
+    },
+    "layer_item_info": {
+        "point_route_energy_keypoint": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "route_energy_key_point.xml",
+                    "poi_marker_info": "marker_info_route_energy_keypoint"
+                }
+            },
+            "index": 0,
+            "name_cn": "电量关键点"
+        }
+    }
+}

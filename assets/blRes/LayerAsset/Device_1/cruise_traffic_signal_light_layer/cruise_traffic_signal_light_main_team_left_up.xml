@@ -1,0 +1,34 @@
+<div id="background_image" style="display:flex;flex-direction:row;justify-content:center;align-items:center;width:auto;height:auto;background-image:global_image_traffic_signal_light_bubble_left_day_night;">
+  <div style="display:flex;flex-direction:row;justify-content:center;align-items:flex-start;margin-top:9px;margin-right:9px;margin-bottom:4px;margin-left:9px;">
+    <div id="div_light_group_left" style="display:flex;flex-direction:column;justify-content:center;align-items:center;margin-right:1px;margin-left:1px;">
+      <div id="div_image_light_left" style="display:flex;flex-direction:row;width:54px;height:54px;">
+        <image id="image_light_body_left" style="width:54px;height:54px;position:absolute;" src="global_image_traffic_signal_light_green_circle_day_night" />
+        <image id="image_light_direction_left" style="width:54px;height:54px;position:absolute;" src="global_image_traffic_signal_light_green_arrow_go_straight_day_night" />
+      </div>
+      <div id="div_text_left" style="display:flex;flex-direction:column;justify-content:center;align-items:center;margin-top:-6px;min-height:42px;">
+        <label id="text_seconds_left" style="font-size:29px;color:#e6ffffff;font-family:SDK_Font-Bold;" lines="1">7</label>
+        <label id="text_notice_left" style="font-size:24px;color:#e6ffffff;font-family:SDK_Font-Bold;" lines="1">通行</label>
+      </div>
+    </div>
+    <div id="div_light_group_mid" style="display:flex;flex-direction:column;justify-content:center;align-items:center;margin-right:1px;margin-left:1px;">
+      <div id="div_image_light_mid" style="display:flex;flex-direction:row;width:54px;height:54px;">
+        <image id="image_light_body_mid" style="width:54px;height:54px;position:absolute;" src="global_image_traffic_signal_light_green_circle_day_night" />
+        <image id="image_light_direction_mid" style="width:54px;height:54px;position:absolute;" src="global_image_traffic_signal_light_green_arrow_go_straight_day_night" />
+      </div>
+      <div id="div_text_mid" style="display:flex;flex-direction:column;justify-content:center;align-items:center;margin-top:-6px;min-height:42px;">
+        <label id="text_seconds_mid" style="font-size:29px;color:#e6ffffff;font-family:SDK_Font-Bold;" lines="1">7</label>
+        <label id="text_notice_mid" style="font-size:24px;color:#e6ffffff;font-family:SDK_Font-Bold;" lines="1">通行</label>
+      </div>
+    </div>
+    <div id="div_light_group_right" style="display:flex;flex-direction:column;justify-content:center;align-items:center;margin-right:1px;margin-left:1px;">
+      <div id="div_image_light_right" style="display:flex;flex-direction:row;width:54px;height:54px;">
+        <image id="image_light_body_right" style="width:54px;height:54px;position:absolute;" src="global_image_traffic_signal_light_green_circle_day_night" />
+        <image id="image_light_direction_right" style="width:54px;height:54px;position:absolute;" src="global_image_traffic_signal_light_green_arrow_go_straight_day_night" />
+      </div>
+      <div id="div_text_right" style="display:flex;flex-direction:column;justify-content:center;align-items:center;margin-top:-6px;min-height:42px;">
+        <label id="text_seconds_right" style="font-size:29px;color:#e6ffffff;font-family:SDK_Font-Bold;" lines="1">7</label>
+        <label id="text_notice_right" style="font-size:24px;color:#e6ffffff;font-family:SDK_Font-Bold;" lines="1">通行</label>
+      </div>
+    </div>
+  </div>
+</div>

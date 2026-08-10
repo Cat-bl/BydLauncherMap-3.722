@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@drawable/toast_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.autonavi.skin.view.SkinTextView
+        android:textSize="@dimen/auto_font_size_18"
+        android:textStyle="bold"
+        android:textColor="@color/auto_color_loading_text_day"
+        android:gravity="center_vertical"
+        android:id="@+id/custom_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/auto_dimen2_56"
+        android:maxWidth="@dimen/auto_dimen2_612"
+        android:minWidth="@dimen/auto_dimen2_86"
+        android:minHeight="@dimen/auto_dimen2_56"
+        android:drawablePadding="@dimen/auto_dimen2_8"
+        android:drawableStart="@drawable/image_bluetooth_toast"
+        android:paddingStart="@dimen/auto_dimen2_43"
+        android:paddingEnd="@dimen/auto_dimen2_43"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textColor4Night="@color/custom_text_night_color_85"
+        app:textColor4Skin="@color/auto_color_loading_text_day"/>
+</com.autonavi.skin.view.SkinConstraintLayout>

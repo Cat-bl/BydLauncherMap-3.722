@@ -1,0 +1,8 @@
+{
+    "id": 4002,
+    "layer_priority": {
+        "draw_priority": 140,
+        "sub_priority": 11000
+    },
+    "item": "VectorCrossLayerItem"
+}

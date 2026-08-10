@@ -1,0 +1,21 @@
+{
+    "marker_info": {},
+    "layer_item_info": {
+        "point_eagle_via": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_hawkeye_via"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "鹰眼图路线的途经充电站"
+        }
+    }
+}

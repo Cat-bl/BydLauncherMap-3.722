@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#00ffffff" />
+        </shape>
+    </item>
+    <item android:top="@dimen/auto_dimen2_1" android:bottom="@dimen/auto_dimen2_1" android:end="@dimen/auto_dimen2_1">
+        <bitmap android:src="@drawable/icon_poi_box_charge_fast_night_bg" />
+    </item>
+</layer-list>

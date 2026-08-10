@@ -1,0 +1,55 @@
+<div style="display:flex;flex-direction:column;justify-content:center;align-items:center;">
+  <div id="click_hotspot" style="display:flex;flex-direction:row;align-items:flex-start;">
+    <div id="big_bubble_div" style="width:66px;height:78px;">
+      <image id="big_bubble_image" style="width:66px;height:78px;position:absolute;is_main:Y;" src="global_image_charge_bubble_midd_big_day_night" />
+      <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;width:66px;height:66px;">
+        <label id="big_bubble_chinese_text" style="margin-bottom:2px;font-size:40px;color:#ffffff;font-family:SDK_Font-Medium;" lines="1">经</label>
+        <label id="big_bubble_number_text" style="font-size:40px;color:#ffffff;font-family:SDK_Font-Medium;" lines="1">3</label>
+      </div>
+    </div>
+    <image id="close_icon" style="margin-top:-8px;margin-left:-6px;width:24px;height:24px;" src="global_image_charge_bubble_delete_day_night" />
+  </div>
+  <div id="charge_info_div" style="display:flex;flex-direction:column;justify-content:center;align-items:center;margin-top:10px;">
+    <label id="name_text" style="font-size:22px;color:#171717;text-align:center;font-family:SDK_Font-Medium;line-clamp:2;text-stroke:2px #E6ffffff;max-width:180px;" lines="1">定州服务区充电站</label>
+    <div id="charge_info_distance_div" style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-top:-4px;">
+      <label id="charge_info_distance_text" style="font-size:18px;color:#e6000000;font-family:SDK_Font-Medium;text-stroke:2px #E6ffffff;" lines="1">间隔</label>
+      <label id="charge_info_distance_number_text" style="margin-right:2px;margin-left:2px;font-size:18px;color:#e6000000;font-family:SDK_Font-Medium;text-stroke:2px #E6ffffff;" lines="1">123</label>
+      <label id="charge_info_distance_unit_text" style="font-size:18px;color:#e6000000;font-family:SDK_Font-Medium;text-stroke:2px #E6ffffff;" lines="1">公里</label>
+      <label id="charge_info_distance_point_text" style="margin-right:2px;margin-left:2px;font-size:18px;color:#e6000000;font-family:SDK_Font-Medium;text-stroke:2px #E6ffffff;" lines="1">·</label>
+      <label id="charge_info_time_chong_text" style="font-size:18px;color:#e6000000;font-family:SDK_Font-Medium;text-stroke:2px #E6ffffff;" lines="1">充</label>
+      <label id="charge_info_time_hour_number_text" style="margin-right:2px;margin-left:2px;font-size:18px;color:#e6000000;font-family:SDK_Font-Medium;text-stroke:2px #E6ffffff;" lines="1">12</label>
+      <label id="charge_info_time_hour_unit_text" style="font-size:18px;color:#e6000000;font-family:SDK_Font-Medium;text-stroke:2px #E6ffffff;" lines="1">小时</label>
+      <label id="charge_info_time_minute_number_text" style="margin-right:2px;margin-left:2px;font-size:18px;color:#e6000000;font-family:SDK_Font-Medium;text-stroke:2px #E6ffffff;" lines="1">12</label>
+      <label id="charge_info_time_minute_unit_text" style="font-size:18px;color:#e6000000;font-family:SDK_Font-Medium;text-stroke:2px #E6ffffff;" lines="1">分钟</label>
+    </div>
+    <div id="charge_label_div" style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-top:-2px;">
+      <div id="charge_label_super_div" style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;width:auto;height:26px;background-image:global_image_charge_search_along_faster1_day_night;">
+        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;width:24px;height:24px;"><label  id="charge_super_text" style="font-size:14px;color:#ffffff;font-family:SDK_Font-Medium;" lines="1">超</label></div>
+        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-right:5px;margin-left:2px;">
+          <label id="charge_label_super_idle_text" style="font-size:14px;color:#ff5c2d;font-family:SDK_Font-Medium;" lines="1">空</label>
+          <label id="charge_label_super_number_text" style="margin-left:3px;font-size:14px;color:#ff5c2d;font-family:SDK_Font-Medium;" lines="1">10</label>
+          <label id="charge_label_super_unit_text" style="font-size:14px;color:#80fe5c2f;font-family:SDK_Font-Medium;" lines="1">/</label>
+          <label id="charge_label_super_full_text" style="font-size:14px;color:#80fe5c2f;font-family:SDK_Font-Medium;" lines="1">20</label>
+        </div>
+      </div>
+      <div id="charge_label_fast_div" style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;width:auto;height:26px;background-image:global_image_charge_search_along_fast1_day_night;">
+        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;width:24px;height:24px;"><label id="charge_fast_text" style="font-size:14px;color:#ffffff;font-family:SDK_Font-Medium;" lines="1">快</label></div>
+        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-right:5px;margin-left:2px;">
+          <label id="charge_label_fast_idle_text" style="font-size:14px;color:#399461;font-family:SDK_Font-Medium;" lines="1">空</label>
+          <label id="charge_label_fast_number_text" style="margin-left:3px;font-size:14px;color:#399461;font-family:SDK_Font-Medium;" lines="1">10</label>
+          <label id="charge_label_fast_unit_text" style="font-size:14px;color:#80399461;font-family:SDK_Font-Medium;" lines="1">/</label>
+          <label id="charge_label_fast_full_text" style="font-size:14px;color:#80399461;font-family:SDK_Font-Medium;" lines="1">20</label>
+        </div>
+      </div>
+      <div id="charge_label_slow_div" style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;width:auto;height:26px;background-image:global_image_charge_search_along_slow1_day_night;">
+        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;width:24px;height:24px;"><label id="charge_slow_text" style="font-size:14px;color:#ffffff;font-family:SDK_Font-Medium;" lines="1">慢</label></div>
+        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-right:5px;margin-left:2px;">
+          <label id="charge_label_slow_idle_text" style="font-size:14px;color:#5a6270;font-family:SDK_Font-Medium;" lines="1">空</label>
+          <label id="charge_label_slow_number_text" style="margin-left:3px;font-size:14px;color:#5a6270;font-family:SDK_Font-Medium;" lines="1">10</label>
+          <label id="charge_label_slow_unit_text" style="font-size:14px;color:#805a6270;font-family:SDK_Font-Medium;" lines="1">/</label>
+          <label id="charge_label_slow_full_text" style="font-size:14px;color:#805a6270;font-family:SDK_Font-Medium;" lines="1">20</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

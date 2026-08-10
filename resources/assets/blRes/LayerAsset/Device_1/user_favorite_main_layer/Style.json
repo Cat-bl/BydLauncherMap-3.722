@@ -1,0 +1,194 @@
+{
+    "marker_info": {
+        "marker_info_user_favorite_home": {
+            "anchor": 12,
+            "x_offset": 15,
+            "y_offset": 0,
+            "day_style": {
+                "color": [
+                    {
+                        "name_text": "#E36B06"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #e6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "name_text": "#DEA022"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #e6000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_user_favorite_home_focus": {
+            "anchor": 10,
+            "x_offset": 74,
+            "y_offset": 74,
+            "day_style": {
+                "color": [
+                    {
+                        "name_text": "#171717"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #e6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "name_text": "#e6FFFFFF"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #e6000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_user_favorite_company": {
+            "anchor": 12,
+            "x_offset": 15,
+            "y_offset": 0,
+            "day_style": {
+                "color": [
+                    {
+                        "name_text": "#1A66FF"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #e6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "name_text": "#3D73D9"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #e6000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_user_favorite_company_focus": {
+            "anchor": 10,
+            "x_offset": 74,
+            "y_offset": 74,
+            "day_style": {
+                "color": [
+                    {
+                        "name_text": "#171717"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #e6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "name_text": "#e6FFFFFF"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #e6000000"
+                    }
+                ]
+            }
+        }
+    },
+    "layer_item_info": {
+        "user_favorite": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_favorite_layer_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "收藏点"
+        },
+        "user_favorite_home": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "user_favorite_default.xml",
+                    "poi_marker_info": "marker_info_user_favorite_home",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "icon_image": "global_image_auto_ic_home2_layer_day_night"
+                            }
+                        ]
+                    }
+                },
+                "focus_style": {
+                    "poi_marker_id": "user_favorite_default_focus.xml",
+                    "poi_marker_info": "marker_info_user_favorite_home_focus",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "icon_image": "global_image_auto_ic_home2_layer_big_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 1,
+            "name_cn": "家"
+        },
+        "user_favorite_company": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "user_favorite_default.xml",
+                    "poi_marker_info": "marker_info_user_favorite_company",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "icon_image": "global_image_auto_ic_company2_layer_day_night"
+                            }
+                        ]
+                    }
+                },
+                "focus_style": {
+                    "poi_marker_id": "user_favorite_default_focus.xml",
+                    "poi_marker_info": "marker_info_user_favorite_company_focus",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "icon_image": "global_image_auto_ic_company2_layer_big_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 2,
+            "name_cn": "公司"
+        }
+    }
+}

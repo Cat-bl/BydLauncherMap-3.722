@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:topLeftRadius="@dimen/custom_label_parking_orange_ectangle_corner_top_left_normal_night" android:bottomLeftRadius="@dimen/custom_label_parking_orange_ectangle_corner_bottom_left_normal_night" />
+            <solid android:color="@color/custom_label_parking_orange_ectangle_solid_normal_night" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:topLeftRadius="@dimen/custom_label_parking_orange_ectangle_corner_top_left_normal_night" android:bottomLeftRadius="@dimen/custom_label_parking_orange_ectangle_corner_bottom_left_normal_night" />
+            <solid android:color="@color/custom_label_parking_orange_ectangle_solid1_normal_night" />
+        </shape>
+    </item>
+</layer-list>

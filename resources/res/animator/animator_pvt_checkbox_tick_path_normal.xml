@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@anim/byd_pvt_interpolator_linear"
+        android:duration="@integer/byd_pvt_duration_extra_short_2"
+        android:valueFrom="@color/sys_white_900"
+        android:valueTo="@color/byd_pvt_black_900_0"
+        android:valueType="colorType"
+        android:propertyName="strokeColor"/>
+    <objectAnimator
+        android:interpolator="@anim/byd_pvt_interpolator_linear"
+        android:duration="@integer/byd_pvt_duration_extra_short_2"
+        android:valueFrom="1"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="fillAlpha"/>
+</set>

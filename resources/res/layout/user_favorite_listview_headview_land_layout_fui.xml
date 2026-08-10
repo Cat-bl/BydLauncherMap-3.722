@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/favorite_listView_itemView"
+    android:paddingBottom="@dimen/auto_dimen2_15"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/auto_dimen2_89"
+    app:designHeight="720"
+    app:designWidth="1280">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/user_favorite_listview_headview_fui"/>
+</com.autonavi.skin.view.SkinLinearLayout>

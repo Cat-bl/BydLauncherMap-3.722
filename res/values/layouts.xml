@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="layout" name="dialog_common_1_3">@null</item>
+    <item type="layout" name="layout_card_navi_voice_along_search_1_3">@null</item>
+    <item type="layout" name="layout_card_navi_voice_search_1_3_2560x1600">@null</item>
+    <item type="layout" name="map_parking_widget_denza">@null</item>
+    <item type="layout" name="user_login_2_3">@null</item>
+    <item type="layout" name="user_login_phone_verificationcode_2_3">@null</item>
+    <item type="layout" name="user_register_2_3">@null</item>
+</resources>

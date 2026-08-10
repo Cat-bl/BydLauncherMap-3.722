@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.autonavi.skin.view.SkinTextView android:textSize="@dimen/auto_font_size_16" android:textColor="@color/auto_color_86909B" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/set_my_trips_list_foot_txt" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:textColor4Night="@color/auto_color_86909B" app:textColor4Skin="@color/auto_color_86909B" />
+</com.autonavi.skin.view.SkinConstraintLayout>

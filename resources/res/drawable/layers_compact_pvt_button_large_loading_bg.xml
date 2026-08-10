@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/sys_compact_border_radius_s"/>
+            <solid android:color="?attr/bydPvtContainer2BgColor"/>
+        </shape>
+    </item>
+    <item android:gravity="center">
+        <animated-rotate
+            android:drawable="@drawable/img_byd_compact_pvt_loading_small"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:repeatCount="infinite"/>
+    </item>
+</layer-list>

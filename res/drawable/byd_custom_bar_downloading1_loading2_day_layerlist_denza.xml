@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background" android:drawable="@drawable/byd_custom_bar_downloading1_loading2_day_layerlist_bg_denza" />
+    <item android:id="@android:id/progress">
+        <clip android:gravity="left" android:drawable="@drawable/byd_custom_bar_downloading1_loading2_day_layerlist_bg_use_denza" />
+    </item>
+</layer-list>

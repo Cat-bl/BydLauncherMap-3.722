@@ -1,0 +1,4 @@
+<div id="content_div" style="display:flex;flex-direction:column;justify-content:center;align-items:center;">
+  <image id="click_type_image" style="width:66px;height:78px;is_main:Y;" src="global_image_navi_along_search_charge_big_icon2_day_night" />
+  <label id="name_text" style="margin-top:4px;font-size:22px;color:#171717;text-align:center;font-family:SDK_Font-Bold;text-overflow:ellipsis;text-stroke:2px #E6ffffff;line-clamp:2;max-width:180px;line-spacing:-4;" lines="2">国家电网汽车充电站</label>
+</div>

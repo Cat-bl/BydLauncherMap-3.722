@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinTextView android:textSize="@dimen/auto_font_size_18" android:textColor="@color/byd_search_text_day" android:gravity="left" android:id="@id/stv_text_use" android:paddingTop="@dimen/auto_dimen2_30" android:paddingBottom="@dimen/auto_dimen2_17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_category_text_use" android:lineSpacingExtra="@dimen/auto_dimen2_4" android:paddingStart="@dimen/auto_dimen2_24" android:paddingEnd="@dimen/auto_dimen2_24" app:textColor4Night="@color/byd_search_text_night" app:textColor4Skin="@color/byd_search_text_day"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,30 @@
+<div id="click_hotspot" style="display:flex;is_main:Y;flex-direction:column;justify-content:flex-start;padding-bottom:50px;padding-left:32px;width:auto;height:auto;">
+  <div id="parent_text_div" style=""><label id="parent_text" style="font-size:22px;color:#e6000000;font-family:SDK_Font-Bold;max-width:180px;line-clamp:3;text-stroke:2px #E6ffffff;" lines="2">颐和园新建宫门6号停车场</label></div>
+  <div id="end_area_eta" style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;">
+    <div id="end_area_eta_new" style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;background-image:global_image_route_info_day_night;">
+      <label id="byd_eta_text" style="justify-content:flex-start;color:#ffffff;font-size:18px;max-height:21px;margin-top:3px;margin-left:6px;margin-right:6px;margin-bottom:6px;" lines="1">预计14:12到</label>
+    </div>
+    <div id="end_area_energy" style="display:flex;flex-direction:row;justify-content:center;align-items:center;">
+      <label id="energy_text_desc" style="margin-right:2px;margin-left:2px;font-size:18px;color:#e6000000;font-family:SDK_Font-Medium;line-clamp:2;text-stroke:2px #E6ffffff;" lines="1">·</label>
+      <label id="energy_text" style="font-size:18px;color:#e6000000;font-family:SDK_Font-Medium;line-clamp:2;text-stroke:2px #E6ffffff;" lines="1">56%</label>
+      <label id="energy_text_low" style="font-size:18px;color:#fb564a;font-family:SDK_Font-Medium;line-clamp:2;text-stroke:2px #E6ffffff;" lines="1">19%</label>
+      <image id="energy_zero" style="margin-left:2px;width:32px;height:24px;" src="global_image_odd_power_icon_zero_day_night" />
+      <image id="energy_low_warning" style="margin-left:2px;width:32px;height:24px;" src="global_image_odd_power_icon_low_warning_day_night" />
+      <image id="energy_low" style="margin-left:2px;width:32px;height:24px;" src="global_image_odd_power_icon_low_day_night" />
+      <image id="energy_mid" style="margin-left:2px;width:32px;height:24px;" src="global_image_odd_power_icon_mid_day_night" />
+      <image id="energy_high" style="margin-left:2px;width:32px;height:24px;" src="global_image_odd_power_icon_high_day_night" />
+      <image id="energy_full" style="margin-left:2px;width:32px;height:24px;" src="global_image_odd_power_icon_full_day_night" />
+    </div>
+    <div id="weather_div" style="display:flex;flex-direction:row;justify-content:center;align-items:center;">
+      <image id="weather_sunny" style="margin-left:4px;width:24px;height:24px;" src="global_image_navi_icon_weather_sunny_volvo_day_night" />
+      <image id="weather_rain" style="margin-left:4px;width:24px;height:24px;" src="global_image_navi_icon_weather_rain_volvo_day_night" />
+      <image id="weather_snow" style="margin-left:4px;width:24px;height:24px;" src="global_image_navi_icon_weather_snow_volvo_day_night" />
+      <image id="weather_cloudy" style="margin-left:4px;width:24px;height:24px;" src="global_image_navi_icon_weather_cloudy_volvo_day_night" />
+    </div>
+  </div>
+  <div id="end_area_odd" style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;">
+    <image id="odd_wheel_icon" style="width:24px;height:24px;" src="global_image_odd_wheel_icon1_day_night" />
+    <label id="odd_text" style="margin-left:2px;font-size:18px;color:#e6000000;font-family:SDK_Font-Medium;line-clamp:2;text-stroke:2px #E6ffffff;" lines="1">10个 80米</label>
+  </div>
+</div>
+

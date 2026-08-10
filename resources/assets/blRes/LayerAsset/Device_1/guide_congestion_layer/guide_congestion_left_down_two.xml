@@ -1,0 +1,17 @@
+<div style="">
+  <div id="div_direction_bg" style="display:flex;flex-direction:column;margin-right:6px;margin-left:6px;width:auto;height:auto;background-image:global_image_autonavi_roadstatu_normal_2_left_down_day_night;">
+    <div id="div_detail" style="display:flex;flex-direction:row;justify-content:space-between;align-items:center;margin-right:12px;margin-left:12px;min-height:40px;">
+      <label id="congestion_detail" style="font-size:20px;color:#f52b20;font-family:SDK_Font-Medium;text-overflow:ellipsis;line-clamp:2;max-width:120px;line-spacing:-4;" lines="2">右前方 事故拥堵加剧</label>
+      <image id="thumbnail_image" style="margin-left:10px;width:32px;height:32px;border-radius:6px;" src="global_image_event_accident_thumbnail_day_night" />
+    </div>
+    <div id="div_detail2" style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;margin-right:12px;margin-left:12px;min-height:40px;">
+      <label id="congestion_detail2" style="font-size:20px;color:#f52b20;font-family:SDK_Font-Medium;" lines="1">左侧 事故 拥堵加剧</label>
+    </div>
+    <div id="div_time_dist" style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;margin-top:1px;margin-right:12px;margin-left:12px;height:40px;">
+      <label id="congestion_distance" style="margin-right:8px;font-size:24px;color:#ffffff;font-family:SDK_Font-Medium;" lines="1">28公里</label>
+      <label id="congestion_time" style="font-size:24px;color:#ffffff;font-family:SDK_Font-Medium;" lines="1">28分</label>
+    </div>
+  </div>
+  <image id="chat_message" style="width:48px;height:52px;position:absolute;top:0px;" src="global_image_message_day_night" />
+</div>
+

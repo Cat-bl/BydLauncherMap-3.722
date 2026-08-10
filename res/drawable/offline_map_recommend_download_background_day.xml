@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@color/color_offline_favorite_tip_background_day" android:endColor="@color/color_offline_favorite_tip_background_day" android:angle="0.0" android:type="radial" android:gradientRadius="100.0%" />
+    <corners android:radius="@dimen/auto_dimen2_4" />
+    <stroke android:width="@dimen/auto_dimen2_1" android:color="@color/color_offline_favorite_tip_background_day" />
+</shape>

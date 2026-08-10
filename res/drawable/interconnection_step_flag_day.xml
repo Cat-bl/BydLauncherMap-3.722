@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval" android:useLevel="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/byd_text_FFD5D7DB" />
+    <size android:height="@dimen/setting_interconnect_step_icon_size" android:width="@dimen/setting_interconnect_step_icon_size" />
+</shape>

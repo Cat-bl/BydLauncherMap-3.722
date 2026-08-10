@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/cl_autorouteplansetting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    app:designHeight="600"
+    app:designWidth="1024">
+
+    <com.autonavi.view.custom.CustomMongoliaView
+        android:id="@id/cm_mongolia"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@id/v_expend_area"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 无 DNP 分支沿用相同紧凑尺寸，2/3 继续复用该分屏布局。 -->
+    <com.autonavi.auto.common.view.AutoGuideLine
+        android:id="@id/gl_line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="384dp" />
+
+    <com.autonavi.skin.view.SkinImageView
+        android:id="@id/cc_autorouteplansetting"
+        android:layout_width="384dp"
+        android:layout_height="372dp"
+        android:background="@drawable/autorouteplansetting_card_bg_1_3_day"
+        app:background4Night="@drawable/autorouteplansetting_card_bg_1_3_night"
+        app:background4Skin="@drawable/autorouteplansetting_card_bg_1_3_day"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.autonavi.skin.view.SkinConstraintLayout
+        android:id="@id/cl_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toStartOf="@id/cc_autorouteplansetting"
+        app:layout_constraintTop_toTopOf="@id/cc_autorouteplansetting">
+
+        <com.autonavi.view.custom.CustomListPressedView
+            android:id="@id/clp_back"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.autonavi.skin.view.SkinImageView
+            android:id="@id/siv_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/icon_common_back_day"
+            app:background4Night="@drawable/icon_common_back_night"
+            app:background4Skin="@drawable/icon_common_back_day"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </com.autonavi.skin.view.SkinConstraintLayout>
+
+    <com.autonavi.skin.view.SkinTextView
+        android:id="@id/stv_prefer_setting_title_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/autorouteplansetting_prefer_setting_title_content"
+        android:textColor="@color/text_450_11_textcolor_day_selector"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/cl_back"
+        app:layout_constraintEnd_toEndOf="@id/cc_autorouteplansetting"
+        app:layout_constraintStart_toStartOf="@id/cc_autorouteplansetting"
+        app:layout_constraintTop_toTopOf="@id/cl_back"
+        app:textColor4Night="@color/text_450_11_textcolor_night_selector"
+        app:textColor4Skin="@color/text_450_11_textcolor_day_selector" />
+
+    <com.autonavi.skin.view.SkinConstraintLayout
+        android:id="@id/cl_buttons"
+        android:layout_width="0dp"
+        android:layout_height="228dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@id/cc_autorouteplansetting"
+        app:layout_constraintStart_toStartOf="@id/cc_autorouteplansetting"
+        app:layout_constraintTop_toBottomOf="@id/cl_back">
+
+        <com.autonavi.skin.view.SkinConstraintLayout
+            android:id="@id/sll_recommend_road"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.autonavi.view.custom.CustomBtnCheckbox1View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.autonavi.skin.view.SkinImageView
+                android:id="@id/siv_recommend_road"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:background="@drawable/autorouteplansetting_recommend_road_day_bg_selector"
+                android:visibility="gone"
+                app:background4Night="@drawable/autorouteplansetting_recommend_road_night_bg_selector"
+                app:background4Skin="@drawable/autorouteplansetting_recommend_road_day_bg_selector"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.autonavi.skin.view.SkinTextView
+                android:id="@id/stv_text_recommend_road"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:translationY="-5dp"
+                android:maxLines="1"
+                android:text="@string/autorouteplansetting_text_recommend"
+                android:textColor="@color/route_perference_title_day"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:textColor4Night="@color/route_perference_title_night"
+                app:textColor4Skin="@color/route_perference_title_day" />
+        </com.autonavi.skin.view.SkinConstraintLayout>
+
+        <com.autonavi.skin.view.SkinConstraintLayout
+            android:id="@id/sll_avoid_jan"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toStartOf="@id/sll_avoid_charge"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sll_recommend_road">
+
+            <com.autonavi.view.custom.CustomBtnCheckbox1View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.autonavi.skin.view.SkinTextView
+                android:id="@id/stv_text_avoid_jan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:translationY="-5dp"
+                android:maxLines="1"
+                android:text="@string/autorouteplansetting_text_avoid_jan"
+                android:textColor="@color/route_perference_title_day"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:textColor4Night="@color/route_perference_title_night"
+                app:textColor4Skin="@color/route_perference_title_day" />
+        </com.autonavi.skin.view.SkinConstraintLayout>
+
+        <com.autonavi.skin.view.SkinConstraintLayout
+            android:id="@id/sll_avoid_charge"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@id/sll_avoid_jan"
+            app:layout_constraintTop_toTopOf="@id/sll_avoid_jan">
+
+            <com.autonavi.view.custom.CustomBtnCheckbox1View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.autonavi.skin.view.SkinTextView
+                android:id="@id/stv_text_avoid_charge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:translationY="-5dp"
+                android:maxLines="1"
+                android:text="@string/autorouteplansetting_text_avoid_charge"
+                android:textColor="@color/route_perference_title_day"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:textColor4Night="@color/route_perference_title_night"
+                app:textColor4Skin="@color/route_perference_title_day" />
+        </com.autonavi.skin.view.SkinConstraintLayout>
+
+        <com.autonavi.skin.view.SkinConstraintLayout
+            android:id="@id/sll_avoid_highway"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toStartOf="@id/sll_using_highway"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sll_avoid_jan">
+
+            <com.autonavi.view.custom.CustomBtnCheckbox1View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.autonavi.skin.view.SkinTextView
+                android:id="@id/stv_text_avoid_highway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:translationY="-5dp"
+                android:maxLines="1"
+                android:text="@string/autorouteplansetting_text_avoid_highway"
+                android:textColor="@color/route_perference_title_day"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:textColor4Night="@color/route_perference_title_night"
+                app:textColor4Skin="@color/route_perference_title_day" />
+        </com.autonavi.skin.view.SkinConstraintLayout>
+
+        <com.autonavi.skin.view.SkinConstraintLayout
+            android:id="@id/sll_using_highway"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@id/sll_avoid_highway"
+            app:layout_constraintTop_toTopOf="@id/sll_avoid_highway">
+
+            <com.autonavi.view.custom.CustomBtnCheckbox1View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.autonavi.skin.view.SkinTextView
+                android:id="@id/stv_text_using_highway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:translationY="-5dp"
+                android:maxLines="1"
+                android:text="@string/autorouteplansetting_text_using_highway"
+                android:textColor="@color/route_perference_title_day"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:textColor4Night="@color/route_perference_title_night"
+                app:textColor4Skin="@color/route_perference_title_day" />
+        </com.autonavi.skin.view.SkinConstraintLayout>
+
+        <com.autonavi.skin.view.SkinConstraintLayout
+            android:id="@id/sll_big_road"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toStartOf="@id/sll_fastest"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sll_avoid_highway">
+
+            <com.autonavi.view.custom.CustomBtnCheckbox1View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.autonavi.skin.view.SkinTextView
+                android:id="@id/stv_text_big_road"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:translationY="-5dp"
+                android:maxLines="1"
+                android:text="@string/autorouteplansetting_text_big_road"
+                android:textColor="@color/route_perference_title_day"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:textColor4Night="@color/route_perference_title_night"
+                app:textColor4Skin="@color/route_perference_title_day" />
+        </com.autonavi.skin.view.SkinConstraintLayout>
+
+        <com.autonavi.skin.view.SkinConstraintLayout
+            android:id="@id/sll_fastest"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@id/sll_big_road"
+            app:layout_constraintTop_toTopOf="@id/sll_big_road">
+
+            <com.autonavi.view.custom.CustomBtnCheckbox1View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.autonavi.skin.view.SkinTextView
+                android:id="@id/stv_text_fastest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:translationY="-5dp"
+                android:maxLines="1"
+                android:text="@string/autorouteplansetting_text_fastest"
+                android:textColor="@color/route_perference_title_day"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:textColor4Night="@color/route_perference_title_night"
+                app:textColor4Skin="@color/route_perference_title_day" />
+        </com.autonavi.skin.view.SkinConstraintLayout>
+
+        <LinearLayout
+            android:id="@id/sll_using_polit"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+
+        <com.autonavi.skin.view.SkinTextView
+            android:id="@id/stv_text_using_polit"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:visibility="gone" />
+    </com.autonavi.skin.view.SkinConstraintLayout>
+</com.autonavi.skin.view.SkinConstraintLayout>

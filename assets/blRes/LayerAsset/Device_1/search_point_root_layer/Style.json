@@ -1,0 +1,770 @@
+{
+    "marker_info": {
+        "marker_info_search_parent_gas_discounts": {
+            "anchor": 5,
+            "day_style": {
+                "color": [
+                    {
+                        "name_text": "#171717"
+                    },
+                    {
+                        "id_discount": "#FFFFFF"
+                    },
+                    {
+                        "id_currency": "#FF6543"
+                    },
+                    {
+                        "id_price": "#FF6543"
+                    },
+                    {
+                        "id_unit": "#FF6543"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #e6ffffff"
+                    },
+                    {
+                        "id_currency": "2px #e6ffffff"
+                    },
+                    {
+                        "id_price": "2px #e6ffffff"
+                    },
+                    {
+                        "id_unit": "2px #e6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "name_text": "#C0C1C3"
+                    },
+                    {
+                        "id_discount": "#B3FFFFFF"
+                    },
+                    {
+                        "id_currency": "#DC6044"
+                    },
+                    {
+                        "id_price": "#DC6044"
+                    },
+                    {
+                        "id_unit": "#DC6044"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #cc000000"
+                    },
+                    {
+                        "id_currency": "2px #cc000000"
+                    },
+                    {
+                        "id_price": "2px #cc000000"
+                    },
+                    {
+                        "id_unit": "2px #cc000000"
+                    }
+                ]
+            },
+            "image_style": {
+                "brand_image": {
+                    "brand_sinopec": "global_image_navi_along_search_sinopec_station_icon2_day_night",
+                    "brand_petrochina": "global_image_navi_along_search_petrochina_station_icon2_day_night",
+                    "brand_shell": "global_image_navi_along_search_shell_station_icon2_day_night",
+                    "brand_default": "global_image_navi_along_search_gas_station_icon2_day_night",
+                    "type_default": "global_image_b_child_poi_hl2_day_night"
+                }
+            }
+        },
+        "marker_info_search_parent_focus": {
+            "anchor": 5,
+            "day_style": {
+                "color": [
+                    {
+                        "name_text": "#171717"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #e6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "name_text": "#C0C1C3"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #cc000000"
+                    }
+                ]
+            },
+            "image_style": {
+                "click_type_image": {
+                    "brand_sinopec": "global_image_navi_along_search_sinopec_station_big_icon2_day_night",
+                    "brand_petrochina": "global_image_navi_along_search_petrochina_station_big_icon2_day_night",
+                    "brand_shell": "global_image_navi_along_search_shell_station_big_icon2_day_night",
+                    "brand_default": "global_image_navi_along_search_gas_station_big_icon2_day_night",
+                    "type_car_wash": "global_image_navi_along_search_wash_big_icon2_day_night",
+                    "type_food": "global_image_navi_delicacy_big_icon2_day_night",
+                    "type_scenic": "global_image_navi_along_search_scenic_big_icon2_day_night",
+                    "type_charge": "global_image_navi_along_search_charge_big_icon2_day_night",
+                    "type_cinema": "global_image_navi_along_search_cinema_big_icon2_day_night",
+                    "type_hospital": "global_image_navi_along_search_hospital_big_icon2_day_night",
+                    "type_hotel": "global_image_navi_along_search_hotel_big_icon2_day_night",
+                    "type_ktv": "global_image_navi_along_search_ktv_big_icon2_day_night",
+                    "type_park": "global_image_navi_along_search_park_big_icon2_day_night",
+                    "type_school": "global_image_navi_along_search_school_big_icon2_day_night",
+                    "type_entertainment": "global_image_navi_along_search_shangchang_big_icon2_day_night",
+                    "type_shopping": "global_image_navi_along_search_shopping_big_icon2_day_night",
+                    "type_trainstation": "global_image_navi_along_search_trainstation_big_icon2_day_night",
+                    "type_toilet": "global_image_navi_along_search_wc_big_icon2_day_night",
+                    "type_carservice": "global_image_navi_along_search_carservice_big_icon2_day_night",
+                    "type_default": "global_image_bubble_child2_day_night"
+                }
+            }
+        },
+        "marker_info_search_parent_car_wash": {
+            "anchor": 5,
+            "day_style": {
+                "color": [
+                    {
+                        "name_text": "#171717"
+                    },
+                    {
+                        "id_currency": "#FF6543"
+                    },
+                    {
+                        "id_price": "#FF6543"
+                    },
+                    {
+                        "id_less": "#FF6543"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #e6ffffff"
+                    },
+                    {
+                        "id_currency": "2px #e6ffffff"
+                    },
+                    {
+                        "id_price": "2px #e6ffffff"
+                    },
+                    {
+                        "id_less": "2px #e6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "name_text": "#C0C1C3"
+                    },
+                    {
+                        "id_currency": "#DC6044"
+                    },
+                    {
+                        "id_price": "#DC6044"
+                    },
+                    {
+                        "id_less": "#DC6044"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #cc000000"
+                    },
+                    {
+                        "id_currency": "2px #cc000000"
+                    },
+                    {
+                        "id_price": "2px #cc000000"
+                    },
+                    {
+                        "id_less": "2px #cc000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_search_parent_charge_station": {
+            "anchor": 5,
+            "day_style": {
+                "color": [
+                    {
+                        "name_text": "#171717"
+                    },
+                    {
+                        "charging_type_text_superfast": "#FFFFFF"
+                    },
+                    {
+                        "charge_idle_text_superfast_title": "#FF5C2D"
+                    },
+                    {
+                        "charge_idle_text_superfast_number": "#FF5C2D"
+                    },
+                    {
+                        "charge_full_text_superfaster_title": "#80FE5C2E"
+                    },
+                    {
+                        "charge_full_text_superfaster_number": "#80FE5C2E"
+                    },
+                    {
+                        "charging_type_text_slow": "#FFFFFF"
+                    },
+                    {
+                        "charge_idle_text_slow_title": "#5A6270"
+                    },
+                    {
+                        "charge_idle_text_slow_number": "#5A6270"
+                    },
+                    {
+                        "charge_full_text_slower_title": "#805A6270"
+                    },
+                    {
+                        "charge_full_text_slower_number": "#805A6270"
+                    },
+                    {
+                        "charging_type_text_fast": "#FFFFFF"
+                    },
+                    {
+                        "charge_idle_text_fast_title": "#399461"
+                    },
+                    {
+                        "charge_idle_text_fast_number": "#399461"
+                    },
+                    {
+                        "charge_full_text_faster_title": "#80399461"
+                    },
+                    {
+                        "charge_full_text_faster_number": "#80399461"
+                    },
+                    {
+                        "id_currency": "#99000000"
+                    },
+                    {
+                        "id_price": "#99000000"
+                    },
+                    {
+                        "id_unit": "#99000000"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #e6ffffff"
+                    },
+                    {
+                        "id_currency": "2px #e6ffffff"
+                    },
+                    {
+                        "id_price": "2px #e6ffffff"
+                    },
+                    {
+                        "id_unit": "2px #e6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "name_text": "#C0C1C3"
+                    },
+                    {
+                        "charging_type_text_superfast": "#B3FFFFFF"
+                    },
+                    {
+                        "charge_idle_text_superfast_title": "#DB613E"
+                    },
+                    {
+                        "charge_idle_text_superfast_number": "#DB613E"
+                    },
+                    {
+                        "charge_full_text_superfaster_title": "#80DB613E"
+                    },
+                    {
+                        "charge_full_text_superfaster_number": "#80DB613E"
+                    },
+                    {
+                        "charging_type_text_slow": "#B3FFFFFF"
+                    },
+                    {
+                        "charge_idle_text_slow_title": "#5E6572"
+                    },
+                    {
+                        "charge_idle_text_slow_number": "#5E6572"
+                    },
+                    {
+                        "charge_full_text_slower_title": "#805E6572"
+                    },
+                    {
+                        "charge_full_text_slower_number": "#805E6572"
+                    },
+                    {
+                        "charging_type_text_fast": "#B3FFFFFF"
+                    },
+                    {
+                        "charge_idle_text_fast_title": "#1C9C71"
+                    },
+                    {
+                        "charge_idle_text_fast_number": "#1C9C71"
+                    },
+                    {
+                        "charge_full_text_faster_title": "#801C9C71"
+                    },
+                    {
+                        "charge_full_text_faster_number": "#801C9C71"
+                    },
+                    {
+                        "id_currency": "#94969B"
+                    },
+                    {
+                        "id_price": "#94969B"
+                    },
+                    {
+                        "id_unit": "#94969B"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #cc000000"
+                    },
+                    {
+                        "id_currency": "2px #cc000000"
+                    },
+                    {
+                        "id_price": "2px #cc000000"
+                    },
+                    {
+                        "id_unit": "2px #cc000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_search_parent_rank_common": {
+            "anchor": 5,
+            "day_style": {
+                "color": [
+                    {
+                        "name_text": "#171717"
+                    },
+                    {
+                        "score_text": "#FF6543"
+                    },
+                    {
+                        "rank_text": "#FF6543"
+                    },
+                    {
+                        "id_currency": "#99000000"
+                    },
+                    {
+                        "id_price": "#99000000"
+                    },
+                    {
+                        "id_unit_person": "#99000000"
+                    },
+                    {
+                        "id_unit_rise": "#99000000"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #e6ffffff"
+                    },
+                    {
+                        "score_text": "2px #e6ffffff"
+                    },
+                    {
+                        "rank_text": "2px #e6ffffff"
+                    },
+                    {
+                        "id_currency": "2px #e6ffffff"
+                    },
+                    {
+                        "id_price": "2px #e6ffffff"
+                    },
+                    {
+                        "id_unit_person": "2px #e6ffffff"
+                    },
+                    {
+                        "id_unit_rise": "2px #e6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "name_text": "#C0C1C3"
+                    },
+                    {
+                        "score_text": "#DC6044"
+                    },
+                    {
+                        "rank_text": "#DC6044"
+                    },
+                    {
+                        "id_currency": "#94969B"
+                    },
+                    {
+                        "id_price": "#94969B"
+                    },
+                    {
+                        "id_unit_person": "#94969B"
+                    },
+                    {
+                        "id_unit_rise": "#94969B"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #cc000000"
+                    },
+                    {
+                        "score_text": "2px #cc000000"
+                    },
+                    {
+                        "rank_text": "2px #cc000000"
+                    },
+                    {
+                        "id_currency": "2px #cc000000"
+                    },
+                    {
+                        "id_price": "2px #cc000000"
+                    },
+                    {
+                        "id_unit_person": "2px #cc000000"
+                    },
+                    {
+                        "id_unit_rise": "2px #cc000000"
+                    }
+                ]
+            },
+            "image_style": {
+                "click_type_image": {
+                    "type_food": "global_image_navi_delicacy_icon2_day_night",
+                    "type_scenic": "global_image_navi_along_search_scenic_icon2_day_night",
+                    "type_hotel": "global_image_navi_along_search_hotel_icon2_day_night"
+                }
+            }
+        },
+        "marker_info_search_parent_park": {
+            "anchor": 5,
+            "day_style": {
+                "color": [
+                    {
+                        "name_text": "#E6000000"
+                    },
+                    {
+                        "parking_label_idle_text": "#1A66FF"
+                    },
+                    {
+                        "parking_label_idle_number_text": "#1A66FF"
+                    },
+                    {
+                        "parking_label_idle_title_text": "#801A66FF"
+                    },
+                    {
+                        "parking_label_idle_number_all_text": "#801A66FF"
+                    },
+                    {
+                        "parking_label_enough_text": "#1A66FF"
+                    },
+                    {
+                        "parking_label_no_enough_text": "#F62020"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #e6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "name_text": "#C0C1C3"
+                    },
+                    {
+                        "parking_label_idle_text": "#2E7AFF"
+                    },
+                    {
+                        "parking_label_idle_number_text": "#2E7AFF"
+                    },
+                    {
+                        "parking_label_idle_title_text": "#802E7AFF"
+                    },
+                    {
+                        "parking_label_idle_number_all_text": "#802E7AFF"
+                    },
+                    {
+                        "parking_label_enough_text": "#2E7AFF"
+                    },
+                    {
+                        "parking_label_no_enough_text": "#E8584C"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #cc000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_search_parent_common": {
+            "anchor": 5,
+            "day_style": {
+                "color": [
+                    {
+                        "name_text": "#171717"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #e6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "name_text": "#C0C1C3"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #cc000000"
+                    }
+                ]
+            },
+            "image_style": {
+                "click_type_image": {
+                    "type_cinema": "global_image_navi_along_search_cinema_icon2_day_night",
+                    "type_hospital": "global_image_navi_along_search_hospital_icon2_day_night",
+                    "type_ktv": "global_image_navi_along_search_ktv_icon2_day_night",
+                    "type_school": "global_image_navi_along_search_school_icon2_day_night",
+                    "type_entertainment": "global_image_navi_along_search_shangchang_icon2_day_night",
+                    "type_shopping": "global_image_navi_along_search_shopping_icon2_day_night",
+                    "type_trainstation": "global_image_navi_along_search_trainstation_icon2_day_night",
+                    "type_toilet": "global_image_navi_along_search_wc_icon2_day_night",
+                    "type_carservice": "global_image_navi_along_search_carservice_icon2_day_night",
+                    "type_default": "global_image_bubble_child2_day_night"
+                }
+            }
+        },
+        "marker_info_search_parent_mini_point": {
+            "anchor": 5,
+            "image_style": {
+                "mini_point": {
+                    "brand_sinopec": "global_image_navi_along_search_gas_station_icon2_mini_point_day_night",
+                    "brand_petrochina": "global_image_navi_along_search_gas_station_icon2_mini_point_day_night",
+                    "brand_shell": "global_image_navi_along_search_gas_station_icon2_mini_point_day_night",
+                    "brand_default": "global_image_navi_along_search_gas_station_icon2_mini_point_day_night",
+                    "type_car_wash": "global_image_navi_along_search_wash_icon2_mini_point_day_night",
+                    "type_food": "global_image_navi_delicacy_icon2_mini_point_day_night",
+                    "type_scenic": "global_image_navi_along_search_scenic_icon2_mini_point_day_night",
+                    "type_charge": "global_image_navi_along_search_charge_icon2_mini_point_day_night",
+                    "type_cinema": "global_image_navi_along_search_purple_icon2_mini_point_day_night",
+                    "type_hospital": "global_image_navi_along_search_red_icon2_mini_point_day_night",
+                    "type_hotel": "global_image_navi_along_search_purple_icon2_mini_point_day_night",
+                    "type_ktv": "global_image_navi_along_search_purple_icon2_mini_point_day_night",
+                    "type_park": "global_image_navi_along_search_gas_station_icon2_mini_point_day_night",
+                    "type_school": "global_image_navi_along_search_gas_station_icon2_mini_point_day_night",
+                    "type_entertainment": "global_image_navi_along_search_purple_icon2_mini_point_day_night",
+                    "type_shopping": "global_image_navi_along_search_purple_icon2_mini_point_day_night",
+                    "type_trainstation": "global_image_navi_along_search_gas_station_icon2_mini_point_day_night",
+                    "type_toilet": "global_image_navi_along_search_wash_icon2_mini_point_day_night",
+                    "type_carservice": "global_image_navi_along_search_wash_icon2_mini_point_day_night",
+                    "type_default": "global_image_navi_along_search_gas_station_icon2_mini_point_day_night"
+                }
+            }
+        }
+    },
+    "layer_item_info": {
+        "point_search_parent_gas_discounts_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_parent_discount_gas_both_left.xml",
+                    "poi_marker_info": "marker_info_search_parent_gas_discounts"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_parent_focus.xml",
+                    "poi_marker_info": "marker_info_search_parent_focus"
+                }
+            },
+            "index": 0,
+            "name_cn": "加油站(优惠)(左飘)"
+        },
+        "point_search_parent_gas_discounts_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_parent_discount_gas_both_right.xml",
+                    "poi_marker_info": "marker_info_search_parent_gas_discounts"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_parent_focus.xml",
+                    "poi_marker_info": "marker_info_search_parent_focus"
+                }
+            },
+            "index": 1,
+            "name_cn": "加油站(优惠)(右飘)"
+        },
+        "point_search_parent_car_wash_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_parent_car_wash_left.xml",
+                    "poi_marker_info": "marker_info_search_parent_car_wash"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_parent_focus.xml",
+                    "poi_marker_info": "marker_info_search_parent_focus"
+                }
+            },
+            "index": 2,
+            "name_cn": "洗车(左飘)"
+        },
+        "point_search_parent_car_wash_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_parent_car_wash_right.xml",
+                    "poi_marker_info": "marker_info_search_parent_car_wash"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_parent_focus.xml",
+                    "poi_marker_info": "marker_info_search_parent_focus"
+                }
+            },
+            "index": 3,
+            "name_cn": "洗车(右飘)"
+        },
+        "point_search_parent_charge_station_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_parent_charge_station_left.xml",
+                    "poi_marker_info": "marker_info_search_parent_charge_station"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_parent_focus.xml",
+                    "poi_marker_info": "marker_info_search_parent_focus"
+                }
+            },
+            "index": 4,
+            "name_cn": "充电桩(左飘)"
+        },
+        "point_search_parent_charge_station_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_parent_charge_station_right.xml",
+                    "poi_marker_info": "marker_info_search_parent_charge_station"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_parent_focus.xml",
+                    "poi_marker_info": "marker_info_search_parent_focus"
+                }
+            },
+            "index": 5,
+            "name_cn": "充电桩(右飘)"
+        },
+        "point_search_parent_rank_common_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_parent_rank_common_left.xml",
+                    "poi_marker_info": "marker_info_search_parent_rank_common"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_parent_focus.xml",
+                    "poi_marker_info": "marker_info_search_parent_focus"
+                }
+            },
+            "index": 6,
+            "name_cn": "通用带评分信息(左飘)"
+        },
+        "point_search_parent_rank_common_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_parent_rank_common_right.xml",
+                    "poi_marker_info": "marker_info_search_parent_rank_common"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_parent_focus.xml",
+                    "poi_marker_info": "marker_info_search_parent_focus"
+                }
+            },
+            "index": 7,
+            "name_cn": "通用带评分信息（右飘)"
+        },
+        "point_search_parent_park_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_parent_park_left.xml",
+                    "poi_marker_info": "marker_info_search_parent_park"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_parent_focus.xml",
+                    "poi_marker_info": "marker_info_search_parent_focus"
+                }
+            },
+            "index": 8,
+            "name_cn": "停车场(左飘)"
+        },
+        "point_search_parent_park_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_parent_park_right.xml",
+                    "poi_marker_info": "marker_info_search_parent_park"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_parent_focus.xml",
+                    "poi_marker_info": "marker_info_search_parent_focus"
+                }
+            },
+            "index": 9,
+            "name_cn": "停车场（右飘)"
+        },
+        "point_search_parent_common_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_parent_common_left.xml",
+                    "poi_marker_info": "marker_info_search_parent_common"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_parent_focus.xml",
+                    "poi_marker_info": "marker_info_search_parent_focus"
+                }
+            },
+            "index": 10,
+            "name_cn": "常规(左飘)"
+        },
+        "point_search_parent_common_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_parent_common_right.xml",
+                    "poi_marker_info": "marker_info_search_parent_common"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_parent_focus.xml",
+                    "poi_marker_info": "marker_info_search_parent_focus"
+                }
+            },
+            "index": 11,
+            "name_cn": "常规（右飘)"
+        },
+        "point_search_parent_default_mini_point": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_parent_mini_point.xml",
+                    "poi_marker_info": "marker_info_search_parent_mini_point"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_parent_focus.xml",
+                    "poi_marker_info": "marker_info_search_parent_focus"
+                }
+            },
+            "index": 12,
+            "name_cn": "麻点"
+        }
+    }
+}

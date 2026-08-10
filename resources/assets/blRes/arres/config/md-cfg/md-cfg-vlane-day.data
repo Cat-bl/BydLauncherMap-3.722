@@ -1,0 +1,44 @@
+{
+	"models": [{
+		"key": "vlaneRPN",
+		"name": "md-vlaneRPN",
+		"inputNames": ["input.1"],
+		"outputNames": ["f1", "f2", "f3", "f4", "f5", "rpn_reg1", "rpn_reg2", "rpn_reg3", "rpn_reg4", "rpn_reg5", "rpn_cls1", "rpn_cls2", "rpn_cls3", "rpn_cls4", "rpn_cls5", "bottom_lane_result", "left_lane_result", "right_lane_result", "bottom_edge_result", "left_edge_result", "right_edge_result", "leftnum_acts", "rightnum_acts", "colwise_stopline_result", "road_cls_result"],
+		"mean": [123.675, 116.28, 103.53],
+		"invStd": [0.017124753831663668, 0.01750700280112045, 0.017429193899782137],
+		"tasks": ["VLModelTaskRPN", "VLModelTaskVLaneATT", "VAModelTaskVLaneATTNum", "VLModelTaskVlaneStopLine"],
+		"threadCount": 1,
+		"normalized": true,
+		"format": "RGB",
+		"framework": "mnn",
+		"modelSource": "caffe"
+	}, {
+		"key": "vlaneRCNN",
+		"name": "md-vlaneRCNN",
+		"inputNames": ["0"],
+		"outputNames": ["bbox_score", "cls_score"],
+		"tasks": ["VLModelTaskRCNN", "VAModelTaskLandmark"],
+		"threadCount": 1,
+		"normalized": false,
+		"format": "TENSOR",
+		"framework": "mnn"
+	}],
+	"model_threads": [{
+		"thread_name": "IDSThreadSSD",
+		"thread_fps": "1.0",
+		"models": ["vlaneRPN", "vlaneRCNN"]
+	}],
+	"posture": {
+		"calculators":[
+			"VAPoseCalculatorLocalImage",
+			"VAPoseCalculator6axis",
+			"VAPoseCalculatorVP",
+			"VAPoseCalculatorMHE",
+			"VAPoseCalculatorGNSS"
+		],
+		"integrator": "VAPoseIntegratorVLane"
+	},
+	"processors": [
+		"VACameraProcessor"
+	]
+}

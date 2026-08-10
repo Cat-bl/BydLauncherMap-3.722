@@ -1,0 +1,96 @@
+{
+    "marker_info": {
+        "marker_info_point_center_up": {
+            "anchor": 9,
+            "x_ratio": 0.5,
+            "y_ratio": 0.9
+        }
+    },
+    "layer_item_info": {
+        "point_gps_track_start": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_bubble_start_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "起点"
+        },
+        "point_gps_track_end": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_bubble_end_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 1,
+            "name_cn": "终点"
+        },
+        "point_gps_track_start_english": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_bubble_start_english_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 2,
+            "name_cn": "起点 英文"
+        },
+        "point_gps_track_end_english": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_bubble_end_english_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 3,
+            "name_cn": "终点 英文"
+        },
+        "point_gps_track_fastest": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_trace_bubble_fast_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 4,
+            "name_cn": "最快点"
+        }
+    }
+}

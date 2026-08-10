@@ -1,0 +1,44 @@
+{
+    "marker_info": {
+        "marker_info_little_camera": {
+            "anchor": 4,
+            "vector": 0
+        }
+    },
+    "layer_item_info": {
+        "point_little_camera": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_little_camera",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "autonavi_navi_camera_day"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "白天"
+        },
+        "point_little_camera_night": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_little_camera",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "autonavi_navi_camera_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 1,
+            "name_cn": "黑夜"
+        }
+    }
+}

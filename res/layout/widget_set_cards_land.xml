@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/auto_dimen2_56" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/auto_dimen2_40" android:layout_marginEnd="@dimen/auto_dimen2_40" app:designHeight="720" app:designWidth="1280"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.autonavi.skin.view.SkinRelativeLayout android:id="@id/widget_set_cards_phone_car_connect" style="@style/widget_set_card_layout_style">
+        <com.autonavi.skin.view.SkinImageView android:id="@id/widget_set_cards_seconds_team_image" android:background="@drawable/user_center_phone_car_day" app:background4Night="@drawable/user_center_phone_car_night" app:background4Skin="@drawable/user_center_phone_car_day" style="@style/widget_set_card_image_style" />
+        <com.autonavi.skin.view.SkinTextView android:text="@string/set_phone_connect_car" android:layout_below="@id/widget_set_cards_seconds_team_image" style="@style/widget_set_card_text_style" />
+    </com.autonavi.skin.view.SkinRelativeLayout>
+    <com.autonavi.skin.view.SkinRelativeLayout android:id="@id/widget_set_cards_seconds_interconnect" android:layout_marginStart="@dimen/auto_dimen2_25" android:layout_marginEnd="@dimen/auto_dimen2_25" style="@style/widget_set_card_layout_style">
+        <com.autonavi.skin.view.SkinImageView android:id="@id/widget_set_cards_seconds_interconnect_image" android:background="@drawable/user_center_weichat_day" app:background4Night="@drawable/user_center_weichat_night" app:background4Skin="@drawable/user_center_weichat_day" style="@style/widget_set_card_image_style" />
+        <com.autonavi.skin.view.SkinTextView android:text="@string/set_interconnect" android:layout_below="@id/widget_set_cards_seconds_interconnect_image" style="@style/widget_set_card_text_style" />
+    </com.autonavi.skin.view.SkinRelativeLayout>
+    <com.autonavi.skin.view.SkinRelativeLayout android:id="@id/widget_set_cards_first_team" style="@style/widget_set_card_layout_style">
+        <com.autonavi.skin.view.SkinImageView android:id="@id/widget_set_cards_first_team_image" android:background="@drawable/user_center_team_day" app:background4Night="@drawable/user_center_team_night" app:background4Skin="@drawable/user_center_team_day" style="@style/widget_set_card_image_style" />
+        <com.autonavi.skin.view.SkinTextView android:text="@string/set_team" android:layout_below="@id/widget_set_cards_first_team_image" style="@style/widget_set_card_text_style" />
+    </com.autonavi.skin.view.SkinRelativeLayout>
+    <com.autonavi.skin.view.SkinRelativeLayout android:id="@id/widget_set_cards_first_offline_data" android:layout_marginStart="@dimen/auto_dimen2_25" style="@style/widget_set_card_layout_style">
+        <com.autonavi.skin.view.SkinImageView android:id="@id/widget_set_cards_first_offline_data_image" android:background="@drawable/user_center_unline_data_day" app:background4Night="@drawable/user_center_unline_data_night" app:background4Skin="@drawable/user_center_unline_data_day" style="@style/widget_set_card_image_style" />
+        <com.autonavi.skin.view.SkinTextView android:text="@string/set_offline_data" android:layout_below="@id/widget_set_cards_first_offline_data_image" style="@style/widget_set_card_text_style" />
+    </com.autonavi.skin.view.SkinRelativeLayout>
+    <com.autonavi.skin.view.SkinRelativeLayout android:id="@id/widget_set_card_car_info" android:visibility="gone" android:layout_marginStart="@dimen/auto_dimen2_24" android:layout_marginEnd="@dimen/auto_dimen2_24" style="@style/widget_set_card_layout_style">
+        <com.autonavi.skin.view.SkinImageView android:id="@id/widget_set_car_info_image" android:background="@drawable/user_center_car_day" app:background4Night="@drawable/user_center_car_night" app:background4Skin="@drawable/user_center_car_day" style="@style/widget_set_card_image_style" />
+        <com.autonavi.skin.view.SkinTextView android:id="@id/user_car_plate_num" android:text="@string/user_car" android:layout_below="@id/widget_set_car_info_image" style="@style/widget_set_card_text_style" />
+        <com.autonavi.skin.view.SkinLinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/auto_dimen2_10" android:layout_below="@id/user_car_plate_num">
+            <com.autonavi.skin.view.SkinImageView android:id="@id/user_car_plate_tip" android:visibility="gone" android:layout_width="@dimen/auto_dimen2_18" android:layout_height="@dimen/auto_dimen2_18" android:layout_marginRight="@dimen/auto_dimen2_6" android:src="@drawable/user_restrict" />
+            <com.autonavi.skin.view.SkinTextView android:textSize="@dimen/auto_dimen2_18" android:textColor="@color/auto_color_EC1D1D" android:id="@id/user_car_plate_limit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="今日限行" />
+        </com.autonavi.skin.view.SkinLinearLayout>
+    </com.autonavi.skin.view.SkinRelativeLayout>
+    <com.autonavi.skin.view.SkinRelativeLayout android:id="@id/widget_set_cards_first_favorites" android:layout_marginStart="@dimen/auto_dimen2_25" style="@style/widget_set_card_layout_style">
+        <com.autonavi.skin.view.SkinImageView android:id="@id/widget_set_cards_first_favorites_image" android:background="@drawable/user_center_favarite_day" app:background4Night="@drawable/user_center_favarite_night" app:background4Skin="@drawable/user_center_favarite_day" style="@style/widget_set_card_image_style" />
+        <com.autonavi.skin.view.SkinTextView android:text="@string/set_favorites" android:layout_below="@id/widget_set_cards_first_favorites_image" style="@style/widget_set_card_text_style" />
+    </com.autonavi.skin.view.SkinRelativeLayout>
+</com.autonavi.skin.view.SkinLinearLayout>

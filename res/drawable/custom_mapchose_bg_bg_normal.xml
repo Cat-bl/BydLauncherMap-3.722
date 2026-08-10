@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/custom_mapchose_bg_bg_corner_normal" />
+    <stroke android:width="@dimen/custom_mapchose_bg_bg_strokewidth_normal" android:color="#ff4e4e4e" />
+    <gradient android:startColor="#ff202020" android:endColor="#ff292929" android:angle="90.0" android:centerX="0.5" />
+</shape>

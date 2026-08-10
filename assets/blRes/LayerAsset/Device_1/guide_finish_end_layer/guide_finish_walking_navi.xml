@@ -1,0 +1,9 @@
+<div style="display:flex;flex-direction:column;justify-content:center;align-items:center;">
+  <div id="walking_navi" style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-bottom:6px;background-image:global_image_route_info_day_night;min-height:30;">
+    <label id="eta_text" style="margin-right:8px;margin-left:8px;font-size:18px;color:#ffffff;font-family:SDK_Font-Medium;" lines="1">预计17:12到达</label>
+  </div>
+  <div id="bubble_end_div" style="display:flex;flex-direction:column;justify-content:center;align-items:center;">
+    <image id="bubble_end_image" style="width:43px;height:52px;is_main:Y;" src="global_image_bubble_end_day_night" />
+    <label id="name" style="margin-top:4px;font-size:22px;color:#171717;text-align:center;font-family:SDK_Font-Bold;max-width:180px;line-clamp:2;text-stroke:2px #E6ffffff;" lines="1">默认类型最长7个字</label>
+  </div>
+</div>

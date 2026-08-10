@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minWidth="@dimen/auto_dimen2_150"
+    android:minHeight="@dimen/auto_dimen2_100"
+    android:updatePeriodMillis="0"
+    android:initialLayout="@layout/map_parking_widget"
+    android:resizeMode="horizontal"
+    android:widgetCategory="home_screen"
+    app:initialLayout_denza="@layout/map_parking_widget_denza"/>

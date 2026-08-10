@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:bottomLeftRadius="@dimen/custom_road_card_nav_bottomcolor_corner_bottom_left_normal_night" android:bottomRightRadius="@dimen/custom_road_card_nav_bottomcolor_corner_bottom_right_normal_night" />
+    <gradient android:startColor="#ff141414" android:endColor="#ff0a0a0a" android:angle="90.0" android:centerX="0.5" />
+</shape>

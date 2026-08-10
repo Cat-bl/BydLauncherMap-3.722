@@ -1,0 +1,26 @@
+{
+    "marker_info": {
+        "marker_info_gps_points": {
+            "vector": 0
+        }
+    },
+    "layer_item_info": {
+        "gps_points": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_gps_points",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "measure_point_red"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "GPS轨迹点"
+        }
+    }
+}

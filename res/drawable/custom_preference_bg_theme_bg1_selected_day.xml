@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/custom_preference_bg_theme_bg1_corner_normal_day" />
+    <stroke android:width="@dimen/auto_dimen2_2" android:color="#ff0fa0f6" />
+    <solid android:color="#ffeaf4ff" />
+</shape>

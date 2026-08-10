@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="false"
+        android:drawable="@drawable/icon_setting_img_navi_avoidjin_disabled_day"/>
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/icon_setting_img_navi_avoidjin_selected_day"/>
+    <item android:drawable="@drawable/icon_setting_img_navi_avoidjin_enable_day"/>
+</selector>

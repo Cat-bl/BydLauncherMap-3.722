@@ -1,0 +1,534 @@
+{
+    "marker_info": {
+        "marker_info_guide_label_left_up_fast": {
+            "anchor": 13,
+            "day_style": {
+                "color": [
+                    {
+                        "time_diff_text": "#0076FF"
+                    },
+                    {
+                        "cost_text1": "#0076FF"
+                    },
+                    {
+                        "distance_diff_text": "#0076FF"
+                    },
+                    {
+                        "traffic_light_text": "#0076FF"
+                    },
+                    {
+                        "cost_text2": "#0076FF"
+                    },
+                    {
+                        "label_text": "#FFFFFF"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "time_diff_text": "#0076FF"
+                    },
+                    {
+                        "cost_text1": "#0076FF"
+                    },
+                    {
+                        "distance_diff_text": "#0076FF"
+                    },
+                    {
+                        "traffic_light_text": "#0076FF"
+                    },
+                    {
+                        "cost_text2": "#0076FF"
+                    },
+                    {
+                        "label_text": "#FFFFFF"
+                    }
+                ]
+            },
+            "y_offset": 12,
+            "x_offset": 12
+        },
+        "marker_info_guide_label_left_down_fast": {
+            "anchor": 11,
+            "day_style": {
+                "color": [
+                    {
+                        "time_diff_text": "#0076FF"
+                    },
+                    {
+                        "cost_text1": "#0076FF"
+                    },
+                    {
+                        "distance_diff_text": "#0076FF"
+                    },
+                    {
+                        "traffic_light_text": "#0076FF"
+                    },
+                    {
+                        "cost_text2": "#0076FF"
+                    },
+                    {
+                        "label_text": "#FFFFFF"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "time_diff_text": "#0076FF"
+                    },
+                    {
+                        "cost_text1": "#0076FF"
+                    },
+                    {
+                        "distance_diff_text": "#0076FF"
+                    },
+                    {
+                        "traffic_light_text": "#0076FF"
+                    },
+                    {
+                        "cost_text2": "#0076FF"
+                    },
+                    {
+                        "label_text": "#FFFFFF"
+                    }
+                ]
+            },
+            "y_offset": 8,
+            "x_offset": 8
+        },
+        "marker_info_guide_label_right_down_fast": {
+            "anchor": 10,
+            "day_style": {
+                "color": [
+                    {
+                        "time_diff_text": "#0076FF"
+                    },
+                    {
+                        "cost_text1": "#0076FF"
+                    },
+                    {
+                        "distance_diff_text": "#0076FF"
+                    },
+                    {
+                        "traffic_light_text": "#0076FF"
+                    },
+                    {
+                        "cost_text2": "#0076FF"
+                    },
+                    {
+                        "label_text": "#FFFFFF"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "time_diff_text": "#0076FF"
+                    },
+                    {
+                        "cost_text1": "#0076FF"
+                    },
+                    {
+                        "distance_diff_text": "#0076FF"
+                    },
+                    {
+                        "traffic_light_text": "#0076FF"
+                    },
+                    {
+                        "cost_text2": "#0076FF"
+                    },
+                    {
+                        "label_text": "#FFFFFF"
+                    }
+                ]
+            },
+            "y_offset": 8,
+            "x_offset": 8
+        },
+        "marker_info_guide_label_right_up_fast": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "time_diff_text": "#0076FF"
+                    },
+                    {
+                        "cost_text1": "#0076FF"
+                    },
+                    {
+                        "distance_diff_text": "#0076FF"
+                    },
+                    {
+                        "traffic_light_text": "#0076FF"
+                    },
+                    {
+                        "cost_text2": "#0076FF"
+                    },
+                    {
+                        "label_text": "#FFFFFF"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "time_diff_text": "#0076FF"
+                    },
+                    {
+                        "cost_text1": "#0076FF"
+                    },
+                    {
+                        "distance_diff_text": "#0076FF"
+                    },
+                    {
+                        "traffic_light_text": "#0076FF"
+                    },
+                    {
+                        "cost_text2": "#0076FF"
+                    },
+                    {
+                        "label_text": "#FFFFFF"
+                    }
+                ]
+            },
+            "y_offset": 12,
+            "x_offset": 12
+        },
+        "marker_info_guide_label_left_up_slow": {
+            "anchor": 13,
+            "day_style": {
+                "color": [
+                    {
+                        "time_diff_text": "#980F1117"
+                    },
+                    {
+                        "cost_text1": "#980F1117"
+                    },
+                    {
+                        "distance_diff_text": "#980F1117"
+                    },
+                    {
+                        "traffic_light_text": "#980F1117"
+                    },
+                    {
+                        "cost_text2": "#980F1117"
+                    },
+                    {
+                        "label_text": "#0076FF"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "time_diff_text": "#980F1117"
+                    },
+                    {
+                        "cost_text1": "#980F1117"
+                    },
+                    {
+                        "distance_diff_text": "#980F1117"
+                    },
+                    {
+                        "traffic_light_text": "#980F1117"
+                    },
+                    {
+                        "cost_text2": "#980F1117"
+                    },
+                    {
+                        "label_text": "#0076FF"
+                    }
+                ]
+            },
+            "y_offset": 12,
+            "x_offset": 12
+        },
+        "marker_info_guide_label_left_down_slow": {
+            "anchor": 11,
+            "day_style": {
+                "color": [
+                    {
+                        "time_diff_text": "#980F1117"
+                    },
+                    {
+                        "cost_text1": "#980F1117"
+                    },
+                    {
+                        "distance_diff_text": "#980F1117"
+                    },
+                    {
+                        "traffic_light_text": "#980F1117"
+                    },
+                    {
+                        "cost_text2": "#980F1117"
+                    },
+                    {
+                        "label_text": "#0076FF"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "time_diff_text": "#980F1117"
+                    },
+                    {
+                        "cost_text1": "#980F1117"
+                    },
+                    {
+                        "distance_diff_text": "#980F1117"
+                    },
+                    {
+                        "traffic_light_text": "#980F1117"
+                    },
+                    {
+                        "cost_text2": "#980F1117"
+                    },
+                    {
+                        "label_text": "#0076FF"
+                    }
+                ]
+            },
+            "y_offset": 8,
+            "x_offset": 8
+        },
+        "marker_info_guide_label_right_down_slow": {
+            "anchor": 10,
+            "day_style": {
+                "color": [
+                    {
+                        "time_diff_text": "#980F1117"
+                    },
+                    {
+                        "cost_text1": "#980F1117"
+                    },
+                    {
+                        "distance_diff_text": "#980F1117"
+                    },
+                    {
+                        "traffic_light_text": "#980F1117"
+                    },
+                    {
+                        "cost_text2": "#980F1117"
+                    },
+                    {
+                        "label_text": "#0076FF"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "time_diff_text": "#980F1117"
+                    },
+                    {
+                        "cost_text1": "#980F1117"
+                    },
+                    {
+                        "distance_diff_text": "#980F1117"
+                    },
+                    {
+                        "traffic_light_text": "#980F1117"
+                    },
+                    {
+                        "cost_text2": "#980F1117"
+                    },
+                    {
+                        "label_text": "#0076FF"
+                    }
+                ]
+            },
+            "y_offset": 8,
+            "x_offset": 8
+        },
+        "marker_info_guide_label_right_up_slow": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "time_diff_text": "#980F1117"
+                    },
+                    {
+                        "cost_text1": "#980F1117"
+                    },
+                    {
+                        "distance_diff_text": "#980F1117"
+                    },
+                    {
+                        "traffic_light_text": "#980F1117"
+                    },
+                    {
+                        "cost_text2": "#980F1117"
+                    },
+                    {
+                        "label_text": "#0076FF"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "time_diff_text": "#980F1117"
+                    },
+                    {
+                        "cost_text1": "#980F1117"
+                    },
+                    {
+                        "distance_diff_text": "#980F1117"
+                    },
+                    {
+                        "traffic_light_text": "#980F1117"
+                    },
+                    {
+                        "cost_text2": "#980F1117"
+                    },
+                    {
+                        "label_text": "#0076FF"
+                    }
+                ]
+            },
+            "y_offset": 12,
+            "x_offset": 12
+        }
+    },
+    "layer_item_info": {
+        "point_guide_label_left_up_fast": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_alternative_path_label_fast.xml",
+                    "poi_marker_info": "marker_info_guide_label_left_up_fast",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "guide_label_background_image": "global_image_navi_bg_route_label_left_up_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "左上飘 更快"
+        },
+        "point_guide_label_left_down_fast": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_alternative_path_label_fast.xml",
+                    "poi_marker_info": "marker_info_guide_label_left_down_fast",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "guide_label_background_image": "global_image_navi_bg_route_label_left_down_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 1,
+            "name_cn": "左下飘 更快"
+        },
+        "point_guide_label_right_down_fast": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_alternative_path_label_fast.xml",
+                    "poi_marker_info": "marker_info_guide_label_right_down_fast",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "guide_label_background_image": "global_image_navi_bg_route_label_right_down_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 2,
+            "name_cn": "右下飘 更快"
+        },
+        "point_guide_label_right_up_fast": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_alternative_path_label_fast.xml",
+                    "poi_marker_info": "marker_info_guide_label_right_up_fast",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "guide_label_background_image": "global_image_navi_bg_route_label_right_up_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 3,
+            "name_cn": "右上飘 更快"
+        },
+        "point_guide_label_left_up_slow": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_alternative_path_label_slow.xml",
+                    "poi_marker_info": "marker_info_guide_label_left_up_slow",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "guide_label_background_image": "global_image_navi_bg_route_label_left_up_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 4,
+            "name_cn": "左上飘 更慢"
+        },
+        "point_guide_label_left_down_slow": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_alternative_path_label_slow.xml",
+                    "poi_marker_info": "marker_info_guide_label_left_down_slow",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "guide_label_background_image": "global_image_navi_bg_route_label_left_down_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 5,
+            "name_cn": "左下飘 更慢"
+        },
+        "point_guide_label_right_down_slow": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_alternative_path_label_slow.xml",
+                    "poi_marker_info": "marker_info_guide_label_right_down_slow",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "guide_label_background_image": "global_image_navi_bg_route_label_right_down_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 6,
+            "name_cn": "右下飘 更慢"
+        },
+        "point_guide_label_right_up_slow": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_alternative_path_label_slow.xml",
+                    "poi_marker_info": "marker_info_guide_label_right_up_slow",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "guide_label_background_image": "global_image_navi_bg_route_label_right_up_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 7,
+            "name_cn": "右上飘 更慢"
+        }
+    }
+}

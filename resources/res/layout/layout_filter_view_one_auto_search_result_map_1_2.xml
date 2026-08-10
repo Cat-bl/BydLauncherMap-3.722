@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_filter_view_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:designHeight="600"
+    app:designWidth="1024">
+    <com.autonavi.skin.view.SkinTabLayout
+        android:id="@+id/mTabLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/auto_dimen2_24"
+        android:layout_marginStart="@dimen/auto_dimen2_30"
+        android:layout_marginEnd="@dimen/auto_dimen2_30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabGravity="start"
+        app:tabIndicator="@drawable/tab_indicator"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="@dimen/auto_dimen2_4"
+        app:tabMode="scrollable"
+        app:tabRippleColor="@null"/>
+    <com.autonavi.skin.view.SkinGridView
+        android:gravity="center"
+        android:id="@+id/sgv_screening_classify"
+        android:paddingTop="@dimen/auto_dimen2_26"
+        android:paddingBottom="@dimen/auto_dimen2_24"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@color/auto_ui_000000_00"
+        android:horizontalSpacing="@dimen/auto_dimen2_60"
+        android:verticalSpacing="@dimen/auto_dimen2_24"
+        android:numColumns="2"
+        android:paddingStart="@dimen/auto_dimen2_40"
+        android:paddingEnd="@dimen/auto_dimen2_40"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mTabLayout"/>
+</com.autonavi.skin.view.SkinConstraintLayout>

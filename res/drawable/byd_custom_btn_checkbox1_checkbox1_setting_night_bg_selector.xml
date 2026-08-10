@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/byd_custom_btn_checkbox1_checkbox1_select_night" />
+    <item android:state_enabled="false" android:drawable="@drawable/byd_custom_btn_checkbox1_checkbox1_broacaset_normal_night" />
+    <item android:state_enabled="true" android:drawable="@drawable/byd_custom_btn_checkbox1_checkbox1_broacaset_normal_night" />
+</selector>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/scrollbar_corner_full" />
+    <size android:width="@dimen/scrollbar_width_full" />
+    <solid android:color="@color/color_scrollbar_thumb_day" />
+</shape>

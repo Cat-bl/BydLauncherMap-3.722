@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/global_image_autonavi_roadstatu_normal_left_up_day" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:autoSkin="http://schemas.android.com/apk/res-auto">
+    <com.autonavi.skin.view.SkinTextView android:textSize="@dimen/auto_dimen2_22" android:textColor="@color/auto_ui_ffffff" android:gravity="center" android:id="@id/conges_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="8" autoSkin:textColor4Night="@color/auto_ui_ffffff" autoSkin:textColor4Skin="@color/auto_ui_ffffff" />
+</LinearLayout>

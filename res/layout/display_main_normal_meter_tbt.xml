@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout android:id="@id/constant" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shadowDayNightStyle="1" app:skinDayNightExtraStyle="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.autonavi.skin.view.SkinView android:id="@id/bg_view" android:background="@color/transparent" android:visibility="visible" android:layout_width="@dimen/auto_dimen2_454" android:layout_height="fill_parent" android:layout_marginTop="@dimen/auto_dimen2_100" android:layout_marginBottom="@dimen/auto_dimen2_100" android:layout_marginStart="@dimen/auto_dimen2_565" app:background4Night="@color/transparent" app:background4Skin="@color/transparent" app:layout_constraintStart_toStartOf="parent" />
+    <com.autonavi.skin.view.SkinLinearLayout android:orientation="vertical" android:id="@id/cl_navi_and_route_container" android:background="@color/transparent" android:visibility="gone" android:layout_width="@dimen/auto_dimen2_454" android:layout_height="wrap_content" android:layout_marginTop="@dimen/auto_dimen2_195" android:layout_marginStart="@dimen/auto_dimen2_75" app:background4Night="@color/transparent" app:background4Skin="@color/transparent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/ct_navigation_info_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.autonavi.view.custom.CustomMeterTrafficLaneView android:id="@id/display_traffic_lane" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/auto_dimen2_64" app:shadowDayNightStyle="1" app:skinDayNightExtraStyle="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ct_second_info_top" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    </com.autonavi.skin.view.SkinLinearLayout>
+</com.autonavi.skin.view.SkinConstraintLayout>

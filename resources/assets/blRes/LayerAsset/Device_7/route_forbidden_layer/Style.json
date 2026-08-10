@@ -1,0 +1,165 @@
+{
+    "marker_info": {},
+    "layer_item_info": {
+        "point_route_event_water": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_navi_traffic_event_water_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "积水"
+        },
+        "point_route_event_close": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_navi_traffic_event_close_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 1,
+            "name_cn": "封路"
+        },
+        "point_route_event_project": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_navi_traffic_event_project_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 2,
+            "name_cn": "施工"
+        },
+        "point_route_event_accident": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_navi_traffic_event_accident_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 3,
+            "name_cn": "事故"
+        },
+        "point_route_event_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_navi_traffic_event_left_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 4,
+            "name_cn": "禁左"
+        },
+        "point_route_event_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_navi_traffic_event_right_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 5,
+            "name_cn": "禁右"
+        },
+        "point_route_event_backleft": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_navi_traffic_event_backleft_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 6,
+            "name_cn": "禁左掉头"
+        },
+        "point_route_event_backright": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_navi_traffic_event_backright_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 7,
+            "name_cn": "禁右掉头"
+        },
+        "point_route_event_zhixing": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_navi_traffic_event_zhixing_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 8,
+            "name_cn": "禁止直行"
+        },
+        "point_route_event_jam": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_navi_traffic_event_jam_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 9,
+            "name_cn": "拥堵"
+        }
+    }
+}

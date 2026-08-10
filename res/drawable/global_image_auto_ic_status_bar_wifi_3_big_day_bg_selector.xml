@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/global_image_auto_ic_status_bar_wifi_3_big_disabled_day" />
+    <item android:state_enabled="true" android:drawable="@drawable/global_image_auto_ic_status_bar_wifi_3_big_normal_day" />
+</selector>

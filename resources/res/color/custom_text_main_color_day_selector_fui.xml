@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="true"
+        android:color="@color/search_main_color_day_fui"/>
+    <item
+        android:state_selected="false"
+        android:color="@color/byd_search_text_day_85_fui"/>
+</selector>

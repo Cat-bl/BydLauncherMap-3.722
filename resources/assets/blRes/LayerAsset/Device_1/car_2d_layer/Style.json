@@ -1,0 +1,159 @@
+{
+    "marker_info": {},
+    "layer_item_info": {
+        "car_route_normal": {
+            "car_layer_style": {
+                "car_marker": {
+                    "compass_marker_id": "",
+                    "compass_indicator_marker_id": "",
+                    "track_marker_id": "global_image_auto_car_net_loc",
+                    "track_arc_marker_id": "global_image_auto_car_net_loc_breath",
+                    "shine_marker_id": ""
+                },
+                "compass_marker_info": {
+                    "east_marker_id": "",
+                    "south_marker_id": "",
+                    "west_marker_id": "",
+                    "north_marker_id": "",
+                    "relative_distance": 75
+                },
+                "car_animation_style": {
+                    "car_style": 1,
+                    "no_net": {
+                        "animation_duration": 2000,
+                        "from_zoom": 0.7,
+                        "end_zoom": 1,
+                        "from_alpha": 1,
+                        "end_alpha": 0
+                    },
+                    "net": {
+                        "animation_duration": 2000,
+                        "from_zoom": 0.7,
+                        "end_zoom": 1,
+                        "from_alpha": 1,
+                        "end_alpha": 0
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "路线规划场景"
+        },
+        "car_cruise_net_loc": {
+            "car_layer_style": {
+                "car_marker": {
+                    "compass_marker_id": "",
+                    "compass_indicator_marker_id": "",
+                    "track_marker_id": "global_image_auto_car_net_loc",
+                    "track_arc_marker_id": "global_image_auto_car_net_loc_breath",
+                    "shine_marker_id": ""
+                },
+                "compass_marker_info": {
+                    "east_marker_id": "",
+                    "south_marker_id": "",
+                    "west_marker_id": "",
+                    "north_marker_id": "",
+                    "relative_distance": 75
+                },
+                "car_animation_style": {
+                    "car_style": 2,
+                    "no_net": {
+                        "animation_duration": 2000,
+                        "from_zoom": 0.7,
+                        "end_zoom": 1,
+                        "from_alpha": 1,
+                        "end_alpha": 0
+                    },
+                    "net": {
+                        "animation_duration": 2000,
+                        "from_zoom": 0.7,
+                        "end_zoom": 1,
+                        "from_alpha": 1,
+                        "end_alpha": 0
+                    }
+                }
+            },
+            "index": 1,
+            "name_cn": "巡航场景"
+        },
+        "car_other_gps_day_mini": {
+            "car_layer_style": {
+                "car_marker": {
+                    "compass_marker_id": "car_mini_direction_day",
+                    "compass_indicator_marker_id": "",
+                    "track_marker_id": "global_image_car_mini_day_night",
+                    "track_arc_marker_id": "",
+                    "shine_marker_id": ""
+                },
+                "compass_marker_info": {
+                    "east_marker_id": "",
+                    "south_marker_id": "",
+                    "west_marker_id": "",
+                    "north_marker_id": "",
+                    "relative_distance": 75
+                }
+            },
+            "index": 2,
+            "name_cn": "有网状态 白天"
+        },
+        "car_other_gps_night_mini": {
+            "car_layer_style": {
+                "car_marker": {
+                    "compass_marker_id": "car_mini_direction_night",
+                    "compass_indicator_marker_id": "",
+                    "track_marker_id": "global_image_car_mini_day_night",
+                    "track_arc_marker_id": "",
+                    "shine_marker_id": ""
+                },
+                "compass_marker_info": {
+                    "east_marker_id": "",
+                    "south_marker_id": "",
+                    "west_marker_id": "",
+                    "north_marker_id": "",
+                    "relative_distance": 75
+                }
+            },
+            "index": 3,
+            "name_cn": "有网状态 黑夜"
+        },
+        "car_other_nogps_day_mini": {
+            "car_layer_style": {
+                "car_marker": {
+                    "compass_marker_id": "car_mini_direction_day",
+                    "compass_indicator_marker_id": "",
+                    "track_marker_id": "global_image_car_mini_gps_no_location_day_night",
+                    "track_arc_marker_id": "",
+                    "shine_marker_id": ""
+                },
+                "compass_marker_info": {
+                    "east_marker_id": "",
+                    "south_marker_id": "",
+                    "west_marker_id": "",
+                    "north_marker_id": "",
+                    "relative_distance": 75
+                }
+            },
+            "index": 4,
+            "name_cn": "无网状态 白天"
+        },
+        "car_other_nogps_night_mini": {
+            "car_layer_style": {
+                "car_marker": {
+                    "compass_marker_id": "car_mini_direction_night",
+                    "compass_indicator_marker_id": "",
+                    "track_marker_id": "global_image_car_mini_gps_no_location_day_night",
+                    "track_arc_marker_id": "",
+                    "shine_marker_id": ""
+                },
+                "compass_marker_info": {
+                    "east_marker_id": "",
+                    "south_marker_id": "",
+                    "west_marker_id": "",
+                    "north_marker_id": "",
+                    "relative_distance": 75
+                }
+            },
+            "index": 5,
+            "name_cn": "无网状态 黑夜"
+        }
+    }
+}

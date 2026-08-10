@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LANDSCAPE_1_3 高速设施卡预览</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif;
+      background: #101214;
+      color: #f3f6f8;
+    }
+
+    * {
+      box-sizing: border-box;
+      letter-spacing: 0;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: #101214;
+    }
+
+    .page {
+      width: min(1180px, 100%);
+    }
+
+    .toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+
+    .toolbar h1 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 650;
+    }
+
+    .segmented {
+      display: inline-flex;
+      padding: 3px;
+      border: 1px solid #394148;
+      border-radius: 7px;
+      background: #1a1e22;
+    }
+
+    .segmented button {
+      min-width: 92px;
+      height: 34px;
+      border: 0;
+      border-radius: 5px;
+      background: transparent;
+      color: #aeb7bd;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .segmented button[aria-pressed="true"] {
+      background: #e8eef1;
+      color: #15191c;
+    }
+
+    .viewport {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1024 / 600;
+      overflow: hidden;
+      border: 1px solid #3a4248;
+      border-radius: 8px;
+      background: #171b1e;
+      box-shadow: 0 18px 52px rgb(0 0 0 / 42%);
+    }
+
+    .system-bar {
+      position: absolute;
+      inset: 0 0 auto 0;
+      z-index: 20;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      padding: 0 18px;
+      border-bottom: 1px solid #30383d;
+      background: #192126;
+      color: #dce5e9;
+      font-size: 13px;
+    }
+
+    .system-bar strong {
+      margin-right: 18px;
+      font-size: 14px;
+    }
+
+    .system-bar span:last-child {
+      margin-left: auto;
+      color: #8e9ba3;
+    }
+
+    .map-pane {
+      position: absolute;
+      inset: 44px auto 0 0;
+      width: 38.5%;
+      overflow: hidden;
+      background: #435b66;
+      border-right: 6px solid #101416;
+    }
+
+    .map-grid,
+    .road {
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .map-grid {
+      inset: 0;
+      opacity: 0.22;
+      background-image:
+        linear-gradient(#91a6ae 1px, transparent 1px),
+        linear-gradient(90deg, #91a6ae 1px, transparent 1px);
+      background-size: 56px 56px;
+    }
+
+    .road {
+      height: 7px;
+      border-radius: 4px;
+      background: #a5b7bd;
+      box-shadow: 0 0 0 2px #31464f;
+    }
+
+    .road.main {
+      width: 510px;
+      left: -55px;
+      top: 314px;
+      transform: rotate(-17deg);
+      background: #59d2b4;
+    }
+
+    .road.branch-a {
+      width: 320px;
+      left: 58px;
+      top: 170px;
+      transform: rotate(58deg);
+    }
+
+    .road.branch-b {
+      width: 285px;
+      left: 145px;
+      top: 390px;
+      transform: rotate(80deg);
+    }
+
+    .top-nav {
+      position: absolute;
+      z-index: 8;
+      top: 18px;
+      left: 16px;
+      width: calc(100% - 32px);
+      height: 104px;
+      padding: 13px 14px;
+      border: 1px solid rgb(255 255 255 / 10%);
+      border-radius: 7px;
+      background: #172127;
+      box-shadow: 0 8px 20px rgb(0 0 0 / 28%);
+    }
+
+    .turn-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .turn-arrow {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 6px;
+      background: #36d9c2;
+      color: #09231f;
+      font-size: 25px;
+      font-weight: 800;
+    }
+
+    .distance {
+      font-size: 25px;
+      font-weight: 700;
+    }
+
+    .road-name {
+      min-width: 0;
+      overflow: hidden;
+      color: #d8e2e6;
+      font-size: 15px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .trip-row {
+      display: flex;
+      gap: 14px;
+      margin-top: 12px;
+      color: #91a0a7;
+      font-size: 12px;
+    }
+
+    .vehicle {
+      position: absolute;
+      z-index: 6;
+      left: 58%;
+      top: 60%;
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border: 3px solid #eff6f8;
+      border-radius: 50%;
+      background: #24373f;
+      color: #ff9d45;
+      font-size: 20px;
+      transform: translate(-50%, -50%) rotate(-12deg);
+      box-shadow: 0 4px 12px rgb(0 0 0 / 35%);
+    }
+
+    .current-road {
+      position: absolute;
+      z-index: 7;
+      left: 50%;
+      bottom: 50px;
+      width: 172px;
+      min-height: 36px;
+      display: grid;
+      place-items: center;
+      padding: 7px 12px;
+      border-radius: 6px;
+      background: #26343a;
+      color: #edf3f5;
+      font-size: 13px;
+      transform: translateX(-50%);
+    }
+
+    .left-controls {
+      position: absolute;
+      z-index: 8;
+      left: 16px;
+      bottom: 14px;
+      display: flex;
+      gap: 7px;
+    }
+
+    .control {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgb(255 255 255 / 10%);
+      border-radius: 7px;
+      background: #1d292e;
+      color: #e7eef1;
+      font-size: 13px;
+      font-weight: 650;
+    }
+
+    .service-stack {
+      position: absolute;
+      z-index: 10;
+      left: 16px;
+      bottom: 68px;
+      width: 132px;
+      border: 1px solid #42ead0;
+      border-radius: 7px;
+      box-shadow: 0 0 0 2px rgb(66 234 208 / 18%);
+      transition: top 180ms ease, bottom 180ms ease, height 180ms ease;
+    }
+
+    .facility-card {
+      position: relative;
+      overflow: hidden;
+      padding: 8px 10px;
+      border: 1px solid rgb(255 255 255 / 9%);
+      background: #13635f;
+    }
+
+    .facility-card:first-child {
+      height: 84px;
+      border-radius: 6px 6px 2px 2px;
+      background: #1d8f8a;
+    }
+
+    .facility-card:last-child {
+      height: 60px;
+      border-radius: 2px 2px 6px 6px;
+    }
+
+    .facility-title {
+      overflow: hidden;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .facility-icons {
+      display: flex;
+      gap: 6px;
+      margin-top: 7px;
+      color: #d9fffa;
+      font-size: 13px;
+    }
+
+    .facility-distance {
+      margin-top: 7px;
+      color: #f1fffc;
+      font-size: 13px;
+      font-weight: 650;
+    }
+
+    .facility-card:last-child .facility-distance {
+      margin-top: 5px;
+    }
+
+    .map-pane.legacy .service-stack {
+      top: 132px;
+      bottom: auto;
+      height: 154px;
+      overflow: hidden;
+      border-color: #ff6f62;
+      box-shadow: 0 0 0 2px rgb(255 111 98 / 18%);
+    }
+
+    .map-pane.legacy .facility-card:first-child,
+    .map-pane.legacy .facility-card:last-child {
+      height: 104px;
+    }
+
+    .split-pane {
+      position: absolute;
+      inset: 44px 0 0 38.5%;
+      padding: 24px 30px;
+      background: #15191c;
+    }
+
+    .media-title {
+      margin: 0 0 22px;
+      color: #f1f4f6;
+      font-size: 23px;
+      font-weight: 650;
+    }
+
+    .media-row {
+      display: grid;
+      grid-template-columns: 72px 1fr auto;
+      align-items: center;
+      gap: 16px;
+      padding: 12px 0;
+      border-bottom: 1px solid #2c3338;
+      color: #9da8ae;
+    }
+
+    .cover {
+      width: 72px;
+      height: 72px;
+      border-radius: 5px;
+      background: #2c4c51;
+    }
+
+    .media-row strong {
+      display: block;
+      margin-bottom: 7px;
+      color: #e8edf0;
+      font-size: 15px;
+    }
+
+    .status {
+      color: #42d4b9;
+      font-size: 13px;
+    }
+
+    .hint {
+      margin: 12px 2px 0;
+      color: #849097;
+      font-size: 13px;
+    }
+
+    @media (max-width: 720px) {
+      body {
+        padding: 12px;
+      }
+
+      .toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .segmented {
+        width: 100%;
+      }
+
+      .segmented button {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="toolbar">
+      <h1>LANDSCAPE_1_3 高速设施卡布局预览</h1>
+      <div class="segmented" role="group" aria-label="预览模式">
+        <button id="expectedButton" type="button" aria-pressed="true">修改后</button>
+        <button id="legacyButton" type="button" aria-pressed="false">修改前</button>
+      </div>
+    </header>
+
+    <section class="viewport" aria-label="车机分屏导航预览">
+      <div class="system-bar">
+        <strong>20:22</strong>
+        <span>8月6日 周四</span>
+        <span>1/3 分屏</span>
+      </div>
+
+      <div id="mapPane" class="map-pane">
+        <div class="map-grid"></div>
+        <div class="road main"></div>
+        <div class="road branch-a"></div>
+        <div class="road branch-b"></div>
+
+        <section class="top-nav">
+          <div class="turn-row">
+            <div class="turn-arrow">↰</div>
+            <div>
+              <div class="distance">722 米</div>
+              <div class="road-name">S5 沪嘉高速出口</div>
+            </div>
+          </div>
+          <div class="trip-row">
+            <span>71 公里</span>
+            <span>53 分钟</span>
+            <span>21:14 到达</span>
+          </div>
+        </section>
+
+        <section class="service-stack" aria-label="高速服务区和收费站信息">
+          <div class="facility-card">
+            <div class="facility-title">嘉定服务区</div>
+            <div class="facility-icons"><span>油</span><span>餐</span><span>修</span><span>充</span></div>
+            <div class="facility-distance">37.1 公里</div>
+          </div>
+          <div class="facility-card">
+            <div class="facility-title">收费站</div>
+            <div class="facility-distance">58.4 公里</div>
+          </div>
+        </section>
+
+        <div class="vehicle">▲</div>
+        <div class="current-road">S5 沪嘉高速</div>
+
+        <div class="left-controls" aria-label="底部操作按钮">
+          <div class="control">全览</div>
+          <div class="control">2D</div>
+        </div>
+      </div>
+
+      <aside class="split-pane" aria-label="相邻分屏应用示意">
+        <h2 class="media-title">媒体</h2>
+        <div class="media-row">
+          <div class="cover"></div>
+          <div><strong>正在播放</strong><span>车载媒体内容</span></div>
+          <span class="status">播放中</span>
+        </div>
+        <div class="media-row">
+          <div class="cover"></div>
+          <div><strong>推荐内容</strong><span>分屏区域占位</span></div>
+          <span>04:18</span>
+        </div>
+      </aside>
+    </section>
+
+    <p class="hint">青色描边表示本次调整区域；切换“修改前”可查看旧布局被父容器截断的示意。</p>
+  </main>
+
+  <script>
+    const mapPane = document.getElementById('mapPane');
+    const expectedButton = document.getElementById('expectedButton');
+    const legacyButton = document.getElementById('legacyButton');
+
+    function setLegacy(enabled) {
+      mapPane.classList.toggle('legacy', enabled);
+      expectedButton.setAttribute('aria-pressed', String(!enabled));
+      legacyButton.setAttribute('aria-pressed', String(enabled));
+    }
+
+    expectedButton.addEventListener('click', () => setLegacy(false));
+    legacyButton.addEventListener('click', () => setLegacy(true));
+  </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="@dimen/auto_dimen2_12" />
+            <gradient android:startColor="@color/byd_bg_pressed_night" android:endColor="@color/byd_bg_pressed_night" android:angle="180.0" android:centerX="0.5" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="@dimen/auto_dimen2_12" />
+            <gradient android:startColor="@color/byd_setting_map_theme_bg_night" android:endColor="@color/byd_setting_map_theme_bg_night" android:angle="180.0" android:centerX="0.5" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,25 @@
+.class public interface abstract Lsomeip/navigation/status_/link/info/service/SomeipNavigationStatusLinkInfoService$AdvAutoFunInfoNotifyOrBuilder;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/protobuf/MessageLiteOrBuilder;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lsomeip/navigation/status_/link/info/service/SomeipNavigationStatusLinkInfoService;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "AdvAutoFunInfoNotifyOrBuilder"
+.end annotation
+
+
+# virtual methods
+.method public abstract getAdvAutoFunInfo()Lsomeip/navigation/status_/link/info/service/SomeipNavigationStatusLinkInfoService$AdvAutoFunInfo;
+.end method
+
+.method public abstract hasAdvAutoFunInfo()Z
+.end method

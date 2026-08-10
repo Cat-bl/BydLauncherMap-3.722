@@ -1,0 +1,617 @@
+{
+    "marker_info": {
+        "marker_info_along_route_normal": {
+            "anchor": 12,
+            "x_offset": 22,
+            "y_offset": 20,
+            "day_style": {
+                "color": [
+                    {
+                        "text_time": "#ff2d68f4"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "text_time": "#ff1a66ff"
+                    }
+                ]
+            },
+            "image_style": {
+                "brand_image": {
+                    "gas_sinopec": "global_image_navi_along_search_sinopec_station_icon_day_night",
+                    "gas_petrochina": "global_image_navi_along_search_petrochina_station_icon_day_night",
+                    "gas_shell": "global_image_navi_along_search_shell_station_icon_day_night",
+                    "gas_default": "global_image_navi_along_search_gas_station_icon_day_night",
+                    "charge_guojiadianwang": "global_image_navi_along_search_guojiadianwang_station_icon_day_night",
+                    "charge_telaidian": "global_image_navi_along_search_telaidian_station_icon_day_night",
+                    "charge_xingxing": "global_image_navi_along_search_xingxing_station_icon_day_night",
+                    "charge_putian": "global_image_navi_along_search_putian_station_icon_day_night",
+                    "charge_default": "global_image_navi_along_search_charge_icon_day_night",
+                    "atm": "global_image_navi_along_search_atm_icon_day_night",
+                    "wc": "global_image_navi_along_search_wc_icon_day_night",
+                    "repair": "global_image_navi_along_search_repair_icon_day_night",
+                    "rest_area": "global_image_navi_along_search_fwq_station_icon_day_night",
+                    "cng": "global_image_navi_along_search_cng_icon_day_night",
+                    "food": "global_image_navi_along_search_restaurant_icon_day_night",
+                    "car_wash": "global_image_navi_along_search_carwash_icon_day_night",
+                    "scenic_spot": "global_image_navi_along_search_scenic_icon_day_night",
+                    "hotel": "global_image_navi_along_search_hotel_icon_day_night",
+                    "default": "global_image_b_child_poi_hl_day_night"
+                }
+            }
+        },
+        "marker_info_along_route_normal_focus": {
+            "anchor": 9,
+            "y_ratio": 0.95,
+            "x_ratio": 0.5,
+            "image_style": {
+                "brand_image": {
+                    "repair": "global_image_navi_along_search_repair_big_icon_day_night",
+                    "rest_area": "global_image_navi_along_search_fwq_station_big_icon_day_night",
+                    "charge_xingxing": "global_image_navi_along_search_xingxing_station_big_icon_day_night",
+                    "charge_guojiadianwang": "global_image_navi_along_search_guojiadianwang_station_big_icon_day_night",
+                    "cng": "global_image_navi_along_search_cng_big_icon_day_night",
+                    "charge_telaidian": "global_image_navi_along_search_telaidian_station_big_icon_day_night",
+                    "scenic_spot": "global_image_navi_along_search_scenic_big_icon_day_night",
+                    "hotel": "global_image_navi_along_search_hotel_big_icon_day_night",
+                    "atm": "global_image_navi_along_search_atm_big_icon_day_night",
+                    "car_wash": "global_image_navi_along_search_carwash_big_icon_day_night",
+                    "charge_default": "global_image_navi_along_search_charge_big_icon_day_night",
+                    "gas_shell": "global_image_navi_along_search_shell_station_big_icon_day_night",
+                    "gas_default": "global_image_navi_along_search_gas_station_big_icon_day_night",
+                    "gas_petrochina": "global_image_navi_along_search_petrochina_station_big_icon_day_night",
+                    "food": "global_image_navi_along_search_restaurant_big_icon_day_night",
+                    "wc": "global_image_navi_along_search_wc_big_icon_day_night",
+                    "gas_sinopec": "global_image_navi_along_search_sinopec_station_big_icon_day_night",
+                    "charge_putian": "global_image_navi_along_search_putian_station_big_icon_day_night",
+                    "default": "global_image_bubble_child_day_night"
+                }
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "text_time": "#ff2d68f4"
+                    },
+                    {
+                        "type_name": "#ffffffff"
+                    },
+                    {
+                        "name_text": "#171717"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #E6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "text_time": "#3A6FEC"
+                    },
+                    {
+                        "type_name": "#ffffffff"
+                    },
+                    {
+                        "name_text": "#C0C1C3"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #CC000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_along_route_normal_bestway": {
+            "anchor": 12,
+            "x_offset": 22,
+            "y_offset": 38,
+            "day_style": {
+                "color": [
+                    {
+                        "text_time": "#ff2d68f4"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "text_time": "#ff1a66ff"
+                    }
+                ]
+            },
+            "image_style": {
+                "brand_image": {
+                    "gas_sinopec": "global_image_navi_along_search_sinopec_station_icon_day_night",
+                    "gas_petrochina": "global_image_navi_along_search_petrochina_station_icon_day_night",
+                    "gas_shell": "global_image_navi_along_search_shell_station_icon_day_night",
+                    "gas_default": "global_image_navi_along_search_gas_station_icon_day_night",
+                    "charge_guojiadianwang": "global_image_navi_along_search_guojiadianwang_station_icon_day_night",
+                    "charge_telaidian": "global_image_navi_along_search_telaidian_station_icon_day_night",
+                    "charge_xingxing": "global_image_navi_along_search_xingxing_station_icon_day_night",
+                    "charge_putian": "global_image_navi_along_search_putian_station_icon_day_night",
+                    "charge_default": "global_image_navi_along_search_charge_icon_day_night",
+                    "atm": "global_image_navi_along_search_atm_icon_day_night",
+                    "wc": "global_image_navi_along_search_wc_icon_day_night",
+                    "repair": "global_image_navi_along_search_repair_icon_day_night",
+                    "rest_area": "global_image_navi_along_search_fwq_station_icon_day_night",
+                    "cng": "global_image_navi_along_search_cng_icon_day_night",
+                    "food": "global_image_navi_along_search_restaurant_icon_day_night",
+                    "car_wash": "global_image_navi_along_search_carwash_icon_day_night",
+                    "scenic_spot": "global_image_navi_along_search_scenic_icon_day_night",
+                    "hotel": "global_image_navi_along_search_hotel_icon_day_night",
+                    "default": "global_image_b_child_poi_hl_day_night"
+                }
+            }
+        },
+        "marker_info_along_route_normal_bestway_focus": {
+            "anchor": 9,
+            "y_ratio": 0.95,
+            "x_ratio": 0.5,
+            "image_style": {
+                "brand_image": {
+                    "repair": "global_image_navi_along_search_repair_big_icon_day_night",
+                    "rest_area": "global_image_navi_along_search_fwq_station_big_icon_day_night",
+                    "charge_xingxing": "global_image_navi_along_search_xingxing_station_big_icon_day_night",
+                    "charge_guojiadianwang": "global_image_navi_along_search_guojiadianwang_station_big_icon_day_night",
+                    "cng": "global_image_navi_along_search_cng_big_icon_day_night",
+                    "charge_telaidian": "global_image_navi_along_search_telaidian_station_big_icon_day_night",
+                    "scenic_spot": "global_image_navi_along_search_scenic_big_icon_day_night",
+                    "hotel": "global_image_navi_along_search_hotel_big_icon_day_night",
+                    "atm": "global_image_navi_along_search_atm_big_icon_day_night",
+                    "car_wash": "global_image_navi_along_search_carwash_big_icon_day_night",
+                    "charge_default": "global_image_navi_along_search_charge_big_icon_day_night",
+                    "gas_shell": "global_image_navi_along_search_shell_station_big_icon_day_night",
+                    "gas_default": "global_image_navi_along_search_gas_station_big_icon_day_night",
+                    "gas_petrochina": "global_image_navi_along_search_petrochina_station_big_icon_day_night",
+                    "food": "global_image_navi_along_search_restaurant_big_icon_day_night",
+                    "wc": "global_image_navi_along_search_wc_big_icon_day_night",
+                    "gas_sinopec": "global_image_navi_along_search_sinopec_station_big_icon_day_night",
+                    "charge_putian": "global_image_navi_along_search_putian_station_big_icon_day_night",
+                    "default": "global_image_bubble_child_day_night"
+                }
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "text_time": "#ff2d68f4"
+                    },
+                    {
+                        "type_name": "#ffffffff"
+                    },
+                    {
+                        "name_text": "#171717"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #E6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "text_time": "#3A6FEC"
+                    },
+                    {
+                        "type_name": "#E6FFFFFF"
+                    },
+                    {
+                        "name_text": "#C0C1C3"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #CC000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_along_route_normal_simple": {
+            "anchor": 10,
+            "x_offset": 22,
+            "y_offset": 49,
+            "day_style": {
+                "color": [
+                    {
+                        "text_time": "#ff2d68f4"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "text_time": "#ff1a66ff"
+                    }
+                ]
+            },
+            "image_style": {
+                "brand_image": {
+                    "gas_sinopec": "global_image_navi_along_search_sinopec_station_icon_day_night",
+                    "gas_petrochina": "global_image_navi_along_search_petrochina_station_icon_day_night",
+                    "gas_shell": "global_image_navi_along_search_shell_station_icon_day_night",
+                    "gas_default": "global_image_navi_along_search_gas_station_icon_day_night",
+                    "charge_guojiadianwang": "global_image_navi_along_search_guojiadianwang_station_icon_day_night",
+                    "charge_telaidian": "global_image_navi_along_search_telaidian_station_icon_day_night",
+                    "charge_xingxing": "global_image_navi_along_search_xingxing_station_icon_day_night",
+                    "charge_putian": "global_image_navi_along_search_putian_station_icon_day_night",
+                    "charge_default": "global_image_navi_along_search_charge_icon_day_night",
+                    "atm": "global_image_navi_along_search_atm_icon_day_night",
+                    "wc": "global_image_navi_along_search_wc_icon_day_night",
+                    "repair": "global_image_navi_along_search_repair_icon_day_night",
+                    "rest_area": "global_image_navi_along_search_fwq_station_icon_day_night",
+                    "cng": "global_image_navi_along_search_cng_icon_day_night",
+                    "food": "global_image_navi_along_search_restaurant_icon_day_night",
+                    "car_wash": "global_image_navi_along_search_carwash_icon_day_night",
+                    "scenic_spot": "global_image_navi_along_search_scenic_icon_day_night",
+                    "hotel": "global_image_navi_along_search_hotel_icon_day_night",
+                    "default": "global_image_b_child_poi_hl_day_night"
+                }
+            }
+        },
+        "marker_info_along_route_normal_simple_focus": {
+            "anchor": 9,
+            "y_ratio": 0.95,
+            "x_ratio": 0.5,
+            "image_style": {
+                "brand_image": {
+                    "repair": "global_image_navi_along_search_repair_big_icon_day_night",
+                    "rest_area": "global_image_navi_along_search_fwq_station_big_icon_day_night",
+                    "charge_xingxing": "global_image_navi_along_search_xingxing_station_big_icon_day_night",
+                    "charge_guojiadianwang": "global_image_navi_along_search_guojiadianwang_station_big_icon_day_night",
+                    "cng": "global_image_navi_along_search_cng_big_icon_day_night",
+                    "charge_telaidian": "global_image_navi_along_search_telaidian_station_big_icon_day_night",
+                    "scenic_spot": "global_image_navi_along_search_scenic_big_icon_day_night",
+                    "hotel": "global_image_navi_along_search_hotel_big_icon_day_night",
+                    "atm": "global_image_navi_along_search_atm_big_icon_day_night",
+                    "car_wash": "global_image_navi_along_search_carwash_big_icon_day_night",
+                    "charge_default": "global_image_navi_along_search_charge_big_icon_day_night",
+                    "gas_shell": "global_image_navi_along_search_shell_station_big_icon_day_night",
+                    "gas_default": "global_image_navi_along_search_gas_station_big_icon_day_night",
+                    "gas_petrochina": "global_image_navi_along_search_petrochina_station_big_icon_day_night",
+                    "food": "global_image_navi_along_search_restaurant_big_icon_day_night",
+                    "wc": "global_image_navi_along_search_wc_big_icon_day_night",
+                    "gas_sinopec": "global_image_navi_along_search_sinopec_station_big_icon_day_night",
+                    "charge_putian": "global_image_navi_along_search_putian_station_big_icon_day_night",
+                    "default": "global_image_bubble_child_day_night"
+                }
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "text_time": "#ff2d68f4"
+                    },
+                    {
+                        "type_name": "#ffffffff"
+                    },
+                    {
+                        "name_text": "#171717"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #E6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "text_time": "#ff1a66ff"
+                    },
+                    {
+                        "type_name": "#ffffffff"
+                    },
+                    {
+                        "name_text": "#C0C1C3"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #CC000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_along_route_label_energy": {
+            "anchor": 12,
+            "x_offset": 22,
+            "night_style": {
+                "color": [
+                    {
+                        "type_name": "#e6ffffff"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "type_name": "#e6000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_point_center_up": {
+            "anchor": 9,
+            "x_ratio": 0.5,
+            "y_ratio": 0.9
+        },
+        "marker_info_along_route_label_energy_lower": {
+            "anchor": 12,
+            "x_offset": 22,
+            "night_style": {
+                "color": [
+                    {
+                        "type_name": "#fffe352e"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "type_name": "#ffff5148"
+                    }
+                ]
+            }
+        }
+    },
+    "layer_item_info": {
+        "point_search_alongroute_normal": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "along_route_normal.xml",
+                    "poi_marker_info": "marker_info_along_route_normal"
+                },
+                "focus_style": {
+                    "poi_marker_id": "along_route_normal_focus.xml",
+                    "poi_marker_info": "marker_info_along_route_normal_focus"
+                }
+            },
+            "index": 0,
+            "name_cn": "沿途搜"
+        },
+        "point_search_alongroute_normal_bestway": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "along_route_normal_bestway.xml",
+                    "poi_marker_info": "marker_info_along_route_normal_bestway"
+                },
+                "focus_style": {
+                    "poi_marker_id": "along_route_normal_bestway_focus.xml",
+                    "poi_marker_info": "marker_info_along_route_normal_bestway_focus"
+                }
+            },
+            "index": 1,
+            "name_cn": "沿途搜 最顺路"
+        },
+        "point_search_alongroute_normal_simple": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "along_route_normal_simple.xml",
+                    "poi_marker_info": "marker_info_along_route_normal_simple"
+                },
+                "focus_style": {
+                    "poi_marker_id": "along_route_normal_simple_focus.xml",
+                    "poi_marker_info": "marker_info_along_route_normal_simple_focus"
+                }
+            },
+            "index": 2,
+            "name_cn": "沿途搜 扎点态"
+        },
+        "point_search_alongroute_charge_normal_energy": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "along_route_charge_normal_energy.xml",
+                    "poi_marker_info": "marker_info_along_route_label_energy"
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_along_search_charge_big_icon_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 3,
+            "name_cn": "充电站 电量"
+        },
+        "point_search_alongroute_charge_normal_energy_lower": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "along_route_charge_normal_energy.xml",
+                    "poi_marker_info": "marker_info_along_route_label_energy_lower"
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_along_search_charge_big_icon_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 4,
+            "name_cn": "充电站 低电量"
+        },
+        "point_search_alongroute_charge_guojiadianwang_energy": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "along_route_charge_guojiadianwang_energy.xml",
+                    "poi_marker_info": "marker_info_along_route_label_energy"
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_along_search_guojiadianwang_station_big_icon_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 5,
+            "name_cn": "充电站 国家电网 电量"
+        },
+        "point_search_alongroute_charge_guojiadianwang_energy_lower": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "along_route_charge_guojiadianwang_energy.xml",
+                    "poi_marker_info": "marker_info_along_route_label_energy_lower"
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_along_search_guojiadianwang_station_big_icon_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 6,
+            "name_cn": "充电站 国家电网 低电量"
+        },
+        "point_search_alongroute_charge_telaidian_energy": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "along_route_charge_telaidian_energy.xml",
+                    "poi_marker_info": "marker_info_along_route_label_energy"
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_along_search_telaidian_station_big_icon_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 7,
+            "name_cn": "充电站 特来电 电量"
+        },
+        "point_search_alongroute_charge_telaidian_energy_lower": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "along_route_charge_telaidian_energy.xml",
+                    "poi_marker_info": "marker_info_along_route_label_energy_lower"
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_along_search_telaidian_station_big_icon_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 8,
+            "name_cn": "充电站 特来电 低电量"
+        },
+        "point_search_alongroute_charge_xingxing_energy_lower": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "along_route_charge_xingxing_energy.xml",
+                    "poi_marker_info": "marker_info_along_route_label_energy_lower"
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_along_search_xingxing_station_big_icon_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 9,
+            "name_cn": "充电站 星星 低电量"
+        },
+        "point_search_alongroute_charge_xingxing_energy": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "along_route_charge_xingxing_energy.xml",
+                    "poi_marker_info": "marker_info_along_route_label_energy"
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_along_search_xingxing_station_big_icon_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 10,
+            "name_cn": "充电站 星星 电量"
+        },
+        "point_search_alongroute_charge_putian_energy": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "along_route_charge_putian_energy.xml",
+                    "poi_marker_info": "marker_info_along_route_label_energy"
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_along_search_putian_station_big_icon_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 11,
+            "name_cn": "充电站 普天 电量"
+        },
+        "point_search_alongroute_charge_putian_energy_lower": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "along_route_charge_putian_energy.xml",
+                    "poi_marker_info": "marker_info_along_route_label_energy_lower"
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_along_search_putian_station_big_icon_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 12,
+            "name_cn": "充电站 普天 低电量"
+        }
+    }
+}

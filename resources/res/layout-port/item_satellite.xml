@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/base"
+    android:layout_width="@dimen/auto_dimen2_50"
+    android:layout_height="wrap_content">
+    <com.autonavi.view.custom.CustomGpsPillarView
+        android:id="@+id/view_pillar"
+        android:layout_width="@dimen/auto_dimen2_11"
+        android:layout_height="@dimen/auto_dimen2_96"
+        app:layout_constraintBottom_toTopOf="@+id/tv_satellite_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.autonavi.skin.view.SkinTextView
+        android:textSize="@dimen/auto_font_size_18"
+        android:textColor="@color/color_subtitle_text_day_color"
+        android:gravity="center"
+        android:id="@+id/tv_satellite_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/auto_dimen2_8"
+        android:text="16"
+        app:layout_constraintEnd_toEndOf="@+id/view_pillar"
+        app:layout_constraintStart_toStartOf="@+id/view_pillar"
+        app:layout_constraintTop_toBottomOf="@+id/view_pillar"
+        app:textColor4Night="@color/color_subtitle_text_day_color"
+        app:textColor4Skin="@color/color_subtitle_text_day_color"/>
+    <com.autonavi.skin.view.SkinImageView
+        android:id="@+id/iv_satellite_type_icon"
+        android:layout_width="@dimen/auto_dimen2_26"
+        android:layout_height="@dimen/auto_dimen2_26"
+        android:layout_marginTop="@dimen/auto_dimen2_8"
+        android:src="@drawable/icon_satellite_plough_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_satellite_count"
+        app:layout_constraintStart_toStartOf="@+id/tv_satellite_count"
+        app:layout_constraintTop_toBottomOf="@+id/tv_satellite_count"/>
+</com.autonavi.skin.view.SkinConstraintLayout>

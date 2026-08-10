@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/favorite_listView_itemView"
+    android:background="@drawable/list_bg_day_selector"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/auto_dimen2_74"
+    android:layout_marginTop="@dimen/auto_dimen2_8"
+    app:background4Night="@drawable/list_bg_night_selector"
+    app:background4Skin="@drawable/list_bg_day_selector"
+    app:designHeight="720"
+    app:designWidth="1280">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/auto_dimen2_74"
+        layout="@layout/user_favorite_list_item_layout"/>
+</com.autonavi.skin.view.SkinConstraintLayout>

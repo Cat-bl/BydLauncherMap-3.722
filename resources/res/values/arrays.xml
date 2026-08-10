@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="ColorTheme">
+        <item>@string/pref_color_theme_light</item>
+        <item>@string/pref_color_theme_dark</item>
+    </array>
+    <array name="ColorThemeValues">
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="GPSupdatefrequency">
+        <item>@string/pref_GPS_update_frequency_max</item>
+        <item>@string/pref_GPS_update_frequency_1s</item>
+        <item>@string/pref_GPS_update_frequency_2s</item>
+        <item>@string/pref_GPS_update_frequency_3s</item>
+    </array>
+    <array name="GPSupdatefrequencyValues">
+        <item>50</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+    </array>
+    <array name="GPXVersion">
+        <item>@string/pref_GPX_version_1_0</item>
+        <item>@string/pref_GPX_version_1_1</item>
+    </array>
+    <array name="GPXVersionValues">
+        <item>100</item>
+        <item>110</item>
+    </array>
+    <array name="KMLAltitudeMode">
+        <item>@string/pref_KML_altitude_mode_absolute</item>
+        <item>@string/pref_KML_altitude_mode_projected</item>
+    </array>
+    <array name="KMLAltitudeModeValues">
+        <item>0</item>
+        <item>1</item>
+    </array>
+    <array name="ShowDirections">
+        <item>@string/pref_show_directions_cardinal</item>
+        <item>@string/pref_show_directions_angle</item>
+    </array>
+    <array name="ShowDirectionsValues">
+        <item>0</item>
+        <item>1</item>
+    </array>
+    <array name="TrackStats">
+        <item>@string/pref_track_stats_totaltime</item>
+        <item>@string/pref_track_stats_movingtime</item>
+    </array>
+    <array name="TrackStatsValues">
+        <item>0</item>
+        <item>1</item>
+    </array>
+    <array name="UM">
+        <item>@string/pref_unit_of_measurement_metric</item>
+        <item>@string/pref_unit_of_measurement_imperial</item>
+        <item>@string/pref_unit_of_measurement_aerial_nautical</item>
+    </array>
+    <array name="UMOfSpeed">
+        <item>@string/UM_m_s</item>
+        <item>@string/UM_km_h</item>
+        <item>@string/UM_fps</item>
+        <item>@string/UM_mph</item>
+        <item>@string/UM_kn</item>
+    </array>
+    <array name="UMOfSpeedValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </array>
+    <array name="UMValues">
+        <item>0</item>
+        <item>8</item>
+        <item>16</item>
+    </array>
+</resources>

@@ -1,0 +1,28 @@
+{
+    "marker_info": {
+        "marker_info_point_center_up": {
+            "anchor": 9,
+            "x_ratio": 0.5,
+            "y_ratio": 0.9
+        }
+    },
+    "layer_item_info": {
+        "point_route_popup_nearest": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_bubble_child_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "路径上弹出添加途径点"
+        }
+    }
+}

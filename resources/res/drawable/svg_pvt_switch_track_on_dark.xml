@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="48dp"
+    android:width="52dp"
+    android:viewportWidth="52"
+    android:viewportHeight="48">
+    <path
+        android:fillColor="#ff0000"
+        android:pathData="M0,0h52v48h-52z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:strokeAlpha="0"
+        android:fillAlpha="0"
+        android:fillType="evenOdd"/>
+    <path
+        android:name="@string/byd_switch_track_path"
+        android:fillColor="@color/sys_green_550"
+        android:pathData="M13,11L39,11C46.18,11 52,16.82 52,24C52,31.18 46.18,37 39,37L13,37C5.82       ,37 0,31.18 0,24C0,16.82 5.82,11 13,11Z"
+        android:strokeColor="#0fffffff"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#0fffffff"
+        android:pathData="M39,11C46.18,11 52,16.82 52,24C52,31.18 46.18,37 39,37L13,37C5.82,37 0       ,31.18 0,24C0,16.82 5.82,11 13,11L39,11ZM39,12L13,12C6.373,12 1,17.373 1,24C1,30.525 6.209       ,35.834 12.695,35.996L13,36L39,36C45.627,36 51,30.627 51,24C51,17.475 45.791,12.166 39.305       ,12.004L39,12Z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+</vector>

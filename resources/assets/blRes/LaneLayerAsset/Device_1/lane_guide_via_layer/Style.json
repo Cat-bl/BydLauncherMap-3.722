@@ -1,0 +1,105 @@
+{
+    "layer_item_info": {
+        "point_lane_route_via": {
+            "index": 0,
+            "name_cn": "车道级途经点",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "focus_style": {
+                    "poi_marker_id": "lane_guide_location_mark_plus_focus.xml",
+                    "poi_marker_info": "marker_info_lane_route_via_focus"
+                },
+                "normal_style": {
+                    "marker_style": {
+                        "display": [
+                            {
+                                "name_left": "none"
+                            },
+                            {
+                                "name_right": "none"
+                            }
+                        ]
+                    },
+                    "poi_marker_id": "lane_guide_location_mark_normal.xml",
+                    "poi_marker_info": "marker_info_lane_route_via"
+                }
+            }
+        }
+    },
+    "marker_info": {
+        "marker_info_lane_route_via": {
+            "anchor": 9,
+            "day_style": {
+                "color": [
+                    {
+                        "icon_cn": "#FFFFFF"
+                    },
+                    {
+                        "icon_en": "#FFFFFF"
+                    },
+                    {
+                        "icon_num": "#FFFFFF"
+                    }
+                ]
+            },
+            "image_style": {
+                "bg": {
+                    "midd": "global_image_autonavi_lane_bubble_location_mark_midd_day_night",
+                    "pathway": "global_image_autonavi_lane_bubble_location_mark_midd_pathway_day_night"
+                }
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "icon_cn": "#CCFFFFFF"
+                    },
+                    {
+                        "icon_en": "#CCFFFFFF"
+                    },
+                    {
+                        "icon_num": "#CCFFFFFF"
+                    }
+                ]
+            },
+            "x_ratio": 0.5,
+            "y_ratio": 0.9
+        },
+        "marker_info_lane_route_via_focus": {
+            "anchor": 9,
+            "day_style": {
+                "color": [
+                    {
+                        "icon_cn": "#FFFFFF"
+                    },
+                    {
+                        "icon_en": "#FFFFFF"
+                    },
+                    {
+                        "icon_num": "#FFFFFF"
+                    }
+                ]
+            },
+            "image_style": {
+                "bg": {
+                    "midd": "global_image_autonavi_lane_bubble_location_mark_midd_plus_day_night",
+                    "pathway": "global_image_autonavi_lane_bubble_location_mark_midd_pathway_plus_day_night"
+                }
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "icon_cn": "#CCFFFFFF"
+                    },
+                    {
+                        "icon_en": "#CCFFFFFF"
+                    },
+                    {
+                        "icon_num": "#CCFFFFFF"
+                    }
+                ]
+            },
+            "x_ratio": 0.44,
+            "y_ratio": 0.9
+        }
+    }
+}

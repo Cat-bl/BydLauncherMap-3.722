@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient
+        android:startColor="@color/color_shape_voice_listview_edge_gradient_day_start_color_denza"
+        android:endColor="@color/color_shape_voice_listview_edge_gradient_day_end_color_denza"
+        android:angle="90"/>
+</shape>

@@ -1,0 +1,55 @@
+{
+    "marker_info": {
+        "marker_info_guide_eta_event": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "event_name": "#000000"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "event_name": "#ffffff"
+                    }
+                ]
+            },
+            "y_offset": 17,
+            "x_offset": 17
+        }
+    },
+    "layer_item_info": {
+        "point_guide_eta_event_close": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_traffic_eta_event_close.xml",
+                    "poi_marker_info": "marker_info_guide_eta_event"
+                }
+            },
+            "index": 0,
+            "name_cn": "封路"
+        },
+        "point_guide_eta_event_forbidden": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_traffic_eta_event_forbidden.xml",
+                    "poi_marker_info": "marker_info_guide_eta_event"
+                }
+            },
+            "index": 1,
+            "name_cn": "禁行"
+        },
+        "point_guide_eta_event_tmc": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_traffic_eta_event_tmc.xml",
+                    "poi_marker_info": "marker_info_guide_eta_event"
+                }
+            },
+            "index": 2,
+            "name_cn": "拥堵"
+        }
+    }
+}

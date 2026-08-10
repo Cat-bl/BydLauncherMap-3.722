@@ -1,0 +1,277 @@
+{
+  "data": {
+    "type": "adaptor_point",
+    "value": [],
+    "rule": [
+      {
+        "type": "data_duplicate",
+        "brief": "数据去重",
+        "value": [
+          "$item_data.position.lon",
+          "$item_data.position.lat"
+        ]
+      }
+    ]
+  },
+  "biz": [
+    {
+      "brief": "设置多飘向图层避让算法",
+      "type": "biz_set_avoid_algorithm",
+      "value": 2
+    }
+  ],
+  "style": {
+    "style_name": {
+      "prefix_name": "",
+      "rule": [
+        {
+          "brief": "样式规则",
+          "type": "style_if",
+          "value": {
+            "condition": {
+              "func": {
+                "name": "StringLength",
+                "param": {
+                  "value": "$biz_data.parkingSubtitleText"
+                }
+              },
+              "operator": "gt",
+              "value": 0
+            },
+            "case": {
+              "true": "search_recommend_end_bubble_point",
+              "false": "search_recommend_end_bubble_point_simple"
+            }
+          }
+        }
+      ]
+    },
+    "dynamic_marker": {
+      "rule": [
+        {
+          "brief": "显示停车图标",
+          "type": "marker_if",
+          "value": {
+            "condition": {
+              "fact": "$biz_data.isParkingIcon",
+              "operator": "equal",
+              "value": true
+            },
+            "case": {
+              "true": {
+                "id": "parking_icon",
+                "display": true,
+                "src": "global_image_route_recommend_icon_parking_day_night"
+              },
+              "false": {
+                "id": "parking_icon",
+                "display": false
+              }
+            }
+          }
+        },
+        {
+          "brief": "显示充电图标",
+          "type": "marker_if",
+          "value": {
+            "condition": {
+              "fact": "$biz_data.isChargeIcon",
+              "operator": "equal",
+              "value": true
+            },
+            "case": {
+              "true": {
+                "id": "charge_icon",
+                "display": true,
+                "src": "global_image_route_recommend_icon_charge_day_night"
+              },
+              "false": {
+                "id": "charge_icon",
+                "display": false
+              }
+            }
+          }
+        },
+        {
+          "brief": "显示parkingRecommendText",
+          "type": "marker_if",
+          "value": {
+            "condition": {
+              "func": {
+                "name": "StringLength",
+                "param": {
+                  "value": "$biz_data.parkingRecommendText"
+                }
+              },
+              "operator": "gt",
+              "value": 0
+            },
+            "case": {
+              "true": [
+                {
+                  "id": "parking_recommend_text",
+                  "display": true,
+                  "value": "$biz_data.parkingRecommendText"
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "fact": "$biz_data.isRecommendIcon",
+                      "operator": "equal",
+                      "value": true
+                    },
+                    "case": {
+                      "true": [],
+                      "false": {
+                        "id": "parking_recommend_back_icon",
+                        "display": false
+                      }
+                    }
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "parking_recommend_text",
+                  "display": false
+                },
+                {
+                  "id": "parking_recommend_back_icon",
+                  "display": false
+                }
+              ]
+            }
+          }
+        },
+        {
+          "brief": "显示parkingDifficultText",
+          "type": "marker_if",
+          "value": {
+            "condition": {
+              "func": {
+                "name": "StringLength",
+                "param": {
+                  "value": "$biz_data.parkingDifficultText"
+                }
+              },
+              "operator": "gt",
+              "value": 0
+            },
+            "case": {
+              "true": [
+                {
+                  "id": "parking_difficult_text",
+                  "display": true,
+                  "value": "$biz_data.parkingDifficultText"
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "fact": "$biz_data.isRecommendIcon",
+                      "operator": "equal",
+                      "value": true
+                    },
+                    "case": {
+                      "false": {
+                        "id": "parking_difficult_back_icon",
+                        "display": false
+                      }
+                    }
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "parking_difficult_text",
+                  "display": false
+                },
+                {
+                  "id": "parking_difficult_back_icon",
+                  "display": false
+                }
+              ]
+            }
+          }
+        },
+        {
+          "brief": "显示parkingNoQueueText",
+          "type": "marker_if",
+          "value": {
+            "condition": {
+              "func": {
+                "name": "StringLength",
+                "param": {
+                  "value": "$biz_data.parkingNoQueueText"
+                }
+              },
+              "operator": "gt",
+              "value": 0
+            },
+            "case": {
+              "true": [
+                {
+                  "id": "parking_no_queue_text",
+                  "display": true,
+                  "value": "$biz_data.parkingNoQueueText"
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "fact": "$biz_data.isRecommendIcon",
+                      "operator": "equal",
+                      "value": true
+                    },
+                    "case": {
+                      "false": {
+                        "id": "parking_recommend_back_icon",
+                        "display": false
+                      }
+                    }
+                  }
+                }
+              ],
+              "false": {
+                "id": "parking_no_queue_text",
+                "display": false
+              }
+            }
+          }
+        },
+        {
+          "brief": "显示parkingSubtitleText",
+          "type": "marker_if",
+          "value": {
+            "condition": {
+              "func": {
+                "name": "StringLength",
+                "param": {
+                  "value": "$biz_data.parkingSubtitleText"
+                }
+              },
+              "operator": "gt",
+              "value": 0
+            },
+            "case": {
+              "true": {
+                "id": "parking_subtitle_text",
+                "display": true,
+                "value": "$biz_data.parkingSubtitleText"
+              },
+              "false": {
+                "id": "parking_subtitle_text",
+                "display": false
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "abstract": {
+    "brief": "搜索终点推荐气泡",
+    "name": "recommend_end_bubble_layer",
+    "biz_type": 2504,
+    "update_card": false
+  },
+  "dataSource": "{\"item_data\":{\"position\":{\"lon\":116.351,\"lat\":39.94,\"z\":0}},\"biz_data\":{\"isChargeIcon\":true,\"isParkingIcon\":true,\"parkingRecommendText\":\"推荐停车场\",\"parkingDifficultText\":\"较难停\",\"parkingNoQueueText\":\"预计不排队\",\"parkingSubtitleText\":\"临停有违章风险\"}}"
+}

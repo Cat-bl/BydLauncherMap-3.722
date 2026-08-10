@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.autonavi.skin.view.SkinImageView android:gravity="center" android:id="@id/file_icon" android:layout_width="@dimen/auto_dimen2_50" android:layout_height="@dimen/auto_dimen2_40" />
+    <com.autonavi.skin.view.SkinTextView android:textSize="@dimen/auto_font_size_14" android:textColor="@color/byd_text_450_1_textcolor_day_selector" android:gravity="center" android:id="@id/file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/auto_dimen2_3" app:textColor4Night="@color/byd_text_450_1_textcolor_night_selector" app:textColor4Skin="@color/byd_text_450_1_textcolor_day_selector" />
+</com.autonavi.skin.view.SkinLinearLayout>

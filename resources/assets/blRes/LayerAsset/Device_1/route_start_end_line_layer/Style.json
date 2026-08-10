@@ -1,0 +1,40 @@
+{
+    "marker_info": {
+        "map_lr": {
+            "anchor": 4,
+            "repeat": 1,
+            "gen_mipmaps": 1,
+            "pre_mul_alpha": 1
+        }
+    },
+    "layer_item_info": {
+        "fly_line_style": {
+            "line_layer_item_style": {
+                "use_cap": 1,
+                "use_color": 1,
+                "draw_cover": 1,
+                "can_be_coveredbylabel": 1,
+                "fill_texture": {
+                    "marker_id": "map_lr",
+                    "color": "0xFFFF4800",
+                    "width": 12
+                },
+                "texture_info": {
+                    "x1": 0.05,
+                    "y1": 0.25,
+                    "x2": 0.95,
+                    "y2": 0.25,
+                    "texture_len": 32
+                },
+                "cap_texture_info": {
+                    "x1": 0.05,
+                    "y1": 0.5,
+                    "x2": 0.95,
+                    "y2": 0.75
+                }
+            },
+            "index": 0,
+            "name_cn": "起终点连线"
+        }
+    }
+}

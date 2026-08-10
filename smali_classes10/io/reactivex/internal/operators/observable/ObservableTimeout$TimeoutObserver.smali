@@ -1,0 +1,401 @@
+.class public final Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutObserver;
+.super Ljava/util/concurrent/atomic/AtomicLong;
+.source "SourceFile"
+
+# interfaces
+.implements Lh/a/u;
+.implements Lh/a/a0/b;
+.implements Lio/reactivex/internal/operators/observable/ObservableTimeout$a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lio/reactivex/internal/operators/observable/ObservableTimeout;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "TimeoutObserver"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/util/concurrent/atomic/AtomicLong;",
+        "Lh/a/u<",
+        "TT;>;",
+        "Lh/a/a0/b;",
+        "Lio/reactivex/internal/operators/observable/ObservableTimeout$a;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final serialVersionUID:J = 0x343e2a2afd6bc01eL
+
+
+# instance fields
+.field public final downstream:Lh/a/u;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lh/a/u<",
+            "-TT;>;"
+        }
+    .end annotation
+.end field
+
+.field public final itemTimeoutIndicator:Lh/a/d0/o;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lh/a/d0/o<",
+            "-TT;+",
+            "Lh/a/s<",
+            "*>;>;"
+        }
+    .end annotation
+.end field
+
+.field public final task:Lio/reactivex/internal/disposables/SequentialDisposable;
+
+.field public final upstream:Ljava/util/concurrent/atomic/AtomicReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/atomic/AtomicReference<",
+            "Lh/a/a0/b;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lh/a/u;Lh/a/d0/o;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lh/a/u<",
+            "-TT;>;",
+            "Lh/a/d0/o<",
+            "-TT;+",
+            "Lh/a/s<",
+            "*>;>;)V"
+        }
+    .end annotation
+
+    invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicLong;-><init>()V
+
+    iput-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutObserver;->downstream:Lh/a/u;
+
+    iput-object p2, p0, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutObserver;->itemTimeoutIndicator:Lh/a/d0/o;
+
+    new-instance p1, Lio/reactivex/internal/disposables/SequentialDisposable;
+
+    invoke-direct {p1}, Lio/reactivex/internal/disposables/SequentialDisposable;-><init>()V
+
+    iput-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutObserver;->task:Lio/reactivex/internal/disposables/SequentialDisposable;
+
+    new-instance p1, Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-direct {p1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+
+    iput-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutObserver;->upstream:Ljava/util/concurrent/atomic/AtomicReference;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public dispose()V
+    .locals 1
+
+    iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutObserver;->upstream:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-static {v0}, Lio/reactivex/internal/disposables/DisposableHelper;->dispose(Ljava/util/concurrent/atomic/AtomicReference;)Z
+
+    iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutObserver;->task:Lio/reactivex/internal/disposables/SequentialDisposable;
+
+    invoke-virtual {v0}, Lio/reactivex/internal/disposables/SequentialDisposable;->dispose()V
+
+    return-void
+.end method
+
+.method public isDisposed()Z
+    .locals 1
+
+    iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutObserver;->upstream:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lh/a/a0/b;
+
+    invoke-static {v0}, Lio/reactivex/internal/disposables/DisposableHelper;->isDisposed(Lh/a/a0/b;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public onComplete()V
+    .locals 4
+
+    const-wide v0, 0x7fffffffffffffffL
+
+    invoke-virtual {p0, v0, v1}, Ljava/util/concurrent/atomic/AtomicLong;->getAndSet(J)J
+
+    move-result-wide v2
+
+    cmp-long v0, v2, v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutObserver;->task:Lio/reactivex/internal/disposables/SequentialDisposable;
+
+    invoke-virtual {v0}, Lio/reactivex/internal/disposables/SequentialDisposable;->dispose()V
+
+    iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutObserver;->downstream:Lh/a/u;
+
+    invoke-interface {v0}, Lh/a/u;->onComplete()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public onError(Ljava/lang/Throwable;)V
+    .locals 4
+
+    const-wide v0, 0x7fffffffffffffffL
+
+    invoke-virtual {p0, v0, v1}, Ljava/util/concurrent/atomic/AtomicLong;->getAndSet(J)J
+
+    move-result-wide v2
+
+    cmp-long v0, v2, v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutObserver;->task:Lio/reactivex/internal/disposables/SequentialDisposable;
+
+    invoke-virtual {v0}, Lio/reactivex/internal/disposables/SequentialDisposable;->dispose()V
+
+    iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutObserver;->downstream:Lh/a/u;
+
+    invoke-interface {v0, p1}, Lh/a/u;->onError(Ljava/lang/Throwable;)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-static {p1}, Lh/a/h0/a;->s(Ljava/lang/Throwable;)V
+
+    :goto_0
+    return-void
+.end method
+
+.method public onNext(Ljava/lang/Object;)V
+    .locals 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)V"
+        }
+    .end annotation
+
+    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
+
+    move-result-wide v0
+
+    const-wide v2, 0x7fffffffffffffffL
+
+    cmp-long v4, v0, v2
+
+    if-eqz v4, :cond_3
+
+    const-wide/16 v4, 0x1
+
+    add-long/2addr v4, v0
+
+    invoke-virtual {p0, v0, v1, v4, v5}, Ljava/util/concurrent/atomic/AtomicLong;->compareAndSet(JJ)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutObserver;->task:Lio/reactivex/internal/disposables/SequentialDisposable;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lh/a/a0/b;
+
+    if-eqz v0, :cond_1
+
+    invoke-interface {v0}, Lh/a/a0/b;->dispose()V
+
+    :cond_1
+    iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutObserver;->downstream:Lh/a/u;
+
+    invoke-interface {v0, p1}, Lh/a/u;->onNext(Ljava/lang/Object;)V
+
+    :try_start_0
+    iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutObserver;->itemTimeoutIndicator:Lh/a/d0/o;
+
+    invoke-interface {v0, p1}, Lh/a/d0/o;->apply(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    const-string v0, "The itemTimeoutIndicator returned a null ObservableSource."
+
+    invoke-static {p1, v0}, Lh/a/e0/b/a;->e(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lh/a/s;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    new-instance v0, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutConsumer;
+
+    invoke-direct {v0, v4, v5, p0}, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutConsumer;-><init>(JLio/reactivex/internal/operators/observable/ObservableTimeout$a;)V
+
+    iget-object v1, p0, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutObserver;->task:Lio/reactivex/internal/disposables/SequentialDisposable;
+
+    invoke-virtual {v1, v0}, Lio/reactivex/internal/disposables/SequentialDisposable;->replace(Lh/a/a0/b;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    invoke-interface {p1, v0}, Lh/a/s;->subscribe(Lh/a/u;)V
+
+    :cond_2
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    invoke-static {p1}, Lh/a/b0/a;->b(Ljava/lang/Throwable;)V
+
+    iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutObserver;->upstream:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lh/a/a0/b;
+
+    invoke-interface {v0}, Lh/a/a0/b;->dispose()V
+
+    invoke-virtual {p0, v2, v3}, Ljava/util/concurrent/atomic/AtomicLong;->getAndSet(J)J
+
+    iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutObserver;->downstream:Lh/a/u;
+
+    invoke-interface {v0, p1}, Lh/a/u;->onError(Ljava/lang/Throwable;)V
+
+    :cond_3
+    :goto_0
+    return-void
+.end method
+
+.method public onSubscribe(Lh/a/a0/b;)V
+    .locals 1
+
+    iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutObserver;->upstream:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-static {v0, p1}, Lio/reactivex/internal/disposables/DisposableHelper;->setOnce(Ljava/util/concurrent/atomic/AtomicReference;Lh/a/a0/b;)Z
+
+    return-void
+.end method
+
+.method public onTimeout(J)V
+    .locals 2
+
+    const-wide v0, 0x7fffffffffffffffL
+
+    invoke-virtual {p0, p1, p2, v0, v1}, Ljava/util/concurrent/atomic/AtomicLong;->compareAndSet(JJ)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    iget-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutObserver;->upstream:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-static {p1}, Lio/reactivex/internal/disposables/DisposableHelper;->dispose(Ljava/util/concurrent/atomic/AtomicReference;)Z
+
+    iget-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutObserver;->downstream:Lh/a/u;
+
+    new-instance p2, Ljava/util/concurrent/TimeoutException;
+
+    invoke-direct {p2}, Ljava/util/concurrent/TimeoutException;-><init>()V
+
+    invoke-interface {p1, p2}, Lh/a/u;->onError(Ljava/lang/Throwable;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public onTimeoutError(JLjava/lang/Throwable;)V
+    .locals 2
+
+    const-wide v0, 0x7fffffffffffffffL
+
+    invoke-virtual {p0, p1, p2, v0, v1}, Ljava/util/concurrent/atomic/AtomicLong;->compareAndSet(JJ)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    iget-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutObserver;->upstream:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-static {p1}, Lio/reactivex/internal/disposables/DisposableHelper;->dispose(Ljava/util/concurrent/atomic/AtomicReference;)Z
+
+    iget-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutObserver;->downstream:Lh/a/u;
+
+    invoke-interface {p1, p3}, Lh/a/u;->onError(Ljava/lang/Throwable;)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-static {p3}, Lh/a/h0/a;->s(Ljava/lang/Throwable;)V
+
+    :goto_0
+    return-void
+.end method
+
+.method public startFirstTimeout(Lh/a/s;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lh/a/s<",
+            "*>;)V"
+        }
+    .end annotation
+
+    if-eqz p1, :cond_0
+
+    new-instance v0, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutConsumer;
+
+    const-wide/16 v1, 0x0
+
+    invoke-direct {v0, v1, v2, p0}, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutConsumer;-><init>(JLio/reactivex/internal/operators/observable/ObservableTimeout$a;)V
+
+    iget-object v1, p0, Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutObserver;->task:Lio/reactivex/internal/disposables/SequentialDisposable;
+
+    invoke-virtual {v1, v0}, Lio/reactivex/internal/disposables/SequentialDisposable;->replace(Lh/a/a0/b;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-interface {p1, v0}, Lh/a/s;->subscribe(Lh/a/u;)V
+
+    :cond_0
+    return-void
+.end method

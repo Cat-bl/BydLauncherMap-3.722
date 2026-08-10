@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout android:layout_width="fill_parent" android:layout_height="@dimen/auto_dimen2_48"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.autonavi.skin.view.SkinView android:id="@id/stv_end_icon" android:background="@drawable/auto_navi_card_guide_via_end_icon" android:layout_width="@dimen/auto_dimen2_8" android:layout_height="@dimen/auto_dimen2_8" android:layout_marginStart="@dimen/auto_dimen2_30" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.autonavi.skin.view.SkinTextView android:textSize="@dimen/auto_font_size_16" android:textColor="@color/navi_card_via_text_name_color_day" android:gravity="center_vertical" android:id="@id/stv_end" android:layout_width="wrap_content" android:layout_height="@dimen/auto_dimen2_24" android:layout_marginStart="@dimen/auto_dimen2_14" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/stv_end_icon" app:layout_constraintTop_toTopOf="parent" app:textColor4Night="@color/navi_card_via_text_name_color_night" app:textColor4Skin="@color/navi_card_via_text_name_color_day" />
+</com.autonavi.skin.view.SkinConstraintLayout>

@@ -1,0 +1,17 @@
+{
+	"id":	6017,
+	"layer_priority":	{
+		"draw_priority":	140,
+		"sub_priority":	1740
+	},
+	"layer_scale":	{
+		"min_scale":	13,
+		"max_scale":	19
+	},
+	"layer_filter":	{
+		"enable":	0,
+		"type":	1
+	},
+	"enable_click":	0,
+	"item":	"ArrowLayerItem"
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:id="@+id/ll_header_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.autonavi.skin.view.SkinFrameLayout
+        android:layout_width="@dimen/auto_dimen2_50"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/auto_dimen2_12">
+        <com.autonavi.skin.view.SkinImageView
+            android:layout_gravity="center"
+            android:id="@+id/cls_loading"
+            android:layout_width="@dimen/auto_dimen2_38"
+            android:layout_height="@dimen/auto_dimen2_38"/>
+    </com.autonavi.skin.view.SkinFrameLayout>
+    <com.autonavi.skin.view.SkinLinearLayout
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.autonavi.skin.view.SkinTextView
+            android:textSize="@dimen/auto_font_size_18"
+            android:textColor="@color/auto_color_message_text_color_day"
+            android:gravity="center_horizontal"
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/set_my_trips_list_progress_loading_txt"
+            app:textColor4Night="@color/auto_color_message_text_color_night"
+            app:textColor4Skin="@color/auto_color_message_text_color_day"/>
+    </com.autonavi.skin.view.SkinLinearLayout>
+</com.autonavi.skin.view.SkinLinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="false"
+        android:drawable="@drawable/user_car_phone_unconnected_night_kd"/>
+    <item
+        android:state_enabled="true"
+        android:drawable="@drawable/user_car_phone_connetced_night_kd"/>
+</selector>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/auto_dimen2_32" />
+    <stroke android:width="@dimen/custom_setting_bg_bg_strokewidth_normal_night" android:color="#ff464646" />
+    <gradient android:startColor="#d9232323" android:endColor="#ff2e2e2e" android:angle="90.0" android:centerX="0.5" />
+</shape>

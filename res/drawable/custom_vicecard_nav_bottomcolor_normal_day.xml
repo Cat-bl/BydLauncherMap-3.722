@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:bottomLeftRadius="@dimen/custom_vicecard_nav_bottomcolor_corner_bottom_left_normal_day" android:bottomRightRadius="@dimen/custom_vicecard_nav_bottomcolor_corner_bottom_right_normal_day" />
+    <solid android:color="@color/auto_color_white" />
+</shape>

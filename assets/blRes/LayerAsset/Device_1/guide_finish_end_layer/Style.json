@@ -1,0 +1,49 @@
+{
+    "marker_info": {
+        "marker_info_guide_finish_end": {
+            "anchor": 5,
+            "day_style": {
+                "color": [
+                    {
+                        "name": "#131313"
+                    },
+                    {
+                        "eta_text": "#ffffff"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name": "2px #ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "name": "#e6ffffff"
+                    },
+                    {
+                        "eta_text": "#e8ffffff"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name": "2px #000000"
+                    }
+                ]
+            }
+        }
+    },
+    "layer_item_info": {
+        "point_guide_finish_end": {
+            "index": 0,
+            "name_cn": "导航结束页终点步导线",
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_finish_walking_navi.xml",
+                    "poi_marker_info": "marker_info_guide_finish_end"
+                }
+            }
+        }
+    }
+}

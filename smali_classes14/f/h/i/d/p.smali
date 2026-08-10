@@ -1,0 +1,44 @@
+.class public final synthetic Lf/h/i/d/p;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/util/function/Consumer;
+
+
+# static fields
+.field public static final synthetic a:Lf/h/i/d/p;
+
+
+# direct methods
+.method public static synthetic constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lf/h/i/d/p;
+
+    invoke-direct {v0}, Lf/h/i/d/p;-><init>()V
+
+    sput-object v0, Lf/h/i/d/p;->a:Lf/h/i/d/p;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;)V
+    .locals 0
+
+    check-cast p1, Landroid/util/Pair;
+
+    invoke-static {p1}, Lf/h/i/d/f0;->E(Landroid/util/Pair;)V
+
+    return-void
+.end method

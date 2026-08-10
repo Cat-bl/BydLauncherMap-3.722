@@ -1,0 +1,12 @@
+{
+    "marker_info": {},
+    "layer_item_info": {
+        "polygon_route_restrict": {
+            "polygon_layer_item_style": {
+                "color": "0x26E53B00"
+            },
+            "index": 0,
+            "name_cn": "限行区域面"
+        }
+    }
+}

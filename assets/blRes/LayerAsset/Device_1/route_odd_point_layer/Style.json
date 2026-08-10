@@ -1,0 +1,93 @@
+{
+    "marker_info": {
+        "marker_info_point_center_up": {
+            "anchor": 9,
+            "x_ratio": 0.5,
+            "y_ratio": 0.9
+        },
+        "marker_info_search_along_odd": {
+            "anchor": 9,
+            "x_ratio": 0.5,
+            "y_ratio": 0.94,
+            "night_style": {
+                "color": [
+                    {
+                        "distance_text": "#ffdddddd"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "distance_text": "#ff111111"
+                    }
+                ]
+            }
+        }
+    },
+    "layer_item_info": {
+        "point_alongroute_odd": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_odd_icon_day_night"
+                            }
+                        ]
+                    }
+                },
+                "focus_style": {
+                    "poi_marker_id": "along_route_odd_pop.xml",
+                    "poi_marker_info": "marker_info_search_along_odd"
+                }
+            },
+            "index": 0,
+            "name_cn": "ODD点"
+        },
+        "point_alongroute_odd_start": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_odd_icon_start_day_night"
+                            }
+                        ]
+                    }
+                },
+                "focus_style": {
+                    "poi_marker_id": "along_route_odd_start_pop.xml",
+                    "poi_marker_info": "marker_info_search_along_odd"
+                }
+            },
+            "index": 1,
+            "name_cn": "ODD起点"
+        },
+        "point_alongroute_odd_end": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_odd_icon_end_day_night"
+                            }
+                        ]
+                    }
+                },
+                "focus_style": {
+                    "poi_marker_id": "along_route_odd_end_pop.xml",
+                    "poi_marker_info": "marker_info_search_along_odd"
+                }
+            },
+            "index": 2,
+            "name_cn": "ODD终点"
+        }
+    }
+}

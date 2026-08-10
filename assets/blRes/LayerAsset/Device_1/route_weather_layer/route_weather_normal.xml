@@ -1,0 +1,4 @@
+<div id="click_hotspot" style="display:flex;flex-direction:row;justify-content:center;align-items:center;">
+  <image id="weather_bg_image" style="width:68px;height:68px;position:absolute;" src="global_image_default_path_weather_leftup_day_night" />
+  <image id="weather_image" style="width:54px;height:54px;" src="global_image_default_path_weather_100_normal" />
+</div>

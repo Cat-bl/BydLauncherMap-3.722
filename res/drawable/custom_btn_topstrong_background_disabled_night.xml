@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/custom_btn_topstrong_background_corner_disabled_night" />
+    <gradient android:startColor="#ff272a2d" android:endColor="#ff202224" android:angle="90.0" android:centerX="0.5" />
+</shape>

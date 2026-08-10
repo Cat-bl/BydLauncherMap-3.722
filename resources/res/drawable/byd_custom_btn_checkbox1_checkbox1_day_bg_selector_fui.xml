@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/byd_custom_btn_setting_selected_day_fui"/>
+    <item android:drawable="@drawable/byd_custom_btn_setting_unselect_day_fui"/>
+</selector>

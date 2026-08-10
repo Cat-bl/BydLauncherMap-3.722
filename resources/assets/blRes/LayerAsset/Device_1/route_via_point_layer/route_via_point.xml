@@ -1,0 +1,11 @@
+<div style="">
+  <div id="click_route_via_point" style="width:48px;height:58px;is_main:Y;">
+    <image id="via_image_dynamic" style="width:48px;height:58px;position:absolute;" src="global_image_bubble_midd_day_night" />
+    <div id="text_div" style="display:flex;flex-direction:row;justify-content:center;align-items:center;width:48px;height:48px;">
+     <label id="text_chinese" style="font-size:26px;color:#ffffff;font-family:SDK_Font-Bold;" lines="1">经</label>
+      <label id="text_english" style="font-size:22px;color:#ffffff;font-family:SDK_Font-Bold;" lines="1">VIA</label>
+      <label id="text_number" style="font-size:28px;color:#ffffff;font-family:SDK_Font-Medium;" lines="1">1</label>
+    </div>
+  </div>
+</div>
+

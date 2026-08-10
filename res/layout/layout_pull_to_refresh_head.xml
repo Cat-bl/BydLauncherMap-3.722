@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinRelativeLayout android:id="@id/head_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.autonavi.skin.view.SkinRelativeLayout android:paddingTop="@dimen/auto_dimen2_28" android:paddingBottom="@dimen/auto_dimen2_28" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.autonavi.skin.view.SkinImageView android:id="@id/head_xw_ptr_arrow_img" android:layout_width="@dimen/auto_dimen2_22" android:layout_height="@dimen/auto_dimen2_22" android:src="@drawable/icon_xw_ptr_arrow" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/auto_dimen2_20" android:layout_toStartOf="@id/head_xw_ptr_hint_text" />
+        <com.autonavi.skin.view.SkinProgressBar android:id="@id/head_xw_ptr_progress_bar" android:visibility="gone" android:layout_width="@dimen/auto_dimen2_22" android:layout_height="@dimen/auto_dimen2_22" android:indeterminate="false" android:indeterminateDrawable="@drawable/search_anim_refresh_loading" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/auto_dimen2_20" android:layout_toStartOf="@id/head_xw_ptr_hint_text" />
+        <com.autonavi.skin.view.SkinTextView android:textSize="@dimen/auto_font_size_16" android:textColor="@color/byd_search_home_item_sub_tip_day" android:id="@id/head_xw_ptr_hint_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pull_to_refresh" android:layout_centerInParent="true" app:textColor4Night="@color/byd_search_home_item_sub_tip_night" app:textColor4Skin="@color/byd_search_home_item_sub_tip_day" />
+    </com.autonavi.skin.view.SkinRelativeLayout>
+</com.autonavi.skin.view.SkinRelativeLayout>

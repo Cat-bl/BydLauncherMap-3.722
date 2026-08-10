@@ -1,0 +1,187 @@
+{
+    "marker_info": {},
+    "layer_item_info": {
+        "arrow_route_arrow_style": {
+            "arrow_layer_item_style": {
+                "arrow_2d_texture_info": {
+                    "use_cap": 1,
+                    "use_color": 1,
+                    "draw_cover": 1,
+                    "can_be_coveredbylabel": 1,
+                    "solid_arrow_in2dmap": 1,
+                    "fill_texture": {
+                        "marker_id": "arrow_line_inner",
+                        "color": "0xffffffff",
+                        "width": 28
+                    },
+                    "border_texture": {
+                        "marker_id": "arrow_line_outer",
+                        "color": "0xff0b6fc4",
+                        "width": 20
+                    },
+                    "texture_info": {
+                        "x1": 0.12,
+                        "y1": 0.77,
+                        "x2": 0.88,
+                        "y2": 0.77,
+                        "texture_len": 0
+                    },
+                    "cap_texture_info": {
+                        "x1": 0.12,
+                        "y1": 0.85,
+                        "x2": 0.88,
+                        "y2": 1
+                    }
+                },
+                "arrow_3d_texture_info": {
+                    "draw_3d_arrow": 1,
+                    "bias_width": 0,
+                    "auto_zoomer_width": 0,
+                    "solid_res_marker_id": "threed_arrow_line_shadow",
+                    "solid_top_face_color": "0xfff0f9ff",
+                    "solid_side_face_color": "0xff2c428a",
+                    "solid_shadow_color": "0x4d000000",
+                    "solid_height": 5,
+                    "solid_thickness": 10,
+                    "solid_border_line_top_line_width": 3,
+                    "solid_border_line_side_line_width": 0,
+                    "solid_border_line_bottom_line_width": 0,
+                    "solid_border_line_top_line_color": "0xff506cc9",
+                    "solid_border_line_side_line_color": "0xff1c3575",
+                    "solid_border_line_bottom_line_color": "0xff1c3575",
+                    "solid_arrow_header_param": {
+                        "header_angle": 55,
+                        "header_width_rate": 2.8
+                    },
+                    "solid_texture_info": {
+                        "x1": 0.3,
+                        "y1": 0.77,
+                        "x2": 0.7,
+                        "y2": 0.77,
+                        "texture_len": 0.01
+                    },
+                    "solid_cap_texture_info": {
+                        "x1": 0.3,
+                        "y1": 0.8,
+                        "x2": 0.7,
+                        "y2": 1.0
+                    },
+                    "solid_header_texture_info": {
+                        "x1": 0.12,
+                        "y1": 0.75,
+                        "x2": 0.88,
+                        "y2": 0.0
+                    }
+                },
+                "arrow_fine_texture_info": {
+                    "hang_width_ratio": 0.4,
+                    "head_angle": 60,
+                    "head_width_ratio": 2.2,
+                    "height_width_ratio": 0.7,
+                    "purfle_color_1": "0xff0046c6",
+                    "purfle_color_2": "0xff266ffd",
+                    "purfle_width_ratio_1": 0.1,
+                    "purfle_width_ratio_2": 0.18,
+                    "shadow_color": "0x99000000",
+                    "shadow_purfle_width_ratio": 0.6,
+                    "surface_color": "0xffffffff",
+                    "wall_color": "0xff3b7eff",
+                    "width": 6
+                }
+            },
+            "index": 0,
+            "name_cn": "白天"
+        },
+        "arrow_route_arrow_style_night": {
+            "arrow_layer_item_style": {
+                "arrow_2d_texture_info": {
+                    "use_cap": 1,
+                    "use_color": 1,
+                    "draw_cover": 1,
+                    "can_be_coveredbylabel": 1,
+                    "solid_arrow_in2dmap": 1,
+                    "fill_texture": {
+                        "marker_id": "arrow_line_inner",
+                        "color": "0xffffffff",
+                        "width": 28
+                    },
+                    "border_texture": {
+                        "marker_id": "arrow_line_outer",
+                        "color": "0xff0b6fc4",
+                        "width": 20
+                    },
+                    "texture_info": {
+                        "x1": 0.12,
+                        "y1": 0.77,
+                        "x2": 0.88,
+                        "y2": 0.77,
+                        "texture_len": 0
+                    },
+                    "cap_texture_info": {
+                        "x1": 0.12,
+                        "y1": 0.85,
+                        "x2": 0.88,
+                        "y2": 1
+                    }
+                },
+                "arrow_3d_texture_info": {
+                    "draw_3d_arrow": 1,
+                    "bias_width": 0,
+                    "auto_zoomer_width": 0,
+                    "solid_res_marker_id": "threed_arrow_line_shadow",
+                    "solid_top_face_color": "0xfff0f9ff",
+                    "solid_side_face_color": "0xff2c428a",
+                    "solid_shadow_color": "0x4d000000",
+                    "solid_height": 5,
+                    "solid_thickness": 10,
+                    "solid_border_line_top_line_width": 3,
+                    "solid_border_line_side_line_width": 0,
+                    "solid_border_line_bottom_line_width": 0,
+                    "solid_border_line_top_line_color": "0xff506cc9",
+                    "solid_border_line_side_line_color": "0xff1c3575",
+                    "solid_border_line_bottom_line_color": "0xff1c3575",
+                    "solid_arrow_header_param": {
+                        "header_angle": 55,
+                        "header_width_rate": 2.8
+                    },
+                    "solid_texture_info": {
+                        "x1": 0.3,
+                        "y1": 0.77,
+                        "x2": 0.7,
+                        "y2": 0.77,
+                        "texture_len": 0.01
+                    },
+                    "solid_cap_texture_info": {
+                        "x1": 0.3,
+                        "y1": 0.8,
+                        "x2": 0.7,
+                        "y2": 1.0
+                    },
+                    "solid_header_texture_info": {
+                        "x1": 0.12,
+                        "y1": 0.75,
+                        "x2": 0.88,
+                        "y2": 0.0
+                    }
+                },
+                "arrow_fine_texture_info": {
+                    "hang_width_ratio": 0.4,
+                    "head_angle": 60,
+                    "head_width_ratio": 2.2,
+                    "height_width_ratio": 0.7,
+                    "purfle_color_1": "0xff0046c6",
+                    "purfle_color_2": "0xff266ffd",
+                    "purfle_width_ratio_1": 0.1,
+                    "purfle_width_ratio_2": 0.18,
+                    "shadow_color": "0x99000000",
+                    "shadow_purfle_width_ratio": 0.6,
+                    "surface_color": "0xffffffff",
+                    "wall_color": "0xff3b7eff",
+                    "width": 6
+                }
+            },
+            "index": 1,
+            "name_cn": "黑夜"
+        }
+    }
+}

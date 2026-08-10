@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout android:id="@id/constant" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shadowDayNightStyle="1" app:skinDayNightExtraStyle="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.autonavi.gbl.map.adapter.MapSurfaceView android:id="@id/presentationView" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.autonavi.skin.view.SkinLinearLayout android:orientation="vertical" android:id="@id/cl_navi_and_route_container" android:visibility="gone" android:layout_width="@dimen/auto_dimen2_400" android:layout_height="@dimen/auto_dimen2_148" android:layout_marginTop="@dimen/auto_dimen2_228" android:layout_marginStart="@dimen/auto_dimen2_218" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/ct_navigation_info_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.autonavi.view.custom.CustomExtNaviTrafficLaneView android:id="@id/display_traffic_lane" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/auto_dimen2_64" app:shadowDayNightStyle="1" app:skinDayNightExtraStyle="true" />
+    </com.autonavi.skin.view.SkinLinearLayout>
+</com.autonavi.skin.view.SkinConstraintLayout>

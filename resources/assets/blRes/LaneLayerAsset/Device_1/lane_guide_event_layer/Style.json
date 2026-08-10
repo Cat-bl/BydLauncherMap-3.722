@@ -1,0 +1,96 @@
+{
+    "layer_item_info": {
+        "point_lane_guide_traffic_event_left_up": {
+            "index": 1,
+            "name_cn": "左飘事件",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "poi_marker_id": "lane_guide_traffic_event_left_up.xml",
+                    "poi_marker_info": "marker_info_lane_guide_traffic_event_left"
+                }
+            }
+        },
+        "point_lane_guide_traffic_event_right_up": {
+            "index": 1,
+            "name_cn": "右飘事件",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "poi_marker_id": "lane_guide_traffic_event_right_up.xml",
+                    "poi_marker_info": "marker_info_lane_guide_traffic_event_right"
+                }
+            }
+        }
+    },
+    "marker_info": {
+        "marker_info_lane_guide_traffic_event_left": {
+            "anchor": 13,
+            "day_style": {
+                "color": [
+                    {
+                        "event_name": "#000000"
+                    },
+                    {
+                        "event_length": "#99000000"
+                    }
+                ]
+            },
+            "image_style": {
+                "event_image": {
+                    "accident": "global_image_autonavi_lane_icon_traffic_event_accident_day_night",
+                    "control": "global_image_autonavi_lane_icon_traffic_event_control_day_night",
+                    "malfunction": "global_image_autonavi_lane_icon_traffic_event_malfunction_day_night",
+                    "project": "global_image_autonavi_lane_icon_traffic_event_project_day_night",
+                    "water": "global_image_autonavi_lane_icon_traffic_event_water_block_day_night"
+                }
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "event_name": "#000000"
+                    },
+                    {
+                        "event_length": "#99000000"
+                    }
+                ]
+            },
+            "x_offset": 16,
+            "y_offset": 26
+        },
+        "marker_info_lane_guide_traffic_event_right": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "event_name": "#000000"
+                    },
+                    {
+                        "event_length": "#99000000"
+                    }
+                ]
+            },
+            "image_style": {
+                "event_image": {
+                    "accident": "global_image_autonavi_lane_icon_traffic_event_accident_day_night",
+                    "control": "global_image_autonavi_lane_icon_traffic_event_control_day_night",
+                    "malfunction": "global_image_autonavi_lane_icon_traffic_event_malfunction_day_night",
+                    "project": "global_image_autonavi_lane_icon_traffic_event_project_day_night",
+                    "water": "global_image_autonavi_lane_icon_traffic_event_water_block_day_night"
+                }
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "event_name": "#000000"
+                    },
+                    {
+                        "event_length": "#99000000"
+                    }
+                ]
+            },
+            "x_offset": 16,
+            "y_offset": 26
+        }
+    }
+}

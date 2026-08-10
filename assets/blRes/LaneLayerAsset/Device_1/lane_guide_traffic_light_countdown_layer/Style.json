@@ -1,0 +1,174 @@
+{
+    "layer_item_info": {
+        "point_lane_guide_traffic_light_time_left_up": {
+            "index": 0,
+            "name_cn": "左飘",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening_light",
+                "normal_style": {
+                    "poi_marker_id": "lane_guide_traffic_light_time_left_up.xml",
+                    "poi_marker_info": "marker_info_lane_guide_traffic_light_left_time"
+                }
+            }
+        },
+        "point_lane_guide_traffic_light_time_right_up": {
+            "index": 0,
+            "name_cn": "右飘",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening_light",
+                "normal_style": {
+                    "poi_marker_id": "lane_guide_traffic_light_time_right_up.xml",
+                    "poi_marker_info": "marker_info_lane_guide_traffic_light_right_time"
+                }
+            }
+        }
+    },
+    "marker_info": {
+        "marker_info_lane_guide_traffic_light_left_time": {
+            "anchor": 13,
+            "day_style": {
+                "color": [
+                    {
+                        "tip_text_first": "#E6FFFFFF"
+                    },
+                    {
+                        "tip_text_last": "#E6FFFFFF"
+                    },
+                    {
+                        "text_value": "#FF6D6D"
+                    },
+                    {
+                        "text_seconds_1": "#E6FFFFFF"
+                    },
+                    {
+                        "text_seconds_2": "#E6FFFFFF"
+                    },
+                    {
+                        "text_seconds_3": "#E6FFFFFF"
+                    },
+                    {
+                        "text_notice": "#E6FFFFFF"
+                    }
+                ]
+            },
+            "image_style": {
+                "image_light_body": {
+                    "light_body_type_green": "global_image_autonavi_lane_icon_light_body_green_day_night",
+                    "light_body_type_red": "global_image_autonavi_lane_icon_light_body_red_day_night",
+                    "light_body_type_yellow": "global_image_autonavi_lane_icon_light_body_yellow_day_night"
+                },
+                "image_light_direction": {
+                    "light_direction_green_left": "global_image_autonavi_lane_icon_green_arrow_turn_left_day_night",
+                    "light_direction_green_right": "global_image_autonavi_lane_icon_green_arrow_turn_right_day_night",
+                    "light_direction_green_straight": "global_image_autonavi_lane_icon_green_arrow_go_straight_day_night",
+                    "light_direction_red_left": "global_image_autonavi_lane_icon_red_arrow_turn_left_day_night",
+                    "light_direction_red_right": "global_image_autonavi_lane_icon_red_arrow_turn_right_day_night",
+                    "light_direction_red_straight": "global_image_autonavi_lane_icon_red_arrow_go_straight_day_night",
+                    "light_direction_yellow_left": "global_image_autonavi_lane_icon_yellow_arrow_turn_left_day_night",
+                    "light_direction_yellow_right": "global_image_autonavi_lane_icon_yellow_arrow_turn_right_day_night",
+                    "light_direction_yellow_straight": "global_image_autonavi_lane_icon_yellow_arrow_go_straight_day_night"
+                }
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "tip_text_first": "#E6FFFFFF"
+                    },
+                    {
+                        "tip_text_last": "#E6FFFFFF"
+                    },
+                    {
+                        "text_value": "#FF5656"
+                    },
+                    {
+                        "text_seconds_1": "#E6FFFFFF"
+                    },
+                    {
+                        "text_seconds_2": "#E6FFFFFF"
+                    },
+                    {
+                        "text_seconds_3": "#E6FFFFFF"
+                    },
+                    {
+                        "text_notice": "#E6FFFFFF"
+                    }
+                ]
+            },
+            "x_offset": 0,
+            "y_offset": 0
+        },
+        "marker_info_lane_guide_traffic_light_right_time": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "tip_text_first": "#E6FFFFFF"
+                    },
+                    {
+                        "tip_text_last": "#E6FFFFFF"
+                    },
+                    {
+                        "text_value": "#FF6D6D"
+                    },
+                    {
+                        "text_seconds_1": "#E6FFFFFF"
+                    },
+                    {
+                        "text_seconds_2": "#E6FFFFFF"
+                    },
+                    {
+                        "text_seconds_3": "#E6FFFFFF"
+                    },
+                    {
+                        "text_notice": "#E6FFFFFF"
+                    }
+                ]
+            },
+            "image_style": {
+                "image_light_body": {
+                    "light_body_type_green": "global_image_autonavi_lane_icon_light_body_green_day_night",
+                    "light_body_type_red": "global_image_autonavi_lane_icon_light_body_red_day_night",
+                    "light_body_type_yellow": "global_image_autonavi_lane_icon_light_body_yellow_day_night"
+                },
+                "image_light_direction": {
+                    "light_direction_green_left": "global_image_autonavi_lane_icon_green_arrow_turn_left_day_night",
+                    "light_direction_green_right": "global_image_autonavi_lane_icon_green_arrow_turn_right_day_night",
+                    "light_direction_green_straight": "global_image_autonavi_lane_icon_green_arrow_go_straight_day_night",
+                    "light_direction_red_left": "global_image_autonavi_lane_icon_red_arrow_turn_left_day_night",
+                    "light_direction_red_right": "global_image_autonavi_lane_icon_red_arrow_turn_right_day_night",
+                    "light_direction_red_straight": "global_image_autonavi_lane_icon_red_arrow_go_straight_day_night",
+                    "light_direction_yellow_left": "global_image_autonavi_lane_icon_yellow_arrow_turn_left_day_night",
+                    "light_direction_yellow_right": "global_image_autonavi_lane_icon_yellow_arrow_turn_right_day_night",
+                    "light_direction_yellow_straight": "global_image_autonavi_lane_icon_yellow_arrow_go_straight_day_night"
+                }
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "tip_text_first": "#E6FFFFFF"
+                    },
+                    {
+                        "tip_text_last": "#E6FFFFFF"
+                    },
+                    {
+                        "text_value": "#FF5656"
+                    },
+                    {
+                        "text_seconds_1": "#E6FFFFFF"
+                    },
+                    {
+                        "text_seconds_2": "#E6FFFFFF"
+                    },
+                    {
+                        "text_seconds_3": "#E6FFFFFF"
+                    },
+                    {
+                        "text_notice": "#E6FFFFFF"
+                    }
+                ]
+            },
+            "x_offset": 0,
+            "y_offset": 0
+        }
+    }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="@dimen/auto_dimen2_15" />
+            <gradient android:startColor="#ff0478d1" android:endColor="#ff395bd1" android:angle="90.0" android:centerX="0.5" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="@dimen/auto_dimen2_15" />
+            <solid android:color="@color/custom_btn_topstrong_background_solid1_pressed_day" />
+        </shape>
+    </item>
+</layer-list>

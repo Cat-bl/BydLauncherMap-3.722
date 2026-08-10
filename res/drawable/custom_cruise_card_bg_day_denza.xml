@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/custom_cruise_card_round_denza" />
+    <solid android:color="@color/custom_cruise_card_bg_color_day_denza" />
+</shape>

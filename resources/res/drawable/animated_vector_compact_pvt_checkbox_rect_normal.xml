@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" android:drawable="@drawable/svg_compact_pvt_checkbox_rect_normal">
+    <target
+        android:name="@string/byd_checkbox_tick_path"
+        android:animation="@animator/animator_pvt_checkbox_tick_path_normal"/>
+    <target
+        android:name="@string/byd_checkbox_solid_path"
+        android:animation="@animator/animator_pvt_checkbox_solid_path_normal"/>
+    <target
+        android:name="@string/byd_checkbox_stroke_path"
+        android:animation="@animator/animator_pvt_checkbox_stroke_path_normal"/>
+</animated-vector>

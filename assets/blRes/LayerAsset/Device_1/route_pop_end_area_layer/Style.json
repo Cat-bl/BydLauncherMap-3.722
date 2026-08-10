@@ -1,0 +1,34 @@
+{
+    "marker_info": {
+        "marker_info_end_area_pop": {
+            "anchor": 5,
+            "vector": 0,
+            "night_style": {
+                "color": [
+                    {
+                        "name_text": "#4e8fff"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "name_text": "#1a66ff"
+                    }
+                ]
+            }
+        }
+    },
+    "layer_item_info": {
+        "point_end_area_pop_point": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "route_pop_end_area.xml",
+                    "poi_marker_info": "marker_info_end_area_pop"
+                }
+            },
+            "index": 0,
+            "name_cn": "终点区域子点 点击态"
+        }
+    }
+}

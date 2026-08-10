@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="@dimen/custom_btn_suspension_left_bg_corner_top_left_normal_night" android:bottomLeftRadius="@dimen/custom_btn_suspension_left_bg_corner_bottom_left_normal_night" />
+    <gradient android:startColor="#ff101011" android:endColor="#e6050505" android:angle="90.0" android:centerX="0.5" />
+</shape>

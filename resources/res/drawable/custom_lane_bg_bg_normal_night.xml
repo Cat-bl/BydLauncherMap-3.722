@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="@dimen/custom_lane_bg_bg_corner_normal_night"/>
+    <gradient
+        android:startColor="@color/custom_lane_bg_bg_solid_normal_night"
+        android:endColor="@color/custom_lane_bg_bg_solid_normal_night_right"
+        android:angle="0"
+        android:type="linear"/>
+</shape>

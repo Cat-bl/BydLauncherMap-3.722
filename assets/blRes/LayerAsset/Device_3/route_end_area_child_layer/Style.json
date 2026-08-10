@@ -1,0 +1,516 @@
+{
+    "marker_info": {
+        "marker_info_end_area_child_airport": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "child_name": "#131313"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "child_name": "#e6ffffff"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #000000"
+                    }
+                ]
+            },
+            "y_offset": 8,
+            "x_offset": 16
+        },
+        "marker_info_end_area_child_fly": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "child_name": "#131313"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "child_name": "#e6ffffff"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #000000"
+                    }
+                ]
+            },
+            "y_offset": 8,
+            "x_offset": 16
+        },
+        "marker_info_end_area_child_arrive": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "child_name": "#131313"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "child_name": "#e6ffffff"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #000000"
+                    }
+                ]
+            },
+            "y_offset": 8,
+            "x_offset": 16
+        },
+        "marker_info_end_area_child_door": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "child_name": "#131313"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "child_name": "#e6ffffff"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #000000"
+                    }
+                ]
+            },
+            "y_offset": 8,
+            "x_offset": 16
+        },
+        "marker_info_end_area_child_exist": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "child_name": "#131313"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "child_name": "#e6ffffff"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #000000"
+                    }
+                ]
+            },
+            "y_offset": 8,
+            "x_offset": 16
+        },
+        "marker_info_end_area_child_in": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "child_name": "#131313"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "child_name": "#e6ffffff"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #000000"
+                    }
+                ]
+            },
+            "y_offset": 8,
+            "x_offset": 16
+        },
+        "marker_info_end_area_child_park": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "child_name": "#131313"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "child_name": "#e6ffffff"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #000000"
+                    }
+                ]
+            },
+            "y_offset": 8,
+            "x_offset": 16
+        },
+        "marker_info_end_area_child_subway": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "child_name": "#131313"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "child_name": "#e6ffffff"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #000000"
+                    }
+                ]
+            },
+            "y_offset": 8,
+            "x_offset": 16
+        },
+        "marker_info_end_area_child_ticket": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "child_name": "#131313"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "child_name": "#e6ffffff"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #000000"
+                    }
+                ]
+            },
+            "y_offset": 8,
+            "x_offset": 16
+        },
+        "marker_info_end_area_child_more": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "child_name": "#131313"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "child_name": "#e6ffffff"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #000000"
+                    }
+                ]
+            },
+            "y_offset": 8,
+            "x_offset": 16
+        }
+    },
+    "layer_item_info": {
+        "point_end_area_child_airport": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "end_area_child_all.xml",
+                    "poi_marker_info": "marker_info_end_area_child_airport",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "child_type": "global_image_child_airport_day_night"
+                            }
+                        ],
+                        "text": [
+                            {
+                                "child_name": "航站楼"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "航站楼"
+        },
+        "point_end_area_child_fly": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "end_area_child_all.xml",
+                    "poi_marker_info": "marker_info_end_area_child_fly",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "child_type": "global_image_child_fly_day_night"
+                            }
+                        ],
+                        "text": [
+                            {
+                                "child_name": "出发楼"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 1,
+            "name_cn": "出发楼"
+        },
+        "point_end_area_child_arrive": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "end_area_child_all.xml",
+                    "poi_marker_info": "marker_info_end_area_child_arrive",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "child_type": "global_image_child_arrive_day_night"
+                            }
+                        ],
+                        "text": [
+                            {
+                                "child_name": "到达楼"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 2,
+            "name_cn": "到达楼"
+        },
+        "point_end_area_child_door": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "end_area_child_all.xml",
+                    "poi_marker_info": "marker_info_end_area_child_door",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "child_type": "global_image_child_door_day_night"
+                            }
+                        ],
+                        "text": [
+                            {
+                                "child_name": "门"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 3,
+            "name_cn": "门"
+        },
+        "point_end_area_child_exist": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "end_area_child_all.xml",
+                    "poi_marker_info": "marker_info_end_area_child_exist",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "child_type": "global_image_child_exist_day_night"
+                            }
+                        ],
+                        "text": [
+                            {
+                                "child_name": "出口"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 4,
+            "name_cn": "出口"
+        },
+        "point_end_area_child_in": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "end_area_child_all.xml",
+                    "poi_marker_info": "marker_info_end_area_child_in",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "child_type": "global_image_child_in_day_night"
+                            }
+                        ],
+                        "text": [
+                            {
+                                "child_name": "入口"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 5,
+            "name_cn": "入口"
+        },
+        "point_end_area_child_park": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "end_area_child_all.xml",
+                    "poi_marker_info": "marker_info_end_area_child_park",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "child_type": "global_image_child_park_day_night"
+                            }
+                        ],
+                        "text": [
+                            {
+                                "child_name": "停车场"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 6,
+            "name_cn": "停车场"
+        },
+        "point_end_area_child_subway": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "end_area_child_all.xml",
+                    "poi_marker_info": "marker_info_end_area_child_subway",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "child_type": "global_image_child_subway_day_night"
+                            }
+                        ],
+                        "text": [
+                            {
+                                "child_name": "地铁"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 7,
+            "name_cn": "地铁站"
+        },
+        "point_end_area_child_ticket": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "end_area_child_all.xml",
+                    "poi_marker_info": "marker_info_end_area_child_ticket",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "child_type": "global_image_child_ticket_day_night"
+                            }
+                        ],
+                        "text": [
+                            {
+                                "child_name": "售票处"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 8,
+            "name_cn": "售票"
+        },
+        "point_end_area_child_more": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "end_area_child_all.xml",
+                    "poi_marker_info": "marker_info_end_area_child_more",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "child_type": "global_image_child_more_day_night"
+                            }
+                        ],
+                        "text": [
+                            {
+                                "child_name": "其他"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 9,
+            "name_cn": "其它"
+        }
+    }
+}

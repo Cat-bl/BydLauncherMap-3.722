@@ -1,0 +1,256 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1778406761220,
+  "projectRoot": "/Users/wuzhongwu/Desktop/workspace/android/LauncherMap/com.byd.launchermap-3.5.722.1",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "assets",
+      "lib"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "assets": {
+      "path": "assets",
+      "purpose": "Static assets",
+      "fileCount": 9,
+      "lastAccessed": 1778406761178,
+      "keyFiles": [
+        "GblBranchCommitInfo.txt",
+        "angleData.json",
+        "arrow_left.json",
+        "arrow_right.json",
+        "click_effect.json"
+      ]
+    },
+    "build": {
+      "path": "build",
+      "purpose": "Build output",
+      "fileCount": 2,
+      "lastAccessed": 1778406761180,
+      "keyFiles": [
+        "resources.zip"
+      ]
+    },
+    "dist": {
+      "path": "dist",
+      "purpose": "Distribution/build output",
+      "fileCount": 1,
+      "lastAccessed": 1778406761180,
+      "keyFiles": [
+        "com.byd.launchermap-3.5.722.1.apk"
+      ]
+    },
+    "lib": {
+      "path": "lib",
+      "purpose": "Library code",
+      "fileCount": 1,
+      "lastAccessed": 1778406761189,
+      "keyFiles": []
+    },
+    "original": {
+      "path": "original",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1778406761194,
+      "keyFiles": [
+        "AndroidManifest.xml"
+      ]
+    },
+    "res": {
+      "path": "res",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1778406761197,
+      "keyFiles": []
+    },
+    "resources": {
+      "path": "resources",
+      "purpose": null,
+      "fileCount": 6,
+      "lastAccessed": 1778406761198,
+      "keyFiles": [
+        "AndroidManifest.xml",
+        "DebugProbesKt.bin",
+        "PullParser2.1.10_VERSION",
+        "XPP3_1.1.4c_VERSION",
+        "androidsupportmultidexversion.txt"
+      ]
+    },
+    "smali": {
+      "path": "smali",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1778406761207,
+      "keyFiles": [
+        "a.smali"
+      ]
+    },
+    "smali_classes10": {
+      "path": "smali_classes10",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1778406761209,
+      "keyFiles": []
+    },
+    "smali_classes11": {
+      "path": "smali_classes11",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1778406761209,
+      "keyFiles": []
+    },
+    "smali_classes12": {
+      "path": "smali_classes12",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1778406761210,
+      "keyFiles": []
+    },
+    "smali_classes13": {
+      "path": "smali_classes13",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1778406761210,
+      "keyFiles": []
+    },
+    "smali_classes14": {
+      "path": "smali_classes14",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1778406761211,
+      "keyFiles": []
+    },
+    "smali_classes15": {
+      "path": "smali_classes15",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1778406761211,
+      "keyFiles": []
+    },
+    "smali_classes16": {
+      "path": "smali_classes16",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1778406761211,
+      "keyFiles": []
+    },
+    "smali_classes17": {
+      "path": "smali_classes17",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1778406761212,
+      "keyFiles": []
+    },
+    "smali_classes18": {
+      "path": "smali_classes18",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1778406761212,
+      "keyFiles": []
+    },
+    "smali_classes2": {
+      "path": "smali_classes2",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1778406761214,
+      "keyFiles": []
+    },
+    "smali_classes3": {
+      "path": "smali_classes3",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1778406761216,
+      "keyFiles": []
+    },
+    "smali_classes4": {
+      "path": "smali_classes4",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1778406761216,
+      "keyFiles": []
+    },
+    "smali_classes5": {
+      "path": "smali_classes5",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1778406761217,
+      "keyFiles": []
+    },
+    "smali_classes6": {
+      "path": "smali_classes6",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1778406761217,
+      "keyFiles": []
+    },
+    "smali_classes7": {
+      "path": "smali_classes7",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1778406761217,
+      "keyFiles": []
+    },
+    "smali_classes8": {
+      "path": "smali_classes8",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1778406761217,
+      "keyFiles": []
+    },
+    "smali_classes9": {
+      "path": "smali_classes9",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1778406761217,
+      "keyFiles": []
+    },
+    "unknown": {
+      "path": "unknown",
+      "purpose": null,
+      "fileCount": 4,
+      "lastAccessed": 1778406761218,
+      "keyFiles": [
+        "DebugProbesKt.bin",
+        "PullParser2.1.10_VERSION",
+        "XPP3_1.1.4c_VERSION",
+        "androidsupportmultidexversion.txt"
+      ]
+    },
+    "resources/assets": {
+      "path": "resources/assets",
+      "purpose": "Static assets",
+      "fileCount": 8,
+      "lastAccessed": 1778406761218,
+      "keyFiles": [
+        "GblBranchCommitInfo.txt",
+        "angleData.json",
+        "arrow_left.json"
+      ]
+    }
+  },
+  "hotPaths": [],
+  "userDirectives": []
+}

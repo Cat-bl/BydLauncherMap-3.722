@@ -1,0 +1,11 @@
+<div id="background_image" style="display:flex;flex-direction:row;justify-content:center;align-items:center;width:auto;height:107px;background-image:global_image_traffic_signal_light_bubble_left_day_night;">
+  <div id="div_text_mid" style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-left:0px;">
+    <label id="text_seconds_mid" style="margin-right:3px;margin-left:26px;font-size:32px;color:#e6ffffff;font-family:SDK_Font-Bold;min-width:20px;" lines="1">777</label>
+    <label id="text_notice_mid" style="margin-right:3px;margin-left:23px;font-size:30px;color:#e6ffffff;font-family:SDK_Font-Bold;" lines="1">通行</label>
+  </div>
+  <div id="div_image_light_mid" style="display:flex;flex-direction:row;width:62px;height:62px;">
+    <image id="image_light_body_mid" style="width:62px;height:62px;position:absolute;" src="global_image_traffic_signal_light_green_circle_day_night" />
+    <image id="image_light_direction_mid" style="width:62px;height:62px;position:absolute;" src="global_image_traffic_signal_light_green_arrow_go_straight_day_night" />
+  </div>
+</div>
+

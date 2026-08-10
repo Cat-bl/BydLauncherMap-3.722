@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_focused="true"
+        android:state_checked="true"
+        android:drawable="@drawable/animated_vector_expanded_pvt_checkbox_circular_check_focused"/>
+    <item
+        android:state_focused="true"
+        android:state_checked="false"
+        android:drawable="@drawable/svg_expanded_pvt_checkbox_circular_normal_focused"/>
+    <item
+        android:state_enabled="false"
+        android:state_checked="true"
+        android:drawable="@drawable/svg_expanded_pvt_checkbox_circular_check_disable"/>
+    <item
+        android:state_enabled="false"
+        android:state_checked="false"
+        android:drawable="@drawable/svg_expanded_pvt_checkbox_circular_disable"/>
+    <item
+        android:state_checked="true"
+        android:drawable="@drawable/svg_expanded_pvt_checkbox_circular_check"/>
+    <item android:drawable="@drawable/svg_expanded_pvt_checkbox_circular_normal"/>
+</selector>

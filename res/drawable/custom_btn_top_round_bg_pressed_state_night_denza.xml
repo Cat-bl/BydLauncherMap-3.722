@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="@dimen/auto_dimen2_8" android:topRightRadius="@dimen/auto_dimen2_8" />
+    <solid android:color="@color/custom_normal_night_color_pressed_denza" />
+</shape>

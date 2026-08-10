@@ -1,0 +1,10 @@
+<div id='end_area_all' style='display:flex;width:auto;height:auto;flex-direction:column;margin-left:22px;margin-right:22px;justify-content:center;align-items:flex-start;background-image:global_image_route_info_day_night;'>
+    <div id='end_area_eta' style='display:flex;width:auto;height:auto;flex-direction:row;justify-content:center;align-items:center;'>
+        <label id='byd_eta_text' style='justify-content:flex-start;color:#ffffff;font-size:18px;max-height:21px;margin-top:6px;margin-left:6px;margin-right:6px;' text='预计17:12到达'/>
+    </div>
+    <div id='end_area_energy' style='display:flex;width:auto;height:auto;flex-direction:row;justify-content:center;align-items:center;margin-top:2px;'>
+        <label id='energy_text_desc' style='justify-content:flex-start;color:#ffffff;font-size:18px;margin-top:2px;max-height:21px;' text='剩余电量'/>
+        <label id='energy_text' style='justify-content:flex-start;color:#ffffff;font-size:20px;margin-left:4px;margin-top:2px;max-height:23px;' text='60%'/>
+        <label id='energy_text_low' style='justify-content:flex-start;color:#ffbaba;font-size:20px;margin-left:4px;margin-top:2px;max-height:23px;' text='19%'/>
+    </div>
+</div>

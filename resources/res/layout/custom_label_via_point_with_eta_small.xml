@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_via_point_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/global_image_bubble_midd_day"
+        android:contentDescription="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@+id/gl_vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintGuide_percent="0.375"/>
+    <TextView
+        android:textSize="@dimen/auto_dimen2_22"
+        android:textColor="@color/auto_color_white"
+        android:id="@+id/tv_via_point_eta"
+        android:background="@drawable/custom_remain_energy_background_night"
+        android:paddingLeft="@dimen/auto_dimen2_8"
+        android:paddingTop="@dimen/auto_dimen2_4"
+        android:paddingRight="@dimen/auto_dimen2_8"
+        android:paddingBottom="@dimen/auto_dimen2_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="预计 10:08 到达"
+        android:paddingHorizontal="@dimen/auto_dimen2_8"
+        android:paddingVertical="@dimen/auto_dimen2_4"
+        app:layout_constraintBottom_toBottomOf="@+id/gl_vertical"
+        app:layout_constraintStart_toEndOf="@+id/iv_via_point_icon"
+        app:layout_constraintTop_toTopOf="@+id/gl_vertical"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

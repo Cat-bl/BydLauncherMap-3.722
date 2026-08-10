@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minWidth="@dimen/auto_dimen2_328"
+    android:minHeight="@dimen/auto_dimen2_174"
+    android:updatePeriodMillis="0"
+    android:initialLayout="@layout/map_widget_main"
+    android:initialKeyguardLayout="@layout/map_widget_main"
+    android:widgetCategory="home_screen"
+    app:initialLayout_denza="@layout/map_widget_main_denza"
+    app:initialLayout_fui="@layout/map_widget_main_fui"
+    app:initialLayout_ocean="@layout/map_widget_main_ocean"/>

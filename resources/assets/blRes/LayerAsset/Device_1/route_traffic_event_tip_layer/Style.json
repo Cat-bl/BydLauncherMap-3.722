@@ -1,0 +1,133 @@
+{
+    "marker_info": {},
+    "layer_item_info": {
+        "route_traffic_normal": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_navi_traffic_event_accident_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "一般交通事故"
+        },
+        "route_traffic_serious": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_navi_traffic_event_accident_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 1,
+            "name_cn": "严重交通事故"
+        },
+        "route_traffic_suspected": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_navi_traffic_event_accident_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 2,
+            "name_cn": "疑似交通事故"
+        },
+        "route_traffic_construction": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_navi_traffic_event_project_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 3,
+            "name_cn": "道路施工"
+        },
+        "route_traffic_impact_travel": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_navi_traffic_event_project_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 4,
+            "name_cn": "施工影响出行"
+        },
+        "route_traffic_notrecommend": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_navi_traffic_event_project_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 5,
+            "name_cn": "施工不建议穿行"
+        },
+        "route_traffic_water": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_navi_traffic_event_water_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 6,
+            "name_cn": "积水"
+        },
+        "route_traffic_obstacle": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_navi_obstacle_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 7,
+            "name_cn": "障碍物"
+        }
+    }
+}

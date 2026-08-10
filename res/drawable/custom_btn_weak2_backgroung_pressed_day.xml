@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="@dimen/custom_btn_weak2_backgroung_corner_pressed_day" />
+            <gradient android:startColor="#ff525252" android:endColor="#ff3b3b3b" android:angle="90.0" android:centerX="0.5" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="@dimen/custom_btn_weak2_backgroung_corner_pressed_day" />
+            <solid android:color="@color/custom_btn_weak2_backgroung_solid1_pressed_day" />
+        </shape>
+    </item>
+</layer-list>

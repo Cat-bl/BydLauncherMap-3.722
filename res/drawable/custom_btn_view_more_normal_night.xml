@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/sys_padding_s" />
+            <solid android:color="#992f343d" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/sys_padding_s" />
+            <solid android:color="@color/byd_custom_btn_view_more_color_night" />
+        </shape>
+    </item>
+</selector>

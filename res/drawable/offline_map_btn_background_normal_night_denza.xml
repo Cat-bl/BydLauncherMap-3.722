@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/auto_font_size_4" />
+    <gradient android:startColor="@color/custom_btn_yellow_color_start_night_denza" android:endColor="@color/custom_btn_yellow_color_end_night_denza" android:angle="180.0" />
+</shape>

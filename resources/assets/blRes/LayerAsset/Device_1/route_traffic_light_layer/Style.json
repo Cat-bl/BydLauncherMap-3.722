@@ -1,0 +1,28 @@
+{
+    "marker_info": {
+        "marker_info_traffic_light": {
+           "anchor": 9,
+            "x_ratio": 0.5,
+            "y_ratio": 0.8
+        }
+    },
+    "layer_item_info": {
+        "guide_traffic_light": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_traffic_light",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_autonavi_navi_light_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "导航红绿灯"
+        }
+    }
+}

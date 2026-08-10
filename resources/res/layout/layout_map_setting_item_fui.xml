@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:id="@+id/cl_projection_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.autonavi.skin.view.SkinLottieAnimationView
+        android:id="@+id/slav_map_setting_icon"
+        android:layout_width="@dimen/auto_dimen2_48"
+        android:layout_height="@dimen/auto_dimen2_48"
+        android:layout_marginTop="@dimen/auto_dimen2_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.autonavi.skin.view.SkinTextView
+        android:textSize="@dimen/auto_font_size_11"
+        android:textColor="@color/navi_card_title_color_day"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/stv_map_setting_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/auto_dimen2_29"
+        android:text="@string/tv_expand_screen_vertical"
+        android:maxLines="1"
+        app:layout_constraintLeft_toLeftOf="@+id/slav_map_setting_icon"
+        app:layout_constraintRight_toRightOf="@+id/slav_map_setting_icon"
+        app:layout_constraintTop_toTopOf="@+id/slav_map_setting_icon"
+        app:textColor4Night="@color/navi_card_title_color_night"
+        app:textColor4Skin="@color/navi_card_title_color_day"/>
+</com.autonavi.skin.view.SkinConstraintLayout>

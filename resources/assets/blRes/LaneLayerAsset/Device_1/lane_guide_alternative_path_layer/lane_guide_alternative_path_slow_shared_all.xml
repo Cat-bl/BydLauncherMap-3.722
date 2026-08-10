@@ -1,0 +1,19 @@
+<div id="lane_guide_path_background" style='display:flex;flex-direction:column;align-items:flex-start;width:auto;height:auto;background-image:global_image_autonavi_lane_route_label_left_down_day_night;'>
+  <div id='main_board' style='display:flex;flex-direction:row;justify-content:center;align-items:center;'>
+    <div id='highlight_image' style='margin-right:8px;align-items:left;background-image:global_image_autonavi_lane_route_textlabel_weak_day_night;'>
+      <label id='highlight_text' style='color:#ffffff;font-size:23px;font-family:SDK_Font-Medium;' text='大路多'/>
+    </div>
+    <div style='flex-direction:row;align-items:center;'>
+	  <label id='time_text' style='color:#1A66FF;font-size:24px;font-family:SDK_Font-Medium;' text='快7分钟'/>
+      <image id='cost_image_1' style='margin-left:4px;width:24px;height:24px;' src='global_image_autonavi_lane_icon_toll_black_day_night'/>
+      <label id='cost_text_1' style='color:#1A66FF;font-size:24px;font-family:SDK_Font-Medium;' text='少25元'/>
+	</div>
+  </div>
+  <div id='sub_board' style='display:flex;flex-direction:row;justify-content:center;align-items:center;margin-top:1px;'>
+    <label id='distance_text' style='color:#1A66FF;font-size:20px;font-family:SDK_Font-Medium;' text='多1.2公里'/>
+    <image id='light_image' style='margin-left:4px;width:22px;height:22px;' src='global_image_autonavi_lane_icon_traffic_light_black_day_night'/>
+    <label id='light_text' style='color:#1A66FF;font-size:20px;font-family:SDK_Font-Medium;' text='少2个'/>
+    <image id='cost_image_2' style='margin-left:4px;width:22px;height:22px;' src='global_image_autonavi_lane_icon_toll_black_day_night'/>
+    <label id='cost_text_2' style='color:#1A66FF;font-size:20px;font-family:SDK_Font-Medium;' text='多5元'/>
+  </div>
+</div>

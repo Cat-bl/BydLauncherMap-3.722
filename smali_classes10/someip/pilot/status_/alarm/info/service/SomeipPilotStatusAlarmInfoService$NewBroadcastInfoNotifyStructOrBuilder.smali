@@ -1,0 +1,46 @@
+.class public interface abstract Lsomeip/pilot/status_/alarm/info/service/SomeipPilotStatusAlarmInfoService$NewBroadcastInfoNotifyStructOrBuilder;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/protobuf/MessageLiteOrBuilder;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lsomeip/pilot/status_/alarm/info/service/SomeipPilotStatusAlarmInfoService;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "NewBroadcastInfoNotifyStructOrBuilder"
+.end annotation
+
+
+# virtual methods
+.method public abstract getChecksum()I
+.end method
+
+.method public abstract getCounter()I
+.end method
+
+.method public abstract getInfoReserved1()D
+.end method
+
+.method public abstract getInfoReserved2()D
+.end method
+
+.method public abstract getInfoReserved3()D
+.end method
+
+.method public abstract getInfoReserved4()D
+.end method
+
+.method public abstract getInfoReserved5()D
+.end method
+
+.method public abstract getNoaMode()I
+.end method
+
+.method public abstract getNotice()I
+.end method

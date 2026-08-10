@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.byd.viewsup.BydScrollerSupportedFrameLayout android:paddingTop="?bydPvtTitleTabPaddingVertical" android:paddingBottom="?bydPvtTitleTabPaddingVertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/iconContainer" android:paddingVertical="?bydPvtTitleTabPaddingVertical" app:bydOrientation="horizontal">
+        <com.byd.widget.tab.BydTitleSubTabView android:layout_gravity="center_vertical" android:id="@id/bydTitleScrollView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    </com.byd.viewsup.BydScrollerSupportedFrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/iconContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/imageIcon_0" style="?bydPvtTitleTabImageViewStyle" />
+        <ImageView android:id="@id/imageIcon_1" style="?bydPvtTitleTabImageViewStyle" />
+        <ImageView android:id="@id/imageIcon_2" style="?bydPvtTitleTabImageViewStyle" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="32dp"
+    android:width="32dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+    <path
+        android:fillColor="#d8d8d8"
+        android:pathData="M0,0h32v32h-32z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:strokeAlpha="0"
+        android:fillAlpha="0"
+        android:fillType="evenOdd"/>
+    <path
+        android:name="@string/byd_checkbox_solid_path"
+        android:fillColor="@color/sys_black_300"
+        android:pathData="M16,6C10.477,6 6,10.477 6,16C6,21.523 10.477,26 16,26C21.523,26 26,21.523 26,16C26,10.477 21.523,6 16,6Z"
+        android:strokeColor="@color/sys_black_300"
+        android:strokeWidth="1"
+        android:fillType="nonZero"/>
+    <path
+        android:name="@string/byd_checkbox_stroke_path"
+        android:fillColor="@color/byd_pvt_black_900_0"
+        android:pathData="M16,16m-11,0a11,11 0,1 1,22 0a11,11 0,1 1,-22 0"
+        android:strokeColor="@color/sys_black_300"
+        android:strokeWidth="2"
+        android:fillType="evenOdd"/>
+    <path
+        android:name="@string/byd_checkbox_tick_path"
+        android:fillColor="@color/byd_pvt_black_900_0"
+        android:pathData="M9,17.263l5.5,4.737l9.5,-10"
+        android:strokeColor="@color/sys_white_900"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillType="evenOdd"/>
+</vector>

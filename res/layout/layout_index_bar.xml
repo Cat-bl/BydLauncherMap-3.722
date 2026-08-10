@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/auto_font_size_18" android:textColor="#ff80868a" android:gravity="center" android:id="@id/index_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="历史\nA\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nM\nN\nO\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ\n#" app:layout_constraintRight_toRightOf="parent" />
+    <TextView android:textSize="@dimen/auto_font_size_32" android:textColor="#ffffffff" android:gravity="center" android:id="@id/magnifier_text" android:background="@drawable/bg_magnifier" android:layout_width="@dimen/auto_dimen2_80" android:layout_height="@dimen/auto_dimen2_80" android:layout_marginTop="@dimen/auto_dimen2_7" android:layout_marginRight="@dimen/auto_dimen2_60" android:text="Q" app:layout_constraintRight_toRightOf="@id/index_text" app:layout_constraintTop_toTopOf="@id/index_text" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.autonavi.skin.view.SkinImageView
+        android:id="@+id/car_logo_speed_img_base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.autonavi.skin.view.SkinImageView
+        android:id="@+id/car_logo_speed_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.autonavi.skin.view.SkinTextView
+        android:textSize="@dimen/auto_font_size_50"
+        android:textStyle="bold"
+        android:textColor="@color/auto_color_24313F"
+        android:layout_gravity="center"
+        android:id="@+id/car_logo_speed_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.8"
+        app:layout_constraintBottom_toBottomOf="@+id/car_logo_speed_img"
+        app:layout_constraintEnd_toEndOf="@+id/car_logo_speed_img"
+        app:layout_constraintStart_toStartOf="@+id/car_logo_speed_img"
+        app:layout_constraintTop_toTopOf="@+id/car_logo_speed_img"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

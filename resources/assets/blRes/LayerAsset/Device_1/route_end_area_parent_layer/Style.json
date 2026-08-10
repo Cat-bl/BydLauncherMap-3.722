@@ -1,0 +1,495 @@
+{
+    "marker_info": {
+        "marker_info_end_area_parent_left": {
+            "anchor": 8,
+            "day_style": {
+                "color": [
+                    {
+                        "parent_text": "#E6000000"
+                    },
+                    {
+                        "eta_text": "#E6000000"
+                    },
+                    {
+                        "energy_text_desc": "#E6000000"
+                    },
+                    {
+                        "energy_text": "#E6000000"
+                    },
+                    {
+                        "energy_text_low": "#E6FC4637"
+                    },
+                    {
+                        "odd_text": "#E6000000"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "parent_text": "2px #E6ffffff"
+                    },
+                    {
+                        "eta_text": "2px #E6ffffff"
+                    },
+                    {
+                        "energy_text_desc": "2px #E6ffffff"
+                    },
+                    {
+                        "energy_text": "2px #E6ffffff"
+                    },
+                    {
+                        "energy_text_low": "2px #E6ffffff"
+                    },
+                    {
+                        "odd_text": "2px #E6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "parent_text": "#C0C1C3"
+                    },
+                    {
+                        "eta_text": "#C0C1C3"
+                    },
+                    {
+                        "energy_text_desc": "#C0C1C3"
+                    },
+                    {
+                        "energy_text": "#C0C1C3"
+                    },
+                    {
+                        "energy_text_low": "#E8584C"
+                    },
+                    {
+                        "odd_text": "#C0C1C3"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "parent_text": "2px #CC000000"
+                    },
+                    {
+                        "eta_text": "2px #CC000000"
+                    },
+                    {
+                        "energy_text_desc": "2px #CC000000"
+                    },
+                    {
+                        "energy_text": "2px #CC000000"
+                    },
+                    {
+                        "energy_text_low": "2px #CC000000"
+                    },
+                    {
+                        "odd_text": "2px #CC000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_end_area_parent_right": {
+            "anchor": 7,
+            "day_style": {
+                "color": [
+                    {
+                        "parent_text": "#E6000000"
+                    },
+                    {
+                        "eta_text": "#E6000000"
+                    },
+                    {
+                        "energy_text_desc": "#E6000000"
+                    },
+                    {
+                        "energy_text": "#E6000000"
+                    },
+                    {
+                        "energy_text_low": "#E6FC4637"
+                    },
+                    {
+                        "odd_text": "#E6000000"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "parent_text": "2px #E6ffffff"
+                    },
+                    {
+                        "eta_text": "2px #E6ffffff"
+                    },
+                    {
+                        "energy_text_desc": "2px #E6ffffff"
+                    },
+                    {
+                        "energy_text": "2px #E6ffffff"
+                    },
+                    {
+                        "energy_text_low": "2px #E6ffffff"
+                    },
+                    {
+                        "odd_text": "2px #E6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "parent_text": "#C0C1C3"
+                    },
+                    {
+                        "eta_text": "#C0C1C3"
+                    },
+                    {
+                        "energy_text_desc": "#C0C1C3"
+                    },
+                    {
+                        "energy_text": "#C0C1C3"
+                    },
+                    {
+                        "energy_text_low": "#E8584C"
+                    },
+                    {
+                        "odd_text": "#C0C1C3"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "parent_text": "2px #CC000000"
+                    },
+                    {
+                        "eta_text": "2px #CC000000"
+                    },
+                    {
+                        "energy_text_desc": "2px #CC000000"
+                    },
+                    {
+                        "energy_text": "2px #CC000000"
+                    },
+                    {
+                        "energy_text_low": "2px #CC000000"
+                    },
+                    {
+                        "odd_text": "2px #CC000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_end_area_parent_bottom": {
+            "anchor": 6,
+            "day_style": {
+                "color": [
+                    {
+                        "parent_text": "#E6000000"
+                    },
+                    {
+                        "eta_text": "#E6000000"
+                    },
+                    {
+                        "energy_text_desc": "#E6000000"
+                    },
+                    {
+                        "energy_text": "#E6000000"
+                    },
+                    {
+                        "energy_text_low": "#E6FC4637"
+                    },
+                    {
+                        "odd_text": "#E6000000"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "parent_text": "2px #E6ffffff"
+                    },
+                    {
+                        "eta_text": "2px #E6ffffff"
+                    },
+                    {
+                        "energy_text_desc": "2px #E6ffffff"
+                    },
+                    {
+                        "energy_text": "2px #E6ffffff"
+                    },
+                    {
+                        "energy_text_low": "2px #E6ffffff"
+                    },
+                    {
+                        "odd_text": "2px #E6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "parent_text": "#C0C1C3"
+                    },
+                    {
+                        "eta_text": "#C0C1C3"
+                    },
+                    {
+                        "energy_text_desc": "#C0C1C3"
+                    },
+                    {
+                        "energy_text": "#C0C1C3"
+                    },
+                    {
+                        "energy_text_low": "#E8584C"
+                    },
+                    {
+                        "odd_text": "#C0C1C3"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "parent_text": "2px #CC000000"
+                    },
+                    {
+                        "eta_text": "2px #CC000000"
+                    },
+                    {
+                        "energy_text_desc": "2px #CC000000"
+                    },
+                    {
+                        "energy_text": "2px #CC000000"
+                    },
+                    {
+                        "energy_text_low": "2px #CC000000"
+                    },
+                    {
+                        "odd_text": "2px #CC000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_end_area_parent_left_top_align": {
+            "anchor": 11,
+            "x_offset":0,
+            "y_offset":52,
+            "day_style": {
+                "color": [
+                    {
+                        "parent_text": "#E6000000"
+                    },
+                    {
+                        "eta_text": "#E6000000"
+                    },
+                    {
+                        "energy_text_desc": "#E6000000"
+                    },
+                    {
+                        "energy_text": "#E6000000"
+                    },
+                    {
+                        "energy_text_low": "#E6FC4637"
+                    },
+                    {
+                        "odd_text": "#E6000000"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "parent_text": "2px #E6ffffff"
+                    },
+                    {
+                        "eta_text": "2px #E6ffffff"
+                    },
+                    {
+                        "energy_text_desc": "2px #E6ffffff"
+                    },
+                    {
+                        "energy_text": "2px #E6ffffff"
+                    },
+                    {
+                        "energy_text_low": "2px #E6ffffff"
+                    },
+                    {
+                        "odd_text": "2px #E6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "parent_text": "#C0C1C3"
+                    },
+                    {
+                        "eta_text": "#C0C1C3"
+                    },
+                    {
+                        "energy_text_desc": "#C0C1C3"
+                    },
+                    {
+                        "energy_text": "#C0C1C3"
+                    },
+                    {
+                        "energy_text_low": "#E8584C"
+                    },
+                    {
+                        "odd_text": "#C0C1C3"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "parent_text": "2px #CC000000"
+                    },
+                    {
+                        "eta_text": "2px #CC000000"
+                    },
+                    {
+                        "energy_text_desc": "2px #CC000000"
+                    },
+                    {
+                        "energy_text": "2px #CC000000"
+                    },
+                    {
+                        "energy_text_low": "2px #CC000000"
+                    },
+                    {
+                        "odd_text": "2px #CC000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_end_area_parent_right_top_align": {
+            "anchor": 10,
+            "x_offset":0,
+            "y_offset":52,
+            "day_style": {
+                "color": [
+                    {
+                        "parent_text": "#E6000000"
+                    },
+                    {
+                        "eta_text": "#E6000000"
+                    },
+                    {
+                        "energy_text_desc": "#E6000000"
+                    },
+                    {
+                        "energy_text": "#E6000000"
+                    },
+                    {
+                        "energy_text_low": "#E6FC4637"
+                    },
+                    {
+                        "odd_text": "#E6000000"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "parent_text": "2px #E6ffffff"
+                    },
+                    {
+                        "eta_text": "2px #E6ffffff"
+                    },
+                    {
+                        "energy_text_desc": "2px #E6ffffff"
+                    },
+                    {
+                        "energy_text": "2px #E6ffffff"
+                    },
+                    {
+                        "energy_text_low": "2px #E6ffffff"
+                    },
+                    {
+                        "odd_text": "2px #E6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "parent_text": "#C0C1C3"
+                    },
+                    {
+                        "eta_text": "#C0C1C3"
+                    },
+                    {
+                        "energy_text_desc": "#C0C1C3"
+                    },
+                    {
+                        "energy_text": "#C0C1C3"
+                    },
+                    {
+                        "energy_text_low": "#E8584C"
+                    },
+                    {
+                        "odd_text": "#C0C1C3"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "parent_text": "2px #CC000000"
+                    },
+                    {
+                        "eta_text": "2px #CC000000"
+                    },
+                    {
+                        "energy_text_desc": "2px #CC000000"
+                    },
+                    {
+                        "energy_text": "2px #CC000000"
+                    },
+                    {
+                        "energy_text_low": "2px #CC000000"
+                    },
+                    {
+                        "odd_text": "2px #CC000000"
+                    }
+                ]
+            }
+        }
+    },
+    "layer_item_info": {
+        "point_end_area_parent_point_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "end_area_parent_point_left.xml",
+                    "poi_marker_info": "marker_info_end_area_parent_left"
+                }
+            },
+            "index": 0,
+            "name_cn": "左飘"
+        },
+        "point_end_area_parent_point_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "end_area_parent_point_right.xml",
+                    "poi_marker_info": "marker_info_end_area_parent_right"
+                }
+            },
+            "index": 1,
+            "name_cn": "右飘"
+        },
+        "point_end_area_parent_point_bottom": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "end_area_parent_point_down.xml",
+                    "poi_marker_info": "marker_info_end_area_parent_bottom"
+                }
+            },
+            "index": 2,
+            "name_cn": "下飘"
+        },
+        "point_end_area_parent_point_left_top_align": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "end_area_parent_point_left.xml",
+                    "poi_marker_info": "marker_info_end_area_parent_left_top_align"
+                }
+            },
+            "index": 3,
+            "name_cn": "左飘 顶对齐"
+        },
+        "point_end_area_parent_point_right_top_align": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "end_area_parent_point_right.xml",
+                    "poi_marker_info": "marker_info_end_area_parent_right_top_align"
+                }
+            },
+            "index": 4,
+            "name_cn": "右飘 顶对齐"
+        }
+    }
+}

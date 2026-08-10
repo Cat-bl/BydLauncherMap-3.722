@@ -1,0 +1,150 @@
+{
+    "marker_info": {
+        "marker_info_guide_familiar_route_left_up": {
+            "anchor": 13,
+            "x_offset": 11,
+            "y_offset": 15,
+            "night_style": {
+                "color": [
+                    {
+                        "showtip": "#f0ffffff"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "showtip": "#f0000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_guide_familiar_route_left_down": {
+            "anchor": 11,
+            "x_offset": 11,
+            "y_offset": 11,
+            "night_style": {
+                "color": [
+                    {
+                        "showtip": "#f0ffffff"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "showtip": "#f0000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_guide_familiar_route_right_down": {
+            "anchor": 10,
+            "x_offset": 11,
+            "y_offset": 11,
+            "night_style": {
+                "color": [
+                    {
+                        "showtip": "#f0ffffff"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "showtip": "#f0000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_guide_familiar_route_right_up": {
+            "anchor": 12,
+            "x_offset": 11,
+            "y_offset": 15,
+            "night_style": {
+                "color": [
+                    {
+                        "showtip": "#f0ffffff"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "showtip": "#f0000000"
+                    }
+                ]
+            }
+        }
+    },
+    "layer_item_info": {
+        "point_guide_familiar_route_left_up": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_familiar_route.xml",
+                    "poi_marker_info": "marker_info_guide_familiar_route_left_up",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "guide_familiar_route_background_image": "global_image_navi_bg_familiar_route_left_up_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "左上飘"
+        },
+        "point_guide_familiar_route_left_down": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_familiar_route.xml",
+                    "poi_marker_info": "marker_info_guide_familiar_route_left_down",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "guide_familiar_route_background_image": "global_image_navi_bg_familiar_route_left_down_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 1,
+            "name_cn": "左下飘"
+        },
+        "point_guide_familiar_route_right_down": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_familiar_route.xml",
+                    "poi_marker_info": "marker_info_guide_familiar_route_right_down",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "guide_familiar_route_background_image": "global_image_navi_bg_familiar_route_right_down_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 2,
+            "name_cn": "右下飘"
+        },
+        "point_guide_familiar_route_right_up": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_familiar_route.xml",
+                    "poi_marker_info": "marker_info_guide_familiar_route_right_up",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "guide_familiar_route_background_image": "global_image_navi_bg_familiar_route_right_up_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 3,
+            "name_cn": "右上飘"
+        }
+    }
+}

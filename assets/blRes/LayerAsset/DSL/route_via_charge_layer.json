@@ -1,0 +1,1022 @@
+{
+  "data": {
+    "type": "adaptor_point",
+    "brief": "新充电桩途径点图层",
+    "value": [],
+    "rule": [
+      {
+        "brief": "计算公里数",
+        "type": "data_user_if",
+        "value": {
+          "biz_data": "newDistanse",
+          "condition": {
+            "fact": "$biz_data.remainDistance",
+            "operator": "ge",
+            "value": 1000
+          },
+          "case": {
+            "true": {
+              "func": {
+                "name": "DataDiv",
+                "param": {
+                  "dividendValue": "$biz_data.remainDistance",
+                  "divisorValue": 1000.0
+                }
+              }
+            },
+            "false": 0.0
+          }
+        }
+      },
+      {
+        "brief": "计算小时数",
+        "type": "data_user_if",
+        "value": {
+          "biz_data": "remainHour",
+          "condition": {
+            "fact": "$biz_data.chargeTime",
+            "operator": "ge",
+            "value": 60
+          },
+          "case": {
+            "true": {
+              "func": {
+                "name": "DataDiv",
+                "param": {
+                  "dividendValue": "$biz_data.chargeTime",
+                  "divisorValue": 60
+                }
+              }
+            },
+            "false": 0
+          }
+        }
+      },
+      {
+        "brief": "计算剩余分钟数",
+        "type": "data_user_if",
+        "value": {
+          "biz_data": "remainMinute",
+          "condition": {
+            "fact": "$biz_data.chargeTime",
+            "operator": "ge",
+            "value": 60
+          },
+          "case": {
+            "true": {
+              "func": {
+                "name": "DataMod",
+                "param": {
+                  "number": "$biz_data.chargeTime",
+                  "divisor": 60
+                }
+              }
+            },
+            "false": "$biz_data.chargeTime"
+          }
+        }
+      },
+      {
+        "brief": "飘向规则",
+        "type": "data_quadrant_switch",
+        "value": {
+          "biz_data": "multiQuandranType",
+          "condition": "$biz_data.pointType",
+          "case": {
+            "1": 26,
+            "2": 26,
+            "3": 26,
+            "default": 0
+          }
+        }
+      },
+      {
+        "brief": "不同途径点类型优先级设置",
+        "type": "data_priority_switch",
+        "value": {
+          "biz_data": "priority",
+          "condition": "$biz_data.pointType",
+          "case": {
+            "1": 100,
+            "2": 300,
+            "3": 500,
+            "default": 0
+          }
+        }
+      },
+      {
+        "brief": "计算剩余距离",
+        "type": "data_user_if",
+        "value": {
+          "biz_data": "remainDis",
+          "condition": {
+            "fact": "$biz_data.remainDistance",
+            "operator": "gt",
+            "value": 1000
+          },
+          "case": {
+            "true": {
+              "func": {
+                "name": "DataMod",
+                "param": {
+                  "number": "$biz_data.remainDistance",
+                  "divisor": 1000
+                }
+              }
+            },
+            "false": 0
+          }
+        }
+      },
+      {
+        "brief": "真实途径点索引",
+        "type": "data_user_func",
+        "value": {
+          "biz_data": "realIndex",
+          "func": {
+            "name": "DataAdd",
+            "param": {
+              "addValue": "$biz_data.index",
+              "augValue": 1
+            }
+          }
+        }
+      },
+      {
+        "brief": "真实途径点索引转字符串",
+        "type": "data_user_func",
+        "value": {
+          "biz_data": "index_text",
+          "func": {
+            "name": "Int2String",
+            "param": {
+              "value": "$biz_data.realIndex"
+            }
+          }
+        }
+      },
+      {
+        "type": "data_duplicate",
+        "brief": "数据去重",
+        "value": [
+          "$item_data.position.lon",
+          "$item_data.position.lat"
+        ]
+      }
+    ]
+  },
+  "biz": [
+    {
+      "brief": "设置多飘向图层避让算法",
+      "type": "biz_set_avoid_algorithm",
+      "value": 2
+    },
+    {
+      "brief": "设置图层优先级",
+      "type": "biz_set_priority",
+      "value": {
+        "draw_priority": 140,
+        "sub_priority": 3600
+      }
+    },
+    {
+      "brief": "设置是否是多象限图层",
+      "type": "biz_is_quadrant_layer",
+      "value": {
+        "type": 26,
+        "area_threshold": 0.01
+      }
+    }
+  ],
+  "style": {
+    "style_name": {
+      "prefix_name": "",
+      "rule": [
+        {
+          "brief": "样式规则",
+          "type": "style_switch",
+          "value": {
+            "condition": "$biz_data.pointType",
+            "case": {
+              "1": {
+                "switch": {
+                  "condition": "$item_data.quadrantType",
+                  "case": {
+                    "1": "point_via_other",
+                    "2": "point_via_other",
+                    "10": "point_via_charge_mini",
+                    "default": "point_via_other"
+                  }
+                }
+              },
+              "2": {
+                "switch": {
+                  "condition": "$item_data.quadrantType",
+                  "case": {
+                    "1": "point_via_charge_left",
+                    "2": "point_via_charge_right",
+                    "10": "point_via_charge_mini",
+                    "default": "point_via_charge_left"
+                  }
+                }
+              },
+              "3": {
+                "switch": {
+                  "condition": "$item_data.quadrantType",
+                  "case": {
+                    "1": "point_via_charge_left",
+                    "2": "point_via_charge_right",
+                    "10": "point_via_charge_mini",
+                    "default": "point_via_charge_left"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "dynamic_marker": {
+      "rule": [
+        {
+          "brief": "手动添加其他类型途径点显示规则",
+          "type": "marker_if",
+          "value": {
+            "marker_id": "route_via_point_simple.xml",
+            "condition": {
+              "fact": "$biz_data.size",
+              "operator": "le",
+              "value": 1
+            },
+            "case": {
+              "true": [
+                {
+                  "id": "midd_bubble_number_text",
+                  "display": false
+                },
+                {
+                  "id": "midd_bubble_chinese_text",
+                  "display": true,
+                  "lines": "1"
+                }
+              ],
+              "false": [
+                {
+                  "id": "midd_bubble_number_text",
+                  "display": true,
+                  "value": "$biz_data.index_text"
+                },
+                {
+                  "id": "midd_bubble_chinese_text",
+                  "display": false
+                }
+              ]
+            }
+          }
+        },
+        {
+          "brief": "焦点态元素显隐控制",
+          "type": "marker_switch",
+          "value": {
+            "marker_id": "route_via_point_new_focus.xml",
+            "condition": "$biz_data.pointType",
+            "case": {
+              "3": [
+                {
+                  "id": "close_icon",
+                  "display": false
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "func": {
+                        "name": "StringLength",
+                        "param": {
+                          "value": "$biz_data.name"
+                        }
+                      },
+                      "operator": "gt",
+                      "value": 0
+                    },
+                    "case": {
+                      "true": {
+                        "id": "name_text",
+                        "display": true,
+                        "value": "$biz_data.name"
+                      },
+                      "false": {
+                        "id": "name_text",
+                        "display": false
+                      }
+                    }
+                  }
+                }
+              ],
+              "default": [
+                {
+                  "id": "close_icon",
+                  "display": true,
+                  "src": "global_image_charge_bubble_delete_day_night"
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "func": {
+                        "name": "StringLength",
+                        "param": {
+                          "value": "$biz_data.name"
+                        }
+                      },
+                      "operator": "gt",
+                      "value": 0
+                    },
+                    "case": {
+                      "true": {
+                        "id": "name_text",
+                        "display": true,
+                        "value": "$biz_data.name"
+                      },
+                      "false": {
+                        "id": "name_text",
+                        "display": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "brief": "不同途径点提示文本配置",
+          "type": "marker_if",
+          "value": {
+            "marker_id": [
+              "route_via_point_left.xml",
+              "route_via_point_new_focus.xml",
+              "route_via_point_right.xml"
+            ],
+            "condition": {
+              "fact": "$biz_data.isFirstVia",
+              "operator": "equal",
+              "value": true
+            },
+            "case": {
+              "true": {
+                "id": "charge_info_distance_text",
+                "display": true,
+                "value": "距起点"
+              },
+              "false": {
+                "id": "charge_info_distance_text",
+                "display": true,
+                "value": "间隔"
+              }
+            }
+          }
+        },
+        {
+          "brief": "充电桩超快充数据填充",
+          "type": "marker_if",
+          "value": {
+            "marker_id": [
+              "route_via_point_left.xml",
+              "route_via_point_right.xml",
+              "route_via_point_new_focus.xml"
+            ],
+            "condition": {
+              "fact": "$biz_data.extra_fast_total",
+              "operator": "gt",
+              "value": 0
+            },
+            "case": {
+              "true": [
+                {
+                  "id": "charge_label_super_full_text",
+                  "display": true,
+                  "value": "$biz_data.extra_fast_total"
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "fact": "$biz_data.extra_fast_free",
+                      "operator": "ge",
+                      "value": 0
+                    },
+                    "case": {
+                      "true": [
+                        {
+                          "id": "charge_label_super_number_text",
+                          "display": true,
+                          "value": "$biz_data.extra_fast_free"
+                        }
+                      ],
+                      "false": [
+                        {
+                          "id": "charge_label_super_number_text",
+                          "display": true,
+                          "value": "$biz_data.extra_fast_total"
+                        },
+                        {
+                          "id": "charge_label_super_full_text",
+                          "display": false
+                        },
+                        {
+                          "id": "charge_label_super_unit_text",
+                          "display": false
+                        },
+                        {
+                          "id": "charge_label_super_idle_text",
+                          "display": true,
+                          "value": "共"
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "id": "charge_label_super_div",
+                  "display": true
+                }
+              ],
+              "false": {
+                "id": "charge_label_super_div",
+                "display": false
+              }
+            }
+          }
+        },
+        {
+          "brief": "充电站距离数据填充",
+          "type": "marker_if",
+          "value": {
+            "marker_id": [
+              "route_via_point_left.xml",
+              "route_via_point_right.xml",
+              "route_via_point_new_focus.xml"
+            ],
+            "condition": {
+              "fact": "$biz_data.newDistanse",
+              "operator": "gt",
+              "value": 0.0
+            },
+            "case": {
+              "true": {
+                "if": {
+                  "condition": {
+                    "fact": "$biz_data.remainDis",
+                    "operator": "gt",
+                    "value": 0.0
+                  },
+                  "case": {
+                    "true": [
+                      {
+                        "id": "charge_info_distance_number_text",
+                        "display": true,
+                        "value": [
+                          {
+                            "format": "%.1f",
+                            "value": "$biz_data.newDistanse"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "charge_info_distance_unit_text",
+                        "display": true,
+                        "value": "公里"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "id": "charge_info_distance_number_text",
+                        "display": true,
+                        "value": [
+                          {
+                            "format": "%.0f",
+                            "value": "$biz_data.newDistanse"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "charge_info_distance_unit_text",
+                        "display": true,
+                        "value": "公里"
+                      }
+                    ]
+                  }
+                }
+              },
+              "false": {
+                "if": {
+                  "condition": {
+                    "fact": "$biz_data.remainDistance",
+                    "operator": "gt",
+                    "value": 0.0
+                  },
+                  "case": {
+                    "true":[
+                      {
+                        "id": "charge_info_distance_number_text",
+                        "display": true,
+                        "value": [
+                          {
+                            "format": "%d",
+                            "value": "$biz_data.remainDistance"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "charge_info_distance_unit_text",
+                        "display": true,
+                        "value": "米"
+                      }
+                    ],
+                    "false":[
+                      {
+                        "id": "charge_info_distance_text",
+                        "display": false
+                      },
+                      {
+                        "id": "charge_info_distance_point_text",
+                        "display": false
+                      },
+                      {
+                        "id": "charge_info_distance_number_text",
+                        "display": false
+                      },
+                      {
+                        "id": "charge_info_distance_unit_text",
+                        "display": false
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "brief": "充电桩充电时间数据填充",
+          "type": "marker_if",
+          "value": {
+            "marker_id": [
+              "route_via_point_left.xml",
+              "route_via_point_right.xml",
+              "route_via_point_new_focus.xml"
+            ],
+            "condition": {
+              "fact": "$biz_data.chargeTime",
+              "operator": "gt",
+              "value": 0
+            },
+            "case": {
+              "true": [
+                {
+                  "if": {
+                    "condition": {
+                      "fact": "$biz_data.remainMinute",
+                      "operator": "gt",
+                      "value": 0
+                    },
+                    "case": {
+                      "true": {
+                        "id": "charge_info_time_minute_number_text",
+                        "display": true,
+                        "value": "$biz_data.remainMinute"
+                      },
+                      "false": [
+                        {
+                          "id": "charge_info_time_minute_number_text",
+                          "display": false
+                        },
+                        {
+                          "id": "charge_info_time_minute_unit_text",
+                          "display": false
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "fact": "$biz_data.remainHour",
+                      "operator": "gt",
+                      "value": 0
+                    },
+                    "case": {
+                      "true": [
+                        {
+                          "id": "charge_info_time_hour_number_text",
+                          "display": true,
+                          "value": "$biz_data.remainHour"
+                        }
+                      ],
+                      "false": [
+                        {
+                          "id": "charge_info_time_hour_number_text",
+                          "display": false
+                        },
+                        {
+                          "id": "charge_info_time_hour_unit_text",
+                          "display": false
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "charge_info_distance_point_text",
+                  "display": false
+                },
+                {
+                  "id": "charge_info_time_chong_text",
+                  "display": false
+                },
+                {
+                  "id": "charge_info_time_hour_number_text",
+                  "display": false
+                },
+                {
+                  "id": "charge_info_time_hour_unit_text",
+                  "display": false
+                },
+                {
+                  "id": "charge_info_time_minute_number_text",
+                  "display": false
+                },
+                {
+                  "id": "charge_info_time_minute_unit_text",
+                  "display": false
+                }
+              ]
+            }
+          }
+        },
+        {
+          "brief": "途径点文本配置",
+          "type": "marker_if",
+          "value": {
+            "marker_id": [
+              "route_via_point_left.xml",
+              "route_via_point_right.xml",
+              "route_via_point_new_focus.xml"
+            ],
+            "condition": {
+              "fact": "$biz_data.size",
+              "operator": "le",
+              "value": 1
+            },
+            "case": {
+              "true": [
+                {
+                  "id": "big_bubble_chinese_text",
+                  "display": true,
+                  "lines": "1"
+                },
+                {
+                  "id": "big_bubble_number_text",
+                  "display": false
+                },
+                {
+                  "id": "midd_bubble_chinese_text",
+                  "display": true,
+                  "lines": "1"
+                },
+                {
+                  "id": "midd_bubble_number_text",
+                  "display": false
+                }
+              ],
+              "false": [
+                {
+                  "id": "midd_bubble_chinese_text",
+                  "display": false
+                },
+                {
+                  "id": "midd_bubble_number_text",
+                  "display": true,
+                  "value": "$biz_data.index_text"
+                },
+                {
+                  "id": "big_bubble_chinese_text",
+                  "display": false
+                },
+                {
+                  "id": "big_bubble_number_text",
+                  "display": true,
+                  "value": "$biz_data.index_text"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "brief": "途径点图片配置",
+          "type": "marker_if",
+          "value": {
+            "marker_id": [
+              "route_via_point_left.xml",
+              "route_via_point_right.xml",
+              "route_via_point_simple.xml"
+            ],
+            "condition": {
+              "fact": "$biz_data.viaPass",
+              "operator": "equal",
+              "value": true
+            },
+            "case": {
+              "true": {
+                "id": "midd_bubble_image",
+                "display": true,
+                "value": "global_image_charge_bubble_midd_invalid_day_night"
+              },
+              "false": {
+                "if": {
+                  "condition": {
+                    "fact": "$biz_data.pointType",
+                    "operator": "equal",
+                    "value": 3
+                  },
+                  "case": {
+                    "true": {
+                      "id": "midd_bubble_image",
+                      "display": true,
+                      "value": "global_image_charge_bubble_midd_charge_day_night"
+                    },
+                    "false": {
+                      "id": "midd_bubble_image",
+                      "display": true,
+                      "value": "global_image_charge_bubble_midd_day_night"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "brief": "焦点态图片配置",
+          "type": "marker_if",
+          "value": {
+            "marker_id": "route_via_point_new_focus.xml",
+            "condition": {
+              "fact": "$biz_data.viaPass",
+              "operator": "equal",
+              "value": true
+            },
+            "case": {
+              "true": {
+                "id": "big_bubble_image",
+                "display": true,
+                "value": "global_image_charge_bubble_midd_big_invalid_day_night"
+              },
+              "false": {
+                "if": {
+                  "condition": {
+                    "fact": "$biz_data.pointType",
+                    "operator": "equal",
+                    "value": 3
+                  },
+                  "case": {
+                    "true": {
+                      "id": "big_bubble_image",
+                      "display": true,
+                      "value": "global_image_charge_bubble_midd_charge_big_day_night"
+                    },
+                    "false": {
+                      "id": "big_bubble_image",
+                      "display": true,
+                      "value": "global_image_charge_bubble_midd_big_day_night"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "brief": "小图标配置",
+          "type": "marker_if",
+          "value": {
+            "marker_id": "route_via_point_mini.xml",
+            "condition": {
+              "fact": "$biz_data.viaPass",
+              "operator": "equal",
+              "value": true
+            },
+            "case": {
+              "true": {
+                "id": "type_icon",
+                "display": true,
+                "value": "global_image_charge_bubble_midd_invalid_mini_point_day_night"
+              },
+              "false": {
+                "if": {
+                  "condition": {
+                    "fact": "$biz_data.pointType",
+                    "operator": "equal",
+                    "value": 3
+                  },
+                  "case": {
+                    "true": {
+                      "id": "type_icon",
+                      "display": true,
+                      "value": "global_image_charge_bubble_midd_charge_mini_point_day_night"
+                    },
+                    "false": {
+                      "id": "type_icon",
+                      "display": true,
+                      "value": "global_image_charge_bubble_midd_mini_point_day_night"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "brief": "充电桩快充数据填充",
+          "type": "marker_if",
+          "value": {
+            "marker_id": [
+              "route_via_point_left.xml",
+              "route_via_point_right.xml",
+              "route_via_point_new_focus.xml"
+            ],
+            "condition": {
+              "fact": "$biz_data.fast_total",
+              "operator": "gt",
+              "value": 0
+            },
+            "case": {
+              "true": [
+                {
+                  "id": "charge_label_fast_full_text",
+                  "display": true,
+                  "value": "$biz_data.fast_total",
+                  "lines": "1"
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "fact": "$biz_data.fast_free",
+                      "operator": "ge",
+                      "value": 0
+                    },
+                    "case": {
+                      "true": [
+                        {
+                          "id": "charge_label_fast_number_text",
+                          "display": true,
+                          "value": "$biz_data.fast_free"
+                        }
+                      ],
+                      "false": [
+                        {
+                          "id": "charge_label_fast_number_text",
+                          "display": true,
+                          "value": "$biz_data.fast_total"
+                        },
+                        {
+                          "id": "charge_label_fast_full_text",
+                          "display": false
+                        },
+                        {
+                          "id": "charge_label_fast_unit_text",
+                          "display": false
+                        },
+                        {
+                          "id": "charge_label_fast_idle_text",
+                          "display": true,
+                          "value": "共"
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "id": "charge_label_fast_div",
+                  "display": true
+                }
+              ],
+              "false": {
+                "id": "charge_label_fast_div",
+                "display": false
+              }
+            }
+          }
+        },
+        {
+          "brief": "充电桩慢充数据填充",
+          "type": "marker_if",
+          "value": {
+            "marker_id": [
+              "route_via_point_left.xml",
+              "route_via_point_right.xml",
+              "route_via_point_new_focus.xml"
+            ],
+            "condition": {
+              "fact": "$biz_data.slow_total",
+              "operator": "gt",
+              "value": 0
+            },
+            "case": {
+              "true": [
+                {
+                  "id": "charge_label_slow_full_text",
+                  "display": true,
+                  "value": "$biz_data.slow_total",
+                  "lines": "1"
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "fact": "$biz_data.slow_free",
+                      "operator": "ge",
+                      "value": 0
+                    },
+                    "case": {
+                      "true": [
+                        {
+                          "id": "charge_label_slow_number_text",
+                          "display": true,
+                          "value": "$biz_data.slow_free"
+                        }
+                      ],
+                      "false": [
+                        {
+                          "id": "charge_label_slow_number_text",
+                          "display": true,
+                          "value": "$biz_data.slow_total"
+                        },
+                        {
+                          "id": "charge_label_slow_full_text",
+                          "display": false
+                        },
+                        {
+                          "id": "charge_label_slow_unit_text",
+                          "display": false
+                        },
+                        {
+                          "id": "charge_label_slow_idle_text",
+                          "display": true,
+                          "value": "共"
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "id": "charge_label_slow_div",
+                  "display": true
+                }
+              ],
+              "false": {
+                "id": "charge_label_slow_div",
+                "display": false
+              }
+            }
+          }
+        },
+        {
+          "brief": "途径点非必要信息隐藏",
+          "type": "marker_if",
+          "value": {
+            "marker_id": [
+              "route_via_point_left.xml",
+              "route_via_point_right.xml",
+              "route_via_point_new_focus.xml"
+            ],
+            "condition": {
+              "fact": "$biz_data.viaPass",
+              "operator": "equal",
+              "value": true
+            },
+            "case": {
+              "true": [
+                {
+                  "id": "charge_info_div",
+                  "display": false
+                },
+                {
+                  "id": "close_icon",
+                  "display": false
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "abstract": {
+    "brief": "新充电桩途径点图层",
+    "name": "route_via_charge_layer",
+    "biz_type": 6047,
+    "update_card": false
+  },
+  "dataSource": "[{\"item_data\":{\"quadrantType\":1,\"position\":{\"lon\":116.356343,\"lat\":39.942365}},\"biz_data\":{\"name\":\"补充规划充电站\",\"isFirstVia\":false,\"remainDistance\":234,\"chargeTime\":12,\"pointType\":3,\"viaPass\":false,\"slow_free\":10,\"slow_total\":20,\"fast_free\":10,\"fast_total\":20,\"extra_fast_free\":40,\"extra_fast_total\":50}},{\"item_data\":{\"quadrantType\":1,\"position\":{\"lon\":116.358982,\"lat\":39.941304}},\"biz_data\":{\"name\":\"补充规划充电站1\",\"isFirstVia\":false,\"remainDistance\":234,\"chargeTime\":12,\"pointType\":3,\"viaPass\":false,\"slow_free\":10,\"slow_total\":20,\"fast_free\":10,\"fast_total\":20,\"extra_fast_free\":40,\"extra_fast_total\":50}},{\"item_data\":{\"quadrantType\":1,\"position\":{\"lon\":116.359982,\"lat\":39.948304}},\"biz_data\":{\"name\":\"补充规划充电站2\",\"isFirstVia\":false,\"remainDistance\":234,\"chargeTime\":12,\"pointType\":3,\"viaPass\":false,\"slow_free\":10,\"slow_total\":20,\"fast_free\":10,\"fast_total\":20,\"extra_fast_free\":40,\"extra_fast_total\":50}}]"
+}

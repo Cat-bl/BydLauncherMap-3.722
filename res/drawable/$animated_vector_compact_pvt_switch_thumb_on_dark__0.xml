@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator android:interpolator="@anim/byd_pvt_interpolator_linear" android:duration="@integer/byd_pvt_duration_extra_short_2" android:valueFrom="@color/sys_gray_125" android:valueTo="@color/sys_gray_50" android:valueType="colorType" android:propertyName="fillColor"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" />

@@ -1,0 +1,20 @@
+{
+    "marker_info": {},
+    "layer_item_info": {
+        "range_on_map_gradient_style_normal": {
+            "polygon_gradient_item_style": {
+                "gradient_color": "0x4D05a6eb",
+                "out_marker_id": "range_on_map_out",
+                "inner_width": 0,
+                "out_width": 10,
+                "gradient_marker_id": "range_on_map_gradient",
+                "inner_marker_id": "range_on_map_inner",
+                "draw_type": 3,
+                "inner_color": "0xff000000",
+                "out_color": "0x4D05a6eb"
+            },
+            "index": 0,
+            "name_cn": "续航区域面渐变（在线）"
+        }
+    }
+}

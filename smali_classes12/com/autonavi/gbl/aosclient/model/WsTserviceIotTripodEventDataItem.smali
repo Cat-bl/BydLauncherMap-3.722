@@ -1,0 +1,48 @@
+.class public Lcom/autonavi/gbl/aosclient/model/WsTserviceIotTripodEventDataItem;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/io/Serializable;
+
+
+# instance fields
+.field public createTime:Ljava/lang/String;
+
+.field public duration:I
+
+.field public location:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 2
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const-string v0, ""
+
+    iput-object v0, p0, Lcom/autonavi/gbl/aosclient/model/WsTserviceIotTripodEventDataItem;->createTime:Ljava/lang/String;
+
+    const/4 v1, 0x0
+
+    iput v1, p0, Lcom/autonavi/gbl/aosclient/model/WsTserviceIotTripodEventDataItem;->duration:I
+
+    iput-object v0, p0, Lcom/autonavi/gbl/aosclient/model/WsTserviceIotTripodEventDataItem;->location:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/autonavi/gbl/aosclient/model/WsTserviceIotTripodEventDataItem;->createTime:Ljava/lang/String;
+
+    iput p2, p0, Lcom/autonavi/gbl/aosclient/model/WsTserviceIotTripodEventDataItem;->duration:I
+
+    iput-object p3, p0, Lcom/autonavi/gbl/aosclient/model/WsTserviceIotTripodEventDataItem;->location:Ljava/lang/String;
+
+    return-void
+.end method

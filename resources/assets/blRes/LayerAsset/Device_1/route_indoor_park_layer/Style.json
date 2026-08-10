@@ -1,0 +1,122 @@
+{
+    "marker_info": {
+        "marker_info_route_indoor_park_upstairs_left": {
+            "anchor": 13,
+            "x_offset": 16,
+            "y_offset": 10,
+            "night_style": {
+                "color": [
+                    {
+                        "floor": "#f0ffffff"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "floor": "#f0000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_route_indoor_park_upstairs_right": {
+            "anchor": 12,
+            "x_offset": 16,
+            "y_offset": 10,
+            "night_style": {
+                "color": [
+                    {
+                        "floor": "#f0ffffff"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "floor": "#f0000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_route_indoor_park_downstairs_left": {
+            "anchor": 11,
+            "x_offset": 16,
+            "y_offset": 10,
+            "night_style": {
+                "color": [
+                    {
+                        "floor": "#f0ffffff"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "floor": "#f0000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_route_indoor_park_downstairs_right": {
+            "anchor": 10,
+            "x_offset": 16,
+            "y_offset": 10,
+            "night_style": {
+                "color": [
+                    {
+                        "floor": "#f0ffffff"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "floor": "#f0000000"
+                    }
+                ]
+            }
+        }
+    },
+    "layer_item_info": {
+        "point_route_indoor_park_upstairs_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "route_indoor_park_upstairs_left.xml",
+                    "poi_marker_info": "marker_info_route_indoor_park_upstairs_left"
+                }
+            },
+            "index": 0,
+            "name_cn": "上楼 左飘"
+        },
+        "point_route_indoor_park_upstairs_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "route_indoor_park_upstairs_right.xml",
+                    "poi_marker_info": "marker_info_route_indoor_park_upstairs_right"
+                }
+            },
+            "index": 1,
+            "name_cn": "上楼 右飘"
+        },
+        "point_route_indoor_park_downstairs_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "route_indoor_park_downstairs_left.xml",
+                    "poi_marker_info": "marker_info_route_indoor_park_downstairs_left"
+                }
+            },
+            "index": 2,
+            "name_cn": "下楼 左飘"
+        },
+        "point_route_indoor_park_downstairs_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "route_indoor_park_downstairs_right.xml",
+                    "poi_marker_info": "marker_info_route_indoor_park_downstairs_right"
+                }
+            },
+            "index": 3,
+            "name_cn": "下楼 右飘"
+        }
+    }
+}

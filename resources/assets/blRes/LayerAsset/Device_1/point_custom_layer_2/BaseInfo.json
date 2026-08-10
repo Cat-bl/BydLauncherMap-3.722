@@ -1,0 +1,9 @@
+{
+    "id": 20001,
+    "layer_priority": {
+        "draw_priority": 140,
+        "sub_priority": 10200
+    },
+    "layer_collision": 1,
+    "item": "PointLayerItem"
+}

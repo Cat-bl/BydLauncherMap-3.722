@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/auto_dimen2_20">
+    <com.autonavi.skin.view.SkinImageView
+        android:id="@+id/siv_charging_station_icon"
+        android:layout_width="@dimen/auto_dimen2_18"
+        android:layout_height="@dimen/auto_dimen2_18"
+        android:src="@drawable/auto_navi_service_area_charging_icon_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.autonavi.skin.view.SkinTextView
+        android:textSize="@dimen/auto_font_size_12"
+        android:textColor="@color/sys_color_default"
+        android:gravity="center"
+        android:id="@+id/stv_charging_station_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="国家电网"
+        android:paddingEnd="@dimen/auto_dimen2_8"
+        android:layout_marginStart="@dimen/auto_dimen2_6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/siv_charging_station_icon"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.autonavi.adapter.container.ACChargingInfoIndexView
+        android:id="@+id/ac_charging_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:interface_key="service_area_charging_info"
+        app:layout_constraintBottom_toTopOf="@+id/sl_charging_fee_info"
+        app:layout_constraintStart_toEndOf="@+id/stv_charging_station_name"
+        app:layout_constraintTop_toBottomOf="@+id/rv_pictures"/>
+</com.autonavi.skin.view.SkinConstraintLayout>

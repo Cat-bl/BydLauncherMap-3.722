@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="true"
+        android:state_pressed="true"
+        android:color="@color/auto_color_6600ACEB"/>
+    <item
+        android:state_enabled="true"
+        android:color="@color/custom_btn_blue_day_1_color"/>
+    <item
+        android:state_enabled="false"
+        android:color="@color/auto_color_C7CDD4"/>
+</selector>

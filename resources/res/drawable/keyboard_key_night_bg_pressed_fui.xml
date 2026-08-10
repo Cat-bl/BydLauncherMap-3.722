@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/color_keyboard_key_background_night_pressed_fui"/>
+    <stroke
+        android:width="@dimen/auto_dimen2_0_5"
+        android:color="@color/color_keyboard_key_background_stroke_night_pressed_fui"/>
+</shape>

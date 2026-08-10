@@ -1,0 +1,38 @@
+.class public final synthetic Lf/h/f/e2/d/r2;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lh/a/d0/q;
+
+
+# instance fields
+.field public final synthetic a:Lcom/autosdk/drive/route/presenter/RouteResultMapPresenter;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/autosdk/drive/route/presenter/RouteResultMapPresenter;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lf/h/f/e2/d/r2;->a:Lcom/autosdk/drive/route/presenter/RouteResultMapPresenter;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final test(Ljava/lang/Object;)Z
+    .locals 1
+
+    iget-object v0, p0, Lf/h/f/e2/d/r2;->a:Lcom/autosdk/drive/route/presenter/RouteResultMapPresenter;
+
+    check-cast p1, Ljava/lang/Long;
+
+    invoke-virtual {v0, p1}, Lcom/autosdk/drive/route/presenter/RouteResultMapPresenter;->t0(Ljava/lang/Long;)Z
+
+    move-result p1
+
+    return p1
+.end method

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_selected="true" android:color="@color/setting_custom_highlight_color_night" />
+    <item android:state_enabled="false" android:color="#73dae1eb" />
+    <item android:state_enabled="true" android:state_selected="false" android:color="@color/setting_custom_normal_color_night" />
+</selector>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:drawable="@drawable/user_car_phone_connected_day_ocean" />
+    <item android:state_enabled="false" android:drawable="@drawable/user_car_phone_unconnected_day_ocean" />
+</selector>

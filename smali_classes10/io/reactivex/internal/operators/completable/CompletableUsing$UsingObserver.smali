@@ -1,0 +1,273 @@
+.class public final Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;
+.super Ljava/util/concurrent/atomic/AtomicReference;
+.source "SourceFile"
+
+# interfaces
+.implements Lh/a/c;
+.implements Lh/a/a0/b;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<R:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/util/concurrent/atomic/AtomicReference<",
+        "Ljava/lang/Object;",
+        ">;",
+        "Lh/a/c;",
+        "Lh/a/a0/b;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final serialVersionUID:J = -0x95bf75d78cfb0efL
+
+
+# instance fields
+.field public final disposer:Lh/a/d0/g;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lh/a/d0/g<",
+            "-TR;>;"
+        }
+    .end annotation
+.end field
+
+.field public final downstream:Lh/a/c;
+
+.field public final eager:Z
+
+.field public upstream:Lh/a/a0/b;
+
+
+# direct methods
+.method public constructor <init>(Lh/a/c;Ljava/lang/Object;Lh/a/d0/g;Z)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lh/a/c;",
+            "TR;",
+            "Lh/a/d0/g<",
+            "-TR;>;Z)V"
+        }
+    .end annotation
+
+    invoke-direct {p0, p2}, Ljava/util/concurrent/atomic/AtomicReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object p1, p0, Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;->downstream:Lh/a/c;
+
+    iput-object p3, p0, Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;->disposer:Lh/a/d0/g;
+
+    iput-boolean p4, p0, Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;->eager:Z
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public dispose()V
+    .locals 1
+
+    iget-object v0, p0, Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;->upstream:Lh/a/a0/b;
+
+    invoke-interface {v0}, Lh/a/a0/b;->dispose()V
+
+    sget-object v0, Lio/reactivex/internal/disposables/DisposableHelper;->DISPOSED:Lio/reactivex/internal/disposables/DisposableHelper;
+
+    iput-object v0, p0, Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;->upstream:Lh/a/a0/b;
+
+    invoke-virtual {p0}, Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;->disposeResourceAfter()V
+
+    return-void
+.end method
+
+.method public disposeResourceAfter()V
+    .locals 2
+
+    invoke-virtual {p0, p0}, Ljava/util/concurrent/atomic/AtomicReference;->getAndSet(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-eq v0, p0, :cond_0
+
+    :try_start_0
+    iget-object v1, p0, Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;->disposer:Lh/a/d0/g;
+
+    invoke-interface {v1, v0}, Lh/a/d0/g;->accept(Ljava/lang/Object;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v0
+
+    invoke-static {v0}, Lh/a/b0/a;->b(Ljava/lang/Throwable;)V
+
+    invoke-static {v0}, Lh/a/h0/a;->s(Ljava/lang/Throwable;)V
+
+    :cond_0
+    :goto_0
+    return-void
+.end method
+
+.method public isDisposed()Z
+    .locals 1
+
+    iget-object v0, p0, Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;->upstream:Lh/a/a0/b;
+
+    invoke-interface {v0}, Lh/a/a0/b;->isDisposed()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public onComplete()V
+    .locals 2
+
+    sget-object v0, Lio/reactivex/internal/disposables/DisposableHelper;->DISPOSED:Lio/reactivex/internal/disposables/DisposableHelper;
+
+    iput-object v0, p0, Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;->upstream:Lh/a/a0/b;
+
+    iget-boolean v0, p0, Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;->eager:Z
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {p0, p0}, Ljava/util/concurrent/atomic/AtomicReference;->getAndSet(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-eq v0, p0, :cond_0
+
+    :try_start_0
+    iget-object v1, p0, Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;->disposer:Lh/a/d0/g;
+
+    invoke-interface {v1, v0}, Lh/a/d0/g;->accept(Ljava/lang/Object;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v0
+
+    invoke-static {v0}, Lh/a/b0/a;->b(Ljava/lang/Throwable;)V
+
+    iget-object v1, p0, Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;->downstream:Lh/a/c;
+
+    invoke-interface {v1, v0}, Lh/a/c;->onError(Ljava/lang/Throwable;)V
+
+    :cond_0
+    return-void
+
+    :cond_1
+    :goto_0
+    iget-object v0, p0, Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;->downstream:Lh/a/c;
+
+    invoke-interface {v0}, Lh/a/c;->onComplete()V
+
+    iget-boolean v0, p0, Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;->eager:Z
+
+    if-nez v0, :cond_2
+
+    invoke-virtual {p0}, Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;->disposeResourceAfter()V
+
+    :cond_2
+    return-void
+.end method
+
+.method public onError(Ljava/lang/Throwable;)V
+    .locals 4
+
+    sget-object v0, Lio/reactivex/internal/disposables/DisposableHelper;->DISPOSED:Lio/reactivex/internal/disposables/DisposableHelper;
+
+    iput-object v0, p0, Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;->upstream:Lh/a/a0/b;
+
+    iget-boolean v0, p0, Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;->eager:Z
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {p0, p0}, Ljava/util/concurrent/atomic/AtomicReference;->getAndSet(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-eq v0, p0, :cond_0
+
+    :try_start_0
+    iget-object v1, p0, Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;->disposer:Lh/a/d0/g;
+
+    invoke-interface {v1, v0}, Lh/a/d0/g;->accept(Ljava/lang/Object;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v0
+
+    invoke-static {v0}, Lh/a/b0/a;->b(Ljava/lang/Throwable;)V
+
+    new-instance v1, Lio/reactivex/exceptions/CompositeException;
+
+    const/4 v2, 0x2
+
+    new-array v2, v2, [Ljava/lang/Throwable;
+
+    const/4 v3, 0x0
+
+    aput-object p1, v2, v3
+
+    const/4 p1, 0x1
+
+    aput-object v0, v2, p1
+
+    invoke-direct {v1, v2}, Lio/reactivex/exceptions/CompositeException;-><init>([Ljava/lang/Throwable;)V
+
+    move-object p1, v1
+
+    goto :goto_0
+
+    :cond_0
+    return-void
+
+    :cond_1
+    :goto_0
+    iget-object v0, p0, Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;->downstream:Lh/a/c;
+
+    invoke-interface {v0, p1}, Lh/a/c;->onError(Ljava/lang/Throwable;)V
+
+    iget-boolean p1, p0, Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;->eager:Z
+
+    if-nez p1, :cond_2
+
+    invoke-virtual {p0}, Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;->disposeResourceAfter()V
+
+    :cond_2
+    return-void
+.end method
+
+.method public onSubscribe(Lh/a/a0/b;)V
+    .locals 1
+
+    iget-object v0, p0, Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;->upstream:Lh/a/a0/b;
+
+    invoke-static {v0, p1}, Lio/reactivex/internal/disposables/DisposableHelper;->validate(Lh/a/a0/b;Lh/a/a0/b;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iput-object p1, p0, Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;->upstream:Lh/a/a0/b;
+
+    iget-object p1, p0, Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;->downstream:Lh/a/c;
+
+    invoke-interface {p1, p0}, Lh/a/c;->onSubscribe(Lh/a/a0/b;)V
+
+    :cond_0
+    return-void
+.end method

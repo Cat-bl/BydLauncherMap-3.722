@@ -1,0 +1,17 @@
+{
+    "id": 2504,
+    "layer_priority": {
+        "draw_priority": 140,
+        "sub_priority": 3704
+    },
+    "quadrant_layer_rect_avoid": {
+        "type": 25,
+        "intersect_area": 0.2
+    },
+    "layer_filter": {
+        "enable": 0,
+        "type": -1
+    },
+    "enable_click": 1,
+    "item": "PointLayerItem"
+}

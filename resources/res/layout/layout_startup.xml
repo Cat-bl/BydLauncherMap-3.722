@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/map_front_page_bg_day"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:background4Night="@drawable/map_front_page_bg_night"
+    app:background4Skin="@drawable/map_front_page_bg_day">
+    <com.autonavi.skin.view.SkinImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/map_front_page_day"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:src4Night="@drawable/map_front_page_night"
+        app:src4Skin="@drawable/map_front_page_day"/>
+    <com.autonavi.skin.view.SkinImageView
+        android:id="@+id/startup_logo"
+        android:background="@drawable/icon_startup_logo"
+        android:visibility="gone"
+        android:layout_width="@dimen/auto_dimen2_80"
+        android:layout_height="@dimen/auto_dimen2_80"
+        android:layout_marginBottom="@dimen/auto_dimen2_141"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <com.autonavi.skin.view.SkinTextView
+        android:textSize="@dimen/auto_font_size_20"
+        android:textColor="#365173"
+        android:gravity="center"
+        android:id="@+id/startup_text"
+        android:visibility="gone"
+        android:layout_width="@dimen/auto_dimen2_0"
+        android:layout_height="@dimen/auto_dimen2_26"
+        android:layout_marginTop="@dimen/auto_dimen2_24"
+        android:text="纷繁的世界   一个就够了"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startup_logo"/>
+</com.autonavi.skin.view.SkinConstraintLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#080517"/>
+        </shape>
+    </item>
+    <item>
+        <bitmap
+            android:gravity="bottom|center_horizontal"
+            android:src="@drawable/earth"/>
+    </item>
+    <item android:bottom="@dimen/auto_dimen2_300">
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/slogan"/>
+    </item>
+    <item
+        android:left="@dimen/auto_dimen2_30"
+        android:bottom="@dimen/auto_dimen2_12">
+        <bitmap
+            android:gravity="bottom|left"
+            android:src="@drawable/amap_logo"/>
+    </item>
+    <item
+        android:right="@dimen/auto_dimen2_30"
+        android:bottom="@dimen/auto_dimen2_20">
+        <bitmap
+            android:gravity="bottom|right"
+            android:src="@drawable/copyright"/>
+    </item>
+</layer-list>

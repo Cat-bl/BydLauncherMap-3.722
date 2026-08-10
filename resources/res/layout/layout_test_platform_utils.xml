@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.autonavi.skin.view.SkinLinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getSpeed: 速度"
+            android:onClick="getSpeed"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getVin: vin"
+            android:onClick="getVin"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getPowerType: 动力类型"
+            android:onClick="getPowerType"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getVolume: get音量"
+            android:onClick="getVolume"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="setVolume: set音量"
+            android:onClick="setVolume"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getFuelElecLowPower: 低油电状态"
+            android:onClick="getFuelElecLowPower"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getUUID: UUID"
+            android:onClick="getUUID"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getTotalMileageValue: 总里程"
+            android:onClick="getTotalMileageValue"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getEVMileageValue: EV里程"
+            android:onClick="getEVMileageValue"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getElecDrivingRangeValue: 电续航里程"
+            android:onClick="getElecDrivingRangeValue"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getFuelDrivingRangeValue: 燃油续航里程"
+            android:onClick="getFuelDrivingRangeValue"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getElecPercentageValue: 电量百分比"
+            android:onClick="getElecPercentageValue"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getFuelPercentageValue: 燃油百分比"
+            android:onClick="getFuelPercentageValue"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getDrivingTimeValue: 行驶时间"
+            android:onClick="getDrivingTimeValue"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getChargerWorkState: 充电状态"
+            android:onClick="getChargerWorkState"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getChargingType: 充电模式"
+            android:onClick="getChargingType"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hasFeature: 是否有行车记录仪"
+            android:onClick="hasFeature"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="setMute: 设置静音"
+            android:onClick="setMute"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getAutoType: 车型ID"
+            android:onClick="getAutoType"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getPlatform: Platform"
+            android:onClick="getPlatform"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getAccelerateDeepness: 油门深度"
+            android:onClick="getAccelerateDeepness"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getGearboxCode: 变速箱型号"
+            android:onClick="getGearboxCode"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getGearboxManualModeLevel: 手动挡位"
+            android:onClick="getGearboxManualModeLevel"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getGearboxAutoModeType: 自动挡位"
+            android:onClick="getGearboxAutoModeType"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getWindowOpenPercent: 天窗位置百分比"
+            android:onClick="getWindowOpenPercent"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getPowerLevel: 电源挡位"
+            android:onClick="getPowerLevel"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getLastFuelConPHMValue: 最近百公里油耗"
+            android:onClick="getLastFuelConPHMValue"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getBatteryPercentage: 剩余电量"
+            android:onClick="getBatteryPercentage"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getTotalElecConPHMValue: 累计平均电耗"
+            android:onClick="getTotalElecConPHMValue"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getMalfunctionInfo: 前排安全带提示"
+            android:onClick="getMalfunctionInfo"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getAlarmBuzzleState: 蜂鸣器状态"
+            android:onClick="getAlarmBuzzleState"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getSafetyBeltStatus: 驾驶员安全带状态"
+            android:onClick="getSafetyBeltStatus"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getAcStartState: 空调开启状态"
+            android:onClick="getAcStartState"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getAcControlMode: 空调控制方式"
+            android:onClick="getAcControlMode"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getAcCycleMode: 空调循环模式"
+            android:onClick="getAcCycleMode"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getAcWindMode: 空调出风方式"
+            android:onClick="getAcWindMode"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="setAcTemperature: 设置空驾驶位调温度"
+            android:onClick="setAcTemperature"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getTemprature: 主驾驶温度"
+            android:onClick="getTemprature"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getBrakeFluidLevel: 制动液位信号"
+            android:onClick="getBrakeFluidLevel"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getBrakePedalState: 制动踏板状态"
+            android:onClick="getBrakePedalState"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getParkBrakeSwitch: 驻车制动开关"
+            android:onClick="getParkBrakeSwitch"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getEngineCoolantLevel: 冷却液位"
+            android:onClick="getEngineCoolantLevel"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getChargingCapState: 充电口盖开关状态"
+            android:onClick="getChargingCapState"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getChargerFaultState: 车载充电器故障状态"
+            android:onClick="getChargerFaultState"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getChargingRestTime: 当前充满电剩余时间"
+            android:onClick="getChargingRestTime"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getChargingCapacity: 本次累计总充电量"
+            android:onClick="getChargingCapacity"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getLightIntensity: 光照(环境光)强度"
+            android:onClick="getLightIntensity"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getPM2p5Level: 车内/外PM2.5等级"
+            android:onClick="getPM2p5Level"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getPM2p5Value: 车内/外PM2.5数"
+            android:onClick="getPM2p5Value"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getDoorLockStatus: 左前门门锁状态"
+            android:onClick="getDoorLockStatus"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getLightStatus: 近光灯状态"
+            android:onClick="getLightStatus"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getTyreAirLeakState: 左前轮胎漏气状态"
+            android:onClick="getTyreAirLeakState"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getTyreBatteryState: 胎压系统电池电量状态"
+            android:onClick="getTyreBatteryState"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getTyrePressureState: 左前轮胎压状态"
+            android:onClick="getTyrePressureState"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getTimeFormat: 时间"
+            android:onClick="getTimeFormat"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getRoadSurfaceMode: 路面模式"
+            android:onClick="getRoadSurfaceMode"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="soAbility: 是否支持动态加载so库"
+            android:onClick="soAbility"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getBatteryPowerValue: 电池最大负载电量"
+            android:onClick="getBatteryPowerValue"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getBatteryRemainPowerEV: 纯电车获取电池剩余能量"
+            android:onClick="getBatteryRemainPowerEV"/>
+        <com.autonavi.skin.view.SkinButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getDriveConfig: DriveConfig"
+            android:onClick="getDriveConfig"/>
+    </com.autonavi.skin.view.SkinLinearLayout>
+</ScrollView>

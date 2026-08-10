@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/widget_map_bg" android:background="@drawable/byd_widget_card_medium_bg_fui" android:layout_width="@dimen/auto_dimen2_252" android:layout_height="@dimen/auto_dimen2_100"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/widget_map_bg_foreground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/widget_map_icon" android:layout_width="@dimen/auto_dimen2_72" android:layout_height="@dimen/auto_dimen2_72" android:src="@drawable/byd_map_widget_icon_map_2_fui" android:scaleType="centerInside" android:layout_centerVertical="true" android:layout_marginStart="@dimen/auto_dimen2_12" />
+    <TextView android:textSize="@dimen/auto_dimen2_16" android:textColor="@color/byd_map_widget_title_color_fui" android:gravity="center_vertical" android:id="@id/navi_name" android:visibility="gone" android:layout_width="@dimen/auto_dimen2_80" android:layout_height="@dimen/auto_dimen2_56" android:text="@string/app_widget_name" android:layout_centerVertical="true" android:layout_marginStart="@dimen/auto_dimen2_4" android:layout_toEndOf="@id/widget_map_icon" />
+    <LinearLayout android:orientation="vertical" android:id="@id/go_home_layout" android:paddingTop="@dimen/auto_dimen2_10" android:paddingBottom="@dimen/auto_dimen2_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/auto_dimen2_12" android:layout_toEndOf="@id/navi_name">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/widget_map_go_home_icon" android:layout_width="@dimen/auto_dimen2_48" android:layout_height="@dimen/auto_dimen2_48" android:src="@drawable/byd_map_widget_icon_home_fui" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="@dimen/auto_dimen2_72" android:layout_height="@dimen/auto_dimen2_36">
+            <TextView android:textSize="@dimen/auto_font_size_14" android:textColor="@color/byd_map_widget_text_color_fui" android:gravity="center_horizontal" android:id="@id/widget_map_go_home_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_home" android:maxLines="2" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/goto_company_layout" android:paddingTop="@dimen/auto_dimen2_10" android:paddingBottom="@dimen/auto_dimen2_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/auto_dimen2_6" android:layout_marginEnd="@dimen/auto_dimen2_12" android:layout_toEndOf="@id/go_home_layout">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/widget_map_goto_company_icon" android:layout_width="@dimen/auto_dimen2_48" android:layout_height="@dimen/auto_dimen2_48" android:src="@drawable/byd_map_widget_icon_company" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="@dimen/auto_dimen2_72" android:layout_height="@dimen/auto_dimen2_36">
+            <TextView android:textSize="@dimen/auto_font_size_14" android:textColor="@color/byd_map_widget_text_color_fui" android:gravity="center_horizontal" android:id="@id/widget_map_charge_station_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_company" android:maxLines="2" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

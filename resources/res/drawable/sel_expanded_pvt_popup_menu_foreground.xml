@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_focused="true"
+        android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="@dimen/byd_expanded_pvt_popup_menu_focus_strokeWH"
+                android:color="@color/sys_white_900"/>
+            <corners android:radius="@dimen/sys_expanded_border_radius_s"/>
+            <solid android:color="@color/byd_pvt_white_900_10"/>
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="@dimen/byd_expanded_pvt_popup_menu_focus_strokeWH"
+                android:color="@color/sys_white_900"/>
+            <corners android:radius="@dimen/sys_expanded_border_radius_s"/>
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/byd_pvt_white_900_10"/>
+        </shape>
+    </item>
+    <item android:drawable="@android:color/transparent"/>
+</selector>

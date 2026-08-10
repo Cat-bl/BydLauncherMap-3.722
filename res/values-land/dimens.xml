@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_default_height_material">48.0dip</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">12.0dip</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">14.0dip</dimen>
+    <item type="dimen" name="auto_navi_drive_continue_button_min_width">@dimen/auto_dimen2_292</item>
+    <item type="dimen" name="auto_navi_drive_extended_lane_info_arrow_height">@dimen/auto_dimen2_35</item>
+    <item type="dimen" name="auto_navi_drive_extended_lane_info_arrow_width">@dimen/auto_dimen2_35</item>
+    <item type="dimen" name="auto_navi_drive_lane_bg_height">@dimen/auto_dimen2_48</item>
+    <item type="dimen" name="auto_navi_drive_lane_info_arrow_divider_height">@dimen/auto_dimen2_52</item>
+    <item type="dimen" name="auto_navi_drive_lane_info_arrow_height">@dimen/auto_dimen2_48</item>
+    <item type="dimen" name="auto_navi_drive_lane_info_arrow_width">@dimen/auto_dimen2_48</item>
+    <item type="dimen" name="auto_navi_drive_lane_info_extend_arrow_height">@dimen/auto_dimen2_68</item>
+    <item type="dimen" name="auto_navi_drive_lane_info_extend_divider_height">@dimen/auto_dimen2_52</item>
+    <item type="dimen" name="auto_navi_drive_navi_info_card_start_margin">@dimen/auto_dimen2_24</item>
+    <item type="dimen" name="auto_navi_drive_navi_info_card_top_margin">@dimen/auto_dimen2_25</item>
+    <item type="dimen" name="auto_navi_drive_rest_info_default_text_size">@dimen/auto_font_size_20</item>
+    <item type="dimen" name="auto_navi_drive_rest_info_distance_text_size">@dimen/auto_font_size_20</item>
+    <item type="dimen" name="auto_navi_drive_rest_info_energy_margin_top">@dimen/auto_dimen2_5</item>
+    <item type="dimen" name="auto_navi_drive_rest_info_icon_margin_right">@dimen/auto_dimen2_5</item>
+    <item type="dimen" name="auto_navi_drive_rest_info_no_arrive_text_size">@dimen/auto_font_size_16</item>
+    <item type="dimen" name="auto_navi_drive_road_label_speed_limit_text_size">@dimen/auto_font_size_18</item>
+    <item type="dimen" name="auto_navi_drive_road_label_speed_text_size">@dimen/auto_font_size_18</item>
+    <item type="dimen" name="auto_navi_home_button_combine_size">@dimen/auto_dimen2_64</item>
+    <item type="dimen" name="auto_navi_home_button_image_size">@dimen/auto_dimen2_40</item>
+    <item type="dimen" name="auto_navi_home_button_size">@dimen/auto_dimen2_56</item>
+    <item type="dimen" name="auto_navi_home_button_text_margin_size">@dimen/auto_font_size_8</item>
+    <item type="dimen" name="auto_navi_home_inner_button_size">@dimen/auto_dimen2_56</item>
+    <dimen name="material_time_picker_minimum_screen_height">450.0dip</dimen>
+    <dimen name="material_time_picker_minimum_screen_width">600.0dip</dimen>
+    <dimen name="mtrl_alert_dialog_background_inset_bottom">24.0dip</dimen>
+    <dimen name="mtrl_alert_dialog_background_inset_top">24.0dip</dimen>
+    <dimen name="mtrl_calendar_days_of_week_height">20.0dip</dimen>
+    <dimen name="mtrl_calendar_header_content_padding">4.0dip</dimen>
+    <dimen name="mtrl_calendar_header_height_fullscreen">96.0dip</dimen>
+    <dimen name="mtrl_calendar_header_toggle_margin_bottom">0.0dip</dimen>
+    <dimen name="mtrl_calendar_header_toggle_margin_top">0.0dip</dimen>
+    <dimen name="mtrl_calendar_landscape_header_width">104.0dip</dimen>
+    <dimen name="mtrl_calendar_selection_baseline_to_top_fullscreen">68.0dip</dimen>
+    <dimen name="mtrl_calendar_selection_text_baseline_to_bottom_fullscreen">28.0dip</dimen>
+    <dimen name="mtrl_calendar_selection_text_baseline_to_top">64.0dip</dimen>
+    <dimen name="mtrl_calendar_text_input_padding_top">32.0dip</dimen>
+    <dimen name="mtrl_calendar_title_baseline_to_top">24.0dip</dimen>
+    <dimen name="mtrl_calendar_title_baseline_to_top_fullscreen">32.0dip</dimen>
+</resources>

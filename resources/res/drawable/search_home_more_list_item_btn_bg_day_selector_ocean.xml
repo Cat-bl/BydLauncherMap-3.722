@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/search_more_btn_day_pressed_ocean"/>
+    <item android:drawable="@drawable/search_more_btn_day_normal_ocean"/>
+</selector>

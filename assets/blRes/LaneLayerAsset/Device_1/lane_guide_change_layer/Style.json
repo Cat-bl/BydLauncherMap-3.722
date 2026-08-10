@@ -1,0 +1,82 @@
+{
+    "marker_info": {
+        "marker_info_lane_guide_solid_line_left": {
+            "anchor": 13,
+            "x_offset": 16,
+            "y_offset": 26,
+            "night_style": {
+                "color": [
+                    {
+                        "limit_text": "#296EE6"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "limit_text": "#1A66FF"
+                    }
+                ]
+            },
+            "image_style": {
+                "bg": {
+                    "src": "global_image_autonavi_lane_icon_warning_blue_day_night"
+                },
+                "image": {
+                    "right_merge": "global_image_autonavi_lane_icon_arrow_for_right_merge_day_night"
+                }
+            }
+        },
+        "marker_info_lane_guide_solid_line_right": {
+            "anchor": 12,
+            "x_offset": 16,
+            "y_offset": 26,
+            "night_style": {
+                "color": [
+                    {
+                        "limit_text": "#296EE6"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "limit_text": "#1A66FF"
+                    }
+                ]
+            },
+            "image_style": {
+                "bg": {
+                    "src": "global_image_autonavi_lane_icon_warning_blue_day_night"
+                },
+                "image": {
+                    "left_merge": "global_image_autonavi_lane_icon_arrow_for_left_merge_day_night"
+                }
+            }
+        }
+    },
+    "layer_item_info": {
+        "point_lane_guide_solid_line_left_up": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "lane_guide_warning_left_up.xml",
+                    "poi_marker_info": "marker_info_lane_guide_solid_line_left"
+                },
+                "Foreshortening": "common_info_foreshortening"
+            },
+            "index": 0,
+            "name_cn": "左侧并线理由"
+        },
+        "point_lane_guide_solid_line_right_up": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "lane_guide_warning_right_up.xml",
+                    "poi_marker_info": "marker_info_lane_guide_solid_line_right"
+                },
+                "Foreshortening": "common_info_foreshortening"
+            },
+            "index": 1,
+            "name_cn": "右侧并线理由"
+        }
+    }
+}

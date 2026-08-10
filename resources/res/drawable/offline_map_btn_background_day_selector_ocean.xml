@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/offline_map_btn_background_press_day"/>
+    <item android:drawable="@drawable/offline_map_btn_background_normal_day"/>
+</selector>

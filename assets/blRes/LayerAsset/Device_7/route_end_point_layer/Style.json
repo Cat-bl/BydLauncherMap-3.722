@@ -1,0 +1,181 @@
+{
+    "marker_info": {
+        "marker_info_point_center_up_2": {
+            "anchor": 9,
+            "y_ratio": 0.9,
+            "x_ratio": 0.5
+        }
+    },
+    "layer_item_info": {
+        "point_route_end": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_bubble_end_hud"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 3,
+            "name_cn": "终点"
+        },
+        "point_route_end_english": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_bubble_end_hud"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 2,
+            "name_cn": "终点 英文"
+        },
+        "point_route_end_translucent": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_bubble_translucent_end_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 2,
+            "name_cn": "路线终点 半透明"
+        },
+        "point_route_end_translucent_english": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_bubble_translucent_end_english_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 3,
+            "name_cn": "路线终点 英文 半透明"
+        },
+        "familiar_home": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_home_layer_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 4,
+            "name_cn": "熟路模式 到家"
+        },
+        "familiar_company": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_company_layer_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 5,
+            "name_cn": "熟路模式 到公司"
+        },
+        "point_guide_end": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_bubble_end_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 6,
+            "name_cn": "导航终点"
+        },
+        "point_guide_end_translucent": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_bubble_translucent_end_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 7,
+            "name_cn": "导航终点 半透明"
+        },
+        "point_guide_end_english": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_bubble_end_english_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 8,
+            "name_cn": "导航终点 英文"
+        },
+        "point_guide_end_translucent_english": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_bubble_translucent_end_english_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 9,
+            "name_cn": "导航终点 英文 半透明"
+        }
+    }
+}

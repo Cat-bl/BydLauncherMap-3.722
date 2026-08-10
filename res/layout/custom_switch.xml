@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinImageView android:id="@id/siv_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/byd_setting_switch_day_bg_selector" android:scaleType="fitXY" app:src4Night="@drawable/byd_setting_switch_night_bg_selector" app:src4Skin="@drawable/byd_setting_switch_day_bg_selector"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

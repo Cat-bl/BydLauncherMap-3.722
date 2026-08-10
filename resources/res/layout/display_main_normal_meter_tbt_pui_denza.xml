@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constant"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:shadowDayNightStyle="1"
+    app:skinDayNightExtraStyle="true">
+    <com.autonavi.skin.view.SkinLinearLayout
+        android:orientation="vertical"
+        android:id="@+id/cl_navi_and_route_container"
+        android:visibility="gone"
+        android:layout_width="@dimen/auto_dimen2_227"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/auto_dimen2_116"
+        android:layout_marginStart="@dimen/auto_dimen2_87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/ct_navigation_info_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.autonavi.view.custom.CustomMeterTrafficLaneView
+            android:id="@+id/display_traffic_lane"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/auto_dimen2_32"
+            android:layout_marginTop="@dimen/auto_dimen2_115"
+            app:shadowDayNightStyle="1"
+            app:skinDayNightExtraStyle="true"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/ct_second_info_top"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+    </com.autonavi.skin.view.SkinLinearLayout>
+</com.autonavi.skin.view.SkinConstraintLayout>

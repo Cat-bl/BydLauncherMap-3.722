@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/custom_setting_volume_bar_horizontal_volume_bar_line_solid_selected_night"/>
+    <size
+        android:height="@dimen/auto_dimen2_72"
+        android:width="@dimen/auto_dimen2_6"/>
+</shape>

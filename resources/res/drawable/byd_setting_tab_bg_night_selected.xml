@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/byd_setting_tab_bg_selected_line_night"/>
+        </shape>
+    </item>
+    <item android:right="@dimen/auto_dimen2_4">
+        <shape>
+            <solid android:color="@color/byd_setting_bg_start_night"/>
+        </shape>
+    </item>
+    <item android:right="@dimen/auto_dimen2_4">
+        <shape>
+            <gradient
+                android:startColor="@color/byd_setting_tab_bg_selected_start_night"
+                android:endColor="@color/byd_setting_tab_bg_selected_end_night"
+                android:angle="0"/>
+        </shape>
+    </item>
+</layer-list>

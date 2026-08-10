@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="@dimen/custom_ar_cardbtn_attach_card_nav_corner_normal_day"/>
+    <gradient
+        android:startColor="#69b7b7b7"
+        android:endColor="#cc5b5b5b"
+        android:angle="90"
+        android:centerX="0.5"/>
+</shape>

@@ -1,0 +1,10 @@
+<div style="">
+  <div id="click_midd_bubble_div" style="width:48px;height:48px;">
+    <image id="midd_bubble_image" style="width:48px;height:58px;position:absolute;is_main:Y;" src="global_image_charge_bubble_midd_day_night" />
+    <div id="midd_bubble_text_div" style="display:flex;flex-direction:row;justify-content:center;align-items:center;width:48px;height:48px;">
+      <label id="midd_bubble_chinese_text" style="font-size:26px;color:#ffffff;font-family:SDK_Font-Bold;" lines="1">经</label>
+      <label id="midd_bubble_number_text" style="font-size:28px;color:#ffffff;font-family:SDK_Font-Medium;" lines="1">1</label>
+    </div>
+  </div>
+</div>
+

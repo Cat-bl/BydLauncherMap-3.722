@@ -1,0 +1,5 @@
+<div id="click_hotspot" style="display:flex;flex-direction:row;justify-content:center;align-items:center;width:auto;height:auto;">
+  <image id="child_type" style="width:31px;height:37px;" src="global_image_child_charge2_day_night" />
+  <label id="child_name" style="margin-left:6px;max-width:160px;font-size:20px;color:#4c4c4c;font-family:SDK_Font-Medium;text-stroke:2px #E6ffffff;line-clamp:2;line-spacing:-4;" lines="1">充电桩</label>
+</div>
+

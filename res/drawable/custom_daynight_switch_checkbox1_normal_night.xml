@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/custom_daynight_switch_checkbox1_corner_normal_night" />
+    <gradient android:startColor="#ff4c5158" android:endColor="#ff43484d" android:angle="90.0" android:centerX="0.5" />
+</shape>

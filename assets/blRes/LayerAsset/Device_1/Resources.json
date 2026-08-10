@@ -1,0 +1,7 @@
+{
+  "color": {
+    "signal_light": "#e6ffffff",
+    "signal_light_day_text": "#FF6D6D",
+    "signal_light_night_text": "#FF5656"
+  }
+}

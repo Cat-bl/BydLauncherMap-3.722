@@ -1,0 +1,5 @@
+<div style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;">
+  <image id="child_type" style="width:30px;height:36px;" src="global_image_child_park_day_night" />
+  <label id="child_name" style="margin-right:4px;margin-bottom:2px;margin-left:4px;font-size:18px;color:#000000;font-family:SDK_Font-Medium;text-stroke:2px #ffffff;" lines="1">停车场</label>
+</div>
+

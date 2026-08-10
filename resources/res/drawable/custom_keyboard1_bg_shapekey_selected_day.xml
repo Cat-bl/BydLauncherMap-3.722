@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <stroke
+        android:width="@dimen/custom_keyboard1_bg_shapekey_strokewidth_selected_day"
+        android:color="#3583ff"/>
+    <gradient
+        android:startColor="#800478d1"
+        android:endColor="#801855b2"
+        android:angle="90"
+        android:centerX="0.5"/>
+</shape>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="48dp"
+    android:width="26dp"
+    android:viewportWidth="26"
+    android:viewportHeight="48">
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M0,0h26v48h-26z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:strokeAlpha="0"
+        android:fillAlpha="0"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#0f000000"
+        android:pathData="M13,12C19.627,12 25,17.373 25,24C25,30.627 19.627,36 13,36C6.373,36 1       ,30.627 1,24C1,17.373 6.373,12 13,12ZM13,13C6.925,13 2,17.925 2,24C2,30.075 6.925,35 13       ,35C19.075,35 24,30.075 24,24C24,17.925 19.075,13 13,13Z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <path
+        android:name="@string/byd_switch_thumb_path"
+        android:fillColor="@color/sys_gray_50"
+        android:pathData="M13,13C19.075,13 24,17.925 24,24C24,30.075 19.075,35 13,35C6.925,35 2       ,30.075 2,24C2,17.925 6.925,13 13,13Z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+</vector>

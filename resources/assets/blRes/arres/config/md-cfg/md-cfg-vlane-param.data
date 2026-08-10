@@ -1,0 +1,299 @@
+{
+    "version": "2.0.0 Lua升级为JSON",
+    "setting": {
+        "minScoreThresh": 50,
+        "carFilterLevel": 2,
+        "threadCPUPowersave": 0,
+        "threadPriority": -10
+    },
+    "carSSDMainPost": {
+        "featureStride": 8,
+        "minScale": 0.05,
+        "maxScale": 0.95,
+        "numLayer": 7,
+        "yScaleFactor": 10.0,
+        "xScaleFactor": 10.0,
+        "heightScaleFactor": 5.0,
+        "widthScaleFactor": 5.0,
+        "iouThreshold": 0.45,
+        "scoreThreshold": 0.5,
+        "maxDetectionsPerClass": 8,
+        "maxTotalDetections": 8,
+        "aspectRatios": [
+            1,
+            2,
+            0.5
+        ],
+        "filterClss": [
+            2,
+            4
+        ],
+        "filterTrafficLightCls": 3,
+        "reduceBoxesInLowestLayer": true,
+        "fixed_base_anchor_size": false,
+        "fix_box_predict_score": false
+    },
+    "pedestrianSSDPost": {
+        "featureStride": 8,
+        "minScale": 0.0732,
+        "maxScale": 0.60,
+        "numLayer": 7,
+        "yScaleFactor": 10.0,
+        "xScaleFactor": 10.0,
+        "heightScaleFactor": 5.0,
+        "widthScaleFactor": 5.0,
+        "iouThreshold": 0.45,
+        "scoreThreshold": 0.5,
+        "maxDetectionsPerClass": 15,
+        "maxTotalDetections": 15,
+        "aspectRatios": [
+            1,
+            0.5,
+            0.33333,
+            0.11111
+        ],
+        "reduceBoxesInLowestLayer": false,
+        "fixed_base_anchor_size": false,
+        "fix_box_predict_score": false
+    },
+    "vanishPoint": {
+        "maxRadio": 0.02083333,
+        "scoreTh": 20,
+        "updateDistanceTh": 100,
+        "kalmanTh": 75,
+        "kalmanHighNoiseCov": 1e-2,
+        "kalmanNoHighNoiseCov": 1e-3,
+        "kalmanUseSmoothNoiseCov": 1e-1,
+        "yMomentum": 0.2
+    },
+    "laneCurve": {
+        "longDistanceNoUpdateCurrent": 100,
+        "longTimeNoUpdateCurrent": 10.0,
+        "changeLaneTimeThreshold": 4.5,
+        "highConfLaneLineThreshold": 45,
+        "lowConfLaneLineThreshold": 33,
+        "lineConfThreshold": 70,
+        "roi": [
+            0,
+            300,
+            960,
+            128
+        ]
+    },
+    "car": {
+        "overRatio": 0.8,
+        "dayDetectionScoreThreshold": 75,
+        "nightDetectionScoreThreshold": 50,
+        "carMinXLimit": 50,
+        "carMaxYLimit": 400,
+        "minDetectH": 15,
+        "straightLaneConf": 60
+    },
+    "pedestrian": {
+        "limitSpeed": 60,
+        "detectionScoreThreshold": 80
+    },
+    "trafficSignSSDPost": {
+        "featureStride": 8,
+        "minScale": 0.05,
+        "maxScale": 0.95,
+        "numLayer": 7,
+        "yScaleFactor": 10.0,
+        "xScaleFactor": 10.0,
+        "heightScaleFactor": 5.0,
+        "widthScaleFactor": 5.0,
+        "iouThreshold": 0.45,
+        "scoreThreshold": 0.5,
+        "maxDetectionsPerClass": 15,
+        "maxTotalDetections": 15,
+        "aspectRatios": [
+            1,
+            2,
+            0.5
+        ],
+        "filterClss": [],
+        "reduceBoxesInLowestLayer": false,
+        "fixed_base_anchor_size": false,
+        "fix_box_predict_score": false
+    },
+    "trafficSign": {
+        "dayDetectionScoreThreshold": 70
+    },
+    "groundArrowSSDPost": {
+        "featureStride": 8,
+        "minScale": 0.0732,
+        "maxScale": 0.60,
+        "numLayer": 7,
+        "yScaleFactor": 10.0,
+        "xScaleFactor": 10.0,
+        "heightScaleFactor": 5.0,
+        "widthScaleFactor": 5.0,
+        "iouThreshold": 0.45,
+        "scoreThreshold": 0.5,
+        "maxDetectionsPerClass": 15,
+        "maxTotalDetections": 15,
+        "aspectRatios": [
+            1,
+            0.5,
+            2,
+            0.33333
+
+        ],
+        "filterClss": [],
+        "reduceBoxesInLowestLayer": false,
+        "fixed_base_anchor_size": false,
+        "fix_box_predict_score": false
+    },
+    "groundArrow": {
+        "dayDetectionScoreThreshold": 60
+    },
+    "VPSViewCrop": {
+        "x": 0,
+        "y": 0,
+        "width": 640,
+        "height": 360
+    },
+    "trafficlightSSDPost": {
+        "featureStride": 8,
+        "minScale": 0.05,
+        "maxScale": 0.71,
+        "numLayer": 4,
+        "yScaleFactor": 10.0,
+        "xScaleFactor": 10.0,
+        "heightScaleFactor": 5.0,
+        "widthScaleFactor": 5.0,
+        "iouThreshold": 0.35,
+        "scoreThreshold": 0.3,
+        "maxDetectionsPerClass": 5,
+        "maxTotalDetections": 5,
+        "aspectRatios": [
+            1,
+            2,
+            0.5,
+            3,
+            0.33333
+        ],
+        "filterClss": []
+    },
+    "trafficLight": {
+        "overRatio": 0.3,
+        "openClassifyMaxSpeedThreshold": 5,
+        "greenConfThreshold": 80,
+        "greenFrameNumThreshold": 3,
+        "localScoreThreshold": 50,
+        "onlineScoreThreshold": 30
+    },
+    "LaneNumberMultiFramePost": {
+        "finalLaneThred": 85,
+        "sizeAfterBd": 2,
+        "vecSize": 5
+    },
+    "crossSSDPost": {
+        "featureStride": 8,
+        "minScale": 0.05,
+        "maxScale": 0.95,
+        "numLayer": 7,
+        "yScaleFactor": 10.0,
+        "xScaleFactor": 10.0,
+        "heightScaleFactor": 5.0,
+        "widthScaleFactor": 5.0,
+        "iouThreshold": 0.35,
+        "scoreThreshold": 0.45,
+        "maxDetectionsPerClass": 5,
+        "maxTotalDetections": 5,
+        "aspectRatios": [
+            1,
+            2,
+            0.5
+        ],
+        "reduceBoxesInLowestLayer": false,
+        "fix_box_predict_score": false
+    },
+    "vlaneRPN": {
+        "featureLevelCount": 5,
+        "keep": 100,
+        "preTopK": 100,
+        "nmsThreshold": 0.7,
+        "confThreshold": 0.3,
+        "featureConfigs": {
+            "scales": [4.0],
+            "ratios": [0.25, 0.5, 1.0, 2.0, 4.0],
+            "stride": [4, 8, 16, 32, 64]
+        }
+    },
+    "vlaneATT": {
+        "bottomNmsThreshold": 0.30,
+        "lateralNmsThreshold": 0.10,
+        "laneConfThreshold": 0.45,
+        "edgeConfThreshold": 0.45,
+        "topK": 10,
+        "laneProposalSize": 88,
+        "edgeProposalSize": 77,
+        "featureStride":71,
+        "featureOffsetIndex": 5,
+        "laneClassCount": 7,
+        "lanePositionCount": 4
+    },
+    "vlaneROIAlign": {
+        "featureChannel": 24,
+        "featureSize": 7,
+        "sampleNum": 1
+    },
+    "vlaneRCNN": {
+        "classCount": 10,
+        "clsThreshold": 0.4,
+        "nmsThreshold": 0.5,
+        "crossNmsThreshold": 0.6,
+        "classThreshold": [
+            {
+                "id": 1,
+                "threshold": 0.2
+            },
+            {
+                "id": 2,
+                "threshold": 0.2
+            },
+            {
+                "id": 3,
+                "threshold": 0.2
+            },
+            {
+                "id": 4,
+                "threshold": 0.2
+            },
+            {
+                "id": 5,
+                "threshold": 0.2
+            },
+            {
+                "id": 6,
+                "threshold": 0.2
+            },
+            {
+                "id": 7,
+                "threshold": 0.2
+            },
+            {
+                "id": 8,
+                "threshold": 0.2
+            },
+            {
+                "id": 9,
+                "threshold": 0.2
+            },
+            {
+                "id": 10,
+                "threshold": 0.2
+            }
+
+        ]
+    },
+    "vlaneCWSLH": {
+        "numOfLines": 1,
+        "minPtsNum": 4,
+        "confThres": 0.6,
+        "pointConfThres": 0.2,
+        "ceilSizeW": 16,
+        "ceilSizeH": 16
+    }
+}

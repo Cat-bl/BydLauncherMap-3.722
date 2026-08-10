@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="false"
+        android:color="@color/byd_search_home_common_tip_day"/>
+    <item
+        android:state_selected="true"
+        android:color="@color/search_main_color_day_fui"/>
+    <item android:color="@color/byd_search_home_common_tip_day"/>
+</selector>

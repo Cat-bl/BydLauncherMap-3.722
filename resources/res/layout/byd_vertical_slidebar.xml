@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.byd.widget.BydSlideBar
+        android:orientation="vertical"
+        android:tag="byd_widget_id_vertical_slide_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:max="100"
+        android:progress="0"
+        android:layout_centerInParent="true"
+        android:rotation="-90"
+        android:layoutDirection="ltr"
+        style="?attr/sysVerticalSlideBarSt"/>
+</RelativeLayout>

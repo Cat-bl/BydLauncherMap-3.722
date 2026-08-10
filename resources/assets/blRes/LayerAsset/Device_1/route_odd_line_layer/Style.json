@@ -1,0 +1,80 @@
+{
+    "marker_info": {
+        "map_lr": {
+            "anchor": 4,
+            "repeat": 1,
+            "gen_mipmaps": 1,
+            "pre_mul_alpha": 1
+        }
+    },
+    "layer_item_info": {
+        "odd_line": {
+            "line_layer_item_style": {
+                "use_cap": 0,
+                "use_color": 1,
+                "draw_cover": 1,
+                "can_be_coveredbylabel": 0,
+                "odd_width": 8,
+                "fill_texture": {
+                    "marker_id": "map_lr",
+                    "marker_info": "",
+                    "color": "0xff51b3ff",
+                    "width": 80
+                },
+                "border_texture": {
+                    "marker_id": "map_lr",
+                    "marker_info": "",
+                    "color": "0xff0f8df3",
+                    "width": 90
+                },
+                "texture_info": {
+                    "x1": 0.0,
+                    "y1": 0.5,
+                    "x2": 1.0,
+                    "y2": 0.5,
+                    "texture_len": 32
+                },
+                "passed_color_info": {
+                    "passed_color": "0xff365167",
+                    "passed_side_color": "0xff365167"
+                }
+            },
+            "index": 0,
+            "name_cn": "白天"
+        },
+        "odd_line_night": {
+            "line_layer_item_style": {
+                "use_cap": 0,
+                "use_color": 1,
+                "draw_cover": 1,
+                "can_be_coveredbylabel": 0,
+                "odd_width": 8,
+                "fill_texture": {
+                    "marker_id": "map_lr",
+                    "marker_info": "",
+                    "color": "0xff1f85ff",
+                    "width": 80
+                },
+                "border_texture": {
+                    "marker_id": "map_lr",
+                    "marker_info": "",
+                    "color": "0xff107aff",
+                    "width": 90
+                },
+                "texture_info": {
+                    "x1": 0.0,
+                    "y1": 0.5,
+                    "x2": 1.0,
+                    "y2": 0.5,
+                    "texture_len": 32
+                },
+                "passed_color_info": {
+                    "passed_color": "0xff3a5a7f",
+                    "passed_side_color": "0xff3a5a7f"
+                }
+            },
+            "index": 1,
+            "name_cn": "黑夜"
+        }
+    }
+}

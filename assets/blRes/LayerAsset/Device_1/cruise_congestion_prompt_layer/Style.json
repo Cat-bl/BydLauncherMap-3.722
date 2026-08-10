@@ -1,0 +1,366 @@
+{
+    "marker_info": {
+        "marker_info_cruise_congestion_left_up": {
+            "anchor": 13,
+            "day_style": {
+                "color": [
+                    {
+                        "congestion_time": "#ffffffff"
+                    },
+                    {
+                        "congestion_distance": "#ffffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "congestion_time": "#ffefefef"
+                    },
+                    {
+                        "congestion_distance": "#ffefefef"
+                    }
+                ]
+            },
+            "y_offset": 15,
+            "x_offset": 20
+        },
+        "marker_info_cruise_congestion_left_down": {
+            "anchor": 11,
+            "day_style": {
+                "color": [
+                    {
+                        "congestion_time": "#ffffffff"
+                    },
+                    {
+                        "congestion_distance": "#ffffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "congestion_time": "#ffefefef"
+                    },
+                    {
+                        "congestion_distance": "#ffefefef"
+                    }
+                ]
+            },
+            "y_offset": 15,
+            "x_offset": 20
+        },
+        "marker_info_cruise_congestion_right_down": {
+            "anchor": 10,
+            "day_style": {
+                "color": [
+                    {
+                        "congestion_time": "#ffffffff"
+                    },
+                    {
+                        "congestion_distance": "#ffffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "congestion_time": "#ffefefef"
+                    },
+                    {
+                        "congestion_distance": "#ffefefef"
+                    }
+                ]
+            },
+            "y_offset": 12,
+            "x_offset": 21
+        },
+        "marker_info_cruise_congestion_right_up": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "congestion_time": "#ffffffff"
+                    },
+                    {
+                        "congestion_distance": "#ffffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "congestion_time": "#ffefefef"
+                    },
+                    {
+                        "congestion_distance": "#ffefefef"
+                    }
+                ]
+            },
+            "y_offset": 16,
+            "x_offset": 21
+        },
+        "marker_info_cruise_congestion_left_up_two": {
+            "anchor": 13,
+            "day_style": {
+                "color": [
+                    {
+                        "congestion_detail": "#ffed390d"
+                    },
+                    {
+                        "congestion_time": "#ffffffff"
+                    },
+                    {
+                        "congestion_distance": "#ffffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "congestion_detail": "#ffd33e1a"
+                    },
+                    {
+                        "congestion_time": "#ffefefef"
+                    },
+                    {
+                        "congestion_distance": "#ffefefef"
+                    }
+                ]
+            },
+            "y_offset": 15,
+            "x_offset": 14
+        },
+        "marker_info_cruise_congestion_left_down_two": {
+            "anchor": 11,
+            "day_style": {
+                "color": [
+                    {
+                        "congestion_detail": "#ffed390d"
+                    },
+                    {
+                        "congestion_time": "#ffffffff"
+                    },
+                    {
+                        "congestion_distance": "#ffffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "congestion_detail": "#ffd33e1a"
+                    },
+                    {
+                        "congestion_time": "#ffefefef"
+                    },
+                    {
+                        "congestion_distance": "#ffefefef"
+                    }
+                ]
+            },
+            "y_offset": 6,
+            "x_offset": 14
+        },
+        "marker_info_cruise_congestion_right_down_two": {
+            "anchor": 10,
+            "day_style": {
+                "color": [
+                    {
+                        "congestion_detail": "#ffed390d"
+                    },
+                    {
+                        "congestion_time": "#ffffffff"
+                    },
+                    {
+                        "congestion_distance": "#ffffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "congestion_detail": "#ffd33e1a"
+                    },
+                    {
+                        "congestion_time": "#ffefefef"
+                    },
+                    {
+                        "congestion_distance": "#ffefefef"
+                    }
+                ]
+            },
+            "y_offset": 6,
+            "x_offset": 14
+        },
+        "marker_info_cruise_congestion_right_up_two": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "congestion_detail": "#ffed390d"
+                    },
+                    {
+                        "congestion_time": "#ffffffff"
+                    },
+                    {
+                        "congestion_distance": "#ffffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "congestion_detail": "#ffd33e1a"
+                    },
+                    {
+                        "congestion_time": "#ffefefef"
+                    },
+                    {
+                        "congestion_distance": "#ffefefef"
+                    }
+                ]
+            },
+            "y_offset": 15,
+            "x_offset": 14
+        }
+    },
+    "layer_item_info": {
+        "point_cruise_congestion_prompt_left_up": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "cruise_congestion_prompt.xml",
+                    "poi_marker_info": "marker_info_cruise_congestion_left_up",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "div_direction_bg": "global_image_autonavi_roadstatu_normal_simple_left_up_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "左上飘 普通拥堵"
+        },
+        "point_cruise_congestion_prompt_left_down": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "cruise_congestion_prompt.xml",
+                    "poi_marker_info": "marker_info_cruise_congestion_left_down",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "div_direction_bg": "global_image_autonavi_roadstatu_normal_simple_left_down_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 1,
+            "name_cn": "左下飘 普通拥堵"
+        },
+        "point_cruise_congestion_prompt_right_down": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "cruise_congestion_prompt.xml",
+                    "poi_marker_info": "marker_info_cruise_congestion_right_down",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "div_direction_bg": "global_image_autonavi_roadstatu_normal_simple_right_down_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 2,
+            "name_cn": "右下飘 普通拥堵"
+        },
+        "point_cruise_congestion_prompt_right_up": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "cruise_congestion_prompt.xml",
+                    "poi_marker_info": "marker_info_cruise_congestion_right_up",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "div_direction_bg": "global_image_autonavi_roadstatu_normal_simple_right_up_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 3,
+            "name_cn": "右上飘 普通拥堵"
+        },
+        "point_cruise_congestion_prompt_left_up_two": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "cruise_congestion_prompt_up_two.xml",
+                    "poi_marker_info": "marker_info_cruise_congestion_left_up_two",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "div_direction_bg": "global_image_autonavi_roadstatu_normal_2_simple_left_up_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 4,
+            "name_cn": "左上飘 普通拥堵 多行"
+        },
+        "point_cruise_congestion_prompt_left_down_two": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "cruise_congestion_prompt_down_two.xml",
+                    "poi_marker_info": "marker_info_cruise_congestion_left_down_two",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "div_direction_bg": "global_image_autonavi_roadstatu_normal_2_simple_left_down_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 5,
+            "name_cn": "左下飘 普通拥堵 多行"
+        },
+        "point_cruise_congestion_prompt_right_down_two": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "cruise_congestion_prompt_down_two.xml",
+                    "poi_marker_info": "marker_info_cruise_congestion_right_down_two",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "div_direction_bg": "global_image_autonavi_roadstatu_normal_2_simple_right_down_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 6,
+            "name_cn": "右下飘 普通拥堵 多行"
+        },
+        "point_cruise_congestion_prompt_right_up_two": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "cruise_congestion_prompt_up_two.xml",
+                    "poi_marker_info": "marker_info_cruise_congestion_right_up_two",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "div_direction_bg": "global_image_autonavi_roadstatu_normal_2_simple_right_up_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 7,
+            "name_cn": "右上飘 普通拥堵 多行"
+        }
+    }
+}

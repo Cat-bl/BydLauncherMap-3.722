@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.preference.PreferenceCategory android:title="@string/pref_category_interface">
+        <androidx.preference.SwitchPreferenceCompat
+            android:title="@string/pref_keep_screen_on"
+            android:key="prefKeepScreenOn"
+            android:summary="@string/pref_keep_screen_on_summary"
+            android:defaultValue="true"/>
+        <androidx.preference.ListPreference
+            android:entries="@array/ColorTheme"
+            android:title="@string/pref_color_theme"
+            android:key="prefColorTheme"
+            android:summary=" "
+            android:defaultValue="2"
+            android:entryValues="@array/ColorThemeValues"/>
+        <androidx.preference.Preference
+            android:title="@string/pref_track_viewer"
+            android:key="prefTracksViewer"
+            android:summary=" "
+            android:defaultValue=""/>
+        <androidx.preference.ListPreference
+            android:entries="@array/TrackStats"
+            android:title="@string/pref_track_stats"
+            android:key="prefShowTrackStatsType"
+            android:summary=" "
+            android:defaultValue="0"
+            android:entryValues="@array/TrackStatsValues"/>
+        <androidx.preference.ListPreference
+            android:entries="@array/UM"
+            android:title="@string/pref_unit_of_measurement"
+            android:key="prefUM"
+            android:summary=" "
+            android:defaultValue="0"
+            android:entryValues="@array/UMValues"/>
+        <androidx.preference.ListPreference
+            android:entries="@array/UMOfSpeed"
+            android:title="@string/pref_unit_of_measurement_speed"
+            android:key="prefUMOfSpeed"
+            android:defaultValue="1"
+            android:entryValues="@array/UMOfSpeedValues"/>
+        <androidx.preference.ListPreference
+            android:entries="@array/ShowDirections"
+            android:title="@string/pref_show_directions"
+            android:key="prefShowDirections"
+            android:summary=" "
+            android:defaultValue="0"
+            android:entryValues="@array/ShowDirectionsValues"/>
+        <androidx.preference.SwitchPreferenceCompat
+            android:title="@string/pref_show_gps_time_local"
+            android:key="prefShowLocalTime"
+            android:summary="@string/pref_show_gps_time_local_summary"
+            android:defaultValue="true"/>
+        <androidx.preference.SwitchPreferenceCompat
+            android:title="@string/pref_show_decimal_coordinates"
+            android:key="prefShowDecimalCoordinates"
+            android:summary="@string/pref_show_decimal_coordinates_summary"
+            android:defaultValue="false"/>
+        <androidx.preference.Preference
+            android:title="@string/pref_exportation_folder"
+            android:key="prefExportFolder"
+            android:summary=" "
+            android:defaultValue=""/>
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/pref_category_tracking">
+        <androidx.preference.ListPreference
+            android:entries="@array/GPSupdatefrequency"
+            android:title="@string/pref_GPS_update_frequency"
+            android:key="prefGPSupdatefrequency"
+            android:summary=" "
+            android:defaultValue="1000"
+            android:entryValues="@array/GPSupdatefrequencyValues"/>
+        <androidx.preference.EditTextPreference
+            android:maxLines="1"
+            android:title="@string/pref_GPS_interval_filter"
+            android:key="prefGPSinterval"
+            android:summary=" "
+            android:defaultValue="0"/>
+        <androidx.preference.EditTextPreference
+            android:maxLines="1"
+            android:title="@string/pref_GPS_distance_filter"
+            android:key="prefGPSdistanceRaw"
+            android:summary=" "
+            android:defaultValue="0"/>
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/pref_category_altitude_corrections">
+        <androidx.preference.SwitchPreferenceCompat
+            android:title="@string/pref_EGM96AltitudeCorrection"
+            android:key="prefEGM96AltitudeCorrection"
+            android:summary="@string/pref_EGM96AltitudeCorrection_summary"
+            android:defaultValue="false"/>
+        <androidx.preference.EditTextPreference
+            android:maxLines="1"
+            android:title="@string/pref_AltitudeCorrection"
+            android:key="prefAltitudeCorrectionRaw"
+            android:summary="@string/pref_AltitudeCorrection_summary_not_defined"
+            android:defaultValue="0"/>
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/pref_category_exporting">
+        <androidx.preference.SwitchPreferenceCompat
+            android:title="@string/pref_export_TXT"
+            android:key="prefExportTXT"
+            android:summary="@string/pref_export_TXT_summary"
+            android:defaultValue="false"/>
+        <androidx.preference.SwitchPreferenceCompat
+            android:title="@string/pref_export_GPX"
+            android:key="prefExportGPX"
+            android:summary="@string/pref_export_GPX_summary"
+            android:defaultValue="true"/>
+        <androidx.preference.ListPreference
+            android:entries="@array/GPXVersion"
+            android:title="@string/pref_GPX_version"
+            android:key="prefGPXVersion"
+            android:summary=" "
+            android:defaultValue="100"
+            android:entryValues="@array/GPXVersionValues"/>
+        <androidx.preference.SwitchPreferenceCompat
+            android:title="@string/pref_export_KML"
+            android:key="prefExportKML"
+            android:summary="@string/pref_export_KML_summary"
+            android:defaultValue="true"/>
+        <androidx.preference.ListPreference
+            android:entries="@array/KMLAltitudeMode"
+            android:title="@string/pref_KML_altitude_mode"
+            android:key="prefKMLAltitudeMode"
+            android:summary=" "
+            android:defaultValue="1"
+            android:entryValues="@array/KMLAltitudeModeValues"/>
+    </androidx.preference.PreferenceCategory>
+</androidx.preference.PreferenceScreen>

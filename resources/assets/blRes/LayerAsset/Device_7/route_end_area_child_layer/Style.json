@@ -1,0 +1,135 @@
+{
+    "marker_info": {
+        "marker_info_end_area_child": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "child_name": "#131313"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "child_name": "#e6ffffff"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #000000"
+                    }
+                ]
+            },
+            "y_offset": 8,
+            "x_offset": 16
+        }
+    },
+    "layer_item_info": {
+        "point_end_area_child_airport": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "end_area_child_airport.xml",
+                    "poi_marker_info": "marker_info_end_area_child"
+                }
+            },
+            "index": 0,
+            "name_cn": "航站楼"
+        },
+        "point_end_area_child_fly": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "end_area_child_fly.xml",
+                    "poi_marker_info": "marker_info_end_area_child"
+                }
+            },
+            "index": 1,
+            "name_cn": "出发楼"
+        },
+        "point_end_area_child_arrive": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "end_area_child_arrive.xml",
+                    "poi_marker_info": "marker_info_end_area_child"
+                }
+            },
+            "index": 2,
+            "name_cn": "到达楼"
+        },
+        "point_end_area_child_door": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "end_area_child_door.xml",
+                    "poi_marker_info": "marker_info_end_area_child"
+                }
+            },
+            "index": 3,
+            "name_cn": "门"
+        },
+        "point_end_area_child_exist": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "end_area_child_exist.xml",
+                    "poi_marker_info": "marker_info_end_area_child"
+                }
+            },
+            "index": 4,
+            "name_cn": "出口"
+        },
+        "point_end_area_child_in": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "end_area_child_in.xml",
+                    "poi_marker_info": "marker_info_end_area_child"
+                }
+            },
+            "index": 5,
+            "name_cn": "入口"
+        },
+        "point_end_area_child_park": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "end_area_child_park.xml",
+                    "poi_marker_info": "marker_info_end_area_child"
+                }
+            },
+            "index": 6,
+            "name_cn": "停车场"
+        },
+        "point_end_area_child_subway": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "end_area_child_subway.xml",
+                    "poi_marker_info": "marker_info_end_area_child"
+                }
+            },
+            "index": 7,
+            "name_cn": "地铁站"
+        },
+        "point_end_area_child_ticket": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "end_area_child_ticket.xml",
+                    "poi_marker_info": "marker_info_end_area_child"
+                }
+            },
+            "index": 8,
+            "name_cn": "售票"
+        },
+        "point_end_area_child_more": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "end_area_child_more.xml",
+                    "poi_marker_info": "marker_info_end_area_child"
+                }
+            },
+            "index": 9,
+            "name_cn": "其它"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<div id="flyline_type_point_bubble" style="display:flex;flex-direction:column;justify-content:center;align-items:center;">
+  <div id="click_flyline_bubble_div" style="display:flex;flex-direction:row;justify-content:center;width:70px;height:80px;is_main:Y;">
+    <image id="background_type_dynamic" style="width:70px;height:80px;position:absolute;" src="global_image_normalse_poi_day_night" />
+    <image id="poi_type_dynamic" style="margin-top:8px;width:48px;height:48px;position:absolute;" src="global_image_poi_common_day_night" />
+  </div>
+  <div id="flyline_type_point_name" style="display:flex;flex-direction:row;justify-content:center;align-items:center;">
+    <label id="name_text" style="margin-top:2px;font-size:22px;color:#171717;text-align:center;font-family:SDK_Font-Bold;text-stroke:2px #E6ffffff;line-clamp:2;max-width:180px;" lines="1">默认类型名称限行7个字</label>
+  </div>
+</div>
+

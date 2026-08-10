@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="@dimen/custom_btn_function1_btn_function1_corner_disabled_day"/>
+    <gradient
+        android:startColor="#29292a"
+        android:endColor="#202021"
+        android:angle="90"
+        android:centerX="0.5"/>
+</shape>

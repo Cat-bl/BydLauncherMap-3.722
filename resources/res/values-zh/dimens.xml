@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="route_btn_text_pathway_fui">@dimen/auto_font_size_11</dimen>
+    <dimen name="route_btn_text_weather_fui">@dimen/auto_font_size_11</dimen>
+    <dimen name="text_size_homepage_card_button">@dimen/auto_font_size_16</dimen>
+</resources>

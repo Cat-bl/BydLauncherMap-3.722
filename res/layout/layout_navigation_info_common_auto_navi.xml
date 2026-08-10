@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout android:id="@id/cl_navigation_info_landscape_changanmca" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/auto_dimen2_126" app:designHeight="600" app:designWidth="1024"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.autonavi.skin.view.SkinImageView android:id="@id/ccn_navi_tbt" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:shadowColor="@color/auto_ui_000000_33" app:shadowColorNight="@color/auto_ui_000000_33" app:shadowCorner="@dimen/auto_dimen2_0" app:shadowCornerBottomLeft="@dimen/auto_dimen2_0" app:shadowCornerBottomRight="@dimen/auto_dimen2_0" app:shadowCornerTopLeft="@dimen/auto_dimen2_4" app:shadowCornerTopRight="@dimen/auto_dimen2_4" app:shadowDx="@dimen/auto_dimen2_0" app:shadowDy="@dimen/auto_dimen2_2" app:shadowRadius="@dimen/auto_dimen2_8" app:shadowShapeType="rectangle" app:shadowSide="all" app:shadowVisibility="true" />
+    <include layout="@layout/layout_include_navigation_info_common_port" />
+</com.autonavi.skin.view.SkinConstraintLayout>

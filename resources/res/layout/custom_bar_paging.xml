@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_custom_bar_paging"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:designHeight="600"
+    app:designWidth="1024">
+    <com.autonavi.auto.common.view.AutoGuideLine
+        android:orientation="horizontal"
+        android:id="@+id/gl_line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintGuide_percent4Landscape="0.5"/>
+    <com.autonavi.skin.view.SkinImageView
+        android:id="@+id/siv_pack_out_paging"
+        android:background="@drawable/custom_bar_paging_pack_out_paging_normal_night"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:background4Night="@drawable/custom_bar_paging_pack_out_paging_normal_night"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gl_line1"/>
+    <com.autonavi.skin.view.SkinImageView
+        android:id="@+id/siv_pack_up_paging"
+        android:background="@drawable/custom_bar_paging_pack_up_paging_normal_night"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/auto_dimen2_1"
+        app:background4Night="@drawable/custom_bar_paging_pack_up_paging_normal_night"
+        app:layout_constraintBottom_toBottomOf="@+id/gl_line1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</merge>

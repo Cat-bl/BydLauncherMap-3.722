@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/sys_expanded_border_radius_s" />
+    <solid android:color="@android:color/transparent" />
+    <stroke android:width="2.0dip" android:color="@color/sel_expanded_pvt_button_text_focus" />
+</shape>

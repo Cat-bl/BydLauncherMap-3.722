@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true"
+        android:color="@color/team_invite_member_btn_press_text_color_fui"/>
+    <item
+        android:state_enabled="true"
+        android:color="@color/team_invite_member_btn_normal_text_color_fui"/>
+    <item
+        android:state_enabled="false"
+        android:color="@color/team_invite_member_btn_enable_text_color_night_fui"/>
+</selector>

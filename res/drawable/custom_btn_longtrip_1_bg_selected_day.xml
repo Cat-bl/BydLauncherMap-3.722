@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/custom_btn_longtrip_1_bg_corner_selected_day" />
+    <stroke android:width="@dimen/custom_btn_longtrip_1_bg_strokewidth_selected_day" android:color="@color/custom_route_textcolor_along_selected" />
+</shape>

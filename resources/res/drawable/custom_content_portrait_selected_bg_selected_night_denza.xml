@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/route_item_bg_selected_night_denza"/>
+    <corners android:radius="@dimen/auto_dimen2_8"/>
+    <stroke
+        android:width="@dimen/auto_dimen2_1"
+        android:color="@color/route_stroke_night_denza"/>
+</shape>

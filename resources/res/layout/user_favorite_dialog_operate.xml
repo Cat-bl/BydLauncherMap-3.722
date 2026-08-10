@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.autonavi.skin.view.SkinListView
+        android:id="@+id/slv_operation_listView"
+        android:background="@drawable/custom_history_operate_bg_day"
+        android:layout_width="@dimen/auto_dimen2_200"
+        android:layout_height="wrap_content"
+        android:listSelector="@color/auto_ui_000000_00"
+        android:cacheColorHint="@color/auto_ui_000000_00"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_centerInParent="true"
+        android:fastScrollEnabled="false"
+        android:headerDividersEnabled="false"
+        android:footerDividersEnabled="false"
+        app:background4Night="@drawable/custom_history_operate_bg_night"
+        app:background4Skin="@drawable/custom_history_operate_bg_day"/>
+</com.autonavi.skin.view.SkinRelativeLayout>

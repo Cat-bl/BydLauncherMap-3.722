@@ -1,0 +1,32 @@
+{
+    "marker_info": {
+        "map_lr": {
+            "anchor": 4,
+            "repeat": 1,
+            "gen_mipmaps": 1,
+            "pre_mul_alpha": 1
+        }
+    },
+    "layer_item_info": {
+        "line_route_restrict": {
+            "line_layer_item_style": {
+                "use_cap": 1,
+                "use_color": 1,
+                "draw_cover": 1,
+                "can_be_coveredbylabel": 0,
+                "fill_texture": {
+                    "marker_id": "map_lr",
+                    "color": "0xFFE53B00",
+                    "width": 20
+                },
+                "border_texture": {
+                    "marker_id": "",
+                    "color": "0x26E53B00",
+                    "width": 8
+                }
+            },
+            "index": 0,
+            "name_cn": "限行区域边线"
+        }
+    }
+}

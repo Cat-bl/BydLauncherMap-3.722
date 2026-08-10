@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="0.0dip">
+        <EditText android:id="@id/track_description" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:hint="@string/dlg_enter_the_description" android:inputType="textCapSentences">
+            <requestFocus />
+        </EditText>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/tracktype_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" />
+                <ImageView android:id="@id/tracktype_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" />
+                <ImageView android:id="@id/tracktype_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" />
+                <ImageView android:id="@id/tracktype_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" />
+                <ImageView android:id="@id/tracktype_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" />
+                <ImageView android:id="@id/tracktype_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="end" android:id="@id/tracktype_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" app:srcCompat="@drawable/ic_arrow_right_24" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

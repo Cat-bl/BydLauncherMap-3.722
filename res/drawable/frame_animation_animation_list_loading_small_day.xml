@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="67" android:drawable="@drawable/loading_020_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_021_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_022_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_023_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_024_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_025_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_026_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_027_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_028_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_029_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_030_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_031_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_032_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_033_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_034_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_035_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_036_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_000_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_001_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_002_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_003_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_004_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_005_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_006_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_007_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_008_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_009_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_010_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_011_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_012_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_013_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_014_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_015_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_016_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_017_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_018_day" />
+    <item android:duration="67" android:drawable="@drawable/loading_019_day" />
+</animation-list>

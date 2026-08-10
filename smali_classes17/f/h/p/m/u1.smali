@@ -1,0 +1,40 @@
+.class public final synthetic Lf/h/p/m/u1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lf/k/c/p/p;
+
+
+# instance fields
+.field public final synthetic a:Lcom/autosdk/search/presenter/SearchVoiceResultMapPresenter;
+
+.field public final synthetic b:I
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/autosdk/search/presenter/SearchVoiceResultMapPresenter;I)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lf/h/p/m/u1;->a:Lcom/autosdk/search/presenter/SearchVoiceResultMapPresenter;
+
+    iput p2, p0, Lf/h/p/m/u1;->b:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()V
+    .locals 2
+
+    iget-object v0, p0, Lf/h/p/m/u1;->a:Lcom/autosdk/search/presenter/SearchVoiceResultMapPresenter;
+
+    iget v1, p0, Lf/h/p/m/u1;->b:I
+
+    invoke-virtual {v0, v1}, Lcom/autosdk/search/presenter/SearchVoiceResultMapPresenter;->U1(I)V
+
+    return-void
+.end method

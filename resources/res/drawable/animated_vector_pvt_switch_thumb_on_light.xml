@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/svg_pvt_switch_thumb_on_light">
+    <target
+        android:name="@string/byd_switch_thumb_path"
+        android:animation="@drawable/_animated_vector_pvt_switch_thumb_on_light__0_res_0x7f080021"/>
+</animated-vector>

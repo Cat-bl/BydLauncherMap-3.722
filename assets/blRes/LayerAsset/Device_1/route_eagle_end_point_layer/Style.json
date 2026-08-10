@@ -1,0 +1,21 @@
+{
+    "marker_info": {},
+    "layer_item_info": {
+        "point_eagle_end": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_hawkeye_end"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "鹰眼终点"
+        }
+    }
+}

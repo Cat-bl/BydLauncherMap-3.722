@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_energy_services"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.autonavi.skin.view.SkinConstraintLayout
+        android:id="@+id/scl_along_way_info"
+        android:background="@drawable/route_along_way_search_poi_bg_day"
+        android:layout_width="@dimen/auto_dimen2_60"
+        android:layout_height="@dimen/auto_dimen2_60"
+        app:background4Night="@drawable/route_along_way_search_poi_bg_night"
+        app:background4Skin="@drawable/route_along_way_search_poi_bg_day"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.autonavi.skin.view.SkinImageView
+            android:id="@+id/weather_img"
+            android:layout_width="@dimen/auto_dimen2_25"
+            android:layout_height="@dimen/auto_dimen2_25"
+            android:layout_marginBottom="@dimen/auto_dimen2_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </com.autonavi.skin.view.SkinConstraintLayout>
+</com.autonavi.skin.view.SkinConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient
+        android:startColor="@color/common_normal_button_dark_start_press"
+        android:endColor="@color/common_normal_button_dark_end_press"
+        android:angle="0"/>
+</shape>

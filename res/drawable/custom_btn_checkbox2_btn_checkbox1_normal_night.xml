@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/custom_btn_checkbox2_btn_checkbox1_corner_normal_night" />
+    <gradient android:startColor="#ff3b3b3b" android:endColor="#ff2f2f2f" android:angle="90.0" android:centerX="0.5" />
+</shape>

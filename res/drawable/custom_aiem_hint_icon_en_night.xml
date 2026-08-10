@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="30.0dip" android:width="66.0dip" android:viewportWidth="66.0" android:viewportHeight="30.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$custom_aiem_hint_icon_en_night__0" android:pathData="M9.558,7L16.269,25L12.815,25L11.385,21.086L5.952,21.086L7.025,18.152L10.314,18.152L8.127,12.161L3.603,25L0,25L6.761,7L9.558,7ZM23,7L19.429,7L19.429,25L23,25L23,7ZM40.539,25L40.539,22.461L30.919,22.461L30.919,16.907L39.635,16.907L39.635,14.404L30.919,14.404L30.919,9.277L40.38,9.277L40.38,6.75L27.892,6.75L27.892,25L40.539,25ZM46.581,25L46.581,15.71L46.447,11.401L51.879,24.17L53.856,24.17L59.289,11.401L59.154,15.71L59.154,25L62.108,25L62.108,6.75L58.605,6.75L52.868,19.861L47.13,6.75L43.627,6.75L43.627,25L46.581,25Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+</vector>

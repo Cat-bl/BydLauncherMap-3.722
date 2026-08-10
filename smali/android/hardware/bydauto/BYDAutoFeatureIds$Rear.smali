@@ -1,0 +1,188 @@
+.class public Landroid/hardware/bydauto/BYDAutoFeatureIds$Rear;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/hardware/bydauto/BYDAutoFeatureIds;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "Rear"
+.end annotation
+
+
+# static fields
+.field public static final REAR_VIEW_MIRROR_ANTIGLARE_STATE:I = 0x3b900038
+
+.field public static final REAR_VIEW_MIRROR_ANTIGLARE_SWITCH_FLAG:I
+
+.field public static final REAR_VIEW_MIRROR_ANTIGLARE_SWITCH_SET:I
+
+.field public static final REAR_VIEW_MIRROR_ANTIGLARE_SWITCH_STATUS:I
+
+.field public static final REAR_VIEW_MIRROR_BOTTOM_RIGHT_HORIZONTAL_COORDINATE:I
+
+.field public static final REAR_VIEW_MIRROR_BOTTOM_RIGHT_VERTICAL_COORDINATE:I
+
+.field public static final REAR_VIEW_MIRROR_BRIGHTNESS_ADJUSTMENT_VOICE_CTRL_IN_STREAMING_MEDIA_SET:I
+
+.field public static final REAR_VIEW_MIRROR_CCMS_AUTO_BRIGHTNESS_ADJUSTMENT_STATUS:I
+
+.field public static final REAR_VIEW_MIRROR_CCMS_BLIND_SCREEN_DIMMING_GEAR:I
+
+.field public static final REAR_VIEW_MIRROR_CCMS_BLIND_SCREEN_DIMMING_GEAR_SET:I
+
+.field public static final REAR_VIEW_MIRROR_CCMS_CONFIG:I
+
+.field public static final REAR_VIEW_MIRROR_CCMS_FAULT_ALARM_LEVEL:I
+
+.field public static final REAR_VIEW_MIRROR_CMS_CONFIG:I
+
+.field public static final REAR_VIEW_MIRROR_CMS_FAULT_ALARM_STATUS:I
+
+.field public static final REAR_VIEW_MIRROR_CONTROL_UNIT_AND_CAMERA_UNIT_COMMUNICATION_FAIL_SET:I
+
+.field public static final REAR_VIEW_MIRROR_CONTROL_UNIT_AND_MONITOR_COMMUNICATION_FAIL_SET:I
+
+.field public static final REAR_VIEW_MIRROR_CONTROL_UNIT_INVALID_SET:I
+
+.field public static final REAR_VIEW_MIRROR_DIMMING_GEAT_IN_STREAMING_MEDIA:I
+
+.field public static final REAR_VIEW_MIRROR_DIMMING_LEVEL:I
+
+.field public static final REAR_VIEW_MIRROR_EXTERNAL_BACKLIGHT_AUTO_ADJUST:I
+
+.field public static final REAR_VIEW_MIRROR_EXTERNAL_BACKLIGHT_AUTO_ADJUST_SET:I
+
+.field public static final REAR_VIEW_MIRROR_EXTERNAL_CMS_LEFT_DISPLAY_SCREEN_ADJUST_LIGHT_GEAR:I
+
+.field public static final REAR_VIEW_MIRROR_EXTERNAL_CMS_LEFT_DISPLAY_SCREEN_ADJUST_LIGHT_GEAR_SET:I
+
+.field public static final REAR_VIEW_MIRROR_EXTERNAL_CMS_PARKING_ASSIST_LINE:I
+
+.field public static final REAR_VIEW_MIRROR_EXTERNAL_CMS_PARKING_ASSIST_LINE_SET:I
+
+.field public static final REAR_VIEW_MIRROR_EXTERNAL_RESTORE_DEFAULT_VIEW:I
+
+.field public static final REAR_VIEW_MIRROR_EXTERNAL_RESTORE_DEFAULT_VIEW_SET:I
+
+.field public static final REAR_VIEW_MIRROR_EXTERNAL_REVERSE_SWITCH:I
+
+.field public static final REAR_VIEW_MIRROR_EXTERNAL_REVERSE_SWITCH_SET:I
+
+.field public static final REAR_VIEW_MIRROR_HEIGHT_ADJUSTMENT_VOICE_CTRL_IN_STREAMING_MEDIA_SET:I
+
+.field public static final REAR_VIEW_MIRROR_ICMS_CAMERA_ELECTRONIC_NOISE_SET:I
+
+.field public static final REAR_VIEW_MIRROR_ICMS_CAMERA_FAIL_SET:I
+
+.field public static final REAR_VIEW_MIRROR_ICMS_CAMERA_OPTICAL_OUT_OF_FOCUS_SET:I
+
+.field public static final REAR_VIEW_MIRROR_ICON_SLOT:I
+
+.field public static final REAR_VIEW_MIRROR_ICON_TYPE:I
+
+.field public static final REAR_VIEW_MIRROR_IMAGING_TIME_INCREASE_SET:I
+
+.field public static final REAR_VIEW_MIRROR_LEFT_STREAMING_EXTERNAL_REARVIEW_LOWER_RIGHT_HORIZONTAL_COORDINATE:I
+
+.field public static final REAR_VIEW_MIRROR_LEFT_STREAMING_EXTERNAL_REARVIEW_LOWER_RIGHT_HORIZONTAL_COORDINATE_SET:I
+
+.field public static final REAR_VIEW_MIRROR_LEFT_STREAMING_EXTERNAL_REARVIEW_LOWER_RIGHT_VERTICAL_COORDINATE:I
+
+.field public static final REAR_VIEW_MIRROR_LEFT_STREAMING_EXTERNAL_REARVIEW_LOWER_RIGHT_VERTICAL_COORDINATE_SET:I
+
+.field public static final REAR_VIEW_MIRROR_LEFT_STREAMING_EXTERNAL_REARVIEW_TOP_LEFT_HORIZONTAL_COORDINATE:I
+
+.field public static final REAR_VIEW_MIRROR_LEFT_STREAMING_EXTERNAL_REARVIEW_TOP_LEFT_HORIZONTAL_COORDINATE_SET:I
+
+.field public static final REAR_VIEW_MIRROR_LEFT_STREAMING_EXTERNAL_REARVIEW_TOP_LEFT_VERTICAL_COORDINATE:I
+
+.field public static final REAR_VIEW_MIRROR_LEFT_STREAMING_EXTERNAL_REARVIEW_TOP_LEFT_VERTICAL_COORDINATE_SET:I
+
+.field public static final REAR_VIEW_MIRROR_LEFT_STREAMING_EXTERNAL_REARVIEW_WORKING_STATUS:I
+
+.field public static final REAR_VIEW_MIRROR_MONITOR_SHOW_FROZEN_SET:I
+
+.field public static final REAR_VIEW_MIRROR_MONITOR_SHOW_INVALID_SET:I
+
+.field public static final REAR_VIEW_MIRROR_MOVING_STATE:I
+
+.field public static final REAR_VIEW_MIRROR_PURE_STREAMING_REARVIEW_CONFIG:I
+
+.field public static final REAR_VIEW_MIRROR_RIGHT_STREAMING_EXTERNAL_REARVIEW_LOWER_RIGHT_HORIZONTAL_COORDINATE:I
+
+.field public static final REAR_VIEW_MIRROR_RIGHT_STREAMING_EXTERNAL_REARVIEW_LOWER_RIGHT_HORIZONTAL_COORDINATE_SET:I
+
+.field public static final REAR_VIEW_MIRROR_RIGHT_STREAMING_EXTERNAL_REARVIEW_LOWER_RIGHT_VERTICAL_COORDINATE:I
+
+.field public static final REAR_VIEW_MIRROR_RIGHT_STREAMING_EXTERNAL_REARVIEW_LOWER_RIGHT_VERTICAL_COORDINATE_SET:I
+
+.field public static final REAR_VIEW_MIRROR_RIGHT_STREAMING_EXTERNAL_REARVIEW_TOP_LEFT_HORIZONTAL_COORDINATE:I
+
+.field public static final REAR_VIEW_MIRROR_RIGHT_STREAMING_EXTERNAL_REARVIEW_TOP_LEFT_HORIZONTAL_COORDINATE_SET:I
+
+.field public static final REAR_VIEW_MIRROR_RIGHT_STREAMING_EXTERNAL_REARVIEW_TOP_LEFT_VERTICAL_COORDINATE:I
+
+.field public static final REAR_VIEW_MIRROR_RIGHT_STREAMING_EXTERNAL_REARVIEW_TOP_LEFT_VERTICAL_COORDINATE_SET:I
+
+.field public static final REAR_VIEW_MIRROR_RIGHT_STREAMING_EXTERNAL_REARVIEW_WORKING_STATUS:I
+
+.field public static final REAR_VIEW_MIRROR_SCREEN_CONTROL:I
+
+.field public static final REAR_VIEW_MIRROR_SENTRY_MODE_STATUS_SET:I
+
+.field public static final REAR_VIEW_MIRROR_STATE:I
+
+.field public static final REAR_VIEW_MIRROR_STATUS_IN_STREAMING_MEDIA:I
+
+.field public static final REAR_VIEW_MIRROR_STREAMING_REARVIEW_ADJUSTMENT_STATUS:I
+
+.field public static final REAR_VIEW_MIRROR_STREAMING_REARVIEW_ADJUSTMENT_STATUS_SET:I
+
+.field public static final REAR_VIEW_MIRROR_STREAMING_REARVIEW_AUTO_BRIGHTNESS_STATUS:I
+
+.field public static final REAR_VIEW_MIRROR_STREAMING_REARVIEW_AUTO_BRIGHTNESS_STATUS_SET:I
+
+.field public static final REAR_VIEW_MIRROR_STREAMING_REARVIEW_INIT_COMMAND_SET:I
+
+.field public static final REAR_VIEW_MIRROR_STREAMING_REARVIEW_LOCK_ON_STATUS:I
+
+.field public static final REAR_VIEW_MIRROR_STREAMING_REARVIEW_LOCK_ON_STATUS_SET:I
+
+.field public static final REAR_VIEW_MIRROR_STREAMING_REARVIEW_SCREEN_ADJUSTMENT_FLAG_SET:I
+
+.field public static final REAR_VIEW_MIRROR_TOP_LEFT_HORIZONTAL_COORDINATE:I
+
+.field public static final REAR_VIEW_MIRROR_TOP_LEFT_VERTICAL_COORDINATE:I
+
+.field public static final REAR_VIEW_MIRROR_VISUAL_FIELD_ANGLE_STATUS:I
+
+.field public static final REAR_VIEW_MIRROR_ZOOM_ADJUSTMENT_VOICE_CTRL_IN_STREAMING_MEDIA_SET:I
+
+.field public static final REAR_VIEW_MIRROR_ZOOM_STATUS:I
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 2
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    new-instance v0, Ljava/lang/RuntimeException;
+
+    const-string v1, "Stub!"
+
+    invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method

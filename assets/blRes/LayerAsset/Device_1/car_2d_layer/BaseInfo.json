@@ -1,0 +1,26 @@
+{
+	"layer_priority":	{
+		"car_guide_layer":	{
+			"draw_priority":	140,
+			"sub_priority":	5400
+		},
+		"car_cruise_layer":	{
+			"draw_priority":	140,
+			"sub_priority":	5300
+		},
+		"car_search_layer":	{
+			"draw_priority":	140,
+			"sub_priority":	5500
+		},
+		"car_route_layer":	{
+			"draw_priority":	140,
+			"sub_priority":	1750
+		},
+		"car_familiar_layer":	{
+			"draw_priority":	140,
+			"sub_priority":	5350
+		}
+	},
+	"enable_click":	1,
+	"item":	"CarLayerItem"
+}

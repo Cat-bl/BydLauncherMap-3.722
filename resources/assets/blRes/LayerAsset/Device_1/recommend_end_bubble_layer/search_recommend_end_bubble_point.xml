@@ -1,0 +1,17 @@
+<div id="click_bg_div" style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;margin-bottom:38px;width:auto;background-image:global_image_route_recommend_info_bg_day_night;min-height:112px;">
+  <image id="parking_icon" style="margin-left:18px;width:36px;height:36px;" src="global_image_route_recommend_icon_parking_day_night" />
+  <div id="parking_info_div" style="display:flex;flex-direction:column;justify-content:center;align-items:flex-start;margin-right:25px;margin-left:8px;">
+    <div id="parking_condition_div" style="display:flex;flex-direction:row;justify-content:center;align-items:center;">
+      <div id="parking_recommend_div" style="display:flex;flex-direction:row;justify-content:center;align-items:center;">
+        <label id="parking_recommend_text" style="font-size:22px;color:#1a66ff;font-family:SDK_Font-Medium;" lines="1">推荐停车场</label>
+        <image id="parking_recommend_back_icon" style="margin-left:5px;width:10px;height:16px;" src="global_image_route_recommend_icon_back_blue_day_night" />
+      </div>
+      <div id="parking_difficult_div" style="display:flex;flex-direction:row;justify-content:center;align-items:center;">
+        <label id="parking_difficult_text" style="font-size:22px;color:#f62020;font-family:SDK_Font-Medium;" lines="1">较难停车</label>
+        <image id="parking_difficult_back_icon" style="margin-left:5px;width:10px;height:16px;" src="global_image_route_recommend_icon_back_red_day_night" />
+      </div>
+    </div>
+    <label id="parking_subtitle_text" style="font-size:18px;color:#cc3c3c43;font-family:SDK_Font-Medium;" lines="1">临停有违章风险</label>
+  </div>
+</div>
+

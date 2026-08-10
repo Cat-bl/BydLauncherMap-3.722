@@ -1,0 +1,264 @@
+{
+    "layer_item_info": {
+        "point_lane_guide_turn_left_up": {
+            "index": 0,
+            "name_cn": "主动作左飘转向",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "bg_image": "global_image_autonavi_lane_bubble_container_left_up_day_night"
+                            }
+                        ]
+                    },
+                    "poi_marker_id": "lane_guide_turn_left_up.xml",
+                    "poi_marker_info": "marker_info_lane_guide_turn_left"
+                }
+            }
+        },
+        "point_lane_guide_turn_proximity_left_up": {
+            "index": 3,
+            "name_cn": "主辅动作左飘转向",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "bg_image": "global_image_autonavi_lane_bubble_proximity_left_up_day_night"
+                            }
+                        ]
+                    },
+                    "poi_marker_id": "lane_guide_turn_left_up.xml",
+                    "poi_marker_info": "marker_info_lane_guide_turn_proximity_left"
+                }
+            }
+        },
+        "point_lane_guide_turn_proximity_right_up": {
+            "index": 3,
+            "name_cn": "主辅动作右飘转向",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "bg_image": "global_image_autonavi_lane_bubble_proximity_right_up_day_night"
+                            }
+                        ]
+                    },
+                    "poi_marker_id": "lane_guide_turn_right_up.xml",
+                    "poi_marker_info": "marker_info_lane_guide_turn_proximity_right"
+                }
+            }
+        },
+        "point_lane_guide_turn_right_up": {
+            "index": 0,
+            "name_cn": "主动作右飘转向",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "bg_image": "global_image_autonavi_lane_bubble_container_right_up_day_night"
+                            }
+                        ]
+                    },
+                    "poi_marker_id": "lane_guide_turn_right_up.xml",
+                    "poi_marker_info": "marker_info_lane_guide_turn_right"
+                }
+            }
+        },
+        "point_lane_guide_turn_subsidiary_left_up": {
+            "index": 4,
+            "name_cn": "辅动作左飘转向",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "bg_image": "global_image_autonavi_lane_bubble_subsidiary_left_up_day_night"
+                            }
+                        ]
+                    },
+                    "poi_marker_id": "lane_guide_turn_left_up.xml",
+                    "poi_marker_info": "marker_info_lane_guide_turn_subsidiary_left"
+                }
+            }
+        },
+        "point_lane_guide_turn_subsidiary_right_up": {
+            "index": 4,
+            "name_cn": "辅动作右飘转向",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "bg_image": "global_image_autonavi_lane_bubble_subsidiary_right_up_day_night"
+                            }
+                        ]
+                    },
+                    "poi_marker_id": "lane_guide_turn_right_up.xml",
+                    "poi_marker_info": "marker_info_lane_guide_turn_subsidiary_right"
+                }
+            }
+        }
+    },
+    "marker_info": {
+        "marker_info_lane_guide_turn_left": {
+            "anchor": 13,
+            "image_style": {
+                "turn_image": {
+                    "merge_left": "global_image_autonavi_lane_icon_merge_left_day_night",
+                    "merge_right": "global_image_autonavi_lane_icon_merge_right_day_night",
+                    "roundabout_right_entrance": "global_image_autonavi_lane_icon_roundabout_right_entrance_day_night",
+                    "roundabout_right_exit": "global_image_autonavi_lane_icon_roundabout_right_exit_day_night",
+                    "slight_left": "global_image_autonavi_lane_icon_slight_left_day_night",
+                    "slight_right": "global_image_autonavi_lane_icon_slight_right_day_night",
+                    "straight": "global_image_autonavi_lane_icon_straight_day_night",
+                    "turn_hard_left": "global_image_autonavi_lane_icon_turn_hard_left_day_night",
+                    "turn_hard_right": "global_image_autonavi_lane_icon_turn_hard_right_day_night",
+                    "turn_left": "global_image_autonavi_lane_icon_turn_left_day_night",
+                    "turn_right": "global_image_autonavi_lane_icon_turn_right_day_night",
+                    "u_turn": "global_image_autonavi_lane_icon_u_turn_day_night"
+                }
+            },
+            "x_offset": 11,
+            "y_offset": 20
+        },
+        "marker_info_lane_guide_turn_proximity_left": {
+            "anchor": 13,
+            "day_style": {
+                "color": [
+                    {
+                        "proximity_text": "##FFFFFF"
+                    }
+                ]
+            },
+            "image_style": {
+                "main_turn_image": {
+                    "merge_left": "global_image_autonavi_lane_icon_merge_left_day_night",
+                    "merge_right": "global_image_autonavi_lane_icon_merge_right_day_night",
+                    "roundabout_right_entrance": "global_image_autonavi_lane_icon_roundabout_right_entrance_day_night",
+                    "roundabout_right_exit": "global_image_autonavi_lane_icon_roundabout_right_exit_day_night",
+                    "slight_left": "global_image_autonavi_lane_icon_slight_left_day_night",
+                    "slight_right": "global_image_autonavi_lane_icon_slight_right_day_night",
+                    "straight": "global_image_autonavi_lane_icon_straight_day_night",
+                    "turn_hard_left": "global_image_autonavi_lane_icon_turn_hard_left_day_night",
+                    "turn_hard_right": "global_image_autonavi_lane_icon_turn_hard_right_day_night",
+                    "turn_left": "global_image_autonavi_lane_icon_turn_left_day_night",
+                    "turn_right": "global_image_autonavi_lane_icon_turn_right_day_night",
+                    "u_turn": "global_image_autonavi_lane_icon_u_turn_day_night"
+                }
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "proximity_text": "##FFFFFF"
+                    }
+                ]
+            },
+            "x_offset": 11,
+            "y_offset": 20
+        },
+        "marker_info_lane_guide_turn_proximity_right": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "proximity_text": "##FFFFFF"
+                    }
+                ]
+            },
+            "image_style": {
+                "main_turn_image": {
+                    "merge_left": "global_image_autonavi_lane_icon_merge_left_day_night",
+                    "merge_right": "global_image_autonavi_lane_icon_merge_right_day_night",
+                    "roundabout_right_entrance": "global_image_autonavi_lane_icon_roundabout_right_entrance_day_night",
+                    "roundabout_right_exit": "global_image_autonavi_lane_icon_roundabout_right_exit_day_night",
+                    "slight_left": "global_image_autonavi_lane_icon_slight_left_day_night",
+                    "slight_right": "global_image_autonavi_lane_icon_slight_right_day_night",
+                    "straight": "global_image_autonavi_lane_icon_straight_day_night",
+                    "turn_hard_left": "global_image_autonavi_lane_icon_turn_hard_left_day_night",
+                    "turn_hard_right": "global_image_autonavi_lane_icon_turn_hard_right_day_night",
+                    "turn_left": "global_image_autonavi_lane_icon_turn_left_day_night",
+                    "turn_right": "global_image_autonavi_lane_icon_turn_right_day_night",
+                    "u_turn": "global_image_autonavi_lane_icon_u_turn_day_night"
+                }
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "proximity_text": "##FFFFFF"
+                    }
+                ]
+            },
+            "x_offset": 11,
+            "y_offset": 20
+        },
+        "marker_info_lane_guide_turn_right": {
+            "anchor": 12,
+            "image_style": {
+                "turn_image": {
+                    "merge_left": "global_image_autonavi_lane_icon_merge_left_day_night",
+                    "merge_right": "global_image_autonavi_lane_icon_merge_right_day_night",
+                    "roundabout_right_entrance": "global_image_autonavi_lane_icon_roundabout_right_entrance_day_night",
+                    "roundabout_right_exit": "global_image_autonavi_lane_icon_roundabout_right_exit_day_night",
+                    "slight_left": "global_image_autonavi_lane_icon_slight_left_day_night",
+                    "slight_right": "global_image_autonavi_lane_icon_slight_right_day_night",
+                    "straight": "global_image_autonavi_lane_icon_straight_day_night",
+                    "turn_hard_left": "global_image_autonavi_lane_icon_turn_hard_left_day_night",
+                    "turn_hard_right": "global_image_autonavi_lane_icon_turn_hard_right_day_night",
+                    "turn_left": "global_image_autonavi_lane_icon_turn_left_day_night",
+                    "turn_right": "global_image_autonavi_lane_icon_turn_right_day_night",
+                    "u_turn": "global_image_autonavi_lane_icon_u_turn_day_night"
+                }
+            },
+            "x_offset": 11,
+            "y_offset": 20
+        },
+        "marker_info_lane_guide_turn_subsidiary_left": {
+            "anchor": 13,
+            "day_style": {
+                "color": [
+                    {
+                        "proximity_text": "##FFFFFF"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "proximity_text": "##FFFFFF"
+                    }
+                ]
+            },
+            "x_offset": 11,
+            "y_offset": 20
+        },
+        "marker_info_lane_guide_turn_subsidiary_right": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "proximity_text": "##FFFFFF"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "proximity_text": "##FFFFFF"
+                    }
+                ]
+            },
+            "x_offset": 11,
+            "y_offset": 20
+        }
+    }
+}

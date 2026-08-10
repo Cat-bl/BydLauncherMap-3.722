@@ -1,0 +1,119 @@
+{
+    "priority_collision_threshold":
+    {
+        "lane_control":
+        {
+            "lane_guide_not_recommended_layer":
+            {
+                "collision_threshold": 0.3
+            },
+            "lane_guide_via_layer":
+            {
+                "collision_threshold": 0.3
+            },
+            "lane_guide_end_layer":
+            {
+                "collision_threshold": 0.3
+            },
+            "lane_guide_restricted_layer":
+            {
+                "collision_threshold": 0.3
+            },
+            "lane_guide_event_layer":
+            {
+                "collision_threshold": 0.3
+            },
+            "lane_guide_congestion_layer":
+            {
+                "priority_area_threshold": 0.3,
+                "collision_threshold": 0.3
+            },
+            "lane_guide_odd_layer":
+            {
+                "collision_threshold": 0.3
+            },
+            "lane_guide_traffic_light_icon_layer":
+            {
+                "collision_threshold": 0.3
+            },
+            "lane_guide_traffic_light_countdown_layer":
+            {
+                "priority_area_threshold": 0.2,
+                "collision_threshold": 0.3
+            },
+            "lane_guide_camera_layer":
+            {
+                "priority_area_threshold": 0.2,
+                "collision_threshold": 0.2
+            },
+            "lane_guide_change_layer":
+            {
+                "collision_threshold": 0.3
+            },
+            "lane_guide_turn_layer":
+            {
+                "collision_threshold": 0.3
+            },
+            "lane_guide_normal_camera_layer":
+            {
+                "priority_area_threshold": 0.2,
+                "collision_threshold": 0.2
+            },
+            "lane_guide_alternative_path_layer":
+            {
+                "collision_threshold": 0.5
+            }
+        }
+    },
+    "collision_combination":
+    {
+        "lane_collision":
+        {
+            "area_collision":
+            [
+                "lane_guide_congestion_layer",
+                "lane_guide_event_layer",
+                "lane_guide_camera_layer",
+                "lane_guide_traffic_light_countdown_layer",
+                "lane_guide_restricted_layer",
+                "lane_guide_not_recommended_layer",
+                "lane_guide_turn_layer",
+                "lane_guide_via_layer",
+                "lane_guide_end_layer",
+                "lane_guide_odd_layer",
+                "lane_guide_change_layer",
+                "lane_guide_traffic_light_icon_layer",
+                "lane_guide_merge_reason_layer",
+                "lane_guide_normal_camera_layer",
+                "lane_guide_alternative_path_layer"
+            ],
+            "area_threshold":
+            {
+                "lane_guide_traffic_light_countdown_layer": 0.3,
+                "lane_guide_congestion_layer": 0.3,
+                "lane_guide_camera_layer": 0.4,
+                "lane_guide_normal_camera_layer": 0.2,
+                "lane_guide_alternative_path_layer": 0.5,
+                "lane_guide_event_layer": 0.3
+            },
+            "ui_threshold":
+            {
+                "lane_guide_alternative_path_layer": 0.3
+            },
+            "not_collided_by_high_priority":
+            [
+                "lane_guide_turn_layer",
+                "lane_guide_via_layer",
+                "lane_guide_end_layer",
+                "lane_guide_odd_layer",
+                "lane_guide_traffic_light_icon_layer",
+                "lane_guide_merge_reason_layer",
+                "lane_guide_normal_camera_layer"
+            ],
+            "not_collide_each_other":
+            {
+                "lane_guide_traffic_light_icon_layer": "lane_guide_traffic_light_countdown_layer"
+            }
+        }
+    }
+}

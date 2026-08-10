@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_horizontal" android:id="@id/pre_view" android:visibility="gone" android:layout_width="@dimen/byd_pvt_slideBar_iconSize" android:layout_height="@dimen/byd_pvt_slideBar_iconSize"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

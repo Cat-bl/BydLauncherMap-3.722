@@ -1,0 +1,34 @@
+{
+    "marker_info": {
+        "marker_info_path_board_left": {
+            "anchor": 13,
+            "x_offset": 20
+        },
+        "marker_info_path_board_right": {
+            "anchor": 12,
+            "x_offset": 20
+        }
+    },
+    "layer_item_info": {
+        "point_guide_path_board_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_path_board_label_left.xml",
+                    "poi_marker_info": "marker_info_path_board_left"
+                }
+            },
+            "index": 0,
+            "name_cn": "左飘"
+        },
+        "point_guide_path_board_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_path_board_label_right.xml",
+                    "poi_marker_info": "marker_info_path_board_right"
+                }
+            },
+            "index": 1,
+            "name_cn": "右飘"
+        }
+    }
+}

@@ -1,0 +1,288 @@
+{
+    "layer_item_info": {
+        "point_lane_guide_congestion_left_up": {
+            "index": 1,
+            "name_cn": "单行左飘拥堵",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "lane_guide_congestion_background": "global_image_autonavi_lane_bubble_container_roadstatu_normal_left_up_day_night"
+                            }
+                        ]
+                    },
+                    "poi_marker_id": "lane_guide_congestion_left_up.xml",
+                    "poi_marker_info": "marker_info_lane_guide_congestion_left_up"
+                }
+            }
+        },
+        "point_lane_guide_congestion_right_up": {
+            "index": 1,
+            "name_cn": "单行右飘拥堵",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "lane_guide_congestion_background": "global_image_autonavi_lane_bubble_container_roadstatu_normal_right_up_day_night"
+                            }
+                        ]
+                    },
+                    "poi_marker_id": "lane_guide_congestion_right_up.xml",
+                    "poi_marker_info": "marker_info_lane_guide_congestion_right_up"
+                }
+            }
+        },
+        "point_lane_guide_congestion_two_left_up": {
+            "index": 2,
+            "name_cn": "双行左飘拥堵",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "lane_guide_congestion_background": "global_image_autonavi_lane_bubble_container_roadstatu_normal_two_left_up_day_night"
+                            }
+                        ]
+                    },
+                    "poi_marker_id": "lane_guide_congestion_left_up.xml",
+                    "poi_marker_info": "marker_info_lane_guide_congestion_left_up_two"
+                }
+            }
+        },
+        "point_lane_guide_congestion_two_right_up": {
+            "index": 2,
+            "name_cn": "双行右飘拥堵",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "lane_guide_congestion_background": "global_image_autonavi_lane_bubble_container_roadstatu_normal_two_right_up_day_night"
+                            }
+                        ]
+                    },
+                    "poi_marker_id": "lane_guide_congestion_right_up.xml",
+                    "poi_marker_info": "marker_info_lane_guide_congestion_right_up_two"
+                }
+            }
+        }
+    },
+    "marker_info": {
+        "marker_info_lane_guide_congestion_left_up": {
+            "anchor": 13,
+            "day_style": {
+                "color": [
+                    {
+                        "congestion_time": "#ffffff"
+                    },
+                    {
+                        "congestion_distance": "#ffffff"
+                    },
+                    {
+                        "congestion_detail": "#F52B20"
+                    },
+                    {
+                        "congestion_detail1": "#F52B20"
+                    }
+                ]
+            },
+            "image_style": {
+                "thumbnail_image": {
+                    "thumbnail_event_accident": "global_image_autonavi_lane_icon_traffic_event_accident_day_night",
+                    "thumbnail_event_control": "global_image_autonavi_lane_icon_traffic_event_control_day_night",
+                    "thumbnail_event_ice_accretion": "global_image_autonavi_lane_icon_traffic_event_accretion_day_night",
+                    "thumbnail_event_project": "global_image_autonavi_lane_icon_traffic_event_project_day_night",
+                    "thumbnail_event_snow": "global_image_autonavi_lane_icon_traffic_event_snow_day_night",
+                    "thumbnail_event_traffic_light": "global_image_autonavi_lane_icon_traffic_event_light_day_night",
+                    "thumbnail_event_water_block": "global_image_autonavi_lane_icon_traffic_event_water_block_day_night"
+                }
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "congestion_time": "#ffffff"
+                    },
+                    {
+                        "congestion_distance": "#ffffff"
+                    },
+                    {
+                        "congestion_detail": "#E02A19"
+                    },
+                    {
+                        "congestion_detail1": "#E02A19"
+                    }
+                ]
+            },
+            "x_offset": 14,
+            "y_offset": 28
+        },
+        "marker_info_lane_guide_congestion_left_up_two": {
+            "anchor": 13,
+            "day_style": {
+                "color": [
+                    {
+                        "congestion_detail": "#F52B20"
+                    },
+                    {
+                        "congestion_detail1": "#F52B20"
+                    },
+                    {
+                        "congestion_time": "#ffffff"
+                    },
+                    {
+                        "congestion_distance": "#ffffff"
+                    }
+                ]
+            },
+            "image_style": {
+                "thumbnail_image": {
+                    "thumbnail_event_accident": "global_image_autonavi_lane_icon_traffic_event_accident_day_night",
+                    "thumbnail_event_control": "global_image_autonavi_lane_icon_traffic_event_control_day_night",
+                    "thumbnail_event_ice_accretion": "global_image_autonavi_lane_icon_traffic_event_accretion_day_night",
+                    "thumbnail_event_project": "global_image_autonavi_lane_icon_traffic_event_project_day_night",
+                    "thumbnail_event_snow": "global_image_autonavi_lane_icon_traffic_event_snow_day_night",
+                    "thumbnail_event_traffic_light": "global_image_autonavi_lane_icon_traffic_event_light_day_night",
+                    "thumbnail_event_water_block": "global_image_autonavi_lane_icon_traffic_event_water_block_day_night"
+                },
+                "thumbnail_image2": {
+                    "thumbnail_event_accident": "global_image_autonavi_lane_icon_traffic_event_accident_day_night",
+                    "thumbnail_event_control": "global_image_autonavi_lane_icon_traffic_event_control_day_night",
+                    "thumbnail_event_ice_accretion": "global_image_autonavi_lane_icon_traffic_event_accretion_day_night",
+                    "thumbnail_event_project": "global_image_autonavi_lane_icon_traffic_event_project_day_night",
+                    "thumbnail_event_snow": "global_image_autonavi_lane_icon_traffic_event_snow_day_night",
+                    "thumbnail_event_traffic_light": "global_image_autonavi_lane_icon_traffic_event_light_day_night",
+                    "thumbnail_event_water_block": "global_image_autonavi_lane_icon_traffic_event_water_block_day_night"
+                }
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "congestion_detail": "#E02A19"
+                    },
+                    {
+                        "congestion_detail1": "#E02A19"
+                    },
+                    {
+                        "congestion_time": "#ffffff"
+                    },
+                    {
+                        "congestion_distance": "#ffffff"
+                    }
+                ]
+            },
+            "x_offset": 7,
+            "y_offset": 47
+        },
+        "marker_info_lane_guide_congestion_right_up": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "congestion_time": "#ffffff"
+                    },
+                    {
+                        "congestion_distance": "#ffffff"
+                    },
+                    {
+                        "congestion_detail": "#F52B20"
+                    },
+                    {
+                        "congestion_detail1": "#F52B20"
+                    }
+                ]
+            },
+            "image_style": {
+                "thumbnail_image": {
+                    "thumbnail_event_accident": "global_image_autonavi_lane_icon_traffic_event_accident_day_night",
+                    "thumbnail_event_control": "global_image_autonavi_lane_icon_traffic_event_control_day_night",
+                    "thumbnail_event_ice_accretion": "global_image_autonavi_lane_icon_traffic_event_accretion_day_night",
+                    "thumbnail_event_project": "global_image_autonavi_lane_icon_traffic_event_project_day_night",
+                    "thumbnail_event_snow": "global_image_autonavi_lane_icon_traffic_event_snow_day_night",
+                    "thumbnail_event_traffic_light": "global_image_autonavi_lane_icon_traffic_event_light_day_night",
+                    "thumbnail_event_water_block": "global_image_autonavi_lane_icon_traffic_event_water_block_day_night"
+                }
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "congestion_time": "#ffffff"
+                    },
+                    {
+                        "congestion_distance": "#ffffff"
+                    },
+                    {
+                        "congestion_detail": "#E02A19"
+                    },
+                    {
+                        "congestion_detail1": "#E02A19"
+                    }
+                ]
+            },
+            "x_offset": 14,
+            "y_offset": 28
+        },
+        "marker_info_lane_guide_congestion_right_up_two": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "congestion_detail": "#F52B20"
+                    },
+                    {
+                        "congestion_detail1": "#F52B20"
+                    },
+                    {
+                        "congestion_time": "#ffffff"
+                    },
+                    {
+                        "congestion_distance": "#ffffff"
+                    }
+                ]
+            },
+            "image_style": {
+                "thumbnail_image": {
+                    "thumbnail_event_accident": "global_image_autonavi_lane_icon_traffic_event_accident_day_night",
+                    "thumbnail_event_control": "global_image_autonavi_lane_icon_traffic_event_control_day_night",
+                    "thumbnail_event_ice_accretion": "global_image_autonavi_lane_icon_traffic_event_accretion_day_night",
+                    "thumbnail_event_project": "global_image_autonavi_lane_icon_traffic_event_project_day_night",
+                    "thumbnail_event_snow": "global_image_autonavi_lane_icon_traffic_event_snow_day_night",
+                    "thumbnail_event_traffic_light": "global_image_autonavi_lane_icon_traffic_event_light_day_night",
+                    "thumbnail_event_water_block": "global_image_autonavi_lane_icon_traffic_event_water_block_day_night"
+                },
+                "thumbnail_image2": {
+                    "thumbnail_event_accident": "global_image_autonavi_lane_icon_traffic_event_accident_day_night",
+                    "thumbnail_event_control": "global_image_autonavi_lane_icon_traffic_event_control_day_night",
+                    "thumbnail_event_ice_accretion": "global_image_autonavi_lane_icon_traffic_event_accretion_day_night",
+                    "thumbnail_event_project": "global_image_autonavi_lane_icon_traffic_event_project_day_night",
+                    "thumbnail_event_snow": "global_image_autonavi_lane_icon_traffic_event_snow_day_night",
+                    "thumbnail_event_traffic_light": "global_image_autonavi_lane_icon_traffic_event_light_day_night",
+                    "thumbnail_event_water_block": "global_image_autonavi_lane_icon_traffic_event_water_block_day_night"
+                }
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "congestion_detail": "#E02A19"
+                    },
+                    {
+                        "congestion_detail1": "#E02A19"
+                    },
+                    {
+                        "congestion_time": "#ffffff"
+                    },
+                    {
+                        "congestion_distance": "#ffffff"
+                    }
+                ]
+            },
+            "x_offset": 7,
+            "y_offset": 47
+        }
+    }
+}

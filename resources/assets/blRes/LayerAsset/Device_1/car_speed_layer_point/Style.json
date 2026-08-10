@@ -1,0 +1,116 @@
+{
+    "marker_info": {
+        "marker_info_speed_car": {
+            "anchor": 4,
+            "day_style": {
+                "color": [
+                    {
+                        "speed_text_two": "#333333"
+                    },
+                    {
+                        "speed_text_three": "#333333"
+                    },
+                    {
+                        "speed_text_two_os": "#d62727"
+                    },
+                    {
+                        "speed_text_three_os": "#d62727"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "speed_text_two": "#000000"
+                    },
+                    {
+                        "speed_text_three": "#000000"
+                    },
+                    {
+                        "speed_text_two_os": "#e31a1a"
+                    },
+                    {
+                        "speed_text_three_os": "#e31a1a"
+                    }
+                ]
+            }
+        },
+        "marker_info_speed_car_overspeed": {
+            "anchor": 4,
+            "day_style": {
+                "color": [
+                    {
+                        "speed_text_two": "#333333"
+                    },
+                    {
+                        "speed_text_three": "#333333"
+                    },
+                    {
+                        "speed_text_two_os": "#d62727"
+                    },
+                    {
+                        "speed_text_three_os": "#d62727"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "speed_text_two": "#000000"
+                    },
+                    {
+                        "speed_text_three": "#000000"
+                    },
+                    {
+                        "speed_text_two_os": "#e31a1a"
+                    },
+                    {
+                        "speed_text_three_os": "#e31a1a"
+                    }
+                ]
+            }
+        }
+    },
+    "layer_item_info": {
+        "point_speed_car": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "speed_car.xml",
+                    "poi_marker_info": "marker_info_speed_car",
+                    "marker_style": {
+                        "display": [
+                            {
+                                "km_h_text": "flex"
+                            },
+                            {
+                                "km_h_overspeed_text": "none"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "车速值"
+        },
+        "point_speed_car_overspeed": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "speed_car.xml",
+                    "poi_marker_info": "marker_info_speed_car_overspeed",
+                    "marker_style": {
+                        "display": [
+                            {
+                                "km_h_text": "none"
+                            },
+                            {
+                                "km_h_overspeed_text": "flex"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 1,
+            "name_cn": "车速值超速"
+        }
+    }
+}

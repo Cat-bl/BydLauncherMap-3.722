@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.auto.common.view.NoScrollGridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:id="@+id/gv_auto_search_switch_city_list_grid_child"
+    android:paddingBottom="@dimen/auto_dimen2_12"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:listSelector="@android:color/transparent"
+    android:cacheColorHint="@color/auto_ui_000000_00"
+    android:horizontalSpacing="@dimen/auto_dimen2_8"
+    android:verticalSpacing="@dimen/auto_dimen2_20"
+    android:numColumns="5"
+    android:paddingStart="@dimen/auto_dimen2_20"
+    android:paddingEnd="@dimen/auto_dimen2_20"/>

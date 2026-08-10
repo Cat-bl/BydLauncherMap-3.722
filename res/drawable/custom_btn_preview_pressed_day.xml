@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:topRightRadius="@dimen/auto_dimen2_12" android:bottomRightRadius="@dimen/auto_dimen2_12" />
+            <solid android:color="@color/custom_list_pressed_list_solid_pressed_day" />
+        </shape>
+    </item>
+</layer-list>

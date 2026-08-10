@@ -1,0 +1,15 @@
+<div style="display:flex;flex-direction:row-reverse;justify-content:center;align-items:center;width:auto;height:auto;">
+  <div id="type_bar" style="display:flex;flex-direction:row-reverse;justify-content:center;align-items:center;margin-right:-32px;width:auto;height:52px;background-image:global_image_quick_route_search_along_des_bg_day_night1;">
+    <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-bottom:2px;">
+      <label id="park_type" style="margin-left:12px;font-size:20px;color:#000000;font-family:SDK_Font-Medium;" lines="1">路边</label>
+      <label id="charge_type" style="margin-right:2px;margin-left:12px;font-size:20px;color:#000000;font-family:SDK_Font-Medium;" lines="1">快充</label>
+      <label id="fast_free" style="font-size:20px;color:#f95000;font-family:SDK_Font-Medium;" lines="1">2</label>
+      <label id="fast_total" style="margin-left:2px;font-size:20px;color:#80f95000;font-family:SDK_Font-Medium;" lines="1">/2</label>
+    </div>
+  </div>
+  <div id="click_hotspot" style="display:flex;flex-direction:column;justify-content:center;align-items:center;width:auto;height:auto;">
+    <image id="park_image" style="width:44px;height:52px;is_main:Y;" src="global_image_autonavi_car_parking_1_day_night" />
+    <label id="name" style="margin-top:4px;width:180px;font-size:22px;color:#171717;text-align:center;position:absolute;top:50px;left:-68px;font-family:SDK_Font-Bold;text-stroke:2px #E6ffffff;line-clamp:2;" lines="1">默认文字长度为7字</label>
+  </div>
+</div>
+

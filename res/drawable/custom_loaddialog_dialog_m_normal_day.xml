@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/custom_loaddialog_dialog_m_corner_normal_day" />
+    <solid android:color="@color/custom_loaddialog_dialog_m_solid_normal_day" />
+</shape>

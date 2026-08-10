@@ -1,0 +1,7 @@
+<div id="bg_image" style="display:flex;flex-direction:row;align-items:center;height:90px;background-image:global_image_autonavi_lane_bubble_container_left_up_day_night">
+  <label id="proximity_text" style="font-family:SDK_Font-Bold;color:#ffffff;font-size:26px;" lines="1">进隧道</label>
+  <image id="main_turn_image" style="width:60px;height:60px;margin-left:6px;margin-right:-3px;margin-top:1px;" src=""/>
+  <image id="turn_image" style="width:62px;height:62px;" src=""/>
+</div>
+
+

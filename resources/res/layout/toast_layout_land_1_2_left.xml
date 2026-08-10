@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:autoSkin="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="left"
+    android:id="@+id/scl_toast"
+    android:background="@drawable/toast_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.autonavi.skin.view.SkinTextView
+        android:textSize="@dimen/auto_font_size_24"
+        android:textColor="@color/auto_color_toast_text"
+        android:gravity="center"
+        android:id="@+id/tv_toast"
+        android:paddingTop="@dimen/auto_dimen2_18"
+        android:paddingBottom="@dimen/auto_dimen2_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:paddingStart="@dimen/auto_dimen2_22"
+        android:paddingEnd="@dimen/auto_dimen2_22"/>
+</com.autonavi.skin.view.SkinConstraintLayout>

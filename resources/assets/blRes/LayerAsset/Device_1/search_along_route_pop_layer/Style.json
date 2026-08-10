@@ -1,0 +1,510 @@
+{
+    "marker_info": {
+        "marker_info_along_route_pop_left_up": {
+            "anchor": 13,
+            "x_offset": 15,
+            "y_offset": 15,
+            "day_style": {
+                "color": [
+                    {
+                        "more_text_bestway": "#ff028947"
+                    },
+                    {
+                        "distance_diff_text_bestway": "#ff028947"
+                    },
+                    {
+                        "distance_unit_text_bestway": "#ff028947"
+                    },
+                    {
+                        "time_diff_text_bestway": "#ff028947"
+                    },
+                    {
+                        "time_unit_text_bestway": "#ff028947"
+                    },
+                    {
+                        "more_text_nearest": "#ff457ce9"
+                    },
+                    {
+                        "distance_diff_text_nearest": "#ff457ce9"
+                    },
+                    {
+                        "distance_unit_text_nearest": "#ff457ce9"
+                    },
+                    {
+                        "time_diff_text_nearest": "#ff457ce9"
+                    },
+                    {
+                        "time_unit_text_nearest": "#ff457ce9"
+                    },
+                    {
+                        "more_text_center": "#ff000000"
+                    },
+                    {
+                        "distance_diff_text_center": "#ff000000"
+                    },
+                    {
+                        "distance_unit_text_center": "#ff000000"
+                    },
+                    {
+                        "time_diff_text_center": "#ff000000"
+                    },
+                    {
+                        "time_unit_text_center": "#ff000000"
+                    },
+                    {
+                        "name_text_center": "#ff000000"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "more_text_bestway": "#ff50c4ad"
+                    },
+                    {
+                        "distance_diff_text_bestway": "#ff50c4ad"
+                    },
+                    {
+                        "distance_unit_text_bestway": "#ff50c4ad"
+                    },
+                    {
+                        "time_diff_text_bestway": "#ff50c4ad"
+                    },
+                    {
+                        "time_unit_text_bestway": "#ff50c4ad"
+                    },
+                    {
+                        "more_text_nearest": "#ff5f9bff"
+                    },
+                    {
+                        "distance_diff_text_nearest": "#ff5f9bff"
+                    },
+                    {
+                        "distance_unit_text_nearest": "#ff5f9bff"
+                    },
+                    {
+                        "time_diff_text_nearest": "#ff5f9bff"
+                    },
+                    {
+                        "time_unit_text_nearest": "#ff5f9bff"
+                    },
+                    {
+                        "more_text_center": "#ccffffff"
+                    },
+                    {
+                        "distance_diff_text_center": "#ccffffff"
+                    },
+                    {
+                        "distance_unit_text_center": "#ccffffff"
+                    },
+                    {
+                        "time_diff_text_center": "#ccffffff"
+                    },
+                    {
+                        "time_unit_text_center": "#ccffffff"
+                    },
+                    {
+                        "name_text_center": "#ccffffff"
+                    }
+                ]
+            }
+        },
+        "marker_info_along_route_pop_left_down": {
+            "anchor": 11,
+            "x_offset": 15,
+            "y_offset": 15,
+            "day_style": {
+                "color": [
+                    {
+                        "more_text_bestway": "#ff028947"
+                    },
+                    {
+                        "distance_diff_text_bestway": "#ff028947"
+                    },
+                    {
+                        "distance_unit_text_bestway": "#ff028947"
+                    },
+                    {
+                        "time_diff_text_bestway": "#ff028947"
+                    },
+                    {
+                        "time_unit_text_bestway": "#ff028947"
+                    },
+                    {
+                        "more_text_nearest": "#ff457ce9"
+                    },
+                    {
+                        "distance_diff_text_nearest": "#ff457ce9"
+                    },
+                    {
+                        "distance_unit_text_nearest": "#ff457ce9"
+                    },
+                    {
+                        "time_diff_text_nearest": "#ff457ce9"
+                    },
+                    {
+                        "time_unit_text_nearest": "#ff457ce9"
+                    },
+                    {
+                        "more_text_center": "#ff000000"
+                    },
+                    {
+                        "distance_diff_text_center": "#ff000000"
+                    },
+                    {
+                        "distance_unit_text_center": "#ff000000"
+                    },
+                    {
+                        "time_diff_text_center": "#ff000000"
+                    },
+                    {
+                        "time_unit_text_center": "#ff000000"
+                    },
+                    {
+                        "name_text_center": "#ff000000"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "more_text_bestway": "#ff50c4ad"
+                    },
+                    {
+                        "distance_diff_text_bestway": "#ff50c4ad"
+                    },
+                    {
+                        "distance_unit_text_bestway": "#ff50c4ad"
+                    },
+                    {
+                        "time_diff_text_bestway": "#ff50c4ad"
+                    },
+                    {
+                        "time_unit_text_bestway": "#ff50c4ad"
+                    },
+                    {
+                        "more_text_nearest": "#ff5f9bff"
+                    },
+                    {
+                        "distance_diff_text_nearest": "#ff5f9bff"
+                    },
+                    {
+                        "distance_unit_text_nearest": "#ff5f9bff"
+                    },
+                    {
+                        "time_diff_text_nearest": "#ff5f9bff"
+                    },
+                    {
+                        "time_unit_text_nearest": "#ff5f9bff"
+                    },
+                    {
+                        "more_text_center": "#ccffffff"
+                    },
+                    {
+                        "distance_diff_text_center": "#ccffffff"
+                    },
+                    {
+                        "distance_unit_text_center": "#ccffffff"
+                    },
+                    {
+                        "time_diff_text_center": "#ccffffff"
+                    },
+                    {
+                        "time_unit_text_center": "#ccffffff"
+                    },
+                    {
+                        "name_text_center": "#ccffffff"
+                    }
+                ]
+            }
+        },
+        "marker_info_along_route_pop_right_down": {
+            "anchor": 10,
+            "x_offset": 15,
+            "y_offset": 15,
+            "day_style": {
+                "color": [
+                    {
+                        "more_text_bestway": "#ff028947"
+                    },
+                    {
+                        "distance_diff_text_bestway": "#ff028947"
+                    },
+                    {
+                        "distance_unit_text_bestway": "#ff028947"
+                    },
+                    {
+                        "time_diff_text_bestway": "#ff028947"
+                    },
+                    {
+                        "time_unit_text_bestway": "#ff028947"
+                    },
+                    {
+                        "more_text_nearest": "#ff457ce9"
+                    },
+                    {
+                        "distance_diff_text_nearest": "#ff457ce9"
+                    },
+                    {
+                        "distance_unit_text_nearest": "#ff457ce9"
+                    },
+                    {
+                        "time_diff_text_nearest": "#ff457ce9"
+                    },
+                    {
+                        "time_unit_text_nearest": "#ff457ce9"
+                    },
+                    {
+                        "more_text_center": "#ff000000"
+                    },
+                    {
+                        "distance_diff_text_center": "#ff000000"
+                    },
+                    {
+                        "distance_unit_text_center": "#ff000000"
+                    },
+                    {
+                        "time_diff_text_center": "#ff000000"
+                    },
+                    {
+                        "time_unit_text_center": "#ff000000"
+                    },
+                    {
+                        "name_text_center": "#ff000000"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "more_text_bestway": "#ff50c4ad"
+                    },
+                    {
+                        "distance_diff_text_bestway": "#ff50c4ad"
+                    },
+                    {
+                        "distance_unit_text_bestway": "#ff50c4ad"
+                    },
+                    {
+                        "time_diff_text_bestway": "#ff50c4ad"
+                    },
+                    {
+                        "time_unit_text_bestway": "#ff50c4ad"
+                    },
+                    {
+                        "more_text_nearest": "#ff5f9bff"
+                    },
+                    {
+                        "distance_diff_text_nearest": "#ff5f9bff"
+                    },
+                    {
+                        "distance_unit_text_nearest": "#ff5f9bff"
+                    },
+                    {
+                        "time_diff_text_nearest": "#ff5f9bff"
+                    },
+                    {
+                        "time_unit_text_nearest": "#ff5f9bff"
+                    },
+                    {
+                        "more_text_center": "#ccffffff"
+                    },
+                    {
+                        "distance_diff_text_center": "#ccffffff"
+                    },
+                    {
+                        "distance_unit_text_center": "#ccffffff"
+                    },
+                    {
+                        "time_diff_text_center": "#ccffffff"
+                    },
+                    {
+                        "time_unit_text_center": "#ccffffff"
+                    },
+                    {
+                        "name_text_center": "#ccffffff"
+                    }
+                ]
+            }
+        },
+        "marker_info_along_route_pop_right_up": {
+            "anchor": 12,
+            "x_offset": 15,
+            "y_offset": 15,
+            "day_style": {
+                "color": [
+                    {
+                        "more_text_bestway": "#ff028947"
+                    },
+                    {
+                        "distance_diff_text_bestway": "#ff028947"
+                    },
+                    {
+                        "distance_unit_text_bestway": "#ff028947"
+                    },
+                    {
+                        "time_diff_text_bestway": "#ff028947"
+                    },
+                    {
+                        "time_unit_text_bestway": "#ff028947"
+                    },
+                    {
+                        "more_text_nearest": "#ff457ce9"
+                    },
+                    {
+                        "distance_diff_text_nearest": "#ff457ce9"
+                    },
+                    {
+                        "distance_unit_text_nearest": "#ff457ce9"
+                    },
+                    {
+                        "time_diff_text_nearest": "#ff457ce9"
+                    },
+                    {
+                        "time_unit_text_nearest": "#ff457ce9"
+                    },
+                    {
+                        "more_text_center": "#ff000000"
+                    },
+                    {
+                        "distance_diff_text_center": "#ff000000"
+                    },
+                    {
+                        "distance_unit_text_center": "#ff000000"
+                    },
+                    {
+                        "time_diff_text_center": "#ff000000"
+                    },
+                    {
+                        "time_unit_text_center": "#ff000000"
+                    },
+                    {
+                        "name_text_center": "#ff000000"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "more_text_bestway": "#ff50c4ad"
+                    },
+                    {
+                        "distance_diff_text_bestway": "#ff50c4ad"
+                    },
+                    {
+                        "distance_unit_text_bestway": "#ff50c4ad"
+                    },
+                    {
+                        "time_diff_text_bestway": "#ff50c4ad"
+                    },
+                    {
+                        "time_unit_text_bestway": "#ff50c4ad"
+                    },
+                    {
+                        "more_text_nearest": "#ff5f9bff"
+                    },
+                    {
+                        "distance_diff_text_nearest": "#ff5f9bff"
+                    },
+                    {
+                        "distance_unit_text_nearest": "#ff5f9bff"
+                    },
+                    {
+                        "time_diff_text_nearest": "#ff5f9bff"
+                    },
+                    {
+                        "time_unit_text_nearest": "#ff5f9bff"
+                    },
+                    {
+                        "more_text_center": "#ccffffff"
+                    },
+                    {
+                        "distance_diff_text_center": "#ccffffff"
+                    },
+                    {
+                        "distance_unit_text_center": "#ccffffff"
+                    },
+                    {
+                        "time_diff_text_center": "#ccffffff"
+                    },
+                    {
+                        "time_unit_text_center": "#ccffffff"
+                    },
+                    {
+                        "name_text_center": "#ccffffff"
+                    }
+                ]
+            }
+        }
+    },
+    "layer_item_info": {
+        "point_search_alongroute_pop_left_up": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "along_route_pop.xml",
+                    "poi_marker_info": "marker_info_along_route_pop_left_up",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "bg_div": "global_image_along_bubble_left_top_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "左上飘"
+        },
+        "point_search_alongroute_pop_left_down": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "along_route_pop.xml",
+                    "poi_marker_info": "marker_info_along_route_pop_left_down",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "bg_div": "global_image_along_bubble_left_bottom_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 1,
+            "name_cn": "左下飘"
+        },
+        "point_search_alongroute_pop_right_down": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "along_route_pop.xml",
+                    "poi_marker_info": "marker_info_along_route_pop_right_down",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "bg_div": "global_image_along_bubble_right_bottom_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 2,
+            "name_cn": "右下飘"
+        },
+        "point_search_alongroute_pop_right_up": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "along_route_pop.xml",
+                    "poi_marker_info": "marker_info_along_route_pop_right_up",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "bg_div": "global_image_along_bubble_right_top_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 3,
+            "name_cn": "右上飘"
+        }
+    }
+}

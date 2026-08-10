@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topRightRadius="@dimen/custom_charge_tab_bg_corner_top_right_normal_night" android:bottomRightRadius="@dimen/custom_charge_tab_bg_corner_bottom_right_normal_night" />
+    <solid android:color="@color/custom_charge_tab_bg_solid_normal_night" />
+</shape>

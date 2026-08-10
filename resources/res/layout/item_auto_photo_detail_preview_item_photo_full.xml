@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingEnd="@dimen/auto_dimen2_12">
+    <com.autonavi.skin.view.SkinImageView
+        android:id="@+id/siv_photo_bg"
+        android:background="@drawable/photo_detail_preview_day_bg_selector"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:background4Night="@drawable/photo_detail_preview_night_bg_selector"
+        app:background4Skin="@drawable/photo_detail_preview_day_bg_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.autonavi.skin.view.SkinImageFilterView
+        android:id="@+id/preview_photo_item"
+        android:background="@drawable/search_item_photo_default_day"
+        android:layout_width="@dimen/auto_dimen2_128"
+        android:layout_height="@dimen/auto_dimen2_72"
+        android:layout_marginTop="@dimen/auto_dimen2_2"
+        android:layout_marginBottom="@dimen/auto_dimen2_2"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="@dimen/auto_dimen2_2"
+        android:layout_marginEnd="@dimen/auto_dimen2_2"
+        app:background4Night="@drawable/search_item_photo_default_night"
+        app:background4Skin="@drawable/search_item_photo_default_day"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:round="@dimen/auto_dimen2_8"/>
+</com.autonavi.skin.view.SkinConstraintLayout>

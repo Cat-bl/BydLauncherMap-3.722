@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="@dimen/byd_pvt_sidebar_wide_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/tabIcon_wide" android:layout_width="@dimen/byd_pvt_sidebar_tab_icon_WH" android:layout_height="@dimen/byd_pvt_sidebar_tab_icon_HT" android:layout_marginStart="@dimen/byd_pvt_sidebar_icon_margin_start_wide" android:layout_marginEnd="@dimen/byd_pvt_sidebar_icon_margin_end_wide" />
+    <TextView android:textAppearance="@style/BydSideBarTabViewTextStyle" android:gravity="start" android:id="@id/tabTitle_wide" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/byd_pvt_sidebar_title_margin_top_wide" android:layout_marginBottom="@dimen/byd_pvt_sidebar_title_margin_bottom_wide" android:minHeight="@dimen/byd_pvt_sidebar_title_min_height" android:layout_marginEnd="@dimen/byd_pvt_sidebar_title_margin_end_wide" />
+</LinearLayout>

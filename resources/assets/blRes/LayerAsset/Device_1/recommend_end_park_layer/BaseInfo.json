@@ -1,0 +1,21 @@
+{
+    "id": 2505,
+    "layer_priority": {
+        "draw_priority": 140,
+        "sub_priority": 1305
+    },
+    "quadrant_layer_rect_avoid": {
+        "type": 26,
+        "area_threshold": 0.2
+    },
+    "layer_scale": {
+        "min_scale": 10,
+        "max_scale": 22
+    },
+    "layer_filter": {
+        "enable": 0,
+        "type": -1
+    },
+    "enable_click": 1,
+    "item": "PointLayerItem"
+}

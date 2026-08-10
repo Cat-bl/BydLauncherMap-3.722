@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/custom_plate_number_green_bg_inner_corner_disabled_night" />
+    <solid android:color="@color/custom_plate_number_green_bg_inner_solid_disabled_night" />
+    <stroke android:width="@dimen/custom_plate_number_green_bg_inner_strokewidth_disabled_night" android:color="@color/custom_plate_number_green_bg_inner_strokecolor_disabled_night" />
+</shape>

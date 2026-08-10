@@ -1,0 +1,21 @@
+{
+    "marker_info": {},
+    "layer_item_info": {
+        "point_eagle_start": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_hawkeye_start"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "鹰眼起点"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/byd_setting_log_dialog_btn_line_night"/>
+            <corners
+                android:bottomLeftRadius="@dimen/auto_dimen2_12"
+                android:bottomRightRadius="@dimen/auto_dimen2_12"/>
+        </shape>
+    </item>
+    <item
+        android:left="1px"
+        android:top="1px"
+        android:right="1px">
+        <shape>
+            <solid android:color="@color/byd_setting_log_dialog_btn_bg_pressed_night"/>
+            <corners
+                android:bottomLeftRadius="@dimen/auto_dimen2_12"
+                android:bottomRightRadius="@dimen/auto_dimen2_12"/>
+        </shape>
+    </item>
+</layer-list>

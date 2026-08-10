@@ -1,0 +1,33 @@
+{
+    "marker_info": {
+        "marker_info_route_energy_empty": {
+            "anchor": 5,
+            "day_style": {
+                "color": [
+                    {
+                        "energy_text": "#ffffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "energy_text": "#e8ffffff"
+                    }
+                ]
+            }
+        }
+    },
+    "layer_item_info": {
+        "point_route_energy_empty": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "",
+                    "poi_marker_info": "marker_info_route_energy_empty"
+                }
+            },
+            "index": 0,
+            "name_cn": "电量耗尽点"
+        }
+    }
+}

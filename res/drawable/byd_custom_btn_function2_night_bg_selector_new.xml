@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/auto_dimen2_10" />
+            <solid android:color="@color/byd_custom_color_normal_btn_bg_pressed_night" />
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/auto_dimen2_10" />
+            <solid android:color="@color/byd_custom_color_normal_btn_bg_selected_night" />
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/auto_dimen2_10" />
+            <solid android:color="@color/byd_custom_color_normal_btn_bg_unable_night" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/auto_dimen2_10" />
+            <solid android:color="@color/byd_custom_color_normal_btn_bg_normal_night" />
+        </shape>
+    </item>
+</selector>

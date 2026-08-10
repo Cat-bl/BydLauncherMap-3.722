@@ -1,0 +1,31 @@
+.class public final Ll/a/o2/f;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final a:Ll/a/o2/g0;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Ll/a/o2/g0;
+
+    const-string v1, "CLOSED"
+
+    invoke-direct {v0, v1}, Ll/a/o2/g0;-><init>(Ljava/lang/String;)V
+
+    sput-object v0, Ll/a/o2/f;->a:Ll/a/o2/g0;
+
+    return-void
+.end method
+
+.method public static final synthetic a()Ll/a/o2/g0;
+    .locals 1
+
+    sget-object v0, Ll/a/o2/f;->a:Ll/a/o2/g0;
+
+    return-object v0
+.end method

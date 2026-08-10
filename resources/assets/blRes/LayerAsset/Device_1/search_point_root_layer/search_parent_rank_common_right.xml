@@ -1,0 +1,23 @@
+<div id="click_hotspot" style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-top:10px;margin-right:10px;margin-bottom:10px;margin-left:10px;width:auto;height:auto;">
+  <image id="type_image" style="width:45px;height:54px;is_main:Y;" src="global_image_navi_delicacy_icon2_day_night" />
+  <div id="div_line_all" style="display:flex;flex-direction:column;justify-content:center;align-items:flex-start;margin-top:-3px;margin-bottom:0px;margin-left:8px;">
+    <label id="name_text" style="font-size:22px;color:#171717;font-family:SDK_Font-Medium;text-stroke:2px #E6ffffff;line-clamp:2;max-width:180px;line-spacing:-4;" lines="1">北京天安门东大街美食</label>
+    <div id="div_line_second" style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-top:-2px;">
+      <div id="div_line_score" style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-right:6px;">
+        <image id="score_icon" style="margin-bottom:3px;width:19px;height:19px;" src="global_image_navi_score_icon_day_night" />
+        <label id="score_text" style="margin-left:2px;font-size:18px;color:#ff6543;font-family:SDK_Font-Medium;text-stroke:2px #E6ffffff;line-clamp:2;" lines="1">4.8</label>
+      </div>
+      <div id="div_rank" style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-right:6px;">
+        <image id="rank_image" style="margin-bottom:1px;width:19px;height:19px;" src="global_image_navi_rank_icon_day_night" />
+        <label id="rank_text" style="margin-left:2px;font-size:18px;color:#ff6543;font-family:SDK_Font-Medium;text-stroke:2px #E6ffffff;line-clamp:2;" lines="1">入选榜单</label>
+      </div>
+      <div id="div_line_price" style="display:flex;flex-direction:row;justify-content:center;align-items:baseline;">
+        <label id="id_currency" style="margin-right:2px;font-size:18px;color:#99000000;font-family:SDK_Font-Medium;text-stroke:2px #E6ffffff;line-clamp:2;" lines="1">¥</label>
+        <label id="id_price" style="margin-right:2px;font-size:18px;color:#99000000;font-family:SDK_Font-Medium;text-stroke:2px #E6ffffff;line-clamp:2;" lines="1">128</label>
+        <label id="id_unit_person" style="font-size:18px;color:#99000000;font-family:SDK_Font-Medium;text-stroke:2px #E6ffffff;line-clamp:2;" lines="1">/人</label>
+        <label id="id_unit_rise" style="font-size:18px;color:#99000000;font-family:SDK_Font-Medium;text-stroke:2px #E6ffffff;line-clamp:2;" lines="1">起</label>
+      </div>
+    </div>
+  </div>
+</div>
+

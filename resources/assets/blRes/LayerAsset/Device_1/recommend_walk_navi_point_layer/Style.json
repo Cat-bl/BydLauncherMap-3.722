@@ -1,0 +1,32 @@
+{
+    "marker_info": {
+    },
+    "layer_item_info": {
+        "point_recommend_walk_navi_point": {
+            "index": 0,
+            "name_cn": "推荐步导线点",
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_guide_finish_walking_day_night"
+                            }
+                        ]
+                    }
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_guide_finish_walking_day_night"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

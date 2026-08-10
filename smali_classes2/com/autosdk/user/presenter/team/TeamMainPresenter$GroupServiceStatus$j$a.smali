@@ -1,0 +1,47 @@
+.class public Lcom/autosdk/user/presenter/team/TeamMainPresenter$GroupServiceStatus$j$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/autosdk/user/presenter/team/TeamMainPresenter$GroupServiceStatus$j;->run()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Lcom/autosdk/user/presenter/team/TeamMainPresenter$GroupServiceStatus$j;
+
+
+# direct methods
+.method public constructor <init>(Lcom/autosdk/user/presenter/team/TeamMainPresenter$GroupServiceStatus$j;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/autosdk/user/presenter/team/TeamMainPresenter$GroupServiceStatus$j$a;->a:Lcom/autosdk/user/presenter/team/TeamMainPresenter$GroupServiceStatus$j;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 1
+
+    invoke-static {}, Lf/h/c/m0/j;->j()Lf/h/c/m0/j;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lf/h/c/m0/j;->d()V
+
+    return-void
+.end method

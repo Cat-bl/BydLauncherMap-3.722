@@ -1,0 +1,544 @@
+{
+    "marker_info": {
+        "marker_info_road_facilities": {
+            "anchor": 9,
+            "x_ratio": 0.5,
+            "y_ratio": 0.935
+        },
+        "marker_info_road_facilities_ferry": {
+            "anchor": 9,
+            "x_ratio": 0.5,
+            "y_ratio": 0.935,
+            "vector": 0
+        }
+    },
+    "layer_item_info": {
+        "cruise_facilities_left_in": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_left_in"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "左侧车辆交汇处"
+        },
+        "cruise_facilities_right_in": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_right_in"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 1,
+            "name_cn": "右侧车辆交汇处"
+        },
+        "cruise_facilities_bends": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_left_sharp_turn"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 2,
+            "name_cn": "向左急弯路"
+        },
+        "cruise_facilities_the_wind": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_the_wind"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 3,
+            "name_cn": "横风区"
+        },
+        "cruise_facilities_continuous_curve": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_continuous_curve"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 4,
+            "name_cn": "连续弯路"
+        },
+        "cruise_facilities_accident_prone_sections": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_accident_prone_sections"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 5,
+            "name_cn": "注意危险"
+        },
+        "cruise_facilities_right_falling_rocks": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_right_falling_rocks"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 6,
+            "name_cn": "右侧落石"
+        },
+        "cruise_facilities_left_falling_rocks": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_left_falling_rocks"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 7,
+            "name_cn": "左侧落石"
+        },
+        "cruise_facilities_railway_crossing": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_railway_crossing"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 8,
+            "name_cn": "铁路道口"
+        },
+        "cruise_facilities_easy_slip_road": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_easy_slip_road"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 9,
+            "name_cn": "路段易滑"
+        },
+        "cruise_facilities_village": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_village"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 10,
+            "name_cn": "村庄"
+        },
+        "cruise_facilities_left_lane_narrowing": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_left_lane_narrowing"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 11,
+            "name_cn": "左侧变窄"
+        },
+        "cruise_facilities_right_lane_narrowing": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_right_lane_narrowing"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 12,
+            "name_cn": "右侧变窄"
+        },
+        "cruise_facilities_lane_narrowing_on_both_sides": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_lane_narrowing_on_both_sides"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 13,
+            "name_cn": "道路两侧变窄"
+        },
+        "cruise_facilities_service_area": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_service_area"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 14,
+            "name_cn": "服务区"
+        },
+        "cruise_facilities_school": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_school"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 15,
+            "name_cn": "学校"
+        },
+        "cruise_facilities_sharp_turn_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_right_sharp_turn"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 16,
+            "name_cn": "向右急弯路"
+        },
+        "cruise_facilities_no_overtaking": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_no_overtaking"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 17,
+            "name_cn": "禁止超车"
+        },
+        "cruise_facilities_narrow_bridge": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_narrow_bridge"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 18,
+            "name_cn": "窄桥"
+        },
+        "cruise_facilities_detour_left_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_detour_left_right"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 19,
+            "name_cn": "左右绕行"
+        },
+        "cruise_facilities_detour_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_detour_left"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 20,
+            "name_cn": "左侧绕行"
+        },
+        "cruise_facilities_detour_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_detour_right"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 21,
+            "name_cn": "右侧绕行"
+        },
+        "cruise_facilities_mountain_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_mountain_left"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 22,
+            "name_cn": "左侧靠山险路"
+        },
+        "cruise_facilities_mountain_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_mountain_right"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 23,
+            "name_cn": "右侧靠山险路"
+        },
+        "cruise_facilities_upper_slope": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_upper_slope"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 24,
+            "name_cn": "上陡坡"
+        },
+        "cruise_facilities_down_slope": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_down_slope"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 25,
+            "name_cn": "下陡坡"
+        },
+        "cruise_facilities_through_water": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_through_water"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 26,
+            "name_cn": "过水路面"
+        },
+        "cruise_facilities_bumpy_road": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_bumpy_road"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 27,
+            "name_cn": "路面不平"
+        },
+        "cruise_facilities_slow_down": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_slow_down"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 28,
+            "name_cn": "慢行"
+        },
+        "cruise_facilities_tunnel": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_tunnel"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 29,
+            "name_cn": "隧道"
+        },
+        "cruise_facilities_ferry": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities_ferry",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "auto_ic_road_facilities_ferry"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 30,
+            "name_cn": "渡口"
+        }
+    }
+}

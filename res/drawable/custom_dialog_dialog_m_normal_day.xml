@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/custom_dialog_dialog_m_corner_normal_day" />
+    <stroke android:width="@dimen/custom_dialog_dialog_m_strokewidth_normal_day" android:color="#ff444444" />
+    <gradient android:startColor="#ff1f1f1f" android:endColor="#ff131313" android:angle="90.0" android:centerX="0.5" />
+</shape>

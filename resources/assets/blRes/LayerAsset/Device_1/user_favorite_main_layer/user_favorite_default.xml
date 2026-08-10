@@ -1,0 +1,5 @@
+<div id="click_hotspot" style="display:flex;flex-direction:row;justify-content:center;align-items:center;width:auto;height:auto;">
+  <image id="icon_image" style="width:31px;height:37px;" src="global_image_auto_ic_home2_layer_day_night" />
+  <label id="name_text" style="margin-left:8px;font-size:21px;color:#de7800;font-family:SDK_Font-Medium;text-stroke:2px #E6ffffff;line-clamp:2;" lines="1">家</label>
+</div>
+

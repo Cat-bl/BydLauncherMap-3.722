@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="@dimen/custom_index_number_bg_corner_normal_night"/>
+    <solid android:color="@color/custom_index_number_bg_solid_normal_night"/>
+    <stroke
+        android:width="@dimen/custom_index_number_bg_strokewidth_normal_night"
+        android:color="@color/custom_index_number_bg_strokecolor_normal_night"/>
+</shape>

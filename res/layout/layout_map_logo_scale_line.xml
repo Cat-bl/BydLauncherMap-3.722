@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.autonavi.view.custom.CustomAutoScaleLineView android:id="@id/casl_scale_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/auto_dimen2_6" app:layout_constraintBottom_toTopOf="@id/ca_autologo" app:layout_constraintEnd_toEndOf="@id/ca_autologo" />
+    <com.autonavi.view.custom.CustomAutologoView android:id="@id/ca_autologo" android:background="@color/auto_map_light_logo_bg" android:layout_width="@dimen/auto_dimen2_48" android:layout_height="@dimen/auto_dimen2_12" android:layout_marginBottom="@dimen/auto_dimen2_24" android:tint="@color/byd_search_text_night_55" android:layout_marginEnd="@dimen/auto_dimen2_24" app:background4Night="@color/auto_map_dark_logo_bg" app:background4Skin="@color/auto_map_light_logo_bg" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+</merge>

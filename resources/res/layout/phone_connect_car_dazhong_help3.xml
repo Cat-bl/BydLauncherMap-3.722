@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.autonavi.skin.view.SkinImageView
+        android:id="@+id/phone_connect_car_dazhong_help3_siv"
+        android:background="@drawable/img_interconnection_dazhong_help3_land"
+        app:background4Night="@drawable/img_interconnection_dazhong_help3_night_land"
+        app:background4Skin="@drawable/img_interconnection_dazhong_help3_land"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/style_interconnection_img2_land"/>
+    <com.autonavi.skin.view.SkinLinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/phone_connect_car_dazhong_help3_siv"
+        style="@style/style_interconnection_tip_land">
+        <com.autonavi.skin.view.SkinTextView
+            android:id="@+id/connect_net_flag"
+            android:text="3"
+            style="@style/style_interconnection_step"/>
+        <com.autonavi.skin.view.SkinTextView
+            android:id="@+id/phone_connect_car_dazhong_help3_tip"
+            android:text="@string/interconnection_meituan_help3_tip"
+            style="@style/style_interconnection_tip_text"/>
+    </com.autonavi.skin.view.SkinLinearLayout>
+</com.autonavi.skin.view.SkinConstraintLayout>

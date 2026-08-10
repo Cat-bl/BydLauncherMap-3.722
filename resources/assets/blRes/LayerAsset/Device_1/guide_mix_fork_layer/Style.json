@@ -1,0 +1,288 @@
+{
+    "marker_info": {
+        "marker_info_mix_fork_left": {
+            "anchor": 9,
+            "x_ratio": 0.9,
+            "y_ratio": 0.784
+        },
+        "marker_info_mix_fork_right": {
+            "anchor": 9,
+            "x_ratio": 0.092,
+            "y_ratio": 0.784
+        }
+    },
+    "layer_item_info": {
+        "point_guide_mix_fork_left_day1": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_mix_fork_left",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_mix_fork_marker_left_day1"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "左飘1 白天"
+        },
+        "point_guide_mix_fork_left_day2": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_mix_fork_left",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_mix_fork_marker_left_day2"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 1,
+            "name_cn": "左飘2 白天"
+        },
+        "point_guide_mix_fork_left_day3": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_mix_fork_left",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_mix_fork_marker_left_day3"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 2,
+            "name_cn": "左飘3 白天"
+        },
+        "point_guide_mix_fork_left_day4": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_mix_fork_left",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_mix_fork_marker_left_day4"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 3,
+            "name_cn": "左飘4 白天"
+        },
+        "point_guide_mix_fork_right_day1": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_mix_fork_right",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_mix_fork_marker_right_day1"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 4,
+            "name_cn": "右飘1 白天"
+        },
+        "point_guide_mix_fork_right_day2": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_mix_fork_right",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_mix_fork_marker_right_day2"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 5,
+            "name_cn": "右飘2 白天"
+        },
+        "point_guide_mix_fork_right_day3": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_mix_fork_right",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_mix_fork_marker_right_day3"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 6,
+            "name_cn": "右飘3 白天"
+        },
+        "point_guide_mix_fork_right_day4": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_mix_fork_right",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_mix_fork_marker_right_day4"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 7,
+            "name_cn": "右飘4 白天"
+        },
+        "point_guide_mix_fork_left_night1": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_mix_fork_left",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_mix_fork_marker_left_night1"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 8,
+            "name_cn": "左飘1 黑夜"
+        },
+        "point_guide_mix_fork_left_night2": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_mix_fork_left",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_mix_fork_marker_left_night2"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 9,
+            "name_cn": "左飘2 黑夜"
+        },
+        "point_guide_mix_fork_left_night3": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_mix_fork_left",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_mix_fork_marker_left_night3"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 10,
+            "name_cn": "左飘3 黑夜"
+        },
+        "point_guide_mix_fork_left_night4": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_mix_fork_left",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_mix_fork_marker_left_night4"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 11,
+            "name_cn": "左飘4 黑夜"
+        },
+        "point_guide_mix_fork_right_night1": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_mix_fork_right",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_mix_fork_marker_right_night1"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 12,
+            "name_cn": "右飘1 黑夜"
+        },
+        "point_guide_mix_fork_right_night2": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_mix_fork_right",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_mix_fork_marker_right_night2"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 13,
+            "name_cn": "右飘2 黑夜"
+        },
+        "point_guide_mix_fork_right_night3": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_mix_fork_right",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_mix_fork_marker_right_night3"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 14,
+            "name_cn": "右飘3 黑夜"
+        },
+        "point_guide_mix_fork_right_night4": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_mix_fork_right",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_mix_fork_marker_right_night4"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 15,
+            "name_cn": "右飘4 黑夜"
+        }
+    }
+}

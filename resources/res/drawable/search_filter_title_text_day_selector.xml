@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_checked="false"
+        android:color="@color/auto_color_929DA7"/>
+    <item
+        android:state_checked="true"
+        android:color="@color/text_450_11_textcolor_day_normal"/>
+</selector>

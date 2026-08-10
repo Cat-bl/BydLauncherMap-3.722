@@ -1,0 +1,11 @@
+<div id="click_hotspot" style="display:flex;flex-direction:row;justify-content:flex-end;align-items:center;margin-top:10px;margin-right:10px;margin-bottom:10px;margin-left:10px;width:auto;height:auto;">
+  <div id="div_line_all" style="display:flex;flex-direction:column;justify-content:center;align-items:flex-end;margin-top:-3px;margin-right:8px;margin-bottom:0px;">
+    <label id="name_text" style="font-size:22px;color:#171717;text-align:right;font-family:SDK_Font-Medium;text-stroke:2px #E6ffffff;max-width:180px;line-clamp:2;line-spacing:-4;" lines="1">洗车店文案最长可以显示两行的内容</label>
+    <div id="div_line_second" style="display:flex;flex-direction:row;justify-content:flex-end;align-items:center;margin-top:-3px;">
+      <label id="id_currency" style="margin-top:2px;font-size:14px;color:#ff6543;font-family:SDK_Font-Medium;text-stroke:2px #E6ffffff;" lines="1">¥</label>
+      <label id="id_price" style="margin-right:3px;margin-left:3px;font-size:18px;color:#ff6543;font-family:SDK_Font-Bold;text-stroke:2px #E6ffffff;text-overflow:ellipsis;" lines="1">60</label>
+      <label id="id_less" style="margin-top:2px;font-size:14px;color:#ff6543;font-family:SDK_Font-Medium;text-stroke:2px #E6ffffff;" lines="1">起</label>
+    </div>
+  </div>
+  <image id="carwash_image" style="width:45px;height:54px;is_main:Y;" src="global_image_navi_along_search_wash_icon2_day_night" />
+</div>

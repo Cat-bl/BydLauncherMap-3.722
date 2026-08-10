@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/auto_dimen2_24"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/setting_item_map_theme_left" android:layout_width="@dimen/auto_dimen2_574" android:layout_height="@dimen/auto_dimen2_166" android:layout_marginEnd="@dimen/auto_dimen2_24" app:layout_constraintStart_toStartOf="parent" layout="@layout/fragment_setting_theme_item2" />
+    <include android:id="@id/setting_item_map_theme_right" android:layout_width="@dimen/auto_dimen2_574" android:layout_height="@dimen/auto_dimen2_166" app:layout_constraintEnd_toEndOf="parent" layout="@layout/fragment_setting_theme_item2" />
+</com.autonavi.skin.view.SkinLinearLayout>

@@ -1,0 +1,17 @@
+{
+    "marker_info": {},
+    "layer_item_info": {
+        "raster_image_style": {
+            "raster_image_layer_item_style": {
+                "winx": 24,
+                "winy": 224,
+                "width": 464,
+                "height": 352,
+                "bg_marker_id": "global_image_cross_background_day_night",
+                "marker_id": 50000
+            },
+            "index": 0,
+            "name_cn": "栅格图"
+        }
+    }
+}

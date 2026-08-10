@@ -1,0 +1,8 @@
+{
+	"layer_priority":	{
+		"draw_priority":	100,
+		"sub_priority":	1500
+	},
+	"enable_click":	0,
+	"item":	"LineLayerItem"
+}

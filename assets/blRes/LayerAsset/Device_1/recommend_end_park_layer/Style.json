@@ -1,0 +1,784 @@
+{
+    "marker_info": {
+        "marker_info_search_recommend_end_park_point_left": {
+            "anchor": 5,
+            "day_style": {
+                "color": [
+                    {
+                        "name_text": "#E6000000"
+                    },
+                    {
+                        "parking_info_number_text": "#3278FF"
+                    },
+                    {
+                        "parking_info_unit_text": "#3278FF"
+                    },
+                    {
+                        "parking_info_word_text": "#3278FF"
+                    },
+                    {
+                        "parking_info_walk_text": "#99000000"
+                    },
+                    {
+                        "parking_info_walk_number_text": "#99000000"
+                    },
+                    {
+                        "parking_info_walk_unit_text": "#99000000"
+                    },
+                    {
+                        "parking_label_idle_text": "#1A66FF"
+                    },
+                    {
+                        "parking_label_idle_number_text": "#1A66FF"
+                    },
+                    {
+                        "parking_label_idle_title_text": "#801A66FF"
+                    },
+                    {
+                        "parking_label_idle_number_all_text": "#801A66FF"
+                    },
+                    {
+                        "parking_label_enough_text": "#1A66FF"
+                    },
+                    {
+                        "parking_label_charge_text": "#5A6270"
+                    },
+                    {
+                        "parking_label_no_enough_text": "#F62020"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_number_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_unit_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_word_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_walk_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_walk_number_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_walk_unit_text": "2px #E6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "name_text": "#C0C1C3"
+                    },
+                    {
+                        "parking_info_number_text": "#3D73D9"
+                    },
+                    {
+                        "parking_info_unit_text": "#3D73D9"
+                    },
+                    {
+                        "parking_info_word_text": "#3D73D9"
+                    },
+                    {
+                        "parking_info_walk_text": "#73FFFFFF"
+                    },
+                    {
+                        "parking_info_walk_number_text": "#73FFFFFF"
+                    },
+                    {
+                        "parking_info_walk_unit_text": "#73FFFFFF"
+                    },
+                    {
+                        "parking_label_idle_text": "#2E7AFF"
+                    },
+                    {
+                        "parking_label_idle_number_text": "#2E7AFF"
+                    },
+                    {
+                        "parking_label_idle_title_text": "#802E7AFF"
+                    },
+                    {
+                        "parking_label_idle_number_all_text": "#802E7AFF"
+                    },
+                    {
+                        "parking_label_enough_text": "#2E7AFF"
+                    },
+                    {
+                        "parking_label_charge_text": "#5E6572"
+                    },
+                    {
+                        "parking_label_no_enough_text": "#E8584C"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_number_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_unit_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_word_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_walk_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_walk_number_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_walk_unit_text": "2px #CC000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_search_recommend_end_park_point_focus": {
+            "anchor": 5,
+            "day_style": {
+                "color": [
+                    {
+                        "name_text": "#E6000000"
+                    },
+                    {
+                        "parking_info_number_text": "#3278FF"
+                    },
+                    {
+                        "parking_info_unit_text": "#3278FF"
+                    },
+                    {
+                        "parking_info_word_text": "#3278FF"
+                    },
+                    {
+                        "parking_info_walk_text": "#99000000"
+                    },
+                    {
+                        "parking_info_walk_number_text": "#99000000"
+                    },
+                    {
+                        "parking_info_walk_unit_text": "#99000000"
+                    },
+                    {
+                        "parking_label_idle_text": "#1A66FF"
+                    },
+                    {
+                        "parking_label_idle_number_text": "#1A66FF"
+                    },
+                    {
+                        "parking_label_idle_title_text": "#801A66FF"
+                    },
+                    {
+                        "parking_label_idle_number_all_text": "#801A66FF"
+                    },
+                    {
+                        "parking_label_enough_text": "#1A66FF"
+                    },
+                    {
+                        "parking_label_charge_text": "#5A6270"
+                    },
+                    {
+                        "parking_label_no_enough_text": "#F62020"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_number_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_unit_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_word_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_walk_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_walk_number_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_walk_unit_text": "2px #E6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "name_text": "#C0C1C3"
+                    },
+                    {
+                        "parking_info_number_text": "#3D73D9"
+                    },
+                    {
+                        "parking_info_unit_text": "#3D73D9"
+                    },
+                    {
+                        "parking_info_word_text": "#3D73D9"
+                    },
+                    {
+                        "parking_info_walk_text": "#73FFFFFF"
+                    },
+                    {
+                        "parking_info_walk_number_text": "#73FFFFFF"
+                    },
+                    {
+                        "parking_info_walk_unit_text": "#73FFFFFF"
+                    },
+                    {
+                        "parking_label_idle_text": "#2E7AFF"
+                    },
+                    {
+                        "parking_label_idle_number_text": "#2E7AFF"
+                    },
+                    {
+                        "parking_label_idle_title_text": "#802E7AFF"
+                    },
+                    {
+                        "parking_label_idle_number_all_text": "#802E7AFF"
+                    },
+                    {
+                        "parking_label_enough_text": "#2E7AFF"
+                    },
+                    {
+                        "parking_label_charge_text": "#5E6572"
+                    },
+                    {
+                        "parking_label_no_enough_text": "#E8584C"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_number_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_unit_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_word_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_walk_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_walk_number_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_walk_unit_text": "2px #CC000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_search_recommend_end_park_point_right": {
+            "anchor": 5,
+            "day_style": {
+                "color": [
+                    {
+                        "name_text": "#E6000000"
+                    },
+                    {
+                        "parking_info_number_text": "#3278FF"
+                    },
+                    {
+                        "parking_info_unit_text": "#3278FF"
+                    },
+                    {
+                        "parking_info_word_text": "#3278FF"
+                    },
+                    {
+                        "parking_info_walk_text": "#99000000"
+                    },
+                    {
+                        "parking_info_walk_number_text": "#99000000"
+                    },
+                    {
+                        "parking_info_walk_unit_text": "#99000000"
+                    },
+                    {
+                        "parking_label_idle_text": "#1A66FF"
+                    },
+                    {
+                        "parking_label_idle_number_text": "#1A66FF"
+                    },
+                    {
+                        "parking_label_idle_title_text": "#801A66FF"
+                    },
+                    {
+                        "parking_label_idle_number_all_text": "#801A66FF"
+                    },
+                    {
+                        "parking_label_enough_text": "#1A66FF"
+                    },
+                    {
+                        "parking_label_charge_text": "#5A6270"
+                    },
+                    {
+                        "parking_label_no_enough_text": "#F62020"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_number_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_unit_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_word_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_walk_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_walk_number_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_walk_unit_text": "2px #E6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "name_text": "#C0C1C3"
+                    },
+                    {
+                        "parking_info_number_text": "#3D73D9"
+                    },
+                    {
+                        "parking_info_unit_text": "#3D73D9"
+                    },
+                    {
+                        "parking_info_word_text": "#3D73D9"
+                    },
+                    {
+                        "parking_info_walk_text": "#73FFFFFF"
+                    },
+                    {
+                        "parking_info_walk_number_text": "#73FFFFFF"
+                    },
+                    {
+                        "parking_info_walk_unit_text": "#73FFFFFF"
+                    },
+                    {
+                        "parking_label_idle_text": "#2E7AFF"
+                    },
+                    {
+                        "parking_label_idle_number_text": "#2E7AFF"
+                    },
+                    {
+                        "parking_label_idle_title_text": "#802E7AFF"
+                    },
+                    {
+                        "parking_label_idle_number_all_text": "#802E7AFF"
+                    },
+                    {
+                        "parking_label_enough_text": "#2E7AFF"
+                    },
+                    {
+                        "parking_label_charge_text": "#5E6572"
+                    },
+                    {
+                        "parking_label_no_enough_text": "#E8584C"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_number_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_unit_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_word_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_walk_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_walk_number_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_walk_unit_text": "2px #CC000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_search_recommend_end_park_point_simple_left": {
+            "anchor": 5,
+            "day_style": {
+                "color": [
+                    {
+                        "name_text": "#E6000000"
+                    },
+                    {
+                        "parking_info_number_text": "#3278FF"
+                    },
+                    {
+                        "parking_info_unit_text": "#3278FF"
+                    },
+                    {
+                        "parking_info_word_text": "#3278FF"
+                    },
+                    {
+                        "parking_info_walk_text": "#99000000"
+                    },
+                    {
+                        "parking_info_walk_number_text": "#99000000"
+                    },
+                    {
+                        "parking_info_walk_unit_text": "#99000000"
+                    },
+                    {
+                        "parking_label_idle_text": "#1A66FF"
+                    },
+                    {
+                        "parking_label_idle_number_text": "#1A66FF"
+                    },
+                    {
+                        "parking_label_idle_title_text": "#801A66FF"
+                    },
+                    {
+                        "parking_label_idle_number_all_text": "#801A66FF"
+                    },
+                    {
+                        "parking_label_enough_text": "#1A66FF"
+                    },
+                    {
+                        "parking_label_charge_text": "#5A6270"
+                    },
+                    {
+                        "parking_label_no_enough_text": "#F62020"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_number_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_unit_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_word_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_walk_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_walk_number_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_walk_unit_text": "2px #E6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "name_text": "#C0C1C3"
+                    },
+                    {
+                        "parking_info_number_text": "#3D73D9"
+                    },
+                    {
+                        "parking_info_unit_text": "#3D73D9"
+                    },
+                    {
+                        "parking_info_word_text": "#3D73D9"
+                    },
+                    {
+                        "parking_info_walk_text": "#73FFFFFF"
+                    },
+                    {
+                        "parking_info_walk_number_text": "#73FFFFFF"
+                    },
+                    {
+                        "parking_info_walk_unit_text": "#73FFFFFF"
+                    },
+                    {
+                        "parking_label_idle_text": "#2E7AFF"
+                    },
+                    {
+                        "parking_label_idle_number_text": "#2E7AFF"
+                    },
+                    {
+                        "parking_label_idle_title_text": "#802E7AFF"
+                    },
+                    {
+                        "parking_label_idle_number_all_text": "#802E7AFF"
+                    },
+                    {
+                        "parking_label_enough_text": "#2E7AFF"
+                    },
+                    {
+                        "parking_label_charge_text": "#5E6572"
+                    },
+                    {
+                        "parking_label_no_enough_text": "#E8584C"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_number_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_unit_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_word_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_walk_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_walk_number_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_walk_unit_text": "2px #CC000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_search_recommend_end_park_point_simple_right": {
+            "anchor": 5,
+            "day_style": {
+                "color": [
+                    {
+                        "name_text": "#E6000000"
+                    },
+                    {
+                        "parking_info_number_text": "#3278FF"
+                    },
+                    {
+                        "parking_info_unit_text": "#3278FF"
+                    },
+                    {
+                        "parking_info_word_text": "#3278FF"
+                    },
+                    {
+                        "parking_info_walk_text": "#99000000"
+                    },
+                    {
+                        "parking_info_walk_number_text": "#99000000"
+                    },
+                    {
+                        "parking_info_walk_unit_text": "#99000000"
+                    },
+                    {
+                        "parking_label_idle_text": "#1A66FF"
+                    },
+                    {
+                        "parking_label_idle_number_text": "#1A66FF"
+                    },
+                    {
+                        "parking_label_idle_title_text": "#801A66FF"
+                    },
+                    {
+                        "parking_label_idle_number_all_text": "#801A66FF"
+                    },
+                    {
+                        "parking_label_enough_text": "#1A66FF"
+                    },
+                    {
+                        "parking_label_charge_text": "#5A6270"
+                    },
+                    {
+                        "parking_label_no_enough_text": "#F62020"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_number_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_unit_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_word_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_walk_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_walk_number_text": "2px #E6ffffff"
+                    },
+                    {
+                        "parking_info_walk_unit_text": "2px #E6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "name_text": "#C0C1C3"
+                    },
+                    {
+                        "parking_info_number_text": "#3D73D9"
+                    },
+                    {
+                        "parking_info_unit_text": "#3D73D9"
+                    },
+                    {
+                        "parking_info_word_text": "#3D73D9"
+                    },
+                    {
+                        "parking_info_walk_text": "#73FFFFFF"
+                    },
+                    {
+                        "parking_info_walk_number_text": "#73FFFFFF"
+                    },
+                    {
+                        "parking_info_walk_unit_text": "#73FFFFFF"
+                    },
+                    {
+                        "parking_label_idle_text": "#2E7AFF"
+                    },
+                    {
+                        "parking_label_idle_number_text": "#2E7AFF"
+                    },
+                    {
+                        "parking_label_idle_title_text": "#802E7AFF"
+                    },
+                    {
+                        "parking_label_idle_number_all_text": "#802E7AFF"
+                    },
+                    {
+                        "parking_label_enough_text": "#2E7AFF"
+                    },
+                    {
+                        "parking_label_charge_text": "#5E6572"
+                    },
+                    {
+                        "parking_label_no_enough_text": "#E8584C"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_number_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_unit_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_word_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_walk_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_walk_number_text": "2px #CC000000"
+                    },
+                    {
+                        "parking_info_walk_unit_text": "2px #CC000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_search_recommend_end_park_point_mini": {
+            "anchor": 5
+        }
+    },
+    "layer_item_info": {
+        "search_recommend_end_park_point_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_recommend_end_park_point_left.xml",
+                    "poi_marker_info": "marker_info_search_recommend_end_park_point_left"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_recommend_end_park_point_focus.xml",
+                    "poi_marker_info": "marker_info_search_recommend_end_park_point_focus"
+                }
+            },
+            "index": 0,
+            "name_cn": "行前左飘"
+        },
+        "search_recommend_end_park_point_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_recommend_end_park_point_right.xml",
+                    "poi_marker_info": "marker_info_search_recommend_end_park_point_right"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_recommend_end_park_point_focus.xml",
+                    "poi_marker_info": "marker_info_search_recommend_end_park_point_focus"
+                }
+            },
+            "index": 1,
+            "name_cn": "行前右飘"
+        },
+        "search_recommend_end_park_point_simple_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_recommend_end_park_point_simple_left.xml",
+                    "poi_marker_info": "marker_info_search_recommend_end_park_point_simple_left"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_recommend_end_park_point_focus.xml",
+                    "poi_marker_info": "marker_info_search_recommend_end_park_point_focus"
+                }
+            },
+            "index": 2,
+            "name_cn": "行中左飘"
+        },
+        "search_recommend_end_park_point_simple_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_recommend_end_park_point_simple_right.xml",
+                    "poi_marker_info": "marker_info_search_recommend_end_park_point_simple_right"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_recommend_end_park_point_focus.xml",
+                    "poi_marker_info": "marker_info_search_recommend_end_park_point_focus"
+                }
+            },
+            "index": 3,
+            "name_cn": "行中右飘"
+        },
+        "search_recommend_end_park_point_mini": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "mini_point.xml",
+                    "poi_marker_info": "marker_info_search_recommend_end_park_point_mini"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_recommend_end_park_point_focus.xml",
+                    "poi_marker_info": "marker_info_search_recommend_end_park_point_focus"
+                }
+            },
+            "index": 4,
+            "name_cn": "麻点"
+        }
+    }
+}

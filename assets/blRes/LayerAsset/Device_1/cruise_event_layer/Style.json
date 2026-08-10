@@ -1,0 +1,170 @@
+{
+    "marker_info": {
+        "marker_info_cruise_traffic_event_accident": {
+            "anchor": 12,
+            "x_offset": 19,
+            "y_offset": 19,
+            "night_style": {
+                "color": [
+                    {
+                        "event_name": "#d8d8d8"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "event_name": "#3a3a3a"
+                    }
+                ]
+            }
+        },
+        "marker_info_cruise_traffic_event_malfunction": {
+            "anchor": 12,
+            "x_offset": 19,
+            "y_offset": 19,
+            "night_style": {
+                "color": [
+                    {
+                        "event_name": "#d8d8d8"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "event_name": "#3a3a3a"
+                    }
+                ]
+            }
+        },
+        "marker_info_cruise_traffic_event_project": {
+            "anchor": 12,
+            "x_offset": 19,
+            "y_offset": 19,
+            "night_style": {
+                "color": [
+                    {
+                        "event_name": "#d8d8d8"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "event_name": "#3a3a3a"
+                    }
+                ]
+            }
+        },
+        "marker_info_cruise_traffic_event_water": {
+            "anchor": 12,
+            "x_offset": 19,
+            "y_offset": 19,
+            "night_style": {
+                "color": [
+                    {
+                        "event_name": "#d8d8d8"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "event_name": "#3a3a3a"
+                    }
+                ]
+            }
+        }
+    },
+    "layer_item_info": {
+        "cruise_traffic_event_accident": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "cruise_traffic_event.xml",
+                    "poi_marker_info": "marker_info_cruise_traffic_event_accident",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "event_image": "global_image_auto_ic_navi_traffic_event_accident_day_night"
+                            }
+                        ],
+                        "text": [
+                            {
+                                "event_name": "车祸"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "车祸"
+        },
+        "cruise_traffic_event_malfunction": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "cruise_traffic_event.xml",
+                    "poi_marker_info": "marker_info_cruise_traffic_event_malfunction",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "event_image": "global_image_auto_ic_navi_traffic_event_malfunction_day_night"
+                            }
+                        ],
+                        "text": [
+                            {
+                                "event_name": "故障"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 1,
+            "name_cn": "故障"
+        },
+        "cruise_traffic_event_project": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "cruise_traffic_event.xml",
+                    "poi_marker_info": "marker_info_cruise_traffic_event_project",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "event_image": "global_image_auto_ic_navi_traffic_event_project_day_night"
+                            }
+                        ],
+                        "text": [
+                            {
+                                "event_name": "施工"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 2,
+            "name_cn": "施工"
+        },
+        "cruise_traffic_event_water": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "cruise_traffic_event.xml",
+                    "poi_marker_info": "marker_info_cruise_traffic_event_water",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "event_image": "global_image_auto_ic_navi_traffic_event_water_day_night"
+                            }
+                        ],
+                        "text": [
+                            {
+                                "event_name": "积水"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 3,
+            "name_cn": "积水"
+        }
+    }
+}

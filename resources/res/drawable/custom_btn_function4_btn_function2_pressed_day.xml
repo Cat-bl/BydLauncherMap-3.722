@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="@dimen/custom_btn_function4_btn_function2_corner_pressed_day"/>
+            <gradient
+                android:startColor="#d37e00"
+                android:endColor="#d66600"
+                android:angle="90"
+                android:centerX="0.5"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="@dimen/custom_btn_function4_btn_function2_corner_pressed_day"/>
+            <solid android:color="@color/custom_btn_function4_btn_function2_solid1_pressed_day"/>
+        </shape>
+    </item>
+</layer-list>

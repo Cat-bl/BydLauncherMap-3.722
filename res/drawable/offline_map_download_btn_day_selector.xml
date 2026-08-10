@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape>
+            <corners android:radius="@dimen/auto_dimen2_26" />
+            <solid android:color="@color/offline_map_classify_btn_state_enabled" />
+        </shape>
+    </item>
+    <item android:state_enabled="true">
+        <shape>
+            <corners android:radius="@dimen/auto_dimen2_26" />
+            <gradient android:startColor="@color/common_normal_button_light_start_press" android:endColor="@color/common_normal_button_light_end_press" android:angle="0.0" />
+        </shape>
+    </item>
+    <item android:state_checked="true">
+        <shape>
+            <corners android:radius="@dimen/auto_dimen2_26" />
+            <gradient android:startColor="@color/common_normal_button_light_start_press" android:endColor="@color/common_normal_button_light_end_press" android:angle="0.0" />
+        </shape>
+    </item>
+</selector>

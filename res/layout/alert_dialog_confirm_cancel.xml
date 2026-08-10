@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/alertdialogcomfirm_view" android:background="@drawable/alert_dialog_confirm_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/alert_dialog_confirm_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/alertdialogconfirm_message_scroll" android:padding="@dimen/alert_dialog_confirm_message_padding" android:layout_width="fill_parent" android:layout_height="500.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/alert_dialog_confirm_btn_text_size" android:textColor="@color/alert_dialog_confirm_btn_left_text_color" android:gravity="center" android:id="@id/alertdialogconfirm_confirm" android:background="@drawable/alert_dialog_confirm_left_btn_bg" android:paddingTop="@dimen/alert_dialog_confirm_btn_padding" android:paddingBottom="@dimen/alert_dialog_confirm_btn_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="确定" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/alert_dialog_confirm_btn_text_size" android:textColor="@color/alert_dialog_confirm_btn_right_text_color" android:gravity="center" android:id="@id/alertdialogconfirm_cancel" android:background="@drawable/alert_dialog_confirm_right_btn_bg" android:paddingTop="@dimen/alert_dialog_confirm_btn_padding" android:paddingBottom="@dimen/alert_dialog_confirm_btn_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="取消" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

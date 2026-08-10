@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="@dimen/custom_btn_longtrip_3_bg_corner_top_left_normal_day" android:topRightRadius="@dimen/custom_btn_longtrip_3_bg_corner_top_right_normal_day" />
+    <solid android:color="@color/custom_btn_longtrip_3_bg_solid_normal_day" />
+</shape>

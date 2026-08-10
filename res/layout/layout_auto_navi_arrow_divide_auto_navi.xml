@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout android:id="@id/cl_auto_navi_arrow_divide" android:layout_width="fill_parent" android:layout_height="fill_parent" app:designHeight="600" app:designWidth="1024"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.autonavi.skin.view.SkinImageView android:id="@id/siv_bg" android:layout_width="@dimen/auto_dimen2_1_5" android:layout_height="@dimen/auto_navi_drive_lane_info_extend_arrow_height" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.autonavi.view.custom.CustomDashView android:id="@id/siv_arrow_divider" android:layout_width="@dimen/auto_dimen2_1_5" android:layout_height="@dimen/auto_navi_drive_lane_info_arrow_divider_height" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</com.autonavi.skin.view.SkinConstraintLayout>

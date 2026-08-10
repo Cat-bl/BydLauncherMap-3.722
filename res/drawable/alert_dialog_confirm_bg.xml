@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="@dimen/alert_dialog_confirm_corners" android:topRightRadius="@dimen/alert_dialog_confirm_corners" android:bottomLeftRadius="@dimen/alert_dialog_confirm_corners" android:bottomRightRadius="@dimen/alert_dialog_confirm_corners" />
+    <stroke android:width="1.0dip" android:color="@color/alert_dialog_confirm_stroke_color" />
+    <solid android:color="@color/alert_dialog_confirm_solid_color" />
+</shape>

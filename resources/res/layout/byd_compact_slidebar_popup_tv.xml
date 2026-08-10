@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textAppearance="@style/Sys.Compact.TextAppearance.Body1"
+    android:gravity="center"
+    android:id="@+id/compact_slide_bar_popup_tv"
+    android:background="?attr/bydPvtSlideBarPopupBg"
+    android:paddingLeft="@dimen/sys_compact_padding_m"
+    android:paddingTop="5dp"
+    android:paddingRight="@dimen/sys_compact_padding_m"
+    android:paddingBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="48dp"
+    android:layoutDirection="ltr"
+    android:paddingHorizontal="@dimen/sys_compact_padding_m"
+    android:paddingVertical="5dp"/>

@@ -1,0 +1,76 @@
+{
+    "marker_info": {
+        "marker_info_route_path_tmc_left": {
+            "anchor": 13,
+            "x_offset": 10,
+            "y_offset": 21,
+            "night_style": {
+                "color": [
+                    {
+                        "distance_text": "#f0ffffff"
+                    },
+                    {
+                        "speed_text": "#e5000000"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "distance_text": "#e5000000"
+                    },
+                    {
+                        "speed_text": "#e5000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_route_path_tmc_right": {
+            "anchor": 12,
+            "x_offset": 10,
+            "y_offset": 21,
+            "night_style": {
+                "color": [
+                    {
+                        "distance_text": "#f0ffffff"
+                    },
+                    {
+                        "speed_text": "#e5000000"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "distance_text": "#e5000000"
+                    },
+                    {
+                        "speed_text": "#e5000000"
+                    }
+                ]
+            }
+        }
+    },
+    "layer_item_info": {
+        "point_route_path_tmc_faster_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "route_path_tmc_faster_left.xml",
+                    "poi_marker_info": "marker_info_route_path_tmc_left"
+                }
+            },
+            "index": 0,
+            "name_cn": "左飘"
+        },
+        "point_route_path_tmc_faster_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "route_path_tmc_faster_right.xml",
+                    "poi_marker_info": "marker_info_route_path_tmc_right"
+                }
+            },
+            "index": 1,
+            "name_cn": "右飘"
+        }
+    }
+}

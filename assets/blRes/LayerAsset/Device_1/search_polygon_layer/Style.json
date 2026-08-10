@@ -1,0 +1,19 @@
+{
+    "marker_info": {},
+    "layer_item_info": {
+        "polygon_search_end_area": {
+            "polygon_layer_item_style": {
+                "color": "0x1a1a88ff"
+            },
+            "index": 0,
+            "name_cn": "白天"
+        },
+        "polygon_search_end_area_night": {
+            "polygon_layer_item_style": {
+                "color": "0x1a498ce0"
+            },
+            "index": 1,
+            "name_cn": "黑夜"
+        }
+    }
+}

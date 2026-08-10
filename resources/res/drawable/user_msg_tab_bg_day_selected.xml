@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient
+                android:startColor="@color/user_text_color_day"
+                android:endColor="@color/user_text_color_day"
+                android:angle="0"/>
+        </shape>
+    </item>
+    <item android:bottom="@dimen/auto_dimen2_4">
+        <shape>
+            <gradient
+                android:startColor="#f2f7fa"
+                android:endColor="#e0eaf5"
+                android:angle="0"
+                android:centerX="0.5"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:topLeftRadius="@dimen/custom_ar_btn_cruise_bg_corner_top_left_pressed_night" android:topRightRadius="@dimen/custom_ar_btn_cruise_bg_corner_top_right_pressed_night" android:bottomRightRadius="@dimen/custom_ar_btn_cruise_bg_corner_bottom_right_pressed_night" />
+            <gradient android:startColor="#80000000" android:endColor="#4d000000" android:angle="90.0" android:centerX="0.5" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:topLeftRadius="@dimen/custom_ar_btn_cruise_bg_corner_top_left_pressed_night" android:topRightRadius="@dimen/custom_ar_btn_cruise_bg_corner_top_right_pressed_night" android:bottomRightRadius="@dimen/custom_ar_btn_cruise_bg_corner_bottom_right_pressed_night" />
+            <solid android:color="@color/custom_ar_btn_cruise_bg_solid1_pressed_night" />
+        </shape>
+    </item>
+</layer-list>

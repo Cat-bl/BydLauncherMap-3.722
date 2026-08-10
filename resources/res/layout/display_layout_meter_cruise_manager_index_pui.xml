@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_cruise_manager"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:designHeight="600"
+    app:designWidth="1024">
+    <com.autonavi.view.custom.CustomMeterCruiseTrafficLaneView
+        android:id="@+id/cctl_traffic_lane"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/auto_dimen2_32"
+        android:layout_marginTop="@dimen/auto_dimen2_116"
+        android:layout_marginStart="@dimen/auto_dimen2_85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shadowDayNightStyle="1"
+        app:skinDayNightExtraStyle="true"/>
+</com.autonavi.skin.view.SkinConstraintLayout>

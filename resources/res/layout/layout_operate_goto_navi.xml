@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:id="@+id/cl_item_area"
+    android:background="@drawable/byd_custom_normal_btn_bg_selector_day"
+    android:layout_width="@dimen/auto_dimen2_160"
+    android:layout_height="@dimen/auto_dimen2_48"
+    app:background4Night="@drawable/byd_custom_normal_btn_bg_selector_night"
+    app:background4Skin="@drawable/byd_custom_normal_btn_bg_selector_day"
+    app:tag="DisableAtRunTime">
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <com.autonavi.skin.view.SkinImageView
+        android:id="@+id/siv_history_item_plus_view_btn"
+        android:layout_width="@dimen/auto_dimen2_48"
+        android:layout_height="@dimen/auto_dimen2_48"
+        android:src="@drawable/search_list_item_nav_icon_day"
+        android:tint="@color/auto_search_direction_text_color_selector_day"
+        app:tint4Night="@color/auto_search_direction_text_color_selector"
+        app:tint4Skin="@color/auto_search_direction_text_color_selector_day"/>
+    <com.autonavi.skin.view.SkinTextView
+        android:textSize="@dimen/auto_font_size_18"
+        android:textColor="@color/byd_custom_normal_btn_text_color_selector_day"
+        android:gravity="center"
+        android:id="@+id/stv_text_navi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/auto_navi_text_go_here"
+        android:layout_marginEnd="@dimen/sys_padding_m"
+        app:textColor4Night="@color/byd_custom_normal_btn_text_color_selector_night"
+        app:textColor4Skin="@color/byd_custom_normal_btn_text_color_selector_day"/>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</com.autonavi.skin.view.SkinLinearLayout>

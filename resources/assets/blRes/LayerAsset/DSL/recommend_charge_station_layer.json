@@ -1,0 +1,939 @@
+{
+  "data": {
+    "type": "adaptor_point",
+    "brief": "推荐充电站图元数据",
+    "value": [],
+    "rule": [
+      {
+        "brief": "填充",
+        "type": "data_user_if",
+        "value": {
+          "biz_data": "user_padding",
+          "condition": {
+            "fact": true,
+            "operator": "equal",
+            "value": true
+          },
+          "case": {
+            "true": "/"
+          }
+        }
+      },
+      {
+        "brief": "空余",
+        "type": "data_user_if",
+        "value": {
+          "biz_data": "user_idle",
+          "condition": {
+            "fact": true,
+            "operator": "equal",
+            "value": true
+          },
+          "case": {
+            "true": "空"
+          }
+        }
+      },
+      {
+        "type": "data_duplicate",
+        "brief": "数据去重",
+        "value": [
+          "$item_data.position.lon",
+          "$item_data.position.lat"
+        ]
+      }
+    ]
+  },
+  "biz": [
+    {
+      "brief": "设置图元优先级是否升序",
+      "type": "biz_item_priority_asc",
+      "value": false
+    },
+    {
+      "brief": "设置多飘向图层避让算法",
+      "type": "biz_set_avoid_algorithm",
+      "value": 2
+    },
+    {
+      "brief": "设置是否可点击",
+      "type": "biz_set_clickable",
+      "value": true
+    },
+    {
+      "brief": "设置图层优先级",
+      "type": "biz_set_priority",
+      "value": {
+        "draw_priority": 140,
+        "sub_priority": 3630
+      }
+    },
+    {
+      "brief": "设置是否开启底图避让",
+      "type": "biz_is_poi_filter",
+      "value": {
+        "enable": true,
+        "type": 4294967295
+      }
+    },
+    {
+      "brief": "设置是否是多象限图层",
+      "type": "biz_is_quadrant_layer",
+      "value": {
+        "type": 26,
+        "area_threshold": 0.3
+      }
+    },
+    {
+      "brief": "设置是否图层内碰撞",
+      "type": "biz_is_collision",
+      "value": true
+    }
+  ],
+  "style": {
+    "style_name": {
+      "prefix_name": "",
+      "rule": [
+        {
+          "brief": "样式规则",
+          "type": "style_if",
+          "value": {
+            "condition": {
+              "fact": "$biz_data.is_simple_style",
+              "operator": "equal",
+              "value": true
+            },
+            "case": {
+              "true": {
+                "switch": {
+                  "condition": "$item_data.quadrantType",
+                  "case": {
+                    "1": "point_recommend_charge_station_simple_left",
+                    "10": "point_recommend_charge_station_mini_point",
+                    "default": "point_recommend_charge_station_simple_right"
+                  }
+                }
+              },
+              "false": {
+                "switch": {
+                  "condition": "$item_data.quadrantType",
+                  "case": {
+                    "1": "point_recommend_charge_station_left",
+                    "10": "point_recommend_charge_station_mini_point",
+                    "default": "point_recommend_charge_station_right"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "dynamic_marker": {
+      "rule": [
+        {
+          "brief": "更新样式",
+          "type": "marker_switch",
+          "value": {
+            "marker_id": [
+              "recommend_charge_station_left.xml",
+              "recommend_charge_station_focus.xml",
+              "recommend_charge_station_right.xml",
+              "recommend_charge_station_simple_left.xml",
+              "recommend_charge_station_simple_right.xml"
+            ],
+            "condition": "$item_data.quadrantType",
+            "case": {
+              "default": [
+                {
+                  "if": {
+                    "condition": {
+                      "func": {
+                        "name": "StringLength",
+                        "param": {
+                          "value": "$biz_data.name"
+                        }
+                      },
+                      "operator": "gt",
+                      "value": 0
+                    },
+                    "case": {
+                      "true": {
+                        "id": "name_text",
+                        "display": true,
+                        "value": "$biz_data.name"
+                      },
+                      "false": {
+                        "id": "name_text",
+                        "display": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "func": {
+                        "name": "StringLength",
+                        "param": {
+                          "value": "$biz_data.distance_info.description"
+                        }
+                      },
+                      "operator": "gt",
+                      "value": 0
+                    },
+                    "case": {
+                      "true": {
+                        "id": "charge_info_walk_text",
+                        "display": true,
+                        "value": "$biz_data.distance_info.description"
+                      },
+                      "false": {
+                        "id": "charge_info_walk_text",
+                        "display": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "any": [
+                        {
+                          "func": {
+                            "name": "StringLength",
+                            "param": {
+                              "value": "$biz_data.distance_info.distance_kilometer"
+                            }
+                          },
+                          "operator": "gt",
+                          "value": 0
+                        },
+                        {
+                          "func": {
+                            "name": "StringLength",
+                            "param": {
+                              "value": "$biz_data.distance_info.distance_meter"
+                            }
+                          },
+                          "operator": "gt",
+                          "value": 0
+                        },
+                        {
+                          "func": {
+                            "name": "StringLength",
+                            "param": {
+                              "value": "$biz_data.distance_info.time_hour"
+                            }
+                          },
+                          "operator": "gt",
+                          "value": 0
+                        },
+                        {
+                          "func": {
+                            "name": "StringLength",
+                            "param": {
+                              "value": "$biz_data.distance_info.time_minute"
+                            }
+                          },
+                          "operator": "gt",
+                          "value": 0
+                        }
+                      ]
+                    },
+                    "case": {
+                      "true": [
+                        {
+                          "id": "charge_info_walk_div",
+                          "display": true
+                        },
+                        {
+                          "if": {
+                            "condition": {
+                              "any": [
+                                {
+                                  "func": {
+                                    "name": "StringLength",
+                                    "param": {
+                                      "value": "$biz_data.distance_info.distance_kilometer"
+                                    }
+                                  },
+                                  "operator": "gt",
+                                  "value": 0
+                                },
+                                {
+                                  "func": {
+                                    "name": "StringLength",
+                                    "param": {
+                                      "value": "$biz_data.distance_info.distance_meter"
+                                    }
+                                  },
+                                  "operator": "gt",
+                                  "value": 0
+                                }
+                              ]
+                            },
+                            "case": {
+                              "true": {
+                                "if": {
+                                  "condition": {
+                                    "func": {
+                                      "name": "StringLength",
+                                      "param": {
+                                        "value": "$biz_data.distance_info.distance_kilometer"
+                                      }
+                                    },
+                                    "operator": "gt",
+                                    "value": 0
+                                  },
+                                  "case": {
+                                    "true": [
+                                      {
+                                        "id": "charge_info_walk_number_text",
+                                        "display": true,
+                                        "value": "$biz_data.distance_info.distance_kilometer"
+                                      },
+                                      {
+                                        "id": "charge_info_walk_unit_text",
+                                        "display": true,
+                                        "value": "BlRes::string::kilometers"
+                                      }
+                                    ],
+                                    "false": [
+                                      {
+                                        "id": "charge_info_walk_number_text",
+                                        "display": true,
+                                        "value": "$biz_data.distance_info.distance_meter"
+                                      },
+                                      {
+                                        "id": "charge_info_walk_unit_text",
+                                        "display": true,
+                                        "value": "BlRes::string::meters"
+                                      }
+                                    ]
+                                  }
+                                }
+                              },
+                              "false": [
+                                {
+                                  "id": "charge_info_walk_number_text",
+                                  "display": false
+                                },
+                                {
+                                  "id": "charge_info_walk_unit_text",
+                                  "display": false
+                                },
+                                {
+                                  "id": "charge_info_walk_point_text",
+                                  "display": false
+                                }
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "if": {
+                            "condition": {
+                              "any": [
+                                {
+                                  "func": {
+                                    "name": "StringLength",
+                                    "param": {
+                                      "value": "$biz_data.distance_info.time_hour"
+                                    }
+                                  },
+                                  "operator": "gt",
+                                  "value": 0
+                                },
+                                {
+                                  "func": {
+                                    "name": "StringLength",
+                                    "param": {
+                                      "value": "$biz_data.distance_info.time_minute"
+                                    }
+                                  },
+                                  "operator": "gt",
+                                  "value": 0
+                                }
+                              ]
+                            },
+                            "case": {
+                              "true": [
+                                {
+                                  "if": {
+                                    "condition": {
+                                      "func": {
+                                        "name": "StringLength",
+                                        "param": {
+                                          "value": "$biz_data.distance_info.time_hour"
+                                        }
+                                      },
+                                      "operator": "gt",
+                                      "value": 0
+                                    },
+                                    "case": {
+                                      "true": [
+                                        {
+                                          "id": "charge_info_walk_hour_number_text",
+                                          "display": true,
+                                          "value": "$biz_data.distance_info.time_hour"
+                                        },
+                                        {
+                                          "id": "charge_info_walk_hour_unit_text",
+                                          "display": true,
+                                          "value": "BlRes::string::hours"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "id": "charge_info_walk_hour_number_text",
+                                          "display": false
+                                        },
+                                        {
+                                          "id": "charge_info_walk_hour_unit_text",
+                                          "display": false
+                                        }
+                                      ]
+                                    }
+                                  }
+                                },
+                                {
+                                  "if": {
+                                    "condition": {
+                                      "func": {
+                                        "name": "StringLength",
+                                        "param": {
+                                          "value": "$biz_data.distance_info.time_minute"
+                                        }
+                                      },
+                                      "operator": "gt",
+                                      "value": 0
+                                    },
+                                    "case": {
+                                      "true": [
+                                        {
+                                          "id": "charge_info_walk_minute_number_text",
+                                          "display": true,
+                                          "value": "$biz_data.distance_info.time_minute"
+                                        },
+                                        {
+                                          "id": "charge_info_walk_minute_unit_text",
+                                          "display": true,
+                                          "value": "BlRes::string::minutes"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "id": "charge_info_walk_minute_number_text",
+                                          "display": false
+                                        },
+                                        {
+                                          "id": "charge_info_walk_minute_unit_text",
+                                          "display": false
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ],
+                              "false": [
+                                {
+                                  "id": "charge_info_walk_hour_number_text",
+                                  "display": false
+                                },
+                                {
+                                  "id": "charge_info_walk_hour_unit_text",
+                                  "display": false
+                                },
+                                {
+                                  "id": "charge_info_walk_minute_number_text",
+                                  "display": false
+                                },
+                                {
+                                  "id": "charge_info_walk_minute_unit_text",
+                                  "display": false
+                                },
+                                {
+                                  "id": "charge_info_walk_point_text",
+                                  "display": false
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ],
+                      "false": {
+                        "id": "charge_info_walk_div",
+                        "display": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "any": [
+                        {
+                          "fact": "$biz_data.charge_station_info.super_info.free",
+                          "operator": "gt",
+                          "value": 0
+                        },
+                        {
+                          "fact": "$biz_data.charge_station_info.super_info.total",
+                          "operator": "gt",
+                          "value": 0
+                        },
+                        {
+                          "fact": "$biz_data.charge_station_info.fast_info.free",
+                          "operator": "gt",
+                          "value": 0
+                        },
+                        {
+                          "fact": "$biz_data.charge_station_info.fast_info.total",
+                          "operator": "gt",
+                          "value": 0
+                        },
+                        {
+                          "fact": "$biz_data.charge_station_info.slow_info.free",
+                          "operator": "gt",
+                          "value": 0
+                        },
+                        {
+                          "fact": "$biz_data.charge_station_info.slow_info.total",
+                          "operator": "gt",
+                          "value": 0
+                        }
+                      ]
+                    },
+                    "case": {
+                      "true": [
+                        {
+                          "if": {
+                            "condition": {
+                              "any": [
+                                {
+                                  "fact": "$biz_data.charge_station_info.super_info.free",
+                                  "operator": "gt",
+                                  "value": 0
+                                },
+                                {
+                                  "fact": "$biz_data.charge_station_info.super_info.total",
+                                  "operator": "gt",
+                                  "value": 0
+                                }
+                              ]
+                            },
+                            "case": {
+                              "true": [
+                                {
+                                  "id": "charge_label_super_div",
+                                  "display": true
+                                },
+                                {
+                                  "if": {
+                                    "condition": {
+                                      "all": [
+                                        {
+                                          "fact": "$biz_data.charge_station_info.super_info.free",
+                                          "operator": "gt",
+                                          "value": 0
+                                        },
+                                        {
+                                          "fact": "$biz_data.charge_station_info.super_info.total",
+                                          "operator": "gt",
+                                          "value": 0
+                                        }
+                                      ]
+                                    },
+                                    "case": {
+                                      "true": [
+                                        {
+                                          "id": "charge_label_super_idle_text",
+                                          "display": true,
+                                          "value": "$biz_data.user_idle"
+                                        },
+                                        {
+                                          "id": "charge_label_super_number_text",
+                                          "display": true,
+                                          "value": "$biz_data.charge_station_info.super_info.free"
+                                        },
+                                        {
+                                          "id": "charge_label_super_unit_text",
+                                          "display": true,
+                                          "value": "$biz_data.user_padding"
+                                        },
+                                        {
+                                          "id": "charge_label_super_full_text",
+                                          "display": true,
+                                          "value": "$biz_data.charge_station_info.super_info.total"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "id": "charge_label_super_unit_text",
+                                          "display": false
+                                        },
+                                        {
+                                          "id": "charge_label_super_full_text",
+                                          "display": false
+                                        },
+                                        {
+                                          "if": {
+                                            "condition": {
+                                              "fact": "$biz_data.charge_station_info.super_info.free",
+                                              "operator": "gt",
+                                              "value": 0
+                                            },
+                                            "case": {
+                                              "true": [
+                                                {
+                                                  "id": "charge_label_super_idle_text",
+                                                  "display": true,
+                                                  "value": "$biz_data.user_idle"
+                                                },
+                                                {
+                                                  "id": "charge_label_super_number_text",
+                                                  "display": true,
+                                                  "value": "$biz_data.charge_station_info.super_info.free"
+                                                }
+                                              ],
+                                              "false": [
+                                                {
+                                                  "id": "charge_label_super_idle_text",
+                                                  "display": true,
+                                                  "value": "BlRes::string::in_total"
+                                                },
+                                                {
+                                                  "id": "charge_label_super_number_text",
+                                                  "display": true,
+                                                  "value": "$biz_data.charge_station_info.super_info.total"
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ],
+                              "false": {
+                                "id": "charge_label_super_div",
+                                "display": false
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "if": {
+                            "condition": {
+                              "any": [
+                                {
+                                  "fact": "$biz_data.charge_station_info.fast_info.free",
+                                  "operator": "gt",
+                                  "value": 0
+                                },
+                                {
+                                  "fact": "$biz_data.charge_station_info.fast_info.total",
+                                  "operator": "gt",
+                                  "value": 0
+                                }
+                              ]
+                            },
+                            "case": {
+                              "true": [
+                                {
+                                  "if": {
+                                    "condition": {
+                                      "all": [
+                                        {
+                                          "fact": "$biz_data.charge_station_info.fast_info.free",
+                                          "operator": "gt",
+                                          "value": 0
+                                        },
+                                        {
+                                          "fact": "$biz_data.charge_station_info.fast_info.total",
+                                          "operator": "gt",
+                                          "value": 0
+                                        }
+                                      ]
+                                    },
+                                    "case": {
+                                      "true": [
+                                        {
+                                          "id": "charge_label_fast_idle_text",
+                                          "display": true,
+                                          "value": "$biz_data.user_idle"
+                                        },
+                                        {
+                                          "id": "charge_label_fast_number_text",
+                                          "display": true,
+                                          "value": "$biz_data.charge_station_info.fast_info.free"
+                                        },
+                                        {
+                                          "id": "charge_label_fast_unit_text",
+                                          "display": true,
+                                          "value": "$biz_data.user_padding"
+                                        },
+                                        {
+                                          "id": "charge_label_fast_full_text",
+                                          "display": true,
+                                          "value": "$biz_data.charge_station_info.fast_info.total"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "id": "charge_label_fast_unit_text",
+                                          "display": false
+                                        },
+                                        {
+                                          "id": "charge_label_fast_full_text",
+                                          "display": false
+                                        },
+                                        {
+                                          "if": {
+                                            "condition": {
+                                              "fact": "$biz_data.charge_station_info.fast_info.free",
+                                              "operator": "gt",
+                                              "value": 0
+                                            },
+                                            "case": {
+                                              "true": [
+                                                {
+                                                  "id": "charge_label_fast_idle_text",
+                                                  "display": true,
+                                                  "value": "$biz_data.user_idle"
+                                                },
+                                                {
+                                                  "id": "charge_label_fast_number_text",
+                                                  "display": true,
+                                                  "value": "$biz_data.charge_station_info.fast_info.free"
+                                                }
+                                              ],
+                                              "false": [
+                                                {
+                                                  "id": "charge_label_fast_idle_text",
+                                                  "display": true,
+                                                  "value": "BlRes::string::in_total"
+                                                },
+                                                {
+                                                  "id": "charge_label_fast_number_text",
+                                                  "display": true,
+                                                  "value": "$biz_data.charge_station_info.fast_info.total"
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "charge_label_fast_div",
+                                  "display": true
+                                }
+                              ],
+                              "false": {
+                                "id": "charge_label_fast_div",
+                                "display": false
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "if": {
+                            "condition": {
+                              "any": [
+                                {
+                                  "fact": "$biz_data.charge_station_info.slow_info.free",
+                                  "operator": "gt",
+                                  "value": 0
+                                },
+                                {
+                                  "fact": "$biz_data.charge_station_info.slow_info.total",
+                                  "operator": "gt",
+                                  "value": 0
+                                }
+                              ]
+                            },
+                            "case": {
+                              "true": [
+                                {
+                                  "id": "charge_label_slow_div",
+                                  "display": true
+                                },
+                                {
+                                  "if": {
+                                    "condition": {
+                                      "all": [
+                                        {
+                                          "fact": "$biz_data.charge_station_info.slow_info.free",
+                                          "operator": "gt",
+                                          "value": 0
+                                        },
+                                        {
+                                          "fact": "$biz_data.charge_station_info.slow_info.total",
+                                          "operator": "gt",
+                                          "value": 0
+                                        }
+                                      ]
+                                    },
+                                    "case": {
+                                      "true": [
+                                        {
+                                          "id": "charge_label_slow_idle_text",
+                                          "display": true,
+                                          "value": "$biz_data.user_idle"
+                                        },
+                                        {
+                                          "id": "charge_label_slow_number_text",
+                                          "display": true,
+                                          "value": "$biz_data.charge_station_info.slow_info.free"
+                                        },
+                                        {
+                                          "id": "charge_label_slow_unit_text",
+                                          "display": true,
+                                          "value": "$biz_data.user_padding"
+                                        },
+                                        {
+                                          "id": "charge_label_slow_full_text",
+                                          "display": true,
+                                          "value": "$biz_data.charge_station_info.slow_info.total"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "id": "charge_label_slow_unit_text",
+                                          "display": false
+                                        },
+                                        {
+                                          "id": "charge_label_slow_full_text",
+                                          "display": false
+                                        },
+                                        {
+                                          "if": {
+                                            "condition": {
+                                              "fact": "$biz_data.charge_station_info.slow_info.free",
+                                              "operator": "gt",
+                                              "value": 0
+                                            },
+                                            "case": {
+                                              "true": [
+                                                {
+                                                  "id": "charge_label_slow_idle_text",
+                                                  "display": true,
+                                                  "value": "$biz_data.user_idle"
+                                                },
+                                                {
+                                                  "id": "charge_label_slow_number_text",
+                                                  "display": true,
+                                                  "value": "$biz_data.charge_station_info.slow_info.free"
+                                                }
+                                              ],
+                                              "false": [
+                                                {
+                                                  "id": "charge_label_slow_idle_text",
+                                                  "display": true,
+                                                  "value": "BlRes::string::in_total"
+                                                },
+                                                {
+                                                  "id": "charge_label_slow_number_text",
+                                                  "display": true,
+                                                  "value": "$biz_data.charge_station_info.slow_info.total"
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ],
+                              "false": {
+                                "id": "charge_label_slow_div",
+                                "display": false
+                              }
+                            }
+                          }
+                        }
+                      ],
+                      "false": {
+                        "id": "charge_label_div",
+                        "display": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "all": [
+                        {
+                          "any": [
+                            {
+                              "fact": "$biz_data.charge_station_info.super_info.free",
+                              "operator": "gt",
+                              "value": 0
+                            },
+                            {
+                              "fact": "$biz_data.charge_station_info.super_info.total",
+                              "operator": "gt",
+                              "value": 0
+                            }
+                          ]
+                        },
+                        {
+                          "any": [
+                            {
+                              "fact": "$biz_data.charge_station_info.fast_info.free",
+                              "operator": "gt",
+                              "value": 0
+                            },
+                            {
+                              "fact": "$biz_data.charge_station_info.fast_info.total",
+                              "operator": "gt",
+                              "value": 0
+                            }
+                          ]
+                        },
+                        {
+                          "any": [
+                            {
+                              "fact": "$biz_data.charge_station_info.slow_info.free",
+                              "operator": "gt",
+                              "value": 0
+                            },
+                            {
+                              "fact": "$biz_data.charge_station_info.slow_info.total",
+                              "operator": "gt",
+                              "value": 0
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "case": {
+                      "true": {
+                        "id": "charge_label_slow_div",
+                        "display": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "abstract": {
+    "brief": "推荐充电站",
+    "name": "recommend_charge_station_layer",
+    "biz_type": 2501,
+    "update_card": false
+  },
+  "dataSource": "[{\"item_data\":{\"id\":\"\",\"position\":{\"lon\":116.356796,\"lat\":39.939559,\"z\":0}},\"biz_data\":{\"is_simple_style\":false,\"name\":\"推荐1:充电站1\",\"distance_info\":{\"description\":\"多\",\"distance_kilometer\":1,\"distance_meter\":12,\"time_hour\":34,\"time_minute\":56},\"charge_station_info\":{\"super_info\":{\"free\":3,\"total\":4},\"fast_info\":{\"free\":5,\"total\":6},\"slow_info\":{\"free\":7,\"total\":8}}}}]"
+}

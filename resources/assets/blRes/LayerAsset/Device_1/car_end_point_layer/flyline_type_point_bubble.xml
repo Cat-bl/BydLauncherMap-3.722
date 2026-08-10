@@ -1,0 +1,4 @@
+<div id="click_flyline_type_point_bubble" style="display:flex;flex-direction:row;justify-content:center;align-items:center;width:auto;height:auto;">
+  <image id="background_type_dynamic" style="width:70px;height:80px;" src="global_image_normalse_poi_day_night" />
+  <image id="poi_type_dynamic" style="width:48px;height:48px;position:absolute;top:8px;left:11px;right:11px;" src="global_image_poi_common_day_night" />
+</div>

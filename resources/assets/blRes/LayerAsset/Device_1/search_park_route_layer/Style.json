@@ -1,0 +1,95 @@
+{
+    "marker_info": {
+        "marker_info_point_center_up": {
+            "anchor": 9,
+            "x_ratio": 0.5,
+            "y_ratio": 0.9
+        }
+    },
+    "layer_item_info": {
+        "point_search_parkroute_1": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_autonavi_car_parking_1_day_night"
+                            }
+                        ]
+                    }
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_autonavi_car_parking_big_1_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "停车场1"
+        },
+        "point_search_parkroute_2": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_autonavi_car_parking_2_day_night"
+                            }
+                        ]
+                    }
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_autonavi_car_parking_big_2_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 1,
+            "name_cn": "停车场2"
+        },
+        "point_search_parkroute_3": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_autonavi_car_parking_3_day_night"
+                            }
+                        ]
+                    }
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_autonavi_car_parking_big_3_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 2,
+            "name_cn": "停车场3"
+        }
+    }
+}

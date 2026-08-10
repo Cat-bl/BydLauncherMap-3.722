@@ -1,0 +1,90 @@
+{
+    "marker_info": {
+        "marker_info_route_via_point": {
+            "anchor": 5,
+            "image_style": {
+                "via_image_dynamic":{
+                    "route_via":"global_image_bubble_midd_day_night",
+                    "route_via_invalid":"global_image_bubble_midd_invalid_day_night"
+                }
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "text_chinese": "#ffffff"
+                    },
+                    {
+                        "text_english": "#ffffff"
+                    },
+                    {
+                        "text_number": "#ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "text_chinese": "#e6ffffff"
+                    },
+                    {
+                        "text_english": "#e6ffffff"
+                    },
+                    {
+                        "text_number": "#e6ffffff"
+                    }
+                ]
+            }
+        },
+        "marker_info_route_via_point_focus": {
+            "anchor": 5,
+            "image_style": {
+                "via_image_dynamic":{
+                    "route_via":"global_image_bubble_midd_big_day_night",
+                    "route_via_invalid":"global_image_bubble_midd_big_invalid_day_night"
+                }
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "text_chinese": "#ffffff"
+                    },
+                    {
+                        "text_english": "#ffffff"
+                    },
+                    {
+                        "text_number": "#ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "text_chinese": "#e6ffffff"
+                    },
+                    {
+                        "text_english": "#e6ffffff"
+                    },
+                    {
+                        "text_number": "#e6ffffff"
+                    }
+                ]
+            }
+        }
+    },
+    "layer_item_info": {
+        "point_route_via": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "route_via_point.xml",
+                    "poi_marker_info": "marker_info_route_via_point"
+                },
+                "focus_style": {
+                    "poi_marker_id": "route_via_point_focus.xml",
+                    "poi_marker_info": "marker_info_route_via_point_focus"
+                }
+            },
+            "index": 4,
+            "name_cn": "途经点"
+        }
+    }
+}

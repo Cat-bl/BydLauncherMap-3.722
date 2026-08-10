@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="false"
+        android:drawable="@drawable/icon_setting_dark_navigation_speed_false_night_denza"/>
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/icon_setting_navigation_speed_selected_dark_denza"/>
+    <item android:drawable="@drawable/icon_setting_navigation_speed_unselected_dark_denza"/>
+</selector>

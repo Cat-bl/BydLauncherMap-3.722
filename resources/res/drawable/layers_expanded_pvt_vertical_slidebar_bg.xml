@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:gravity="center_vertical"
+        android:id="@android:id/background">
+        <shape>
+            <corners android:radius="@dimen/sys_expanded_border_radius_s"/>
+            <solid android:color="?attr/bydPvtVerticalSlideBarBgColor"/>
+            <stroke
+                android:width="2dp"
+                android:color="@color/sel_pvt_vertical_slidebar_stroke_color"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="center_vertical"
+        android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="@dimen/sys_expanded_border_radius_s"/>
+                <solid android:color="?attr/bydPvtSlideBarProgressFocusedColor"/>
+                <stroke
+                    android:width="2dp"
+                    android:color="@color/sel_pvt_vertical_slidebar_stroke_color"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

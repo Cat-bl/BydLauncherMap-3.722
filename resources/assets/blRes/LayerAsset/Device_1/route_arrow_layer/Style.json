@@ -1,0 +1,47 @@
+{
+    "marker_info": {},
+    "layer_item_info": {
+        "arrow_route_arrow_style": {
+            "arrow_layer_item_style": {
+                "arrow_fine_texture_info": {
+                    "head_angle": 60.0,
+                    "width": 9.0,
+                    "head_width_ratio": 2.2,
+                    "height_width_ratio": 0.7,
+                    "hang_width_ratio": 0.4,
+                    "purfle_width_ratio_1": 0.1,
+                    "purfle_width_ratio_2": 0.18,
+                    "shadow_purfle_width_ratio": 0.6,
+                    "purfle_color_1": "0xff0046c6",
+                    "purfle_color_2": "0xff266ffd",
+                    "surface_color": "0xffffffff",
+                    "wall_color": "0xff3b7eff",
+                    "shadow_color": "0x99000000"
+                }
+            },
+            "index": 0,
+            "name_cn": "白天"
+        },
+        "arrow_route_arrow_style_night": {
+            "arrow_layer_item_style": {
+                "arrow_fine_texture_info": {
+                    "head_angle": 60.0,
+                    "width": 9.0,
+                    "head_width_ratio": 2.2,
+                    "height_width_ratio": 0.7,
+                    "hang_width_ratio": 0.4,
+                    "purfle_width_ratio_1": 0.1,
+                    "purfle_width_ratio_2": 0.18,
+                    "shadow_purfle_width_ratio": 0.6,
+                    "purfle_color_1": "0xff0043be",
+                    "purfle_color_2": "0xff2c69d9",
+                    "surface_color": "0xffe5e7eb",
+                    "wall_color": "0xff3f78e0",
+                    "shadow_color": "0x66000000"
+                }
+            },
+            "index": 1,
+            "name_cn": "黑夜"
+        }
+    }
+}

@@ -1,0 +1,8 @@
+<div id="search_child_bus_station" style="display:flex;flex-direction:row-reverse;justify-content:center;align-items:center;">
+  <div style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;margin-left:-12px;width:auto;background-image:global_image_station_text_day_night;min-height:26px;">
+    <label id="child_name" style="margin-right:10px;margin-left:4px;font-size:14px;color:#f19737;font-family:SDK_Font-Medium;" lines="1">B站台</label>
+  </div>
+  <image style="width:24px;height:24px;" src="global_image_station_icon_day_night" />
+  <image id="click_bubble_station_image" style="width:66px;height:78px;is_main:Y;position:absolute;top:-62px;left:-22px;" src="global_image_bubble_child2_day_night" />
+</div>
+

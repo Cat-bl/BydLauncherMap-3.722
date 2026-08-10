@@ -1,0 +1,8 @@
+{
+    "id": 3006,
+    "layer_priority": {
+        "draw_priority": 140,
+        "sub_priority": 10000
+    },
+    "item":	"PointLayerItem"
+}

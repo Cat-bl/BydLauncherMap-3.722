@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_auto_search_result_listview_item_gridview_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:designHeight="600"
+    app:designWidth="1024">
+    <com.autonavi.skin.view.SkinTextView
+        android:textSize="@dimen/auto_font_size_18"
+        android:textColor="@color/byd_custom_normal_btn_text_color_selector_day"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/stv_text_classify_name"
+        android:background="@drawable/byd_custom_normal_btn_bg_selector_day"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/auto_dimen2_40"
+        android:text="@string/auto_search_result_map_text_item"
+        android:singleLine="true"
+        app:background4Night="@drawable/byd_custom_normal_btn_bg_selector_night"
+        app:background4Skin="@drawable/byd_custom_normal_btn_bg_selector_day"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textColor4Night="@color/byd_custom_normal_btn_text_color_selector_night"
+        app:textColor4Skin="@color/byd_custom_normal_btn_text_color_selector_day"/>
+</com.autonavi.skin.view.SkinConstraintLayout>

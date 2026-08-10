@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="@dimen/custom_btn_suspension1_btn_suspension1_corner_pressed_night" />
+            <gradient android:startColor="#ff101011" android:endColor="#e6050505" android:angle="90.0" android:centerX="0.5" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="@dimen/custom_btn_suspension1_btn_suspension1_corner_pressed_night" />
+            <solid android:color="@color/custom_btn_suspension1_btn_suspension1_solid1_pressed_night" />
+        </shape>
+    </item>
+</layer-list>

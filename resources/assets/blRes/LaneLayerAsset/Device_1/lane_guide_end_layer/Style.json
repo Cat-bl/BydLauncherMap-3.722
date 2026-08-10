@@ -1,0 +1,140 @@
+{
+    "layer_item_info": {
+        "point_lane_guide_end_left_up": {
+            "index": 0,
+            "name_cn": "左侧车道级终点",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "marker_style": {
+                        "display": [
+                            {
+                                "name_right": "none"
+                            },
+                            {
+                                "icon_num": "none"
+                            }
+                        ]
+                    },
+                    "poi_marker_id": "lane_guide_location_mark_shared_lr.xml",
+                    "poi_marker_info": "marker_info_lane_guide_end_left"
+                }
+            }
+        },
+        "point_lane_guide_end_right_up": {
+            "index": 0,
+            "name_cn": "右侧车道级终点",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "marker_style": {
+                        "display": [
+                            {
+                                "name_left": "none"
+                            },
+                            {
+                                "icon_num": "none"
+                            }
+                        ]
+                    },
+                    "poi_marker_id": "lane_guide_location_mark_shared_lr.xml",
+                    "poi_marker_info": "marker_info_lane_guide_end_right"
+                }
+            }
+        }
+    },
+    "marker_info": {
+        "marker_info_lane_guide_end_left": {
+            "anchor": 13,
+            "day_style": {
+                "color": [
+                    {
+                        "icon_cn": "#FFFFFF"
+                    },
+                    {
+                        "icon_en": "#FFFFFF"
+                    },
+                    {
+                        "name_left": "#E6000000"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_left": "2px #E6FFFFFF"
+                    }
+                ]
+            },
+            "image_style": {
+                "bg": {
+                    "src": "global_image_autonavi_lane_bubble_location_mark_destination_day_night"
+                }
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "icon_cn": "#CCFFFFFF"
+                    },
+                    {
+                        "icon_en": "#CCFFFFFF"
+                    },
+                    {
+                        "name_left": "#C0C1C3"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_left": "2px #CC000000"
+                    }
+                ]
+            },
+            "x_offset": 21,
+            "y_offset": 0
+        },
+        "marker_info_lane_guide_end_right": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "icon_cn": "#FFFFFF"
+                    },
+                    {
+                        "icon_en": "#FFFFFF"
+                    },
+                    {
+                        "name_right": "#E6000000"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_right": "2px #E6FFFFFF"
+                    }
+                ]
+            },
+            "image_style": {
+                "bg": {
+                    "src": "global_image_autonavi_lane_bubble_location_mark_destination_day_night"
+                }
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "icon_cn": "#CCFFFFFF"
+                    },
+                    {
+                        "icon_en": "#CCFFFFFF"
+                    },
+                    {
+                        "name_right": "#C0C1C3"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_right": "2px #CC000000"
+                    }
+                ]
+            },
+            "x_offset": 21,
+            "y_offset": 0
+        }
+    }
+}

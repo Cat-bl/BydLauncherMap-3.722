@@ -1,0 +1,59 @@
+{
+    "marker_info": {
+        "map_walking_navi_line": {
+            "anchor": 4,
+            "repeat": 1,
+            "pre_mul_alpha": 1
+        }
+    },
+    "layer_item_info": {
+        "polyline_recommend_walking_navi": {
+            "line_layer_item_style": {
+                "use_cap": 0,
+                "use_color": 0,
+                "draw_cover": 1,
+                "use_point": 1,
+                "can_be_coveredbylabel": 0,
+                "point_distance": 16,
+                "fill_texture": {
+                    "marker_id": "map_walking_navi_line",
+                    "color": "0xff3278FF",
+                    "width": 18
+                },
+                "texture_info": {
+                    "x1": 0,
+                    "y1": 0,
+                    "x2": 1,
+                    "y2": 1,
+                    "texture_len": 0
+                }
+            },
+            "index": 0,
+            "name_cn": "白天"
+        },
+        "polyline_recommend_walking_navi_night": {
+            "line_layer_item_style": {
+                "use_cap": 0,
+                "use_color": 0,
+                "draw_cover": 1,
+                "use_point": 1,
+                "can_be_coveredbylabel": 0,
+                "point_distance": 16,
+                "fill_texture": {
+                    "marker_id": "map_walking_navi_line",
+                    "color": "0xff3278FF",
+                    "width": 18
+                },
+                "texture_info": {
+                    "x1": 0,
+                    "y1": 0,
+                    "x2": 1,
+                    "y2": 1,
+                    "texture_len": 0
+                }
+            },
+            "index": 1,
+            "name_cn": "黑夜"
+        }
+    }
+}

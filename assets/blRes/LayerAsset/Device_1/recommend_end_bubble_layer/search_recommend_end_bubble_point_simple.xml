@@ -1,0 +1,17 @@
+<div id="click_bg_div" style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-bottom:38px;width:auto;height:89px;background-image:global_image_route_recommend_info_bg_simple_day_night;">
+  <div id="icon_div" style="display:flex;flex-direction:row-reverse;justify-content:center;align-items:center;margin-right:12px;margin-left:8px;">
+    <image id="charge_icon" style="margin-right:-4px;margin-left:-4px;width:36px;height:36px;" src="global_image_route_recommend_icon_charge_day_night" />
+    <image id="parking_icon" style="margin-right:-4px;margin-left:-4px;width:36px;height:36px;" src="global_image_route_recommend_icon_parking_day_night" />
+  </div>
+  <div id="parking_condition_div" style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-right:16px;">
+    <div id="parking_recommend_div" style="display:flex;flex-direction:row;justify-content:center;align-items:center;">
+      <label id="parking_recommend_text" style="font-size:22px;color:#1a66ff;font-family:SDK_Font-Medium;" lines="1">推荐停车场</label>
+      <image id="parking_recommend_back_icon" style="margin-left:5px;width:10px;height:16px;" src="global_image_route_recommend_icon_back_blue_day_night" />
+    </div>
+    <div id="parking_difficult_div" style="display:flex;flex-direction:row;justify-content:center;align-items:center;">
+      <label id="parking_difficult_text" style="font-size:22px;color:#f62020;font-family:SDK_Font-Medium;" lines="1">较难停车</label>
+      <image id="parking_difficult_back_icon" style="margin-left:5px;width:10px;height:16px;" src="global_image_route_recommend_icon_back_red_day_night" />
+    </div>
+    <div id="parking_no_queue_div" style="display:flex;flex-direction:row;justify-content:center;align-items:center;"><label id="parking_no_queue_text" style="font-size:22px;color:#2dc150;font-family:SDK_Font-Medium;" lines="1">预计不排队</label></div>
+  </div>
+</div>

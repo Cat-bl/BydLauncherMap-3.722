@@ -1,0 +1,234 @@
+{
+    "marker_info": {
+        "marker_info_three_urgent_over_speed_left_up": {
+            "anchor": 13,
+            "x_offset": 7,
+            "y_offset": 13,
+            "day_style": {
+                "color": [
+                    {
+                        "passing_speed": "#ffffff"
+                    },
+                    {
+                        "passing_speed_unit": "#ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "passing_speed": "#e6ffffff"
+                    },
+                    {
+                        "passing_speed_unit": "#e6ffffff"
+                    }
+                ]
+            }
+        },
+        "marker_info_three_urgent_over_speed_left_down": {
+            "anchor": 11,
+            "x_offset": 7,
+            "y_offset": 6,
+            "day_style": {
+                "color": [
+                    {
+                        "passing_speed": "#ffffff"
+                    },
+                    {
+                        "passing_speed_unit": "#ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "passing_speed": "#e6ffffff"
+                    },
+                    {
+                        "passing_speed_unit": "#e6ffffff"
+                    }
+                ]
+            }
+        },
+        "marker_info_three_urgent_over_speed_right_up": {
+            "anchor": 12,
+            "x_offset": 10,
+            "y_offset": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "passing_speed": "#ffffff"
+                    },
+                    {
+                        "passing_speed_unit": "#ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "passing_speed": "#e6ffffff"
+                    },
+                    {
+                        "passing_speed_unit": "#e6ffffff"
+                    }
+                ]
+            }
+        },
+        "marker_info_three_urgent_over_speed_right_down": {
+            "anchor": 10,
+            "x_offset": 11,
+            "y_offset": 8,
+            "day_style": {
+                "color": [
+                    {
+                        "passing_speed": "#ffffff"
+                    },
+                    {
+                        "passing_speed_unit": "#ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "passing_speed": "#e6ffffff"
+                    },
+                    {
+                        "passing_speed_unit": "#e6ffffff"
+                    }
+                ]
+            }
+        }
+    },
+    "layer_item_info": {
+        "guide_destination_over_speed_point_left_up": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "three_urgent_over_speed_normal.xml"
+                },
+                "focus_style": {
+                    "poi_marker_id": "three_urgent_over_speed_focus_left.xml",
+                    "poi_marker_info": "marker_info_three_urgent_over_speed_left_up",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "guide_path_board_label": "global_image_speeding_top_left_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "超速 左上飘"
+        },
+        "guide_destination_over_speed_point_left_down": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "three_urgent_over_speed_normal.xml"
+                },
+                "focus_style": {
+                    "poi_marker_id": "three_urgent_over_speed_focus_left.xml",
+                    "poi_marker_info": "marker_info_three_urgent_over_speed_left_down",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "guide_path_board_label": "global_image_speeding_bottom_left_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 1,
+            "name_cn": "超速 左下飘"
+        },
+        "guide_destination_over_speed_point_right_up": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "three_urgent_over_speed_normal.xml"
+                },
+                "focus_style": {
+                    "poi_marker_id": "three_urgent_over_speed_focus_right.xml",
+                    "poi_marker_info": "marker_info_three_urgent_over_speed_right_up",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "guide_path_board_label": "global_image_speeding_top_right_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 2,
+            "name_cn": "超速 右上飘"
+        },
+        "guide_destination_over_speed_point_right_down": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "three_urgent_over_speed_normal.xml"
+                },
+                "focus_style": {
+                    "poi_marker_id": "three_urgent_over_speed_focus_right.xml",
+                    "poi_marker_info": "marker_info_three_urgent_over_speed_right_down",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "guide_path_board_label": "global_image_speeding_bottom_right_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 3,
+            "name_cn": "超速 右下飘"
+        },
+        "guide_destination_sharp_turn_point": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_fast_turn_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 4,
+            "name_cn": "急转弯"
+        },
+        "guide_destination_rapid_acceleration_point": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_fast_accelerate_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 5,
+            "name_cn": "急加速"
+        },
+        "guide_destination_rapid_deceleration_point": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_fast_slow_down_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 6,
+            "name_cn": "急减速"
+        }
+    }
+}

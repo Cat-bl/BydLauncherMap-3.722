@@ -1,0 +1,17 @@
+{
+	"id":	3003,
+	"layer_priority":	{
+		"draw_priority":	100,
+		"sub_priority":	500
+	},
+	"layer_scale":	{
+		"min_scale":	1,
+		"max_scale":	22
+	},
+	"layer_filter":	{
+		"enable":	1,
+		"type":	2
+	},
+	"enable_click":	1,
+	"item":	"LineLayerItem"
+}

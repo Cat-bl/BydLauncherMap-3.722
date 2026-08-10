@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.autonavi.skin.view.SkinTextView android:textSize="@dimen/auto_font_size_16" android:ellipsize="end" android:gravity="center" android:id="@id/stv_simpledesc" android:layout_width="@dimen/auto_dimen2_95" android:layout_height="@dimen/auto_dimen2_32" android:maxLines="1" android:layout_marginEnd="@dimen/auto_dimen2_16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/SysBtnSmallSecondary" />
+</com.autonavi.skin.view.SkinConstraintLayout>

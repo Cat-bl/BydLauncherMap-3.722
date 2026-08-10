@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/cl_route_gas_preference_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="4dp"
+    android:paddingTop="4dp"
+    android:paddingEnd="4dp"
+    android:paddingBottom="4dp"
+    app:designHeight="600"
+    app:designWidth="1024">
+
+    <!-- 四个品牌改为 2×2，避免 1/3 宽度下横向裁切。 -->
+    <com.autonavi.skin.view.SkinConstraintLayout
+        android:id="@id/cl_route_gas_preference_petrochina_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@id/cl_route_gas_preference_shell_layout"
+        app:layout_constraintEnd_toStartOf="@id/cl_route_gas_preference_sinopec_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.autonavi.view.custom.CustomPreferenceBgView
+            android:id="@id/cpb_petrochina"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.autonavi.skin.view.SkinLinearLayout
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:background="@drawable/custom_dialog_item_bg_day_normal"
+            app:background4Night="@drawable/custom_dialog_item_bg_night_normal"
+            app:background4Skin="@drawable/custom_dialog_item_bg_day_normal"
+            app:layout_constraintBottom_toBottomOf="@id/cpb_petrochina"
+            app:layout_constraintEnd_toEndOf="@id/cpb_petrochina"
+            app:layout_constraintStart_toStartOf="@id/cpb_petrochina"
+            app:layout_constraintTop_toTopOf="@id/cpb_petrochina" />
+        <com.autonavi.skin.view.SkinImageView
+            android:id="@id/siv_petrochina"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/routecarresult_petrochina"
+            app:background4Skin="@drawable/routecarresult_petrochina"
+            app:layout_constraintBottom_toBottomOf="@id/cpb_petrochina"
+            app:layout_constraintEnd_toEndOf="@id/cpb_petrochina"
+            app:layout_constraintStart_toStartOf="@id/cpb_petrochina"
+            app:layout_constraintTop_toTopOf="@id/cpb_petrochina" />
+        <com.autonavi.skin.view.SkinTextView
+            android:id="@id/stv_text_petrochina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="@string/routecarresult_text_petrochina"
+            android:textColor="@color/text_450_11_textcolor_day_selector"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cpb_petrochina"
+            app:textColor4Night="@color/text_450_18_textcolor_night_selector"
+            app:textColor4Skin="@color/text_450_11_textcolor_day_selector" />
+    </com.autonavi.skin.view.SkinConstraintLayout>
+
+    <com.autonavi.skin.view.SkinConstraintLayout
+        android:id="@id/cl_route_gas_preference_sinopec_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="@id/cl_route_gas_preference_petrochina_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cl_route_gas_preference_petrochina_layout"
+        app:layout_constraintTop_toTopOf="@id/cl_route_gas_preference_petrochina_layout">
+        <com.autonavi.view.custom.CustomPreferenceBgView
+            android:id="@id/cpb_sinopec"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.autonavi.skin.view.SkinLinearLayout
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:background="@drawable/custom_dialog_item_bg_day_normal"
+            app:background4Night="@drawable/custom_dialog_item_bg_night_normal"
+            app:background4Skin="@drawable/custom_dialog_item_bg_day_normal"
+            app:layout_constraintBottom_toBottomOf="@id/cpb_sinopec"
+            app:layout_constraintEnd_toEndOf="@id/cpb_sinopec"
+            app:layout_constraintStart_toStartOf="@id/cpb_sinopec"
+            app:layout_constraintTop_toTopOf="@id/cpb_sinopec" />
+        <com.autonavi.skin.view.SkinImageView
+            android:id="@id/siv_sinopec"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/routecarresult_sinopec"
+            app:background4Skin="@drawable/routecarresult_sinopec"
+            app:layout_constraintBottom_toBottomOf="@id/cpb_sinopec"
+            app:layout_constraintEnd_toEndOf="@id/cpb_sinopec"
+            app:layout_constraintStart_toStartOf="@id/cpb_sinopec"
+            app:layout_constraintTop_toTopOf="@id/cpb_sinopec" />
+        <com.autonavi.skin.view.SkinTextView
+            android:id="@id/stv_text_sinopec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="@string/routecarresult_text_sinopec"
+            android:textColor="@color/text_450_11_textcolor_day_selector"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cpb_sinopec"
+            app:textColor4Night="@color/text_450_18_textcolor_night_selector"
+            app:textColor4Skin="@color/text_450_11_textcolor_day_selector" />
+    </com.autonavi.skin.view.SkinConstraintLayout>
+
+    <com.autonavi.skin.view.SkinConstraintLayout
+        android:id="@id/cl_route_gas_preference_shell_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cl_route_gas_preference_mobil_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cl_route_gas_preference_petrochina_layout">
+        <com.autonavi.view.custom.CustomPreferenceBgView
+            android:id="@id/cpb_shell"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.autonavi.skin.view.SkinLinearLayout
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:background="@drawable/custom_dialog_item_bg_day_normal"
+            app:background4Night="@drawable/custom_dialog_item_bg_night_normal"
+            app:background4Skin="@drawable/custom_dialog_item_bg_day_normal"
+            app:layout_constraintBottom_toBottomOf="@id/cpb_shell"
+            app:layout_constraintEnd_toEndOf="@id/cpb_shell"
+            app:layout_constraintStart_toStartOf="@id/cpb_shell"
+            app:layout_constraintTop_toTopOf="@id/cpb_shell" />
+        <com.autonavi.skin.view.SkinImageView
+            android:id="@id/siv_shell"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/routecarresult_shell"
+            app:background4Skin="@drawable/routecarresult_shell"
+            app:layout_constraintBottom_toBottomOf="@id/cpb_shell"
+            app:layout_constraintEnd_toEndOf="@id/cpb_shell"
+            app:layout_constraintStart_toStartOf="@id/cpb_shell"
+            app:layout_constraintTop_toTopOf="@id/cpb_shell" />
+        <com.autonavi.skin.view.SkinTextView
+            android:id="@id/stv_text_shell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="@string/routecarresult_text_shell"
+            android:textColor="@color/text_450_11_textcolor_day_selector"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cpb_shell"
+            app:textColor4Night="@color/text_450_18_textcolor_night_selector"
+            app:textColor4Skin="@color/text_450_11_textcolor_day_selector" />
+    </com.autonavi.skin.view.SkinConstraintLayout>
+
+    <com.autonavi.skin.view.SkinConstraintLayout
+        android:id="@id/cl_route_gas_preference_mobil_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="@id/cl_route_gas_preference_shell_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cl_route_gas_preference_shell_layout"
+        app:layout_constraintTop_toTopOf="@id/cl_route_gas_preference_shell_layout">
+        <com.autonavi.view.custom.CustomPreferenceBgView
+            android:id="@id/cpb_mobil"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.autonavi.skin.view.SkinLinearLayout
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:background="@drawable/custom_dialog_item_bg_day_normal"
+            app:background4Night="@drawable/custom_dialog_item_bg_night_normal"
+            app:background4Skin="@drawable/custom_dialog_item_bg_day_normal"
+            app:layout_constraintBottom_toBottomOf="@id/cpb_mobil"
+            app:layout_constraintEnd_toEndOf="@id/cpb_mobil"
+            app:layout_constraintStart_toStartOf="@id/cpb_mobil"
+            app:layout_constraintTop_toTopOf="@id/cpb_mobil" />
+        <com.autonavi.skin.view.SkinImageView
+            android:id="@id/siv_mobil"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/routecarresult_mobil"
+            app:background4Skin="@drawable/routecarresult_mobil"
+            app:layout_constraintBottom_toBottomOf="@id/cpb_mobil"
+            app:layout_constraintEnd_toEndOf="@id/cpb_mobil"
+            app:layout_constraintStart_toStartOf="@id/cpb_mobil"
+            app:layout_constraintTop_toTopOf="@id/cpb_mobil" />
+        <com.autonavi.skin.view.SkinTextView
+            android:id="@id/stv_text_mobil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="@string/routecarresult_text_mobil"
+            android:textColor="@color/text_450_11_textcolor_day_selector"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cpb_mobil"
+            app:textColor4Night="@color/text_450_18_textcolor_night_selector"
+            app:textColor4Skin="@color/text_450_11_textcolor_day_selector" />
+    </com.autonavi.skin.view.SkinConstraintLayout>
+</com.autonavi.skin.view.SkinConstraintLayout>

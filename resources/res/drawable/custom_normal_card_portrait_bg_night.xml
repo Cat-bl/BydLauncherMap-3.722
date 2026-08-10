@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="@dimen/auto_dimen2_8"/>
+    <gradient
+        android:startColor="@color/custom_normal_port_night_color"
+        android:endColor="@color/custom_normal_port_night_color_end"
+        android:angle="180"
+        android:type="linear"/>
+</shape>

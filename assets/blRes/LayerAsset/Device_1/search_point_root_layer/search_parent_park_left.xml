@@ -1,0 +1,22 @@
+<div id="click_hotspot" style="display:flex;flex-direction:row;justify-content:center;align-items:center;">
+  <div id="parking_info_div" style="display:flex;flex-direction:column;justify-content:center;align-items:flex-end;margin-top:-3px;margin-right:8px;margin-bottom:0px;">
+    <label id="name_text" style="font-size:22px;color:#171717;text-align:right;font-family:SDK_Font-Medium;line-clamp:2;text-stroke:2px #E6ffffff;max-width:180px;line-spacing:-4;" lines="2">北门停车场北门停车场北</label>
+    <div id="parking_label_div" style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-top:-2px;margin-right:-1px;">
+      <div id="parking_label_infototal_div" style="display:flex;flex-direction:row;justify-content:center;align-items:center;width:auto;height:28px;background-image:global_image_route_recommend_parking_bg_day_night;">
+        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-right:6px;margin-left:6px;">
+          <label id="parking_label_idle_text" style="margin-right:4px;font-size:14px;color:#1a66ff;font-family:SDK_Font-Medium;" lines="1">空</label>
+          <label id="parking_label_idle_number_text" style="font-size:14px;color:#1a66ff;font-family:SDK_Font-Medium;" lines="1">10</label>
+          <label id="parking_label_idle_title_text" style="font-size:14px;color:#801a66ff;font-family:SDK_Font-Medium;" lines="1">/</label>
+          <label id="parking_label_idle_number_all_text" style="font-size:14px;color:#801a66ff;font-family:SDK_Font-Medium;" lines="1">20</label>
+        </div>
+      </div>
+      <div id="parking_label_enough_div" style="display:flex;flex-direction:row;justify-content:center;align-items:center;width:auto;height:28px;background-image:global_image_route_recommend_parking_bg_day_night;">
+        <label id="parking_label_enough_text" style="margin-right:6px;margin-left:6px;font-size:14px;color:#1a66ff;font-family:SDK_Font-Medium;" lines="1">车位充足</label>
+      </div>
+      <div id="parking_label_no_enough_div" style="display:flex;flex-direction:row;justify-content:center;align-items:center;width:auto;height:28px;background-image:global_image_route_recommend_parking_bg_day_night;">
+        <label id="parking_label_no_enough_text" style="margin-right:6px;margin-left:6px;font-size:14px;color:#f62020;font-family:SDK_Font-Medium;" lines="1">车位已满</label>
+      </div>
+    </div>
+  </div>
+  <image id="parking_icon" style="width:45px;height:54px;is_main:Y;" src="global_image_navi_along_search_park_icon2_day_night" />
+</div>

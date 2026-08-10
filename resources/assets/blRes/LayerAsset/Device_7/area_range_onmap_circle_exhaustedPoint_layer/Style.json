@@ -1,0 +1,28 @@
+{
+    "marker_info": {
+        "marker_info_exhausted_central": {
+            "anchor": 9,
+            "y_ratio": 1,
+            "x_ratio": 0.48
+        }
+    },
+    "layer_item_info": {
+        "point_exhausted_central": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_exhausted_central",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_exhausted_mark_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "电量耗尽点"
+        }
+    }
+}

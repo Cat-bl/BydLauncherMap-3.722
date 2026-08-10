@@ -1,0 +1,30 @@
+<div id="bg_image" style="display:flex;flex-direction:row;justify-content:flex-end;align-items:center;width:auto;height:auto;background-image:global_image_autonavi_lane_bubble_container_camera_right_up_day_night;">
+    <div style="display:flex;flex-direction:row-reverse;justify-content:space-between;align-items:flex;">
+        <image id="camera_type_image2" style="width:62px;height:62px;margin-left:-15px;position:relative;" src=""/>
+        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;width:62px;height:62px;">
+            <image id="camera_type_image" style="width:62px;height:62px;position:absolute;" src=""/>
+            <label id="speed_text2" style="color:#000000;font-size:34px;font-family:SDK_Font-Bold;" lines="1">88</label>
+            <label id="speed_text3" style="color:#000000;font-size:29px;font-family:SDK_Font-Bold;" lines="1"></label>
+        </div>
+    </div>
+    <div id="distance_text_div_3" style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;margin-right:16px;margin-left:3px;min-width:82px;">
+        <label id="distance_text_3" style="font-size:34px;color:#000000;font-family:SDK_Font-Bold;" lines="1">999</label>
+        <label id="distance_unit_3" style="font-size:22px;color:#000000;font-family:SDK_Font-Medium;margin-top:6px;" lines="1">米</label>
+    </div>
+    <div id="distance_text_div_2" style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;margin-right:16px;margin-left:3px;min-width:62px;">
+        <label id="distance_text_2" style="font-size:34px;color:#000000;font-family:SDK_Font-Bold;" lines="1">99</label>
+        <label id="distance_unit_2" style="font-size:22px;color:#000000;font-family:SDK_Font-Medium;margin-top:6px;" lines="1">米</label>
+    </div>
+    <div id="distance_text_div_1" style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;margin-right:16px;margin-left:3px;min-width:42px;">
+        <label id="distance_text_1" style="font-size:34px;color:#000000;font-family:SDK_Font-Bold;" lines="1">9</label>
+        <label id="distance_unit_1" style="font-size:22px;color:#000000;font-family:SDK_Font-Medium;margin-top:6px;" lines="1">米</label>
+    </div>
+    <div id="text_div" style="display:flex;flex-direction:column;justify-content:flex-start;margin-right:16px;margin-left:3px;">
+        <label id="distance_text_hint" style="font-size:24px;color:#f52b20;font-family:SDK_Font-Medium;margin-top:1px;" lines="1">多人被拍</label>
+        <div id="distance_text_div" style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;margin-top:-9px;">
+            <label id="distance_text" style="display:flex;flex-direction:row;font-size:24px;color:#000000;font-family:SDK_Font-Bold;" lines="1">999</label>
+            <label id="distance_unit" style="display:flex;flex-direction:row;font-size:20px;color:#000000;font-family:SDK_Font-Medium;margin-top:-1px;" lines="1">米</label>
+        </div>
+    </div>
+</div>
+

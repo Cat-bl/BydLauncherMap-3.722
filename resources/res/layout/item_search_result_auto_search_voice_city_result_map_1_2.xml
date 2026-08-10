@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingBottom="@dimen/sys_padding_xs"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/auto_dimen2_24"
+    android:paddingEnd="@dimen/auto_dimen2_24">
+    <include layout="@layout/layout_item_search_result_auto_search_voice_city_result_map"/>
+</FrameLayout>

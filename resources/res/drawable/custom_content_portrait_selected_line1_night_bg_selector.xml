@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/custom_content_portrait_selected_line1_selected_night"/>
+    <item
+        android:state_enabled="false"
+        android:drawable="@drawable/custom_content_selected_line1_normal_night"/>
+    <item
+        android:state_enabled="true"
+        android:drawable="@drawable/custom_content_selected_line1_normal_night"/>
+</selector>

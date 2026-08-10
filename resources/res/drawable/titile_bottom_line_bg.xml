@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient
+                android:startColor="@color/auto_color_161616"
+                android:endColor="@color/auto_color_161616"
+                android:angle="0"
+                android:centerColor="@color/auto_color_534C42"/>
+        </shape>
+    </item>
+    <item android:bottom="@dimen/auto_dimen2_1">
+        <shape>
+            <gradient
+                android:startColor="@color/auto_color_161616"
+                android:endColor="@color/auto_color_212121"
+                android:angle="270"/>
+        </shape>
+    </item>
+</layer-list>

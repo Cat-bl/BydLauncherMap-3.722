@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/svg_pvt_radio_button_check"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <target android:name="@string/byd_radio_button_stroke" android:animation="@drawable/$animated_vector_pvt_radio_button_check__0" />
+    <target android:name="@string/byd_radio_button_solid_path" android:animation="@drawable/$animated_vector_pvt_radio_button_check__1" />
+    <target android:name="@string/byd_radio_button_solid_group" android:animation="@drawable/$animated_vector_pvt_radio_button_check__2" />
+</animated-vector>

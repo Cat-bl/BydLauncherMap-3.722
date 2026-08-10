@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingEnd="@dimen/auto_dimen2_10">
+    <com.autonavi.skin.view.SkinImageView
+        android:id="@+id/siv_picture"
+        android:padding="@dimen/auto_dimen2_2"
+        android:layout_width="@dimen/auto_dimen2_128"
+        android:layout_height="@dimen/auto_dimen2_70"/>
+</com.autonavi.skin.view.SkinConstraintLayout>

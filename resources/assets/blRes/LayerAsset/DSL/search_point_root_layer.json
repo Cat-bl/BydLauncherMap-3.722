@@ -1,0 +1,2088 @@
+{
+  "data": {
+    "type": "adaptor_point",
+    "brief": "搜索父POI点图层数据，value是测试数据",
+    "value": [],
+    "rule": [
+      {
+        "brief": "额外优先级",
+        "type": "data_priority_if",
+        "value": {
+          "condition": {
+            "fact": "$biz_data.poiType",
+            "operator": "equal",
+            "value": 1
+          },
+          "case": {
+            "true": 2000000,
+            "false": {
+              "if": {
+                "condition": {
+                  "all": [
+                    {
+                      "fact": "$biz_data.poiType",
+                      "operator": "equal",
+                      "value": 0
+                    },
+                    {
+                      "fact": "$biz_data.typeCode",
+                      "operator": "in",
+                      "value": [
+                        10101,
+                        10102,
+                        10103
+                      ]
+                    }
+                  ]
+                },
+                "case": {
+                  "true": 1000000
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "brief": "最终的POI类型",
+        "type": "data_user_if",
+        "value": {
+          "biz_data": "userPOIType",
+          "condition": {
+            "fact": "$biz_data.poiType",
+            "operator": "unequal",
+            "value": 4
+          },
+          "case": {
+            "true": "$biz_data.poiType",
+            "false": "$biz_data.deepInfo.type"
+          }
+        }
+      },
+      {
+        "brief": "电费",
+        "type": "data_user_func",
+        "value": {
+          "biz_data": "userCurrentPrice",
+          "func": {
+            "name": "DataAdd",
+            "param": {
+              "addValue": "$biz_data.deepInfo.current_ele_price",
+              "augValue": "$biz_data.deepInfo.current_ser_price"
+            }
+          }
+        }
+      },
+      {
+        "brief": "POI名称是否超过一行",
+        "type": "data_user_if",
+        "value": {
+          "biz_data": "userIsPoiNameMultLine",
+          "condition": {
+            "func": {
+              "name": "StringLength",
+              "param": {
+                "value": "$biz_data.poiName"
+              }
+            },
+            "operator": "gt",
+            "value": 7
+          },
+          "case": {
+            "true": true,
+            "false": false
+          }
+        }
+      }
+    ]
+  },
+  "biz": [
+    {
+      "brief": "清除所有图元",
+      "type": "biz_clear_all_items"
+    },
+    {
+      "brief": "设置是否可点击",
+      "type": "biz_set_clickable",
+      "value": true
+    },
+    {
+      "brief": "设置图层优先级",
+      "type": "biz_set_priority",
+      "value": {
+        "draw_priority": 140,
+        "sub_priority": 1300
+      }
+    },
+    {
+      "brief": "设置图元优先级是否升序",
+      "type": "biz_item_priority_asc",
+      "value": false
+    },
+    {
+      "brief": "设置是否开启底图避让",
+      "type": "biz_is_poi_filter",
+      "value": {
+        "enable": true,
+        "type": 4294967295
+      }
+    },
+    {
+      "brief": "设置多飘向图层避让算法",
+      "type": "biz_set_avoid_algorithm",
+      "value": 2
+    },
+    {
+      "brief": "设置是否是多象限图层",
+      "type": "biz_is_quadrant_layer",
+      "value": {
+        "type": 26,
+        "area_threshold": 0.01
+      }
+    }
+  ],
+  "style": {
+    "style_name": {
+      "prefix_name": "",
+      "rule": [
+        {
+          "brief": "获取样式文件",
+          "type": "style_switch",
+          "value": {
+            "condition": "$biz_data.userPOIType",
+            "case": {
+              "0": {
+                "switch": {
+                  "condition": "$item_data.quadrantType",
+                  "case": {
+                    "1": "point_search_parent_gas_discounts_left",
+                    "2": "point_search_parent_gas_discounts_right",
+                    "default": "point_search_parent_default_mini_point"
+                  }
+                }
+              },
+              "1": {
+                "switch": {
+                  "condition": "$item_data.quadrantType",
+                  "case": {
+                    "1": "point_search_parent_gas_discounts_left",
+                    "2": "point_search_parent_gas_discounts_left",
+                    "default": "point_search_parent_default_mini_point"
+                  }
+                }
+              },
+              "2": {
+                "switch": {
+                  "condition": "$item_data.quadrantType",
+                  "case": {
+                    "1": "point_search_parent_car_wash_left",
+                    "2": "point_search_parent_car_wash_right",
+                    "default": "point_search_parent_default_mini_point"
+                  }
+                }
+              },
+              "3": {
+                "switch": {
+                  "condition": "$item_data.quadrantType",
+                  "case": {
+                    "1": "point_search_parent_rank_common_left",
+                    "2": "point_search_parent_rank_common_right",
+                    "default": "point_search_parent_default_mini_point"
+                  }
+                }
+              },
+              "5": {
+                "switch": {
+                  "condition": "$item_data.quadrantType",
+                  "case": {
+                    "1": "point_search_parent_rank_common_left",
+                    "2": "point_search_parent_rank_common_right",
+                    "default": "point_search_parent_default_mini_point"
+                  }
+                }
+              },
+              "6": {
+                "switch": {
+                  "condition": "$item_data.quadrantType",
+                  "case": {
+                    "1": "point_search_parent_charge_station_left",
+                    "2": "point_search_parent_charge_station_right",
+                    "default": "point_search_parent_default_mini_point"
+                  }
+                }
+              },
+              "7": {
+                "switch": {
+                  "condition": "$item_data.quadrantType",
+                  "case": {
+                    "1": "point_search_parent_rank_common_left",
+                    "2": "point_search_parent_rank_common_right",
+                    "default": "point_search_parent_default_mini_point"
+                  }
+                }
+              },
+              "10": {
+                "switch": {
+                  "condition": "$item_data.quadrantType",
+                  "case": {
+                    "1": "point_search_parent_park_left",
+                    "2": "point_search_parent_park_right",
+                    "default": "point_search_parent_default_mini_point"
+                  }
+                }
+              },
+              "default": {
+                "switch": {
+                  "condition": "$item_data.quadrantType",
+                  "case": {
+                    "1": "point_search_parent_common_left",
+                    "2": "point_search_parent_common_right",
+                    "default": "point_search_parent_default_mini_point"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "dynamic_marker": {
+      "rule": [
+        {
+          "brief": "加油站图标选择",
+          "type": "marker_if",
+          "value": {
+            "marker_id": [
+              "search_parent_discount_gas_both_left.xml",
+              "search_parent_discount_gas_both_right.xml"
+            ],
+            "condition": {
+              "any": [
+                {
+                  "fact": "$biz_data.userPOIType",
+                  "operator": "equal",
+                  "value": 0
+                },
+                {
+                  "fact": "$biz_data.userPOIType",
+                  "operator": "equal",
+                  "value": 1
+                }
+              ]
+            },
+            "case": {
+              "true": {
+                "switch": {
+                  "condition": "$biz_data.typeCode",
+                  "case": {
+                    "10101": {
+                      "id": "brand_image",
+                      "display": true,
+                      "value": "global_image_navi_along_search_sinopec_station_icon2_day_night"
+                    },
+                    "10102": {
+                      "id": "brand_image",
+                      "display": true,
+                      "value": "global_image_navi_along_search_petrochina_station_icon2_day_night"
+                    },
+                    "10103": {
+                      "id": "brand_image",
+                      "display": true,
+                      "value": "global_image_navi_along_search_shell_station_icon2_day_night"
+                    },
+                    "default": {
+                      "id": "brand_image",
+                      "display": true,
+                      "value": "global_image_navi_along_search_gas_station_icon2_day_night"
+                    }
+                  }
+                }
+              },
+              "false": {
+                "id": "brand_image",
+                "display": true,
+                "value": "global_image_b_child_poi_hl2_day_night"
+              }
+            }
+          }
+        },
+        {
+          "brief": "麻点图标选择",
+          "type": "marker_switch",
+          "value": {
+            "marker_id": "search_parent_mini_point.xml",
+            "condition": "$biz_data.userPOIType",
+            "case": {
+              "0": {
+                "id": "mini_point",
+                "display": true,
+                "value": "global_image_navi_along_search_gas_station_icon2_mini_point_day_night"
+              },
+              "1": {
+                "id": "mini_point",
+                "display": true,
+                "value": "global_image_navi_along_search_gas_station_icon2_mini_point_day_night"
+              },
+              "2": {
+                "id": "mini_point",
+                "display": true,
+                "value": "global_image_navi_along_search_wash_icon2_mini_point_day_night"
+              },
+              "3": {
+                "id": "mini_point",
+                "display": true,
+                "value": "global_image_navi_delicacy_icon2_mini_point_day_night"
+              },
+              "5": {
+                "id": "mini_point",
+                "display": true,
+                "value": "global_image_navi_along_search_scenic_icon2_mini_point_day_night"
+              },
+              "6": {
+                "id": "mini_point",
+                "display": true,
+                "value": "global_image_navi_along_search_charge_icon2_mini_point_day_night"
+              },
+              "7": {
+                "id": "mini_point",
+                "display": true,
+                "value": "global_image_navi_along_search_purple_icon2_mini_point_day_night"
+              },
+              "8": {
+                "id": "mini_point",
+                "display": true,
+                "value": "global_image_navi_along_search_red_icon2_mini_point_day_night"
+              },
+              "9": {
+                "id": "mini_point",
+                "display": true,
+                "value": "global_image_navi_along_search_purple_icon2_mini_point_day_night"
+              },
+              "10": {
+                "id": "mini_point",
+                "display": true,
+                "value": "global_image_navi_along_search_gas_station_icon2_mini_point_day_night"
+              },
+              "11": {
+                "id": "mini_point",
+                "display": true,
+                "value": "global_image_navi_along_search_wash_icon2_mini_point_day_night"
+              },
+              "12": {
+                "id": "mini_point",
+                "display": true,
+                "value": "global_image_navi_along_search_wash_icon2_mini_point_day_night"
+              },
+              "13": {
+                "id": "mini_point",
+                "display": true,
+                "value": "global_image_navi_along_search_purple_icon2_mini_point_day_night"
+              },
+              "14": {
+                "id": "mini_point",
+                "display": true,
+                "value": "global_image_navi_along_search_purple_icon2_mini_point_day_night"
+              },
+              "15": {
+                "id": "mini_point",
+                "display": true,
+                "value": "global_image_navi_along_search_purple_icon2_mini_point_day_night"
+              },
+              "16": {
+                "id": "mini_point",
+                "display": true,
+                "value": "global_image_navi_along_search_gas_station_icon2_mini_point_day_night"
+              },
+              "17": {
+                "id": "mini_point",
+                "display": true,
+                "value": "global_image_navi_along_search_gas_station_icon2_mini_point_day_night"
+              },
+              "default": {
+                "id": "mini_point",
+                "display": true,
+                "value": "global_image_navi_along_search_gas_station_icon2_mini_point_day_night"
+              }
+            }
+          }
+        },
+        {
+          "brief": "焦点态图标选择",
+          "type": "marker_switch",
+          "value": {
+            "condition": "$biz_data.userPOIType",
+            "case": {
+              "0": {
+                "switch": {
+                  "condition": "$biz_data.typeCode",
+                  "case": {
+                    "10101": {
+                      "id": "click_type_image",
+                      "display": true,
+                      "value": "global_image_navi_along_search_sinopec_station_big_icon2_day_night"
+                    },
+                    "10102": {
+                      "id": "click_type_image",
+                      "display": true,
+                      "value": "global_image_navi_along_search_petrochina_station_big_icon2_day_night"
+                    },
+                    "10103": {
+                      "id": "click_type_image",
+                      "display": true,
+                      "value": "global_image_navi_along_search_shell_station_big_icon2_day_night"
+                    },
+                    "default": {
+                      "id": "click_type_image",
+                      "display": true,
+                      "value": "global_image_navi_along_search_gas_station_big_icon2_day_night"
+                    }
+                  }
+                }
+              },
+              "1": {
+                "switch": {
+                  "condition": "$biz_data.typeCode",
+                  "case": {
+                    "10101": {
+                      "id": "click_type_image",
+                      "display": true,
+                      "value": "global_image_navi_along_search_sinopec_station_big_icon2_day_night"
+                    },
+                    "10102": {
+                      "id": "click_type_image",
+                      "display": true,
+                      "value": "global_image_navi_along_search_petrochina_station_big_icon2_day_night"
+                    },
+                    "10103": {
+                      "id": "click_type_image",
+                      "display": true,
+                      "value": "global_image_navi_along_search_shell_station_big_icon2_day_night"
+                    },
+                    "default": {
+                      "id": "click_type_image",
+                      "display": true,
+                      "value": "global_image_navi_along_search_gas_station_big_icon2_day_night"
+                    }
+                  }
+                }
+              },
+              "2": {
+                "id": "click_type_image",
+                "display": true,
+                "value": "global_image_navi_along_search_wash_big_icon2_day_night"
+              },
+              "3": {
+                "id": "click_type_image",
+                "display": true,
+                "value": "global_image_navi_delicacy_big_icon2_day_night"
+              },
+              "5": {
+                "id": "click_type_image",
+                "display": true,
+                "value": "global_image_navi_along_search_scenic_big_icon2_day_night"
+              },
+              "6": {
+                "id": "click_type_image",
+                "display": true,
+                "value": "global_image_navi_along_search_charge_big_icon2_day_night"
+              },
+              "7": {
+                "id": "click_type_image",
+                "display": true,
+                "value": "global_image_navi_along_search_hotel_big_icon2_day_night"
+              },
+              "8": {
+                "id": "click_type_image",
+                "display": true,
+                "value": "global_image_navi_along_search_hospital_big_icon2_day_night"
+              },
+              "9": {
+                "id": "click_type_image",
+                "display": true,
+                "value": "global_image_navi_along_search_shopping_big_icon2_day_night"
+              },
+              "10": {
+                "id": "click_type_image",
+                "display": true,
+                "value": "global_image_navi_along_search_park_big_icon2_day_night"
+              },
+              "11": {
+                "id": "click_type_image",
+                "display": true,
+                "value": "global_image_navi_along_search_carservice_big_icon2_day_night"
+              },
+              "12": {
+                "id": "click_type_image",
+                "display": true,
+                "value": "global_image_navi_along_search_wc_big_icon2_day_night"
+              },
+              "13": {
+                "id": "click_type_image",
+                "display": true,
+                "value": "global_image_navi_along_search_shangchang_big_icon2_day_night"
+              },
+              "14": {
+                "id": "click_type_image",
+                "display": true,
+                "value": "global_image_navi_along_search_cinema_big_icon2_day_night"
+              },
+              "15": {
+                "id": "click_type_image",
+                "display": true,
+                "value": "global_image_navi_along_search_ktv_big_icon2_day_night"
+              },
+              "16": {
+                "id": "click_type_image",
+                "display": true,
+                "value": "global_image_navi_along_search_school_big_icon2_day_night"
+              },
+              "17": {
+                "id": "click_type_image",
+                "display": true,
+                "value": "global_image_navi_along_search_trainstation_big_icon2_day_night"
+              },
+              "default": {
+                "id": "click_type_image",
+                "display": true,
+                "value": "global_image_bubble_child2_day_night"
+              }
+            }
+          }
+        },
+        {
+          "brief": "加油站文字信息填充",
+          "type": "marker_switch",
+          "value": {
+            "marker_id": [
+              "search_parent_discount_gas_both_left.xml",
+              "search_parent_discount_gas_both_right.xml"
+            ],
+            "condition": "$biz_data.userPOIType",
+            "case": {
+              "0": [
+                {
+                  "id": "div_line_second",
+                  "display": false
+                },
+                {
+                  "id": "div_info_all",
+                  "display": false
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "func": {
+                        "name": "StringLength",
+                        "param": {
+                          "value": "$biz_data.poiName"
+                        }
+                      },
+                      "operator": "gt",
+                      "value": 0
+                    },
+                    "case": {
+                      "true": {
+                        "id": "name_text",
+                        "display": true,
+                        "value": "$biz_data.poiName"
+                      },
+                      "false": {
+                        "id": "name_text",
+                        "display": false
+                      }
+                    }
+                  }
+                }
+              ],
+              "1": [
+                {
+                  "if": {
+                    "condition": {
+                      "func": {
+                        "name": "StringLength",
+                        "param": {
+                          "value": "$biz_data.poiName"
+                        }
+                      },
+                      "operator": "gt",
+                      "value": 0
+                    },
+                    "case": {
+                      "true": {
+                        "id": "name_text",
+                        "display": true,
+                        "value": "$biz_data.poiName"
+                      },
+                      "false": {
+                        "id": "name_text",
+                        "display": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "fact": "$biz_data.deepInfo.is_discount",
+                      "operator": "equal",
+                      "value": true
+                    },
+                    "case": {
+                      "true": {
+                        "id": "div_line_discount",
+                        "display": true
+                      },
+                      "false": {
+                        "id": "div_line_discount",
+                        "display": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "fact": "$biz_data.deepInfo.discount",
+                      "operator": "gt",
+                      "value": 0
+                    },
+                    "case": {
+                      "true": [
+                        {
+                          "id": "id_price",
+                          "display": true,
+                          "value": [
+                            {
+                              "format": "%.2f",
+                              "value": "$biz_data.deepInfo.discount"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "div_line_price",
+                          "display": true
+                        }
+                      ],
+                      "false": {
+                        "id": "div_line_price",
+                        "display": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "any": [
+                        {
+                          "fact": "$biz_data.deepInfo.discount",
+                          "operator": "gt",
+                          "value": 0
+                        },
+                        {
+                          "fact": "$biz_data.deepInfo.is_discount",
+                          "operator": "equal",
+                          "value": true
+                        }
+                      ]
+                    },
+                    "case": {
+                      "true": {
+                        "id": "div_line_second",
+                        "display": true
+                      },
+                      "false": [
+                        {
+                          "id": "div_line_second",
+                          "display": false
+                        },
+                        {
+                          "id": "div_info_all",
+                          "display": false
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "default": [
+                {
+                  "id": "div_line_second",
+                  "display": false
+                },
+                {
+                  "id": "div_info_all",
+                  "display": false
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "func": {
+                        "name": "StringLength",
+                        "param": {
+                          "value": "$biz_data.poiName"
+                        }
+                      },
+                      "operator": "gt",
+                      "value": 0
+                    },
+                    "case": {
+                      "true": {
+                        "id": "name_text",
+                        "display": true,
+                        "value": "$biz_data.poiName"
+                      },
+                      "false": {
+                        "id": "name_text",
+                        "display": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "brief": "洗车文字信息填充",
+          "type": "marker_switch",
+          "value": {
+            "marker_id": [
+              "search_parent_car_wash_left.xml",
+              "search_parent_car_wash_right.xml"
+            ],
+            "condition": "$biz_data.userPOIType",
+            "case": {
+              "2": [
+                {
+                  "if": {
+                    "condition": {
+                      "func": {
+                        "name": "StringLength",
+                        "param": {
+                          "value": "$biz_data.poiName"
+                        }
+                      },
+                      "operator": "gt",
+                      "value": 0
+                    },
+                    "case": {
+                      "true": {
+                        "id": "name_text",
+                        "display": true,
+                        "value": "$biz_data.poiName"
+                      },
+                      "false": {
+                        "id": "name_text",
+                        "display": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "fact": "$biz_data.deepInfo.current_price",
+                      "operator": "gt",
+                      "value": 0
+                    },
+                    "case": {
+                      "true": [
+                        {
+                          "id": "div_line_second",
+                          "display": true
+                        },
+                        {
+                          "id": "id_price",
+                          "display": true,
+                          "value": "$biz_data.deepInfo.current_price"
+                        }
+                      ],
+                      "false": [
+                        {
+                          "id": "div_line_second",
+                          "display": false
+                        },
+                        {
+                          "id": "div_info_all",
+                          "display": false
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "brief": "充电桩文字信息填充",
+          "type": "marker_switch",
+          "value": {
+            "marker_id": [
+              "search_parent_charge_station_left.xml",
+              "search_parent_charge_station_right.xml"
+            ],
+            "condition": "$biz_data.userPOIType",
+            "case": {
+              "6": [
+                {
+                  "if": {
+                    "condition": {
+                      "func": {
+                        "name": "StringLength",
+                        "param": {
+                          "value": "$biz_data.poiName"
+                        }
+                      },
+                      "operator": "gt",
+                      "value": 0
+                    },
+                    "case": {
+                      "true": {
+                        "id": "name_text",
+                        "display": true,
+                        "value": "$biz_data.poiName"
+                      },
+                      "false": {
+                        "id": "name_text",
+                        "display": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "any": [
+                        {
+                          "fact": "$biz_data.deepInfo.super_free",
+                          "operator": "gt",
+                          "value": 0
+                        },
+                        {
+                          "fact": "$biz_data.deepInfo.super_total",
+                          "operator": "gt",
+                          "value": 0
+                        }
+                      ]
+                    },
+                    "case": {
+                      "true": [
+                        {
+                          "id": "charge_label_div_superfast",
+                          "display": true
+                        },
+                        {
+                          "if": {
+                            "condition": {
+                              "all": [
+                                {
+                                  "fact": "$biz_data.deepInfo.super_free",
+                                  "operator": "gt",
+                                  "value": 0
+                                },
+                                {
+                                  "fact": "$biz_data.deepInfo.super_total",
+                                  "operator": "gt",
+                                  "value": 0
+                                }
+                              ]
+                            },
+                            "case": {
+                              "true": [
+                                {
+                                  "id": "charge_idle_text_superfast_title",
+                                  "display": true,
+                                  "value": "空 "
+                                },
+                                {
+                                  "id": "charge_idle_text_superfast_number",
+                                  "display": true,
+                                  "value": "$biz_data.deepInfo.super_free"
+                                },
+                                {
+                                  "id": "charge_full_text_superfaster_title",
+                                  "display": true,
+                                  "value": "/"
+                                },
+                                {
+                                  "id": "charge_full_text_superfaster_number",
+                                  "display": true,
+                                  "value": "$biz_data.deepInfo.super_total"
+                                }
+                              ],
+                              "false": [
+                                {
+                                  "id": "charge_full_text_superfaster_title",
+                                  "display": false
+                                },
+                                {
+                                  "id": "charge_full_text_superfaster_number",
+                                  "display": false
+                                },
+                                {
+                                  "if": {
+                                    "condition": {
+                                      "fact": "$biz_data.deepInfo.super_free",
+                                      "operator": "gt",
+                                      "value": 0
+                                    },
+                                    "case": {
+                                      "true": [
+                                        {
+                                          "id": "charge_idle_text_superfast_title",
+                                          "display": true,
+                                          "value": "空 "
+                                        },
+                                        {
+                                          "id": "charge_idle_text_superfast_number",
+                                          "display": true,
+                                          "value": "$biz_data.deepInfo.super_free"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "id": "charge_idle_text_superfast_title",
+                                          "display": true,
+                                          "value": "共 "
+                                        },
+                                        {
+                                          "id": "charge_idle_text_superfast_number",
+                                          "display": true,
+                                          "value": "$biz_data.deepInfo.super_total"
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ],
+                      "false": {
+                        "id": "charge_label_div_superfast",
+                        "display": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "any": [
+                        {
+                          "fact": "$biz_data.deepInfo.slow_free",
+                          "operator": "gt",
+                          "value": 0
+                        },
+                        {
+                          "fact": "$biz_data.deepInfo.slow_total",
+                          "operator": "gt",
+                          "value": 0
+                        }
+                      ]
+                    },
+                    "case": {
+                      "true": [
+                        {
+                          "id": "charge_label_div_slow",
+                          "display": true
+                        },
+                        {
+                          "if": {
+                            "condition": {
+                              "all": [
+                                {
+                                  "fact": "$biz_data.deepInfo.slow_free",
+                                  "operator": "gt",
+                                  "value": 0
+                                },
+                                {
+                                  "fact": "$biz_data.deepInfo.slow_total",
+                                  "operator": "gt",
+                                  "value": 0
+                                }
+                              ]
+                            },
+                            "case": {
+                              "true": [
+                                {
+                                  "id": "charge_idle_text_slow_title",
+                                  "display": true,
+                                  "value": "空 "
+                                },
+                                {
+                                  "id": "charge_idle_text_slow_number",
+                                  "display": true,
+                                  "value": "$biz_data.deepInfo.slow_free"
+                                },
+                                {
+                                  "id": "charge_full_text_slower_title",
+                                  "display": true,
+                                  "value": "/"
+                                },
+                                {
+                                  "id": "charge_full_text_slower_number",
+                                  "display": true,
+                                  "value": "$biz_data.deepInfo.slow_total"
+                                }
+                              ],
+                              "false": [
+                                {
+                                  "id": "charge_full_text_slower_title",
+                                  "display": false
+                                },
+                                {
+                                  "id": "charge_full_text_slower_number",
+                                  "display": false
+                                },
+                                {
+                                  "if": {
+                                    "condition": {
+                                      "fact": "$biz_data.deepInfo.slow_free",
+                                      "operator": "gt",
+                                      "value": 0
+                                    },
+                                    "case": {
+                                      "true": [
+                                        {
+                                          "id": "charge_idle_text_slow_title",
+                                          "display": true,
+                                          "value": "空 "
+                                        },
+                                        {
+                                          "id": "charge_idle_text_slow_number",
+                                          "display": true,
+                                          "value": "$biz_data.deepInfo.slow_free"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "id": "charge_idle_text_slow_title",
+                                          "display": true,
+                                          "value": "共 "
+                                        },
+                                        {
+                                          "id": "charge_idle_text_slow_number",
+                                          "display": true,
+                                          "value": "$biz_data.deepInfo.slow_total"
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ],
+                      "false": {
+                        "id": "charge_label_div_slow",
+                        "display": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "any": [
+                        {
+                          "fact": "$biz_data.deepInfo.fast_free",
+                          "operator": "gt",
+                          "value": 0
+                        },
+                        {
+                          "fact": "$biz_data.deepInfo.fast_total",
+                          "operator": "gt",
+                          "value": 0
+                        }
+                      ]
+                    },
+                    "case": {
+                      "true": [
+                        {
+                          "id": "charge_label_div_fast",
+                          "display": true
+                        },
+                        {
+                          "if": {
+                            "condition": {
+                              "all": [
+                                {
+                                  "fact": "$biz_data.deepInfo.fast_free",
+                                  "operator": "gt",
+                                  "value": 0
+                                },
+                                {
+                                  "fact": "$biz_data.deepInfo.fast_total",
+                                  "operator": "gt",
+                                  "value": 0
+                                }
+                              ]
+                            },
+                            "case": {
+                              "true": [
+                                {
+                                  "id": "charge_idle_text_fast_title",
+                                  "display": true,
+                                  "value": "空 "
+                                },
+                                {
+                                  "id": "charge_idle_text_fast_number",
+                                  "display": true,
+                                  "value": "$biz_data.deepInfo.fast_free"
+                                },
+                                {
+                                  "id": "charge_full_text_faster_title",
+                                  "display": true,
+                                  "value": "/"
+                                },
+                                {
+                                  "id": "charge_full_text_faster_number",
+                                  "display": true,
+                                  "value": "$biz_data.deepInfo.fast_total"
+                                }
+                              ],
+                              "false": [
+                                {
+                                  "id": "charge_full_text_faster_title",
+                                  "display": false
+                                },
+                                {
+                                  "id": "charge_full_text_faster_number",
+                                  "display": false
+                                },
+                                {
+                                  "if": {
+                                    "condition": {
+                                      "fact": "$biz_data.deepInfo.fast_free",
+                                      "operator": "gt",
+                                      "value": 0
+                                    },
+                                    "case": {
+                                      "true": [
+                                        {
+                                          "id": "charge_idle_text_fast_title",
+                                          "display": true,
+                                          "value": "空 "
+                                        },
+                                        {
+                                          "id": "charge_idle_text_fast_number",
+                                          "display": true,
+                                          "value": "$biz_data.deepInfo.fast_free"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "id": "charge_idle_text_fast_title",
+                                          "display": true,
+                                          "value": "共 "
+                                        },
+                                        {
+                                          "id": "charge_idle_text_fast_number",
+                                          "display": true,
+                                          "value": "$biz_data.deepInfo.fast_total"
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ],
+                      "false": {
+                        "id": "charge_label_div_fast",
+                        "display": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "any": [
+                        {
+                          "fact": "$biz_data.deepInfo.current_ele_price",
+                          "operator": "gt",
+                          "value": 0
+                        },
+                        {
+                          "fact": "$biz_data.deepInfo.current_ser_price",
+                          "operator": "gt",
+                          "value": 0
+                        }
+                      ]
+                    },
+                    "case": {
+                      "true": [
+                        {
+                          "id": "div_line_price",
+                          "display": true
+                        },
+                        {
+                          "id": "id_price",
+                          "display": true,
+                          "value": [
+                            {
+                              "format": "%.1f",
+                              "value": "$biz_data.userCurrentPrice"
+                            }
+                          ]
+                        }
+                      ],
+                      "false": {
+                        "id": "div_line_price",
+                        "display": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "any": [
+                        {
+                          "fact": "$biz_data.deepInfo.super_free",
+                          "operator": "gt",
+                          "value": 0
+                        },
+                        {
+                          "fact": "$biz_data.deepInfo.super_total",
+                          "operator": "gt",
+                          "value": 0
+                        },
+                        {
+                          "fact": "$biz_data.deepInfo.slow_free",
+                          "operator": "gt",
+                          "value": 0
+                        },
+                        {
+                          "fact": "$biz_data.deepInfo.slow_total",
+                          "operator": "gt",
+                          "value": 0
+                        },
+                        {
+                          "fact": "$biz_data.deepInfo.fast_free",
+                          "operator": "gt",
+                          "value": 0
+                        },
+                        {
+                          "fact": "$biz_data.deepInfo.fast_total",
+                          "operator": "gt",
+                          "value": 0
+                        },
+                        {
+                          "fact": "$biz_data.deepInfo.current_ele_price",
+                          "operator": "gt",
+                          "value": 0
+                        },
+                        {
+                          "fact": "$biz_data.deepInfo.current_ser_price",
+                          "operator": "gt",
+                          "value": 0
+                        }
+                      ]
+                    },
+                    "case": {
+                      "true": {
+                        "id": "div_line_second",
+                        "display": true
+                      },
+                      "false": [
+                        {
+                          "id": "div_line_second",
+                          "display": false
+                        },
+                        {
+                          "id": "div_info_all",
+                          "display": false
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "any": [
+                        {
+                          "fact": "$biz_data.deepInfo.slow_free",
+                          "operator": "gt",
+                          "value": 0
+                        },
+                        {
+                          "fact": "$biz_data.deepInfo.slow_total",
+                          "operator": "gt",
+                          "value": 0
+                        },
+                        {
+                          "fact": "$biz_data.deepInfo.fast_free",
+                          "operator": "gt",
+                          "value": 0
+                        },
+                        {
+                          "fact": "$biz_data.deepInfo.fast_total",
+                          "operator": "gt",
+                          "value": 0
+                        }
+                      ]
+                    },
+                    "case": {
+                      "true": {
+                        "id": "div_line_second",
+                        "display": true
+                      },
+                      "false": {
+                        "id": "div_info_all",
+                        "display": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "brief": "焦点态文字填充",
+          "type": "marker_switch",
+          "value": {
+            "marker_id": "search_parent_focus.xml",
+            "condition": "$biz_data.userPOIType",
+            "case": {
+              "default": {
+                "if": {
+                  "condition": {
+                    "func": {
+                      "name": "StringLength",
+                      "param": {
+                        "value": "$biz_data.poiName"
+                      }
+                    },
+                    "operator": "gt",
+                    "value": 0
+                  },
+                  "case": {
+                    "true": {
+                      "id": "name_text",
+                      "display": true,
+                      "value": "$biz_data.poiName"
+                    },
+                    "false": {
+                      "id": "name_text",
+                      "display": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "brief": "通用带评分图标选择",
+          "type": "marker_switch",
+          "value": {
+            "marker_id": [
+              "search_parent_rank_common_left.xml",
+              "search_parent_rank_common_right.xml"
+            ],
+            "condition": "$biz_data.userPOIType",
+            "case": {
+              "3": {
+                "id": "type_image",
+                "display": true,
+                "value": "global_image_navi_delicacy_icon2_day_night"
+              },
+              "5": {
+                "id": "type_image",
+                "display": true,
+                "value": "global_image_navi_along_search_scenic_icon2_day_night"
+              },
+              "7": {
+                "id": "type_image",
+                "display": true,
+                "value": "global_image_navi_along_search_hotel_icon2_day_night"
+              }
+            }
+          }
+        },
+        {
+          "brief": "通用带评分信息填充",
+          "type": "marker_switch",
+          "value": {
+            "marker_id": [
+              "search_parent_rank_common_left.xml",
+              "search_parent_rank_common_right.xml"
+            ],
+            "condition": "$biz_data.userPOIType",
+            "case": {
+              "3": [
+                {
+                  "id": "div_rank",
+                  "display": false
+                },
+                {
+                  "id": "id_unit_rise",
+                  "display": false
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "fact": "$biz_data.deepInfo.average_cost",
+                      "operator": "unequal",
+                      "value": -1
+                    },
+                    "case": {
+                      "true": [
+                        {
+                          "id": "div_line_price",
+                          "display": true
+                        },
+                        {
+                          "id": "id_price",
+                          "display": true,
+                          "value": "$biz_data.deepInfo.average_cost"
+                        }
+                      ],
+                      "false": {
+                        "id": "div_line_price",
+                        "display": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "func": {
+                        "name": "StringLength",
+                        "param": {
+                          "value": "$biz_data.deepInfo.rating"
+                        }
+                      },
+                      "operator": "equal",
+                      "value": 0
+                    },
+                    "case": {
+                      "true": {
+                        "id": "div_line_score",
+                        "display": false
+                      },
+                      "false": [
+                        {
+                          "id": "div_line_score",
+                          "display": true
+                        },
+                        {
+                          "id": "score_text",
+                          "display": true,
+                          "value": "$biz_data.deepInfo.rating"
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "func": {
+                        "name": "StringLength",
+                        "param": {
+                          "value": "$biz_data.poiName"
+                        }
+                      },
+                      "operator": "gt",
+                      "value": 0
+                    },
+                    "case": {
+                      "true": {
+                        "id": "name_text",
+                        "display": true,
+                        "value": "$biz_data.poiName"
+                      },
+                      "false": {
+                        "id": "name_text",
+                        "display": false
+                      }
+                    }
+                  }
+                }
+              ],
+              "5": [
+                {
+                  "id": "id_unit_rise",
+                  "display": false
+                },
+                {
+                  "id": "div_line_price",
+                  "display": false
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "func": {
+                        "name": "StringLength",
+                        "param": {
+                          "value": "$biz_data.deepInfo.rank_name"
+                        }
+                      },
+                      "operator": "gt",
+                      "value": 0
+                    },
+                    "case": {
+                      "true": {
+                        "id": "div_rank",
+                        "display": true,
+                        "style": "display:flex"
+                      },
+                      "false": {
+                        "id": "div_rank",
+                        "display": false,
+                        "style": "display:none"
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "func": {
+                        "name": "StringLength",
+                        "param": {
+                          "value": "$biz_data.deepInfo.rating"
+                        }
+                      },
+                      "operator": "equal",
+                      "value": 0
+                    },
+                    "case": {
+                      "true": {
+                        "id": "div_line_score",
+                        "display": false
+                      },
+                      "false": [
+                        {
+                          "id": "div_line_score",
+                          "display": true
+                        },
+                        {
+                          "id": "score_text",
+                          "display": true,
+                          "value": "$biz_data.deepInfo.rating"
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "func": {
+                        "name": "StringLength",
+                        "param": {
+                          "value": "$biz_data.poiName"
+                        }
+                      },
+                      "operator": "gt",
+                      "value": 0
+                    },
+                    "case": {
+                      "true": {
+                        "id": "name_text",
+                        "display": true,
+                        "value": "$biz_data.poiName"
+                      },
+                      "false": {
+                        "id": "name_text",
+                        "display": false
+                      }
+                    }
+                  }
+                }
+              ],
+              "7": [
+                {
+                  "id": "id_unit_person",
+                  "display": false
+                },
+                {
+                  "id": "div_rank",
+                  "display": false
+                },
+                {
+                  "id": "div_line_price",
+                  "display": false
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "func": {
+                        "name": "StringLength",
+                        "param": {
+                          "value": "$biz_data.deepInfo.rating"
+                        }
+                      },
+                      "operator": "equal",
+                      "value": 0
+                    },
+                    "case": {
+                      "true": {
+                        "id": "div_line_score",
+                        "display": false
+                      },
+                      "false": [
+                        {
+                          "id": "div_line_score",
+                          "display": true
+                        },
+                        {
+                          "id": "score_text",
+                          "display": true,
+                          "value": "$biz_data.deepInfo.rating"
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "func": {
+                        "name": "StringLength",
+                        "param": {
+                          "value": "$biz_data.poiName"
+                        }
+                      },
+                      "operator": "gt",
+                      "value": 0
+                    },
+                    "case": {
+                      "true": {
+                        "id": "name_text",
+                        "display": true,
+                        "value": "$biz_data.poiName"
+                      },
+                      "false": {
+                        "id": "name_text",
+                        "display": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "brief": "停车场信息填充",
+          "type": "marker_switch",
+          "value": {
+            "marker_id": [
+              "search_parent_park_right.xml",
+              "search_parent_park_left.xml"
+            ],
+            "condition": "$biz_data.userPOIType",
+            "case": {
+              "10": [
+                {
+                  "if": {
+                    "condition": {
+                      "fact": "$biz_data.deepInfo.space_free",
+                      "operator": "unequal",
+                      "value": -1
+                    },
+                    "case": {
+                      "true": [
+                        {
+                          "id": "parking_label_idle_number_text",
+                          "display": true,
+                          "value": "$biz_data.deepInfo.space_free"
+                        },
+                        {
+                          "if": {
+                            "condition": {
+                              "fact": "$biz_data.deepInfo.space_total",
+                              "operator": "unequal",
+                              "value": -1
+                            },
+                            "case": {
+                              "true": {
+                                "id": "parking_label_idle_number_all_text",
+                                "display": true,
+                                "value": "$biz_data.deepInfo.space_total"
+                              },
+                              "false": [
+                                {
+                                  "id": "parking_label_idle_title_text",
+                                  "display": false
+                                },
+                                {
+                                  "id": "parking_label_idle_number_all_text",
+                                  "display": false
+                                }
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "id": "parking_label_enough_div",
+                          "display": false
+                        },
+                        {
+                          "id": "parking_label_no_enough_div",
+                          "display": false
+                        },
+                        {
+                          "if": {
+                            "condition": {
+                              "fact": "$biz_data.deepInfo.space_free",
+                              "operator": "equal",
+                              "value": 0
+                            },
+                            "case": {
+                              "true": {
+                                "if": {
+                                  "condition": {
+                                    "func": {
+                                      "name": "IsNightMode"
+                                    },
+                                    "operator": "equal",
+                                    "value": true
+                                  },
+                                  "case": {
+                                    "true": [
+                                      {
+                                        "id": "parking_label_idle_text",
+                                        "style": "color:#E8584C"
+                                      },
+                                      {
+                                        "id": "parking_label_idle_number_text",
+                                        "style": "color:#E8584C"
+                                      },
+                                      {
+                                        "id": "parking_label_idle_title_text",
+                                        "style": "color:#80E8584C"
+                                      },
+                                      {
+                                        "id": "parking_label_idle_number_all_text",
+                                        "style": "color:#80E8584C"
+                                      }
+                                    ],
+                                    "false": [
+                                      {
+                                        "id": "parking_label_idle_text",
+                                        "style": "color:#F62020"
+                                      },
+                                      {
+                                        "id": "parking_label_idle_number_text",
+                                        "style": "color:#F62020"
+                                      },
+                                      {
+                                        "id": "parking_label_idle_title_text",
+                                        "style": "color:#80F62020"
+                                      },
+                                      {
+                                        "id": "parking_label_idle_number_all_text",
+                                        "style": "color:#80F62020"
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ],
+                      "false": [
+                        {
+                          "switch": {
+                            "condition": "$biz_data.deepInfo.busy_status",
+                            "case": {
+                              "1": [
+                                {
+                                  "id": "parking_label_enough_text",
+                                  "display": true,
+                                  "value": "车位充足"
+                                },
+                                {
+                                  "id": "parking_label_no_enough_div",
+                                  "display": false
+                                },
+                                {
+                                  "id": "parking_label_infototal_div",
+                                  "display": false
+                                },
+                                {
+                                  "id": "parking_label_idle_text",
+                                  "display": false
+                                }
+                              ],
+                              "2": [
+                                {
+                                  "id": "parking_label_enough_text",
+                                  "display": true,
+                                  "value": "车位够用"
+                                },
+                                {
+                                  "id": "parking_label_no_enough_div",
+                                  "display": false
+                                },
+                                {
+                                  "id": "parking_label_infototal_div",
+                                  "display": false
+                                },
+                                {
+                                  "id": "parking_label_idle_text",
+                                  "display": false
+                                }
+                              ],
+                              "3": [
+                                {
+                                  "id": "parking_label_no_enough_text",
+                                  "display": true,
+                                  "value": "车位较少"
+                                },
+                                {
+                                  "id": "parking_label_enough_div",
+                                  "display": false
+                                },
+                                {
+                                  "id": "parking_label_infototal_div",
+                                  "display": false
+                                },
+                                {
+                                  "id": "parking_label_idle_text",
+                                  "display": false
+                                }
+                              ],
+                              "4": [
+                                {
+                                  "id": "parking_label_no_enough_text",
+                                  "display": true,
+                                  "value": "车位紧张"
+                                },
+                                {
+                                  "id": "parking_label_enough_div",
+                                  "display": false
+                                },
+                                {
+                                  "id": "parking_label_infototal_div",
+                                  "display": false
+                                },
+                                {
+                                  "id": "parking_label_idle_text",
+                                  "display": false
+                                }
+                              ],
+                              "5": [
+                                {
+                                  "id": "parking_label_no_enough_text",
+                                  "display": true,
+                                  "value": "车位已满"
+                                },
+                                {
+                                  "id": "parking_label_enough_div",
+                                  "display": false
+                                },
+                                {
+                                  "id": "parking_label_infototal_div",
+                                  "display": false
+                                },
+                                {
+                                  "id": "parking_label_idle_text",
+                                  "display": false
+                                }
+                              ],
+                              "default": [
+                                {
+                                  "if": {
+                                    "condition": {
+                                      "fact": "$biz_data.deepInfo.space_total",
+                                      "operator": "unequal",
+                                      "value": -1
+                                    },
+                                    "case": {
+                                      "true": [
+                                        {
+                                          "id": "parking_label_idle_number_text",
+                                          "display": true,
+                                          "value": "$biz_data.deepInfo.space_total"
+                                        },
+                                        {
+                                          "id": "parking_label_idle_text",
+                                          "display": true,
+                                          "value": "BlRes::string::in_total"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "id": "parking_label_div",
+                                          "display": false
+                                        }
+                                      ]
+                                    }
+                                  }
+                                },
+                                {
+                                  "id": "parking_label_enough_div",
+                                  "display": false
+                                },
+                                {
+                                  "id": "parking_label_no_enough_div",
+                                  "display": false
+                                }
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "id": "parking_label_idle_number_all_text",
+                          "display": false
+                        },
+                        {
+                          "id": "parking_label_idle_title_text",
+                          "display": false
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "condition": {
+                      "func": {
+                        "name": "StringLength",
+                        "param": {
+                          "value": "$biz_data.poiName"
+                        }
+                      },
+                      "operator": "gt",
+                      "value": 0
+                    },
+                    "case": {
+                      "true": {
+                        "id": "name_text",
+                        "display": true,
+                        "value": "$biz_data.poiName"
+                      },
+                      "false": {
+                        "id": "name_text",
+                        "display": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "brief": "通用无深度信息图片选择",
+          "type": "marker_switch",
+          "value": {
+            "marker_id": [
+              "search_parent_common_left.xml",
+              "search_parent_common_right.xml"
+            ],
+            "condition": "$biz_data.userPOIType",
+            "case": {
+              "8": {
+                "id": "type_image",
+                "display": true,
+                "value": "global_image_navi_along_search_hospital_icon2_day_night"
+              },
+              "9": {
+                "id": "type_image",
+                "display": true,
+                "value": "global_image_navi_along_search_shopping_icon2_day_night"
+              },
+              "11": {
+                "id": "type_image",
+                "display": true,
+                "value": "global_image_navi_along_search_carservice_icon2_day_night"
+              },
+              "12": {
+                "id": "type_image",
+                "display": true,
+                "value": "global_image_navi_along_search_wc_icon2_day_night"
+              },
+              "13": {
+                "id": "type_image",
+                "display": true,
+                "value": "global_image_navi_along_search_shangchang_icon2_day_night"
+              },
+              "14": {
+                "id": "type_image",
+                "display": true,
+                "value": "global_image_navi_along_search_cinema_icon2_day_night"
+              },
+              "15": {
+                "id": "type_image",
+                "display": true,
+                "value": "global_image_navi_along_search_ktv_icon2_day_night"
+              },
+              "16": {
+                "id": "type_image",
+                "display": true,
+                "value": "global_image_navi_along_search_school_icon2_day_night"
+              },
+              "17": {
+                "id": "type_image",
+                "display": true,
+                "value": "global_image_navi_along_search_trainstation_icon2_day_night"
+              },
+              "default": {
+                "id": "type_image",
+                "display": true,
+                "value": "global_image_b_child_poi_hl2_day_night"
+              }
+            }
+          }
+        },
+        {
+          "brief": "通用无深度信息文字填充",
+          "type": "marker_if",
+          "value": {
+            "marker_id": [
+              "search_parent_common_left.xml",
+              "search_parent_common_right.xml"
+            ],
+            "condition": {
+              "func": {
+                "name": "StringLength",
+                "param": {
+                  "value": "$biz_data.poiName"
+                }
+              },
+              "operator": "gt",
+              "value": 0
+            },
+            "case": {
+              "true": {
+                "id": "name_text",
+                "display": true,
+                "value": "$biz_data.poiName"
+              },
+              "false": {
+                "id": "name_text",
+                "display": false
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "abstract": {
+    "brief": "搜索父POI点图层",
+    "name": "search_point_root_layer",
+    "biz_type": 7004,
+    "update_card": false
+  },
+  "dataSource": "[{\"item_data\":{\"position\":{\"lon\":116.356796,\"lat\":39.939559,\"z\":0}},\"biz_data\":{\"poiType\":6,\"typeCode\":0,\"index\":0,\"text\":\"\",\"itemID\":\"$sys_data.bizLayer.layerItem.id\",\"poiName\":\"测试名_0\",\"markerBGRes\":\"\",\"deepInfo\":{\"type\":6,\"child_type\":-1,\"type_code\":0,\"discount\":10.6,\"is_discount\":true,\"current_price\":48,\"num_fast\":8,\"num_slow\":4,\"slow_free\":5,\"fast_free\":7,\"super_free\":9,\"slow_total\":10,\"fast_total\":14,\"super_total\":18,\"current_ele_price\":1.5,\"current_ser_price\":0.1}}},{\"item_data\":{\"position\":{\"lon\":116.3577960000475,\"lat\":39.9405590000475,\"z\":0}},\"biz_data\":{\"poiType\":6,\"typeCode\":0,\"index\":0,\"text\":\"\",\"itemID\":\"$sys_data.bizLayer.layerItem.id\",\"poiName\":\"测试名_0\",\"markerBGRes\":\"\",\"deepInfo\":{\"type\":6,\"child_type\":-1,\"type_code\":0,\"discount\":10.6,\"is_discount\":true,\"current_price\":48,\"num_fast\":18,\"num_slow\":16,\"slow_free\":5,\"fast_free\":17,\"super_free\":19,\"slow_total\":20,\"fast_total\":24,\"super_total\":28,\"current_ele_price\":1.5,\"current_ser_price\":0.1}}}]"
+}

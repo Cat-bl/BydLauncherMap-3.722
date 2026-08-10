@@ -1,0 +1,32 @@
+{
+    "marker_info": {
+        "marker_info_point_center_up": {
+            "anchor": 9,
+            "y_ratio": 0.9,
+            "x_ratio": 0.5
+        }
+    },
+    "layer_item_info": {
+        "point_search_alongroute_restarea": {
+            "point_layer_item_style": {
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_navi_along_search_fwq_station_big_icon_day_night"
+                            }
+                        ]
+                    }
+                },
+                "normal_style": {
+                    "poi_marker_id": "along_route_restarea.xml",
+                    "poi_marker_info": "marker_info_along_search_point"
+                }
+            },
+            "index": 0,
+            "name_cn": "服务区"
+        }
+    }
+}

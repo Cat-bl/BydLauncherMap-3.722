@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="@dimen/custom_btn_function3_press_state_corner_pressed_day"/>
+    <solid android:color="@color/custom_btn_function3_press_state_solid_pressed_day"/>
+</shape>

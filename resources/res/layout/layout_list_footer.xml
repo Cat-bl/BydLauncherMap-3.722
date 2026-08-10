@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.autonavi.skin.view.SkinTextView
+        android:textSize="@dimen/auto_font_size_16"
+        android:textColor="@color/byd_search_home_item_sub_tip_day"
+        android:gravity="center"
+        android:id="@+id/stv_text_foot_view"
+        android:paddingTop="@dimen/auto_dimen2_28"
+        android:paddingBottom="@dimen/auto_dimen2_28"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:lineSpacingExtra="@dimen/auto_dimen2_4"
+        app:textColor4Night="@color/byd_search_home_item_sub_tip_night"
+        app:textColor4Skin="@color/byd_search_home_item_sub_tip_day"/>
+</LinearLayout>

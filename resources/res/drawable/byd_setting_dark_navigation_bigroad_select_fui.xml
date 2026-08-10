@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="true"
+        android:state_selected="true"
+        android:drawable="@drawable/icon_setting_dark_navigation_bigroad_selected_fui"/>
+    <item
+        android:state_enabled="false"
+        android:drawable="@drawable/icon_setting_dark_navigation_bigroad_disable_fui"/>
+    <item android:drawable="@drawable/icon_setting_dark_navigation_bigroad_unselected_fui"/>
+</selector>

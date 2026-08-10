@@ -1,0 +1,317 @@
+{
+    "marker_info": {
+        "marker_info_road_facilities": {
+            "anchor": 9,
+            "x_ratio": 0.5,
+            "y_ratio": 0.935
+        }
+    },
+    "layer_item_info": {
+        "guide_facilities_left_in": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_left_in"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "左侧合流"
+        },
+        "guide_facilities_right_in": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_right_in"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 1,
+            "name_cn": "右侧合流"
+        },
+        "guide_facilities_sharp_turn_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_right_sharp_turn"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 2,
+            "name_cn": "急转弯"
+        },
+        "guide_facilities_sharp_turn_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_left_sharp_turn"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 3,
+            "name_cn": "左急转弯"
+        },
+        "guide_facilities_continuous_curve": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_continuous_curve"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 4,
+            "name_cn": "连续转弯"
+        },
+        "guide_facilities_accident_prone_sections": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_accident_prone_sections"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 5,
+            "name_cn": "事故多发地"
+        },
+        "guide_facilities_right_falling_rocks": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_right_falling_rocks"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 6,
+            "name_cn": "注意落石"
+        },
+        "guide_facilities_left_falling_rocks": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_left_falling_rocks"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 7,
+            "name_cn": "注意左侧落石"
+        },
+        "guide_facilities_railway_crossing": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_railway_crossing"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 8,
+            "name_cn": "铁路道口"
+        },
+        "guide_facilities_easy_slip_road": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_easy_slip_road"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 9,
+            "name_cn": "易滑"
+        },
+        "guide_facilities_village": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_village"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 10,
+            "name_cn": "村庄"
+        },
+        "guide_facilities_left_lane_narrowing": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_left_lane_narrowing"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 11,
+            "name_cn": "左侧变窄"
+        },
+        "guide_facilities_right_lane_narrowing": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_right_lane_narrowing"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 12,
+            "name_cn": "右侧变窄"
+        },
+        "guide_facilities_lane_narrowing_on_both_sides": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_lane_narrowing_on_both_sides"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 13,
+            "name_cn": "两侧变窄"
+        },
+        "guide_facilities_the_wind": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_the_wind"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 14,
+            "name_cn": "横风区"
+        },
+        "guide_facilities_school": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_school"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 15,
+            "name_cn": "前方学校"
+        },
+        "guide_facilities_upper_slope": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_upper_slope"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 16,
+            "name_cn": "上陡坡"
+        },
+        "guide_facilities_down_slope": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_road_facilities",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_auto_ic_road_facilities_down_slope"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 17,
+            "name_cn": "下陡坡"
+        }
+    }
+}

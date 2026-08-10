@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="@dimen/custom_function_home_bg_theme_bg1_corner_pressed_day"/>
+            <stroke
+                android:width="@dimen/custom_function_home_bg_theme_bg1_strokewidth_pressed_day"
+                android:color="#4b4b4b"/>
+            <gradient
+                android:startColor="#80373737"
+                android:endColor="#353535"
+                android:angle="90"
+                android:centerX="0.5"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="@dimen/custom_function_home_bg_theme_bg1_corner_pressed_day"/>
+            <solid android:color="@color/custom_function_home_bg_theme_bg1_solid1_pressed_day"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,8 @@
+<div id="along_route_charge_xingxing_energy" style="display:flex;flex-direction:row;">
+  <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-left:32px;width:66px;height:52px;">
+    <image style="width:66px;height:32px;position:absolute;" src="global_image_map_power_bg_day_night" />
+    <label id="type_name" style="margin-left:4px;font-size:20px;color:#000000;font-family:SDK_Font-Medium;" lines="1">59%</label>
+  </div>
+  <image style="width:44px;height:52px;position:absolute;top:4px;" src="global_image_navi_along_search_charge_icon_day_night" />
+</div>
+

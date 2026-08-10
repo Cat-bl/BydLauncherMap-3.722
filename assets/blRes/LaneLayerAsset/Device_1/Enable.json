@@ -1,0 +1,16 @@
+{
+    "lane_guide_alternative_path_layer": 1,
+    "lane_guide_camera_layer": 1,
+    "lane_guide_congestion_layer": 1,
+    "lane_guide_end_layer": 1,
+    "lane_guide_event_layer": 1,
+    "lane_guide_merge_reason_layer": 1,
+    "lane_guide_normal_camera_layer": 1,
+    "lane_guide_not_recommended_layer": 1,
+    "lane_guide_odd_layer": 1,
+    "lane_guide_restricted_layer": 1,
+    "lane_guide_traffic_light_countdown_layer": 1,
+    "lane_guide_traffic_light_icon_layer": 1,
+    "lane_guide_turn_layer": 1,
+    "lane_guide_via_layer": 1
+}

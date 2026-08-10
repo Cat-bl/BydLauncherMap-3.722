@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_auto_navi_drive_item_arrow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:designHeight="600"
+    app:designWidth="1024">
+    <com.autonavi.skin.view.SkinImageView
+        android:id="@+id/siv_right_extend_divider"
+        android:layout_width="@dimen/auto_dimen2_10"
+        android:layout_height="@dimen/auto_dimen2_64"
+        android:layout_marginStart="@dimen/auto_dimen2_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.autonavi.skin.view.SkinImageView
+        android:id="@+id/siv_left_extend_divider"
+        android:layout_width="@dimen/auto_dimen2_10"
+        android:layout_height="@dimen/auto_dimen2_64"
+        android:layout_marginEnd="@dimen/auto_dimen2_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.autonavi.skin.view.SkinImageView
+        android:id="@+id/siv_drive_way_arrow"
+        android:layout_width="@dimen/auto_dimen2_40"
+        android:layout_height="@dimen/auto_dimen2_64"
+        android:layout_marginLeft="@dimen/auto_dimen2_2"
+        android:layout_marginRight="@dimen/auto_dimen2_2"
+        android:scaleType="fitCenter"
+        android:layout_marginHorizontal="@dimen/auto_dimen2_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</com.autonavi.skin.view.SkinConstraintLayout>

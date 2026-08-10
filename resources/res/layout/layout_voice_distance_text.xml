@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_distance_text"
+    android:layout_width="@dimen/auto_dimen2_128"
+    android:layout_height="@dimen/auto_dimen2_48">
+    <com.autonavi.skin.view.SkinTextView
+        android:textSize="@dimen/auto_font_size_14"
+        android:textColor="@color/sys_inverseColor_secondary_light"
+        android:gravity="center"
+        android:id="@+id/stv_distance_of_target"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/distance_of_target"
+        app:layout_constraintEnd_toStartOf="@+id/stv_distance_text"
+        app:textColor4Night="@color/sys_color_secondary_dark"
+        app:textColor4Skin="@color/sys_inverseColor_secondary_light"/>
+    <com.autonavi.skin.view.SkinTextView
+        android:textSize="@dimen/auto_font_size_14"
+        android:textColor="@color/sys_inverseColor_default_light"
+        android:gravity="center"
+        android:id="@+id/stv_distance_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/auto_navi_text_distance"
+        android:layout_marginEnd="@dimen/auto_dimen2_2"
+        app:layout_constraintEnd_toStartOf="@+id/stv_distance_unit"
+        app:textColor4Night="@color/sys_color_default"
+        app:textColor4Skin="@color/sys_inverseColor_default_light"/>
+    <com.autonavi.skin.view.SkinTextView
+        android:textSize="@dimen/auto_font_size_14"
+        android:textColor="@color/sys_inverseColor_secondary_light"
+        android:gravity="center"
+        android:id="@+id/stv_distance_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/auto_navi_simple_text_toll_station_distance_unit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:textColor4Night="@color/sys_color_secondary_dark"
+        app:textColor4Skin="@color/sys_inverseColor_secondary_light"/>
+</com.autonavi.skin.view.SkinConstraintLayout>

@@ -1,0 +1,101 @@
+{
+    "marker_info": {},
+    "layer_item_info": {
+        "point_route_path_number_one": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_numbertoken_nor_1_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "路线1"
+        },
+        "point_route_path_number_one_select": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_numbertoken_nor_1_hill"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 1,
+            "name_cn": "路线1 选中"
+        },
+        "point_route_path_number_two": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_numbertoken_nor_2_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 2,
+            "name_cn": "路线2"
+        },
+        "point_route_path_number_two_select": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_numbertoken_nor_2_hill"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 3,
+            "name_cn": "路线2 选中"
+        },
+        "point_route_path_number_three": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_numbertoken_nor_3_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 4,
+            "name_cn": "路线3"
+        },
+        "point_route_path_number_three_select": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_numbertoken_nor_3_hill"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 5,
+            "name_cn": "路线3 选中"
+        }
+    }
+}

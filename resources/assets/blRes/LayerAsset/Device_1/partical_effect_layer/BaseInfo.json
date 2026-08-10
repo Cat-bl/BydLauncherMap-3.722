@@ -1,0 +1,7 @@
+{
+    "id": 1016,
+    "layer_priority": {
+        "draw_priority": 120,
+        "sub_priority": 100
+    }
+}

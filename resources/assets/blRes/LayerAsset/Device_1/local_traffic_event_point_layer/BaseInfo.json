@@ -1,0 +1,14 @@
+{
+    "id": 5012,
+    "layer_priority": {
+        "draw_priority": 140,
+        "sub_priority": 3640
+    },
+    "layer_filter":	{
+		"enable": 1,
+		"type":	-1
+	},
+	"layer_collision":	1,
+	"enable_click":	1,
+    "item":	"PointLayerItem"
+}

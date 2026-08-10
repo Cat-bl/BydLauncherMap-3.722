@@ -1,0 +1,296 @@
+{
+	"roadPolygonMarker": "RoadPolygon",
+	"roadPolygonMarkerNight": "RoadPolygonNight",
+  "gradientStartPosAfterCarLength": -50,
+  "gradientLengthOfSurfaceStart": 200,
+  "gradientLengthOfSurfaceEnd": 70,
+  "breakPointsGrandientLength": 70,
+  "suppressedColorCoeff": 0.75,
+	"changeLevel": 17.75,
+"srinfo": {
+
+    "portrait":{
+      "carAndRoadblock": {
+        "minLevel": 18.5,
+        "maxLevel": 20
+      },
+      "ngpLine": {
+        "minLevel": 18.5,
+        "maxLevel": 20
+      },
+      "LCCLine": {
+        "minLevel": 18.5,
+        "maxLevel": 20
+      },
+      "destCarFrameAndHightLine": {
+        "minLevel": 18.5,
+        "maxLevel": 20
+      }
+    },
+
+    "landscape":{
+      "carAndRoadblock": {
+        "minLevel": 18.3,
+        "maxLevel": 20
+      },
+      "ngpLine": {
+        "minLevel": 18.3,
+        "maxLevel": 20
+      },
+      "LCCLine": {
+        "minLevel": 18.3,
+        "maxLevel": 20
+      },
+      "destCarFrameAndHightLine": {
+        "minLevel": 18.3,
+        "maxLevel": 20
+      }
+    }
+  },
+	"surfaceColor": [{
+			"level": 17,
+			"dayColor": 3875483169,
+			"nightColor": 3172544627
+		},
+		{
+			"level": 18,
+			"dayColor": 3875483169,
+			"nightColor": 3172544627
+		}
+        
+	],
+	"surfecelinColor": [
+	{
+            "level": 16,
+            "dayColor": 3875483169,
+            "nightColor": 3172544627,
+            "width": 22,
+            "borderLineWidth": 3,
+            "borderTmcColorDay": {
+                "tmcColorUninit": 4286751705,
+                "tmcColorUnknown": 4286751705,
+                "tmcColorOpen": 4282166174,
+                "tmcColorSlow": 4292194598,
+                "tmcColorJam": 4294151309,
+                "tmcColorCongested": 4294151309,
+                "tmcColorExtremeOpen": 4282166174
+            },
+            "borderTmcColorNight": {
+                "tmcColorUninit": 4285567689,
+                "tmcColorUnknown": 4285567689,
+                "tmcColorOpen": 4283736723,
+                "tmcColorSlow": 4291996694,
+                "tmcColorJam": 4292442747,
+                "tmcColorCongested": 4292442747,
+                "tmcColorExtremeOpen": 4283736723
+            }
+        },
+	{
+            "level": 17,
+            "dayColor": 3875483169,
+            "nightColor": 3172544627,
+            "width": 15,
+            "borderLineWidth": 1.8,
+            "borderTmcColorDay": {
+                "tmcColorUninit": 4286751705,
+                "tmcColorUnknown": 4286751705,
+                "tmcColorOpen": 4282166174,
+                "tmcColorSlow": 4292194598,
+                "tmcColorJam": 4294151309,
+                "tmcColorCongested": 4294151309,
+                "tmcColorExtremeOpen": 4282166174
+            },
+            "borderTmcColorNight": {
+                "tmcColorUninit": 4285567689,
+                "tmcColorUnknown": 4285567689,
+                "tmcColorOpen": 4283736723,
+                "tmcColorSlow": 4291996694,
+                "tmcColorJam": 4292442747,
+                "tmcColorCongested": 4292442747,
+                "tmcColorExtremeOpen": 4283736723
+            }
+        },
+        {
+            "level": 18,
+            "dayColor": 3875483169,
+            "nightColor": 3172544627,
+            "width": 5,
+            "borderLineWidth": 0.5,
+            "borderTmcColorDay": {
+                "tmcColorUninit": 4286751705,
+                "tmcColorUnknown": 4286751705,
+                "tmcColorOpen": 4282166174,
+                "tmcColorSlow": 4292194598,
+                "tmcColorJam": 4294151309,
+                "tmcColorCongested": 4294151309,
+                "tmcColorExtremeOpen": 4282166174
+            },
+            "borderTmcColorNight": {
+                "tmcColorUninit": 4285567689,
+                "tmcColorUnknown": 4285567689,
+                "tmcColorOpen": 4283736723,
+                "tmcColorSlow": 4291996694,
+                "tmcColorJam": 4292442747,
+                "tmcColorCongested": 4292442747,
+                "tmcColorExtremeOpen": 4283736723
+            }
+        }
+	],
+    "zOffset": 0,
+    "surfaceTmcColorDay": {
+        "tmcColorUninit": 3650593747,
+        "tmcColorUnknown": 3650593747,
+        "tmcColorOpen": 3645277416,
+        "tmcColorSlow": 3653280315,
+        "tmcColorJam": 3647229219,
+        "tmcColorCongested": 3647229219,
+        "tmcColorExtremeOpen": 3645277416
+    },
+    "surfaceTmcColorNight": {
+        "tmcColorUninit": 3647304361,
+        "tmcColorUnknown": 3647304361,
+        "tmcColorOpen": 3643181776,
+        "tmcColorSlow": 2797314920,
+        "tmcColorJam": 3654446192,
+        "tmcColorCongested": 3654446192,
+        "tmcColorExtremeOpen": 3643181776
+    },
+    "surfaceSuppressedTmcColorDay": {
+        "tmcColorUninit": 3650593747,
+        "tmcColorUnknown": 3650593747,
+        "tmcColorOpen": 3645277416,
+        "tmcColorSlow": 3653280315,
+        "tmcColorJam": 3647229219,
+        "tmcColorCongested": 3647229219,
+        "tmcColorExtremeOpen": 3645277416
+    },
+    "surfaceSuppressedTmcColorNight": {
+        "tmcColorUninit": 3647304361,
+        "tmcColorUnknown": 3647304361,
+        "tmcColorOpen": 3643181776,
+        "tmcColorSlow": 2797314920,
+        "tmcColorJam": 3654446192,
+        "tmcColorCongested": 3654446192,
+        "tmcColorExtremeOpen": 3643181776
+    },
+    "surfaceLineTmcColorDay": {
+        "tmcColorUninit": 3650593747,
+        "tmcColorUnknown": 3650593747,
+        "tmcColorOpen": 3645277416,
+        "tmcColorSlow": 3653280315,
+        "tmcColorJam": 3647229219,
+        "tmcColorCongested": 3647229219,
+        "tmcColorExtremeOpen": 3645277416
+    },
+    "surfaceLineTmcColorNight": {
+        "tmcColorUninit": 3647304361,
+        "tmcColorUnknown": 3647304361,
+        "tmcColorOpen": 3643181776,
+        "tmcColorSlow": 2797314920,
+        "tmcColorJam": 3654446192,
+        "tmcColorCongested": 3654446192,
+        "tmcColorExtremeOpen": 3643181776
+    },
+    "surfaceBorderTmcColorDay": {
+        "tmcColorUninit": 8561625,
+        "tmcColorUnknown": 8561625,
+        "tmcColorOpen": 4904101,
+        "tmcColorSlow": 14004518,
+        "tmcColorJam": 15961229,
+        "tmcColorCongested": 15961229,
+        "tmcColorExtremeOpen": 4904101
+    },
+    "surfaceBorderTmcColorNight": {
+        "tmcColorUninit": 7377609,
+        "tmcColorUnknown": 7377609,
+        "tmcColorOpen": 5546643,
+        "tmcColorSlow": 11312504,
+        "tmcColorJam": 14252667,
+        "tmcColorCongested": 14252667,
+        "tmcColorExtremeOpen": 5546643
+    },
+    "optionalSurfaceTmcColorDay": {
+        "tmcColorUninit": 3646844554,
+        "tmcColorUnknown": 3646844554,
+        "tmcColorOpen": 4286419895,
+        "tmcColorSlow": 4288583803,
+        "tmcColorJam": 4289433195,
+        "tmcColorCongested": 4289433195,
+        "tmcColorExtremeOpen": 4286419895
+    },
+    "optionalSurfaceTmcColorNight": {
+        "tmcColorUninit": 4284638325,
+        "tmcColorUnknown": 4284638325,
+        "tmcColorOpen": 4281355652,
+        "tmcColorSlow": 1942532725,
+        "tmcColorJam": 2793301568,
+        "tmcColorCongested": 2793301568,
+        "tmcColorExtremeOpen": 4281355652
+    },
+    "optionalSurfaceSuppressedTmcColorDay": {
+        "tmcColorUninit": 3646844554,
+        "tmcColorUnknown": 3646844554,
+        "tmcColorOpen": 4286419895,
+        "tmcColorSlow": 4288583803,
+        "tmcColorJam": 4289433195,
+        "tmcColorCongested": 4289433195,
+        "tmcColorExtremeOpen": 4286419895
+    },
+    "optionalSurfaceSuppressedTmcColorNight": {
+        "tmcColorUninit": 4284638325,
+        "tmcColorUnknown": 4284638325,
+        "tmcColorOpen": 4281355652,
+        "tmcColorSlow": 1942532725,
+        "tmcColorJam": 2793301568,
+        "tmcColorCongested": 2793301568,
+        "tmcColorExtremeOpen": 4281355652
+    },
+    "optionalSurfaceLineTmcColorDay": {
+        "tmcColorUninit": 3646844554,
+        "tmcColorUnknown": 3646844554,
+        "tmcColorOpen": 4286419895,
+        "tmcColorSlow": 4288583803,
+        "tmcColorJam": 4289433195,
+        "tmcColorCongested": 4289433195,
+        "tmcColorExtremeOpen": 4286419895
+    },
+    "optionalSurfaceLineTmcColorNight": {
+        "tmcColorUninit": 4284638325,
+        "tmcColorUnknown": 4284638325,
+        "tmcColorOpen": 4281355652,
+        "tmcColorSlow": 1942532725,
+        "tmcColorJam": 2793301568,
+        "tmcColorCongested": 2793301568,
+        "tmcColorExtremeOpen": 4281355652
+    },
+    "optionalSurfaceBorderTmcColorDay": {
+        "tmcColorUninit": 9280450,
+        "tmcColorUnknown": 9280450,
+        "tmcColorOpen": 9286566,
+        "tmcColorSlow": 11380084,
+        "tmcColorJam": 12751763,
+        "tmcColorCongested": 12751763,
+        "tmcColorExtremeOpen": 9286566
+    },
+    "optionalSurfaceBorderTmcColorNight": {
+        "tmcColorUninit": 7898795,
+        "tmcColorUnknown": 7898795,
+        "tmcColorOpen": 6127986,
+        "tmcColorSlow": 9210722,
+        "tmcColorJam": 10123127,
+        "tmcColorCongested": 10123127,
+        "tmcColorExtremeOpen": 6127986
+    },
+    "firstDrawAlpha": 0.85,
+    "secondDrawAlpha": 0.15,
+    "displayMinScale": 16.0,
+    "displayMaxScale": 20.0,
+    "optionalSurfaceFixedWidth": 5.0,
+    "optionalSurfaceBorderWidth": 0.4,
+    "optionalMaintainBackwardLengthNormal": 30.0,
+    "optionalMaintainBackwardLengthExpress": 50.0,
+    "optionalMaintainForwardLength": 50.0,
+    "optionalShapeGradientLength": 100.0,
+    "optionalTransparencyGradientLength": 30.0,
+    "slantAvoidanceLength": 20.0
+}

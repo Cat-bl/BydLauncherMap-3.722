@@ -1,0 +1,84 @@
+{
+    "marker_info": {
+        "marker_info_search_recommend_end_bubble_point": {
+            "anchor": 5,
+            "day_style": {
+                "color": [
+                    {
+                        "parking_recommend_text": "#E6000000"
+                    },
+                    {
+                        "parking_difficult_text": "#F62020"
+                    },
+                    {
+                        "parking_subtitle_text": "#CC3C3C43"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "parking_recommend_text": "#BFFFFFFF"
+                    },
+                    {
+                        "parking_difficult_text": "#E8584C"
+                    },
+                    {
+                        "parking_subtitle_text": "#8CFFFFFF"
+                    }
+                ]
+            }
+        },
+        "marker_info_search_recommend_end_bubble_point_simple": {
+            "anchor": 5,
+            "day_style": {
+                "color": [
+                    {
+                        "parking_recommend_text": "#E6000000"
+                    },
+                    {
+                        "parking_difficult_text": "#F62020"
+                    },
+                    {
+                        "parking_no_queue_text": "#2DC150"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "parking_recommend_text": "#BFFFFFFF"
+                    },
+                    {
+                        "parking_difficult_text": "#E8584C"
+                    },
+                    {
+                        "parking_no_queue_text": "#379E4F"
+                    }
+                ]
+            }
+        }
+    },
+    "layer_item_info": {
+        "search_recommend_end_bubble_point": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_recommend_end_bubble_point.xml",
+                    "poi_marker_info": "marker_info_search_recommend_end_bubble_point"
+                }
+            },
+            "index": 0,
+            "name_cn": "双行"
+        },
+        "search_recommend_end_bubble_point_simple": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_recommend_end_bubble_point_simple.xml",
+                    "poi_marker_info": "marker_info_search_recommend_end_bubble_point_simple"
+                }
+            },
+            "index": 1,
+            "name_cn": "单行"
+        }
+    }
+}

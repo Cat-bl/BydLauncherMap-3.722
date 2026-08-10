@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="false" android:color="@color/byd_text_help_tab_textcolor_night_unselected" />
+    <item android:state_selected="true" android:color="@color/byd_text_help_tab_textcolor_night_selected" />
+</selector>

@@ -1,0 +1,8 @@
+{
+	"id":	9001,
+	"layer_priority":	{
+		"draw_priority":	100,
+		"sub_priority":	300
+	},
+	"item":	"LineLayerItem"
+}

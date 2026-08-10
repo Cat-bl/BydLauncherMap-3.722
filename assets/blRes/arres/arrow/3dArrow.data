@@ -1,0 +1,329 @@
+{
+    "asset": {
+        "generator": "FBX2glTF v0.9.7",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "extensionsUsed": [
+        "KHR_lights_punctual"
+    ],
+    "buffers": [
+        {
+            "byteLength": 4320,
+            "uri": "data:application/octet-stream;base64,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"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 480,
+            "byteOffset": 0,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1440,
+            "byteOffset": 480,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1440,
+            "byteOffset": 1920,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 960,
+            "byteOffset": 3360,
+            "target": 34962
+        }
+    ],
+    "scenes": [
+        {
+            "name": "Root Scene",
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "accessors": [
+        {
+            "componentType": 5123,
+            "type": "SCALAR",
+            "count": 240,
+            "bufferView": 0,
+            "byteOffset": 0
+        },
+        {
+            "componentType": 5126,
+            "type": "VEC3",
+            "count": 120,
+            "bufferView": 1,
+            "byteOffset": 0,
+            "min": [
+                -0.504827558994293,
+                -0.647074818611145,
+                -0.100605435669422
+            ],
+            "max": [
+                0.504827558994293,
+                0.647074818611145,
+                0.100605435669422
+            ]
+        },
+        {
+            "componentType": 5126,
+            "type": "VEC3",
+            "count": 120,
+            "bufferView": 2,
+            "byteOffset": 0
+        },
+        {
+            "componentType": 5126,
+            "type": "VEC2",
+            "count": 120,
+            "bufferView": 3,
+            "byteOffset": 0
+        }
+    ],
+    "images": [
+        {
+            "name": "base_color_texture",
+            "uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="
+        }
+    ],
+    "samplers": [
+        {}
+    ],
+    "textures": [
+        {
+            "name": "base_color_texture",
+            "sampler": 0,
+            "source": 0
+        }
+    ],
+    "materials": [
+        {
+            "name": "材质",
+            "alphaMode": "OPAQUE",
+            "extras": {
+                "fromFBX": {
+                    "shadingModel": "Phong",
+                    "isTruePBR": false
+                }
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0,
+                    "texCoord": 0
+                },
+                "baseColorFactor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "metallicFactor": 0.400000005960464,
+                "roughnessFactor": 0.140028014779091
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "3dArrow_2",
+            "primitives": [
+                {
+                    "material": 0,
+                    "mode": 4,
+                    "attributes": {
+                        "NORMAL": 2,
+                        "POSITION": 1,
+                        "TEXCOORD_0": 3
+                    },
+                    "indices": 0
+                }
+            ]
+        }
+    ],
+    "cameras": [
+        {
+            "name": "",
+            "type": "perspective",
+            "perspective": {
+                "znear": 10.0,
+                "zfar": 10000.0,
+                "aspectRatio": 1.5,
+                "yfov": 0.471089959144592
+            }
+        },
+        {
+            "name": "",
+            "type": "perspective",
+            "perspective": {
+                "znear": 0.000999999931082129,
+                "zfar": 10000.0,
+                "aspectRatio": 1.77777779102325,
+                "yfov": 0.548334896564484
+            }
+        },
+        {
+            "name": "",
+            "type": "perspective",
+            "perspective": {
+                "znear": 0.000999999931082129,
+                "zfar": 10000.0,
+                "aspectRatio": 1.77777779102325,
+                "yfov": 0.548334896564484
+            }
+        }
+    ],
+    "nodes": [
+        {
+            "name": "RootNode",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "children": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        },
+        {
+            "name": "Light",
+            "translation": [
+                4.07624530792236,
+                5.90386199951172,
+                -1.00545394420624
+            ],
+            "rotation": [
+                0.169075712561607,
+                0.755880355834961,
+                -0.272171318531036,
+                0.570947468280792
+            ],
+            "scale": [
+                100.000007629395,
+                100.0,
+                100.0
+            ],
+            "extensions": {
+                "KHR_lights_punctual": {
+                    "light": 0
+                }
+            }
+        },
+        {
+            "name": "Camera",
+            "translation": [
+                7.35889148712158,
+                4.95830917358398,
+                6.92579078674316
+            ],
+            "rotation": [
+                -0.209972977638245,
+                0.38578000664711,
+                0.0906283855438232,
+                0.893796145915985
+            ],
+            "scale": [
+                100.0,
+                100.000007629395,
+                99.9999923706055
+            ],
+            "camera": 0
+        },
+        {
+            "name": "Cinema_4D_编辑器",
+            "translation": [
+                -30.2755832672119,
+                -1.5523362159729,
+                24.8297061920166
+            ],
+            "rotation": [
+                0.898057997226715,
+                0.00352555746212602,
+                0.439803838729858,
+                -0.00719898846000433
+            ],
+            "scale": [
+                1.0,
+                0.999999940395355,
+                1.0
+            ],
+            "camera": 1
+        },
+        {
+            "name": "Cinema_4D_编辑器.001",
+            "translation": [
+                -1.54326915740967,
+                -1.69204676151276,
+                2.43485975265503
+            ],
+            "rotation": [
+                0.959847807884216,
+                0.0375537648797035,
+                0.157223105430603,
+                -0.229265511035919
+            ],
+            "scale": [
+                0.999999940395355,
+                1.0,
+                0.999999940395355
+            ],
+            "camera": 2
+        },
+        {
+            "name": "3dArrow_2",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                8.14603353660459e-08,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "mesh": 0
+        }
+    ],
+    "extensions": {
+        "KHR_lights_punctual": {
+            "lights": [
+                {
+                    "name": "",
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "intensity": 1000.0,
+                    "type": "point"
+                }
+            ]
+        }
+    }
+}

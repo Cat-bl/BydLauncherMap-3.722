@@ -1,0 +1,79 @@
+.class public Lcom/autonavi/view/custom/CustomListLineView;
+.super Lcom/autonavi/skin/view/SkinImageView;
+.source "SourceFile"
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0, p1, v0}, Lcom/autonavi/view/custom/CustomListLineView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0, p1, p2, v0}, Lcom/autonavi/view/custom/CustomListLineView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2, p3}, Lcom/autonavi/skin/view/SkinImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+    invoke-direct {p0, p2}, Lcom/autonavi/view/custom/CustomListLineView;->initCustomAttr(Landroid/util/AttributeSet;)V
+
+    return-void
+.end method
+
+.method private initCustomAttr(Landroid/util/AttributeSet;)V
+    .locals 3
+
+    invoke-virtual {p0}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/autosdk/autoui/R$styleable;->autoSkin:[I
+
+    invoke-virtual {v0, p1, v1}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
+
+    move-result-object p1
+
+    sget v0, Lcom/autosdk/autoui/R$styleable;->autoSkin_background4Skin:I
+
+    sget v1, Lcom/autosdk/autoui/R$drawable;->custom_horizontal_divider_line_day:I
+
+    invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getResourceId(II)I
+
+    move-result v0
+
+    sget v1, Lcom/autosdk/autoui/R$styleable;->autoSkin_background4Night:I
+
+    sget v2, Lcom/autosdk/autoui/R$drawable;->custom_horizontal_divider_line_night:I
+
+    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getResourceId(II)I
+
+    move-result v1
+
+    invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
+
+    invoke-virtual {p0, v0, v1}, Lcom/autonavi/skin/view/SkinImageView;->setBackground(II)V
+
+    invoke-static {}, Lcom/autonavi/skin/SkinManager;->getInstance()Lcom/autonavi/skin/SkinManager;
+
+    move-result-object p1
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p1, p0, v0}, Lcom/autonavi/skin/SkinManager;->updateView(Landroid/view/View;Z)Lcom/autonavi/skin/SkinManager$SkinTask;
+
+    return-void
+.end method

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_publish_24dp" android:id="@id/menu_export" android:visible="true" android:title="@string/card_menu_export" />
+    <item android:icon="@drawable/ic_edit_24" android:id="@id/menu_edit" android:visible="true" android:title="@string/card_menu_edit" />
+    <item android:icon="@drawable/ic_delete_24dp" android:id="@id/menu_delete" android:visible="true" android:title="@string/card_menu_delete" />
+    <item android:icon="@drawable/ic_delete_24dp" android:id="@id/menu_share" android:visible="true" android:title="@string/card_menu_share" />
+</menu>

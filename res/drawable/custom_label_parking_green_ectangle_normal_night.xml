@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="@dimen/custom_label_parking_green_ectangle_corner_top_left_normal_night" android:bottomLeftRadius="@dimen/custom_label_parking_green_ectangle_corner_bottom_left_normal_night" />
+    <solid android:color="@color/custom_label_parking_green_ectangle_solid_normal_night" />
+</shape>

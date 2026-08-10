@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/custom_card_top_round_bg_pressed_night_denza"/>
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners
+                android:topLeftRadius="@dimen/auto_dimen2_8"
+                android:topRightRadius="@dimen/auto_dimen2_8"/>
+            <gradient
+                android:startColor="@color/custom_night_btn_color_disabled_denza"
+                android:endColor="@color/custom_night_btn_color_disabled_denza"
+                android:angle="270"
+                android:centerY="0.5"/>
+        </shape>
+    </item>
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <corners
+                android:topLeftRadius="@dimen/auto_dimen2_8"
+                android:topRightRadius="@dimen/auto_dimen2_8"/>
+            <gradient
+                android:startColor="@color/transparent_color"
+                android:endColor="@color/transparent_color"
+                android:angle="270"
+                android:centerY="0.5"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,424 @@
+{
+    "layer_item_info": {
+        "point_cruise_traffic_signal_light_main_simple_left_up": {
+            "index": 2,
+            "name_cn": "巡航单灯 左上飘",
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "cruise_traffic_signal_light_main_simple_left_up.xml",
+                    "poi_marker_info": "marker_info_cruise_traffic_signal_light_main_simple_left_up"
+                }
+            }
+        },
+        "point_cruise_traffic_signal_light_main_simple_right_up": {
+            "index": 2,
+            "name_cn": "巡航单灯 右上飘",
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "cruise_traffic_signal_light_main_simple_right_up.xml",
+                    "poi_marker_info": "marker_info_cruise_traffic_signal_light_main_simple_right_up"
+                }
+            }
+        },
+        "point_cruise_traffic_signal_light_main_team_left_up": {
+            "index": 4,
+            "name_cn": "巡航组合灯 左上飘",
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "cruise_traffic_signal_light_main_team_left_up.xml",
+                    "poi_marker_info": "marker_info_cruise_traffic_signal_light_main_team_left_up"
+                }
+            }
+        },
+        "point_cruise_traffic_signal_light_main_team_right_up": {
+            "index": 4,
+            "name_cn": "巡航组合灯 右上飘",
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "cruise_traffic_signal_light_main_team_right_up.xml",
+                    "poi_marker_info": "marker_info_cruise_traffic_signal_light_main_team_right_up"
+                }
+            }
+        },
+        "point_cruise_traffic_signal_light_secondary_left_up": {
+            "index": 1,
+            "name_cn": "巡航次灯 左上飘",
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "cruise_traffic_signal_light_secondary_left_up.xml",
+                    "poi_marker_info": "marker_info_cruise_traffic_signal_light_secondary_left_up"
+                }
+            }
+        },
+        "point_cruise_traffic_signal_light_secondary_right_up": {
+            "index": 1,
+            "name_cn": "巡航次灯 右上飘",
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "cruise_traffic_signal_light_secondary_right_up.xml",
+                    "poi_marker_info": "marker_info_cruise_traffic_signal_light_secondary_right_up"
+                }
+            }
+        }
+    },
+    "marker_info": {
+        "marker_info_cruise_traffic_signal_light_main_simple_left_up": {
+            "anchor": 13,
+            "day_style": {
+                "color": [
+                    {
+                        "text_seconds_mid": "#e6ffffff"
+                    },
+                    {
+                        "text_notice_mid": "#e6ffffff"
+                    }
+                ]
+            },
+            "image_style": {
+                "image_light_body_mid": {
+                    "light_body_type_green": "global_image_traffic_signal_light_green_circle_day_night",
+                    "light_body_type_red": "global_image_traffic_signal_light_red_circle_day_night",
+                    "light_body_type_yellow": "global_image_traffic_signal_light_yellow_circle_day_night"
+                },
+                "image_light_direction_mid": {
+                    "light_direction_green_left": "global_image_traffic_signal_light_green_arrow_turn_left_day_night",
+                    "light_direction_green_right": "global_image_traffic_signal_light_green_arrow_turn_right_day_night",
+                    "light_direction_green_straight": "global_image_traffic_signal_light_green_arrow_go_straight_day_night",
+                    "light_direction_red_left": "global_image_traffic_signal_light_red_arrow_turn_left_day_night",
+                    "light_direction_red_right": "global_image_traffic_signal_light_red_arrow_turn_right_day_night",
+                    "light_direction_red_straight": "global_image_traffic_signal_light_red_arrow_go_straight_day_night",
+                    "light_direction_yellow_left": "global_image_traffic_signal_light_yellow_arrow_turn_left_day_night",
+                    "light_direction_yellow_right": "global_image_traffic_signal_light_yellow_arrow_turn_right_day_night",
+                    "light_direction_yellow_straight": "global_image_traffic_signal_light_yellow_arrow_go_straight_day_night"
+                }
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "text_seconds_mid": "#e6ffffff"
+                    },
+                    {
+                        "text_notice_mid": "#e6ffffff"
+                    }
+                ]
+            },
+            "x_offset": 15,
+            "y_offset": 22
+        },
+        "marker_info_cruise_traffic_signal_light_main_simple_right_up": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "text_seconds_mid": "#e6ffffff"
+                    },
+                    {
+                        "text_notice_mid": "#e6ffffff"
+                    }
+                ]
+            },
+            "image_style": {
+                "image_light_body_mid": {
+                    "light_body_type_green": "global_image_traffic_signal_light_green_circle_day_night",
+                    "light_body_type_red": "global_image_traffic_signal_light_red_circle_day_night",
+                    "light_body_type_yellow": "global_image_traffic_signal_light_yellow_circle_day_night"
+                },
+                "image_light_direction_mid": {
+                    "light_direction_green_left": "global_image_traffic_signal_light_green_arrow_turn_left_day_night",
+                    "light_direction_green_right": "global_image_traffic_signal_light_green_arrow_turn_right_day_night",
+                    "light_direction_green_straight": "global_image_traffic_signal_light_green_arrow_go_straight_day_night",
+                    "light_direction_red_left": "global_image_traffic_signal_light_red_arrow_turn_left_day_night",
+                    "light_direction_red_right": "global_image_traffic_signal_light_red_arrow_turn_right_day_night",
+                    "light_direction_red_straight": "global_image_traffic_signal_light_red_arrow_go_straight_day_night",
+                    "light_direction_yellow_left": "global_image_traffic_signal_light_yellow_arrow_turn_left_day_night",
+                    "light_direction_yellow_right": "global_image_traffic_signal_light_yellow_arrow_turn_right_day_night",
+                    "light_direction_yellow_straight": "global_image_traffic_signal_light_yellow_arrow_go_straight_day_night"
+                }
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "text_seconds_mid": "#e6ffffff"
+                    },
+                    {
+                        "text_notice_mid": "#e6ffffff"
+                    }
+                ]
+            },
+            "x_offset": 15,
+            "y_offset": 22
+        },
+        "marker_info_cruise_traffic_signal_light_main_team_left_up": {
+            "anchor": 13,
+            "day_style": {
+                "color": [
+                    {
+                        "text_seconds_left": "#e6ffffff"
+                    },
+                    {
+                        "text_seconds_mid": "#e6ffffff"
+                    },
+                    {
+                        "text_seconds_right": "#e6ffffff"
+                    },
+                    {
+                        "text_notice_left": "#e6ffffff"
+                    },
+                    {
+                        "text_notice_mid": "#e6ffffff"
+                    },
+                    {
+                        "text_notice_right": "#e6ffffff"
+                    }
+                ]
+            },
+            "image_style": {
+                "image_light_body_left": {
+                    "light_body_type_green": "global_image_traffic_signal_light_green_circle_day_night",
+                    "light_body_type_red": "global_image_traffic_signal_light_red_circle_day_night",
+                    "light_body_type_yellow": "global_image_traffic_signal_light_yellow_circle_day_night"
+                },
+                "image_light_body_mid": {
+                    "light_body_type_green": "global_image_traffic_signal_light_green_circle_day_night",
+                    "light_body_type_red": "global_image_traffic_signal_light_red_circle_day_night",
+                    "light_body_type_yellow": "global_image_traffic_signal_light_yellow_circle_day_night"
+                },
+                "image_light_body_right": {
+                    "light_body_type_green": "global_image_traffic_signal_light_green_circle_day_night",
+                    "light_body_type_red": "global_image_traffic_signal_light_red_circle_day_night",
+                    "light_body_type_yellow": "global_image_traffic_signal_light_yellow_circle_day_night"
+                },
+                "image_light_direction_left": {
+                    "light_direction_green_left": "global_image_traffic_signal_light_green_arrow_turn_left_day_night",
+                    "light_direction_green_right": "global_image_traffic_signal_light_green_arrow_turn_right_day_night",
+                    "light_direction_green_straight": "global_image_traffic_signal_light_green_arrow_go_straight_day_night",
+                    "light_direction_red_left": "global_image_traffic_signal_light_red_arrow_turn_left_day_night",
+                    "light_direction_red_right": "global_image_traffic_signal_light_red_arrow_turn_right_day_night",
+                    "light_direction_red_straight": "global_image_traffic_signal_light_red_arrow_go_straight_day_night",
+                    "light_direction_yellow_left": "global_image_traffic_signal_light_yellow_arrow_turn_left_day_night",
+                    "light_direction_yellow_right": "global_image_traffic_signal_light_yellow_arrow_turn_right_day_night",
+                    "light_direction_yellow_straight": "global_image_traffic_signal_light_yellow_arrow_go_straight_day_night"
+                },
+                "image_light_direction_mid": {
+                    "light_direction_green_left": "global_image_traffic_signal_light_green_arrow_turn_left_day_night",
+                    "light_direction_green_right": "global_image_traffic_signal_light_green_arrow_turn_right_day_night",
+                    "light_direction_green_straight": "global_image_traffic_signal_light_green_arrow_go_straight_day_night",
+                    "light_direction_red_left": "global_image_traffic_signal_light_red_arrow_turn_left_day_night",
+                    "light_direction_red_right": "global_image_traffic_signal_light_red_arrow_turn_right_day_night",
+                    "light_direction_red_straight": "global_image_traffic_signal_light_red_arrow_go_straight_day_night",
+                    "light_direction_yellow_left": "global_image_traffic_signal_light_yellow_arrow_turn_left_day_night",
+                    "light_direction_yellow_right": "global_image_traffic_signal_light_yellow_arrow_turn_right_day_night",
+                    "light_direction_yellow_straight": "global_image_traffic_signal_light_yellow_arrow_go_straight_day_night"
+                },
+                "image_light_direction_right": {
+                    "light_direction_green_left": "global_image_traffic_signal_light_green_arrow_turn_left_day_night",
+                    "light_direction_green_right": "global_image_traffic_signal_light_green_arrow_turn_right_day_night",
+                    "light_direction_green_straight": "global_image_traffic_signal_light_green_arrow_go_straight_day_night",
+                    "light_direction_red_left": "global_image_traffic_signal_light_red_arrow_turn_left_day_night",
+                    "light_direction_red_right": "global_image_traffic_signal_light_red_arrow_turn_right_day_night",
+                    "light_direction_red_straight": "global_image_traffic_signal_light_red_arrow_go_straight_day_night",
+                    "light_direction_yellow_left": "global_image_traffic_signal_light_yellow_arrow_turn_left_day_night",
+                    "light_direction_yellow_right": "global_image_traffic_signal_light_yellow_arrow_turn_right_day_night",
+                    "light_direction_yellow_straight": "global_image_traffic_signal_light_yellow_arrow_go_straight_day_night"
+                }
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "text_seconds_left": "#e6ffffff"
+                    },
+                    {
+                        "text_seconds_mid": "#e6ffffff"
+                    },
+                    {
+                        "text_seconds_right": "#e6ffffff"
+                    },
+                    {
+                        "text_notice_left": "#e6ffffff"
+                    },
+                    {
+                        "text_notice_mid": "#e6ffffff"
+                    },
+                    {
+                        "text_notice_right": "#e6ffffff"
+                    }
+                ]
+            },
+            "x_offset": 15,
+            "y_offset": 22
+        },
+        "marker_info_cruise_traffic_signal_light_main_team_right_up": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "text_seconds_left": "#e6ffffff"
+                    },
+                    {
+                        "text_seconds_mid": "#e6ffffff"
+                    },
+                    {
+                        "text_seconds_right": "#e6ffffff"
+                    },
+                    {
+                        "text_notice_left": "#e6ffffff"
+                    },
+                    {
+                        "text_notice_mid": "#e6ffffff"
+                    },
+                    {
+                        "text_notice_right": "#e6ffffff"
+                    }
+                ]
+            },
+            "image_style": {
+                "image_light_body_left": {
+                    "light_body_type_green": "global_image_traffic_signal_light_green_circle_day_night",
+                    "light_body_type_red": "global_image_traffic_signal_light_red_circle_day_night",
+                    "light_body_type_yellow": "global_image_traffic_signal_light_yellow_circle_day_night"
+                },
+                "image_light_body_mid": {
+                    "light_body_type_green": "global_image_traffic_signal_light_green_circle_day_night",
+                    "light_body_type_red": "global_image_traffic_signal_light_red_circle_day_night",
+                    "light_body_type_yellow": "global_image_traffic_signal_light_yellow_circle_day_night"
+                },
+                "image_light_body_right": {
+                    "light_body_type_green": "global_image_traffic_signal_light_green_circle_day_night",
+                    "light_body_type_red": "global_image_traffic_signal_light_red_circle_day_night",
+                    "light_body_type_yellow": "global_image_traffic_signal_light_yellow_circle_day_night"
+                },
+                "image_light_direction_left": {
+                    "light_direction_green_left": "global_image_traffic_signal_light_green_arrow_turn_left_day_night",
+                    "light_direction_green_right": "global_image_traffic_signal_light_green_arrow_turn_right_day_night",
+                    "light_direction_green_straight": "global_image_traffic_signal_light_green_arrow_go_straight_day_night",
+                    "light_direction_red_left": "global_image_traffic_signal_light_red_arrow_turn_left_day_night",
+                    "light_direction_red_right": "global_image_traffic_signal_light_red_arrow_turn_right_day_night",
+                    "light_direction_red_straight": "global_image_traffic_signal_light_red_arrow_go_straight_day_night",
+                    "light_direction_yellow_left": "global_image_traffic_signal_light_yellow_arrow_turn_left_day_night",
+                    "light_direction_yellow_right": "global_image_traffic_signal_light_yellow_arrow_turn_right_day_night",
+                    "light_direction_yellow_straight": "global_image_traffic_signal_light_yellow_arrow_go_straight_day_night"
+                },
+                "image_light_direction_mid": {
+                    "light_direction_green_left": "global_image_traffic_signal_light_green_arrow_turn_left_day_night",
+                    "light_direction_green_right": "global_image_traffic_signal_light_green_arrow_turn_right_day_night",
+                    "light_direction_green_straight": "global_image_traffic_signal_light_green_arrow_go_straight_day_night",
+                    "light_direction_red_left": "global_image_traffic_signal_light_red_arrow_turn_left_day_night",
+                    "light_direction_red_right": "global_image_traffic_signal_light_red_arrow_turn_right_day_night",
+                    "light_direction_red_straight": "global_image_traffic_signal_light_red_arrow_go_straight_day_night",
+                    "light_direction_yellow_left": "global_image_traffic_signal_light_yellow_arrow_turn_left_day_night",
+                    "light_direction_yellow_right": "global_image_traffic_signal_light_yellow_arrow_turn_right_day_night",
+                    "light_direction_yellow_straight": "global_image_traffic_signal_light_yellow_arrow_go_straight_day_night"
+                },
+                "image_light_direction_right": {
+                    "light_direction_green_left": "global_image_traffic_signal_light_green_arrow_turn_left_day_night",
+                    "light_direction_green_right": "global_image_traffic_signal_light_green_arrow_turn_right_day_night",
+                    "light_direction_green_straight": "global_image_traffic_signal_light_green_arrow_go_straight_day_night",
+                    "light_direction_red_left": "global_image_traffic_signal_light_red_arrow_turn_left_day_night",
+                    "light_direction_red_right": "global_image_traffic_signal_light_red_arrow_turn_right_day_night",
+                    "light_direction_red_straight": "global_image_traffic_signal_light_red_arrow_go_straight_day_night",
+                    "light_direction_yellow_left": "global_image_traffic_signal_light_yellow_arrow_turn_left_day_night",
+                    "light_direction_yellow_right": "global_image_traffic_signal_light_yellow_arrow_turn_right_day_night",
+                    "light_direction_yellow_straight": "global_image_traffic_signal_light_yellow_arrow_go_straight_day_night"
+                }
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "text_seconds_left": "#e6ffffff"
+                    },
+                    {
+                        "text_seconds_mid": "#e6ffffff"
+                    },
+                    {
+                        "text_seconds_right": "#e6ffffff"
+                    },
+                    {
+                        "text_notice_left": "#e6ffffff"
+                    },
+                    {
+                        "text_notice_mid": "#e6ffffff"
+                    },
+                    {
+                        "text_notice_right": "#e6ffffff"
+                    }
+                ]
+            },
+            "x_offset": 15,
+            "y_offset": 22
+        },
+        "marker_info_cruise_traffic_signal_light_secondary_left_up": {
+            "anchor": 13,
+            "day_style": {
+                "color": [
+                    {
+                        "text_seconds_mid": "#e6ffffff"
+                    },
+                    {
+                        "text_notice_mid": "#e6ffffff"
+                    }
+                ]
+            },
+            "image_style": {
+                "image_light_circle": {
+                    "image_circle_green": "global_image_cruise_traffic_signal_light_bg_circle_green",
+                    "image_circle_red": "global_image_cruise_traffic_signal_light_bg_circle_red",
+                    "image_circle_yellow": "global_image_cruise_traffic_signal_light_bg_circle_yellow"
+                },
+                "image_light_ellipse": {
+                    "image_ellipse_green": "global_image_cruise_traffic_signal_light_bg_ellipse_green",
+                    "image_ellipse_red": "global_image_cruise_traffic_signal_light_bg_ellipse_red",
+                    "image_ellipse_yellow": "global_image_cruise_traffic_signal_light_bg_ellipse_yellow"
+                }
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "text_seconds_mid": "#e6ffffff"
+                    },
+                    {
+                        "text_notice_mid": "#e6ffffff"
+                    }
+                ]
+            },
+            "x_offset": 15,
+            "y_offset": 22
+        },
+        "marker_info_cruise_traffic_signal_light_secondary_right_up": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "text_seconds_mid": "#e6ffffff"
+                    },
+                    {
+                        "text_notice_mid": "#e6ffffff"
+                    }
+                ]
+            },
+            "image_style": {
+                "image_light_circle": {
+                    "image_circle_green": "global_image_cruise_traffic_signal_light_bg_circle_green",
+                    "image_circle_red": "global_image_cruise_traffic_signal_light_bg_circle_red",
+                    "image_circle_yellow": "global_image_cruise_traffic_signal_light_bg_circle_yellow"
+                },
+                "image_light_ellipse": {
+                    "image_ellipse_green": "global_image_cruise_traffic_signal_light_bg_ellipse_green",
+                    "image_ellipse_red": "global_image_cruise_traffic_signal_light_bg_ellipse_red",
+                    "image_ellipse_yellow": "global_image_cruise_traffic_signal_light_bg_ellipse_yellow"
+                }
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "text_seconds_mid": "#e6ffffff"
+                    },
+                    {
+                        "text_notice_mid": "#e6ffffff"
+                    }
+                ]
+            },
+            "x_offset": 15,
+            "y_offset": 22
+        }
+    }
+}

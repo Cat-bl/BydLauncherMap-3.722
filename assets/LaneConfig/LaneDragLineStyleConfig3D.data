@@ -1,0 +1,83 @@
+{
+    "highwayDragLineLength": 300.0,
+    "normalRoadDragLineLength": 200.0,
+    "dragLineGrowTime": 2000,
+    "dragLineBeginGradientRatio": 0.05,
+    "dragLineEndGradientRatio": 0.3,
+    "dragLineWidth": 1.4,
+    "arrowLength": 30.0,
+    "arrowMoveTime": 6000,
+    "arrowGradientTime": 1000,
+    "arrowMoveRange": 200.0,
+    "arrowStartDis": 0.0,
+    "displayMinScale": 17.0,
+    "displayMaxScale": 22.0,
+    "borderWidth": 0.45,
+    "smoothLengthBias": 15.0,
+    "smoothLengthCoeff": 2.0,
+    "firstDrawAlpha": 0.5,
+    "secondDrawAlpha": 0.5,
+    "carDeviationThreshold": 1.0,
+    "arrowTextureDay": "DragLine_Arrow_Day",
+    "arrowTextureNight": "DragLine_Arrow_Night",
+    "borderEnchanceColorCoeff": {
+      "r": 0.00,
+      "g": 0.13,
+      "b": 0.09,
+      "w": 1.2
+    },
+    "dragLineTmcColorDay": {
+    "tmcColorUninit": 1080730367,
+    "tmcColorUnknown": 1080730367,
+    "tmcColorOpen": 1510008454,
+    "tmcColorSlow": 1725814061,
+    "tmcColorJam": 1728020868,
+    "tmcColorCongested": 1728020868,
+    "tmcColorExtremeOpen": 1510008454
+   },
+   "dragLineTmcColorNight": {
+    "tmcColorUninit": 1931097674,
+    "tmcColorUnknown": 1931097674,
+    "tmcColorOpen": 1932354891,
+    "tmcColorSlow": 1936023844,
+    "tmcColorJam": 1936076077,
+    "tmcColorCongested": 1936076077,
+    "tmcColorExtremeOpen": 1932354891
+   },
+    "dragLineArrowTmcColorDay": {
+    "tmcColorUninit": 4285178623,
+    "tmcColorUnknown": 4285178623,
+    "tmcColorOpen": 4278255530,
+    "tmcColorSlow": 4294244405,
+    "tmcColorJam": 4294944429,
+    "tmcColorCongested": 4294944429,
+    "tmcColorExtremeOpen": 4278255530
+   },
+    "dragLineArrowTmcColorNight": {
+    "tmcColorUninit": 671088639,
+    "tmcColorUnknown": 671088639,
+    "tmcColorOpen": 671088639,
+    "tmcColorSlow": 671088639,
+    "tmcColorJam": 671088639,
+    "tmcColorCongested": 671088639,
+    "tmcColorExtremeOpen": 671088639
+    },
+    "dragLineBorderTmcColorDay": {
+    "tmcColorUninit": 7179455,
+    "tmcColorUnknown": 7179455,
+    "tmcColorOpen": 3582063,
+    "tmcColorSlow": 14266145,
+    "tmcColorJam": 14246502,
+    "tmcColorCongested": 12208717,
+    "tmcColorExtremeOpen": 2658396
+   },
+    "dragLineBorderTmcColorNight": {
+    "tmcColorUninit": 7179455,
+    "tmcColorUnknown": 7179455,
+    "tmcColorOpen": 3582063,
+    "tmcColorSlow": 14266145,
+    "tmcColorJam": 14246502,
+    "tmcColorCongested": 12208717,
+    "tmcColorExtremeOpen": 2658396
+   }
+}

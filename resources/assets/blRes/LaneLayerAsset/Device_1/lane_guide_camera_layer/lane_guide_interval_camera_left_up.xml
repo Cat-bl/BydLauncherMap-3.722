@@ -1,0 +1,11 @@
+<div id="camera_type" style="display:flex;flex-direction:row;justify-content:flex-end;align-items:center;width:auto;height:96px;background-image:global_image_autonavi_lane_interval_camera_left_up_day_night;">
+  <label id='interval_text' style="margin-right:3px;margin-left:16px;font-size:26px;color:#e6000000;font-family:SDK_Font-Medium;" text='区间测速'/>
+  <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;width:62px;height:62px;">
+    <label id='speed_two_text' style='color:#e6000000;font-size:34px;font-family:SDK_Font-Bold;margin-left:1px;' text='80'/>
+    <label id='speed_three_text' style='color:#e6000000;font-size:29px;font-family:SDK_Font-Bold;' text=''/>
+  </div>
+</div>
+
+
+
+

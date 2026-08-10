@@ -1,0 +1,40 @@
+{
+    "marker_info": {},
+    "layer_item_info": {
+        "line_route_dodge_line": {
+            "line_layer_item_style": {
+                "use_cap": 1,
+                "use_color": 1,
+                "draw_cover": 1,
+                "can_be_coveredbylabel": 1,
+                "fill_texture": {
+                    "marker_id": "map_frontlr",
+                    "marker_info": "",
+                    "color": "0xff00baff",
+                    "width": 32
+                },
+                "border_texture": {
+                    "marker_id": "map_frontlr",
+                    "marker_info": "",
+                    "color": "0xff0066ff",
+                    "width": 40
+                },
+                "texture_info": {
+                    "x1": 0.0,
+                    "y1": 0.5,
+                    "x2": 1.0,
+                    "y2": 0.5,
+                    "texture_len": 32
+                },
+                "cap_texture_info": {
+                    "x1": 0.0,
+                    "y1": 0.5,
+                    "x2": 1.0,
+                    "y2": 0.75
+                }
+            },
+            "index": 0,
+            "name_cn": "避开路段"
+        }
+    }
+}

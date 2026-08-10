@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="@dimen/custom_toll_brand_bg_blue_corner_normal_day" />
+            <solid android:color="@color/auto_color_drive_toll_gate_background_day" />
+        </shape>
+    </item>
+</layer-list>

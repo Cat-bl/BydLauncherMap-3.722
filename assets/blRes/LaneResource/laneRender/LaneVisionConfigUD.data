@@ -1,0 +1,570 @@
+{
+    "landscape": {
+        "projectCenter": {
+            "projectCenterX": 0.5,
+            "projectCenterY": 0.8
+        },
+        "defaultPostureParam": {
+            "scale": 19.26,
+            "pitch": 72.75
+        },
+        "freeway": {
+            "farDis": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0.151
+            },
+            "middleDis": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0.151
+            },
+            "closeDisNormal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0.151
+            },
+            "closeDisLongitudinal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.3,
+                "pitchAnchorTopRate":0.151
+            },
+            "closeDisHorizontal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0.151
+            },
+            "closeDisContinuousLongitudinal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.2,
+                "pitchAnchorTopRate":0.151
+            },
+            "closeDisContinuousHorizontal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0.15,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0.111
+            },
+            "closeRoundCircle": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0.151
+            },
+            "underBridgeLongitudinal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0
+            },
+            "underBridgeHorizontal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0
+            },
+	        "circleBridge": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0
+            },
+            "roundCircle": {
+                "pitch": 62.9,
+                "scale": 18.30,
+                "scaleMax": 18.30,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0.151
+            },
+            "traffic": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0.151
+            },
+            "tollGate": {
+                "pitch": 63.9,
+                "scale": 17.85,
+                "scaleMax": 17.85,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0
+            },
+           "tunnel":{
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0.151     
+            }
+        },
+        "cityRoad": {
+            "farDis": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0.151
+            },
+            "middleDis": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0.151
+            },
+            "closeDisNormal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0.151
+            },
+            "closeDisLongitudinal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.3,
+                "pitchAnchorTopRate":0.151
+            },
+            "closeDisHorizontal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0.151
+            },
+            "closeDisContinuousLongitudinal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.2,
+                "pitchAnchorTopRate":0.151
+            },
+            "closeDisContinuousHorizontal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0.15,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0.111
+            },
+            "closeRoundCircle": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0.151
+            },
+            "underBridgeLongitudinal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0
+            },
+            "underBridgeHorizontal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0
+            },
+            "circleBridge": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0
+            },
+            "roundCircle": {
+                "pitch": 62.9,
+                "scale": 18.30,
+                "scaleMax": 18.30,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0.151
+            },
+            "traffic": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0.151
+            },
+            "tollGate": {
+                "pitch": 63.9,
+                "scale": 17.85,
+                "scaleMax": 17.85,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0
+            },
+           "tunnel":{
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.1,
+                "pitchAnchorTopRate":0.151   
+            }
+        }
+    },
+    "portrait": {
+        "projectCenter": {
+            "projectCenterX": 0.5,
+            "projectCenterY": 0.8
+        },
+        "defaultPostureParam": {
+            "scale": 19.26,
+            "pitch": 72.75
+        },
+        "freeway": {
+            "farDis": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0.151
+            },
+            "middleDis": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0.151
+            },
+            "closeDisNormal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0.151
+            },
+            "closeDisLongitudinal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.3,
+                "pitchAnchorTopRate": 0.151
+            },
+            "closeDisHorizontal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0.151
+            },
+            "closeDisContinuousLongitudinal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.2,
+                "pitchAnchorTopRate": 0.151
+            },
+            "closeDisContinuousHorizontal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0.15,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0.111
+            },
+            "closeRoundCircle": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0.151
+            },
+            "underBridgeLongitudinal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0
+            },
+            "underBridgeHorizontal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0
+            },
+            "circleBridge": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0
+            },
+            "roundCircle": {
+                "pitch": 62.9,
+                "scale": 18.30,
+                "scaleMax": 18.30,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0.151
+            },
+            "traffic": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0.151
+            },
+            "tollGate": {
+                "pitch": 63.9,
+                "scale": 17.85,
+                "scaleMax": 17.85,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0
+            },
+           "tunnel":{
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0.151    
+            }
+        },
+        "cityRoad": {
+            "farDis": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0.151
+            },
+            "middleDis": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0.151
+            },
+            "closeDisNormal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0.151
+            },
+            "closeDisLongitudinal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.3,
+                "pitchAnchorTopRate": 0.151
+            },
+            "closeDisHorizontal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0.151
+            },
+            "closeDisContinuousLongitudinal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate":0.2,
+                "pitchAnchorTopRate": 0.151
+            },
+            "closeDisContinuousHorizontal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0.15,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0.111
+            },
+            "closeRoundCircle": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0.151
+            },
+            "underBridgeLongitudinal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0
+            },
+            "underBridgeHorizontal": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0
+            },
+            "circleBridge": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0
+            },
+            "roundCircle": {
+                "pitch": 62.9,
+                "scale": 18.30,
+                "scaleMax": 18.30,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0.151
+            },
+            "traffic": {
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0.151
+            },
+            "tollGate": {
+                "pitch": 63.9,
+                "scale": 17.85,
+                "scaleMax": 17.85,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0
+            },
+           "tunnel":{
+                "pitch": 72.75,
+                "scale": 19.26,
+                "scaleMax": 19.26,
+                "centerRateMax": 0,
+                "headOffsetMax": 15,
+                "zoomAnchorTopRate": 0.1,
+                "pitchAnchorTopRate": 0.151    
+            }
+        }
+    }
+}

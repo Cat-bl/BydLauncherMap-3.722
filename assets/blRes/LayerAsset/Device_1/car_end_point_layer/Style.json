@@ -1,0 +1,1662 @@
+{
+    "marker_info": {
+        "marker_info_point_fly_line_center_up_2": {
+            "anchor": 9,
+            "x_ratio": 0.5,
+            "y_ratio": 0.898
+        },
+        "marker_info_point_center_up_3": {
+            "anchor": 9,
+            "x_ratio": 0.5,
+            "y_ratio": 0.928
+        },
+        "marker_info_flyline_type_bubble": {
+            "anchor": 9,
+            "x_ratio": 0.5,
+            "y_ratio": 0.95,
+            "day_style": {
+                "color": [
+                    {
+                        "name_text": "#171717"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #e6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "name_text": "#e6FFFFFF"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #e6000000"
+                    }
+                ]
+            },
+            "image_style": {
+                "background_type_dynamic": {
+                    "background_type_10001_1": "global_image_hongse_poi_day_night",
+                    "background_type_10001_3": "global_image_hongse_poi_day_night",
+                    "background_type_10001_4": "global_image_hongse_poi_day_night",
+                    "background_type_10001_5": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_6": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_7": "global_image_zise_poi_day_night",
+                    "background_type_10001_8": "global_image_zise_poi_day_night",
+                    "background_type_10001_9": "global_image_zise_poi_day_night",
+                    "background_type_10001_10": "global_image_qianlan_poi_day_night",
+                    "background_type_10001_11": "global_image_qianlan_poi_day_night",
+                    "background_type_10001_12": "global_image_hese_poi_day_night",
+                    "background_type_10001_13": "global_image_hese_poi_day_night",
+                    "background_type_10001_14": "global_image_green_poi_day_night",
+                    "background_type_10001_15": "global_image_qianlan_poi_day_night",
+                    "background_type_10001_16": "global_image_green_poi_day_night",
+                    "background_type_10001_17": "global_image_zise_poi_day_night",
+                    "background_type_10001_18": "global_image_green_poi_day_night",
+                    "background_type_10001_19": "global_image_orange_poi_day_night",
+                    "background_type_10001_20": "global_image_baise_poi_day_night",
+                    "background_type_10001_21": "global_image_baise_poi_day_night",
+                    "background_type_10001_22": "global_image_orange_poi_day_night",
+                    "background_type_10001_23": "global_image_bluerectangle_poi_day_night",
+                    "background_type_10001_24": "global_image_bluerectangle_poi_day_night",
+                    "background_type_10001_25": "global_image_bluerectangle_poi_day_night",
+                    "background_type_10001_26": "global_image_bluerectangle_poi_day_night",
+                    "background_type_10001_27": "global_image_greenrectangle_poi_day_night",
+                    "background_type_10001_28": "global_image_greenrectangle_poi_day_night",
+                    "background_type_10001_29": "global_image_blue_poi_day_night",
+                    "background_type_10001_30": "global_image_orangerectangle_poi_day_night",
+                    "background_type_10001_31": "global_image_blue_poi_day_night",
+                    "background_type_10001_32": "global_image_hongse_poi_day_night",
+                    "background_type_10001_33": "global_image_zise_poi_day_night",
+                    "background_type_10001_34": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_35": "global_image_qianlan_poi_day_night",
+                    "background_type_10001_36": "global_image_bluerectangle_poi_day_night",
+                    "background_type_10001_37": "global_image_qianlan_poi_day_night",
+                    "background_type_10001_38": "global_image_green_poi_day_night",
+                    "background_type_10001_39": "global_image_blue_poi_day_night",
+                    "background_type_10001_40": "global_image_blue_poi_day_night",
+                    "background_type_10001_41": "global_image_blue_poi_day_night",
+                    "background_type_10001_42": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_43": "global_image_blue_poi_day_night",
+                    "background_type_10001_44": "global_image_baise_poi_day_night",
+                    "background_type_10001_45": "global_image_baise_poi_day_night",
+                    "background_type_10001_46": "global_image_baise_poi_day_night",
+                    "background_type_10001_47": "global_image_baise_poi_day_night",
+                    "background_type_10001_48": "global_image_baise_poi_day_night",
+                    "background_type_10001_49": "global_image_baise_poi_day_night",
+                    "background_type_10001_51": "global_image_baise_poi_day_night",
+                    "background_type_10001_52": "global_image_baise_poi_day_night",
+                    "background_type_10001_53": "global_image_baise_poi_day_night",
+                    "background_type_10001_54": "global_image_baise_poi_day_night",
+                    "background_type_10001_55": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_57": "global_image_hongse_poi_day_night",
+                    "background_type_10001_58": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_59": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_60": "global_image_zise_poi_day_night",
+                    "background_type_10001_61": "global_image_zise_poi_day_night",
+                    "background_type_10001_62": "global_image_zise_poi_day_night",
+                    "background_type_10001_63": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_64": "global_image_zise_poi_day_night",
+                    "background_type_10001_65": "global_image_baise_poi_day_night",
+                    "background_type_10001_66": "global_image_baise_poi_day_night",
+                    "background_type_10001_67": "global_image_baise_poi_day_night",
+                    "background_type_10001_68": "global_image_zise_poi_day_night",
+                    "background_type_10001_69": "global_image_green_poi_day_night",
+                    "background_type_10001_70": "global_image_hongse_poi_day_night",
+                    "background_type_10001_71": "global_image_blue_poi_day_night",
+                    "background_type_10001_72": "global_image_green_poi_day_night",
+                    "background_type_10001_73": "global_image_zise_poi_day_night",
+                    "background_type_10001_74": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_75": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_76": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_77": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_78": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_79": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_80": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_81": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_82": "global_image_zise_poi_day_night",
+                    "background_type_10001_83": "global_image_zise_poi_day_night",
+                    "background_type_10001_84": "global_image_zise_poi_day_night",
+                    "background_type_10001_85": "global_image_zise_poi_day_night",
+                    "background_type_10001_92": "global_image_zise_poi_day_night",
+                    "background_type_10001_93": "global_image_zise_poi_day_night",
+                    "background_type_10001_97": "global_image_zise_poi_day_night",
+                    "background_type_10001_98": "global_image_zise_poi_day_night",
+                    "background_type_10001_99": "global_image_zise_poi_day_night",
+                    "background_type_10001_100": "global_image_green_poi_day_night",
+                    "background_type_10001_101": "global_image_green_poi_day_night",
+                    "background_type_10001_102": "global_image_green_poi_day_night",
+                    "background_type_10001_103": "global_image_green_poi_day_night",
+                    "background_type_10001_104": "global_image_green_poi_day_night",
+                    "background_type_10001_105": "global_image_hese_poi_day_night",
+                    "background_type_10001_106": "global_image_hese_poi_day_night",
+                    "background_type_10001_107": "global_image_hese_poi_day_night",
+                    "background_type_10001_108": "global_image_hese_poi_day_night",
+                    "background_type_10001_109": "global_image_hese_poi_day_night",
+                    "background_type_10001_110": "global_image_hese_poi_day_night",
+                    "background_type_10001_111": "global_image_hese_poi_day_night",
+                    "background_type_10001_112": "global_image_hese_poi_day_night",
+                    "background_type_10001_113": "global_image_zise_poi_day_night",
+                    "background_type_10001_114": "global_image_orange_poi_day_night",
+                    "background_type_10001_115": "global_image_orange_poi_day_night",
+                    "background_type_10001_116": "global_image_orange_poi_day_night",
+                    "background_type_10001_117": "global_image_orange_poi_day_night",
+                    "background_type_10001_118": "global_image_baise_poi_day_night",
+                    "background_type_10001_119": "global_image_baise_poi_day_night",
+                    "background_type_10001_120": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_121": "global_image_zise_poi_day_night",
+                    "background_type_10001_122": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_123": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_124": "global_image_qianlan_poi_day_night",
+                    "background_type_10001_125": "global_image_qianlan_poi_day_night",
+                    "background_type_10001_126": "global_image_qianlan_poi_day_night",
+                    "background_type_10001_127": "global_image_qianlan_poi_day_night",
+                    "background_type_10001_128": "global_image_qianlan_poi_day_night",
+                    "background_type_10001_129": "global_image_qianlan_poi_day_night",
+                    "background_type_10001_130": "global_image_qianlan_poi_day_night",
+                    "background_type_10001_131": "global_image_hongse_poi_day_night",
+                    "background_type_10001_132": "global_image_hongse_poi_day_night",
+                    "background_type_10001_133": "global_image_zise_poi_day_night",
+                    "background_type_10001_134": "global_image_zise_poi_day_night",
+                    "background_type_10001_135": "global_image_zise_poi_day_night",
+                    "background_type_10001_136": "global_image_zise_poi_day_night",
+                    "background_type_10001_137": "global_image_hongse_poi_day_night",
+                    "background_type_10001_138": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_139": "global_image_qianlan_poi_day_night",
+                    "background_type_10001_140": "global_image_qianlan_poi_day_night",
+                    "background_type_10001_141": "global_image_qianlan_poi_day_night",
+                    "background_type_10001_142": "global_image_qianlan_poi_day_night",
+                    "background_type_10001_143": "global_image_qianlan_poi_day_night",
+                    "background_type_10001_144": "global_image_baise_poi_day_night",
+                    "background_type_10001_145": "global_image_baise_poi_day_night",
+                    "background_type_10001_146": "global_image_baise_poi_day_night",
+                    "background_type_10001_147": "global_image_baise_poi_day_night",
+                    "background_type_10001_149": "global_image_greenrectangle_poi_day_night",
+                    "background_type_10001_150": "global_image_greenrectangle_poi_day_night",
+                    "background_type_10001_151": "global_image_baise_poi_day_night",
+                    "background_type_10001_152": "global_image_baise_poi_day_night",
+                    "background_type_10001_153": "global_image_baise_poi_day_night",
+                    "background_type_10001_163": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_164": "global_image_orange_poi_day_night",
+                    "background_type_10001_165": "global_image_qianlan_poi_day_night",
+                    "background_type_10001_166": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_167": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_168": "global_image_bluerectangle_poi_day_night",
+                    "background_type_10001_169": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_170": "global_image_qianlan_poi_day_night",
+                    "background_type_10001_171": "global_image_hese_poi_day_night",
+                    "background_type_10001_172": "global_image_bluerectangle_poi_day_night",
+                    "background_type_10001_175": "global_image_blue_poi_day_night",
+                    "background_type_10001_176": "global_image_bluerectangle_poi_day_night",
+                    "background_type_10001_177": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_178": "global_image_lanhuise_poi_day_night",
+                    "background_type_10001_206": "global_image_hongse_poi_day_night",
+                    "background_type_10001_207": "global_image_hongse_poi_day_night",
+                    "background_type_10001_208": "global_image_hongse_poi_day_night",
+                    "background_type_10001_209": "global_image_hongse_poi_day_night",
+                    "background_type_10001_210": "global_image_hongse_poi_day_night",
+                    "background_type_10002_1": "global_image_blue_poi_day_night",
+                    "background_type_10002_2": "global_image_blue_poi_day_night",
+                    "background_type_10002_3": "global_image_blue_poi_day_night",
+                    "background_type_10002_4": "global_image_blue_poi_day_night",
+                    "background_type_10002_5": "global_image_blue_poi_day_night",
+                    "background_type_10002_6": "global_image_blue_poi_day_night",
+                    "background_type_10002_7": "global_image_blue_poi_day_night",
+                    "background_type_10002_8": "global_image_blue_poi_day_night",
+                    "background_type_10002_9": "global_image_blue_poi_day_night",
+                    "background_type_10002_10": "global_image_blue_poi_day_night",
+                    "background_type_10002_11": "global_image_blue_poi_day_night",
+                    "background_type_10002_12": "global_image_blue_poi_day_night",
+                    "background_type_10002_13": "global_image_blue_poi_day_night",
+                    "background_type_10002_14": "global_image_blue_poi_day_night",
+                    "background_type_10002_15": "global_image_lanhuise_poi_day_night",
+                    "background_type_10002_17": "global_image_blue_poi_day_night",
+                    "background_type_10002_18": "global_image_blue_poi_day_night",
+                    "background_type_10002_19": "global_image_blue_poi_day_night",
+                    "background_type_10002_21": "global_image_lanhuise_poi_day_night",
+                    "background_type_10002_22": "global_image_blue_poi_day_night",
+                    "background_type_10002_24": "global_image_blue_poi_day_night",
+                    "background_type_10002_27": "global_image_blue_poi_day_night",
+                    "background_type_10002_29": "global_image_blue_poi_day_night",
+                    "background_type_10002_30": "global_image_blue_poi_day_night",
+                    "background_type_10002_31": "global_image_blue_poi_day_night",
+                    "background_type_10002_32": "global_image_blue_poi_day_night",
+                    "background_type_10002_34": "global_image_blue_poi_day_night",
+                    "background_type_10002_35": "global_image_blue_poi_day_night",
+                    "background_type_10002_37": "global_image_blue_poi_day_night",
+                    "background_type_10005_1": "global_image_bluerectangle_poi_day_night",
+                    "background_type_10005_3": "global_image_greenrectangle_poi_day_night",
+                    "background_type_10005_5": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_7": "global_image_lanzinrectangle_poi_day_night",
+                    "background_type_10005_9": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_11": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_13": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_15": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_17": "global_image_redlanzinrectangle_poi_day_night",
+                    "background_type_10005_19": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_21": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_23": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_25": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_27": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_29": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_31": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_33": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_35": "global_image_bluerectangle_poi_day_night",
+                    "background_type_10005_37": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_39": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_41": "global_image_blue_poi_day_night",
+                    "background_type_10005_43": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_45": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_47": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_49": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_51": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_53": "global_image_bluerectangle_poi_day_night",
+                    "background_type_10005_54": "global_image_redlanzinrectangle_poi_day_night",
+                    "background_type_10005_55": "global_image_greenrectangle_poi_day_night",
+                    "background_type_10005_56": "global_image_orangerectangle_poi_day_night",
+                    "background_type_10005_57": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_86": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_87": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_88": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_89": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_90": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_91": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_92": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_93": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_94": "global_image_blue_poi_day_night",
+                    "background_type_10005_95": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_96": "global_image_bairectangle_poi_day_night",
+                    "background_type_10005_97": "global_image_bairectangle_poi_day_night",
+                    "background_type_10007_1": "global_image_baise_poi_day_night",
+                    "background_type_10007_2": "global_image_baise_poi_day_night",
+                    "background_type_10007_3": "global_image_baise_poi_day_night",
+                    "background_type_10007_4": "global_image_baise_poi_day_night",
+                    "background_type_10007_5": "global_image_baise_poi_day_night",
+                    "background_type_10007_6": "global_image_baise_poi_day_night",
+                    "background_type_10007_7": "global_image_baise_poi_day_night",
+                    "background_type_10007_8": "global_image_baise_poi_day_night",
+                    "background_type_10007_9": "global_image_baise_poi_day_night",
+                    "background_type_10007_10": "global_image_baise_poi_day_night",
+                    "background_type_10007_11": "global_image_baise_poi_day_night",
+                    "background_type_10007_12": "global_image_baise_poi_day_night",
+                    "background_type_10007_13": "global_image_baise_poi_day_night",
+                    "background_type_10007_14": "global_image_baise_poi_day_night",
+                    "background_type_10007_15": "global_image_baise_poi_day_night",
+                    "background_type_10007_16": "global_image_baise_poi_day_night",
+                    "background_type_10007_17": "global_image_baise_poi_day_night",
+                    "background_type_10007_18": "global_image_baise_poi_day_night",
+                    "background_type_10007_19": "global_image_baise_poi_day_night",
+                    "background_type_10007_20": "global_image_baise_poi_day_night",
+                    "background_type_10007_21": "global_image_baise_poi_day_night",
+                    "background_type_10007_22": "global_image_baise_poi_day_night",
+                    "background_type_10007_23": "global_image_baise_poi_day_night",
+                    "background_type_10007_24": "global_image_baise_poi_day_night",
+                    "background_type_10007_25": "global_image_baise_poi_day_night",
+                    "background_type_10007_26": "global_image_baise_poi_day_night",
+                    "background_type_10007_27": "global_image_baise_poi_day_night",
+                    "background_type_10007_28": "global_image_baise_poi_day_night",
+                    "background_type_10007_29": "global_image_baise_poi_day_night",
+                    "background_type_10007_30": "global_image_baise_poi_day_night",
+                    "background_type_10007_31": "global_image_baise_poi_day_night",
+                    "background_type_10007_32": "global_image_baise_poi_day_night",
+                    "background_type_10007_33": "global_image_baise_poi_day_night",
+                    "background_type_10007_34": "global_image_baise_poi_day_night",
+                    "background_type_10007_35": "global_image_baise_poi_day_night",
+                    "background_type_10007_36": "global_image_baise_poi_day_night",
+                    "background_type_10007_37": "global_image_baise_poi_day_night",
+                    "background_type_10007_38": "global_image_baise_poi_day_night",
+                    "background_type_10007_39": "global_image_baise_poi_day_night",
+                    "background_type_10007_40": "global_image_baise_poi_day_night",
+                    "background_type_10007_41": "global_image_baise_poi_day_night",
+                    "background_type_10007_42": "global_image_baise_poi_day_night",
+                    "background_type_10007_43": "global_image_blue_poi_day_night",
+                    "background_type_10007_44": "global_image_blue_poi_day_night",
+                    "background_type_10007_46": "global_image_blue_poi_day_night",
+                    "background_type_10007_47": "global_image_blue_poi_day_night",
+                    "background_type_10007_164": "global_image_baise_poi_day_night",
+                    "background_type_10007_165": "global_image_baise_poi_day_night",
+                    "background_type_10007_166": "global_image_orange_poi_day_night",
+                    "background_type_10007_167": "global_image_orange_poi_day_night",
+                    "background_type_10007_168": "global_image_orange_poi_day_night",
+                    "background_type_10007_169": "global_image_zise_poi_day_night",
+                    "background_type_10007_170": "global_image_hongse_poi_day_night",
+                    "background_type_10007_171": "global_image_qianlan_poi_day_night",
+                    "background_type_10007_172": "global_image_qianlan_poi_day_night",
+                    "background_type_10007_173": "global_image_qianlan_poi_day_night",
+                    "background_type_10007_174": "global_image_qianlan_poi_day_night",
+                    "background_type_10007_175": "global_image_zise_poi_day_night",
+                    "background_type_10007_176": "global_image_hese_poi_day_night",
+                    "background_type_10007_177": "global_image_qianlan_poi_day_night",
+                    "background_type_10007_178": "global_image_zise_poi_day_night",
+                    "background_type_10007_179": "global_image_orange_poi_day_night",
+                    "background_type_10007_180": "global_image_orange_poi_day_night",
+                    "background_type_10007_181": "global_image_orange_poi_day_night",
+                    "background_type_10007_182": "global_image_baise_poi_day_night",
+                    "background_type_10007_183": "global_image_baise_poi_day_night",
+                    "background_type_10007_184": "global_image_baise_poi_day_night",
+                    "background_type_10007_185": "global_image_baise_poi_day_night",
+                    "background_type_10007_186": "global_image_baise_poi_day_night",
+                    "background_type_10007_187": "global_image_hongse_poi_day_night",
+                    "background_type_10007_188": "global_image_hongse_poi_day_night",
+                    "background_type_10007_189": "global_image_hongse_poi_day_night",
+                    "background_type_10007_190": "global_image_hongse_poi_day_night",
+                    "background_type_10007_192": "global_image_hongse_poi_day_night",
+                    "background_type_10007_193": "global_image_hongse_poi_day_night",
+                    "background_type_10007_194": "global_image_hongse_poi_day_night",
+                    "background_type_10007_195": "global_image_hongse_poi_day_night",
+                    "background_type_10007_196": "global_image_hongse_poi_day_night",
+                    "background_type_10007_198": "global_image_hongse_poi_day_night",
+                    "background_type_10007_200": "global_image_zise_poi_day_night",
+                    "background_type_10007_201": "global_image_zise_poi_day_night",
+                    "background_type_10007_202": "global_image_zise_poi_day_night",
+                    "background_type_10007_203": "global_image_orange_poi_day_night",
+                    "background_type_10007_204": "global_image_baise_poi_day_night",
+                    "background_type_10007_205": "global_image_baise_poi_day_night",
+                    "background_type_10007_206": "global_image_baise_poi_day_night",
+                    "background_type_10007_209": "global_image_hongse_poi_day_night",
+                    "background_type_10007_239": "global_image_blue_poi_day_night",
+                    "background_type_10007_240": "global_image_blue_poi_day_night",
+                    "background_type_10008_1": "global_image_green_poi_day_night",
+                    "background_type_10008_2": "global_image_green_poi_day_night",
+                    "background_type_10009_1": "global_image_bluerectangle_poi_day_night",
+                    "background_type_10011_1": "global_image_hongse_poi_day_night",
+                    "background_type_10011_2": "global_image_hongse_poi_day_night",
+                    "background_type_10011_3": "global_image_hongse_poi_day_night",
+                    "background_type_10011_4": "global_image_hongse_poi_day_night",
+                    "background_type_10011_6": "global_image_hongse_poi_day_night",
+                    "background_type_10011_7": "global_image_hongse_poi_day_night",
+                    "background_type_10011_8": "global_image_hongse_poi_day_night",
+                    "background_type_10011_9": "global_image_hongse_poi_day_night",
+                    "background_type_10011_10": "global_image_hongse_poi_day_night",
+                    "background_type_10011_11": "global_image_hongse_poi_day_night",
+                    "background_type_10011_12": "global_image_hongse_poi_day_night",
+                    "background_type_10013_15": "global_image_baise_poi_day_night",
+                    "background_type_10013_16": "global_image_baise_poi_day_night",
+                    "background_type_10013_17": "global_image_baise_poi_day_night",
+                    "background_type_10013_18": "global_image_green_poi_day_night",
+                    "background_type_10013_19": "global_image_green_poi_day_night",
+                    "background_type_10013_20": "global_image_baise_poi_day_night",
+                    "background_type_10013_21": "global_image_green_poi_day_night",
+                    "background_type_10013_22": "global_image_baise_poi_day_night",
+                    "background_type_10013_23": "global_image_baise_poi_day_night",
+                    "background_type_11000_2": "global_image_bluerectangle_poi_day_night",
+                    "background_type_11000_3": "global_image_orangerectangle_poi_day_night",
+                    "background_type_11000_4": "global_image_greenrectangle_poi_day_night",
+                    "background_type_11000_5": "global_image_greenrectangle_poi_day_night",
+                    "background_type_11000_6": "global_image_greenrectangle_poi_day_night",
+                    "background_type_11000_7": "global_image_greenrectangle_poi_day_night",
+                    "background_type_11000_8": "global_image_blue_poi_day_night",
+                    "background_type_default": "global_image_normalse_poi_day_night"
+                },
+                "poi_type_dynamic": {
+                    "poi_type_10001_1": "global_image_poi_common_day_night",
+                    "poi_type_10001_3": "global_image_poi_zhengfu_10001_3_day_night",
+                    "poi_type_10001_4": "global_image_poi_common_day_night",
+                    "poi_type_10001_5": "global_image_poi_businessbuilding_10001_5_day_night",
+                    "poi_type_10001_6": "global_image_poi_apartment_10001_6_day_night",
+                    "poi_type_10001_7": "global_image_poi_pshangchang_10001_93_day_night",
+                    "poi_type_10001_8": "global_image_poi_chaoshi_10001_8_day_night",
+                    "poi_type_10001_9": "global_image_poi_hotel_10001_9_day_night",
+                    "poi_type_10001_10": "global_image_poi_colleges_10001_10_day_night",
+                    "poi_type_10001_11": "global_image_poi_school_10001_11_day_night",
+                    "poi_type_10001_12": "global_image_poi_travel_10001_12_day_night",
+                    "poi_type_10001_13": "global_image_poi_bowuguan_10001_13_day_night",
+                    "poi_type_10001_14": "global_image_poi_garden_10001_69_day_night",
+                    "poi_type_10001_15": "global_image_poi_gym_10001_124_day_night",
+                    "poi_type_10001_16": "global_image_poi_gaoerfu_10001_16_day_night",
+                    "poi_type_10001_17": "global_image_poi_huabingchang_10001_17_day_night",
+                    "poi_type_10001_18": "global_image_poi_mountain_10001_18_day_night",
+                    "poi_type_10001_19": "global_image_poi_canting_10001_19_day_night",
+                    "poi_type_10001_20": "global_image_poi_kfc_10007_1_day_night",
+                    "poi_type_10001_21": "global_image_poi_maidanglao_10007_21_day_night",
+                    "poi_type_10001_22": "global_image_poi_cofe_10001_22_day_night",
+                    "poi_type_10001_23": "global_image_poi_airport_10001_23_day_night",
+                    "poi_type_10001_24": "global_image_poi_busstop_10001_24_day_night",
+                    "poi_type_10001_25": "global_image_poi_busstation_10001_172_day_night",
+                    "poi_type_10001_26": "global_image_poi_trainstation_10001_26_day_night",
+                    "poi_type_10001_27": "global_image_poi_common_day_night",
+                    "poi_type_10001_28": "global_image_poi_common_day_night",
+                    "poi_type_10001_29": "global_image_poi_fuwuqu_10001_29_day_night",
+                    "poi_type_10001_30": "global_image_poi_common_day_night",
+                    "poi_type_10001_31": "global_image_poi_parking_10001_31_day_night",
+                    "poi_type_10001_32": "global_image_poi_menzhen_10001_131_day_night",
+                    "poi_type_10001_33": "global_image_poi_dongwuyiliao_10001_33_day_night",
+                    "poi_type_10001_34": "global_image_poi_qitajigou_10001_34_day_night",
+                    "poi_type_10001_35": "global_image_poi_book_10001_35_day_night",
+                    "poi_type_10001_36": "global_image_poi_port_10001_36_day_night",
+                    "poi_type_10001_37": "global_image_poi_aquarium_10001_37_day_night",
+                    "poi_type_10001_38": "global_image_poi_zoo_10001_38_day_night",
+                    "poi_type_10001_39": "global_image_poi_aboutcar_10001_39_day_night",
+                    "poi_type_10001_40": "global_image_poi_weixiu_10001_40_day_night",
+                    "poi_type_10001_41": "global_image_poi_gasstation_10001_41_day_night",
+                    "poi_type_10001_42": "global_image_poi_yinhang_10001_42_day_night",
+                    "poi_type_10001_43": "global_image_poi_Plolice_10001_43_day_night",
+                    "poi_type_10001_44": "global_image_poi_zhongguo_10001_44_day_night",
+                    "poi_type_10001_45": "global_image_poi_gongshang_10001_45_day_night",
+                    "poi_type_10001_46": "global_image_poi_jianshe_10001_46_day_night",
+                    "poi_type_10001_47": "global_image_poi_nonghang_10007_17_day_night",
+                    "poi_type_10001_48": "global_image_poi_jiaotong_10001_48_day_night",
+                    "poi_type_10001_49": "global_image_poi_zhaoshang_10007_19_day_night",
+                    "poi_type_10001_51": "global_image_poi_zhongxin_10007_20_day_night",
+                    "poi_type_10001_52": "global_image_poi_minsheng_10007_21_day_night",
+                    "poi_type_10001_53": "global_image_poi_xingye_10001_53_day_night",
+                    "poi_type_10001_54": "global_image_poi_beijing_10001_54_day_night",
+                    "poi_type_10001_55": "global_image_poi_atm_10001_55_day_night",
+                    "poi_type_10001_57": "global_image_poi_medicine_10001_57_day_night",
+                    "poi_type_10001_58": "global_image_poi_xiyidian_10001_58_day_night",
+                    "poi_type_10001_59": "global_image_poi_toilet_10001_59_day_night",
+                    "poi_type_10001_60": "global_image_poi_cinema_10001_60_day_night",
+                    "poi_type_10001_61": "global_image_poi_ktv_10001_61_day_night",
+                    "poi_type_10001_62": "global_image_poi_bear_10001_62_day_night",
+                    "poi_type_10001_63": "global_image_poi_youju_10001_63_day_night",
+                    "poi_type_10001_64": "global_image_poi_communication_10001_64_day_night",
+                    "poi_type_10001_65": "global_image_poi_liantong_10007_28_day_night",
+                    "poi_type_10001_66": "global_image_poi_dianxin_10007_28_day_night",
+                    "poi_type_10001_67": "global_image_poi_yidong_10001_67_day_night",
+                    "poi_type_10001_68": "global_image_poi_market_10001_68_day_night",
+                    "poi_type_10001_69": "global_image_poi_garden_10001_69_day_night",
+                    "poi_type_10001_70": "global_image_poi_yiyuan_10001_70_day_night",
+                    "poi_type_10001_71": "global_image_poi_jiaqizhan_10001_71_day_night",
+                    "poi_type_10001_72": "global_image_poi_chongdianzhan_10013_23_day_night",
+                    "poi_type_10001_73": "global_image_poi_playground_10001_73_day_night",
+                    "poi_type_10001_74": "global_image_poi_businessbuilding_10001_5_day_night",
+                    "poi_type_10001_75": "global_image_poi_businessbuilding_10001_5_day_night",
+                    "poi_type_10001_76": "global_image_poi_businessbuilding_10001_5_day_night",
+                    "poi_type_10001_77": "global_image_poi_businessbuilding_10001_5_day_night",
+                    "poi_type_10001_78": "global_image_poi_businessbuilding_10001_5_day_night",
+                    "poi_type_10001_79": "global_image_poi_businessbuilding_10001_5_day_night",
+                    "poi_type_10001_80": "global_image_poi_apartment_10001_6_day_night",
+                    "poi_type_10001_81": "global_image_poi_apartment_10001_6_day_night",
+                    "poi_type_10001_82": "global_image_poi_market_10001_68_day_night",
+                    "poi_type_10001_83": "global_image_poi_market_10001_68_day_night",
+                    "poi_type_10001_84": "global_image_poi_market_10001_68_day_night",
+                    "poi_type_10001_85": "global_image_poi_market_10001_68_day_night",
+                    "poi_type_10001_92": "global_image_poi_chaoshi_10001_8_day_night",
+                    "poi_type_10001_93": "global_image_poi_pshangchang_10001_93_day_night",
+                    "poi_type_10001_97": "global_image_poi_pshangchang_10001_93_day_night",
+                    "poi_type_10001_98": "global_image_poi_chaoshi_10001_8_day_night",
+                    "poi_type_10001_99": "global_image_poi_common_day_night",
+                    "poi_type_10001_100": "global_image_poi_garden_10001_69_day_night",
+                    "poi_type_10001_101": "global_image_poi_garden_10001_69_day_night",
+                    "poi_type_10001_102": "global_image_poi_garden_10001_69_day_night",
+                    "poi_type_10001_103": "global_image_poi_zoo_10001_38_day_night",
+                    "poi_type_10001_104": "global_image_poi_garden_10001_69_day_night",
+                    "poi_type_10001_105": "global_image_poi_travel_10001_12_day_night",
+                    "poi_type_10001_106": "global_image_poi_travel_10001_12_day_night",
+                    "poi_type_10001_107": "global_image_poi_travel_10001_12_day_night",
+                    "poi_type_10001_108": "global_image_poi_travel_10001_12_day_night",
+                    "poi_type_10001_109": "global_image_poi_simiao_10001_109_day_night",
+                    "poi_type_10001_110": "global_image_poi_jiaotang_10001_110_day_night",
+                    "poi_type_10001_111": "global_image_poi_huijiaosi_10001_111_day_night",
+                    "poi_type_10001_112": "global_image_poi_bowuguan_10001_13_day_night",
+                    "poi_type_10001_113": "global_image_poi_aboutmoto_10001_113_day_night",
+                    "poi_type_10001_114": "global_image_poi_canting_10001_19_day_night",
+                    "poi_type_10001_115": "global_image_poi_canting_10001_19_day_night",
+                    "poi_type_10001_116": "global_image_poi_canting_10001_19_day_night",
+                    "poi_type_10001_117": "global_image_poi_canting_10001_19_day_night",
+                    "poi_type_10001_118": "global_image_poi_pizza_10001_118_day_night",
+                    "poi_type_10001_119": "global_image_poi_xingbake_10001_119_day_night",
+                    "poi_type_10001_120": "global_image_poi_ticketsales_10001_120_day_night",
+                    "poi_type_10001_121": "global_image_poi_meirongmeifa_10001_121_day_night",
+                    "poi_type_10001_122": "global_image_poi_photo_10001_122_day_night",
+                    "poi_type_10001_123": "global_image_poi_youeryuan_10001_123_day_night",
+                    "poi_type_10001_124": "global_image_poi_gym_10001_124_day_night",
+                    "poi_type_10001_125": "global_image_poi_gym_10001_124_day_night",
+                    "poi_type_10001_126": "global_image_poi_gym_10001_124_day_night",
+                    "poi_type_10001_127": "global_image_poi_gym_10001_124_day_night",
+                    "poi_type_10001_128": "global_image_poi_gym_10001_124_day_night",
+                    "poi_type_10001_129": "global_image_poi_basketball_10001_129_day_night",
+                    "poi_type_10001_130": "global_image_poi_footbal_10001_130_day_night",
+                    "poi_type_10001_131": "global_image_poi_menzhen_10001_131_day_night",
+                    "poi_type_10001_132": "global_image_poi_jizhen_10001_208_day_night",
+                    "poi_type_10001_133": "global_image_poi_hotel_10001_9_day_night",
+                    "poi_type_10001_134": "global_image_poi_hotel_10001_9_day_night",
+                    "poi_type_10001_135": "global_image_poi_hotel_10001_9_day_night",
+                    "poi_type_10001_136": "global_image_poi_hotel_10001_9_day_night",
+                    "poi_type_10001_137": "global_image_poi_fayuan_10001_137_day_night",
+                    "poi_type_10001_138": "global_image_poi_tvstation_10001_138_day_night",
+                    "poi_type_10001_139": "global_image_poi_colleges_10001_10_day_night",
+                    "poi_type_10001_140": "global_image_poi_colleges_10001_10_day_night",
+                    "poi_type_10001_141": "global_image_poi_colleges_10001_10_day_night",
+                    "poi_type_10001_142": "global_image_poi_colleges_10001_10_day_night",
+                    "poi_type_10001_143": "global_image_poi_colleges_10001_10_day_night",
+                    "poi_type_10001_144": "global_image_poi_renmin_10001_144_day_night",
+                    "poi_type_10001_145": "global_image_poi_huaxia_10007_25_day_night",
+                    "poi_type_10001_146": "global_image_poi_guangda_10007_26_day_night",
+                    "poi_type_10001_147": "global_image_poi_youzheng_10007_27_day_night",
+                    "poi_type_10001_149": "global_image_poi_common_day_night",
+                    "poi_type_10001_150": "global_image_poi_common_day_night",
+                    "poi_type_10001_151": "global_image_poi_zhongsiyou_10001_151_day_night",
+                    "poi_type_10001_152": "global_image_poi_zhongsihua_10001_152_day_night",
+                    "poi_type_10001_153": "global_image_poi_kepai_10001_153_day_night",
+                    "poi_type_10001_163": "global_image_poi_common_day_night",
+                    "poi_type_10001_164": "global_image_poi_zhongcan_10007_179_day_night",
+                    "poi_type_10001_165": "global_image_poi_keyan_10001_165_day_night",
+                    "poi_type_10001_166": "global_image_poi_apartment_10001_6_day_night",
+                    "poi_type_10001_167": "global_image_poi_common_day_night",
+                    "poi_type_10001_168": "global_image_poi_suodao_10001_168_day_night",
+                    "poi_type_10001_169": "global_image_poi_common_day_night",
+                    "poi_type_10001_170": "global_image_poi_jiaoxuelou_10001_170_day_night",
+                    "poi_type_10001_171": "global_image_poi_travel_10001_12_day_night",
+                    "poi_type_10001_172": "global_image_poi_busstation_10001_172_day_night",
+                    "poi_type_10001_175": "global_image_poi_parkingmony_10001_175_day_night",
+                    "poi_type_10001_176": "global_image_poi_hangzhanlou_10009_1_day_night",
+                    "poi_type_10001_177": "global_image_poi_daoda_10001_178_day_night",
+                    "poi_type_10001_178": "global_image_poi_chufa_10001_177_day_night",
+                    "poi_type_10001_206": "global_image_poi_menzhen_10001_131_day_night",
+                    "poi_type_10001_207": "global_image_poi_yiyuan_10001_70_day_night",
+                    "poi_type_10001_208": "global_image_poi_jizhen_10001_208_day_night",
+                    "poi_type_10001_209": "global_image_poi_kouqiang_10007_170_day_night",
+                    "poi_type_10001_210": "global_image_poi_medicine_10001_57_day_night",
+                    "poi_type_10002_1": "global_image_poi_common_day_night",
+                    "poi_type_10002_2": "global_image_poi_common_day_night",
+                    "poi_type_10002_3": "global_image_poi_common_day_night",
+                    "poi_type_10002_4": "global_image_poi_common_day_night",
+                    "poi_type_10002_5": "global_image_poi_common_day_night",
+                    "poi_type_10002_6": "global_image_poi_common_day_night",
+                    "poi_type_10002_7": "global_image_poi_common_day_night",
+                    "poi_type_10002_8": "global_image_poi_common_day_night",
+                    "poi_type_10002_9": "global_image_poi_common_day_night",
+                    "poi_type_10002_10": "global_image_poi_common_day_night",
+                    "poi_type_10002_11": "global_image_poi_common_day_night",
+                    "poi_type_10002_12": "global_image_poi_common_day_night",
+                    "poi_type_10002_13": "global_image_poi_common_day_night",
+                    "poi_type_10002_14": "global_image_poi_common_day_night",
+                    "poi_type_10002_15": "global_image_poi_common_day_night",
+                    "poi_type_10002_17": "global_image_poi_common_day_night",
+                    "poi_type_10002_18": "global_image_poi_common_day_night",
+                    "poi_type_10002_19": "global_image_poi_common_day_night",
+                    "poi_type_10002_21": "global_image_poi_door_10002_21_day_night",
+                    "poi_type_10002_22": "global_image_poi_common_day_night",
+                    "poi_type_10002_24": "global_image_poi_common_day_night",
+                    "poi_type_10002_27": "global_image_poi_common_day_night",
+                    "poi_type_10002_29": "global_image_poi_common_day_night",
+                    "poi_type_10002_30": "global_image_poi_common_day_night",
+                    "poi_type_10002_31": "global_image_poi_common_day_night",
+                    "poi_type_10002_32": "global_image_poi_common_day_night",
+                    "poi_type_10002_34": "global_image_poi_common_day_night",
+                    "poi_type_10002_35": "global_image_poi_common_day_night",
+                    "poi_type_10002_37": "global_image_poi_common_day_night",
+                    "poi_type_10005_1": "global_image_poi_ditiehuancheng_10005_1_day_night",
+                    "poi_type_10005_3": "global_image_poi_subwaychongqing_10005_3_day_night",
+                    "poi_type_10005_5": "global_image_poi_subwayxianggang_10005_5_day_night",
+                    "poi_type_10005_7": "global_image_poi_subwaywuhan_10005_7_day_night",
+                    "poi_type_10005_9": "global_image_poi_subwaytianjin_10005_9_day_night",
+                    "poi_type_10005_11": "global_image_poi_subwayshenzhen_10005_11_day_night",
+                    "poi_type_10005_13": "global_image_poi_subwayshanghai_10005_13_day_night",
+                    "poi_type_10005_15": "global_image_poi_subwaynanjing_10005_15_day_night",
+                    "poi_type_10005_17": "global_image_poi_subwayguangzhou_10005_17_day_night",
+                    "poi_type_10005_19": "global_image_poi_subwayfoshan_10005_19_day_night",
+                    "poi_type_10005_21": "global_image_poi_subwaydalian_10005_21_day_night",
+                    "poi_type_10005_23": "global_image_poi_subwaychangchun_10005_23_day_night",
+                    "poi_type_10005_25": "global_image_poi_subwaychengdu_10005_25_day_night",
+                    "poi_type_10005_27": "global_image_poi_subwayshenyang_10005_27_day_night",
+                    "poi_type_10005_29": "global_image_poi_subwayhangzhou_10005_29_day_night",
+                    "poi_type_10005_31": "global_image_poi_subwayxian_10005_31_day_night",
+                    "poi_type_10005_33": "global_image_poi_subwaytaoyuan_10005_93_day_night",
+                    "poi_type_10005_35": "global_image_poi_ditie_10005_35_day_night",
+                    "poi_type_10005_37": "global_image_poi_subwaykunming_10005_37_day_night",
+                    "poi_type_10005_39": "global_image_poi_subwayzhengzhou_10005_39_day_night",
+                    "poi_type_10005_41": "global_image_poi_common_day_night",
+                    "poi_type_10005_43": "global_image_poi_subwayhaerbin_10005_43_day_night",
+                    "poi_type_10005_45": "global_image_poi_subwayfuzhou_10005_45_day_night",
+                    "poi_type_10005_47": "global_image_poi_subwaynanchang_10005_47_day_night",
+                    "poi_type_10005_49": "global_image_poi_subwaywuxi_10005_49_day_night",
+                    "poi_type_10005_51": "global_image_poi_subwaychangsha_10005_51_day_night",
+                    "poi_type_10005_53": "global_image_poi_ditiehuancheng_10005_35_day_night",
+                    "poi_type_10005_54": "global_image_poi_ditiehuancheng_10005_35_day_night",
+                    "poi_type_10005_55": "global_image_poi_ditiehuancheng_10005_35_day_night",
+                    "poi_type_10005_56": "global_image_poi_ditiehuancheng_10005_35_day_night",
+                    "poi_type_10005_57": "global_image_poi_subwayningbo_10005_57_day_night",
+                    "poi_type_10005_86": "global_image_poi_subwayqingdao_10005_86_day_night",
+                    "poi_type_10005_87": "global_image_poi_subwaydongguan_10005_87_day_night",
+                    "poi_type_10005_88": "global_image_poi_subwaynanning_10005_88_day_night",
+                    "poi_type_10005_89": "global_image_poi_subwayhefei_10005_89_day_night",
+                    "poi_type_10005_90": "global_image_poi_subwayguiyang_10005_90_day_night",
+                    "poi_type_10005_91": "global_image_poi_subwaytaibei_10005_91_day_night",
+                    "poi_type_10005_92": "global_image_poi_subwaygaoxiong_10005_92_day_night",
+                    "poi_type_10005_93": "global_image_poi_subwaytaoyuan_10005_93_day_night",
+                    "poi_type_10005_94": "global_image_poi_common_day_night",
+                    "poi_type_10005_95": "global_image_poi_subwayshijiazhuang_10005_95_day_night",
+                    "poi_type_10005_96": "global_image_poi_subwayxiamen_10005_96_day_night",
+                    "poi_type_10005_97": "global_image_poi_subwaywulumuqi_10005_97_day_night",
+                    "poi_type_10007_1": "global_image_poi_kfc_10007_1_day_night",
+                    "poi_type_10007_2": "global_image_poi_maidanglao_10007_21_day_night",
+                    "poi_type_10007_3": "global_image_poi_pizza_10001_118_day_night",
+                    "poi_type_10007_4": "global_image_poi_xingbake_10001_119_day_night",
+                    "poi_type_10007_5": "global_image_poi_ok_10007_5_day_night",
+                    "poi_type_10007_6": "global_image_poi_711_10007_6_day_night",
+                    "poi_type_10007_7": "global_image_poi_jialefu_10007_7_day_night",
+                    "poi_type_10007_8": "global_image_poi_woerma_10007_8_day_night",
+                    "poi_type_10007_9": "global_image_poi_huarun_10007_9_day_night",
+                    "poi_type_10007_10": "global_image_poi_quchenshi_10007_10_day_night",
+                    "poi_type_10007_11": "global_image_poi_guoomei_10007_11_day_night",
+                    "poi_type_10007_12": "global_image_poi_dazhong_10007_12_day_night",
+                    "poi_type_10007_13": "global_image_poi_suning_10007_13_day_night",
+                    "poi_type_10007_14": "global_image_poi_zhongguo_10001_44_day_night",
+                    "poi_type_10007_15": "global_image_poi_gongshang_10001_45_day_night",
+                    "poi_type_10007_16": "global_image_poi_jianshe_10001_46_day_night",
+                    "poi_type_10007_17": "global_image_poi_nonghang_10007_17_day_night",
+                    "poi_type_10007_18": "global_image_poi_jiaotong_10001_48_day_night",
+                    "poi_type_10007_19": "global_image_poi_zhaoshang_10007_19_day_night",
+                    "poi_type_10007_20": "global_image_poi_zhongxin_10007_20_day_night",
+                    "poi_type_10007_21": "global_image_poi_minsheng_10007_21_day_night",
+                    "poi_type_10007_22": "global_image_poi_xingye_10001_53_day_night",
+                    "poi_type_10007_23": "global_image_poi_beijing_10001_54_day_night",
+                    "poi_type_10007_24": "global_image_poi_renmin_10001_144_day_night",
+                    "poi_type_10007_25": "global_image_poi_huaxia_10007_25_day_night",
+                    "poi_type_10007_26": "global_image_poi_guangda_10007_26_day_night",
+                    "poi_type_10007_27": "global_image_poi_youzheng_10007_27_day_night",
+                    "poi_type_10007_28": "global_image_poi_liantong_10007_28_day_night",
+                    "poi_type_10007_29": "global_image_poi_dianxin_10007_28_day_night",
+                    "poi_type_10007_30": "global_image_poi_yidong_10001_67_day_night",
+                    "poi_type_10007_31": "global_image_poi_rujia_10007_31_day_night",
+                    "poi_type_10007_32": "global_image_poi_7tian_10007_32_day_night",
+                    "poi_type_10007_33": "global_image_poi_su8_10007_33_day_night",
+                    "poi_type_10007_34": "global_image_poi_hanting_10007_34_day_night",
+                    "poi_type_10007_35": "global_image_poi_jinjiangzhixing_10007_35_day_night",
+                    "poi_type_10007_36": "global_image_poi_gelinhaotai_10007_36_day_night",
+                    "poi_type_10007_37": "global_image_poi_qingnianlvshe_10007_37_day_night",
+                    "poi_type_10007_38": "global_image_poi_xilaideng_10007_38_day_night",
+                    "poi_type_10007_39": "global_image_poi_xierdun_10007_39_day_night",
+                    "poi_type_10007_40": "global_image_poi_zhongsiyou_10001_151_day_night",
+                    "poi_type_10007_41": "global_image_poi_zhongsihua_10001_152_day_night",
+                    "poi_type_10007_42": "global_image_poi_kepai_10001_153_day_night",
+                    "poi_type_10007_43": "global_image_poi_common_day_night",
+                    "poi_type_10007_44": "global_image_poi_common_day_night",
+                    "poi_type_10007_46": "global_image_poi_common_day_night",
+                    "poi_type_10007_47": "global_image_poi_common_day_night",
+                    "poi_type_10007_164": "global_image_poi_yibisi_10007_164_day_night",
+                    "poi_type_10007_165": "global_image_poi_jiari_10007_165_day_night",
+                    "poi_type_10007_166": "global_image_poi_cake_10007_166_day_night",
+                    "poi_type_10007_167": "global_image_poi_tea_10007_167_day_night",
+                    "poi_type_10007_168": "global_image_poi_lengyindian_10007_168_day_night",
+                    "poi_type_10007_169": "global_image_poi_wangba_10007_169_day_night",
+                    "poi_type_10007_170": "global_image_poi_kouqiang_10007_170_day_night",
+                    "poi_type_10007_171": "global_image_poi_youyong_10007_171_day_night",
+                    "poi_type_10007_172": "global_image_poi_bowling_10007_172_day_night",
+                    "poi_type_10007_173": "global_image_poi_pingpong_10007_173_day_night",
+                    "poi_type_10007_174": "global_image_poi_wangqiu_10007_174_day_night",
+                    "poi_type_10007_175": "global_image_poi_flower_10007_175_day_night",
+                    "poi_type_10007_176": "global_image_poi_meishuguan_10007_176_day_night",
+                    "poi_type_10007_177": "global_image_poi_tianwenguan_10007_177_day_night",
+                    "poi_type_10007_178": "global_image_poi_juchang_10007_178_day_night",
+                    "poi_type_10007_179": "global_image_poi_zhongcan_10007_179_day_night",
+                    "poi_type_10007_180": "global_image_poi_canting_10001_19_day_night",
+                    "poi_type_10007_181": "global_image_poi_kuaican_10007_181_day_night",
+                    "poi_type_10007_182": "global_image_poi_dazhoong_10007_182_day_night",
+                    "poi_type_10007_183": "global_image_poi_bentian_10007_183_day_night",
+                    "poi_type_10007_184": "global_image_poi_bieke_10007_84_day_night",
+                    "poi_type_10007_185": "global_image_poi_aodi_10007_185_day_night",
+                    "poi_type_10007_186": "global_image_poi_baoma_10007_186_day_night",
+                    "poi_type_10007_187": "global_image_poi_common_day_night",
+                    "poi_type_10007_188": "global_image_poi_common_day_night",
+                    "poi_type_10007_189": "global_image_poi_common_day_night",
+                    "poi_type_10007_190": "global_image_poi_common_day_night",
+                    "poi_type_10007_192": "global_image_poi_common_day_night",
+                    "poi_type_10007_193": "global_image_poi_common_day_night",
+                    "poi_type_10007_194": "global_image_poi_common_day_night",
+                    "poi_type_10007_195": "global_image_poi_common_day_night",
+                    "poi_type_10007_196": "global_image_poi_common_day_night",
+                    "poi_type_10007_198": "global_image_poi_common_day_night",
+                    "poi_type_10007_200": "global_image_poi_clothing_10007_200_day_night",
+                    "poi_type_10007_201": "global_image_poi_yimaoshichang_10007_201_day_night",
+                    "poi_type_10007_202": "global_image_poi_huazhuangpin_10007_202_day_night",
+                    "poi_type_10007_203": "global_image_poi_huoguo_10007_203_day_night",
+                    "poi_type_10007_204": "global_image_poi_apple_10007_204_day_night",
+                    "poi_type_10007_205": "global_image_poi_jiyejjia_10007_205_day_night",
+                    "poi_type_10007_206": "global_image_poi_quanjude_10007_206_day_night",
+                    "poi_type_10007_209": "global_image_poi_common_day_night",
+                    "poi_type_10007_239": "global_image_poi_common_day_night",
+                    "poi_type_10007_240": "global_image_poi_aboutcar_10001_39_day_night",
+                    "poi_type_10008_1": "global_image_poi_common_day_night",
+                    "poi_type_10008_2": "global_image_poi_common_day_night",
+                    "poi_type_10009_1": "global_image_poi_hangzhanlou_10009_1_day_night",
+                    "poi_type_10011_1": "global_image_poi_common_day_night",
+                    "poi_type_10011_2": "global_image_poi_common_day_night",
+                    "poi_type_10011_3": "global_image_poi_common_day_night",
+                    "poi_type_10011_4": "global_image_poi_common_day_night",
+                    "poi_type_10011_6": "global_image_poi_common_day_night",
+                    "poi_type_10011_7": "global_image_poi_common_day_night",
+                    "poi_type_10011_8": "global_image_poi_common_day_night",
+                    "poi_type_10011_9": "global_image_poi_common_day_night",
+                    "poi_type_10011_10": "global_image_poi_common_day_night",
+                    "poi_type_10011_11": "global_image_poi_common_day_night",
+                    "poi_type_10011_12": "global_image_poi_common_day_night",
+                    "poi_type_10013_15": "global_image_poi_telaidian_10007_15_day_night",
+                    "poi_type_10013_16": "global_image_poi_guojiadianwang_10013_16_day_night",
+                    "poi_type_10013_17": "global_image_poi_shandian_10013_23_day_night",
+                    "poi_type_10013_18": "global_image_poi_common_day_night",
+                    "poi_type_10013_19": "global_image_poi_common_day_night",
+                    "poi_type_10013_20": "global_image_poi_anyue_10007_20_day_night",
+                    "poi_type_10013_21": "global_image_poi_common_day_night",
+                    "poi_type_10013_22": "global_image_poi_biyadi_10007_22_day_night",
+                    "poi_type_10013_23": "global_image_poi_shandian_10013_23_day_night",
+                    "poi_type_11000_2": "global_image_poi_busstop_10001_24_day_night",
+                    "poi_type_11000_3": "global_image_poi_common_day_night",
+                    "poi_type_11000_4": "global_image_poi_common_day_night",
+                    "poi_type_11000_5": "global_image_poi_common_day_night",
+                    "poi_type_11000_6": "global_image_poi_common_day_night",
+                    "poi_type_11000_7": "global_image_poi_common_day_night",
+                    "poi_type_11000_8": "global_image_poi_common_day_night",
+                    "poi_type_default": "global_image_poi_common_day_night"
+                }
+            }
+        },
+        "marker_info_point_center_up_2": {
+            "anchor": 9,
+            "x_ratio": 0.5,
+            "y_ratio": 0.9
+        }
+    },
+    "layer_item_info": {
+        "fly_line_style_point_none": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": ""
+                },
+                "focus_style": {
+                    "poi_marker_id": ""
+                }
+            },
+            "index": 0,
+            "name_cn": "飞线 白天"
+        },
+        "fly_line_style_point_move": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_ic_center_day_night"
+                            }
+                        ]
+                    }
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_ic_center_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 1,
+            "name_cn": "飞线 白天"
+        },
+        "fly_line_style_point_select": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_fly_line_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_ic_click_map_center_day_night"
+                            }
+                        ]
+                    }
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_fly_line_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_ic_click_map_center_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 2,
+            "name_cn": "飞线 白天"
+        },
+        "fly_line_style_point_select_disable": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_3",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_b_poi_hl_move_day_night"
+                            }
+                        ]
+                    }
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_3",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_b_poi_hl_move_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 3,
+            "name_cn": "飞线 白天"
+        },
+        "fly_line_style_point_click": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "flyline_type_point_bubble_focus.xml",
+                    "poi_marker_info": "marker_info_flyline_type_bubble"
+                },
+                "focus_style": {
+                    "poi_marker_id": "flyline_type_point_bubble_focus.xml",
+                    "poi_marker_info": "marker_info_flyline_type_bubble"
+                }
+            },
+            "index": 4,
+            "name_cn": "飞线 白天"
+        },
+        "fly_line_style_point_traffic_event": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_3",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_b_poi_tr_day_night"
+                            }
+                        ]
+                    }
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_3",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_b_poi_tr_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 5,
+            "name_cn": "飞线 白天"
+        },
+        "fly_line_style_night_point_none": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": ""
+                },
+                "focus_style": {
+                    "poi_marker_id": ""
+                }
+            },
+            "index": 6,
+            "name_cn": "飞线 黑夜"
+        },
+        "fly_line_style_night_point_move": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_ic_center_day_night"
+                            }
+                        ]
+                    }
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_ic_center_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 7,
+            "name_cn": "飞线 黑夜"
+        },
+        "fly_line_style_night_point_select": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_fly_line_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_ic_click_map_center_day_night"
+                            }
+                        ]
+                    }
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_fly_line_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_ic_click_map_center_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 8,
+            "name_cn": "飞线 黑夜"
+        },
+        "fly_line_style_night_point_select_disable": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_3",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_b_poi_hl_move_day_night"
+                            }
+                        ]
+                    }
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_3",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_b_poi_hl_move_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 9,
+            "name_cn": "飞线 黑夜"
+        },
+        "fly_line_style_night_point_click": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "flyline_type_point_bubble_focus.xml",
+                    "poi_marker_info": "marker_info_flyline_type_bubble"
+                },
+                "focus_style": {
+                    "poi_marker_id": "flyline_type_point_bubble_focus.xml",
+                    "poi_marker_info": "marker_info_flyline_type_bubble"
+                }
+            },
+            "index": 10,
+            "name_cn": "飞线 黑夜"
+        },
+        "fly_line_style_night_point_traffic_event": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_3",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_b_poi_tr_day_night"
+                            }
+                        ]
+                    }
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_3",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_b_poi_tr_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 11,
+            "name_cn": "飞线 黑夜"
+        },
+        "fly_line_style_search_result_point_none": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": ""
+                }
+            },
+            "index": 12,
+            "name_cn": "结果线 白天"
+        },
+        "fly_line_style_search_result_point_move": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_ic_center_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 13,
+            "name_cn": "结果线 白天"
+        },
+        "fly_line_style_search_result_point_select": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_fly_line_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_ic_click_map_center_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 14,
+            "name_cn": "结果线 白天"
+        },
+        "fly_line_style_search_result_point_select_disable": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_3",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_b_poi_hl_move_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 15,
+            "name_cn": "结果线 白天"
+        },
+        "fly_line_style_search_result_point_click": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "flyline_type_point_bubble_focus.xml",
+                    "poi_marker_info": "marker_info_flyline_type_bubble"
+                },
+                "focus_style": {
+                    "poi_marker_id": "flyline_type_point_bubble_focus.xml",
+                    "poi_marker_info": "marker_info_flyline_type_bubble"
+                }
+            },
+            "index": 16,
+            "name_cn": "结果线 白天"
+        },
+        "fly_line_style_search_result_point_traffic_event": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_b_poi_red_hl_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 17,
+            "name_cn": "结果线 白天"
+        },
+        "fly_line_style_search_result_night_point_none": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": ""
+                }
+            },
+            "index": 18,
+            "name_cn": "结果线 黑夜"
+        },
+        "fly_line_style_search_result_night_point_move": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_ic_center_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 19,
+            "name_cn": "结果线 黑夜"
+        },
+        "fly_line_style_search_result_night_point_select": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_fly_line_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_ic_click_map_center_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 20,
+            "name_cn": "结果线 黑夜"
+        },
+        "fly_line_style_search_result_night_point_select_disable": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_3",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_b_poi_hl_move_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 21,
+            "name_cn": "结果线 黑夜"
+        },
+        "fly_line_style_search_result_night_point_click": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "flyline_type_point_bubble_focus.xml",
+                    "poi_marker_info": "marker_info_flyline_type_bubble"
+                },
+                "focus_style": {
+                    "poi_marker_id": "flyline_type_point_bubble_focus.xml",
+                    "poi_marker_info": "marker_info_flyline_type_bubble"
+                }
+            },
+            "index": 22,
+            "name_cn": "结果线 黑夜"
+        },
+        "fly_line_style_search_result_night_point_traffic_event": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_b_poi_red_hl_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 23,
+            "name_cn": "结果线 黑夜"
+        },
+        "fly_line_style_search_detail_point_none": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": ""
+                }
+            },
+            "index": 24,
+            "name_cn": "详情线 白天"
+        },
+        "fly_line_style_search_detail_point_move": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_ic_center_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 25,
+            "name_cn": "详情线 白天"
+        },
+        "fly_line_style_search_detail_point_select": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_fly_line_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_ic_click_map_center_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 26,
+            "name_cn": "详情线 白天"
+        },
+        "fly_line_style_search_detail_point_select_disable": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_b_poi_red_hl_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 27,
+            "name_cn": "详情线 白天"
+        },
+        "fly_line_style_search_detail_point_click": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "flyline_type_point_bubble_focus.xml",
+                    "poi_marker_info": "marker_info_flyline_type_bubble"
+                },
+                "focus_style": {
+                    "poi_marker_id": "flyline_type_point_bubble_focus.xml",
+                    "poi_marker_info": "marker_info_flyline_type_bubble"
+                }
+            },
+            "index": 28,
+            "name_cn": "详情线 白天"
+        },
+        "fly_line_style_search_detail_point_traffic_event": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_b_poi_red_hl_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 29,
+            "name_cn": "详情线 白天"
+        },
+        "fly_line_style_search_detail_night_point_none": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": ""
+                }
+            },
+            "index": 30,
+            "name_cn": "详情线 黑夜"
+        },
+        "fly_line_style_search_detail_night_point_move": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_ic_center_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 31,
+            "name_cn": "详情线 黑夜"
+        },
+        "fly_line_style_search_detail_night_point_select": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_fly_line_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_ic_click_map_center_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 32,
+            "name_cn": "详情线 黑夜"
+        },
+        "fly_line_style_search_detail_night_point_select_disable": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_b_poi_red_hl_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 33,
+            "name_cn": "详情线 黑夜"
+        },
+        "fly_line_style_search_detail_night_point_click": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "flyline_type_point_bubble_focus.xml",
+                    "poi_marker_info": "marker_info_flyline_type_bubble"
+                },
+                "focus_style": {
+                    "poi_marker_id": "flyline_type_point_bubble_focus.xml",
+                    "poi_marker_info": "marker_info_flyline_type_bubble"
+                }
+            },
+            "index": 34,
+            "name_cn": "详情线 黑夜"
+        },
+        "fly_line_style_search_detail_night_point_traffic_event": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_b_poi_red_hl_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 35,
+            "name_cn": "详情线 黑夜"
+        },
+        "fly_line_style_search_select_point_none": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": ""
+                },
+                "focus_style": {
+                    "poi_marker_id": ""
+                }
+            },
+            "index": 36,
+            "name_cn": "选中线 白天"
+        },
+        "fly_line_style_search_select_point_move": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_ic_center_day_night"
+                            }
+                        ]
+                    }
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_ic_center_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 37,
+            "name_cn": "选中线 白天"
+        },
+        "fly_line_style_search_select_point_select": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_fly_line_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_ic_click_map_center_day_night"
+                            }
+                        ]
+                    }
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_fly_line_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_ic_click_map_center_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 38,
+            "name_cn": "选中线 白天"
+        },
+        "fly_line_style_search_select_point_select_disable": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_3",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_bubble_child_day_night"
+                            }
+                        ]
+                    }
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_3",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_bubble_child_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 39,
+            "name_cn": "选中线 白天"
+        },
+        "fly_line_style_search_select_point_click": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "flyline_type_point_bubble_focus.xml",
+                    "poi_marker_info": "marker_info_flyline_type_bubble"
+                },
+                "focus_style": {
+                    "poi_marker_id": "flyline_type_point_bubble_focus.xml",
+                    "poi_marker_info": "marker_info_flyline_type_bubble"
+                }
+            },
+            "index": 40,
+            "name_cn": "选中线 白天"
+        },
+        "fly_line_style_search_select_point_traffic_event": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_b_poi_red_hl_day_night"
+                            }
+                        ]
+                    }
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_b_poi_red_hl_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 41,
+            "name_cn": "选中线 白天"
+        },
+        "fly_line_style_search_select_night_point_none": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": ""
+                },
+                "focus_style": {
+                    "poi_marker_id": ""
+                }
+            },
+            "index": 42,
+            "name_cn": "选中线 黑夜"
+        },
+        "fly_line_style_search_select_night_point_move": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_ic_center_day_night"
+                            }
+                        ]
+                    }
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_ic_center_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 43,
+            "name_cn": "选中线 黑夜"
+        },
+        "fly_line_style_search_select_night_point_select": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_fly_line_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_ic_click_map_center_day_night"
+                            }
+                        ]
+                    }
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_fly_line_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_ic_click_map_center_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 44,
+            "name_cn": "选中线 黑夜"
+        },
+        "fly_line_style_search_select_night_point_select_disable": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_3",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_bubble_child_day_night"
+                            }
+                        ]
+                    }
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_3",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_bubble_child_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 45,
+            "name_cn": "选中线 黑夜"
+        },
+        "fly_line_style_search_select_night_point_click": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "flyline_type_point_bubble_focus.xml",
+                    "poi_marker_info": "marker_info_flyline_type_bubble"
+                },
+                "focus_style": {
+                    "poi_marker_id": "flyline_type_point_bubble_focus.xml",
+                    "poi_marker_info": "marker_info_flyline_type_bubble"
+                }
+            },
+            "index": 46,
+            "name_cn": "选中线 黑夜"
+        },
+        "fly_line_style_search_select_night_point_traffic_event": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_b_poi_red_hl_day_night"
+                            }
+                        ]
+                    }
+                },
+                "focus_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "marker_info_point_center_up_2",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_b_poi_red_hl_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 47,
+            "name_cn": "选中线 黑夜"
+        }
+    }
+}

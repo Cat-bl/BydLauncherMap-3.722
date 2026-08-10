@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/auto_dimen2_2" android:color="@color/byd_setting_bg_start_night" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/auto_dimen2_2" android:color="#33464d5c" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/auto_dimen2_6" />
+            <stroke android:width="@dimen/auto_dimen2_2" android:color="@color/byd_setting_map_theme_bg_bg_night" />
+        </shape>
+    </item>
+</layer-list>

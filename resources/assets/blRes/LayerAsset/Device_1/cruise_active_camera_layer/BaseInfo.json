@@ -1,0 +1,13 @@
+{
+    "id": 5015,
+    "layer_priority": {
+        "draw_priority": 140,
+        "sub_priority": 900
+    },
+    "layer_scale": {
+        "min_scale": 14,
+        "max_scale": 19
+    },
+    "enable_click": 0,
+    "item": "PointLayerItem"
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/btn_round_medium_secondary_full"/>
+            <solid android:color="@color/byd_pvt_container3_bg_dark"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/btn_round_medium_secondary_full"/>
+            <solid android:color="@color/byd_pvt_container4_bg_dark"/>
+        </shape>
+    </item>
+</selector>

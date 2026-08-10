@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:state_enabled="true" android:state_pressed="true" android:color="@color/byd_text_450_1_textcolor_day_focused_pressed" />
+    <item android:state_focused="true" android:color="@color/byd_text_450_1_textcolor_day_focused" />
+    <item android:state_enabled="false" android:color="#6024313f" />
+    <item android:state_enabled="true" android:state_selected="false" android:color="@color/setting_custom_normal_color_day" />
+    <item android:state_enabled="true" android:state_selected="true" android:color="@color/setting_custom_highlight_color_day" />
+</selector>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="32.0dip" android:width="32.0dip" android:viewportWidth="32.0" android:viewportHeight="32.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#ffd8d8d8" android:pathData="M0,0h32v32h-32z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:strokeAlpha="0.0" android:fillAlpha="0.0" android:fillType="evenOdd" />
+    <path android:name="@string/byd_radio_button_stroke" android:fillColor="@color/sys_black_200" android:pathData="M16,4C22.627,4 28,9.373 28,16C28,22.627 22.627,28 16,28C9.373,28 4,22.627 4,16C4,9.373 9.373,4 16,4ZM16,6C10.477,6 6,10.477 6,16C6,21.523 10.477,26 16,26C21.523,26 26,21.523 26,16C26,10.477 21.523,6 16,6Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+    <path android:fillColor="@color/byd_pvt_black_900_15" android:pathData="M16,6C10.477,6 6,10.477 6,16C6,21.523 10.477,26 16,26C21.523,26 26,21.523 26,16C26,10.477 21.523,6 16,6Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+    <group android:name="@string/byd_radio_button_solid_group" android:pivotX="16.0" android:pivotY="16.0">
+        <path android:name="@string/byd_radio_button_solid_path" android:fillColor="@color/sys_black_200" android:pathData="M16,16m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0" android:fillType="evenOdd" />
+    </group>
+</vector>

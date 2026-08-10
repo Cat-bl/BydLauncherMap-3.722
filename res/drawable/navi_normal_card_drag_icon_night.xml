@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/auto_dimen2_2" android:width="@dimen/auto_dimen2_72" />
+    <corners android:radius="@dimen/auto_dimen2_1" />
+    <solid android:color="@color/navi_card_drag_bg_color_night" />
+</shape>

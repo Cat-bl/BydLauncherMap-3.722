@@ -1,0 +1,15 @@
+<div id="lane_guide_congestion_background" style='display:flex;flex-direction:column;background-image:global_image_autonavi_lane_bubble_container_roadstatu_normal_two_left_up_day_night'>
+    <div id="div_time_dist" style="display:flex;flex-direction:row;align-items:center;margin-top:2px;">
+        <label id='congestion_distance' style='color:#ffffff;font-size:24px;font-family:SDK_Font-Medium;' text='3.1公里' />
+        <label id='congestion_time' style='color:#ffffff;font-size:24px;font-family:SDK_Font-Medium;margin-left:8px;' text='7分钟' />
+    </div>
+	<div id="div_detail" style='display:flex;flex-direction:row;align-items:center;justify-content:space-between;min-height:36px;margin-top:4px;margin-bottom:2px;'>
+		<div id="div_detail_info" style='display:flex;flex-direction:column;justify-content:center;align-items:flex-start;'>
+			<label id='congestion_detail' style='color:#F52B20;font-size:20px;font-family:SDK_Font-Medium;' text="左侧  事故" />
+			<label id='congestion_detail1' style='color:#F52B20;font-size:20px;font-family:SDK_Font-Medium;margin-top:-5px;' text="右前方事故拥" />
+		</div>
+		<image id='thumbnail_image' style='height:32px;width:32px;margin-left:10px;' src="global_image_autonavi_lane_icon_traffic_event_accident_day_night"/>
+	</div>
+</div>
+
+

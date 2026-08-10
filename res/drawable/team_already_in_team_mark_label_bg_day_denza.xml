@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@color/color_team_leader_text_start_day_denza" android:endColor="@color/color_team_leader_text_end_day_denza" android:angle="180.0" android:centerX="0.5" />
+    <corners android:radius="@dimen/auto_dimen2_9" />
+</shape>

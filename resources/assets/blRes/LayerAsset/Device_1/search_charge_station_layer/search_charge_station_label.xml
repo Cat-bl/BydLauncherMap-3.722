@@ -1,0 +1,31 @@
+<div id="click_hotspot" style="display:flex;flex-direction:column;justify-content:center;align-items:center;width:auto;height:auto;">
+  <div id="search_charge_label" style="display:flex;flex-direction:row;justify-content:center;align-items:flex-end;margin-top:14px;margin-right:18px;margin-bottom:4px;margin-left:18px;width:auto;">
+    <div id="charge_fast" style="display:flex;flex-direction:row;justify-content:center;align-items:center;width:auto;height:33px;background-image:global_image_station_fast_day_night;">
+      <div style="display:flex;flex-direction:row;margin-right:8px;margin-left:8px;">
+        <label id="fast_first" style="font-size:20px;color:#ffffff;font-family:SDK_Font-Medium;" lines="1">共12</label>
+        <label id="fast_second" style="margin-left:4px;font-size:20px;color:#80ffffff;font-family:SDK_Font-Medium;" lines="1">共8</label>
+      </div>
+    </div>
+    <div id="charge_slow" style="display:flex;flex-direction:row;justify-content:center;align-items:center;width:auto;height:33px;background-image:global_image_station_slow_day_night;">
+      <div style="display:flex;flex-direction:row;margin-right:8px;margin-left:8px;">
+        <label id="slow_first" style="font-size:20px;color:#ffffff;font-family:SDK_Font-Medium;" lines="1">共12</label>
+        <label id="slow_second" style="margin-left:4px;font-size:20px;color:#80ffffff;font-family:SDK_Font-Medium;" lines="1">共5</label>
+      </div>
+    </div>
+    <div id="charge_fast_2" style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-right:-1px;width:auto;height:33px;background-image:global_image_station_fast_2_day_night;">
+      <div style="display:flex;flex-direction:row;margin-right:8px;margin-left:8px;">
+        <label id="fast_first_2" style="font-size:20px;color:#ffffff;font-family:SDK_Font-Medium;" lines="1">共12</label>
+        <label id="fast_second_2" style="margin-left:4px;font-size:20px;color:#80ffffff;font-family:SDK_Font-Medium;" lines="1">共4</label>
+      </div>
+    </div>
+    <div id="charge_slow_2" style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-left:-1px;width:auto;height:33px;background-image:global_image_station_slow_2_day_night;">
+      <div style="display:flex;flex-direction:row;margin-right:8px;margin-left:8px;">
+        <label id="slow_first_2" style="font-size:20px;color:#ffffff;font-family:SDK_Font-Medium;" lines="1">共12</label>
+        <label id="slow_second_2" style="margin-left:4px;font-size:20px;color:#80ffffff;font-family:SDK_Font-Medium;" lines="1">共5</label>
+      </div>
+    </div>
+  </div>
+  <image id="best_icon" style="width:28px;height:28px;position:absolute;top:0px;left:0px;" src="global_image_beststation_day_night" />
+  <image id="type_image" style="width:44px;height:52px;is_main:Y;" src="global_image_navi_along_search_charge_icon_day_night" />
+</div>
+

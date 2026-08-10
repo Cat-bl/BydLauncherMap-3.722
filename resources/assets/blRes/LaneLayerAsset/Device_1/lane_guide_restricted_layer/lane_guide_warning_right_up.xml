@@ -1,0 +1,10 @@
+<div style="display:flex;flex-direction:row;justify-content:flex-end;align-items:center;width:auto;height:92px;background-image:global_image_autonavi_lane_bubble_container_lane_warning_left_up_day_night;">
+  <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;width:60px;height:60px;margin-top:1px;margin-bottom:1px;">
+    <image id="bg" style="width:60px;height:60px;position:absolute;" src="global_image_autonavi_lane_icon_warning_blue_day_night"/>
+	<image id="image" style="width:60px;height:60px;position:absolute;" src="global_image_autonavi_lane_icon_variable_lane_day_night"/>
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:center;align-items:flex-start;margin-right:16px;margin-left:6px;">
+    <label id="limit_text" style="font-size:24px;color:#1A66FF;font-family:SDK_Font-Medium;" lines="1">依指示牌行驶</label>
+    <label id="name" style="font-size:20px;color:#b3000000;font-family:SDK_Font-Medium;margin-top:-6px;margin-bottom:3px;" text='可变车道'/>
+  </div>
+</div>

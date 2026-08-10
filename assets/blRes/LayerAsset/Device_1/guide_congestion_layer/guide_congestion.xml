@@ -1,0 +1,18 @@
+<div style="">
+  <div id="div_direction_bg" style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-right:10px;margin-left:10px;width:auto;height:auto;background-image:global_image_autonavi_roadstatu_normal_left_up_day_night;">
+    <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-right:6px;margin-left:6px;width:auto;height:auto;">
+      <image id="thumbnail_image" style="margin-top:11px;margin-right:5px;margin-bottom:11px;margin-left:6px;width:40px;height:40px;background-color:#4dffffff;border:2px solid #ffffff;border-radius:8px;" src="" />
+      <div id="time_dist_all_line" style="display:flex;flex-direction:column;justify-content:center;align-items:flex-start;margin-right:4px;margin-left:4px;width:auto;height:auto;">
+        <div id="time_dist_one_line" style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-top:1px;max-height:48px;">
+          <label id="congestion_distance" style="margin-right:8px;font-size:24px;color:#ffffff;font-family:SDK_Font-Medium;" lines="1">3.1公里</label>
+          <label id="congestion_time" style="font-size:24px;color:#ffffff;font-family:SDK_Font-Medium;" lines="1">7分钟</label>
+        </div>
+        <div id="time_dist_multiple_line" style="display:flex;flex-direction:column;justify-content:center;align-items:flex-start;min-height:66px;">
+          <label id="congestion_distance2" style="margin-top:-4px;margin-bottom:-4px;font-size:24px;color:#ffffff;font-family:SDK_Font-Medium;" lines="1">3.1公里</label>
+          <label id="congestion_time2" style="margin-top:-4px;margin-bottom:-4px;font-size:24px;color:#ffffff;font-family:SDK_Font-Medium;" lines="1">1小时7分钟</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <image id="chat_message" style="width:48px;height:52px;position:absolute;top:0px;" src="global_image_message_day_night" />
+</div>

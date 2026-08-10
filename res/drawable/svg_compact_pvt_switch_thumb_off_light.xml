@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="72.0dip" android:width="42.0dip" android:viewportWidth="42.0" android:viewportHeight="72.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:name="@string/byd_switch_thumb_path" android:fillColor="#ffbfc4cc" android:pathData="M21,17.25C26.178,17.25 30.865,19.349 34.258,22.742C37.651,26.135 39.75       ,30.822 39.75,36C39.75,41.178 37.651,45.865 34.258,49.258C30.865,52.651 26.178,54.75 21       ,54.75C15.822,54.75 11.135,52.651 7.742,49.258C4.349,45.865 2.25,41.178 2.25,36C2.25       ,30.822 4.349,26.135 7.742,22.742C11.135,19.349 15.822,17.25 21,17.25Z" android:strokeColor="#ff000000" android:strokeWidth="1.5" android:strokeAlpha="0.06" android:fillType="evenOdd" />
+</vector>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/title_bar_start_icon" android:padding="@dimen/sys_padding_s" android:visibility="gone" android:layout_width="@dimen/byd_pvt_title_bar_icon_size" android:layout_height="@dimen/byd_pvt_title_bar_icon_size" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    <TextView android:textAppearance="@style/Sys.TextAppearance.Header2" android:ellipsize="end" android:gravity="center" android:id="@id/title_bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/byd_pvt_title_bar_horizontal_margin" android:layout_marginRight="@dimen/byd_pvt_title_bar_horizontal_margin" android:maxLines="2" android:layout_centerVertical="true" android:layout_toStartOf="@id/title_bar_end_icons_container" android:layout_marginHorizontal="@dimen/byd_pvt_title_bar_horizontal_margin" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/title_bar_end_icons_container" android:layout_width="wrap_content" android:layout_height="@dimen/byd_pvt_title_bar_icon_size" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/title_bar_end_icon_3" android:padding="@dimen/sys_padding_s" android:visibility="gone" android:layout_width="@dimen/byd_pvt_title_bar_icon_size" android:layout_height="@dimen/byd_pvt_title_bar_icon_size" android:layout_marginStart="@dimen/byd_pvt_title_bar_end_icon_margin" />
+        <ImageView android:id="@id/title_bar_end_icon_2" android:padding="@dimen/sys_padding_s" android:visibility="gone" android:layout_width="@dimen/byd_pvt_title_bar_icon_size" android:layout_height="@dimen/byd_pvt_title_bar_icon_size" android:layout_marginStart="@dimen/byd_pvt_title_bar_end_icon_margin" />
+        <ImageView android:id="@id/title_bar_end_icon_1" android:padding="@dimen/sys_padding_s" android:visibility="gone" android:layout_width="@dimen/byd_pvt_title_bar_icon_size" android:layout_height="@dimen/byd_pvt_title_bar_icon_size" android:layout_marginStart="@dimen/byd_pvt_title_bar_end_icon_margin" />
+    </LinearLayout>
+</RelativeLayout>

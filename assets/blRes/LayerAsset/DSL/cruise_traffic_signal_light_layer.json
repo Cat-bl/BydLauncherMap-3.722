@@ -1,0 +1,1000 @@
+{
+  "biz": [
+    {
+      "type": "biz_set_avoid_algorithm",
+      "brief": "设置多飘向图层避让算法",
+      "value": 1
+    }
+  ],
+  "data": {
+    "rule": [
+      {
+        "type": "data_quadrant_if",
+        "brief": "样式飘向规则",
+        "value": {
+          "case": {
+            "true": {
+              "switch": {
+                "case": {
+                  "2": "512|1024",
+                  "3": "512|1024",
+                  "default": []
+                },
+                "condition": "$biz_data.straightLightInfo.showType"
+              }
+            },
+            "false": "512|1024"
+          },
+          "biz_data": "##CustomRule_float_rule",
+          "condition": {
+            "fact": "$biz_data.lightCount",
+            "value": 1,
+            "operator": "le"
+          }
+        }
+      },
+      {
+        "type": "data_duplicate",
+        "brief": "数据去重",
+        "value": [
+          "$item_data.position.lon",
+          "$item_data.position.lat"
+        ]
+      }
+    ],
+    "type": "adaptor_point",
+    "value": []
+  },
+  "style": {
+    "style_name": {
+      "rule": [
+        {
+          "type": "style_if",
+          "brief": "style_scene",
+          "value": {
+            "case": {
+              "true": {
+                "if": {
+                  "case": {
+                    "true": {
+                      "switch": {
+                        "case": {
+                          "512": "point_cruise_traffic_signal_light_secondary_right_up",
+                          "1024": "point_cruise_traffic_signal_light_secondary_left_up",
+                          "default": "point_cruise_traffic_signal_light_secondary_left_up"
+                        },
+                        "condition": "$item_data.quadrantType"
+                      }
+                    },
+                    "false": {
+                      "if": {
+                        "case": {
+                          "true": {
+                            "switch": {
+                              "case": {
+                                "512": "point_cruise_traffic_signal_light_main_simple_right_up",
+                                "1024": "point_cruise_traffic_signal_light_main_simple_left_up",
+                                "default": "point_cruise_traffic_signal_light_main_simple_left_up"
+                              },
+                              "condition": "$item_data.quadrantType"
+                            }
+                          },
+                          "false": {
+                            "if": {
+                              "case": {
+                                "true": {
+                                  "switch": {
+                                    "case": {
+                                      "512": "point_cruise_traffic_signal_light_main_simple_right_up",
+                                      "1024": "point_cruise_traffic_signal_light_main_simple_left_up",
+                                      "default": "point_cruise_traffic_signal_light_main_simple_left_up"
+                                    },
+                                    "condition": "$item_data.quadrantType"
+                                  }
+                                },
+                                "false": {
+                                  "if": {
+                                    "case": {
+                                      "true": {
+                                        "switch": {
+                                          "case": {
+                                            "512": "point_cruise_traffic_signal_light_main_simple_right_up",
+                                            "1024": "point_cruise_traffic_signal_light_main_simple_left_up",
+                                            "default": "point_cruise_traffic_signal_light_main_simple_left_up"
+                                          },
+                                          "condition": "$item_data.quadrantType"
+                                        }
+                                      }
+                                    },
+                                    "condition": {
+                                      "fact": "$biz_data.rightLightInfo.showType",
+                                      "value": "3",
+                                      "operator": "equal"
+                                    }
+                                  }
+                                }
+                              },
+                              "condition": {
+                                "fact": "$biz_data.leftLightInfo.showType",
+                                "value": "3",
+                                "operator": "equal"
+                              }
+                            }
+                          }
+                        },
+                        "condition": {
+                          "fact": "$biz_data.straightLightInfo.showType",
+                          "value": "3",
+                          "operator": "equal"
+                        }
+                      }
+                    }
+                  },
+                  "condition": {
+                    "fact": "$biz_data.straightLightInfo.showType",
+                    "value": 2,
+                    "operator": "equal"
+                  }
+                }
+              },
+              "false": {
+                "switch": {
+                  "case": {
+                    "512": "point_cruise_traffic_signal_light_main_team_right_up",
+                    "1024": "point_cruise_traffic_signal_light_main_team_left_up",
+                    "default": "point_cruise_traffic_signal_light_main_team_left_up"
+                  },
+                  "condition": "$item_data.quadrantType"
+                }
+              }
+            },
+            "condition": {
+              "fact": "$biz_data.lightCount",
+              "value": 1,
+              "operator": "le"
+            }
+          }
+        }
+      ],
+      "prefix_name": ""
+    },
+    "dynamic_marker": {
+      "rule": [
+        {
+          "type": "marker_if",
+          "brief": "次灯",
+          "value": {
+            "case": {
+              "true": [
+                {
+                  "if": {
+                    "case": {
+                      "true": [
+                        {
+                          "switch": {
+                            "case": {
+                              "2": {
+                                "id": "image_light_circle",
+                                "value": "global_image_cruise_traffic_signal_light_bg_circle_red"
+                              },
+                              "3": {
+                                "transfer_case": "2"
+                              },
+                              "4": {
+                                "id": "image_light_circle",
+                                "value": "global_image_cruise_traffic_signal_light_bg_circle_green"
+                              },
+                              "5": {
+                                "transfer_case": "4"
+                              },
+                              "6": {
+                                "transfer_case": "4"
+                              },
+                              "8": {
+                                "id": "image_light_circle",
+                                "value": "global_image_cruise_traffic_signal_light_bg_circle_yellow"
+                              },
+                              "default": []
+                            },
+                            "condition": "$biz_data.straightLightInfo.status"
+                          }
+                        },
+                        {
+                          "id": "image_light_ellipse",
+                          "display": false
+                        },
+                        {
+                          "id": "image_light_circle",
+                          "display": true
+                        }
+                      ],
+                      "false": [
+                        {
+                          "switch": {
+                            "case": {
+                              "2": {
+                                "id": "image_light_ellipse",
+                                "value": "global_image_cruise_traffic_signal_light_bg_ellipse_red"
+                              },
+                              "3": {
+                                "transfer_case": "2"
+                              },
+                              "4": {
+                                "id": "image_light_ellipse",
+                                "value": "global_image_cruise_traffic_signal_light_bg_ellipse_green"
+                              },
+                              "5": {
+                                "transfer_case": "4"
+                              },
+                              "6": {
+                                "transfer_case": "4"
+                              },
+                              "8": {
+                                "id": "image_light_ellipse",
+                                "value": "global_image_cruise_traffic_signal_light_bg_ellipse_yellow"
+                              },
+                              "default": []
+                            },
+                            "condition": "$biz_data.straightLightInfo.status"
+                          }
+                        },
+                        {
+                          "id": "image_light_circle",
+                          "display": false
+                        },
+                        {
+                          "id": "image_light_ellipse",
+                          "display": true
+                        }
+                      ]
+                    },
+                    "condition": {
+                      "fact": "$biz_data.straightLightInfo.lightCountdown",
+                      "value": 99,
+                      "operator": "le"
+                    }
+                  }
+                },
+                {
+                  "id": "text_seconds_mid",
+                  "value": "$biz_data.straightLightInfo.lightCountdown"
+                }
+              ],
+              "false": []
+            },
+            "condition": {
+              "all": [
+                {
+                  "fact": "$biz_data.straightLightInfo.showType",
+                  "value": 2,
+                  "operator": "equal"
+                },
+                {
+                  "fact": "$biz_data.lightCount",
+                  "value": 1,
+                  "operator": "equal"
+                }
+              ]
+            },
+            "marker_id": [
+              "cruise_traffic_signal_light_secondary_left_up.xml",
+              "cruise_traffic_signal_light_secondary_right_up.xml"
+            ]
+          }
+        },
+        {
+          "type": "marker_if",
+          "brief": "单灯",
+          "value": {
+            "case": {
+              "true": [
+                {
+                  "switch": {
+                    "case": {
+                      "2": [
+                        {
+                          "id": "text_notice_mid",
+                          "display": false
+                        },
+                        {
+                          "id": "image_light_direction_mid",
+                          "value": "global_image_traffic_signal_light_red_arrow_go_straight_day_night"
+                        },
+                        {
+                          "id": "image_light_body_mid",
+                          "value": "global_image_traffic_signal_light_red_circle_day_night"
+                        },
+                        {
+                          "id": "text_seconds_mid",
+                          "display": true
+                        }
+                      ],
+                      "3": {
+                        "transfer_case": "2"
+                      },
+                      "4": [
+                        {
+                          "id": "text_notice_mid",
+                          "display": false
+                        },
+                        {
+                          "id": "image_light_body_mid",
+                          "value": "global_image_traffic_signal_light_green_circle_day_night"
+                        },
+                        {
+                          "id": "image_light_direction_mid",
+                          "value": "global_image_traffic_signal_light_green_arrow_go_straight_day_night"
+                        },
+                        {
+                          "id": "text_seconds_mid",
+                          "display": true
+                        }
+                      ],
+                      "5": {
+                        "transfer_case": "4"
+                      },
+                      "6": [
+                        {
+                          "id": "text_seconds_mid",
+                          "display": false
+                        },
+                        {
+                          "id": "image_light_direction_mid",
+                          "value": "global_image_traffic_signal_light_green_arrow_go_straight_day_night"
+                        },
+                        {
+                          "id": "image_light_body_mid",
+                          "value": "global_image_traffic_signal_light_green_circle_day_night"
+                        },
+                        {
+                          "id": "text_notice_mid",
+                          "value": "通行",
+                          "display": true
+                        }
+                      ],
+                      "8": [
+                        {
+                          "id": "text_seconds_mid",
+                          "display": false
+                        },
+                        {
+                          "id": "image_light_body_mid",
+                          "value": "global_image_traffic_signal_light_yellow_circle_day_night"
+                        },
+                        {
+                          "id": "image_light_direction_mid",
+                          "value": "global_image_traffic_signal_light_yellow_arrow_go_straight_day_night"
+                        },
+                        {
+                          "id": "text_notice_mid",
+                          "value": "注意",
+                          "display": true
+                        }
+                      ],
+                      "default": []
+                    },
+                    "condition": "$biz_data.straightLightInfo.status"
+                  }
+                },
+                {
+                  "id": "text_seconds_mid",
+                  "value": "$biz_data.straightLightInfo.lightCountdown"
+                }
+              ],
+              "false": {
+                "if": {
+                  "case": {
+                    "true": [
+                      {
+                        "switch": {
+                          "case": {
+                            "2": [
+                              {
+                                "id": "text_notice_mid",
+                                "display": false
+                              },
+                              {
+                                "id": "image_light_direction_mid",
+                                "value": "global_image_traffic_signal_light_red_arrow_turn_left_day_night"
+                              },
+                              {
+                                "id": "image_light_body_mid",
+                                "value": "global_image_traffic_signal_light_red_circle_day_night"
+                              },
+                              {
+                                "id": "text_seconds_mid",
+                                "display": true
+                              }
+                            ],
+                            "3": {
+                              "transfer_case": "2"
+                            },
+                            "4": [
+                              {
+                                "id": "text_notice_mid",
+                                "display": false
+                              },
+                              {
+                                "id": "image_light_body_mid",
+                                "value": "global_image_traffic_signal_light_green_circle_day_night"
+                              },
+                              {
+                                "id": "image_light_direction_mid",
+                                "value": "global_image_traffic_signal_light_green_arrow_turn_left_day_night"
+                              },
+                              {
+                                "id": "text_seconds_mid",
+                                "display": true
+                              }
+                            ],
+                            "5": {
+                              "transfer_case": "4"
+                            },
+                            "6": [
+                              {
+                                "id": "text_seconds_mid",
+                                "display": false
+                              },
+                              {
+                                "id": "image_light_direction_mid",
+                                "value": "global_image_traffic_signal_light_green_arrow_turn_left_day_night"
+                              },
+                              {
+                                "id": "image_light_body_mid",
+                                "value": "global_image_traffic_signal_light_green_circle_day_night"
+                              },
+                              {
+                                "id": "text_notice_mid",
+                                "value": "通行",
+                                "display": true
+                              }
+                            ],
+                            "8": [
+                              {
+                                "id": "text_seconds_mid",
+                                "display": false
+                              },
+                              {
+                                "id": "image_light_body_mid",
+                                "value": "global_image_traffic_signal_light_yellow_circle_day_night"
+                              },
+                              {
+                                "id": "image_light_direction_mid",
+                                "value": "global_image_traffic_signal_light_yellow_arrow_turn_left_day_night"
+                              },
+                              {
+                                "id": "text_notice_mid",
+                                "value": "注意",
+                                "display": true
+                              }
+                            ],
+                            "default": []
+                          },
+                          "condition": "$biz_data.leftLightInfo.status"
+                        }
+                      },
+                      {
+                        "id": "text_seconds_mid",
+                        "value": "$biz_data.leftLightInfo.lightCountdown"
+                      }
+                    ],
+                    "false": {
+                      "if": {
+                        "case": {
+                          "true": [
+                            {
+                              "switch": {
+                                "case": {
+                                  "2": [
+                                    {
+                                      "id": "text_notice_mid",
+                                      "display": false
+                                    },
+                                    {
+                                      "id": "image_light_direction_mid",
+                                      "value": "global_image_traffic_signal_light_red_arrow_turn_right_day_night"
+                                    },
+                                    {
+                                      "id": "image_light_body_mid",
+                                      "value": "global_image_traffic_signal_light_red_circle_day_night"
+                                    },
+                                    {
+                                      "id": "text_seconds_mid",
+                                      "display": true
+                                    }
+                                  ],
+                                  "3": {
+                                    "transfer_case": "2"
+                                  },
+                                  "4": [
+                                    {
+                                      "id": "text_notice_mid",
+                                      "display": false
+                                    },
+                                    {
+                                      "id": "image_light_body_mid",
+                                      "value": "global_image_traffic_signal_light_green_circle_day_night"
+                                    },
+                                    {
+                                      "id": "image_light_direction_mid",
+                                      "value": "global_image_traffic_signal_light_green_arrow_turn_right_day_night"
+                                    },
+                                    {
+                                      "id": "text_seconds_mid",
+                                      "display": true
+                                    }
+                                  ],
+                                  "5": {
+                                    "transfer_case": "4"
+                                  },
+                                  "6": [
+                                    {
+                                      "id": "text_seconds_mid",
+                                      "display": false
+                                    },
+                                    {
+                                      "id": "image_light_direction_mid",
+                                      "value": "global_image_traffic_signal_light_green_arrow_turn_right_day_night"
+                                    },
+                                    {
+                                      "id": "image_light_body_mid",
+                                      "value": "global_image_traffic_signal_light_green_circle_day_night"
+                                    },
+                                    {
+                                      "id": "text_notice_mid",
+                                      "value": "通行",
+                                      "display": true
+                                    }
+                                  ],
+                                  "8": [
+                                    {
+                                      "id": "text_seconds_mid",
+                                      "display": false
+                                    },
+                                    {
+                                      "id": "image_light_body_mid",
+                                      "value": "global_image_traffic_signal_light_yellow_circle_day_night"
+                                    },
+                                    {
+                                      "id": "image_light_direction_mid",
+                                      "value": "global_image_traffic_signal_light_yellow_arrow_turn_right_day_night"
+                                    },
+                                    {
+                                      "id": "text_notice_mid",
+                                      "value": "注意",
+                                      "display": true
+                                    }
+                                  ],
+                                  "default": []
+                                },
+                                "condition": "$biz_data.rightLightInfo.status"
+                              }
+                            },
+                            {
+                              "id": "text_seconds_mid",
+                              "value": "$biz_data.rightLightInfo.lightCountdown"
+                            }
+                          ]
+                        },
+                        "condition": {
+                          "all": [
+                            {
+                              "fact": "$biz_data.lightCount",
+                              "value": 1,
+                              "operator": "equal"
+                            },
+                            {
+                              "fact": "$biz_data.rightLightInfo.showType",
+                              "value": 3,
+                              "operator": "equal"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "condition": {
+                    "all": [
+                      {
+                        "fact": "$biz_data.lightCount",
+                        "value": 1,
+                        "operator": "equal"
+                      },
+                      {
+                        "fact": "$biz_data.leftLightInfo.showType",
+                        "value": 3,
+                        "operator": "equal"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "condition": {
+              "all": [
+                {
+                  "fact": "$biz_data.lightCount",
+                  "value": 1,
+                  "operator": "equal"
+                },
+                {
+                  "fact": "$biz_data.straightLightInfo.showType",
+                  "value": 3,
+                  "operator": "equal"
+                }
+              ]
+            },
+            "marker_id": [
+              "cruise_traffic_signal_light_main_simple_left_up.xml",
+              "cruise_traffic_signal_light_main_simple_right_up.xml"
+            ]
+          }
+        },
+        {
+          "type": "marker_if",
+          "brief": "组合灯",
+          "value": {
+            "case": {
+              "true": [
+                {
+                  "if": {
+                    "case": {
+                      "true": [
+                        {
+                          "switch": {
+                            "case": {
+                              "2": [
+                                {
+                                  "id": "image_light_direction_left",
+                                  "value": "global_image_traffic_signal_light_red_arrow_turn_left_day_night"
+                                },
+                                {
+                                  "id": "image_light_body_left",
+                                  "value": "global_image_traffic_signal_light_red_circle_day_night"
+                                },
+                                {
+                                  "id": "text_notice_left",
+                                  "display": false
+                                },
+                                {
+                                  "id": "text_seconds_left",
+                                  "display": true
+                                }
+                              ],
+                              "3": {
+                                "transfer_case": "2"
+                              },
+                              "4": [
+                                {
+                                  "id": "image_light_direction_left",
+                                  "value": "global_image_traffic_signal_light_green_arrow_turn_left_day_night"
+                                },
+                                {
+                                  "id": "image_light_body_left",
+                                  "value": "global_image_traffic_signal_light_green_circle_day_night"
+                                },
+                                {
+                                  "id": "text_notice_left",
+                                  "display": false
+                                },
+                                {
+                                  "id": "text_seconds_left",
+                                  "display": true
+                                }
+                              ],
+                              "5": {
+                                "transfer_case": "4"
+                              },
+                              "6": [
+                                {
+                                  "id": "image_light_direction_left",
+                                  "value": "global_image_traffic_signal_light_green_arrow_turn_left_day_night"
+                                },
+                                {
+                                  "id": "image_light_body_left",
+                                  "value": "global_image_traffic_signal_light_green_circle_day_night"
+                                },
+                                {
+                                  "id": "text_seconds_left",
+                                  "display": false
+                                },
+                                {
+                                  "id": "text_notice_left",
+                                  "value": "通行",
+                                  "display": true
+                                }
+                              ],
+                              "8": [
+                                {
+                                  "id": "image_light_direction_left",
+                                  "value": "global_image_traffic_signal_light_yellow_arrow_turn_left_day_night"
+                                },
+                                {
+                                  "id": "image_light_body_left",
+                                  "value": "global_image_traffic_signal_light_yellow_circle_day_night"
+                                },
+                                {
+                                  "id": "text_seconds_left",
+                                  "display": false
+                                },
+                                {
+                                  "id": "text_notice_left",
+                                  "value": "注意",
+                                  "display": true
+                                }
+                              ],
+                              "default": []
+                            },
+                            "condition": "$biz_data.leftLightInfo.status"
+                          }
+                        },
+                        {
+                          "id": "text_seconds_left",
+                          "value": "$biz_data.leftLightInfo.lightCountdown"
+                        },
+                        {
+                          "id": "div_light_group_left",
+                          "display": true
+                        }
+                      ],
+                      "false": {
+                        "id": "div_light_group_left",
+                        "display": false
+                      }
+                    },
+                    "condition": {
+                      "fact": "$biz_data.leftLightInfo.showType",
+                      "value": 3,
+                      "operator": "equal"
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "case": {
+                      "true": [
+                        {
+                          "switch": {
+                            "case": {
+                              "2": [
+                                {
+                                  "id": "image_light_direction_mid",
+                                  "value": "global_image_traffic_signal_light_red_arrow_go_straight_day_night"
+                                },
+                                {
+                                  "id": "image_light_body_mid",
+                                  "value": "global_image_traffic_signal_light_red_circle_day_night"
+                                },
+                                {
+                                  "id": "text_notice_mid",
+                                  "display": false
+                                },
+                                {
+                                  "id": "text_seconds_mid",
+                                  "display": true
+                                }
+                              ],
+                              "3": {
+                                "transfer_case": "2"
+                              },
+                              "4": [
+                                {
+                                  "id": "image_light_direction_mid",
+                                  "value": "global_image_traffic_signal_light_green_arrow_go_straight_day_night"
+                                },
+                                {
+                                  "id": "image_light_body_mid",
+                                  "value": "global_image_traffic_signal_light_green_circle_day_night"
+                                },
+                                {
+                                  "id": "text_notice_mid",
+                                  "display": false
+                                },
+                                {
+                                  "id": "text_seconds_mid",
+                                  "display": true
+                                }
+                              ],
+                              "5": {
+                                "transfer_case": "4"
+                              },
+                              "6": [
+                                {
+                                  "id": "image_light_direction_mid",
+                                  "value": "global_image_traffic_signal_light_green_arrow_go_straight_day_night"
+                                },
+                                {
+                                  "id": "image_light_body_mid",
+                                  "value": "global_image_traffic_signal_light_green_circle_day_night"
+                                },
+                                {
+                                  "id": "text_seconds_mid",
+                                  "display": false
+                                },
+                                {
+                                  "id": "text_notice_mid",
+                                  "value": "通行",
+                                  "display": true
+                                }
+                              ],
+                              "8": [
+                                {
+                                  "id": "image_light_direction_mid",
+                                  "value": "global_image_traffic_signal_light_yellow_arrow_go_straight_day_night"
+                                },
+                                {
+                                  "id": "image_light_body_mid",
+                                  "value": "global_image_traffic_signal_light_yellow_circle_day_night"
+                                },
+                                {
+                                  "id": "text_seconds_mid",
+                                  "display": false
+                                },
+                                {
+                                  "id": "text_notice_mid",
+                                  "value": "注意",
+                                  "display": true
+                                }
+                              ],
+                              "default": []
+                            },
+                            "condition": "$biz_data.straightLightInfo.status"
+                          }
+                        },
+                        {
+                          "id": "text_seconds_mid",
+                          "value": "$biz_data.straightLightInfo.lightCountdown"
+                        },
+                        {
+                          "id": "div_light_group_mid",
+                          "display": true
+                        }
+                      ],
+                      "false": {
+                        "id": "div_light_group_mid",
+                        "display": false
+                      }
+                    },
+                    "condition": {
+                      "fact": "$biz_data.straightLightInfo.showType",
+                      "value": 3,
+                      "operator": "equal"
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "case": {
+                      "true": [
+                        {
+                          "switch": {
+                            "case": {
+                              "2": [
+                                {
+                                  "id": "image_light_body_right",
+                                  "value": "global_image_traffic_signal_light_red_circle_day_night"
+                                },
+                                {
+                                  "id": "image_light_direction_right",
+                                  "value": "global_image_traffic_signal_light_red_arrow_turn_right_day_night"
+                                },
+                                {
+                                  "id": "text_notice_right",
+                                  "display": false
+                                },
+                                {
+                                  "id": "text_seconds_right",
+                                  "display": true
+                                }
+                              ],
+                              "3": {
+                                "transfer_case": "2"
+                              },
+                              "4": [
+                                {
+                                  "id": "image_light_body_right",
+                                  "value": "global_image_traffic_signal_light_green_circle_day_night"
+                                },
+                                {
+                                  "id": "image_light_direction_right",
+                                  "value": "global_image_traffic_signal_light_green_arrow_turn_right_day_night"
+                                },
+                                {
+                                  "id": "text_notice_right",
+                                  "display": false
+                                },
+                                {
+                                  "id": "text_seconds_right",
+                                  "display": true
+                                }
+                              ],
+                              "5": {
+                                "transfer_case": "4"
+                              },
+                              "6": [
+                                {
+                                  "id": "image_light_body_right",
+                                  "value": "global_image_traffic_signal_light_green_circle_day_night"
+                                },
+                                {
+                                  "id": "image_light_direction_right",
+                                  "value": "global_image_traffic_signal_light_green_arrow_turn_right_day_night"
+                                },
+                                {
+                                  "id": "text_seconds_right",
+                                  "display": false
+                                },
+                                {
+                                  "id": "text_notice_right",
+                                  "value": "通行",
+                                  "display": true
+                                }
+                              ],
+                              "8": [
+                                {
+                                  "id": "image_light_direction_right",
+                                  "value": "global_image_traffic_signal_light_yellow_arrow_turn_right_day_night"
+                                },
+                                {
+                                  "id": "image_light_body_right",
+                                  "value": "global_image_traffic_signal_light_yellow_circle_day_night"
+                                },
+                                {
+                                  "id": "text_seconds_right",
+                                  "display": false
+                                },
+                                {
+                                  "id": "text_notice_right",
+                                  "value": "注意",
+                                  "display": true
+                                }
+                              ],
+                              "default": []
+                            },
+                            "condition": "$biz_data.rightLightInfo.status"
+                          }
+                        },
+                        {
+                          "id": "text_seconds_right",
+                          "value": "$biz_data.rightLightInfo.lightCountdown"
+                        },
+                        {
+                          "id": "div_light_group_right",
+                          "display": true
+                        }
+                      ],
+                      "false": {
+                        "id": "div_light_group_right",
+                        "display": false
+                      }
+                    },
+                    "condition": {
+                      "fact": "$biz_data.rightLightInfo.showType",
+                      "value": 3,
+                      "operator": "equal"
+                    }
+                  }
+                }
+              ]
+            },
+            "condition": {
+              "fact": "$biz_data.lightCount",
+              "value": 2,
+              "operator": "ge"
+            },
+            "marker_id": [
+              "cruise_traffic_signal_light_main_team_right_up.xml",
+              "cruise_traffic_signal_light_main_team_left_up.xml"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "abstract": {
+    "name": "cruise_traffic_signal_light_layer",
+    "brief": "巡航下红绿灯信号状态图层图层",
+    "biz_type": 5017,
+    "update_card": false
+  }
+}

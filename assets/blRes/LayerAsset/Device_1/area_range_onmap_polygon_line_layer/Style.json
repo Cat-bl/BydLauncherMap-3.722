@@ -1,0 +1,144 @@
+{
+    "marker_info": {
+        "map_lr": {
+            "anchor": 4,
+            "repeat": 1,
+            "gen_mipmaps": 1,
+            "pre_mul_alpha": 1
+        }
+    },
+    "layer_item_info": {
+        "line_range_on_map": {
+            "line_layer_item_style": {
+                "use_cap": 1,
+                "use_color": 1,
+                "draw_cover": 1,
+                "can_be_coveredbylabel": 0,
+                "fill_texture": {
+                    "marker_id": "",
+                    "color": "0x7ff25d6e",
+                    "width": 20
+                },
+                "border_texture": {
+                    "marker_id": "map_lr",
+                    "color": "0x7ff25d6e",
+                    "width": 20
+                },
+                "texture_info": {
+                    "x1": 0,
+                    "y1": 0.5,
+                    "x2": 1,
+                    "y2": 0.5,
+                    "texture_len": 32
+                },
+                "cap_texture_info": {
+                    "x1": 0,
+                    "y1": 0.5,
+                    "x2": 1,
+                    "y2": 0.75
+                }
+            },
+            "index": 0,
+            "name_cn": "普通 白天"
+        },
+        "line_range_on_map_night": {
+            "line_layer_item_style": {
+                "use_cap": 1,
+                "use_color": 1,
+                "draw_cover": 1,
+                "can_be_coveredbylabel": 0,
+                "fill_texture": {
+                    "marker_id": "",
+                    "color": "0x7fb73f48",
+                    "width": 20
+                },
+                "border_texture": {
+                    "marker_id": "map_lr",
+                    "color": "0x7fb73f48",
+                    "width": 20
+                },
+                "texture_info": {
+                    "x1": 0,
+                    "y1": 0.5,
+                    "x2": 1,
+                    "y2": 0.5,
+                    "texture_len": 32
+                },
+                "cap_texture_info": {
+                    "x1": 0,
+                    "y1": 0.5,
+                    "x2": 1,
+                    "y2": 0.75
+                }
+            },
+            "index": 1,
+            "name_cn": "普通 黑夜"
+        },
+        "line_range_on_map_alert": {
+            "line_layer_item_style": {
+                "use_cap": 1,
+                "use_color": 1,
+                "draw_cover": 1,
+                "can_be_coveredbylabel": 0,
+                "fill_texture": {
+                    "marker_id": "",
+                    "color": "0x7fff9e6d",
+                    "width": 20
+                },
+                "border_texture": {
+                    "marker_id": "map_lr",
+                    "color": "0x7fff9e6d",
+                    "width": 20
+                },
+                "texture_info": {
+                    "x1": 0,
+                    "y1": 0.5,
+                    "x2": 1,
+                    "y2": 0.5,
+                    "texture_len": 32
+                },
+                "cap_texture_info": {
+                    "x1": 0,
+                    "y1": 0.5,
+                    "x2": 1,
+                    "y2": 0.75
+                }
+            },
+            "index": 2,
+            "name_cn": "警告 白天"
+        },
+        "line_range_on_map_alert_night": {
+            "line_layer_item_style": {
+                "use_cap": 1,
+                "use_color": 1,
+                "draw_cover": 1,
+                "can_be_coveredbylabel": 0,
+                "fill_texture": {
+                    "marker_id": "",
+                    "color": "0x7fd7755a",
+                    "width": 20
+                },
+                "border_texture": {
+                    "marker_id": "map_lr",
+                    "color": "0x7fdc8e32",
+                    "width": 20
+                },
+                "texture_info": {
+                    "x1": 0,
+                    "y1": 0.5,
+                    "x2": 1,
+                    "y2": 0.5,
+                    "texture_len": 32
+                },
+                "cap_texture_info": {
+                    "x1": 0,
+                    "y1": 0.5,
+                    "x2": 1,
+                    "y2": 0.75
+                }
+            },
+            "index": 3,
+            "name_cn": "警告 黑夜"
+        }
+    }
+}

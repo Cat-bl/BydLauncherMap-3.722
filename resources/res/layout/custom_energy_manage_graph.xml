@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_custom_energy_manage_graph"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:designHeight="600"
+    app:designWidth="1024">
+    <com.autonavi.skin.view.SkinImageView
+        android:id="@+id/siv_bg"
+        android:background="@drawable/custom_energy_manage_graph_bg"
+        android:layout_width="@dimen/auto_dimen2_993"
+        android:layout_height="@dimen/auto_dimen2_484"
+        app:background4Night="@drawable/custom_energy_manage_graph_bg_night"
+        app:background4Skin="@drawable/custom_energy_manage_graph_bg"/>
+</merge>

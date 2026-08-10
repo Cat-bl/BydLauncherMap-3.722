@@ -1,0 +1,289 @@
+{
+    "marker_info": {
+        "marker_info_guide_traffic_event": {
+            "anchor": 12,
+            "x_offset": 19,
+            "y_offset": 19,
+            "night_style": {
+                "color": [
+                    {
+                        "event_name": "#ffffff"
+                    },
+                    {
+                        "lane_name": "#ffffff"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "event_name": "#000000"
+                    },
+                    {
+                        "lane_name": "#000000"
+                    }
+                ]
+            },
+            "image_style": {
+                "event_image": {
+                    "event_type_accident": "global_image_auto_ic_navi_traffic_event_accident_day_night",
+                    "event_type_malfunction": "global_image_auto_ic_navi_traffic_event_malfunction_day_night",
+                    "event_type_project": "global_image_auto_ic_navi_traffic_event_project_day_night",
+                    "event_type_water": "global_image_auto_ic_navi_traffic_event_water_day_night"
+                }
+            }
+        },
+        "marker_info_guide_traffic_event_right_up": {
+            "anchor": 12,
+            "x_offset": 20,
+            "y_offset": 17,
+            "night_style": {
+                "color": [
+                    {
+                        "event_name": "#ffffff"
+                    },
+                    {
+                        "lane_name": "#ffffff"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "event_name": "#000000"
+                    },
+                    {
+                        "lane_name": "#000000"
+                    }
+                ]
+            },
+            "image_style": {
+                "event_image": {
+                    "event_type_accident": "global_image_event_accident_thumbnail_day_night",
+                    "event_type_malfunction": "global_image_event_breakdown_thumbnail_day_night",
+                    "event_type_project": "global_image_event_road_work_thumbnail_day_night",
+                    "event_type_water": "global_image_event_stagnant_water_thumbnail_day_night"
+                }
+            }
+        },
+        "marker_info_guide_traffic_event_left_up": {
+            "anchor": 13,
+            "x_offset": 20,
+            "y_offset": 17,
+            "night_style": {
+                "color": [
+                    {
+                        "event_name": "#ffffff"
+                    },
+                    {
+                        "lane_name": "#ffffff"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "event_name": "#000000"
+                    },
+                    {
+                        "lane_name": "#000000"
+                    }
+                ]
+            },
+            "image_style": {
+                "event_image": {
+                    "event_type_accident": "global_image_event_accident_thumbnail_day_night",
+                    "event_type_malfunction": "global_image_event_breakdown_thumbnail_day_night",
+                    "event_type_project": "global_image_event_road_work_thumbnail_day_night",
+                    "event_type_water": "global_image_event_stagnant_water_thumbnail_day_night"
+                }
+            }
+        },
+        "marker_info_guide_traffic_event_right_down": {
+            "anchor": 10,
+            "x_offset": 21,
+            "y_offset": 12,
+            "night_style": {
+                "color": [
+                    {
+                        "event_name": "#ffffff"
+                    },
+                    {
+                        "lane_name": "#ffffff"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "event_name": "#000000"
+                    },
+                    {
+                        "lane_name": "#000000"
+                    }
+                ]
+            },
+            "image_style": {
+                "event_image": {
+                    "event_type_accident": "global_image_event_accident_thumbnail_day_night",
+                    "event_type_malfunction": "global_image_event_breakdown_thumbnail_day_night",
+                    "event_type_project": "global_image_event_road_work_thumbnail_day_night",
+                    "event_type_water": "global_image_event_stagnant_water_thumbnail_day_night"
+                }
+            }
+        },
+        "marker_info_guide_traffic_event_left_down": {
+            "anchor": 11,
+            "x_offset": 20,
+            "y_offset": 12,
+            "night_style": {
+                "color": [
+                    {
+                        "event_name": "#ffffff"
+                    },
+                    {
+                        "lane_name": "#ffffff"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "event_name": "#000000"
+                    },
+                    {
+                        "lane_name": "#000000"
+                    }
+                ]
+            },
+            "image_style": {
+                "event_image": {
+                    "event_type_accident": "global_image_event_accident_thumbnail_day_night",
+                    "event_type_malfunction": "global_image_event_breakdown_thumbnail_day_night",
+                    "event_type_project": "global_image_event_road_work_thumbnail_day_night",
+                    "event_type_water": "global_image_event_stagnant_water_thumbnail_day_night"
+                }
+            }
+        }
+    },
+    "layer_item_info": {
+        "guide_traffic_event": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_traffic_event.xml",
+                    "poi_marker_info": "marker_info_guide_traffic_event"
+                }
+            },
+            "index": 0,
+            "name_cn": "默认"
+        },
+        "guide_traffic_event_right_up": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_traffic_event_right_two.xml",
+                    "poi_marker_info": "marker_info_guide_traffic_event_right_up",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "div_direction_bg": "global_image_traffic_right_up_day_night"
+                            }
+                        ],
+                        "left": [
+                            {
+                                "message_image": "auto"
+                            }
+                        ],
+                        "right": [
+                            {
+                                "message_image": "0px"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 1,
+            "name_cn": "右上飘"
+        },
+        "guide_traffic_event_left_up": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_traffic_event_left_two.xml",
+                    "poi_marker_info": "marker_info_guide_traffic_event_left_up",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "div_direction_bg": "global_image_traffic_left_up_day_night"
+                            }
+                        ],
+                        "left": [
+                            {
+                                "message_image": "0px"
+                            }
+                        ],
+                        "right": [
+                            {
+                                "message_image": "auto"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 2,
+            "name_cn": "左上飘"
+        },
+        "guide_traffic_event_right_down": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_traffic_event_right_two.xml",
+                    "poi_marker_info": "marker_info_guide_traffic_event_right_down",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "div_direction_bg": "global_image_traffic_right_down_day_night"
+                            }
+                        ],
+                        "left": [
+                            {
+                                "message_image": "auto"
+                            }
+                        ],
+                        "right": [
+                            {
+                                "message_image": "0px"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 3,
+            "name_cn": "右下飘"
+        },
+        "guide_traffic_event_left_down": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_traffic_event_left_two.xml",
+                    "poi_marker_info": "marker_info_guide_traffic_event_left_down",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "div_direction_bg": "global_image_traffic_left_down_day_night"
+                            }
+                        ],
+                        "left": [
+                            {
+                                "message_image": "0px"
+                            }
+                        ],
+                        "right": [
+                            {
+                                "message_image": "auto"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 4,
+            "name_cn": "左下飘"
+        }
+    }
+}

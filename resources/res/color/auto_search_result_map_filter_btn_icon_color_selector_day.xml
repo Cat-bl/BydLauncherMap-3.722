@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="true"
+        android:color="@color/search_text_high_light_color"/>
+    <item
+        android:state_enabled="false"
+        android:color="@color/byd_search_text_day"/>
+    <item
+        android:state_enabled="true"
+        android:color="@color/byd_search_text_day"/>
+</selector>

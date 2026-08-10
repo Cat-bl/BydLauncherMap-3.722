@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="@dimen/custom_red_point_small_red_point_corner_normal_day"/>
+    <solid android:color="@color/custom_red_point_small_red_point_solid_normal_day"/>
+</shape>

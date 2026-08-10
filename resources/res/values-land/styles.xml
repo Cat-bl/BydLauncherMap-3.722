@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Design.TabLayout" parent="@style/Base.Widget.Design.TabLayout">
+        <item name="tabGravity">center</item>
+        <item name="tabMode">fixed</item>
+    </style>
+    <style name="Widget.MaterialComponents.MaterialCalendar.HeaderSelection" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textAppearance">?attr/textAppearanceHeadline6</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:ellipsize">3</item>
+        <item name="android:maxLines">@integer/mtrl_calendar_selection_text_lines</item>
+    </style>
+    <style name="style_setting_bg" parent="@style/custom_card_shadow_style">
+        <item name="android:background">@drawable/byd_sys_setting_bg_day</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">@dimen/auto_dimen2_1000</item>
+        <item name="android:layout_height">-1</item>
+        <item name="android:layout_marginTop">@dimen/auto_dimen2_12</item>
+        <item name="android:layout_marginBottom">@dimen/auto_dimen2_16</item>
+        <item name="android:layout_marginStart">@dimen/auto_dimen2_24</item>
+        <item name="background4Night">@drawable/byd_sys_setting_bg_night</item>
+        <item name="background4Skin">@drawable/byd_sys_setting_bg_day</item>
+    </style>
+</resources>

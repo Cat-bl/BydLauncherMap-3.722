@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/icon_setting_img_map_textsize_big_selected_land_night_denza" />
+    <item android:state_enabled="false" android:drawable="@drawable/icon_setting_img_map_textsize_big_unselected_land_night_denza" />
+    <item android:state_enabled="true" android:drawable="@drawable/icon_setting_img_map_textsize_big_unselected_land_night_denza" />
+</selector>

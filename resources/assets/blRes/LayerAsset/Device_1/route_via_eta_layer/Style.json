@@ -1,0 +1,141 @@
+{
+    "marker_info": {
+        "marker_info_via_eta_left": {
+            "anchor": 3,
+            "day_style": {
+                "color": [
+                    {
+                        "eta_text": "#ffffff"
+                    },
+                    {
+                        "energy_text_desc": "#ffffff"
+                    },
+                    {
+                        "energy_text": "#ffffff"
+                    },
+                    {
+                        "energy_text_low": "#ffbaba"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "eta_text": "#e8ffffff"
+                    },
+                    {
+                        "energy_text_desc": "#e8ffffff"
+                    },
+                    {
+                        "energy_text": "#e8ffffff"
+                    },
+                    {
+                        "energy_text_low": "#ff4c4a"
+                    }
+                ]
+            }
+        },
+        "marker_info_via_eta_right": {
+            "anchor": 2,
+            "day_style": {
+                "color": [
+                    {
+                        "eta_text": "#ffffff"
+                    },
+                    {
+                        "energy_text_desc": "#ffffff"
+                    },
+                    {
+                        "energy_text": "#ffffff"
+                    },
+                    {
+                        "energy_text_low": "#ffbaba"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "eta_text": "#e8ffffff"
+                    },
+                    {
+                        "energy_text_desc": "#e8ffffff"
+                    },
+                    {
+                        "energy_text": "#e8ffffff"
+                    },
+                    {
+                        "energy_text_low": "#ff4c4a"
+                    }
+                ]
+            }
+        },
+        "marker_info_via_eta_bottom": {
+            "anchor": 6,
+            "day_style": {
+                "color": [
+                    {
+                        "eta_text": "#ffffff"
+                    },
+                    {
+                        "energy_text_desc": "#ffffff"
+                    },
+                    {
+                        "energy_text": "#ffffff"
+                    },
+                    {
+                        "energy_text_low": "#ffbaba"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "eta_text": "#e8ffffff"
+                    },
+                    {
+                        "energy_text_desc": "#e8ffffff"
+                    },
+                    {
+                        "energy_text": "#e8ffffff"
+                    },
+                    {
+                        "energy_text_low": "#ff4c4a"
+                    }
+                ]
+            }
+        }
+    },
+    "layer_item_info": {
+        "point_via_eta_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "route_via_eta.xml",
+                    "poi_marker_info": "marker_info_via_eta_left"
+                }
+            },
+            "index": 0,
+            "name_cn": "左飘"
+        },
+        "point_via_eta_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "route_via_eta.xml",
+                    "poi_marker_info": "marker_info_via_eta_right"
+                }
+            },
+            "index": 1,
+            "name_cn": "右飘"
+        },
+        "point_via_eta_bottom": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "route_via_eta.xml",
+                    "poi_marker_info": "marker_info_via_eta_bottom"
+                }
+            },
+            "index": 2,
+            "name_cn": "下飘"
+        }
+    }
+}

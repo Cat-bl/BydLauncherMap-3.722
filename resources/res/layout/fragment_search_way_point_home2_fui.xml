@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_search_home"
+    android:clipChildren="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:designHeight="600"
+    app:designWidth="1024">
+    <com.autonavi.skin.view.SkinView
+        android:id="@+id/cc_bg"
+        android:layout_width="@dimen/auto_dimen2_510"
+        android:layout_marginBottom="@dimen/auto_dimen2_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/style_card_bg"/>
+    <com.autonavi.skin.view.SkinConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cc_bg"
+        app:layout_constraintEnd_toEndOf="@+id/cc_bg"
+        app:layout_constraintStart_toStartOf="@+id/cc_bg"
+        app:layout_constraintTop_toTopOf="@+id/cc_bg">
+        <include
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            layout="@layout/layout_search_way_point_home2_inner"/>
+    </com.autonavi.skin.view.SkinConstraintLayout>
+</com.autonavi.skin.view.SkinConstraintLayout>

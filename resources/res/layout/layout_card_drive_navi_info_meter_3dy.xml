@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_navigation_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:designHeight="600"
+    app:designWidth="1024">
+    <com.autonavi.adapter.container.ACNavigationInfoLandscapeAutoNaviView
+        android:id="@+id/ac_navigation_info_land"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:interface_key="navigation_meter_info_landscape_300_3dy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.autonavi.view.custom.CustomMeterNaviInnerTrafficLaneView
+        android:id="@+id/display_inner_traffic_lane"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/auto_dimen2_56"
+        android:layout_marginTop="@dimen/auto_dimen2_8"
+        android:layout_marginStart="@dimen/auto_dimen2_32"
+        android:layout_marginEnd="@dimen/auto_dimen2_32"
+        app:layout_constraintTop_toBottomOf="@+id/ac_navigation_info_land"/>
+    <include
+        android:layout_width="0dp"
+        android:layout_height="@dimen/tbt_bottom_remain_time_distance_height_yw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/display_inner_traffic_lane"
+        app:layout_goneMarginTop="@dimen/auto_dimen2_16"
+        layout="@layout/layout_card_drive_navi_info_meter_bottom_3dy"/>
+</com.autonavi.skin.view.SkinConstraintLayout>

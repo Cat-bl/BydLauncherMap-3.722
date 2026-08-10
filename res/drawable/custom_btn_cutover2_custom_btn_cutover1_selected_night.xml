@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/custom_btn_cutover2_custom_btn_cutover1_strokewidth_selected_night" android:color="#ff3583ff" />
+    <gradient android:startColor="#ff144f7d" android:endColor="#ff1c3d6c" android:angle="90.0" android:centerX="0.5" />
+</shape>

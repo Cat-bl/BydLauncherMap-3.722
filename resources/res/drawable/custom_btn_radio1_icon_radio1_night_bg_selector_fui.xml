@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/custom_btn_radio1_icon_radio1_selected"/>
+    <item android:drawable="@drawable/custom_btn_radio1_icon_radio1_normal_night_fui"/>
+</selector>

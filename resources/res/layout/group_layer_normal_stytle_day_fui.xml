@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/auto_dimen2_48"
+    android:layout_height="@dimen/auto_dimen2_48"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+    <ImageView
+        android:id="@+id/team_layer_normal_head_bg"
+        android:background="@drawable/group_layer_normal_head_bg_day_selector_fui"
+        android:layout_width="@dimen/auto_dimen2_48"
+        android:layout_height="@dimen/auto_dimen2_48"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.autonavi.view.custom.CustomCircleImageView
+        android:id="@+id/team_layer_normal_head"
+        android:paddingTop="@dimen/auto_dimen2_12"
+        android:paddingBottom="@dimen/auto_dimen2_10"
+        android:layout_width="@dimen/auto_dimen2_48"
+        android:layout_height="@dimen/auto_dimen2_48"
+        android:layout_marginBottom="@dimen/auto_dimen2_4"
+        android:src="@drawable/icon_user_default_head_180"
+        app:layout_constraintBottom_toBottomOf="@+id/team_layer_normal_head_bg"
+        app:layout_constraintEnd_toEndOf="@+id/team_layer_normal_head_bg"
+        app:layout_constraintStart_toStartOf="@+id/team_layer_normal_head_bg"/>
+</com.autonavi.skin.view.SkinConstraintLayout>

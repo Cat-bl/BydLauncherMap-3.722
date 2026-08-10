@@ -1,0 +1,294 @@
+{
+    "marker_info": {
+        "marker_info_recommend_charge_station": {
+            "anchor": 5,
+            "day_style": {
+                "color": [
+                    {
+                        "name_text": "#171717"
+                    },
+                    {
+                        "charge_info_walk_text": "#CC3C3C43"
+                    },
+                    {
+                        "charge_info_walk_number_text": "#CC3C3C43"
+                    },
+                    {
+                        "charge_info_walk_unit_text": "#CC3C3C43"
+                    },
+                    {
+                        "charge_info_walk_point_text": "#CC3C3C43"
+                    },
+                    {
+                        "charge_info_walk_hour_number_text": "#CC3C3C43"
+                    },
+                    {
+                        "charge_info_walk_hour_unit_text": "#CC3C3C43"
+                    },
+                    {
+                        "charge_info_walk_minute_number_text": "#CC3C3C43"
+                    },
+                    {
+                        "charge_info_walk_minute_unit_text": "#CC3C3C43"
+                    },
+                    {
+                        "charge_super_text": "#FFFFFF"
+                    },
+                    {
+                        "charge_label_super_idle_text": "#FF5C2D"
+                    },
+                    {
+                        "charge_label_super_number_text": "#FF5C2D"
+                    },
+                    {
+                        "charge_label_super_unit_text": "#80FE5C2E"
+                    },
+                    {
+                        "charge_label_super_full_text": "#80FE5C2E"
+                    },
+                    {
+                        "charge_fast_text": "#FFFFFF"
+                    },
+                    {
+                        "charge_label_fast_idle_text": "#399461"
+                    },
+                    {
+                        "charge_label_fast_number_text": "#399461"
+                    },
+                    {
+                        "charge_label_fast_unit_text": "#80399461"
+                    },
+                    {
+                        "charge_label_fast_full_text": "#80399461"
+                    },
+                    {
+                        "charge_slow_text": "#FFFFFF"
+                    },
+                    {
+                        "charge_label_slow_idle_text": "#5A6270"
+                    },
+                    {
+                        "charge_label_slow_number_text": "#5A6270"
+                    },
+                    {
+                        "charge_label_slow_unit_text": "#805A6270"
+                    },
+                    {
+                        "charge_label_slow_full_text": "#805A6270"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #E6ffffff"
+                    },
+                    {
+                        "charge_info_walk_text": "2px #E6FAFAFA"
+                    },
+                    {
+                        "charge_info_walk_number_text": "2px #E6FAFAFA"
+                    },
+                    {
+                        "charge_info_walk_unit_text": "2px #E6FAFAFA"
+                    },
+                    {
+                        "charge_info_walk_point_text": "2px #E6FAFAFA"
+                    },
+                    {
+                        "charge_info_walk_hour_number_text": "2px #E6FAFAFA"
+                    },
+                    {
+                        "charge_info_walk_hour_unit_text": "2px #E6FAFAFA"
+                    },
+                    {
+                        "charge_info_walk_minute_number_text": "2px #E6FAFAFA"
+                    },
+                    {
+                        "charge_info_walk_minute_unit_text": "2px #E6FAFAFA"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "name_text": "#C0C1C3"
+                    },
+                    {
+                        "charge_info_walk_text": "#94969B"
+                    },
+                    {
+                        "charge_info_walk_number_text": "#94969B"
+                    },
+                    {
+                        "charge_info_walk_unit_text": "#94969B"
+                    },
+                    {
+                        "charge_info_walk_point_text": "#94969B"
+                    },
+                    {
+                        "charge_info_walk_hour_number_text": "#94969B"
+                    },
+                    {
+                        "charge_info_walk_hour_unit_text": "#94969B"
+                    },
+                    {
+                        "charge_info_walk_minute_number_text": "#94969B"
+                    },
+                    {
+                        "charge_info_walk_minute_unit_text": "#94969B"
+                    },
+                    {
+                        "charge_super_text": "#B3FFFFFF"
+                    },
+                    {
+                        "charge_label_super_idle_text": "#DB613E"
+                    },
+                    {
+                        "charge_label_super_number_text": "#DB613E"
+                    },
+                    {
+                        "charge_label_super_unit_text": "#80DB613E"
+                    },
+                    {
+                        "charge_label_super_full_text": "#80DB613E"
+                    },
+                    {
+                        "charge_fast_text": "#B3FFFFFF"
+                    },
+                    {
+                        "charge_label_fast_idle_text": "#1C9C71"
+                    },
+                    {
+                        "charge_label_fast_number_text": "#1C9C71"
+                    },
+                    {
+                        "charge_label_fast_unit_text": "#801C9C71"
+                    },
+                    {
+                        "charge_label_fast_full_text": "#801C9C71"
+                    },
+                    {
+                        "charge_slow_text": "#B3FFFFFF"
+                    },
+                    {
+                        "charge_label_slow_idle_text": "#5E6572"
+                    },
+                    {
+                        "charge_label_slow_number_text": "#5E6572"
+                    },
+                    {
+                        "charge_label_slow_unit_text": "#805E6572"
+                    },
+                    {
+                        "charge_label_slow_full_text": "#805E6572"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name_text": "2px #CC030404"
+                    },
+                    {
+                        "charge_info_walk_text": "2px #CC030404"
+                    },
+                    {
+                        "charge_info_walk_number_text": "2px #CC030404"
+                    },
+                    {
+                        "charge_info_walk_unit_text": "2px #CC030404"
+                    },
+                    {
+                        "charge_info_walk_point_text": "2px #CC030404"
+                    },
+                    {
+                        "charge_info_walk_hour_number_text": "2px #CC030404"
+                    },
+                    {
+                        "charge_info_walk_hour_unit_text": "2px #CC030404"
+                    },
+                    {
+                        "charge_info_walk_minute_number_text": "2px #CC030404"
+                    },
+                    {
+                        "charge_info_walk_minute_unit_text": "2px #CC030404"
+                    }
+                ]
+            }
+        },
+        "marker_info_search_child_charge_station_mini_point": {
+            "anchor": 9,
+            "x_ratio": 0.485,
+            "y_ratio": 0.9
+        }
+    },
+    "layer_item_info": {
+        "point_recommend_charge_station_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "recommend_charge_station_right.xml",
+                    "poi_marker_info": "marker_info_recommend_charge_station"
+                },
+                "focus_style": {
+                    "poi_marker_id": "recommend_charge_station_focus.xml",
+                    "poi_marker_info": "marker_info_recommend_charge_station"
+                }
+            },
+            "index": 0,
+            "name_cn": "右飘"
+        },
+        "point_recommend_charge_station_mini_point": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_child_charge_station_mini_point.xml",
+                    "poi_marker_info": "marker_info_search_child_charge_station_mini_point"
+                },
+                "focus_style": {
+                    "poi_marker_id": "recommend_charge_station_focus.xml",
+                    "poi_marker_info": "marker_info_recommend_charge_station"
+                }
+            },
+            "index": 1,
+            "name_cn": "麻点"
+        },
+        "point_recommend_charge_station_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "recommend_charge_station_left.xml",
+                    "poi_marker_info": "marker_info_recommend_charge_station"
+                },
+                "focus_style": {
+                    "poi_marker_id": "recommend_charge_station_focus.xml",
+                    "poi_marker_info": "marker_info_recommend_charge_station"
+                }
+            },
+            "index": 2,
+            "name_cn": "左飘"
+        },
+        "point_recommend_charge_station_simple_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "recommend_charge_station_simple_right.xml",
+                    "poi_marker_info": "marker_info_recommend_charge_station"
+                },
+                "focus_style": {
+                    "poi_marker_id": "recommend_charge_station_focus.xml",
+                    "poi_marker_info": "marker_info_recommend_charge_station"
+                }
+            },
+            "index": 3,
+            "name_cn": "右飘 简单态"
+        },
+        "point_recommend_charge_station_simple_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "recommend_charge_station_simple_left.xml",
+                    "poi_marker_info": "marker_info_recommend_charge_station"
+                },
+                "focus_style": {
+                    "poi_marker_id": "recommend_charge_station_focus.xml",
+                    "poi_marker_info": "marker_info_recommend_charge_station"
+                }
+            },
+            "index": 4,
+            "name_cn": "左飘 简单态"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center">
+        <shape android:shape="oval" android:useLevel="false">
+            <size android:height="@dimen/auto_navi_speed_wave_inner_size" android:width="@dimen/auto_navi_speed_wave_inner_size" />
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:gravity="center">
+        <shape android:shape="ring" android:useLevel="false" android:innerRadius="@dimen/auto_dimen2_32" android:thickness="@dimen/auto_dimen2_4">
+            <size android:height="@dimen/auto_navi_speed_wave_size" android:width="@dimen/auto_navi_speed_wave_size" />
+            <gradient android:startColor="#ffd54949" android:endColor="#ffd54949" android:angle="270.0" android:centerColor="#ffd54949" />
+        </shape>
+    </item>
+</layer-list>

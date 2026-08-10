@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="true"
+        android:color="@color/search_main_color_day"/>
+    <item android:color="@color/recommend_item_name_text_color_day"/>
+</selector>

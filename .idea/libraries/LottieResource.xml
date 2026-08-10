@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="LottieResource">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/assets/blRes/LayerAsset/DSL/LottieResource/car_meeting_night.zip!/" />
+      <root url="jar://$PROJECT_DIR$/assets/blRes/LayerAsset/DSL/LottieResource/car_meeting_day.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:bottomLeftRadius="@dimen/custom_volume_bar_vertical_volume_bar_high_corner_bottom_left_normal_day" android:bottomRightRadius="@dimen/custom_volume_bar_vertical_volume_bar_high_corner_bottom_right_normal_day" />
+    <gradient android:startColor="#ff0056b6" android:endColor="#ff003057" android:angle="90.0" android:centerX="0.5" />
+</shape>

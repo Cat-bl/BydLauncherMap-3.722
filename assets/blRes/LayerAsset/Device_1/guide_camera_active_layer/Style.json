@@ -1,0 +1,1203 @@
+{
+    "marker_info": {
+        "point_camera_left_x_y": {
+            "anchor": 9,
+            "x_ratio": 0.85,
+            "y_ratio": 0.804
+        },
+        "point_camera_right_x_y": {
+            "anchor": 9,
+            "x_ratio": 0.15,
+            "y_ratio": 0.804
+        },
+        "marker_info_guide_camera_left_distance": {
+            "anchor": 13,
+            "x_offset": 10,
+            "y_offset": 21,
+            "night_style": {
+                "color": [
+                    {
+                        "distance_text": "#000000"
+                    },
+                    {
+                        "distance_text_unit": "#000000"
+                    },
+                    {
+                        "speed_text": "#000000"
+                    },
+                    {
+                        "speed_text2": "#000000"
+                    },
+                    {
+                        "speed_text3": "#000000"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "distance_text": "#000000"
+                    },
+                    {
+                        "distance_text_unit": "#000000"
+                    },
+                    {
+                        "speed_text": "#000000"
+                    },
+                    {
+                        "speed_text2": "#000000"
+                    },
+                    {
+                        "speed_text3": "#000000"
+                    }
+                ]
+            },
+            "image_style": {
+                "camera_type_image": {
+                    "camera_type_breakrule_courtesy_crossing": "global_image_guide_camera_bubble_sidewalk_day_night",
+                    "camera_type_breakrule_dial_phone_when_driving": "global_image_guide_camera_bubble_phone_day_night",
+                    "camera_type_breakrule_illegal_parking": "global_image_guide_camera_bubble_parking_day_night",
+                    "camera_type_breakrule_illegal_use_safety_belt": "global_image_guide_camera_bubble_seatbelt_day_night",
+                    "camera_type_breakrule_occupied_bus_lane": "global_image_guide_camera_bubble_busway_day_night",
+                    "camera_type_breakrule_occupied_emergency_lane": "global_image_guide_camera_bubble_emergencylane_day_night",
+                    "camera_type_breakrule_occupied_emergency_lane_en": "global_image_guide_camera_bubble_emergencylane_en_day_night",
+                    "camera_type_breakrule_occupied_non_motorized_lane": "global_image_guide_camera_bubble_bicyclelane_day_night",
+                    "camera_type_breakrule_run_red_light": "global_image_guide_camera_bubble_trafficlight_day_night",
+                    "camera_type_breakrule_speaker": "global_image_guide_camera_bubble_speaker_day_night",
+                    "camera_type_breakrule_violate_prohibited_markings": "global_image_guide_camera_bubble_line_day_night",
+                    "camera_type_car_spacing": "global_image_guide_camera_bubble_space_day_night",
+                    "camera_type_end_number_limit": "global_image_guide_camera_bubble_tail_day_night",
+                    "camera_type_environmental_limit": "global_image_guide_camera_bubble_recycle_day_night",
+                    "camera_type_etc": "global_image_guide_camera_bubble_etc_day_night",
+                    "camera_type_hov_lane": "global_image_guide_camera_bubble_hov_day_night",
+                    "camera_type_illegal_use_light": "global_image_guide_camera_bubble_lamp_day_night",
+                    "camera_type_reverse_driving": "global_image_guide_camera_bubble_reverse_day_night",
+                    "camera_type_railway_crossing": "global_image_guide_camera_bubble_railway_day_night",
+                    "camera_type_speed": "global_image_guide_camera_bubble_speed_day_night",
+                    "camera_type_speed_unknown": "global_image_guide_camera_bubble_speed_unknown_day_night"
+                },
+                "camera_type_image2": {
+                    "camera_type_breakrule_courtesy_crossing": "global_image_guide_camera_bubble_sidewalk_day_night",
+                    "camera_type_breakrule_dial_phone_when_driving": "global_image_guide_camera_bubble_phone_day_night",
+                    "camera_type_breakrule_illegal_parking": "global_image_guide_camera_bubble_parking_day_night",
+                    "camera_type_breakrule_illegal_use_safety_belt": "global_image_guide_camera_bubble_seatbelt_day_night",
+                    "camera_type_breakrule_occupied_bus_lane": "global_image_guide_camera_bubble_busway_day_night",
+                    "camera_type_breakrule_occupied_emergency_lane": "global_image_guide_camera_bubble_emergencylane_day_night",
+                    "camera_type_breakrule_occupied_emergency_lane_en": "global_image_guide_camera_bubble_emergencylane_en_day_night",
+                    "camera_type_breakrule_occupied_non_motorized_lane": "global_image_guide_camera_bubble_bicyclelane_day_night",
+                    "camera_type_breakrule_run_red_light": "global_image_guide_camera_bubble_trafficlight_day_night",
+                    "camera_type_breakrule_speaker": "global_image_guide_camera_bubble_speaker_day_night",
+                    "camera_type_breakrule_violate_prohibited_markings": "global_image_guide_camera_bubble_line_day_night",
+                    "camera_type_car_spacing": "global_image_guide_camera_bubble_space_day_night",
+                    "camera_type_end_number_limit": "global_image_guide_camera_bubble_tail_day_night",
+                    "camera_type_environmental_limit": "global_image_guide_camera_bubble_recycle_day_night",
+                    "camera_type_etc": "global_image_guide_camera_bubble_etc_day_night",
+                    "camera_type_hov_lane": "global_image_guide_camera_bubble_hov_day_night",
+                    "camera_type_illegal_use_light": "global_image_guide_camera_bubble_lamp_day_night",
+                    "camera_type_reverse_driving": "global_image_guide_camera_bubble_reverse_day_night",
+                    "camera_type_railway_crossing": "global_image_guide_camera_bubble_railway_day_night",
+                    "camera_type_speed": "global_image_guide_camera_bubble_speed_day_night",
+                    "camera_type_speed_unknown": "global_image_guide_camera_bubble_speed_unknown_day_night"
+                }
+            }
+        },
+        "marker_info_guide_camera_left_distance_penalty": {
+            "anchor": 13,
+            "x_offset": 10,
+            "y_offset": 21,
+            "night_style": {
+                "color": [
+                    {
+                        "distance_text_penalty": "#000000"
+                    },
+                    {
+                        "distance_text_unit": "#000000"
+                    },
+                    {
+                        "speed_text": "#e5000000"
+                    },
+                    {
+                        "speed_text2": "#e5000000"
+                    },
+                    {
+                        "speed_text3": "#e5000000"
+                    },
+                    {
+                        "distance_text_hint": "#E02A19"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "distance_text_penalty": "#000000"
+                    },
+                    {
+                        "distance_text_unit": "#000000"
+                    },
+                    {
+                        "speed_text": "#e5000000"
+                    },
+                    {
+                        "speed_text2": "#e5000000"
+                    },
+                    {
+                        "speed_text3": "#e5000000"
+                    },
+                    {
+                        "distance_text_hint": "#F52B20"
+                    }
+                ]
+            },
+            "image_style": {
+                "camera_type_image": {
+                    "camera_type_breakrule_courtesy_crossing": "global_image_guide_camera_bubble_sidewalk_day_night",
+                    "camera_type_breakrule_dial_phone_when_driving": "global_image_guide_camera_bubble_phone_day_night",
+                    "camera_type_breakrule_illegal_parking": "global_image_guide_camera_bubble_parking_day_night",
+                    "camera_type_breakrule_illegal_use_safety_belt": "global_image_guide_camera_bubble_seatbelt_day_night",
+                    "camera_type_breakrule_occupied_bus_lane": "global_image_guide_camera_bubble_busway_day_night",
+                    "camera_type_breakrule_occupied_emergency_lane": "global_image_guide_camera_bubble_emergencylane_day_night",
+                    "camera_type_breakrule_occupied_emergency_lane_en": "global_image_guide_camera_bubble_emergencylane_en_day_night",
+                    "camera_type_breakrule_occupied_non_motorized_lane": "global_image_guide_camera_bubble_bicyclelane_day_night",
+                    "camera_type_breakrule_run_red_light": "global_image_guide_camera_bubble_trafficlight_day_night",
+                    "camera_type_breakrule_speaker": "global_image_guide_camera_bubble_speaker_day_night",
+                    "camera_type_breakrule_violate_prohibited_markings": "global_image_guide_camera_bubble_line_day_night",
+                    "camera_type_car_spacing": "global_image_guide_camera_bubble_space_day_night",
+                    "camera_type_end_number_limit": "global_image_guide_camera_bubble_tail_day_night",
+                    "camera_type_environmental_limit": "global_image_guide_camera_bubble_recycle_day_night",
+                    "camera_type_etc": "global_image_guide_camera_bubble_etc_day_night",
+                    "camera_type_hov_lane": "global_image_guide_camera_bubble_hov_day_night",
+                    "camera_type_illegal_use_light": "global_image_guide_camera_bubble_lamp_day_night",
+                    "camera_type_reverse_driving": "global_image_guide_camera_bubble_reverse_day_night",
+                    "camera_type_railway_crossing": "global_image_guide_camera_bubble_railway_day_night",
+                    "camera_type_speed": "global_image_guide_camera_bubble_speed_day_night",
+                    "camera_type_speed_unknown": "global_image_guide_camera_bubble_speed_unknown_day_night"
+                },
+                "camera_type_image2": {
+                    "camera_type_breakrule_courtesy_crossing": "global_image_guide_camera_bubble_sidewalk_day_night",
+                    "camera_type_breakrule_dial_phone_when_driving": "global_image_guide_camera_bubble_phone_day_night",
+                    "camera_type_breakrule_illegal_parking": "global_image_guide_camera_bubble_parking_day_night",
+                    "camera_type_breakrule_illegal_use_safety_belt": "global_image_guide_camera_bubble_seatbelt_day_night",
+                    "camera_type_breakrule_occupied_bus_lane": "global_image_guide_camera_bubble_busway_day_night",
+                    "camera_type_breakrule_occupied_emergency_lane": "global_image_guide_camera_bubble_emergencylane_day_night",
+                    "camera_type_breakrule_occupied_emergency_lane_en": "global_image_guide_camera_bubble_emergencylane_en_day_night",
+                    "camera_type_breakrule_occupied_non_motorized_lane": "global_image_guide_camera_bubble_bicyclelane_day_night",
+                    "camera_type_breakrule_run_red_light": "global_image_guide_camera_bubble_trafficlight_day_night",
+                    "camera_type_breakrule_speaker": "global_image_guide_camera_bubble_speaker_day_night",
+                    "camera_type_breakrule_violate_prohibited_markings": "global_image_guide_camera_bubble_line_day_night",
+                    "camera_type_car_spacing": "global_image_guide_camera_bubble_space_day_night",
+                    "camera_type_end_number_limit": "global_image_guide_camera_bubble_tail_day_night",
+                    "camera_type_environmental_limit": "global_image_guide_camera_bubble_recycle_day_night",
+                    "camera_type_etc": "global_image_guide_camera_bubble_etc_day_night",
+                    "camera_type_hov_lane": "global_image_guide_camera_bubble_hov_day_night",
+                    "camera_type_illegal_use_light": "global_image_guide_camera_bubble_lamp_day_night",
+                    "camera_type_reverse_driving": "global_image_guide_camera_bubble_reverse_day_night",
+                    "camera_type_railway_crossing": "global_image_guide_camera_bubble_railway_day_night",
+                    "camera_type_speed": "global_image_guide_camera_bubble_speed_day_night",
+                    "camera_type_speed_unknown": "global_image_guide_camera_bubble_speed_unknown_day_night"
+                }
+            }
+        },
+        "marker_info_guide_camera_right_distance": {
+            "anchor": 12,
+            "x_offset": 10,
+            "y_offset": 21,
+            "night_style": {
+                "color": [
+                    {
+                        "distance_text": "#000000"
+                    },
+                    {
+                        "distance_text_unit": "#000000"
+                    },
+                    {
+                        "speed_text": "#000000"
+                    },
+                    {
+                        "speed_text2": "#000000"
+                    },
+                    {
+                        "speed_text3": "#000000"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "distance_text": "#000000"
+                    },
+                    {
+                        "distance_text_unit": "#000000"
+                    },
+                    {
+                        "speed_text": "#000000"
+                    },
+                    {
+                        "speed_text2": "#000000"
+                    },
+                    {
+                        "speed_text3": "#000000"
+                    }
+                ]
+            },
+            "image_style": {
+                "camera_type_image": {
+                    "camera_type_breakrule_courtesy_crossing": "global_image_guide_camera_bubble_sidewalk_day_night",
+                    "camera_type_breakrule_dial_phone_when_driving": "global_image_guide_camera_bubble_phone_day_night",
+                    "camera_type_breakrule_illegal_parking": "global_image_guide_camera_bubble_parking_day_night",
+                    "camera_type_breakrule_illegal_use_safety_belt": "global_image_guide_camera_bubble_seatbelt_day_night",
+                    "camera_type_breakrule_occupied_bus_lane": "global_image_guide_camera_bubble_busway_day_night",
+                    "camera_type_breakrule_occupied_emergency_lane": "global_image_guide_camera_bubble_emergencylane_day_night",
+                    "camera_type_breakrule_occupied_emergency_lane_en": "global_image_guide_camera_bubble_emergencylane_en_day_night",
+                    "camera_type_breakrule_occupied_non_motorized_lane": "global_image_guide_camera_bubble_bicyclelane_day_night",
+                    "camera_type_breakrule_run_red_light": "global_image_guide_camera_bubble_trafficlight_day_night",
+                    "camera_type_breakrule_speaker": "global_image_guide_camera_bubble_speaker_day_night",
+                    "camera_type_breakrule_violate_prohibited_markings": "global_image_guide_camera_bubble_line_day_night",
+                    "camera_type_car_spacing": "global_image_guide_camera_bubble_space_day_night",
+                    "camera_type_end_number_limit": "global_image_guide_camera_bubble_tail_day_night",
+                    "camera_type_environmental_limit": "global_image_guide_camera_bubble_recycle_day_night",
+                    "camera_type_etc": "global_image_guide_camera_bubble_etc_day_night",
+                    "camera_type_hov_lane": "global_image_guide_camera_bubble_hov_day_night",
+                    "camera_type_illegal_use_light": "global_image_guide_camera_bubble_lamp_day_night",
+                    "camera_type_reverse_driving": "global_image_guide_camera_bubble_reverse_day_night",
+                    "camera_type_railway_crossing": "global_image_guide_camera_bubble_railway_day_night",
+                    "camera_type_speed": "global_image_guide_camera_bubble_speed_day_night",
+                    "camera_type_speed_unknown": "global_image_guide_camera_bubble_speed_unknown_day_night"
+                },
+                "camera_type_image2": {
+                    "camera_type_breakrule_courtesy_crossing": "global_image_guide_camera_bubble_sidewalk_day_night",
+                    "camera_type_breakrule_dial_phone_when_driving": "global_image_guide_camera_bubble_phone_day_night",
+                    "camera_type_breakrule_illegal_parking": "global_image_guide_camera_bubble_parking_day_night",
+                    "camera_type_breakrule_illegal_use_safety_belt": "global_image_guide_camera_bubble_seatbelt_day_night",
+                    "camera_type_breakrule_occupied_bus_lane": "global_image_guide_camera_bubble_busway_day_night",
+                    "camera_type_breakrule_occupied_emergency_lane": "global_image_guide_camera_bubble_emergencylane_day_night",
+                    "camera_type_breakrule_occupied_emergency_lane_en": "global_image_guide_camera_bubble_emergencylane_en_day_night",
+                    "camera_type_breakrule_occupied_non_motorized_lane": "global_image_guide_camera_bubble_bicyclelane_day_night",
+                    "camera_type_breakrule_run_red_light": "global_image_guide_camera_bubble_trafficlight_day_night",
+                    "camera_type_breakrule_speaker": "global_image_guide_camera_bubble_speaker_day_night",
+                    "camera_type_breakrule_violate_prohibited_markings": "global_image_guide_camera_bubble_line_day_night",
+                    "camera_type_car_spacing": "global_image_guide_camera_bubble_space_day_night",
+                    "camera_type_end_number_limit": "global_image_guide_camera_bubble_tail_day_night",
+                    "camera_type_environmental_limit": "global_image_guide_camera_bubble_recycle_day_night",
+                    "camera_type_etc": "global_image_guide_camera_bubble_etc_day_night",
+                    "camera_type_hov_lane": "global_image_guide_camera_bubble_hov_day_night",
+                    "camera_type_illegal_use_light": "global_image_guide_camera_bubble_lamp_day_night",
+                    "camera_type_reverse_driving": "global_image_guide_camera_bubble_reverse_day_night",
+                    "camera_type_railway_crossing": "global_image_guide_camera_bubble_railway_day_night",
+                    "camera_type_speed": "global_image_guide_camera_bubble_speed_day_night",
+                    "camera_type_speed_unknown": "global_image_guide_camera_bubble_speed_unknown_day_night"
+                }
+            }
+        },
+        "marker_info_guide_camera_right_distance_penalty": {
+            "anchor": 12,
+            "x_offset": 10,
+            "y_offset": 21,
+            "night_style": {
+                "color": [
+                    {
+                        "distance_text_penalty": "#000000"
+                    },
+                    {
+                        "distance_text_unit": "#000000"
+                    },
+                    {
+                        "speed_text": "#e5000000"
+                    },
+                    {
+                        "speed_text2": "#e5000000"
+                    },
+                    {
+                        "speed_text3": "#e5000000"
+                    },
+                    {
+                        "distance_text_hint": "#E02A19"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "distance_text_penalty": "#000000"
+                    },
+                    {
+                        "distance_text_unit": "#000000"
+                    },
+                    {
+                        "speed_text": "#e5000000"
+                    },
+                    {
+                        "speed_text2": "#e5000000"
+                    },
+                    {
+                        "speed_text3": "#e5000000"
+                    },
+                    {
+                        "distance_text_hint": "#F52B20"
+                    }
+                ]
+            },
+            "image_style": {
+                "camera_type_image": {
+                    "camera_type_breakrule_courtesy_crossing": "global_image_guide_camera_bubble_sidewalk_day_night",
+                    "camera_type_breakrule_dial_phone_when_driving": "global_image_guide_camera_bubble_phone_day_night",
+                    "camera_type_breakrule_illegal_parking": "global_image_guide_camera_bubble_parking_day_night",
+                    "camera_type_breakrule_illegal_use_safety_belt": "global_image_guide_camera_bubble_seatbelt_day_night",
+                    "camera_type_breakrule_occupied_bus_lane": "global_image_guide_camera_bubble_busway_day_night",
+                    "camera_type_breakrule_occupied_emergency_lane": "global_image_guide_camera_bubble_emergencylane_day_night",
+                    "camera_type_breakrule_occupied_emergency_lane_en": "global_image_guide_camera_bubble_emergencylane_en_day_night",
+                    "camera_type_breakrule_occupied_non_motorized_lane": "global_image_guide_camera_bubble_bicyclelane_day_night",
+                    "camera_type_breakrule_run_red_light": "global_image_guide_camera_bubble_trafficlight_day_night",
+                    "camera_type_breakrule_speaker": "global_image_guide_camera_bubble_speaker_day_night",
+                    "camera_type_breakrule_violate_prohibited_markings": "global_image_guide_camera_bubble_line_day_night",
+                    "camera_type_car_spacing": "global_image_guide_camera_bubble_space_day_night",
+                    "camera_type_end_number_limit": "global_image_guide_camera_bubble_tail_day_night",
+                    "camera_type_environmental_limit": "global_image_guide_camera_bubble_recycle_day_night",
+                    "camera_type_etc": "global_image_guide_camera_bubble_etc_day_night",
+                    "camera_type_hov_lane": "global_image_guide_camera_bubble_hov_day_night",
+                    "camera_type_illegal_use_light": "global_image_guide_camera_bubble_lamp_day_night",
+                    "camera_type_reverse_driving": "global_image_guide_camera_bubble_reverse_day_night",
+                    "camera_type_railway_crossing": "global_image_guide_camera_bubble_railway_day_night",
+                    "camera_type_speed": "global_image_guide_camera_bubble_speed_day_night",
+                    "camera_type_speed_unknown": "global_image_guide_camera_bubble_speed_unknown_day_night"
+                },
+                "camera_type_image2": {
+                    "camera_type_breakrule_courtesy_crossing": "global_image_guide_camera_bubble_sidewalk_day_night",
+                    "camera_type_breakrule_dial_phone_when_driving": "global_image_guide_camera_bubble_phone_day_night",
+                    "camera_type_breakrule_illegal_parking": "global_image_guide_camera_bubble_parking_day_night",
+                    "camera_type_breakrule_illegal_use_safety_belt": "global_image_guide_camera_bubble_seatbelt_day_night",
+                    "camera_type_breakrule_occupied_bus_lane": "global_image_guide_camera_bubble_busway_day_night",
+                    "camera_type_breakrule_occupied_emergency_lane": "global_image_guide_camera_bubble_emergencylane_day_night",
+                    "camera_type_breakrule_occupied_emergency_lane_en": "global_image_guide_camera_bubble_emergencylane_en_day_night",
+                    "camera_type_breakrule_occupied_non_motorized_lane": "global_image_guide_camera_bubble_bicyclelane_day_night",
+                    "camera_type_breakrule_run_red_light": "global_image_guide_camera_bubble_trafficlight_day_night",
+                    "camera_type_breakrule_speaker": "global_image_guide_camera_bubble_speaker_day_night",
+                    "camera_type_breakrule_violate_prohibited_markings": "global_image_guide_camera_bubble_line_day_night",
+                    "camera_type_car_spacing": "global_image_guide_camera_bubble_space_day_night",
+                    "camera_type_end_number_limit": "global_image_guide_camera_bubble_tail_day_night",
+                    "camera_type_environmental_limit": "global_image_guide_camera_bubble_recycle_day_night",
+                    "camera_type_etc": "global_image_guide_camera_bubble_etc_day_night",
+                    "camera_type_hov_lane": "global_image_guide_camera_bubble_hov_day_night",
+                    "camera_type_illegal_use_light": "global_image_guide_camera_bubble_lamp_day_night",
+                    "camera_type_reverse_driving": "global_image_guide_camera_bubble_reverse_day_night",
+                    "camera_type_railway_crossing": "global_image_guide_camera_bubble_railway_day_night",
+                    "camera_type_speed": "global_image_guide_camera_bubble_speed_day_night",
+                    "camera_type_speed_unknown": "global_image_guide_camera_bubble_speed_unknown_day_night"
+                }
+            }
+        },
+        "marker_info_guide_camera_left": {
+            "anchor": 13,
+            "x_offset": 10,
+            "y_offset": 21,
+             "day_style": {
+                 "color": [
+                    {
+                        "speed_two_text": "#000000"
+                    },
+                    {
+                        "speed_three_text": "#000000"
+                    }
+                ]
+            },
+             "night_style": {
+                   "color": [
+                    {
+                        "speed_two_text": "#000000"
+                    },
+                    {
+                        "speed_three_text": "#000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_guide_camera_right": {
+            "anchor": 12,
+            "x_offset": 10,
+            "y_offset": 21,
+            "day_style": {
+                 "color": [
+                    {
+                        "speed_two_text": "#000000"
+                    },
+                    {
+                        "speed_three_text": "#000000"
+                    }
+                ]
+            },
+             "night_style": {
+                   "color": [
+                    {
+                        "speed_two_text": "#000000"
+                    },
+                    {
+                        "speed_three_text": "#000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_interval_camera_left_up": {
+            "anchor": 13,
+            "x_offset": 10,
+            "y_offset": 23,
+             "day_style": {
+                 "color": [
+                    {
+                        "interval_camera_text": "#000000"
+                    },
+                    {
+                        "speed_two_text": "#000000"
+                    },
+                    {
+                        "speed_three_text": "#000000"
+                    }
+                ]
+            },
+             "night_style": {
+                   "color": [
+                    {
+                        "interval_camera_text": "#000000"
+                    },
+                    {
+                        "speed_two_text": "#000000"
+                    },
+                    {
+                        "speed_three_text": "#000000"
+                    }
+                ]
+            }
+
+        },
+        "marker_info_interval_camera_right_up": {
+            "anchor": 12,
+            "x_offset": 10,
+            "y_offset": 23,
+            "day_style": {
+                 "color": [
+                    {
+                        "interval_camera_text": "#000000"
+                    },
+                    {
+                        "speed_two_text": "#000000"
+                    },
+                    {
+                        "speed_three_text": "#000000"
+                    }
+                ]
+            },
+             "night_style": {
+                   "color": [
+                    {
+                        "interval_camera_text": "#000000"
+                    },
+                    {
+                        "speed_two_text": "#000000"
+                    },
+                    {
+                        "speed_three_text": "#000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_interval_bubble_left_up": {
+            "anchor":13,
+            "x_offset":18,
+            "y_offset":20,
+            "day_style": {
+                "color": [
+                   {
+                       "interval_camera_text": "#000000"
+                   }
+               ]
+           },
+            "night_style": {
+                  "color": [
+                   {
+                       "interval_camera_text": "#000000"
+                   }
+               ]
+           }
+        },
+        "marker_info_interval_bubble_right_up": {
+            "anchor":12,
+            "x_offset":18,
+            "y_offset":20,
+            "day_style": {
+                "color": [
+                   {
+                       "interval_camera_text": "#000000"
+                   }
+               ]
+           },
+            "night_style": {
+                  "color": [
+                   {
+                       "interval_camera_text": "#000000"
+                   }
+               ]
+           }
+        }
+    },
+    "layer_item_info": {
+        "point_guide_camera_speed_unknown_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "point_camera_left_x_y",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_guide_camera_speed_unknown_left_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "测速 左飘"
+        },
+        "point_guide_camera_speed_unknown_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "point_camera_right_x_y",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_guide_camera_speed_unknown_right_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 1,
+            "name_cn": "测速 右飘"
+        },
+        "point_guide_camera_breakrule_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "point_camera_left_x_y",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_guide_camera_surveillance_left_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 2,
+            "name_cn": "违法 左飘"
+        },
+        "point_guide_camera_breakrule_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "point_camera_right_x_y",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_guide_camera_surveillance_right_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 3,
+            "name_cn": "违法 右飘"
+        },
+        "point_guide_camera_busway_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "point_camera_left_x_y",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_guide_camera_busway_left_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 4,
+            "name_cn": "公交车道 左飘"
+        },
+        "point_guide_camera_busway_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "point_camera_right_x_y",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_guide_camera_busway_right_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 5,
+            "name_cn": "公交车道 右飘"
+        },
+        "point_guide_camera_bicyclelane_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "point_camera_left_x_y",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_guide_camera_bicyclelane_left_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 6,
+            "name_cn": "非机动车道 左飘"
+        },
+        "point_guide_camera_bicyclelane_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "point_camera_right_x_y",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_guide_camera_bicyclelane_right_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 7,
+            "name_cn": "非机动车道 右飘"
+        },
+        "point_guide_camera_trafficLight_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "point_camera_left_x_y",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_guide_camera_trafficlight_left_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 8,
+            "name_cn": "闯红灯拍照 左飘"
+        },
+        "point_guide_camera_trafficLight_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "point_camera_right_x_y",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_guide_camera_trafficlight_right_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 9,
+            "name_cn": "闯红灯拍照 右飘"
+        },
+        "point_guide_camera_surveillance_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "point_camera_left_x_y",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_guide_camera_surveillance_left_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 10,
+            "name_cn": "违章电子眼 左飘"
+        },
+        "point_guide_camera_surveillance_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "point_camera_right_x_y",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_guide_camera_surveillance_right_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 11,
+            "name_cn": "违章电子眼 右飘"
+        },
+        "point_guide_camera_emergencylane_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "point_camera_left_x_y",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_guide_camera_emergencylane_left_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 12,
+            "name_cn": "应急车道 左飘"
+        },
+        "point_guide_camera_emergencylane_left_english": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "point_camera_left_x_y",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_guide_camera_emergencylane_left_english_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 13,
+            "name_cn": "应急车道 左飘 英文"
+        },
+        "point_guide_camera_emergencylane_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "point_camera_right_x_y",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_guide_camera_emergencylane_right_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 14,
+            "name_cn": "应急车道 右飘"
+        },
+        "point_guide_camera_emergencylane_right_english": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_info": "point_camera_right_x_y",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_guide_camera_emergencylane_right_english_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 15,
+            "name_cn": "应急车道 右飘 英文"
+        },
+        "point_guide_camera_left_distance": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_camera_left_distance.xml",
+                    "poi_marker_info": "marker_info_guide_camera_left_distance"
+                }
+            },
+            "index": 16,
+            "name_cn": "单电子眼距离米数 左飘"
+        },
+        "point_guide_camera_left_distance_penalty": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_camera_left_distance_penalty.xml",
+                    "poi_marker_info": "marker_info_guide_camera_left_distance_penalty"
+                }
+            },
+            "index": 17,
+            "name_cn": "单电子眼距离米数警告 左飘"
+        },
+        "point_guide_camera_right_distance": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_camera_right_distance.xml",
+                    "poi_marker_info": "marker_info_guide_camera_right_distance"
+                }
+            },
+            "index": 18,
+            "name_cn": "单电子眼距离米数 右飘"
+        },
+        "point_guide_camera_right_distance_penalty": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_camera_right_distance_penalty.xml",
+                    "poi_marker_info": "marker_info_guide_camera_right_distance_penalty"
+                }
+            },
+            "index": 19,
+            "name_cn": "单电子眼距离米数警告 右飘"
+        },
+        "point_guide_camera_aggregated_left_distance": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_camera_aggregated_left_distance.xml",
+                    "poi_marker_info": "marker_info_guide_camera_left_distance"
+                }
+            },
+            "index": 20,
+            "name_cn": "双电子眼距离米数 左飘"
+        },
+        "point_guide_camera_aggregated_left_distance_penalty": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_camera_aggregated_left_distance_penalty.xml",
+                    "poi_marker_info": "marker_info_guide_camera_left_distance_penalty"
+                }
+            },
+            "index": 21,
+            "name_cn": "双电子眼距离米数警告 左飘"
+        },
+        "point_guide_camera_aggregated_right_distance": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_camera_aggregated_right_distance.xml",
+                    "poi_marker_info": "marker_info_guide_camera_right_distance"
+                }
+            },
+            "index": 22,
+            "name_cn": "双电子眼距离米数 右飘"
+        },
+        "point_guide_camera_aggregated_right_distance_penalty": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_camera_aggregated_right_distance_penalty.xml",
+                    "poi_marker_info": "marker_info_guide_camera_right_distance_penalty"
+                }
+            },
+            "index": 23,
+            "name_cn": "双电子眼距离米数警告 右飘"
+        },
+        "point_guide_camera_speed_two_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_speed_camera_active_left.xml",
+                    "poi_marker_info": "marker_info_guide_camera_left"
+                }
+            },
+            "index": 24,
+            "name_cn": "两位车速 左飘"
+        },
+        "point_guide_camera_speed_two_left_distance": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_camera_speed_left_distance.xml",
+                    "poi_marker_info": "marker_info_guide_camera_left_distance"
+                }
+            },
+            "index": 25,
+            "name_cn": "两位车速距离米数 左飘"
+        },
+        "point_guide_camera_speed_two_left_distance_penalty": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_camera_speed_left_distance_penalty.xml",
+                    "poi_marker_info": "marker_info_guide_camera_left_distance_penalty"
+                }
+            },
+            "index": 26,
+            "name_cn": "两位车速距离米数警告 左飘"
+        },
+        "point_guide_camera_speed_two_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_speed_camera_active_right.xml",
+                    "poi_marker_info": "marker_info_guide_camera_right"
+                }
+            },
+            "index": 27,
+            "name_cn": "两位车速 右飘"
+        },
+        "point_guide_camera_speed_two_right_distance": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_camera_speed_right_distance.xml",
+                    "poi_marker_info": "marker_info_guide_camera_right_distance"
+                }
+            },
+            "index": 28,
+            "name_cn": "两位车速距离米数 右飘"
+        },
+        "point_guide_camera_speed_two_right_distance_penalty": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_camera_speed_right_distance_penalty.xml",
+                    "poi_marker_info": "marker_info_guide_camera_right_distance_penalty"
+                }
+            },
+            "index": 29,
+            "name_cn": "两位车速距离米数警告 右飘"
+        },
+        "point_guide_camera_speed_three_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_speed_camera_active_left.xml",
+                    "poi_marker_info": "marker_info_guide_camera_left"
+                }
+            },
+            "index": 30,
+            "name_cn": "三位车速 左飘"
+        },
+        "point_guide_camera_speed_three_left_distance": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_camera_speed_left_distance.xml",
+                    "poi_marker_info": "marker_info_guide_camera_left_distance"
+                }
+            },
+            "index": 31,
+            "name_cn": "三位车速距离米数 左飘"
+        },
+        "point_guide_camera_speed_three_left_distance_penalty": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_camera_speed_left_distance_penalty.xml",
+                    "poi_marker_info": "marker_info_guide_camera_left_distance_penalty"
+                }
+            },
+            "index": 32,
+            "name_cn": "三位车速距离米数警告 左飘"
+        },
+        "point_guide_camera_speed_three_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_speed_camera_active_right.xml",
+                    "poi_marker_info": "marker_info_guide_camera_right"
+                }
+            },
+            "index": 33,
+            "name_cn": "三位车速 右飘"
+        },
+        "point_guide_camera_speed_three_right_distance": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_camera_speed_right_distance.xml",
+                    "poi_marker_info": "marker_info_guide_camera_right_distance"
+                }
+            },
+            "index": 34,
+            "name_cn": "三位车速距离米数 右飘"
+        },
+        "point_guide_camera_speed_three_right_distance_penalty": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_camera_speed_right_distance_penalty.xml",
+                    "poi_marker_info": "marker_info_guide_camera_right_distance_penalty"
+                }
+            },
+            "index": 35,
+            "name_cn": "三位车速距离米数警告 右飘"
+        },
+        "point_guide_interval_camera_start_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_interval_camera_left.xml",
+                    "poi_marker_info": "marker_info_interval_camera_left_up"
+                }
+            },
+            "index": 36,
+            "name_cn": "区间起点 左飘"
+        },
+        "point_guide_interval_camera_start_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_interval_camera_right.xml",
+                    "poi_marker_info": "marker_info_interval_camera_right_up"
+                }
+            },
+            "index": 37,
+            "name_cn": "区间起点 右飘"
+        },
+        "point_guide_interval_camera_end_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_interval_camera_left.xml",
+                    "poi_marker_info": "marker_info_interval_camera_left_up"
+                }
+            },
+            "index": 38,
+            "name_cn": "区间终点 左飘"
+        },
+        "point_guide_interval_camera_end_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_interval_camera_right.xml",
+                    "poi_marker_info": "marker_info_interval_camera_right_up"
+                }
+            },
+            "index": 39,
+            "name_cn": "区间终点 右飘"
+        },
+        "point_guide_interval_camera_start_left_english": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_interval_camera_left.xml",
+                    "poi_marker_info": "marker_info_interval_camera_left_up"
+                }
+            },
+            "index": 40,
+            "name_cn": "区间起点 左飘 英文"
+        },
+        "point_guide_interval_camera_start_right_english": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_interval_camera_right.xml",
+                    "poi_marker_info": "marker_info_interval_camera_right_up"
+                }
+            },
+            "index": 41,
+            "name_cn": "区间起点 右飘 英文"
+        },
+        "point_guide_interval_camera_end_left_english": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_interval_camera_left.xml",
+                    "poi_marker_info": "marker_info_interval_camera_left_up"
+                }
+            },
+            "index": 42,
+            "name_cn": "区间终点 左飘 英文"
+        },
+        "point_guide_interval_camera_end_right_english": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_interval_camera_right.xml",
+                    "poi_marker_info": "marker_info_interval_camera_right_up"
+                }
+            },
+            "index": 43,
+            "name_cn": "区间终点 右飘 英文"
+        },
+        "point_guide_interval_camera_start_left_traditional": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_interval_camera_left.xml",
+                    "poi_marker_info": "marker_info_interval_camera_left_up"
+                }
+            },
+            "index": 44,
+            "name_cn": "区间起点 左飘 繁体"
+        },
+        "point_guide_interval_camera_start_right_traditional": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_interval_camera_right.xml",
+                    "poi_marker_info": "marker_info_interval_camera_right_up"
+                }
+            },
+            "index": 45,
+            "name_cn": "区间起点 右飘 繁体"
+        },
+        "point_guide_interval_camera_end_left_traditional": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_interval_camera_left.xml",
+                    "poi_marker_info": "marker_info_interval_camera_left_up"
+                }
+            },
+            "index": 46,
+            "name_cn": "区间终点 左飘 繁体"
+        },
+        "point_guide_interval_camera_end_right_traditional": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_interval_camera_right.xml",
+                    "poi_marker_info": "marker_info_interval_camera_right_up"
+                }
+            },
+            "index": 47,
+            "name_cn": "区间终点 右飘 繁体"
+        },
+        "point_guide_interval_bubble_start_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_interval_bubble_shared_up_lr.xml",
+                    "poi_marker_info": "marker_info_interval_bubble_left_up",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "div_direction_bg": "global_image_navi_interval_camera_nospeed_bg_left_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 48,
+            "name_cn": "离线区间起点 左飘"
+        },
+        "point_guide_interval_bubble_start_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_interval_bubble_shared_up_lr.xml",
+                    "poi_marker_info": "marker_info_interval_bubble_right_up",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "div_direction_bg": "global_image_navi_interval_camera_nospeed_bg_right_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 49,
+            "name_cn": "离线区间起点 右飘"
+        },
+        "point_guide_interval_bubble_end_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_interval_bubble_shared_up_lr.xml",
+                    "poi_marker_info": "marker_info_interval_bubble_left_up",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "div_direction_bg": "global_image_navi_interval_camera_nospeed_bg_left_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 50,
+            "name_cn": "离线区间终点 左飘"
+        },
+        "point_guide_interval_bubble_end_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_interval_bubble_shared_up_lr.xml",
+                    "poi_marker_info": "marker_info_interval_bubble_right_up",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "div_direction_bg": "global_image_navi_interval_camera_nospeed_bg_right_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 51,
+            "name_cn": "离线区间终点 右飘"
+        }
+    }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="@dimen/auto_dimen2_8"/>
+    <gradient
+        android:startColor="#334251"
+        android:endColor="#ff334251"
+        android:angle="270"
+        android:type="linear"/>
+    <stroke
+        android:width="@dimen/custom_btn_longtrip_1_bg_strokewidth_selected_night"
+        android:color="@color/route_primary_night"/>
+</shape>

@@ -1,0 +1,18 @@
+{
+    "id": 7011,
+    "layer_priority": {
+        "draw_priority": 140,
+        "sub_priority": 1300
+    },
+    "layer_scale": {
+        "min_scale": 1,
+        "max_scale": 22
+    },
+    "layer_filter": {
+        "enable": 0,
+        "type": 1
+    },
+    "layer_collision": 1,
+    "enable_click": 1,
+    "item": "PointLayerItem"
+}

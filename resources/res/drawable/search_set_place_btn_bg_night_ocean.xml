@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/search_home_clear_history_bg_pressed_night_ocean"/>
+    <item
+        android:state_enabled="false"
+        android:drawable="@drawable/search_btn_disabled_night_ocean"/>
+    <item
+        android:state_enabled="true"
+        android:drawable="@drawable/search_home_clear_history_bg_night_ocean"/>
+</selector>

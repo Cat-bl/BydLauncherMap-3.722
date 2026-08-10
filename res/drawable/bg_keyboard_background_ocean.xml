@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/auto_dimen2_16" />
+    <gradient android:startColor="@color/keyboard_view_background_color_start_night_ocean" android:endColor="@color/keyboard_view_background_color_end_night_ocean" android:angle="180.0" android:centerX="0.5" />
+</shape>

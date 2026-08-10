@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/cl_custom_index_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:designHeight="600" app:designWidth="1024"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.autonavi.skin.view.SkinTextView android:textSize="@dimen/auto_font_size_18" android:textColor="@color/custom_text_450_2_textcolor_day_selector" android:gravity="center" android:id="@id/stv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/custom_index_bar_text" app:textColor4Night="@color/custom_text_450_2_textcolor_night_selector" app:textColor4Skin="@color/custom_text_450_2_textcolor_day_selector" />
+</merge>

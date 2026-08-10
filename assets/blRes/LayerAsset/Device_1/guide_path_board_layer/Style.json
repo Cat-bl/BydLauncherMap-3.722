@@ -1,0 +1,48 @@
+{
+    "marker_info": {
+        "marker_info_path_board_left": {
+            "anchor": 13,
+            "x_offset": 20
+        },
+        "marker_info_path_board_right": {
+            "anchor": 12,
+            "x_offset": 20
+        }
+    },
+    "layer_item_info": {
+        "point_guide_path_board_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_path_board_label.xml",
+                    "poi_marker_info": "marker_info_path_board_left",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "bg_div": "global_image_autonavi_roadname_left_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "左飘"
+        },
+        "point_guide_path_board_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_path_board_label.xml",
+                    "poi_marker_info": "marker_info_path_board_right",
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "bg_div": "global_image_autonavi_roadname_right_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 1,
+            "name_cn": "右飘"
+        }
+    }
+}

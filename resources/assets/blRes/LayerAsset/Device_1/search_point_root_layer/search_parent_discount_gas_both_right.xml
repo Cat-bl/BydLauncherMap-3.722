@@ -1,0 +1,17 @@
+<div id="click_hotspot" style="display:flex;flex-direction:row;justify-content:flex-end;align-items:center;margin-top:10px;margin-right:10px;margin-bottom:10px;margin-left:10px;width:auto;height:auto;">
+  <image id="brand_image" style="width:45px;height:54px;is_main:Y;" src="global_image_navi_along_search_gas_station_icon2_day_night" />
+  <div id="div_line_all" style="display:flex;flex-direction:column;justify-content:center;align-items:flex-start;margin-left:8px;">
+    <label id="name_text" style="margin-top:-3px;margin-bottom:0px;font-size:22px;color:#171717;font-family:SDK_Font-Medium;text-stroke:2px #E6ffffff;line-clamp:2;max-width:180px;line-spacing:-4;" lines="1">加油站加油站加油站加油站</label>
+    <div id="div_line_second" style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-top:-2px;margin-left:-1px;">
+      <div id="div_line_discount" style="display:flex;flex-direction:row;justify-content:center;align-items:center;margin-right:6px;width:auto;height:28px;background-image:global_image_bubble_sale2_day_night;">
+        <label id="id_discount" style="margin-right:6px;margin-left:6px;font-size:14px;color:#ffffff;font-family:SDK_Font-Medium;" lines="1">优惠</label>
+      </div>
+      <div id="div_line_price" style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center;">
+        <label id="id_currency" style="margin-top:2px;margin-right:3px;font-size:14px;color:#ff6543;font-family:SDK_Font-Medium;text-stroke:2px #E6ffffff;line-clamp:2;" lines="1">¥</label>
+        <label id="id_price" style="margin-right:3px;font-size:18px;color:#ff6543;font-family:SDK_Font-Bold;text-stroke:2px #E6ffffff;line-clamp:2;" lines="1">7.43</label>
+        <label id="id_unit" style="margin-top:2px;font-size:14px;color:#ff6543;font-family:SDK_Font-Medium;text-stroke:2px #E6ffffff;line-clamp:2;" lines="1">/L</label>
+      </div>
+    </div>
+  </div>
+</div>
+

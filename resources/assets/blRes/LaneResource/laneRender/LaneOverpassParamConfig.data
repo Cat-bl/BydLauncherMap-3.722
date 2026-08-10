@@ -1,0 +1,213 @@
+{
+  "DayNormalOverpassParam": {
+    "RoadAlpha": 1,
+    "LaneAlpha": 1,
+    "FenceAlpha": 1,                
+    "MakerAlpha": 1,   
+    "LaneRuleAlpha": 1,
+    "GreenBeltAlpha": 1,
+    "PierAlpha": 1,
+    "ZebraLineAlpha": 1,
+    "DiverterStripAlpha": 1,
+    "SafeIslandAlpha": 1,
+    "OverlayAlpha": 1,
+    "OptionalOverlayAlpha": 1,
+    "EventElementAlpha": 1
+  }, 
+  "DayNearOverpassParam": {
+    "RoadAlpha": 0.1,
+    "LaneAlpha": 0,
+    "FenceAlpha": 0.02,                
+    "MakerAlpha": 0,   
+    "LaneRuleAlpha": 0,
+    "GreenBeltAlpha": 0.0,
+    "PierAlpha": 0.0,
+    "ZebraLineAlpha": 0.0,
+    "DiverterStripAlpha": 0.0,
+    "SafeIslandAlpha": 0.0,
+    "OverlayAlpha": 1,
+    "OptionalOverlayAlpha": 0.1,
+    "EventElementAlpha": 0
+  }, 
+  "DaySelfOverpassParam": {
+    "RoadAlpha": 0.6,
+    "LaneAlpha": 0,
+    "FenceAlpha": 0.4,                
+    "MakerAlpha": 0,   
+    "LaneRuleAlpha": 0,
+    "GreenBeltAlpha":  0,
+    "PierAlpha": 0.0,
+    "ZebraLineAlpha": 0.0,
+    "DiverterStripAlpha": 0.0,
+    "SafeIslandAlpha": 0,
+    "OverlayAlpha": 0.65,
+    "OptionalOverlayAlpha": 0.6,
+    "EventElementAlpha": 0
+  },
+  "NightNormalOverpassParam": {
+    "RoadAlpha": 1,
+    "LaneAlpha": 1,
+    "FenceAlpha": 1,                
+    "MakerAlpha": 1,   
+    "LaneRuleAlpha": 1,
+    "GreenBeltAlpha": 1,
+    "PierAlpha": 1,
+    "ZebraLineAlpha": 1,
+    "DiverterStripAlpha": 1,
+    "SafeIslandAlpha": 1,
+    "OverlayAlpha": 1,
+    "OptionalOverlayAlpha": 1,
+    "EventElementAlpha": 1
+  }, 
+  "NightNearOverpassParam": {
+    "RoadAlpha": 0.1,
+    "LaneAlpha": 0,
+    "FenceAlpha": 0.02,                
+    "MakerAlpha": 0,   
+    "LaneRuleAlpha": 0,
+    "GreenBeltAlpha": 0.0,
+    "PierAlpha": 0.0,
+    "ZebraLineAlpha": 0.0,
+    "DiverterStripAlpha": 0.0,
+    "SafeIslandAlpha": 0.0,
+    "OverlayAlpha": 1,
+    "OptionalOverlayAlpha": 0.1,
+    "EventElementAlpha": 0
+  }, 
+  "NightSelfOverpassParam": {
+    "RoadAlpha": 0.6,
+    "LaneAlpha": 0,
+    "FenceAlpha": 0.6,                
+    "MakerAlpha": 0,   
+    "LaneRuleAlpha": 0,
+    "GreenBeltAlpha":  0,
+    "PierAlpha": 0.0,
+    "ZebraLineAlpha": 0.0,
+    "DiverterStripAlpha": 0.0,
+    "SafeIslandAlpha": 0,
+    "OverlayAlpha": 0.1,
+    "OptionalOverlayAlpha": 0.1,
+    "EventElementAlpha": 0
+  },
+  "DayNoiseAlpha": {
+    "NormalLaneAlpha": 0.12,
+    "CenterLaneAlpha": 0.25,
+    "ZebraCrossingAlpha": 0.25,                
+    "DiverterStripAlpha":0.0,   
+    "MarkerAlpha": 0.0,
+    "LaneRuleAlpha": 0.0
+  },
+  "DayRelativeAlpha": {
+    "NormalLaneAlpha": 0.12,
+    "CenterLaneAlpha": 0.25,
+    "ZebraCrossingAlpha": 0.25,                
+    "DiverterStripAlpha":0.2,   
+    "MarkerAlpha": 0.1,
+    "LaneRuleAlpha": 0.0
+  },
+  "DayHighLightAlpha": {
+    "NormalLaneAlpha": 1.0,
+    "CenterLaneAlpha": 1.0,
+    "ZebraCrossingAlpha": 0.7,                
+    "DiverterStripAlpha":1.0,   
+    "MarkerAlpha": 1.0,
+    "LaneRuleAlpha": 1.0
+  },
+   "NightNoiseAlpha": {
+    "NormalLaneAlpha": 0.1,
+    "CenterLaneAlpha": 0.2,
+    "ZebraCrossingAlpha": 0.2,                
+    "DiverterStripAlpha":0.0,   
+    "MarkerAlpha": 0.0,
+    "LaneRuleAlpha": 0.0
+  },
+  "NightRelativeAlpha": {
+    "NormalLaneAlpha": 0.1,
+    "CenterLaneAlpha": 0.2,
+    "ZebraCrossingAlpha": 0.2,                
+    "DiverterStripAlpha":0.15,   
+    "MarkerAlpha": 0.1,
+    "LaneRuleAlpha": 0.0
+  },
+  "NightHighLightAlpha": {
+    "NormalLaneAlpha": 0.9,
+    "CenterLaneAlpha": 0.9,
+    "ZebraCrossingAlpha": 0.5,                
+    "DiverterStripAlpha":0.8,   
+    "MarkerAlpha": 0.8,
+    "LaneRuleAlpha": 0.8
+  },
+  "DayRoadSideNoiseColor": 4291348680,
+  "NightRoadSideNoiseColor": 4287401100
+}
+
+/* 注释 
+  "NormalOverpassParam": {   普通虚化透明度
+    "RoadAlpha": 0.15, # 路面透明度（默认透明度）
+    "LaneAlpha": 0.15, # 车道线透明度
+    "FenceAlpha": 0.15,   # 护栏、侧包边透明度                
+    "MakerAlpha": 0.15,    # 箭头透明度
+    "LaneRuleAlpha": 0.15，  # 道路标识透明度
+    "GreenBeltAlpha":  0.6,  # 绿化带透明度
+    "PierAlpha": 0.0,  # 桥墩透明度
+    "ZebraLineAlpha": 0.0,  # 斑马线透明度
+    "DiverterStripAlpha": 0.0,  # 导流带透明度
+    "SafeIslandAlpha": 0.6,   # 安全岛透明度
+    "OverlayAlpha": 0.6 # 引导面透明度
+    "OptionalOverlayAlpha": # 备选路引导面透明度
+    "EventElementAlpha": # 在建元素透明度
+  }, 
+  "NearOverpassParam": {    近处非自压虚化透明度
+    "RoadAlpha": 0.15, # 路面透明度（默认透明度）
+    "LaneAlpha": 0.15, # 车道线透明度
+    "FenceAlpha": 0.15,   # 护栏、侧包边透明度                
+    "MakerAlpha": 0.15,    # 箭头透明度
+    "LaneRuleAlpha": 0.15  # 道路标识透明度
+    "GreenBeltAlpha":  0.6, # 绿化带透明度
+    "PierAlpha": 0.0,    # 桥墩透明度
+    "ZebraLineAlpha": 0.0,  # 斑马线透明度
+    "DiverterStripAlpha": 0.0,  # 导流带透明度
+    "SafeIslandAlpha": 0.6,   # 安全岛透明度
+    "OverlayAlpha": 0.6 # 引导面透明度
+    "OptionalOverlayAlpha": # 备选路引导面透明度
+    "EventElementAlpha": # 在建元素透明度
+  },
+  "SelfOverpassParam": {    近处自压虚化透明度
+    "RoadAlpha": 0.15, # 路面透明度（默认透明度）
+    "LaneAlpha": 0.15, # 车道线透明度
+    "FenceAlpha": 0.15,   # 护栏、侧包边透明度                
+    "MakerAlpha": 0.15,    # 箭头透明度
+    "LaneRuleAlpha": 0.15  # 道路标识透明度
+    "GreenBeltAlpha":  0.6, # 绿化带透明度
+    "PierAlpha": 0.0,   # 桥墩透明度
+    "ZebraLineAlpha": 0.0,   # 斑马线透明度
+    "DiverterStripAlpha": 0.0,  # 导流带透明度
+    "SafeIslandAlpha": 0.6,   # 安全岛透明度
+    "OverlayAlpha": 0.6 # 引导面透明度
+    "OptionalOverlayAlpha": # 备选路引导面透明度
+    "EventElementAlpha": # 在建元素透明度
+  },
+  "NoiseAlpha": {     噪声alpha
+    "NormalLaneAlpha": 0.15,   普通车道线
+    "CenterLaneAlpha": 0.25,   上下行车道线
+    "ZebraCrossingAlpha": 0.25,  斑马线          
+    "DiverterStripAlpha":0.0,   导流带
+    "MarkerAlpha": 0.0   箭头
+  },
+  "RelativeAlpha": {   相关alpha
+    "NormalLaneAlpha": 0.15, 普通车道线
+    "CenterLaneAlpha": 0.25, 上下行车道线
+    "ZebraCrossingAlpha": 0.25,  斑马线               
+    "DiverterStripAlpha":0.15,    导流带
+    "MarkerAlpha": 0.15 箭头
+  },
+  "HighLightAlpha": {   高亮alpha
+    "NormalLaneAlpha": 1.0, 普通车道线
+    "CenterLaneAlpha": 1.0, 上下行车道线
+    "ZebraCrossingAlpha": 0.5, 斑马线                
+    "DiverterStripAlpha":1.0,   导流带
+    "MarkerAlpha": 1.0 箭头
+  },
+  "DayRoadSideNoiseColor":    白天包边噪声颜色
+  "NightRoadSideNoiseColor":  黑天包边噪声颜色
+*/

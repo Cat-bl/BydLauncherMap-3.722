@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.adapter.container.ACGasInfoIndexView android:id="@id/ac_gas_info" android:layout_width="wrap_content" android:layout_height="wrap_content" app:interface_key="gas_info" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

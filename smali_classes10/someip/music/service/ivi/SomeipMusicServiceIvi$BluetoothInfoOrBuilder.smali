@@ -1,0 +1,25 @@
+.class public interface abstract Lsomeip/music/service/ivi/SomeipMusicServiceIvi$BluetoothInfoOrBuilder;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/protobuf/MessageLiteOrBuilder;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lsomeip/music/service/ivi/SomeipMusicServiceIvi;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "BluetoothInfoOrBuilder"
+.end annotation
+
+
+# virtual methods
+.method public abstract getOutput()Lsomeip/music/service/ivi/SomeipMusicServiceIvi$bluetoothInfoStruct;
+.end method
+
+.method public abstract hasOutput()Z
+.end method

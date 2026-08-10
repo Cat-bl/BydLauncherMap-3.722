@@ -1,0 +1,618 @@
+{
+    "marker_info": {
+        "marker_info_search_child_bus_station": {
+            "day_style": {
+                "color": [
+                    {
+                        "child_name": "#f19737"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "child_name": "#f19737"
+                    }
+                ]
+            },
+            "anchor": 9,
+            "x_offset": 0.485,
+            "y_offset": 0.95
+        },
+        "marker_info_point_center_up": {
+            "anchor": 9,
+            "x_ratio": 0.5,
+            "y_ratio": 0.9
+        },
+        "marker_info_search_child_charge_station_left": {
+            "anchor": 13,
+            "x_offset": 16,
+            "y_offset": 0,
+            "day_style": {
+                "color": [
+                    {
+                        "child_name": "#4C4C4C"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #e6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "child_name": "#989898"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #e6000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_search_child_charge_station_focus": {
+            "anchor": 10,
+            "x_offset": 95,
+            "y_offset": 76,
+            "day_style": {
+                "color": [
+                    {
+                        "child_name": "#4C4C4C"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #e6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "child_name": "#989898"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #e6000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_search_child_charge_station_right": {
+            "anchor": 12,
+            "x_offset": 16,
+            "y_offset": 0,
+            "day_style": {
+                "color": [
+                    {
+                        "child_name": "#4C4C4C"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #e6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "child_name": "#989898"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #e6000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_search_child_charge_station_left_2": {
+            "anchor": 13,
+            "x_offset": 16,
+            "y_offset": 7,
+            "day_style": {
+                "color": [
+                    {
+                        "child_name": "#4C4C4C"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #e6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "child_name": "#989898"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #e6000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_search_child_charge_station_right_2": {
+            "anchor": 12,
+            "x_offset": 16,
+            "y_offset": 7,
+            "day_style": {
+                "color": [
+                    {
+                        "child_name": "#4C4C4C"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #e6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "child_name": "#989898"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #e6000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_search_child_charge_station_mini_point": {
+            "anchor": 9,
+            "x_ratio": 0.485,
+            "y_ratio": 0.9
+        },
+        "marker_info_search_child_default_left": {
+            "anchor": 13,
+            "x_offset": 16,
+            "y_offset": 0,
+            "day_style": {
+                "color": [
+                    {
+                        "child_name": "#4C4C4C"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #e6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "child_name": "#989898"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #e6000000"
+                    }
+                ]
+            },
+            "image_style": {
+                "child_type": {
+                    "child_door": "global_image_child_door2_day_night",
+                    "child_airport": "global_image_child_airport2_day_night",
+                    "child_park": "global_image_child_park2_day_night",
+                    "child_ticket": "global_image_child_ticket2_day_night",
+                    "child_fly": "global_image_child_fly2_day_night",
+                    "child_arrive": "global_image_child_arrive2_day_night",
+                    "child_in": "global_image_child_in2_day_night",
+                    "child_out": "global_image_child_exist2_day_night",
+                    "child_subway": "global_image_child_subway2_day_night",
+                    "child_more": "global_image_child_more2_day_night"
+                }
+            }
+        },
+        "marker_info_search_child_default_focus": {
+            "anchor": 10,
+            "x_offset": 95,
+            "y_offset": 76,
+            "day_style": {
+                "color": [
+                    {
+                        "child_name": "#4C4C4C"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #e6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "child_name": "#989898"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #e6000000"
+                    }
+                ]
+            },
+            "image_style": {
+                "child_type": {
+                    "child_door": "global_image_child_door2_big_day_night",
+                    "child_airport": "global_image_child_airport2_big_day_night",
+                    "child_park": "global_image_child_park2_big_day_night",
+                    "child_ticket": "global_image_child_ticket2_big_day_night",
+                    "child_fly": "global_image_child_fly2_big_day_night",
+                    "child_arrive": "global_image_child_arrive2_big_day_night",
+                    "child_in": "global_image_child_in2_big_day_night",
+                    "child_out": "global_image_child_exist2_big_day_night",
+                    "child_subway": "global_image_child_subway2_big_day_night",
+                    "child_more": "global_image_child_more2_big_day_night"
+                }
+            }
+        },
+        "marker_info_search_child_default_right": {
+            "anchor": 12,
+            "x_offset": 16,
+            "y_offset": 0,
+            "day_style": {
+                "color": [
+                    {
+                        "child_name": "#4C4C4C"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #e6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "child_name": "#989898"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #e6000000"
+                    }
+                ]
+            },
+            "image_style": {
+                "child_type": {
+                    "child_door": "global_image_child_door2_day_night",
+                    "child_airport": "global_image_child_airport2_day_night",
+                    "child_park": "global_image_child_park2_day_night",
+                    "child_ticket": "global_image_child_ticket2_day_night",
+                    "child_fly": "global_image_child_fly2_day_night",
+                    "child_arrive": "global_image_child_arrive2_day_night",
+                    "child_in": "global_image_child_in2_day_night",
+                    "child_out": "global_image_child_exist2_day_night",
+                    "child_subway": "global_image_child_subway2_day_night",
+                    "child_more": "global_image_child_more2_day_night"
+                }
+            }
+        },
+        "marker_info_search_child_default_left_2": {
+            "anchor": 13,
+            "x_offset": 16,
+            "y_offset": 7,
+            "day_style": {
+                "color": [
+                    {
+                        "child_name": "#4C4C4C"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #e6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "child_name": "#989898"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #e6000000"
+                    }
+                ]
+            },
+            "image_style": {
+                "child_type": {
+                    "child_door": "global_image_child_door2_day_night",
+                    "child_airport": "global_image_child_airport2_day_night",
+                    "child_park": "global_image_child_park2_day_night",
+                    "child_ticket": "global_image_child_ticket2_day_night",
+                    "child_fly": "global_image_child_fly2_day_night",
+                    "child_arrive": "global_image_child_arrive2_day_night",
+                    "child_in": "global_image_child_in2_day_night",
+                    "child_out": "global_image_child_exist2_day_night",
+                    "child_subway": "global_image_child_subway2_day_night",
+                    "child_more": "global_image_child_more2_day_night"
+                }
+            }
+        },
+        "marker_info_search_child_default_right_2": {
+            "anchor": 12,
+            "x_offset": 16,
+            "y_offset": 7,
+            "day_style": {
+                "color": [
+                    {
+                        "child_name": "#4C4C4C"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #e6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "child_name": "#989898"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #e6000000"
+                    }
+                ]
+            },
+            "image_style": {
+                "child_type": {
+                    "child_door": "global_image_child_door2_day_night",
+                    "child_airport": "global_image_child_airport2_day_night",
+                    "child_park": "global_image_child_park2_day_night",
+                    "child_ticket": "global_image_child_ticket2_day_night",
+                    "child_fly": "global_image_child_fly2_day_night",
+                    "child_arrive": "global_image_child_arrive2_day_night",
+                    "child_in": "global_image_child_in2_day_night",
+                    "child_out": "global_image_child_exist2_day_night",
+                    "child_subway": "global_image_child_subway2_day_night",
+                    "child_more": "global_image_child_more2_day_night"
+                }
+            }
+        },
+        "marker_info_search_child_default_mini_point": {
+            "anchor": 9,
+            "x_ratio": 0.485,
+            "y_ratio": 0.9,
+            "image_style": {
+                "mini_point": {
+                    "child_door": "global_image_child_door_mini_point_day_night",
+                    "child_airport": "global_image_navi_along_search_gas_station_icon2_mini_point_day_night",
+                    "child_park": "global_image_navi_along_search_gas_station_icon2_mini_point_day_night",
+                    "child_ticket": "global_image_navi_along_search_gas_station_icon2_mini_point_day_night",
+                    "child_fly": "global_image_navi_along_search_gas_station_icon2_mini_point_day_night",
+                    "child_arrive": "global_image_navi_along_search_gas_station_icon2_mini_point_day_night",
+                    "child_in": "global_image_navi_along_search_gas_station_icon2_mini_point_day_night",
+                    "child_out": "global_image_navi_along_search_gas_station_icon2_mini_point_day_night",
+                    "child_subway": "global_image_navi_along_search_gas_station_icon2_mini_point_day_night",
+                    "child_more": "global_image_navi_along_search_gas_station_icon2_mini_point_day_night"
+                }
+            }
+        },
+        "marker_info_search_child_mini_point_focus": {
+            "anchor": 10,
+            "x_offset": 95,
+            "y_offset": 76,
+            "day_style": {
+                "color": [
+                    {
+                        "child_name": "#4C4C4C"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #e6ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "child_name": "#989898"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "child_name": "2px #e6000000"
+                    }
+                ]
+            },
+            "image_style": {
+                "mini_point": {
+                    "child_door": "global_image_child_door2_big_day_night",
+                    "child_airport": "global_image_child_airport2_big_day_night",
+                    "child_park": "global_image_child_park2_big_day_night",
+                    "child_ticket": "global_image_child_ticket2_big_day_night",
+                    "child_fly": "global_image_child_fly2_big_day_night",
+                    "child_arrive": "global_image_child_arrive2_big_day_night",
+                    "child_in": "global_image_child_in2_big_day_night",
+                    "child_out": "global_image_child_exist2_big_day_night",
+                    "child_subway": "global_image_child_subway2_big_day_night",
+                    "child_more": "global_image_child_more2_big_day_night"
+                }
+            }
+        }
+    },
+    "layer_item_info": {
+        "point_search_child_bus_station": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_child_bus_station.xml",
+                    "poi_marker_info": "marker_info_search_child_bus_station"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_child_bus_station_focus.xml",
+                    "poi_marker_info": "marker_info_search_child_bus_station",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "click_bubble_station_image": "global_image_b_poi_red_hl_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "公交站"
+        },
+        "point_search_child_charge_station_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_child_charge_station_left.xml",
+                    "poi_marker_info": "marker_info_search_child_charge_station_left"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_child_charge_station_focus.xml",
+                    "poi_marker_info": "marker_info_search_child_charge_station_focus"
+                }
+            },
+            "index": 1,
+            "name_cn": "充电站 左飘"
+        },
+        "point_search_child_charge_station_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_child_charge_station_right.xml",
+                    "poi_marker_info": "marker_info_search_child_charge_station_right"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_child_charge_station_focus.xml",
+                    "poi_marker_info": "marker_info_search_child_charge_station_focus"
+                }
+            },
+            "index": 2,
+            "name_cn": "充电站 右飘"
+        },
+        "point_search_child_charge_station_left_2": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_child_charge_station_left.xml",
+                    "poi_marker_info": "marker_info_search_child_charge_station_left_2"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_child_charge_station_focus.xml",
+                    "poi_marker_info": "marker_info_search_child_charge_station_focus"
+                }
+            },
+            "index": 3,
+            "name_cn": "充电站 左飘2"
+        },
+        "point_search_child_charge_station_right_2": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_child_charge_station_right.xml",
+                    "poi_marker_info": "marker_info_search_child_charge_station_right_2"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_child_charge_station_focus.xml",
+                    "poi_marker_info": "marker_info_search_child_charge_station_focus"
+                }
+            },
+            "index": 4,
+            "name_cn": "充电站 右飘2"
+        },
+        "point_search_child_charge_station_mini_point": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_child_charge_station_mini_point.xml",
+                    "poi_marker_info": "marker_info_search_child_charge_station_mini_point"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_child_charge_station_focus.xml",
+                    "poi_marker_info": "marker_info_search_child_charge_station_focus"
+                }
+            },
+            "index": 5,
+            "name_cn": "充电站 麻点"
+        },
+        "point_search_child_default_left": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_child_left.xml",
+                    "poi_marker_info": "marker_info_search_child_default_left"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_child_focus.xml",
+                    "poi_marker_info": "marker_info_search_child_default_focus"
+                }
+            },
+            "index": 6,
+            "name_cn": "默认 左飘"
+        },
+        "point_search_child_default_right": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_child_right.xml",
+                    "poi_marker_info": "marker_info_search_child_default_right"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_child_focus.xml",
+                    "poi_marker_info": "marker_info_search_child_default_focus"
+                }
+            },
+            "index": 7,
+            "name_cn": "默认 右飘"
+        },
+        "point_search_child_default_left_2": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_child_left.xml",
+                    "poi_marker_info": "marker_info_search_child_default_left_2"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_child_focus.xml",
+                    "poi_marker_info": "marker_info_search_child_default_focus"
+                }
+            },
+            "index": 8,
+            "name_cn": "默认 左飘2"
+        },
+        "point_search_child_default_right_2": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_child_right.xml",
+                    "poi_marker_info": "marker_info_search_child_default_right_2"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_child_focus.xml",
+                    "poi_marker_info": "marker_info_search_child_default_focus"
+                }
+            },
+            "index": 9,
+            "name_cn": "默认 右飘2"
+        },
+        "point_search_child_default_mini_point": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "search_child_mini_point.xml",
+                    "poi_marker_info": "marker_info_search_child_default_mini_point"
+                },
+                "focus_style": {
+                    "poi_marker_id": "search_child_mini_point_focus.xml",
+                    "poi_marker_info": "marker_info_search_child_mini_point_focus"
+                }
+            },
+            "index": 10,
+            "name_cn": "默认 麻点"
+        }
+    }
+}

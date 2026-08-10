@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.autonavi.skin.view.SkinImageView android:id="@id/siv_icon_dnp" android:layout_width="@dimen/auto_dimen2_16" android:layout_height="@dimen/auto_dimen2_16" android:layout_marginStart="@dimen/auto_dimen2_4" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/stv_auto_panel_content_traffic_des" app:layout_constraintTop_toTopOf="parent" />
+    <com.autonavi.skin.view.SkinTextView android:textSize="@dimen/auto_font_size_18" android:textColor="@color/byd_pvt_black_900_90" android:gravity="left" android:id="@id/siv_text_dnp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/auto_dimen2_2" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/siv_icon_dnp" app:layout_constraintTop_toTopOf="parent" app:textColor4Night="@color/byd_pvt_white_900_90" app:textColor4Skin="@color/byd_pvt_black_900_90" />
+    <androidx.constraintlayout.widget.Group android:id="@id/siv_dnp_group" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:constraint_referenced_ids="siv_text_dnp,siv_icon_dnp" />
+</merge>

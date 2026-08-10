@@ -1,0 +1,114 @@
+{
+    "marker_info": {
+        "marker_info_guide_eta_event_close": {
+            "anchor": 12,
+            "x_offset": 17,
+            "y_offset": 17,
+            "night_style": {
+                "color": [
+                    {
+                        "event_name": "#ffffff"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "event_name": "#000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_guide_eta_event_forbidden": {
+            "anchor": 12,
+            "x_offset": 17,
+            "y_offset": 17,
+            "night_style": {
+                "color": [
+                    {
+                        "event_name": "#ffffff"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "event_name": "#000000"
+                    }
+                ]
+            }
+        },
+        "marker_info_guide_eta_event_tmc": {
+            "anchor": 12,
+            "x_offset": 17,
+            "y_offset": 17,
+            "night_style": {
+                "color": [
+                    {
+                        "event_name": "#ffffff"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "event_name": "#000000"
+                    }
+                ]
+            }
+        }
+    },
+    "layer_item_info": {
+        "point_guide_eta_event_close": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_traffic_eta_event.xml",
+                    "poi_marker_info": "marker_info_guide_eta_event_close",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "event_image": "global_image_auto_ic_navi_traffic_event_close_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 0,
+            "name_cn": "封路"
+        },
+        "point_guide_eta_event_forbidden": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_traffic_eta_event.xml",
+                    "poi_marker_info": "marker_info_guide_eta_event_forbidden",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "event_image": "global_image_auto_ic_navi_traffic_event_forbidden_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 1,
+            "name_cn": "禁行"
+        },
+        "point_guide_eta_event_tmc": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_traffic_eta_event.xml",
+                    "poi_marker_info": "marker_info_guide_eta_event_tmc",
+                    "marker_style": {
+                        "src": [
+                            {
+                                "event_image": "global_image_bubble_block_day_night"
+                            }
+                        ]
+                    }
+                }
+            },
+            "index": 2,
+            "name_cn": "拥堵"
+        }
+    }
+}

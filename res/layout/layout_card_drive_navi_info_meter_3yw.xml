@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout android:id="@id/cl_navigation_info" android:layout_width="fill_parent" android:layout_height="wrap_content" app:designHeight="600" app:designWidth="1024"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.autonavi.adapter.container.ACNavigationInfoLandscapeAutoNaviView android:id="@id/ac_navigation_info_land" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" app:interface_key="navigation_meter_info_landscape_300_yw" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.autonavi.view.custom.CustomMeterNaviInnerTrafficLaneView android:id="@id/display_inner_traffic_lane" android:layout_width="fill_parent" android:layout_height="@dimen/auto_dimen2_28" android:layout_marginStart="@dimen/auto_dimen2_16" android:layout_marginEnd="@dimen/auto_dimen2_16" app:layout_constraintTop_toBottomOf="@id/ac_navigation_info_land" app:shadowDayNightStyle="1" app:skinDayNightExtraStyle="true" />
+    <include android:layout_width="0.0dip" android:layout_height="@dimen/auto_dimen2_40" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/display_inner_traffic_lane" layout="@layout/layout_card_drive_navi_info_meter_bottom_3yw" />
+</com.autonavi.skin.view.SkinConstraintLayout>

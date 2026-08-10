@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="@dimen/auto_dimen2_16" android:topRightRadius="@dimen/auto_dimen2_16" />
+    <gradient android:startColor="@color/tbt_bg_color_night" android:endColor="@color/tbt_bg_color_night" android:angle="90.0" android:type="linear" />
+</shape>

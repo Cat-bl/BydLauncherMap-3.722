@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.autonavi.skin.view.SkinImageFilterView android:id="@id/pic_gallery_item" android:background="@drawable/search_default_picture_day" android:layout_width="@dimen/auto_dimen2_120" android:layout_height="@dimen/auto_dimen2_120" android:scaleType="centerCrop" app:background4Night="@drawable/search_default_picture_night" app:background4Skin="@drawable/search_default_picture_day" app:round="@dimen/auto_dimen2_9" />
+</com.autonavi.skin.view.SkinLinearLayout>

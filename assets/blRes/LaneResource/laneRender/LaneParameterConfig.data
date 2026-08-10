@@ -1,0 +1,16 @@
+{
+  "srDecisionLinezoffset": 0.0,
+  "srDecisionDirectionzoffset": 0.0,
+  "srLlinezoffset": 0.0,
+  "srHightLanezoffset": 0.0,
+}
+
+/* 注释
+{
+  "srDecisionLinezoffset": 0.0, // 决策线zoffset
+  "srDecisionDirectionzoffset": 0.0, // 决策圆盘zoffset
+  "srLlinezoffset": 0.0, // LCC,LDW,LKA,ELK zoffset
+  "srHightLanezoffset": 0.0, // 高亮车道线zoffset
+
+}
+*/

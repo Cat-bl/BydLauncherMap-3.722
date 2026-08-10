@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ct_charge_route"
+    android:background="@drawable/custom_bubble_charge_route_left_day"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:background4Night="@drawable/custom_bubble_charge_route_left_night"
+    app:background4Skin="@drawable/custom_bubble_charge_route_left_day">
+    <com.autonavi.skin.view.SkinImageView
+        android:id="@+id/iv_charge_route_icon"
+        android:background="@drawable/custom_icon_charge_route"
+        android:layout_width="@dimen/auto_dimen2_32"
+        android:layout_height="@dimen/auto_dimen2_32"
+        android:layout_marginStart="@dimen/auto_dimen2_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.autonavi.skin.view.SkinTextView
+        android:textSize="@dimen/auto_font_size_16"
+        android:textColor="#45ac6b"
+        android:id="@+id/tv_charge_route_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/auto_dimen2_4"
+        android:layout_marginStart="@dimen/auto_dimen2_4"
+        app:layout_constraintStart_toEndOf="@+id/iv_charge_route_icon"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.autonavi.skin.view.SkinTextView
+        android:textSize="@dimen/auto_font_size_16"
+        android:id="@+id/tv_charge_route_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/auto_dimen2_2"
+        android:layout_marginBottom="@dimen/auto_dimen2_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_charge_route_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_charge_route_title"
+        app:textColor4Night="@color/custom_text_night_color"
+        app:textColor4Skin="@color/custom_text_day_color"/>
+</com.autonavi.skin.view.SkinConstraintLayout>

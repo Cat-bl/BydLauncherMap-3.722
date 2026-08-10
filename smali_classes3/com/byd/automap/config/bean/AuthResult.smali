@@ -1,0 +1,29 @@
+.class public Lcom/byd/automap/config/bean/AuthResult;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/byd/automap/config/bean/AuthResult$Data;
+    }
+.end annotation
+
+
+# instance fields
+.field public code:Ljava/lang/String;
+
+.field public data:Lcom/byd/automap/config/bean/AuthResult$Data;
+
+.field public msg:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

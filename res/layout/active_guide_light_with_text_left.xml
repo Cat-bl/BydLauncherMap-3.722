@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.autonavi.skin.view.SkinConstraintLayout android:id="@id/active_guide_light_layout_parent" android:background="@drawable/guide_light_bubble_green_left_day" android:layout_width="@dimen/auto_dimen2_141" android:layout_height="@dimen/auto_dimen2_81" app:background4Night="@drawable/guide_light_bubble_green_left_night" app:background4Skin="@drawable/guide_light_bubble_green_left_day">
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/auto_dimen2_17" android:layout_marginStart="@dimen/auto_dimen2_14" app:layout_constraintStart_toStartOf="@id/active_guide_light_layout_parent" app:layout_constraintTop_toTopOf="@id/active_guide_light_layout_parent" layout="@layout/active_guide_light_with_text" />
+    </com.autonavi.skin.view.SkinConstraintLayout>
+</com.autonavi.skin.view.SkinConstraintLayout>

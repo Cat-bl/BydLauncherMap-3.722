@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/custom_btn_topweak_background_corner_normal_day" />
+    <gradient android:startColor="#ff525252" android:endColor="#ff3b3b3b" android:angle="90.0" android:centerX="0.5" />
+</shape>

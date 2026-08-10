@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/cruise_card_road_bg_night_color_denza"/>
+            <corners android:radius="@dimen/auto_dimen2_4"/>
+        </shape>
+    </item>
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/cruise_card_road_bg_night_color_denza"/>
+            <corners android:radius="@dimen/auto_dimen2_4"/>
+        </shape>
+    </item>
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/cruise_card_road_bg_night_color_denza"/>
+            <corners android:radius="@dimen/auto_dimen2_4"/>
+        </shape>
+    </item>
+</selector>

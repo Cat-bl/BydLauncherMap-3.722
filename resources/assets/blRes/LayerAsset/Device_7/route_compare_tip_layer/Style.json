@@ -1,0 +1,146 @@
+{
+    "marker_info": {
+        "marker_info_compare_tip_left_up_fast": {
+            "anchor": 13,
+            "day_style": {
+                "color": [
+                    {
+                        "time_diff_text": "#ff1a66ff"
+                    },
+                    {
+                        "label_text": "#ffffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "time_diff_text": "#f0619cff"
+                    },
+                    {
+                        "label_text": "#f0ffffff"
+                    }
+                ]
+            },
+            "y_offset": 12,
+            "x_offset": 12
+        },
+        "marker_info_compare_tip_right_up_fast": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "time_diff_text": "#ff1a66ff"
+                    },
+                    {
+                        "label_text": "#ffffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "time_diff_text": "#f0619cff"
+                    },
+                    {
+                        "label_text": "#f0ffffff"
+                    }
+                ]
+            },
+            "y_offset": 12,
+            "x_offset": 12
+        },
+        "marker_info_compare_tip_left_up_slow": {
+            "anchor": 13,
+            "day_style": {
+                "color": [
+                    {
+                        "time_diff_text": "#ff000000"
+                    },
+                    {
+                        "label_text": "#ff094dd8"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "time_diff_text": "#f0ced5e6"
+                    },
+                    {
+                        "label_text": "#ff659fff"
+                    }
+                ]
+            },
+            "y_offset": 12,
+            "x_offset": 12
+        },
+        "marker_info_compare_tip_right_up_slow": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "time_diff_text": "#ff000000"
+                    },
+                    {
+                        "label_text": "#ff094dd8"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "time_diff_text": "#f0ced5e6"
+                    },
+                    {
+                        "label_text": "#ff659fff"
+                    }
+                ]
+            },
+            "y_offset": 12,
+            "x_offset": 12
+        }
+    },
+    "layer_item_info": {
+        "point_compare_tip_new_left_up_fast": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "compare_tip_left_up_fast.xml",
+                    "poi_marker_info": "marker_info_compare_tip_left_up_fast"
+                }
+            },
+            "index": 0,
+            "name_cn": "左上飘 更快"
+        },
+        "point_compare_tip_new_right_up_fast": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "compare_tip_right_up_fast.xml",
+                    "poi_marker_info": "marker_info_compare_tip_right_up_fast"
+                }
+            },
+            "index": 1,
+            "name_cn": "右上飘 更快"
+        },
+        "point_compare_tip_new_left_up_slow": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "compare_tip_left_up_slow.xml",
+                    "poi_marker_info": "marker_info_compare_tip_left_up_slow"
+                }
+            },
+            "index": 2,
+            "name_cn": "左上飘 更慢"
+        },
+        "point_compare_tip_new_right_up_slow": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "compare_tip_right_up_slow.xml",
+                    "poi_marker_info": "marker_info_compare_tip_right_up_slow"
+                }
+            },
+            "index": 3,
+            "name_cn": "右上飘 更慢"
+        }
+    }
+}

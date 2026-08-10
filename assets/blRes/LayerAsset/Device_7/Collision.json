@@ -1,0 +1,196 @@
+{
+    "priority_collision_threshold": {},
+    "collision_combination": {
+        "end_area_collision": {
+            "area_collision": [
+                "route_end_area_parent_layer",
+                "route_end_area_child_layer",
+                "search_along_route_layer",
+                "guide_path_board_layer",
+                "route_odd_point_layer"
+            ]
+        },
+        "end_area_path_collision": {
+            "area_collision": [
+                "route_end_area_child_layer",
+                "route_end_path_point_layer"
+            ]
+        },
+        "start_area_collision": {
+            "area_collision": [
+                "route_start_point_layer",
+                "route_odd_point_layer"
+            ]
+        },
+        "via_eta_collision":
+        {
+            "area_collision":
+            [
+                "route_via_eta_layer"
+            ],
+            "collision_layer":
+            [
+                "route_end_area_parent_layer"
+            ]
+        },
+        "route_traffic_light_area":
+        {
+            "area_collision":
+            [
+                "route_traffic_light_layer",
+                "guide_camera_normal_layer"
+            ],
+            "area_threshold":
+            {
+                "guide_camera_normal_layer": 0.4
+            }
+        },
+        "guide_collision": {
+            "area_collision": [
+                "guide_camera_active_layer",
+                "guide_camera_normal_layer",
+                "guide_traffic_light_layer",
+                "guide_traffic_signal_light_layer",
+                "guide_facility_layer",
+                "guide_congestion_layer",
+                "guide_label_layer",
+                "guide_path_board_layer",
+                "guide_mix_fork_layer",
+                "guide_traffic_event_layer",
+                "point_custom_layer_3"
+            ],
+            "area_threshold":
+            {
+                "guide_camera_active_layer": 0.4
+            },
+            "not_collided_by_high_priority": [
+                "guide_camera_normal_layer",
+                "route_end_area_parent_layer",
+                "search_park_route_layer"
+            ]
+        },
+        "jam_bubbles_collision":
+        {
+            "area_collision":
+            [
+                "route_jam_bubbles_layer"
+            ],
+            "collision_layer":
+            [
+                "route_end_area_parent_layer",
+                "recommend_end_bubble_layer",
+                "route_start_point_layer"
+            ]
+        },
+        "recommend_walk_navi_point_collision":
+        {
+            "area_collision":
+            [],
+            "collision_layer":
+            [
+                "route_end_point_layer",
+                "recommend_walk_navi_point_layer"
+            ],
+            "area_threshold":
+            {
+                "recommend_walk_navi_point_layer": 0.4
+            }
+        },
+        "route_path_tmc_collision":
+        {
+            "area_collision":
+            [
+                "route_path_tmc_point_layer",
+                "recommend_charge_station_layer"
+            ],
+            "collision_layer":
+            [
+                "route_path_tmc_point_layer",
+                "route_start_point_layer",
+                "route_end_point_layer",
+                "route_via_point_layer",
+                "recommend_charge_station_layer",
+                "route_end_area_parent_layer",
+                "route_via_eta_layer",
+                "route_weather_layer",
+                "route_rest_area_layer",
+                "route_via_road_layer",
+                "search_along_route_layer"
+            ]
+        },
+        "recommend_park_charge_collision":
+        {
+            "area_collision":
+            [
+                "recommend_charge_station_layer",
+                "recommend_end_park_layer"
+            ],
+            "area_threshold":
+            {
+                "recommend_charge_station_layer": 0.3
+            }
+        },
+        "search_collision": {
+            "area_collision": [
+                "search_point_root_layer",
+                "search_point_children_layer",
+                "guide_path_board_layer",
+                "search_park_route_layer",
+                "search_charge_station_layer",
+                "recommend_end_park_layer"
+            ],
+            "area_threshold":
+            {
+                "search_point_children_layer": 0.01
+            }
+        },
+        "guide_label_collision": {
+            "area_collision": [
+                "guide_label_layer"
+            ],
+            "collision_layer": [
+                "point_custom_layer_3",
+                "guide_interval_camera_layer",
+                "guide_camera_active_layer",
+                "guide_congestion_layer",
+                "guide_path_board_layer",
+                "guide_traffic_signal_light_layer",
+                "route_compare_tip_layer"
+            ]
+        },
+        "guide_camera_collision": {
+            "area_collision": [
+                "guide_camera_active_layer",
+                "guide_interval_camera_layer",
+                "guide_traffic_light_layer",
+                "guide_congestion_layer",
+                "guide_traffic_signal_light_layer"
+            ],
+            "collision_layer": [
+                "guide_label_layer",
+                "guide_camera_normal_layer",
+                "guide_facility_layer",
+                "route_end_area_parent_layer",
+                "search_park_route_layer",
+                "point_custom_layer_3"
+            ]
+        },
+        "cruise_congestion_collision": {
+            "area_collision": [
+                "cruise_congestion_prompt_layer",
+                "cruise_active_camera_layer",
+                "cruise_traffic_signal_light_layer"
+            ],
+            "collision_layer": [
+                "cruise_camera_layer"
+            ]
+        },
+        "cruise_camera_collision": {
+            "area_collision": [
+                "cruise_facility_layer",
+                "cruise_active_camera_layer",
+                "cruise_normal_camera_layer"
+            ]
+        }
+    }
+}

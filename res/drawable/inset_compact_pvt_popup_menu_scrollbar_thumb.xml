@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetRight="@dimen/byd_compact_pvt_popup_menu_scrollbar_padding_right" android:insetTop="@dimen/sys_padding_s" android:insetBottom="@dimen/sys_padding_s"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle">
+        <corners android:radius="@dimen/sys_compact_border_radius_xs" />
+        <size android:width="@dimen/sys_compact_border_radius_xs" />
+        <solid android:color="?bydPvtScrollBarBgColor" />
+    </shape>
+</inset>

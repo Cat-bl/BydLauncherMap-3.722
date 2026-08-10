@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="@dimen/byd_pvt_sidebar_narrow_width"
+    android:layout_height="wrap_content">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/tabIcon_narrow"
+        android:layout_width="@dimen/byd_pvt_sidebar_tab_icon_WH"
+        android:layout_height="@dimen/byd_pvt_sidebar_tab_icon_HT"
+        android:layout_marginTop="@dimen/byd_pvt_sidebar_icon_margin_top_narrow"/>
+    <TextView
+        android:textAppearance="@style/BydSideBarTabViewTextStyle"
+        android:gravity="center"
+        android:id="@+id/tabTitle_narrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/byd_pvt_sidebar_title_margin_top_narrow"
+        android:layout_marginBottom="@dimen/byd_pvt_sidebar_title_margin_bottom_narrow"
+        android:minHeight="@dimen/byd_pvt_sidebar_title_min_height"
+        android:layout_marginStart="@dimen/byd_pvt_sidebar_title_margin_start_narrow"
+        android:layout_marginEnd="@dimen/byd_pvt_sidebar_title_margin_end_narrow"/>
+</LinearLayout>

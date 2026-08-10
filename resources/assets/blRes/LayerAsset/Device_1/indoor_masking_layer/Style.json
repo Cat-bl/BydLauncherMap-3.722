@@ -1,0 +1,17 @@
+{
+    "marker_info": {},
+    "layer_item_info": {
+        "indoor_masking_style": {
+            "raster_image_layer_item_style": {
+                "winx": 0,
+                "winy": 0,
+                "width": 800,
+                "height": 480,
+                "bg_marker_id": "indoor_masking",
+                "marker_id": "indoor_masking"
+            },
+            "index": 0,
+            "name_cn": "室内地图区域"
+        }
+    }
+}

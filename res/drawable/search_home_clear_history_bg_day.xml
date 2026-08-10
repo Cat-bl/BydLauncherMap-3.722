@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/auto_dimen2_36" />
+    <solid android:color="@color/color_team_nickname_input_day" />
+    <stroke android:width="@dimen/auto_dimen2_1" android:color="#ffffffff" />
+</shape>

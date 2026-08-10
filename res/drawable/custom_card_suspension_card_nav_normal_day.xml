@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="@dimen/custom_card_suspension_card_nav_corner_top_left_normal_day" android:topRightRadius="@dimen/custom_card_suspension_card_nav_corner_top_right_normal_day" />
+    <gradient android:startColor="#b33c3c3c" android:endColor="#a6242424" android:angle="90.0" android:centerX="0.5" />
+</shape>

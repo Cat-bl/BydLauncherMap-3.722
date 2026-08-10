@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/auto_dimen2_8" />
+            <gradient android:startColor="#f91a1e22" android:endColor="#f5212329" android:angle="270.0" android:type="linear" />
+            <stroke android:width="@dimen/custom_btn_longtrip_1_bg_strokewidth_selected_night" android:color="@color/route_stroke_night_denza" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/auto_dimen2_8" />
+            <solid android:color="#ff414345" />
+        </shape>
+    </item>
+    <item android:state_enabled="false" android:drawable="@drawable/custom_btn_longtrip_1_bg_normal_night_denza" />
+    <item android:state_enabled="true" android:drawable="@drawable/custom_btn_longtrip_1_bg_normal_night_denza" />
+</selector>

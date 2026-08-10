@@ -1,0 +1,14 @@
+{
+    "common_info_foreshortening": {
+        "display_max_scale_distance": 0.0,
+        "display_max_scale": 0.8,
+        "display_min_scale_distance": 300.0,
+        "display_min_scale": 0.8
+    },
+    "common_info_foreshortening_light": {
+        "display_max_scale_distance": 0.0,
+        "display_max_scale": 0.8,
+        "display_min_scale_distance": 600.0,
+        "display_min_scale": 0.7
+    }
+}

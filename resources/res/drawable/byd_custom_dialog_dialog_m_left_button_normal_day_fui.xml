@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/auto_dimen2_6">
+        <shape>
+            <solid android:color="#454545"/>
+        </shape>
+    </item>
+    <item
+        android:left="@dimen/auto_dimen2_8"
+        android:top="@dimen/auto_dimen2_1">
+        <shape>
+            <solid android:color="#454545"/>
+        </shape>
+    </item>
+</layer-list>

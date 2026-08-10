@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinImageFilterView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/img_photo_item"
+    android:background="@drawable/search_default_picture_day"
+    android:layout_width="@dimen/auto_dimen2_56"
+    android:layout_height="@dimen/auto_dimen2_56"
+    android:scaleType="centerCrop"
+    android:layout_marginEnd="@dimen/sys_padding_s"
+    app:background4Night="@drawable/search_default_picture_night"
+    app:background4Skin="@drawable/search_default_picture_day"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:round="@dimen/sys_border_radius_s"/>

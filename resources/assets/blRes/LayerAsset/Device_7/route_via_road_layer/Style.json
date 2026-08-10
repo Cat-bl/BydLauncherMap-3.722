@@ -1,0 +1,152 @@
+{
+    "marker_info": {
+        "marker_info_route_road_info_left": {
+            "anchor": 13,
+            "day_style": {
+                "color": [
+                    {
+                        "via_name_text": "#e6000000"
+                    },
+                    {
+                        "via_lane_text": "#99000000"
+                    },
+                    {
+                        "via_speed_text": "#99000000"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "via_name_text": "#e6ffffff"
+                    },
+                    {
+                        "via_lane_text": "#99ffffff"
+                    },
+                    {
+                        "via_speed_text": "#99ffffff"
+                    }
+                ]
+            },
+            "y_offset": 21,
+            "x_offset": 17
+        },
+        "marker_info_route_road_info_right": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "via_name_text": "#e6000000"
+                    },
+                    {
+                        "via_lane_text": "#99000000"
+                    },
+                    {
+                        "via_speed_text": "#99000000"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "via_name_text": "#e6ffffff"
+                    },
+                    {
+                        "via_lane_text": "#99ffffff"
+                    },
+                    {
+                        "via_speed_text": "#99ffffff"
+                    }
+                ]
+            },
+            "y_offset": 21,
+            "x_offset": 17
+        }
+    },
+    "layer_item_info": {
+        "point_route_road_info_expressway_left": {
+            "point_layer_item_style": {
+                "focus_style": {
+                    "poi_marker_id": "guide_via_road_info_expressway_left.xml",
+                    "poi_marker_info": "marker_info_route_road_info_left"
+                },
+                "normal_style": {
+                    "poi_marker_id": "guide_via_road_info_expressway_left.xml",
+                    "poi_marker_info": "marker_info_route_road_info_left"
+                }
+            },
+            "index": 0,
+            "name_cn": "快速路 左飘"
+        },
+        "point_route_road_info_expressway_right": {
+            "point_layer_item_style": {
+                "focus_style": {
+                    "poi_marker_id": "guide_via_road_info_expressway_right.xml",
+                    "poi_marker_info": "marker_info_route_road_info_right"
+                },
+                "normal_style": {
+                    "poi_marker_id": "guide_via_road_info_expressway_right.xml",
+                    "poi_marker_info": "marker_info_route_road_info_right"
+                }
+            },
+            "index": 1,
+            "name_cn": "快速路 右飘"
+        },
+        "point_route_road_info_national_left": {
+            "point_layer_item_style": {
+                "focus_style": {
+                    "poi_marker_id": "guide_via_road_info_national_left.xml",
+                    "poi_marker_info": "marker_info_route_road_info_left"
+                },
+                "normal_style": {
+                    "poi_marker_id": "guide_via_road_info_national_left.xml",
+                    "poi_marker_info": "marker_info_route_road_info_left"
+                }
+            },
+            "index": 2,
+            "name_cn": "国道 左飘"
+        },
+        "point_route_road_info_national_right": {
+            "point_layer_item_style": {
+                "focus_style": {
+                    "poi_marker_id": "guide_via_road_info_national_right.xml",
+                    "poi_marker_info": "marker_info_route_road_info_right"
+                },
+                "normal_style": {
+                    "poi_marker_id": "guide_via_road_info_national_right.xml",
+                    "poi_marker_info": "marker_info_route_road_info_right"
+                }
+            },
+            "index": 3,
+            "name_cn": "国道 右飘"
+        },
+        "point_route_road_info_provincial_left": {
+            "point_layer_item_style": {
+                "focus_style": {
+                    "poi_marker_id": "guide_via_road_info_provincial_left.xml",
+                    "poi_marker_info": "marker_info_route_road_info_left"
+                },
+                "normal_style": {
+                    "poi_marker_id": "guide_via_road_info_provincial_left.xml",
+                    "poi_marker_info": "marker_info_route_road_info_left"
+                }
+            },
+            "index": 4,
+            "name_cn": "省道 左飘"
+        },
+        "point_route_road_info_provincial_right": {
+            "point_layer_item_style": {
+                "focus_style": {
+                    "poi_marker_id": "guide_via_road_info_provincial_right.xml",
+                    "poi_marker_info": "marker_info_route_road_info_right"
+                },
+                "normal_style": {
+                    "poi_marker_id": "guide_via_road_info_provincial_right.xml",
+                    "poi_marker_info": "marker_info_route_road_info_right"
+                }
+            },
+            "index": 5,
+            "name_cn": "省道 右飘"
+        }
+    }
+}

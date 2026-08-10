@@ -1,0 +1,542 @@
+{
+    "layer_item_info": {
+        "point_lane_guide_alternative_path_fast_left_down": {
+            "index": 1,
+            "name_cn": "左下方更快路线",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "lane_guide_path_background": "global_image_autonavi_lane_route_label_left_down_day_night"
+                            }
+                        ]
+                    },
+                    "poi_marker_id": "lane_guide_alternative_path_fast_shared_all.xml",
+                    "poi_marker_info": "marker_info_lane_guide_alternative_path_left_down_fast"
+                }
+            }
+        },
+        "point_lane_guide_alternative_path_fast_left_up": {
+            "index": 1,
+            "name_cn": "左上方更快路线",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "lane_guide_path_background": "global_image_autonavi_lane_route_label_left_up_day_night"
+                            }
+                        ]
+                    },
+                    "poi_marker_id": "lane_guide_alternative_path_fast_shared_all.xml",
+                    "poi_marker_info": "marker_info_lane_guide_alternative_path_left_up_fast"
+                }
+            }
+        },
+        "point_lane_guide_alternative_path_fast_right_down": {
+            "index": 1,
+            "name_cn": "右下方更快路线",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "lane_guide_path_background": "global_image_autonavi_lane_route_label_right_down_day_night"
+                            }
+                        ]
+                    },
+                    "poi_marker_id": "lane_guide_alternative_path_fast_shared_all.xml",
+                    "poi_marker_info": "marker_info_lane_guide_alternative_path_right_down_fast"
+                }
+            }
+        },
+        "point_lane_guide_alternative_path_fast_right_up": {
+            "index": 1,
+            "name_cn": "右上方更快路线",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "lane_guide_path_background": "global_image_autonavi_lane_route_label_right_up_day_night"
+                            }
+                        ]
+                    },
+                    "poi_marker_id": "lane_guide_alternative_path_fast_shared_all.xml",
+                    "poi_marker_info": "marker_info_lane_guide_alternative_path_right_up_fast"
+                }
+            }
+        },
+        "point_lane_guide_alternative_path_slow_left_down": {
+            "index": 4,
+            "name_cn": "左下方更慢路线",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "lane_guide_path_background": "global_image_autonavi_lane_route_label_left_down_day_night"
+                            }
+                        ]
+                    },
+                    "poi_marker_id": "lane_guide_alternative_path_slow_shared_all.xml",
+                    "poi_marker_info": "marker_info_lane_guide_alternative_path_left_down_slow"
+                }
+            }
+        },
+        "point_lane_guide_alternative_path_slow_left_up": {
+            "index": 4,
+            "name_cn": "左上方更慢路线",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "lane_guide_path_background": "global_image_autonavi_lane_route_label_left_up_day_night"
+                            }
+                        ]
+                    },
+                    "poi_marker_id": "lane_guide_alternative_path_slow_shared_all.xml",
+                    "poi_marker_info": "marker_info_lane_guide_alternative_path_left_up_slow"
+                }
+            }
+        },
+        "point_lane_guide_alternative_path_slow_right_down": {
+            "index": 4,
+            "name_cn": "右下方更慢路线",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "lane_guide_path_background": "global_image_autonavi_lane_route_label_right_down_day_night"
+                            }
+                        ]
+                    },
+                    "poi_marker_id": "lane_guide_alternative_path_slow_shared_all.xml",
+                    "poi_marker_info": "marker_info_lane_guide_alternative_path_right_down_slow"
+                }
+            }
+        },
+        "point_lane_guide_alternative_path_slow_right_up": {
+            "index": 4,
+            "name_cn": "右上方更慢路线",
+            "point_layer_item_style": {
+                "Foreshortening": "common_info_foreshortening",
+                "normal_style": {
+                    "marker_style": {
+                        "background-image": [
+                            {
+                                "lane_guide_path_background": "global_image_autonavi_lane_route_label_right_up_day_night"
+                            }
+                        ]
+                    },
+                    "poi_marker_id": "lane_guide_alternative_path_slow_shared_all.xml",
+                    "poi_marker_info": "marker_info_lane_guide_alternative_path_right_up_slow"
+                }
+            }
+        }
+    },
+    "marker_info": {
+        "marker_info_lane_guide_alternative_path_left_down_fast": {
+            "anchor": 11,
+            "day_style": {
+                "color": [
+                    {
+                        "highlight_text": "#FFFFFF"
+                    },
+                    {
+                        "time_text": "#1A66FF"
+                    },
+                    {
+                        "cost_text_1": "#1A66FF"
+                    },
+                    {
+                        "distance_text": "#1A66FF"
+                    },
+                    {
+                        "light_text": "#1A66FF"
+                    },
+                    {
+                        "cost_text_2": "#1A66FF"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "highlight_text": "#E6FFFFFF"
+                    },
+                    {
+                        "time_text": "#296EE6"
+                    },
+                    {
+                        "cost_text_1": "#296EE6"
+                    },
+                    {
+                        "distance_text": "#296EE6"
+                    },
+                    {
+                        "light_text": "#296EE6"
+                    },
+                    {
+                        "cost_text_2": "#296EE6"
+                    }
+                ]
+            },
+            "x_offset": 16,
+            "y_offset": 18
+        },
+        "marker_info_lane_guide_alternative_path_left_down_slow": {
+            "anchor": 11,
+            "day_style": {
+                "color": [
+                    {
+                        "highlight_text": "#1A66FF"
+                    },
+                    {
+                        "time_text": "#000000"
+                    },
+                    {
+                        "cost_text_1": "#000000"
+                    },
+                    {
+                        "distance_text": "#000000"
+                    },
+                    {
+                        "light_text": "#000000"
+                    },
+                    {
+                        "cost_text_2": "#000000"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "highlight_text": "#296EE6"
+                    },
+                    {
+                        "time_text": "#000000"
+                    },
+                    {
+                        "cost_text_1": "#000000"
+                    },
+                    {
+                        "distance_text": "#000000"
+                    },
+                    {
+                        "light_text": "#000000"
+                    },
+                    {
+                        "cost_text_2": "#000000"
+                    }
+                ]
+            },
+            "x_offset": 16,
+            "y_offset": 18
+        },
+        "marker_info_lane_guide_alternative_path_left_up_fast": {
+            "anchor": 13,
+            "day_style": {
+                "color": [
+                    {
+                        "highlight_text": "#FFFFFF"
+                    },
+                    {
+                        "time_text": "#1A66FF"
+                    },
+                    {
+                        "cost_text_1": "#1A66FF"
+                    },
+                    {
+                        "distance_text": "#1A66FF"
+                    },
+                    {
+                        "light_text": "#1A66FF"
+                    },
+                    {
+                        "cost_text_2": "#1A66FF"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "highlight_text": "#E6FFFFFF"
+                    },
+                    {
+                        "time_text": "#296EE6"
+                    },
+                    {
+                        "cost_text_1": "#296EE6"
+                    },
+                    {
+                        "distance_text": "#296EE6"
+                    },
+                    {
+                        "light_text": "#296EE6"
+                    },
+                    {
+                        "cost_text_2": "#296EE6"
+                    }
+                ]
+            },
+            "x_offset": 16,
+            "y_offset": 26
+        },
+        "marker_info_lane_guide_alternative_path_left_up_slow": {
+            "anchor": 13,
+            "day_style": {
+                "color": [
+                    {
+                        "highlight_text": "#1A66FF"
+                    },
+                    {
+                        "time_text": "#000000"
+                    },
+                    {
+                        "cost_text_1": "#000000"
+                    },
+                    {
+                        "distance_text": "#000000"
+                    },
+                    {
+                        "light_text": "#000000"
+                    },
+                    {
+                        "cost_text_2": "#000000"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "highlight_text": "#296EE6"
+                    },
+                    {
+                        "time_text": "#000000"
+                    },
+                    {
+                        "cost_text_1": "#000000"
+                    },
+                    {
+                        "distance_text": "#000000"
+                    },
+                    {
+                        "light_text": "#000000"
+                    },
+                    {
+                        "cost_text_2": "#000000"
+                    }
+                ]
+            },
+            "x_offset": 16,
+            "y_offset": 26
+        },
+        "marker_info_lane_guide_alternative_path_right_down_fast": {
+            "anchor": 10,
+            "day_style": {
+                "color": [
+                    {
+                        "highlight_text": "#FFFFFF"
+                    },
+                    {
+                        "time_text": "#1A66FF"
+                    },
+                    {
+                        "cost_text_1": "#1A66FF"
+                    },
+                    {
+                        "distance_text": "#1A66FF"
+                    },
+                    {
+                        "light_text": "#1A66FF"
+                    },
+                    {
+                        "cost_text_2": "#1A66FF"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "highlight_text": "#E6FFFFFF"
+                    },
+                    {
+                        "time_text": "#296EE6"
+                    },
+                    {
+                        "cost_text_1": "#296EE6"
+                    },
+                    {
+                        "distance_text": "#296EE6"
+                    },
+                    {
+                        "light_text": "#296EE6"
+                    },
+                    {
+                        "cost_text_2": "#296EE6"
+                    }
+                ]
+            },
+            "x_offset": 16,
+            "y_offset": 18
+        },
+        "marker_info_lane_guide_alternative_path_right_down_slow": {
+            "anchor": 10,
+            "day_style": {
+                "color": [
+                    {
+                        "highlight_text": "#1A66FF"
+                    },
+                    {
+                        "time_text": "#000000"
+                    },
+                    {
+                        "cost_text_1": "#000000"
+                    },
+                    {
+                        "distance_text": "#000000"
+                    },
+                    {
+                        "light_text": "#000000"
+                    },
+                    {
+                        "cost_text_2": "#000000"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "highlight_text": "#296EE6"
+                    },
+                    {
+                        "time_text": "#000000"
+                    },
+                    {
+                        "cost_text_1": "#000000"
+                    },
+                    {
+                        "distance_text": "#000000"
+                    },
+                    {
+                        "light_text": "#000000"
+                    },
+                    {
+                        "cost_text_2": "#000000"
+                    }
+                ]
+            },
+            "x_offset": 16,
+            "y_offset": 18
+        },
+        "marker_info_lane_guide_alternative_path_right_up_fast": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "highlight_text": "#FFFFFF"
+                    },
+                    {
+                        "time_text": "#1A66FF"
+                    },
+                    {
+                        "cost_text_1": "#1A66FF"
+                    },
+                    {
+                        "distance_text": "#1A66FF"
+                    },
+                    {
+                        "light_text": "#1A66FF"
+                    },
+                    {
+                        "cost_text_2": "#1A66FF"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "highlight_text": "#E6FFFFFF"
+                    },
+                    {
+                        "time_text": "#296EE6"
+                    },
+                    {
+                        "cost_text_1": "#296EE6"
+                    },
+                    {
+                        "distance_text": "#296EE6"
+                    },
+                    {
+                        "light_text": "#296EE6"
+                    },
+                    {
+                        "cost_text_2": "#296EE6"
+                    }
+                ]
+            },
+            "x_offset": 16,
+            "y_offset": 26
+        },
+        "marker_info_lane_guide_alternative_path_right_up_slow": {
+            "anchor": 12,
+            "day_style": {
+                "color": [
+                    {
+                        "highlight_text": "#1A66FF"
+                    },
+                    {
+                        "time_text": "#000000"
+                    },
+                    {
+                        "cost_text_1": "#000000"
+                    },
+                    {
+                        "distance_text": "#000000"
+                    },
+                    {
+                        "light_text": "#000000"
+                    },
+                    {
+                        "cost_text_2": "#000000"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "highlight_text": "#296EE6"
+                    },
+                    {
+                        "time_text": "#000000"
+                    },
+                    {
+                        "cost_text_1": "#000000"
+                    },
+                    {
+                        "distance_text": "#000000"
+                    },
+                    {
+                        "light_text": "#000000"
+                    },
+                    {
+                        "cost_text_2": "#000000"
+                    }
+                ]
+            },
+            "x_offset": 16,
+            "y_offset": 26
+        }
+    }
+}

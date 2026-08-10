@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:topLeftRadius="@dimen/custom_btn_suspension_left_bg_corner_top_left_pressed_day" android:bottomLeftRadius="@dimen/custom_btn_suspension_left_bg_corner_bottom_left_pressed_day" />
+            <gradient android:startColor="#fcffffff" android:endColor="#e6ffffff" android:angle="90.0" android:centerX="0.5" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:topLeftRadius="@dimen/custom_btn_suspension_left_bg_corner_top_left_pressed_day" android:bottomLeftRadius="@dimen/custom_btn_suspension_left_bg_corner_bottom_left_pressed_day" />
+            <solid android:color="@color/custom_btn_suspension_left_bg_solid1_pressed_day" />
+        </shape>
+    </item>
+</layer-list>

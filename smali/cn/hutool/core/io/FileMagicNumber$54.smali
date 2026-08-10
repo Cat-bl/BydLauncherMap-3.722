@@ -1,0 +1,182 @@
+.class public final enum Lcn/hutool/core/io/FileMagicNumber$54;
+.super Lcn/hutool/core/io/FileMagicNumber;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcn/hutool/core/io/FileMagicNumber;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x4009
+    name = null
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+    .locals 6
+
+    const/4 v5, 0x0
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move v2, p2
+
+    move-object v3, p3
+
+    move-object v4, p4
+
+    invoke-direct/range {v0 .. v5}, Lcn/hutool/core/io/FileMagicNumber;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Lcn/hutool/core/io/FileMagicNumber$1;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public match([B)Z
+    .locals 6
+
+    array-length v0, p1
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x5
+
+    if-ge v0, v2, :cond_0
+
+    return v1
+
+    :cond_0
+    const/4 v0, 0x7
+
+    new-array v0, v0, [B
+
+    fill-array-data v0, :array_0
+
+    aget-byte v2, p1, v1
+
+    invoke-static {v0, v2}, Le/a/d/u/b0;->a([BB)Z
+
+    move-result v0
+
+    const/4 v2, 0x3
+
+    const/4 v3, 0x2
+
+    const/4 v4, 0x1
+
+    if-eqz v0, :cond_1
+
+    aget-byte v0, p1, v4
+
+    invoke-static {v0}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
+
+    move-result-object v0
+
+    const/16 v5, -0x4b
+
+    invoke-static {v5}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
+
+    move-result-object v5
+
+    invoke-static {v0, v5}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    aget-byte v0, p1, v3
+
+    invoke-static {v0}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
+
+    move-result-object v0
+
+    const/16 v5, 0x2f
+
+    invoke-static {v5}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
+
+    move-result-object v5
+
+    invoke-static {v0, v5}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    aget-byte v0, p1, v2
+
+    invoke-static {v0}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
+
+    move-result-object v0
+
+    const/4 v5, -0x3
+
+    invoke-static {v5}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
+
+    move-result-object v5
+
+    invoke-static {v0, v5}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    move v0, v4
+
+    goto :goto_0
+
+    :cond_1
+    move v0, v1
+
+    :goto_0
+    if-eqz v0, :cond_2
+
+    return v4
+
+    :cond_2
+    aget-byte v0, p1, v1
+
+    and-int/lit16 v0, v0, 0xf0
+
+    const/16 v5, 0x50
+
+    if-ne v0, v5, :cond_3
+
+    aget-byte v0, p1, v4
+
+    const/16 v5, 0x2a
+
+    if-ne v0, v5, :cond_3
+
+    aget-byte v0, p1, v3
+
+    const/16 v3, 0x4d
+
+    if-ne v0, v3, :cond_3
+
+    aget-byte p1, p1, v2
+
+    const/16 v0, 0x18
+
+    if-ne p1, v0, :cond_3
+
+    move v1, v4
+
+    :cond_3
+    return v1
+
+    :array_0
+    .array-data 1
+        0x22t
+        0x23t
+        0x24t
+        0x25t
+        0x26t
+        0x27t
+        0x28t
+    .end array-data
+.end method

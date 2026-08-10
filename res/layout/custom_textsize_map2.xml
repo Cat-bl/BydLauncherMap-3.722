@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/cl_custom_textsize_map2" android:layout_width="fill_parent" android:layout_height="fill_parent" app:designHeight="600" app:designWidth="1024"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.autonavi.skin.view.SkinImageView android:id="@id/siv_textsize_map2" android:background="@drawable/custom_textsize_map2_textsize_map2_day_bg_selector" android:layout_width="@dimen/auto_dimen2_218" android:layout_height="@dimen/auto_dimen2_122" app:background4Skin="@drawable/custom_textsize_map2_textsize_map2_day_bg_selector" />
+</merge>

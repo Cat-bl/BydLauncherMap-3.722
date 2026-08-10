@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/custom_hint_main_hint_main_corner_normal_night" />
+    <gradient android:startColor="#ff141414" android:endColor="#ff0a0a0a" android:angle="90.0" android:centerX="0.5" />
+</shape>

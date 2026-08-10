@@ -1,0 +1,258 @@
+{
+  "data": {
+    "type": "adaptor_point_lane",
+    "value": [],
+    "rule": [
+      {
+        "type": "data_duplicate",
+        "brief": "数据去重",
+        "value": [
+          "$biz_data.sceneType",
+          "$biz_data.bubbleSide"
+        ]
+      }
+    ]
+  },
+  "biz": [
+    {
+      "brief": "设置图层优先级",
+      "type": "biz_set_priority",
+      "value": {
+        "draw_priority": 140,
+        "sub_priority": 14
+      }
+    }
+  ],
+  "style": {
+    "marker_info": {
+      "marker_info_lane_guide_solid_line_left": {
+        "anchor": 13,
+        "x_offset": 19,
+        "y_offset": 29,
+        "night_style": {
+          "color": [
+            {
+              "limit_text": "#296EE6"
+            }
+          ]
+        },
+        "day_style": {
+          "color": [
+            {
+              "limit_text": "#1A66FF"
+            }
+          ]
+        },
+        "image_style": {
+          "bg": {
+            "src": "global_image_autonavi_lane_icon_warning_blue_day_night"
+          },
+          "image": {
+            "right_merge": "global_image_autonavi_lane_icon_arrow_for_right_merge_day_night"
+          }
+        }
+      },
+      "marker_info_lane_guide_solid_line_right": {
+        "anchor": 12,
+        "x_offset": 19,
+        "y_offset": 29,
+        "night_style": {
+          "color": [
+            {
+              "limit_text": "#296EE6"
+            }
+          ]
+        },
+        "day_style": {
+          "color": [
+            {
+              "limit_text": "#1A66FF"
+            }
+          ]
+        },
+        "image_style": {
+          "bg": {
+            "src": "global_image_autonavi_lane_icon_warning_blue_day_night"
+          },
+          "image": {
+            "left_merge": "global_image_autonavi_lane_icon_arrow_for_left_merge_day_night"
+          }
+        }
+      }
+    },
+    "common_info": {
+      "common_info_foreshortening": {
+        "display_max_scale_distance": 0,
+        "display_max_scale": 0.8,
+        "display_min_scale_distance": 300,
+        "display_min_scale": 0.8
+      }
+    },
+    "style_info": {
+      "point_lane_guide_solid_line_left": {
+        "point_layer_item_style": {
+          "normal_style": {
+            "poi_marker_id": "lane_guide_warning_left.xml",
+            "poi_marker_info": "marker_info_lane_guide_solid_line_left"
+          },
+          "Foreshortening": "common_info_foreshortening"
+        }
+      },
+      "point_lane_guide_solid_line_right": {
+        "point_layer_item_style": {
+          "normal_style": {
+            "poi_marker_id": "lane_guide_warning_right.xml",
+            "poi_marker_info": "marker_info_lane_guide_solid_line_right"
+          },
+          "Foreshortening": "common_info_foreshortening"
+        }
+      }
+    },
+    "style_name": {
+      "prefix_name": "",
+      "rule": [
+        {
+          "brief": "样式规则",
+          "type": "style_switch",
+          "value": {
+            "condition": "$biz_data.bubbleSide",
+            "case": {
+              "1": "point_lane_guide_solid_line_left",
+              "2": "point_lane_guide_solid_line_right"
+            }
+          }
+        }
+      ]
+    },
+    "card_info": {
+      "lane_guide_warning_left.xml": "<div style=\"display:flex;flex-direction:row;justify-content:flex-end;align-items:center;width:auto;height:auto;background-image:global_image_autonavi_lane_bubble_container_lane_warning_right_day_night;\">\n  <div style=\"display:flex;flex-direction:column;justify-content:center;align-items:flex-end;margin-right:6px;margin-left:16px;\">\n    <label id=\"limit_text\" style=\"font-size:24px;color:#1A66FF;font-family:SDK_Font-Medium;margin-top:-3px;\" lines=\"1\">依指示牌行驶</label>\n    <label id=\"name\" style=\"font-size:20px;color:#b3000000;font-family:SDK_Font-Medium;margin-top:-7px;\" text='可变车道'/>\n  </div>\n  <div style=\"display:flex;flex-direction:row;justify-content:center;align-items:center;width:60px;height:60px;\">\n    <image id=\"bg\" style=\"width:60px;height:60px;position:absolute;\" src=\"global_image_autonavi_lane_icon_warning_blue_day_night\"/>\n\t<image id=\"image\" style=\"width:60px;height:60px;position:absolute;\" src=\"global_image_autonavi_lane_icon_variable_lane_day_night\"/>\n  </div>\n</div>",
+      "lane_guide_warning_right.xml": "<div style=\"display:flex;flex-direction:row;justify-content:flex-end;align-items:center;width:auto;height:auto;background-image:global_image_autonavi_lane_bubble_container_lane_warning_left_day_night;\">\n  <div style=\"display:flex;flex-direction:row;justify-content:center;align-items:center;width:60px;height:60px;\">\n    <image id=\"bg\" style=\"width:60px;height:60px;position:absolute;\" src=\"global_image_autonavi_lane_icon_warning_blue_day_night\"/>\n\t<image id=\"image\" style=\"width:60px;height:60px;position:absolute;\" src=\"global_image_autonavi_lane_icon_variable_lane_day_night\"/>\n  </div>\n  <div style=\"display:flex;flex-direction:column;justify-content:center;align-items:flex-start;margin-right:16px;margin-left:6px;\">\n    <label id=\"limit_text\" style=\"font-size:24px;color:#1A66FF;font-family:SDK_Font-Medium;margin-top:-3px;\" lines=\"1\">依指示牌行驶</label>\n    <label id=\"name\" style=\"font-size:20px;color:#b3000000;font-family:SDK_Font-Medium;margin-top:-7px;\" text='可变车道'/>\n  </div>\n</div>"
+    },
+    "dynamic_marker": {
+      "rule": [
+        {
+          "brief": "资源图片",
+          "type": "marker_if",
+          "value": {
+            "condition": {
+              "fact": "$biz_data.bubbleSide",
+              "operator": "equal",
+              "value": 1
+            },
+            "case": {
+              "true": [
+                {
+                  "id": "bg",
+                  "nodeName": "image",
+                  "display": true,
+                  "value": "global_image_autonavi_lane_icon_warning_blue_day_night"
+                },
+                {
+                  "id": "image",
+                  "nodeName": "image",
+                  "display": true,
+                  "value": "global_image_autonavi_lane_icon_arrow_for_right_merge_day_night"
+                }
+              ],
+              "false": [
+                {
+                  "id": "bg",
+                  "nodeName": "image",
+                  "display": true,
+                  "value": "global_image_autonavi_lane_icon_warning_blue_day_night"
+                },
+                {
+                  "id": "image",
+                  "nodeName": "image",
+                  "display": true,
+                  "value": "global_image_autonavi_lane_icon_arrow_for_left_merge_day_night"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "brief": "文本更新",
+          "type": "marker_switch",
+          "value": {
+            "condition": "$biz_data.sceneType",
+            "case": {
+              "1": [
+                {
+                  "id": "name",
+                  "nodeName": "label",
+                  "display": false
+                },
+                {
+                  "id": "limit_text",
+                  "nodeName": "label",
+                  "display": true,
+                  "value": "BlRes::string::narrowing"
+                }
+              ],
+              "2": [
+                {
+                  "id": "name",
+                  "nodeName": "label",
+                  "display": false
+                },
+                {
+                  "id": "limit_text",
+                  "nodeName": "label",
+                  "display": true,
+                  "value": "BlRes::string::solid_line_ahead"
+                }
+              ],
+              "3": [
+                {
+                  "id": "name",
+                  "nodeName": "label",
+                  "display": false
+                },
+                {
+                  "id": "limit_text",
+                  "nodeName": "label",
+                  "display": true,
+                  "value": "BlRes::string::tunnel_fork"
+                }
+              ],
+              "4": [
+                {
+                  "id": "name",
+                  "nodeName": "label",
+                  "display": false
+                },
+                {
+                  "id": "limit_text",
+                  "nodeName": "label",
+                  "display": true,
+                  "value": "BlRes::string::lane_restrictions_ahead"
+                }
+              ],
+              "5": [
+                {
+                  "id": "name",
+                  "nodeName": "label",
+                  "display": false
+                },
+                {
+                  "id": "limit_text",
+                  "nodeName": "label",
+                  "display": true,
+                  "value": "BlRes::string::dedicated_lane_ahead"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "abstract": {
+    "brief": "车道级导航并线理由图层业务",
+    "name": "lane_guide_merge_reason_layer",
+    "biz_type": 10016,
+    "update_card": false
+  },
+  "dataSource": "{\"item_data\":{\"id\":\"123\",\"position\":{\"lon\":116.355436,\"lat\":39.940476,\"z\":0}},\"biz_data\":{\"sceneType\":3,\"bubbleSide\":1}}"
+}

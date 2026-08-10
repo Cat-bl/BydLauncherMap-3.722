@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="@dimen/custom_setting_bg_bg_corner_normal_night"/>
+    <stroke
+        android:width="@dimen/custom_setting_bg_bg_strokewidth_normal_night"
+        android:color="#464646"/>
+    <gradient
+        android:startColor="#d9232323"
+        android:endColor="#2e2e2e"
+        android:angle="90"
+        android:centerX="0.5"/>
+</shape>

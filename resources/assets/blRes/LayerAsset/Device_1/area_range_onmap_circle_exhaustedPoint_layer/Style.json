@@ -1,0 +1,35 @@
+{
+    "marker_info": {
+        "marker_info_exhausted_central": {
+            "anchor": 9,
+            "x_ratio": 0.5,
+            "y_ratio": 0.85,
+            "night_style": {
+                "color": [
+                    {
+                        "retain_energy_text": "#e6ffffff"
+                    }
+                ]
+            },
+            "day_style": {
+                "color": [
+                    {
+                        "retain_energy_text": "#ffffffff"
+                    }
+                ]
+            }
+        }
+    },
+    "layer_item_info": {
+        "point_exhausted_central": {
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "exhausted_mark_farthest.xml",
+                    "poi_marker_info": "marker_info_exhausted_central"
+                }
+            },
+            "index": 0,
+            "name_cn": "电量耗尽点"
+        }
+    }
+}

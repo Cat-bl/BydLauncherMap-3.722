@@ -1,0 +1,14 @@
+{
+    "landscape": {
+        "lookJunctionDis": 150,
+        "lookForwardDis": 150,
+        "leftEdgeRatio": 0.3,
+        "rightEdgeRatio": 0.7
+    },
+    "portrait": {
+        "lookJunctionDis": 150,
+        "lookForwardDis": 150,
+        "leftEdgeRatio": 0.2,
+        "rightEdgeRatio": 0.8
+    }
+}

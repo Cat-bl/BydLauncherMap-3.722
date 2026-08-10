@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/byd_setting_theme_item_bg_view_selected_day"/>
+    <item
+        android:state_selected="false"
+        android:drawable="@drawable/byd_setting_theme_item_bg_view_unselected_day"/>
+</selector>

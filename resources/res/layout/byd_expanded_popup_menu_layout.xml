@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:translationZ="@dimen/byd_pvt_popup_menu_cardview_shadow_height"
+    android:outlineSpotShadowColor="?attr/bydPvtPopupMenuShadowColor"
+    app:cardBackgroundColor="?attr/bydPvtPopupMenuBgColor"
+    app:cardCornerRadius="@dimen/sys_expanded_border_radius_s"
+    app:cardElevation="@dimen/byd_pvt_popup_menu_cardview_shadow_height">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/pw_recycler_view"
+            android:background="@android:color/transparent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="@dimen/byd_expanded_pvt_popup_menu_minWH"
+            android:layout_height="match_parent"
+            app:layout_constraintHeight_max="@dimen/byd_expanded_pvt_popup_menu_maxHT"
+            app:layout_constraintHeight_min="@dimen/byd_expanded_pvt_popup_menu_item_minHT"
+            style="?attr/sysPopupMenuScrollThumbSt"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

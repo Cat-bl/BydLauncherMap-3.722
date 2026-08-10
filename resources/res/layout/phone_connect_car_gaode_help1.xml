@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.skin.view.SkinConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.autonavi.skin.view.SkinImageView
+        android:id="@+id/phone_connect_car_gaode_help1_siv"
+        android:background="@drawable/img_interconnection_gaode_help1_land"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/auto_dimen2_88"
+        app:background4Night="@drawable/img_interconnection_gaode_help1_night_land"
+        app:background4Skin="@drawable/img_interconnection_gaode_help1_land"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.autonavi.skin.view.SkinLinearLayout
+        android:layout_marginTop="@dimen/auto_dimen2_38"
+        app:layout_constraintTop_toBottomOf="@+id/phone_connect_car_gaode_help1_siv"
+        style="@style/style_interconnection_tip">
+        <com.autonavi.skin.view.SkinTextView
+            android:id="@+id/connect_net_flag"
+            android:text="1"
+            style="@style/style_interconnection_step"/>
+        <com.autonavi.skin.view.SkinTextView
+            android:id="@+id/phone_connect_car_gaode_help1_tip"
+            android:text="@string/interconnection_gaode_help1_tip"
+            style="@style/style_interconnection_tip_text"/>
+    </com.autonavi.skin.view.SkinLinearLayout>
+</com.autonavi.skin.view.SkinConstraintLayout>

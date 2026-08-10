@@ -1,0 +1,118 @@
+{
+    "marker_info": {
+        "marker_info_guide_finish_park_normal": {
+            "anchor": 9,
+            "x_ratio": 0.5,
+            "y_ratio": 0.95,
+            "day_style": {
+                "color": [
+                    {
+                        "name": "#131313"
+                    },
+                    {
+                        "park_type": "#ff1a66ff"
+                    },
+                    {
+                        "charge_type": "#e5000000"
+                    },
+                    {
+                        "fast_free": "#fff95000"
+                    },
+                    {
+                        "fast_total": "#7ff95000"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name": "2px #ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "name": "#e6ffffff"
+                    },
+                    {
+                        "park_type": "#ff4e8fff"
+                    },
+                    {
+                        "charge_type": "#e5ffffff"
+                    },
+                    {
+                        "fast_free": "#ffec7b10"
+                    },
+                    {
+                        "fast_total": "#7fec7b10"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name": "2px #000000"
+                    }
+                ]
+            },
+            "image_style": {
+                "park_image": {
+                    "park1": "global_image_autonavi_car_parking_1_day_night",
+                    "park2": "global_image_autonavi_car_parking_2_day_night",
+                    "park3": "global_image_autonavi_car_parking_3_day_night",
+                    "charge": "global_image_navi_along_search_charge_icon_day_night"
+                }
+            }
+        },
+        "marker_info_guide_finish_park_focus": {
+            "anchor": 9,
+            "x_ratio": 0.5,
+            "y_ratio": 0.91,
+            "day_style": {
+                "color": [
+                    {
+                        "name": "#131313"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name": "2px #ffffff"
+                    }
+                ]
+            },
+            "night_style": {
+                "color": [
+                    {
+                        "name": "#e6ffffff"
+                    }
+                ],
+                "text-stroke": [
+                    {
+                        "name": "2px #000000"
+                    }
+                ]
+            },
+            "image_style": {
+                "park_big_image": {
+                    "park1": "global_image_autonavi_car_parking_big_1_day_night",
+                    "park2": "global_image_autonavi_car_parking_big_2_day_night",
+                    "park3": "global_image_autonavi_car_parking_big_3_day_night",
+                    "charge": "global_image_navi_along_search_charge_big_icon_day_night"
+                }
+            }
+        }
+    },
+    "layer_item_info": {
+        "point_guide_finish_park": {
+            "index": 0,
+            "name_cn": "导航结束页停车场",
+            "point_layer_item_style": {
+                "normal_style": {
+                    "poi_marker_id": "guide_finish_park_normal.xml",
+                    "poi_marker_info": "marker_info_guide_finish_park_normal"
+                },
+                "focus_style": {
+                    "poi_marker_id": "guide_finish_park_focus.xml",
+                    "poi_marker_info": "marker_info_guide_finish_park_focus"
+                }
+            }
+        }
+    }
+}

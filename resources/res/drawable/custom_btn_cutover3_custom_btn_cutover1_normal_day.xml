@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners
+        android:bottomLeftRadius="@dimen/custom_btn_cutover3_custom_btn_cutover1_corner_bottom_left_normal_day"
+        android:bottomRightRadius="@dimen/custom_btn_cutover3_custom_btn_cutover1_corner_bottom_right_normal_day"/>
+    <solid android:color="@color/custom_btn_cutover3_custom_btn_cutover1_solid_normal_day"/>
+</shape>

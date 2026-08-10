@@ -1,0 +1,22 @@
+{
+    "layer_item_info": {
+        "point_route_end_path": {
+            "index": 0,
+            "name_cn": "路线末梢点",
+            "point_layer_item_style": {
+                "normal_style": {
+                    "marker_style": {
+                        "src": [
+                            {
+                                "type_image": "global_image_end_icon_day_night"
+                            }
+                        ]
+                    },
+                    "poi_marker_id": "img_general.xml",
+                    "poi_marker_key": "marker_info_point_route_end_path_normal_style"
+                }
+            }
+        }
+    },
+    "marker_info": {}
+}

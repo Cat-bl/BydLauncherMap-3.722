@@ -41,6 +41,8 @@
 
 .field private mBtnLaneShow:Lcom/autonavi/view/custom/CustomBtnSwitchView;
 
+.field private mBuildingSwitchId:I
+
 .field private mCarHeadUpView:Lcom/autonavi/skin/view/SkinTextView;
 
 .field public mContentView:Lcom/autonavi/auto/common/view/BaseScrollView;
@@ -1293,6 +1295,178 @@
     const-wide/16 v1, 0x0
 
     invoke-virtual {v0, v1, v2}, Lcom/autosdk/common/kld/KldMessagerController;->M(J)V
+
+    return-void
+.end method
+
+.method private applyBuilding(Z)V
+    .locals 2
+
+    invoke-static {}, Lcom/autosdk/bussiness/map/MapController;->getInstance()Lcom/autosdk/bussiness/map/MapController;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1, p1}, Lcom/autosdk/bussiness/map/MapController;->set3Dobj(IZ)V
+
+    invoke-virtual {v0, v1, p1}, Lcom/autosdk/bussiness/map/MapController;->setBuildingNormal(IZ)V
+
+    return-void
+.end method
+
+.method private isBuildingShow()Z
+    .locals 4
+
+    invoke-static {}, Lf/h/c/n0/l2;->g()Landroid/content/Context;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    if-nez v0, :cond_0
+
+    return v1
+
+    :cond_0
+    const-string v2, "byd_building_show"
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v0, v2, v3}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v0
+
+    const-string v2, "show"
+
+    invoke-interface {v0, v2, v1}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method private setBuildingShow(Z)V
+    .locals 3
+
+    invoke-static {}, Lf/h/c/n0/l2;->g()Landroid/content/Context;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    const-string v1, "byd_building_show"
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v0
+
+    const-string v1, "show"
+
+    invoke-interface {v0, v1, p1}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+    return-void
+.end method
+
+.method private initBuildingSwitch()V
+    .locals 4
+
+    invoke-static {}, Lf/h/c/n0/l2;->g()Landroid/content/Context;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    const-string v2, "btn_build_show"
+
+    const-string v3, "id"
+
+    invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v1, v2, v3, v0}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/autosdk/settings/view/SettingNaviView;->mBuildingSwitchId:I
+
+    if-nez v0, :cond_1
+
+    return-void
+
+    :cond_1
+    invoke-virtual {p0, v0}, Lcom/autosdk/settings/view/BaseSettingView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    if-nez v0, :cond_2
+
+    return-void
+
+    :cond_2
+    invoke-virtual {p0, v0, p0}, Lcom/autosdk/settings/view/SettingNaviView;->setOnClickListener(Landroid/view/View;Landroid/view/View$OnClickListener;)Z
+
+    invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->isBuildingShow()Z
+
+    move-result v1
+
+    invoke-virtual {p0, v0, v1}, Lcom/autosdk/settings/view/SettingNaviView;->setViewSelected(Landroid/view/View;Z)V
+
+    invoke-direct {p0, v1}, Lcom/autosdk/settings/view/SettingNaviView;->applyBuilding(Z)V
+
+    return-void
+.end method
+
+.method private refreshBuildingSwitch()V
+    .locals 2
+
+    iget v0, p0, Lcom/autosdk/settings/view/SettingNaviView;->mBuildingSwitchId:I
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-virtual {p0, v0}, Lcom/autosdk/settings/view/BaseSettingView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    if-nez v0, :cond_1
+
+    return-void
+
+    :cond_1
+    invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->isBuildingShow()Z
+
+    move-result v1
+
+    invoke-virtual {p0, v0, v1}, Lcom/autosdk/settings/view/SettingNaviView;->setViewSelected(Landroid/view/View;Z)V
 
     return-void
 .end method
@@ -3863,6 +4037,8 @@
 
     invoke-direct {p0, v0}, Lcom/autosdk/settings/view/SettingNaviView;->updateLaneSwitchState(Landroid/view/View;)V
 
+    invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->initBuildingSwitch()V
+
     invoke-static {}, Lf/h/c/n0/p2;->n()Z
 
     move-result v0
@@ -4152,6 +4328,8 @@
 
     invoke-direct {p0, v0}, Lcom/autosdk/settings/view/SettingNaviView;->updateLaneSwitchState(Landroid/view/View;)V
 
+    invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->refreshBuildingSwitch()V
+
     return-void
 .end method
 
@@ -4288,6 +4466,35 @@
 
     move-result p1
 
+    iget v0, p0, Lcom/autosdk/settings/view/SettingNaviView;->mBuildingSwitchId:I
+
+    if-eqz v0, :cond_building_skip
+
+    if-ne p1, v0, :cond_building_skip
+
+    invoke-virtual {p0, p1}, Lcom/autosdk/settings/view/BaseSettingView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/autonavi/view/custom/CustomBtnSwitchView;
+
+    if-eqz v0, :cond_building_skip
+
+    invoke-virtual {v0}, Lcom/autonavi/view/custom/CustomBtnSwitchView;->isSelected()Z
+
+    move-result v1
+
+    xor-int/lit8 v1, v1, 0x1
+
+    invoke-virtual {v0, v1}, Lcom/autonavi/view/custom/CustomBtnSwitchView;->setSelected(Z)V
+
+    invoke-direct {p0, v1}, Lcom/autosdk/settings/view/SettingNaviView;->setBuildingShow(Z)V
+
+    invoke-direct {p0, v1}, Lcom/autosdk/settings/view/SettingNaviView;->applyBuilding(Z)V
+
+    return-void
+
+    :cond_building_skip
     sget v0, Lcom/autosdk/settings/R$id;->setting_btnc_avoid_theme:I
 
     const-string v1, "SettingNaviView"

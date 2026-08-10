@@ -4541,6 +4541,8 @@
 
     invoke-virtual {v0, v2, v4, v3, v3}, Lcom/autosdk/bussiness/map/MapController;->setMapStyle(IZIZ)V
 
+    invoke-static {}, Lcom/autosdk/bussiness/map/BuildingPref;->applyAll()V
+
     invoke-static {}, Lcom/autosdk/bussiness/manager/SDKManager;->getInstance()Lcom/autosdk/bussiness/manager/SDKManager;
 
     move-result-object v0

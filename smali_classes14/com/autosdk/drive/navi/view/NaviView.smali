@@ -17783,6 +17783,16 @@
 
     iput-boolean v4, p0, Lf/h/f/b2/t/j4;->k4:Z
 
+    # 卡片树重建前清理全部 native 路口图层，避免切换布局后旧类型纹理残留。
+    # 后续沿用原有 recoverCrossImage() 恢复新布局对应的当前路口图。
+    iget-object v5, p0, Lf/h/i/c/j;->b:Lf/h/i/c/k;
+
+    check-cast v5, Lcom/autosdk/drive/navi/presenter/NaviPresenter;
+
+    iget-object v5, v5, Lcom/autosdk/drive/navi/presenter/BaseNaviPresenter;->crossImageController:Lcom/autosdk/drive/navi/presenter/CrossImageController;
+
+    invoke-virtual {v5}, Lcom/autosdk/drive/navi/presenter/CrossImageController;->j()V
+
     :cond_1
     invoke-virtual {p0}, Lcom/autosdk/drive/navi/view/NaviView;->Ab()V
 
@@ -17976,12 +17986,6 @@
     goto :goto_3
 
     :cond_7
-    iget-object p1, p0, Lf/h/i/c/j;->b:Lf/h/i/c/k;
-
-    check-cast p1, Lcom/autosdk/drive/navi/presenter/NaviPresenter;
-
-    invoke-virtual {p1}, Lcom/autosdk/drive/navi/presenter/BaseNaviPresenter;->recoverCrossImage()V
-
     goto/16 :goto_8
 
     :cond_8

@@ -53,6 +53,15 @@
 
     invoke-virtual {v0, p1}, Lcom/autosdk/bussiness/layer/DrivingLayer;->setRoadCrossRect(Lcom/autonavi/gbl/common/model/RectInt;)V
 
+    # 只有在新路口卡片完成测量并提交实际矩形后恢复图层，避免沿用切换前布局的旧尺寸。
+    iget-object v0, p0, Lf/h/f/b2/t/j4$f;->b:Lf/h/f/b2/t/j4;
+
+    iget-object v0, v0, Lf/h/i/c/j;->b:Lf/h/i/c/k;
+
+    check-cast v0, Lcom/autosdk/drive/navi/presenter/NaviPresenter;
+
+    invoke-virtual {v0}, Lcom/autosdk/drive/navi/presenter/BaseNaviPresenter;->recoverCrossImage()V
+
     :cond_0
     iget-object v0, p0, Lf/h/f/b2/t/j4$f;->b:Lf/h/f/b2/t/j4;
 

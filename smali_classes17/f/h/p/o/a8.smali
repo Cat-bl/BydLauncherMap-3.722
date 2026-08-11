@@ -40,12 +40,14 @@
 
 .field public p:Z
 
+.field public r:Lcom/autosdk/common/utils/DPIUtil$ScreenStatus;
+
 .field public final q:Landroid/widget/AbsListView$OnScrollListener;
 
 
 # direct methods
 .method public constructor <init>(Lcom/autosdk/framework/fragmentcontainer/BaseFragment;)V
-    .locals 1
+    .locals 2
 
     invoke-direct {p0, p1}, Lf/h/p/o/j7;-><init>(Lcom/autosdk/framework/fragmentcontainer/BaseFragment;)V
 
@@ -62,6 +64,12 @@
     iput-boolean p1, p0, Lf/h/p/o/a8;->o:Z
 
     iput-boolean p1, p0, Lf/h/p/o/a8;->p:Z
+
+    invoke-static {}, Lcom/autosdk/common/utils/DPIUtil;->i()Lcom/autosdk/common/utils/DPIUtil$ScreenStatus;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lf/h/p/o/a8;->r:Lcom/autosdk/common/utils/DPIUtil$ScreenStatus;
 
     new-instance p1, Lf/h/p/o/a8$a;
 
@@ -1688,6 +1696,43 @@
 
     :goto_2
     invoke-interface {p0, v1, v2}, Lf/h/i/d/f0;->setViewVisibility(II)V
+
+    return-void
+.end method
+
+.method public onConfigurationChanged(Landroid/content/res/Configuration;)V
+    .locals 3
+
+    # Exit the transient waypoint page when changing from 2/3 to 1/3.
+    invoke-static {}, Lcom/autosdk/common/utils/DPIUtil;->i()Lcom/autosdk/common/utils/DPIUtil$ScreenStatus;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lf/h/p/o/a8;->r:Lcom/autosdk/common/utils/DPIUtil$ScreenStatus;
+
+    sget-object v2, Lcom/autosdk/common/utils/DPIUtil$ScreenStatus;->LANDSCAPE_2_3:Lcom/autosdk/common/utils/DPIUtil$ScreenStatus;
+
+    if-ne v1, v2, :cond_way_point_config_changed
+
+    sget-object v2, Lcom/autosdk/common/utils/DPIUtil$ScreenStatus;->LANDSCAPE_1_3:Lcom/autosdk/common/utils/DPIUtil$ScreenStatus;
+
+    if-ne v0, v2, :cond_way_point_config_changed
+
+    iput-object v0, p0, Lf/h/p/o/a8;->r:Lcom/autosdk/common/utils/DPIUtil$ScreenStatus;
+
+    iget-object v2, p0, Lf/h/i/c/j;->a:Lcom/autosdk/framework/fragmentcontainer/BaseFragment;
+
+    if-eqz v2, :cond_way_point_config_return
+
+    invoke-virtual {v2}, Lcom/autosdk/framework/fragmentcontainer/BaseFragment;->j()V
+
+    :cond_way_point_config_return
+    return-void
+
+    :cond_way_point_config_changed
+    iput-object v0, p0, Lf/h/p/o/a8;->r:Lcom/autosdk/common/utils/DPIUtil$ScreenStatus;
+
+    invoke-super {p0, p1}, Lf/h/p/o/j7;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     return-void
 .end method

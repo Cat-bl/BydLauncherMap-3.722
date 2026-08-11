@@ -253,6 +253,64 @@
     return-void
 .end method
 
+.method public declared-synchronized j()V
+    .locals 5
+
+    monitor-enter p0
+
+    :try_start_0
+    # 配置切换时旧的路口图类型可能已不再记录在 b 中；统一清空三个受支持的 native 图层，
+    # 再由既有 recoverCrossImage() 在新卡片完成重建后恢复当前图。
+    invoke-virtual {p0}, Lcom/autosdk/drive/navi/presenter/CrossImageController;->f()V
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/autosdk/drive/navi/presenter/CrossImageController;->a:Z
+
+    invoke-virtual {p0}, Lcom/autosdk/drive/navi/presenter/CrossImageController;->a()Lcom/autosdk/bussiness/layer/DrivingLayer;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v1, v2}, Lcom/autosdk/bussiness/layer/DrivingLayer;->hideCross(I)V
+
+    invoke-virtual {v1, v2, v0}, Lcom/autosdk/bussiness/layer/DrivingLayer;->setRoadCrossVisible(IZ)V
+
+    const/4 v2, 0x3
+
+    invoke-virtual {v1, v2}, Lcom/autosdk/bussiness/layer/DrivingLayer;->hideCross(I)V
+
+    invoke-virtual {v1, v2, v0}, Lcom/autosdk/bussiness/layer/DrivingLayer;->setRoadCrossVisible(IZ)V
+
+    const/4 v2, 0x4
+
+    invoke-virtual {v1, v2}, Lcom/autosdk/bussiness/layer/DrivingLayer;->hideCross(I)V
+
+    invoke-virtual {v1, v2, v0}, Lcom/autosdk/bussiness/layer/DrivingLayer;->setRoadCrossVisible(IZ)V
+
+    const-string v1, "CrossImageController"
+
+    const-string v2, "clearAllCrossImages for configuration"
+
+    new-array v3, v0, [Ljava/lang/Object;
+
+    invoke-static {v1, v2, v3}, Lcom/autosdk/bussiness/common/utils/Logger;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
+.end method
+
 .method public declared-synchronized i(Lcom/autonavi/gbl/guide/model/CrossImageInfo;)Z
     .locals 8
 

@@ -805,6 +805,8 @@
 .method public static synthetic j(Z)V
     .locals 4
 
+    const/4 p0, 0x1
+
     new-instance v0, Lcom/autosdk/common/storage/MapSharePreference;
 
     sget-object v1, Lcom/autosdk/common/storage/MapSharePreference$SharePreferenceName;->laneNavi:Lcom/autosdk/common/storage/MapSharePreference$SharePreferenceName;

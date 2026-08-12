@@ -26177,6 +26177,14 @@
     <public type="id" name="dnp_top_line" id="0x7f0a1582" />
     <public type="id" name="building_card" id="0x7f0a1583" />
     <public type="id" name="btn_build_show" id="0x7f0a1584" />
+    <public type="id" name="car_model_card" id="0x7f0a1585" />
+    <public type="id" name="tv_car_model_title" id="0x7f0a1586" />
+    <public type="id" name="tv_car_model_default" id="0x7f0a1587" />
+    <public type="id" name="tv_car_model_hc" id="0x7f0a1588" />
+    <public type="id" name="tv_car_model_u8l" id="0x7f0a1589" />
+    <public type="id" name="tv_car_model_r1" id="0x7f0a158a" />
+    <public type="id" name="tv_car_model_r2" id="0x7f0a158b" />
+    <public type="id" name="car_model_row" id="0x7f0a158c" />
     <public type="integer" name="abc_config_activityDefaultDur" id="0x7f0b0000" />
     <public type="integer" name="abc_config_activityShortDur" id="0x7f0b0001" />
     <public type="integer" name="app_bar_elevation_anim_duration" id="0x7f0b0002" />

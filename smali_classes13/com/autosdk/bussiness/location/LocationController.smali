@@ -1611,6 +1611,10 @@
 .method public setLocSpeed(FIJ)V
     .locals 2
 
+    invoke-static {p1}, Lcom/byd/mockgps/MockGps;->hookLocSpeed(F)F
+
+    move-result p1
+
     iget-object v0, p0, Lcom/autosdk/bussiness/location/LocationController;->mPosService:Lcom/autonavi/gbl/pos/PosService;
 
     if-nez v0, :cond_0
@@ -1667,6 +1671,10 @@
 
 .method public setSpeed(DIJ)V
     .locals 3
+
+    invoke-static {p1, p2}, Lcom/byd/mockgps/MockGps;->hookSpeed(D)D
+
+    move-result-wide p1
 
     iget-object v0, p0, Lcom/autosdk/bussiness/location/LocationController;->mPosService:Lcom/autonavi/gbl/pos/PosService;
 

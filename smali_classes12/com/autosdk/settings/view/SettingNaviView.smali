@@ -44,6 +44,8 @@
 
 .field private mBuildingSwitchId:I
 
+.field private mMockGpsSwitchId:I
+
 .field private mCarHeadUpView:Lcom/autonavi/skin/view/SkinTextView;
 
 .field public mContentView:Lcom/autonavi/auto/common/view/BaseScrollView;
@@ -1885,6 +1887,89 @@
 
     :cond_1
     invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->isBuildingShow()Z
+
+    move-result v1
+
+    invoke-virtual {p0, v0, v1}, Lcom/autosdk/settings/view/SettingNaviView;->setViewSelected(Landroid/view/View;Z)V
+
+    return-void
+.end method
+
+.method private initMockGpsSwitch()V
+    .locals 4
+
+    invoke-static {}, Lf/h/c/n0/l2;->g()Landroid/content/Context;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    const-string v2, "btn_mock_gps"
+
+    const-string v3, "id"
+
+    invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v1, v2, v3, v0}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/autosdk/settings/view/SettingNaviView;->mMockGpsSwitchId:I
+
+    if-nez v0, :cond_1
+
+    return-void
+
+    :cond_1
+    invoke-virtual {p0, v0}, Lcom/autosdk/settings/view/BaseSettingView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    if-nez v0, :cond_2
+
+    return-void
+
+    :cond_2
+    invoke-virtual {p0, v0, p0}, Lcom/autosdk/settings/view/SettingNaviView;->setOnClickListener(Landroid/view/View;Landroid/view/View$OnClickListener;)Z
+
+    invoke-static {}, Lcom/byd/mockgps/MockGpsUi;->isActive()Z
+
+    move-result v1
+
+    invoke-virtual {p0, v0, v1}, Lcom/autosdk/settings/view/SettingNaviView;->setViewSelected(Landroid/view/View;Z)V
+
+    return-void
+.end method
+
+.method private refreshMockGpsSwitch()V
+    .locals 2
+
+    iget v0, p0, Lcom/autosdk/settings/view/SettingNaviView;->mMockGpsSwitchId:I
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-virtual {p0, v0}, Lcom/autosdk/settings/view/BaseSettingView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    if-nez v0, :cond_1
+
+    return-void
+
+    :cond_1
+    invoke-static {}, Lcom/byd/mockgps/MockGpsUi;->isActive()Z
 
     move-result v1
 
@@ -4461,6 +4546,8 @@
 
     invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->initBuildingSwitch()V
 
+    invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->initMockGpsSwitch()V
+
     invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->initCarModelSelector()V
 
     invoke-static {}, Lf/h/c/n0/p2;->n()Z
@@ -4754,6 +4841,8 @@
 
     invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->refreshBuildingSwitch()V
 
+    invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->refreshMockGpsSwitch()V
+
     invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->applyCarModelSelection()V
 
     return-void
@@ -4930,6 +5019,23 @@
     return-void
 
     :cond_building_skip
+    iget v0, p0, Lcom/autosdk/settings/view/SettingNaviView;->mMockGpsSwitchId:I
+
+    if-eqz v0, :cond_mockgps_skip
+
+    if-ne p1, v0, :cond_mockgps_skip
+
+    invoke-virtual {p0, p1}, Lcom/autosdk/settings/view/BaseSettingView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_mockgps_skip
+
+    invoke-static {v0}, Lcom/byd/mockgps/MockGpsUi;->onSwitchClick(Landroid/view/View;)V
+
+    return-void
+
+    :cond_mockgps_skip
     sget v0, Lcom/autosdk/settings/R$id;->setting_btnc_avoid_theme:I
 
     const-string v1, "SettingNaviView"

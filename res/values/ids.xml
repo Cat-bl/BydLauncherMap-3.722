@@ -5309,4 +5309,9 @@
     <item type="id" name="tv_car_model_r1" />
     <item type="id" name="tv_car_model_r2" />
     <item type="id" name="car_model_row" />
+    <item type="id" name="mock_gps_card" />
+    <item type="id" name="mock_gps_text_box" />
+    <item type="id" name="tv_mock_gps_title" />
+    <item type="id" name="tv_mock_gps_desc" />
+    <item type="id" name="btn_mock_gps" />
 </resources>

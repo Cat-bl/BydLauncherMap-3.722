@@ -1557,6 +1557,19 @@
 .method public getCachedSpeed()D
     .locals 6
 
+    invoke-static {}, Lcom/byd/mockgps/MockGps;->hookCanSpeed()D
+
+    move-result-wide v0
+
+    const-wide/16 v2, 0x0
+
+    cmpg-double v4, v0, v2
+
+    if-ltz v4, :cond_mock_can
+
+    return-wide v0
+
+    :cond_mock_can
     iget-wide v0, p0, Lcom/autosdk/bussiness/vehicle/BydAutoSpeed;->speedFromSignal:D
 
     invoke-direct {p0, v0, v1}, Lcom/autosdk/bussiness/vehicle/BydAutoSpeed;->isValidSpeedFromSignal(D)Z

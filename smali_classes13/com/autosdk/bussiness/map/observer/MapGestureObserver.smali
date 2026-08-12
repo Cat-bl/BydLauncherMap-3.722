@@ -80,6 +80,8 @@
 .method public onLongPress(JJJ)V
     .locals 0
 
+    invoke-static {p0, p3, p4, p5, p6}, Lcom/byd/mockgps/MockGpsMap;->onMapLongPress(Ljava/lang/Object;JJ)V
+
     sget-object p1, Lcom/autosdk/bussiness/map/observer/MapGestureObserver;->TAG:Ljava/lang/String;
 
     const/4 p2, 0x0

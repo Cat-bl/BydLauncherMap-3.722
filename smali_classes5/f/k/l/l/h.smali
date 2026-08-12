@@ -3,6 +3,10 @@
 .source "SourceFile"
 
 
+# static fields
+.field public static n:Ljava/lang/String;
+
+
 # direct methods
 .method public constructor <init>()V
     .locals 0
@@ -71,6 +75,39 @@
     return-object p0
 
     :cond_0
+    invoke-static {}, Lf/k/l/l/h;->n()Ljava/lang/String;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_model_default
+
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    if-eqz v1, :cond_model_default
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "LaneCarSRResource/CarSelf/"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lf/k/l/l/h;->h(Ljava/lang/String;)Landroid/util/Pair;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_model_default
     invoke-static {}, Lf/k/l/l/h;->c()Ljava/lang/String;
 
     move-result-object p0
@@ -791,4 +828,51 @@
     move-result-object p0
 
     goto :goto_0
+.end method
+
+.method public static n()Ljava/lang/String;
+    .locals 4
+
+    sget-object v0, Lf/k/l/l/h;->n:Ljava/lang/String;
+
+    if-eqz v0, :cond_read
+
+    return-object v0
+
+    :cond_read
+    invoke-static {}, Lf/h/c/c0;->a()Landroid/app/Application;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    const-string v0, ""
+
+    return-object v0
+
+    :cond_0
+    const-string v2, "byd_car_model"
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v0, v2, v3}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v0
+
+    const-string v2, "model"
+
+    invoke-interface {v0, v2, v1}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    if-nez v0, :cond_keep
+
+    const-string v0, ""
+
+    :cond_keep
+    sput-object v0, Lf/k/l/l/h;->n:Ljava/lang/String;
+
+    return-object v0
 .end method

@@ -5301,4 +5301,17 @@
     <item type="id" name="year" />
     <item type="id" name="year_unit" />
     <item type="id" name="zero_corner_chip" />
+    <item type="id" name="car_model_card" />
+    <item type="id" name="tv_car_model_title" />
+    <item type="id" name="tv_car_model_default" />
+    <item type="id" name="tv_car_model_hc" />
+    <item type="id" name="tv_car_model_u8l" />
+    <item type="id" name="tv_car_model_r1" />
+    <item type="id" name="tv_car_model_r2" />
+    <item type="id" name="car_model_row" />
+    <item type="id" name="mock_gps_card" />
+    <item type="id" name="mock_gps_text_box" />
+    <item type="id" name="tv_mock_gps_title" />
+    <item type="id" name="tv_mock_gps_desc" />
+    <item type="id" name="btn_mock_gps" />
 </resources>

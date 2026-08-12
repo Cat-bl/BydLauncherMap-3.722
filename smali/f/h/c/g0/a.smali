@@ -1417,6 +1417,10 @@
 .method public onLocationChanged(Landroid/location/Location;)V
     .locals 5
 
+    invoke-static {p1}, Lcom/byd/mockgps/MockGps;->hookLocation(Landroid/location/Location;)Landroid/location/Location;
+
+    move-result-object p1
+
     const/4 v0, 0x0
 
     if-eqz p1, :cond_2

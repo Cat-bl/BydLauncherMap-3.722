@@ -4,6 +4,7 @@
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # annotations
@@ -42,6 +43,8 @@
 .field private mBtnLaneShow:Lcom/autonavi/view/custom/CustomBtnSwitchView;
 
 .field private mBuildingSwitchId:I
+
+.field private mMockGpsSwitchId:I
 
 .field private mCarHeadUpView:Lcom/autonavi/skin/view/SkinTextView;
 
@@ -1386,6 +1389,427 @@
     return-void
 .end method
 
+.method private static carModelIdNames()[Ljava/lang/String;
+    .locals 3
+
+    const/4 v0, 0x5
+
+    new-array v0, v0, [Ljava/lang/String;
+
+    const/4 v1, 0x0
+
+    const-string v2, "tv_car_model_default"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    const-string v2, "tv_car_model_hc"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
+
+    const-string v2, "tv_car_model_r2"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x3
+
+    const-string v2, "tv_car_model_u8l"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x4
+
+    const-string v2, "tv_car_model_r1"
+
+    aput-object v2, v0, v1
+
+    return-object v0
+.end method
+
+.method private static carModelValues()[Ljava/lang/String;
+    .locals 3
+
+    const/4 v0, 0x5
+
+    new-array v0, v0, [Ljava/lang/String;
+
+    const/4 v1, 0x0
+
+    const-string v2, ""
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    const-string v2, "HcModel/"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
+
+    const-string v2, "R2/"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x3
+
+    const-string v2, "U8L/"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x4
+
+    const-string v2, "R1/"
+
+    aput-object v2, v0, v1
+
+    return-object v0
+.end method
+
+.method private static carModelViewId(Ljava/lang/String;)I
+    .locals 4
+
+    invoke-static {}, Lf/h/c/n0/l2;->g()Landroid/content/Context;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return v1
+
+    :cond_0
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v2
+
+    const-string v3, "id"
+
+    invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v2, p0, v3, v0}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method private getCarModel()Ljava/lang/String;
+    .locals 4
+
+    invoke-static {}, Lf/h/c/n0/l2;->g()Landroid/content/Context;
+
+    move-result-object v0
+
+    const-string v1, ""
+
+    if-nez v0, :cond_0
+
+    return-object v1
+
+    :cond_0
+    const-string v2, "byd_car_model"
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v0, v2, v3}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v0
+
+    const-string v2, "model"
+
+    invoke-interface {v0, v2, v1}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    if-nez v0, :cond_1
+
+    return-object v1
+
+    :cond_1
+    return-object v0
+.end method
+
+.method private setCarModel(Ljava/lang/String;)V
+    .locals 3
+
+    invoke-static {}, Lf/h/c/n0/l2;->g()Landroid/content/Context;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    const-string v1, "byd_car_model"
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v0
+
+    const-string v1, "model"
+
+    invoke-interface {v0, v1, p1}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+    return-void
+.end method
+
+.method private applyCarModelSelection()V
+    .locals 7
+
+    invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->getCarModel()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {}, Lcom/autosdk/settings/view/SettingNaviView;->carModelIdNames()[Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {}, Lcom/autosdk/settings/view/SettingNaviView;->carModelValues()[Ljava/lang/String;
+
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    :goto_0
+    array-length v4, v1
+
+    if-ge v3, v4, :cond_end
+
+    aget-object v4, v1, v3
+
+    invoke-static {v4}, Lcom/autosdk/settings/view/SettingNaviView;->carModelViewId(Ljava/lang/String;)I
+
+    move-result v4
+
+    if-eqz v4, :cond_next
+
+    invoke-virtual {p0, v4}, Lcom/autosdk/settings/view/BaseSettingView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v5
+
+    if-eqz v5, :cond_next
+
+    aget-object v6, v2, v3
+
+    invoke-virtual {v6, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v6
+
+    invoke-virtual {p0, v5, v6}, Lcom/autosdk/settings/view/SettingNaviView;->setViewSelected(Landroid/view/View;Z)V
+
+    :cond_next
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_end
+    return-void
+.end method
+
+.method private initCarModelSelector()V
+    .locals 4
+
+    invoke-static {}, Lcom/autosdk/settings/view/SettingNaviView;->carModelIdNames()[Ljava/lang/String;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    :goto_0
+    array-length v2, v0
+
+    if-ge v1, v2, :cond_end
+
+    aget-object v2, v0, v1
+
+    invoke-static {v2}, Lcom/autosdk/settings/view/SettingNaviView;->carModelViewId(Ljava/lang/String;)I
+
+    move-result v2
+
+    if-eqz v2, :cond_next
+
+    invoke-virtual {p0, v2}, Lcom/autosdk/settings/view/BaseSettingView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v3
+
+    if-eqz v3, :cond_next
+
+    invoke-virtual {p0, v3, p0}, Lcom/autosdk/settings/view/SettingNaviView;->setOnClickListener(Landroid/view/View;Landroid/view/View$OnClickListener;)Z
+
+    :cond_next
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_end
+    invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->applyCarModelSelection()V
+
+    return-void
+.end method
+
+.method private handleCarModelClick(Landroid/view/View;)Z
+    .locals 6
+
+    invoke-virtual {p1}, Landroid/view/View;->getId()I
+
+    move-result v0
+
+    invoke-static {}, Lcom/autosdk/settings/view/SettingNaviView;->carModelIdNames()[Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {}, Lcom/autosdk/settings/view/SettingNaviView;->carModelValues()[Ljava/lang/String;
+
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    :goto_0
+    array-length v4, v1
+
+    if-ge v3, v4, :cond_end
+
+    aget-object v4, v1, v3
+
+    invoke-static {v4}, Lcom/autosdk/settings/view/SettingNaviView;->carModelViewId(Ljava/lang/String;)I
+
+    move-result v4
+
+    if-eqz v4, :cond_next
+
+    if-ne v0, v4, :cond_next
+
+    aget-object v4, v2, v3
+
+    invoke-direct {p0, v4}, Lcom/autosdk/settings/view/SettingNaviView;->setCarModel(Ljava/lang/String;)V
+
+    invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->applyCarModelSelection()V
+
+    invoke-direct {p0, p1}, Lcom/autosdk/settings/view/SettingNaviView;->showCarModelRestartDialog(Landroid/view/View;)V
+
+    const/4 v5, 0x1
+
+    return v5
+
+    :cond_next
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_end
+    const/4 v5, 0x0
+
+    return v5
+.end method
+
+.method private showCarModelRestartDialog(Landroid/view/View;)V
+    .locals 4
+
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    new-instance v1, Landroid/app/AlertDialog$Builder;
+
+    invoke-direct {v1, v0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+
+    const-string v2, "\u8f66\u9053\u7ea7\u8f66\u6a21"
+
+    invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v1
+
+    const-string v2, "\u8f66\u9053\u7ea7\u8f66\u6a21\u4fee\u6539\u5b8c\u6210\uff0c\u91cd\u542f\u540e\u751f\u6548\u3002\u662f\u5426\u7acb\u5373\u91cd\u542f\u5730\u56fe\uff1f"
+
+    invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v1
+
+    const-string v2, "\u53d6\u6d88"
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v1
+
+    const-string v2, "\u786e\u5b9a\u91cd\u542f"
+
+    invoke-virtual {v1, v2, p0}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
+
+    return-void
+.end method
+
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 3
+
+    invoke-static {}, Lf/h/c/n0/l2;->g()Landroid/content/Context;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_exit
+
+    invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v1
+
+    invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Landroid/content/pm/PackageManager;->getLaunchIntentForPackage(Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_exit
+
+    invoke-virtual {v1}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_exit
+
+    invoke-static {v1}, Landroid/content/Intent;->makeRestartActivityTask(Landroid/content/ComponentName;)Landroid/content/Intent;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+
+    :cond_exit
+    const/4 v0, 0x0
+
+    invoke-static {v0}, Ljava/lang/System;->exit(I)V
+
+    return-void
+.end method
+
 .method private initBuildingSwitch()V
     .locals 4
 
@@ -1463,6 +1887,89 @@
 
     :cond_1
     invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->isBuildingShow()Z
+
+    move-result v1
+
+    invoke-virtual {p0, v0, v1}, Lcom/autosdk/settings/view/SettingNaviView;->setViewSelected(Landroid/view/View;Z)V
+
+    return-void
+.end method
+
+.method private initMockGpsSwitch()V
+    .locals 4
+
+    invoke-static {}, Lf/h/c/n0/l2;->g()Landroid/content/Context;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    const-string v2, "btn_mock_gps"
+
+    const-string v3, "id"
+
+    invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v1, v2, v3, v0}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/autosdk/settings/view/SettingNaviView;->mMockGpsSwitchId:I
+
+    if-nez v0, :cond_1
+
+    return-void
+
+    :cond_1
+    invoke-virtual {p0, v0}, Lcom/autosdk/settings/view/BaseSettingView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    if-nez v0, :cond_2
+
+    return-void
+
+    :cond_2
+    invoke-virtual {p0, v0, p0}, Lcom/autosdk/settings/view/SettingNaviView;->setOnClickListener(Landroid/view/View;Landroid/view/View$OnClickListener;)Z
+
+    invoke-static {}, Lcom/byd/mockgps/MockGpsUi;->isActive()Z
+
+    move-result v1
+
+    invoke-virtual {p0, v0, v1}, Lcom/autosdk/settings/view/SettingNaviView;->setViewSelected(Landroid/view/View;Z)V
+
+    return-void
+.end method
+
+.method private refreshMockGpsSwitch()V
+    .locals 2
+
+    iget v0, p0, Lcom/autosdk/settings/view/SettingNaviView;->mMockGpsSwitchId:I
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-virtual {p0, v0}, Lcom/autosdk/settings/view/BaseSettingView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    if-nez v0, :cond_1
+
+    return-void
+
+    :cond_1
+    invoke-static {}, Lcom/byd/mockgps/MockGpsUi;->isActive()Z
 
     move-result v1
 
@@ -4039,6 +4546,10 @@
 
     invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->initBuildingSwitch()V
 
+    invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->initMockGpsSwitch()V
+
+    invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->initCarModelSelector()V
+
     invoke-static {}, Lf/h/c/n0/p2;->n()Z
 
     move-result v0
@@ -4330,6 +4841,10 @@
 
     invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->refreshBuildingSwitch()V
 
+    invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->refreshMockGpsSwitch()V
+
+    invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->applyCarModelSelection()V
+
     return-void
 .end method
 
@@ -4462,6 +4977,15 @@
         }
     .end annotation
 
+    invoke-direct {p0, p1}, Lcom/autosdk/settings/view/SettingNaviView;->handleCarModelClick(Landroid/view/View;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_carmodel_skip
+
+    return-void
+
+    :cond_carmodel_skip
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result p1
@@ -4495,6 +5019,23 @@
     return-void
 
     :cond_building_skip
+    iget v0, p0, Lcom/autosdk/settings/view/SettingNaviView;->mMockGpsSwitchId:I
+
+    if-eqz v0, :cond_mockgps_skip
+
+    if-ne p1, v0, :cond_mockgps_skip
+
+    invoke-virtual {p0, p1}, Lcom/autosdk/settings/view/BaseSettingView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_mockgps_skip
+
+    invoke-static {v0}, Lcom/byd/mockgps/MockGpsUi;->onSwitchClick(Landroid/view/View;)V
+
+    return-void
+
+    :cond_mockgps_skip
     sget v0, Lcom/autosdk/settings/R$id;->setting_btnc_avoid_theme:I
 
     const-string v1, "SettingNaviView"

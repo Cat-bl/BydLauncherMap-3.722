@@ -798,23 +798,26 @@
     :try_start_0
     new-array v2, v0, [I
 
-    sget v3, Landroid/hardware/bydauto/BYDAutoFeatureIds$Statistic;->STATISTICS_PEM_NAVIGATION_DESTINATION_TYPE:I
-
+    #sget v3, Landroid/hardware/bydauto/BYDAutoFeatureIds$Statistic;->STATISTICS_PEM_NAVIGATION_DESTINATION_TYPE:I
+    const v3,-0x1
     aput v3, v2, v1
 
-    sget v3, Landroid/hardware/bydauto/BYDAutoFeatureIds$Statistic;->STATISTICS_PEM_NAVIGATION_DESTINATION_FREQUENT:I
+    #sget v3, Landroid/hardware/bydauto/BYDAutoFeatureIds$Statistic;->STATISTICS_PEM_NAVIGATION_DESTINATION_FREQUENT:I
+    const v3,-0x1
 
     const/4 v4, 0x1
 
     aput v3, v2, v4
 
-    sget v3, Landroid/hardware/bydauto/BYDAutoFeatureIds$Statistic;->STATISTICS_PEM_NAVIGATION_REMAINING_DISTANCE:I
+    #sget v3, Landroid/hardware/bydauto/BYDAutoFeatureIds$Statistic;->STATISTICS_PEM_NAVIGATION_REMAINING_DISTANCE:I
+    const v3,-0x1
 
     const/4 v5, 0x2
 
     aput v3, v2, v5
 
-    sget v3, Landroid/hardware/bydauto/BYDAutoFeatureIds$Statistic;->STATISTICS_PEM_NAVIGATION_REMAINING_TIME:I
+    #sget v3, Landroid/hardware/bydauto/BYDAutoFeatureIds$Statistic;->STATISTICS_PEM_NAVIGATION_REMAINING_TIME:I
+    const v3,-0x1
 
     const/4 v6, 0x3
 

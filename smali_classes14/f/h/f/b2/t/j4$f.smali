@@ -58,7 +58,8 @@
 
     iget-object v0, v0, Lf/h/i/c/j;->b:Lf/h/i/c/k;
 
-    check-cast v0, Lcom/autosdk/drive/navi/presenter/NaviPresenter;
+    # 普通导航与模拟导航分别使用 NaviPresenter/NaviSimPresenter，恢复路口图应依赖共同父类。
+    check-cast v0, Lcom/autosdk/drive/navi/presenter/BaseNaviPresenter;
 
     invoke-virtual {v0}, Lcom/autosdk/drive/navi/presenter/BaseNaviPresenter;->recoverCrossImage()V
 

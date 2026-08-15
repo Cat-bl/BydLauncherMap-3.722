@@ -1536,6 +1536,18 @@
     :cond_4
     invoke-virtual {p0, v2, v6}, Lcom/autosdk/bussiness/map/MapController;->set3Dobj(Lcom/autonavi/gbl/map/MapView;Z)V
 
+    invoke-static {}, Lcom/autosdk/bussiness/map/BuildingPref;->getShow()Z
+
+    move-result v6
+
+    invoke-virtual {p0, v2, v6}, Lcom/autosdk/bussiness/map/MapController;->set3Dobj(Lcom/autonavi/gbl/map/MapView;Z)V
+
+    invoke-virtual {v2}, Lcom/autonavi/gbl/map/MapView;->getOperatorBusiness()Lcom/autonavi/gbl/map/OperatorBusiness;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v6}, Lcom/autonavi/gbl/map/OperatorBusiness;->showBuildingNormal(Z)V
+
     invoke-direct {p0, v2, v3}, Lcom/autosdk/bussiness/map/MapController;->setBaseMapRoadNameVisible(Lcom/autonavi/gbl/map/MapView;Z)V
 
     new-instance v4, Lcom/autosdk/bussiness/map/observer/DeviceExtraObservice;

@@ -5,6 +5,7 @@
 # interfaces
 .implements Landroid/view/View$OnClickListener;
 .implements Landroid/content/DialogInterface$OnClickListener;
+.implements Landroid/view/ViewTreeObserver$OnWindowFocusChangeListener;
 
 
 # annotations
@@ -1398,7 +1399,7 @@
 .method private static carModelIdNames()[Ljava/lang/String;
     .locals 3
 
-    const/4 v0, 0x5
+    const/4 v0, 0x6
 
     new-array v0, v0, [Ljava/lang/String;
 
@@ -1432,13 +1433,19 @@
 
     aput-object v2, v0, v1
 
+    const/4 v1, 0x5
+
+    const-string v2, "tv_car_model_custom"
+
+    aput-object v2, v0, v1
+
     return-object v0
 .end method
 
 .method private static carModelValues()[Ljava/lang/String;
     .locals 3
 
-    const/4 v0, 0x5
+    const/4 v0, 0x6
 
     new-array v0, v0, [Ljava/lang/String;
 
@@ -1469,6 +1476,12 @@
     const/4 v1, 0x4
 
     const-string v2, "R1/"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x5
+
+    const-string v2, "Custom/"
 
     aput-object v2, v0, v1
 
@@ -1580,6 +1593,13 @@
 .method private applyCarModelSelection()V
     .locals 7
 
+    iget-object v0, p0, Lcom/autosdk/settings/view/BaseUIView;->mMainView:Landroid/view/View;
+
+    if-nez v0, :cond_view_ready
+
+    return-void
+
+    :cond_view_ready
     invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->getCarModel()Ljava/lang/String;
 
     move-result-object v0
@@ -1627,6 +1647,35 @@
     goto :goto_0
 
     :cond_end
+    const-string v0, "tv_car_model_custom_status"
+
+    invoke-static {v0}, Lcom/autosdk/settings/view/SettingNaviView;->carModelViewId(Ljava/lang/String;)I
+
+    move-result v0
+
+    if-eqz v0, :cond_status_skip
+
+    invoke-virtual {p0, v0}, Lcom/autosdk/settings/view/BaseSettingView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    instance-of v2, v1, Landroid/widget/TextView;
+
+    if-eqz v2, :cond_status_skip
+
+    check-cast v1, Landroid/widget/TextView;
+
+    invoke-static {}, Lf/h/c/n0/l2;->g()Landroid/content/Context;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/byd/carmodel/CarModelPackageManager;->currentLabel(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    :cond_status_skip
     return-void
 .end method
 
@@ -1666,13 +1715,49 @@
     goto :goto_0
 
     :cond_end
+    iget-object v1, p0, Lcom/autosdk/settings/view/BaseUIView;->mMainView:Landroid/view/View;
+
+    if-eqz v1, :cond_focus_skip
+
+    invoke-virtual {v1}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p0}, Landroid/view/ViewTreeObserver;->removeOnWindowFocusChangeListener(Landroid/view/ViewTreeObserver$OnWindowFocusChangeListener;)V
+
+    invoke-virtual {v1, p0}, Landroid/view/ViewTreeObserver;->addOnWindowFocusChangeListener(Landroid/view/ViewTreeObserver$OnWindowFocusChangeListener;)V
+
+    :cond_focus_skip
     invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->applyCarModelSelection()V
 
     return-void
 .end method
 
+.method public onWindowFocusChanged(Z)V
+    .locals 2
+
+    if-eqz p1, :cond_nofocus
+
+    iget-object v0, p0, Lcom/autosdk/settings/view/BaseUIView;->mMainView:Landroid/view/View;
+
+    if-eqz v0, :cond_nofocus
+
+    invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->applyCarModelSelection()V
+
+    invoke-static {}, Lcom/byd/carmodel/CarModelPackageManager;->consumeRestartPrompt()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_nofocus
+
+    invoke-direct {p0, v0}, Lcom/autosdk/settings/view/SettingNaviView;->showCarModelRestartDialog(Landroid/view/View;)V
+
+    :cond_nofocus
+    return-void
+.end method
+
 .method private handleCarModelClick(Landroid/view/View;)Z
-    .locals 6
+    .locals 7
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -1704,6 +1789,36 @@
     if-ne v0, v4, :cond_next
 
     aget-object v4, v2, v3
+
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v6
+
+    const-string v5, "Custom/"
+
+    invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_builtin
+
+    invoke-static {v6}, Lcom/byd/carmodel/CarModelPackageManager;->handleCustomClick(Landroid/content/Context;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_custom_done
+
+    invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->applyCarModelSelection()V
+
+    invoke-direct {p0, p1}, Lcom/autosdk/settings/view/SettingNaviView;->showCarModelRestartDialog(Landroid/view/View;)V
+
+    :cond_custom_done
+    const/4 v5, 0x1
+
+    return v5
+
+    :cond_builtin
+    invoke-static {v6}, Lcom/byd/carmodel/CarModelResolver;->deactivate(Landroid/content/Context;)V
 
     invoke-direct {p0, v4}, Lcom/autosdk/settings/view/SettingNaviView;->setCarModel(Ljava/lang/String;)V
 
@@ -6804,6 +6919,8 @@
 
 .method public onWidgetResume()V
     .locals 0
+
+    invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->applyCarModelSelection()V
 
     return-void
 .end method

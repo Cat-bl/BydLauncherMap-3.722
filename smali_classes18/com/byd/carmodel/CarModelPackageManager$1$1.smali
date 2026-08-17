@@ -36,7 +36,7 @@
         }
     .end annotation
 
-    .line 155
+    .line 151
     iput-object p1, p0, Lcom/byd/carmodel/CarModelPackageManager$1$1;->this$0:Lcom/byd/carmodel/CarModelPackageManager$1;
 
     iput-boolean p2, p0, Lcom/byd/carmodel/CarModelPackageManager$1$1;->val$success:Z
@@ -55,14 +55,14 @@
 .method public run()V
     .registers 5
 
-    .line 158
+    .line 154
     iget-object v0, p0, Lcom/byd/carmodel/CarModelPackageManager$1$1;->this$0:Lcom/byd/carmodel/CarModelPackageManager$1;
 
     iget-object v0, v0, Lcom/byd/carmodel/CarModelPackageManager$1;->val$callback:Lcom/byd/carmodel/CarModelPackageManager$Callback;
 
     if-eqz v0, :cond_14
 
-    .line 159
+    .line 155
     iget-object v0, p0, Lcom/byd/carmodel/CarModelPackageManager$1$1;->this$0:Lcom/byd/carmodel/CarModelPackageManager$1;
 
     iget-object v0, v0, Lcom/byd/carmodel/CarModelPackageManager$1;->val$callback:Lcom/byd/carmodel/CarModelPackageManager$Callback;
@@ -77,7 +77,7 @@
 
     goto :goto_1d
 
-    .line 161
+    .line 157
     :cond_14
     iget-object v0, p0, Lcom/byd/carmodel/CarModelPackageManager$1$1;->this$0:Lcom/byd/carmodel/CarModelPackageManager$1;
 

@@ -18,7 +18,7 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 278
+    .line 334
     invoke-direct {p0}, Landroid/hardware/bydauto/bodywork/AbsBYDAutoBodyworkListener;-><init>()V
 
     return-void
@@ -27,7 +27,7 @@
 .method synthetic constructor <init>(Lcom/byd/carmodel/CarModelExtraSignals$1;)V
     .registers 2
 
-    .line 278
+    .line 334
     invoke-direct {p0}, Lcom/byd/carmodel/CarModelExtraSignals$BodyworkListener;-><init>()V
 
     return-void
@@ -38,7 +38,7 @@
 .method public onDoorStateChanged(II)V
     .registers 3
 
-    .line 281
+    .line 337
     invoke-static {p1, p2}, Lcom/byd/carmodel/CarModelExtraSignals;->onDoorStateChanged(II)V
 
     return-void

@@ -28,19 +28,19 @@
 
     const/4 v1, 0x0
 
-    .line 64
+    .line 77
     invoke-virtual {p0, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
-    .line 65
+    .line 78
     invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object v2
 
     const-string v3, "active_sha"
 
-    .line 66
+    .line 79
     invoke-interface {v2, v3, p1}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
     move-result-object p1
@@ -49,7 +49,7 @@
 
     const/4 v4, 0x1
 
-    .line 67
+    .line 80
     invoke-interface {p1, v2, v4}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
 
     move-result-object p1
@@ -61,19 +61,19 @@
     :cond_1c
     const-string v2, "display_name"
 
-    .line 68
+    .line 81
     invoke-interface {p1, v2, p2}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
     move-result-object p1
 
     const-string p2, "previous_sha"
 
-    .line 69
+    .line 82
     invoke-interface {p1, p2}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
     move-result-object p1
 
-    .line 70
+    .line 83
     invoke-interface {p1}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
     move-result p1
@@ -85,47 +85,132 @@
     :cond_2f
     const-string p1, "byd_car_model"
 
-    .line 74
+    .line 87
     invoke-virtual {p0, p1, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
-    move-result-object p0
+    move-result-object p1
 
-    .line 75
-    invoke-interface {p0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
-
-    move-result-object p0
-
-    const-string p1, "model"
-
-    const-string p2, "Custom/"
-
-    invoke-interface {p0, p1, p2}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
-
-    move-result-object p0
-
-    invoke-interface {p0}, Landroid/content/SharedPreferences$Editor;->commit()Z
-
-    move-result p0
-
-    if-nez p0, :cond_56
-
-    .line 77
-    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+    .line 88
+    invoke-interface {p1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object p1
 
-    invoke-interface {p1, v3}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+    const-string p2, "model"
 
-    move-result-object p1
+    const-string v1, "Custom/"
 
-    invoke-interface {p1, v2}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+    invoke-interface {p1, p2, v1}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
     move-result-object p1
 
     invoke-interface {p1}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
-    :cond_56
-    return p0
+    move-result p1
+
+    if-nez p1, :cond_57
+
+    .line 90
+    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object p0
+
+    invoke-interface {p0, v3}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+
+    move-result-object p0
+
+    invoke-interface {p0, v2}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+
+    move-result-object p0
+
+    invoke-interface {p0}, Landroid/content/SharedPreferences$Editor;->commit()Z
+
+    goto :goto_5a
+
+    .line 92
+    :cond_57
+    invoke-static {p0}, Lcom/byd/carmodel/CarModelEventBindings;->reload(Landroid/content/Context;)V
+
+    :goto_5a
+    return p1
+.end method
+
+.method static activeManifest(Landroid/content/Context;)Ljava/io/File;
+    .registers 7
+
+    const/4 v0, 0x0
+
+    if-eqz p0, :cond_3e
+
+    .line 59
+    invoke-static {p0}, Lcom/byd/carmodel/CarModelResolver;->isActive(Landroid/content/Context;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_a
+
+    goto :goto_3e
+
+    :cond_a
+    const-string v1, "byd_car_package"
+
+    const/4 v2, 0x0
+
+    .line 62
+    invoke-virtual {p0, v1, v2}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v1
+
+    const-string v2, "active_sha"
+
+    const-string v3, ""
+
+    invoke-interface {v1, v2, v3}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 63
+    invoke-static {v1}, Lcom/byd/carmodel/CarModelResolver;->isSha(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_20
+
+    return-object v0
+
+    .line 66
+    :cond_20
+    new-instance v2, Ljava/io/File;
+
+    new-instance v3, Ljava/io/File;
+
+    new-instance v4, Ljava/io/File;
+
+    invoke-virtual {p0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
+
+    move-result-object p0
+
+    const-string v5, "bydcar/models"
+
+    invoke-direct {v4, p0, v5}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    invoke-direct {v3, v4, v1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    const-string p0, "manifest.json"
+
+    invoke-direct {v2, v3, p0}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 68
+    invoke-virtual {v2}, Ljava/io/File;->isFile()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_3e
+
+    move-object v0, v2
+
+    :cond_3e
+    :goto_3e
+    return-object v0
 .end method
 
 .method static activeModel(Landroid/content/Context;)Ljava/io/File;
@@ -201,7 +286,7 @@
 
     const/4 v1, 0x0
 
-    .line 59
+    .line 72
     invoke-virtual {p0, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object p0
@@ -210,7 +295,7 @@
 
     const-string v1, "\u81ea\u5b9a\u4e49"
 
-    .line 60
+    .line 73
     invoke-interface {p0, v0, v1}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -219,33 +304,36 @@
 .end method
 
 .method public static deactivate(Landroid/content/Context;)V
-    .registers 3
+    .registers 4
 
-    if-eqz p0, :cond_16
+    if-eqz p0, :cond_19
 
     const-string v0, "byd_car_package"
 
     const/4 v1, 0x0
 
-    .line 106
+    .line 125
     invoke-virtual {p0, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
-    move-result-object p0
+    move-result-object v0
 
-    invoke-interface {p0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
-    move-result-object p0
+    move-result-object v0
 
-    const-string v0, "enabled"
+    const-string v2, "enabled"
 
-    .line 107
-    invoke-interface {p0, v0, v1}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+    .line 126
+    invoke-interface {v0, v2, v1}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
 
-    move-result-object p0
+    move-result-object v0
 
-    invoke-interface {p0}, Landroid/content/SharedPreferences$Editor;->commit()Z
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
-    :cond_16
+    .line 127
+    invoke-static {p0}, Lcom/byd/carmodel/CarModelEventBindings;->reload(Landroid/content/Context;)V
+
+    :cond_19
     return-void
 .end method
 
@@ -256,7 +344,7 @@
 
     if-eqz p0, :cond_2e
 
-    .line 94
+    .line 113
     invoke-static {p0}, Lcom/byd/carmodel/CarModelResolver;->activeModel(Landroid/content/Context;)Ljava/io/File;
 
     move-result-object v1
@@ -268,7 +356,7 @@
     :cond_a
     const-string v1, "byd_car_package"
 
-    .line 97
+    .line 116
     invoke-virtual {p0, v1, v0}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v1
@@ -286,7 +374,7 @@
     :cond_19
     const-string v1, "byd_car_model"
 
-    .line 100
+    .line 119
     invoke-virtual {p0, v1, v0}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object p0
@@ -295,14 +383,14 @@
 
     const-string v1, ""
 
-    .line 101
+    .line 120
     invoke-interface {p0, v0, v1}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
     const-string v0, "Custom/"
 
-    .line 100
+    .line 119
     invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -321,7 +409,7 @@
 
     if-eqz p0, :cond_2e
 
-    .line 112
+    .line 132
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -335,7 +423,7 @@
     :cond_c
     move v1, v0
 
-    .line 115
+    .line 135
     :goto_d
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -343,7 +431,7 @@
 
     if-ge v1, v2, :cond_2c
 
-    .line 116
+    .line 136
     invoke-virtual {p0, v1}, Ljava/lang/String;->charAt(I)C
 
     move-result v2
@@ -387,30 +475,30 @@
 .end method
 
 .method static reactivate(Landroid/content/Context;)Z
-    .registers 5
+    .registers 6
 
     const/4 v0, 0x0
 
-    if-eqz p0, :cond_3a
+    if-eqz p0, :cond_3f
 
-    .line 84
+    .line 99
     invoke-static {p0}, Lcom/byd/carmodel/CarModelResolver;->activeModel(Landroid/content/Context;)Ljava/io/File;
 
     move-result-object v1
 
     if-nez v1, :cond_a
 
-    goto :goto_3a
+    goto :goto_3f
 
     :cond_a
     const-string v1, "byd_car_package"
 
-    .line 87
+    .line 102
     invoke-virtual {p0, v1, v0}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v1
 
-    .line 88
+    .line 103
     invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object v1
@@ -431,34 +519,40 @@
 
     const-string v1, "byd_car_model"
 
-    .line 89
+    .line 104
     invoke-virtual {p0, v1, v0}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
-    move-result-object p0
+    move-result-object v1
 
-    .line 90
-    invoke-interface {p0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+    .line 105
+    invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
-    move-result-object p0
+    move-result-object v1
 
-    const-string v1, "model"
+    const-string v2, "model"
 
-    const-string v2, "Custom/"
+    const-string v4, "Custom/"
 
-    invoke-interface {p0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+    invoke-interface {v1, v2, v4}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    move-result-object p0
+    move-result-object v1
 
-    invoke-interface {p0}, Landroid/content/SharedPreferences$Editor;->commit()Z
+    invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
-    move-result p0
+    move-result v1
 
-    if-eqz p0, :cond_3a
+    if-eqz v1, :cond_3a
 
     move v0, v3
 
     :cond_3a
-    :goto_3a
+    if-eqz v0, :cond_3f
+
+    .line 107
+    invoke-static {p0}, Lcom/byd/carmodel/CarModelEventBindings;->reload(Landroid/content/Context;)V
+
+    :cond_3f
+    :goto_3f
     return v0
 .end method
 

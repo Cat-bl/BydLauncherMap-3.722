@@ -22,14 +22,6 @@
     .end annotation
 .end field
 
-.field private static final MAX_MODEL:J = 0x2000000L
-
-.field private static final MAX_PACKAGE:J = 0x2800000L
-
-.field private static final MAX_TEXTURE:J = 0x1000000L
-
-.field private static final MAX_TOTAL:J = 0x3000000L
-
 .field private static importing:Z
 
 .field private static volatile restartPromptPending:Z
@@ -39,7 +31,7 @@
 .method static constructor <clinit>()V
     .registers 2
 
-    .line 36
+    .line 32
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
@@ -48,77 +40,77 @@
 
     const-string v1, "manifest.json"
 
-    .line 41
+    .line 37
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     const-string v1, "payload/CarSelf.dat"
 
-    .line 42
+    .line 38
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     const-string v1, "payload/Texture/CarSelf_Main.png"
 
-    .line 43
+    .line 39
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     const-string v1, "payload/Texture/CS_Shadow.png"
 
-    .line 44
+    .line 40
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     const-string v1, "payload/Texture/CS_LDirection.png"
 
-    .line 45
+    .line 41
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     const-string v1, "payload/Texture/CS_RDirection.png"
 
-    .line 46
+    .line 42
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     const-string v1, "payload/Texture/CS_Stop.png"
 
-    .line 47
+    .line 43
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     const-string v1, "payload/Texture/CS_High.png"
 
-    .line 48
+    .line 44
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     const-string v1, "payload/Texture/CS_Lower.png"
 
-    .line 49
+    .line 45
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     const-string v1, "payload/Texture/CS_Emergency.png"
 
-    .line 50
+    .line 46
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     const-string v1, "payload/Texture/CS_Daytime.png"
 
-    .line 51
+    .line 47
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     const-string v1, "payload/Texture/CS_Fog.png"
 
-    .line 52
+    .line 48
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     const-string v1, "payload/Texture/CS_Backup.png"
 
-    .line 53
+    .line 49
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     const-string v1, "payload/Texture/CS_Clearance.png"
 
-    .line 54
+    .line 50
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     const-string v1, "payload/Texture/CS_LPN.png"
 
-    .line 55
+    .line 51
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     return-void
@@ -127,7 +119,7 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 58
+    .line 54
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -179,14 +171,14 @@
 .method public static consumeRestartPrompt()Z
     .registers 2
 
-    .line 109
+    .line 105
     sget-boolean v0, Lcom/byd/carmodel/CarModelPackageManager;->restartPromptPending:Z
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_9
 
-    .line 110
+    .line 106
     sput-boolean v1, Lcom/byd/carmodel/CarModelPackageManager;->restartPromptPending:Z
 
     const/4 v0, 0x1
@@ -197,115 +189,95 @@
     return v1
 .end method
 
-.method private static copyUri(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/io/File;J)V
-    .registers 10
+.method private static copyUri(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/io/File;)V
+    .registers 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
         }
     .end annotation
 
-    .line 296
+    .line 288
     invoke-virtual {p0, p1}, Landroid/content/ContentResolver;->openInputStream(Landroid/net/Uri;)Ljava/io/InputStream;
 
     move-result-object p0
 
-    if-eqz p0, :cond_43
+    if-eqz p0, :cond_33
 
-    .line 299
+    .line 291
     :try_start_6
     new-instance p1, Ljava/io/FileOutputStream;
 
     invoke-direct {p1, p2}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
     :try_end_b
-    .catchall {:try_start_6 .. :try_end_b} :catchall_3e
+    .catchall {:try_start_6 .. :try_end_b} :catchall_2e
 
     const/16 p2, 0x2000
 
     :try_start_d
     new-array p2, p2, [B
 
-    const-wide/16 v0, 0x0
-
-    .line 304
-    :goto_11
+    .line 295
+    :goto_f
     invoke-virtual {p0, p2}, Ljava/io/InputStream;->read([B)I
 
-    move-result v2
+    move-result v0
 
-    const/4 v3, -0x1
+    const/4 v1, -0x1
 
-    if-eq v2, v3, :cond_2b
+    if-eq v0, v1, :cond_1b
 
-    int-to-long v3, v2
+    const/4 v1, 0x0
 
-    add-long/2addr v0, v3
+    .line 296
+    invoke-virtual {p1, p2, v1, v0}, Ljava/io/FileOutputStream;->write([BII)V
 
-    cmp-long v3, v0, p3
+    goto :goto_f
 
-    if-gtz v3, :cond_23
-
-    const/4 v3, 0x0
-
-    .line 307
-    invoke-virtual {p1, p2, v3, v2}, Ljava/io/FileOutputStream;->write([BII)V
-
-    goto :goto_11
-
-    .line 306
-    :cond_23
-    new-instance p2, Ljava/lang/Exception;
-
-    const-string p3, "PACKAGE_TOO_LARGE"
-
-    invoke-direct {p2, p3}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
-
-    throw p2
-
-    .line 309
-    :cond_2b
+    .line 298
+    :cond_1b
     invoke-virtual {p1}, Ljava/io/FileOutputStream;->getFD()Ljava/io/FileDescriptor;
 
     move-result-object p2
 
     invoke-virtual {p2}, Ljava/io/FileDescriptor;->sync()V
-    :try_end_32
-    .catchall {:try_start_d .. :try_end_32} :catchall_39
+    :try_end_22
+    .catchall {:try_start_d .. :try_end_22} :catchall_29
 
-    .line 311
-    :try_start_32
+    .line 300
+    :try_start_22
     invoke-virtual {p1}, Ljava/io/FileOutputStream;->close()V
-    :try_end_35
-    .catchall {:try_start_32 .. :try_end_35} :catchall_3e
+    :try_end_25
+    .catchall {:try_start_22 .. :try_end_25} :catchall_2e
 
-    .line 314
+    .line 303
     invoke-virtual {p0}, Ljava/io/InputStream;->close()V
 
     return-void
 
-    :catchall_39
+    :catchall_29
     move-exception p2
 
-    .line 311
-    :try_start_3a
+    .line 300
+    :try_start_2a
     invoke-virtual {p1}, Ljava/io/FileOutputStream;->close()V
 
-    .line 312
+    .line 301
     throw p2
-    :try_end_3e
-    .catchall {:try_start_3a .. :try_end_3e} :catchall_3e
+    :try_end_2e
+    .catchall {:try_start_2a .. :try_end_2e} :catchall_2e
 
-    :catchall_3e
+    :catchall_2e
     move-exception p1
 
-    .line 314
+    .line 303
     invoke-virtual {p0}, Ljava/io/InputStream;->close()V
 
-    .line 315
+    .line 304
     throw p1
 
-    .line 297
-    :cond_43
+    .line 289
+    :cond_33
     new-instance p0, Ljava/lang/Exception;
 
     const-string p1, "FILE_OPEN_FAILED"
@@ -320,7 +292,7 @@
 
     if-eqz p0, :cond_1c
 
-    .line 66
+    .line 62
     invoke-static {p0}, Lcom/byd/carmodel/CarModelResolver;->activeModel(Landroid/content/Context;)Ljava/io/File;
 
     move-result-object v0
@@ -329,7 +301,7 @@
 
     goto :goto_1c
 
-    .line 69
+    .line 65
     :cond_9
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -361,7 +333,7 @@
 
     if-eqz p0, :cond_24
 
-    .line 333
+    .line 322
     invoke-virtual {p0}, Ljava/io/File;->exists()Z
 
     move-result v0
@@ -370,7 +342,7 @@
 
     goto :goto_24
 
-    .line 334
+    .line 323
     :cond_9
     invoke-virtual {p0}, Ljava/io/File;->isDirectory()Z
 
@@ -378,14 +350,14 @@
 
     if-eqz v0, :cond_21
 
-    .line 335
+    .line 324
     invoke-virtual {p0}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
     move-result-object v0
 
     if-eqz v0, :cond_21
 
-    .line 336
+    .line 325
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -401,7 +373,7 @@
 
     goto :goto_17
 
-    .line 338
+    .line 327
     :cond_21
     invoke-virtual {p0}, Ljava/io/File;->delete()Z
 
@@ -419,7 +391,7 @@
 
     return v0
 
-    .line 96
+    .line 92
     :cond_4
     invoke-static {p0}, Lcom/byd/carmodel/CarModelResolver;->activeModel(Landroid/content/Context;)Ljava/io/File;
 
@@ -433,7 +405,7 @@
 
     if-nez v1, :cond_1e
 
-    .line 97
+    .line 93
     invoke-static {p0}, Lcom/byd/carmodel/CarModelResolver;->reactivate(Landroid/content/Context;)Z
 
     move-result v1
@@ -447,12 +419,12 @@
     :cond_18
     const-string v1, "\u5207\u6362\u5931\u8d25\uff0c\u8bf7\u91cd\u65b0\u5bfc\u5165\u8f66\u6a21\u5305"
 
-    .line 100
+    .line 96
     invoke-static {p0, v1}, Lcom/byd/carmodel/CarModelPackageManager;->toast(Landroid/content/Context;Ljava/lang/String;)V
 
     return v0
 
-    .line 103
+    .line 99
     :cond_1e
     invoke-static {p0}, Lcom/byd/carmodel/CarModelPackageManager;->openPicker(Landroid/content/Context;)V
 
@@ -469,7 +441,7 @@
 
     const-string v0, "SHA-256"
 
-    .line 326
+    .line 315
     invoke-static {v0}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
 
     move-result-object v0
@@ -478,14 +450,14 @@
 
     move-result-object p0
 
-    .line 327
+    .line 316
     new-instance v0, Ljava/lang/StringBuilder;
 
     const/16 v1, 0x40
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    .line 328
+    .line 317
     array-length v1, p0
 
     const/4 v2, 0x0
@@ -517,7 +489,7 @@
 
     goto :goto_13
 
-    .line 329
+    .line 318
     :cond_2d
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -531,7 +503,7 @@
 
     const/4 v0, 0x0
 
-    .line 117
+    .line 113
     invoke-static {p0, p1, v0}, Lcom/byd/carmodel/CarModelPackageManager;->importAsync(Landroid/content/Context;Landroid/net/Uri;Lcom/byd/carmodel/CarModelPackageManager$Callback;)V
 
     return-void
@@ -540,12 +512,12 @@
 .method public static importAsync(Landroid/content/Context;Landroid/net/Uri;Lcom/byd/carmodel/CarModelPackageManager$Callback;)V
     .registers 5
 
-    .line 121
+    .line 117
     const-class v0, Lcom/byd/carmodel/CarModelPackageManager;
 
     monitor-enter v0
 
-    .line 122
+    .line 118
     :try_start_3
     sget-boolean v1, Lcom/byd/carmodel/CarModelPackageManager;->importing:Z
 
@@ -559,7 +531,7 @@
 
     const/4 v1, 0x0
 
-    .line 124
+    .line 120
     invoke-interface {p2, p1, v1, p0}, Lcom/byd/carmodel/CarModelPackageManager$Callback;->onDone(ZLjava/lang/String;Ljava/lang/String;)V
 
     goto :goto_16
@@ -567,10 +539,10 @@
     :cond_11
     const-string p1, "\u5df2\u6709\u8f66\u6a21\u6b63\u5728\u5bfc\u5165"
 
-    .line 126
+    .line 122
     invoke-static {p0, p1}, Lcom/byd/carmodel/CarModelPackageManager;->toast(Landroid/content/Context;Ljava/lang/String;)V
 
-    .line 128
+    .line 124
     :goto_16
     monitor-exit v0
 
@@ -579,15 +551,15 @@
     :cond_18
     const/4 v1, 0x1
 
-    .line 130
+    .line 126
     sput-boolean v1, Lcom/byd/carmodel/CarModelPackageManager;->importing:Z
 
-    .line 131
+    .line 127
     monitor-exit v0
     :try_end_1c
     .catchall {:try_start_3 .. :try_end_1c} :catchall_2c
 
-    .line 132
+    .line 128
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Lcom/byd/carmodel/CarModelPackageManager$1;
@@ -598,7 +570,7 @@
 
     invoke-direct {v0, v1, p0}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
 
-    .line 166
+    .line 162
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
     return-void
@@ -606,7 +578,7 @@
     :catchall_2c
     move-exception p0
 
-    .line 131
+    .line 127
     :try_start_2d
     monitor-exit v0
     :try_end_2e
@@ -616,7 +588,7 @@
 .end method
 
 .method private static install(Landroid/content/Context;Landroid/net/Uri;)[Ljava/lang/String;
-    .registers 21
+    .registers 23
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -629,11 +601,11 @@
 
     const-string v2, "path"
 
-    const-string v3, "manifest.json"
+    const-string v3, "payload/CarSelf.dat"
 
-    const-string v4, "payload/CarSelf.dat"
+    const-string v4, "manifest.json"
 
-    .line 170
+    .line 166
     new-instance v5, Ljava/io/File;
 
     invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
@@ -644,14 +616,14 @@
 
     invoke-direct {v5, v6, v7}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 171
+    .line 167
     new-instance v6, Ljava/io/File;
 
     const-string v7, "incoming"
 
     invoke-direct {v6, v5, v7}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 172
+    .line 168
     new-instance v7, Ljava/io/File;
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -676,14 +648,14 @@
 
     invoke-direct {v7, v5, v8}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 173
+    .line 169
     new-instance v8, Ljava/io/File;
 
     const-string v9, "models"
 
     invoke-direct {v8, v5, v9}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 174
+    .line 170
     new-instance v9, Ljava/io/File;
 
     const-string v10, "staging"
@@ -692,7 +664,7 @@
 
     invoke-static {v9}, Lcom/byd/carmodel/CarModelPackageManager;->deleteTree(Ljava/io/File;)V
 
-    .line 175
+    .line 171
     invoke-virtual {v6}, Ljava/io/File;->mkdirs()Z
 
     move-result v5
@@ -716,7 +688,7 @@
 
     throw v0
 
-    .line 176
+    .line 172
     :cond_5d
     :goto_5d
     invoke-virtual {v7}, Ljava/io/File;->mkdirs()Z
@@ -740,7 +712,7 @@
 
     throw v0
 
-    .line 177
+    .line 173
     :cond_70
     :goto_70
     new-instance v5, Ljava/io/File;
@@ -749,42 +721,40 @@
 
     invoke-direct {v5, v6, v10}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 179
+    .line 175
     :try_start_77
     invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
-    const-wide/32 v10, 0x2800000
+    move-object/from16 v10, p1
 
-    move-object/from16 v12, p1
+    invoke-static {v6, v10, v5}, Lcom/byd/carmodel/CarModelPackageManager;->copyUri(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/io/File;)V
 
-    invoke-static {v6, v12, v5, v10, v11}, Lcom/byd/carmodel/CarModelPackageManager;->copyUri(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/io/File;J)V
-
-    .line 180
+    .line 176
     invoke-static {v5}, Lcom/byd/carmodel/CarModelPackageManager;->readZip(Ljava/io/File;)Ljava/util/Map;
 
     move-result-object v6
 
-    .line 181
-    invoke-interface {v6, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 177
+    invoke-interface {v6, v4}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v10
 
     check-cast v10, [B
 
-    .line 182
-    invoke-interface {v6, v4}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 178
+    invoke-interface {v6, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v11
 
     check-cast v11, [B
 
-    if-eqz v10, :cond_238
+    if-eqz v10, :cond_254
 
-    if-eqz v11, :cond_238
+    if-eqz v11, :cond_254
 
-    .line 184
+    .line 180
     new-instance v12, Lorg/json/JSONObject;
 
     new-instance v13, Ljava/lang/String;
@@ -799,169 +769,176 @@
 
     invoke-direct {v12, v13}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    const-string v10, "com.byd.launchermap.bydcar"
+    const-string v13, "com.byd.launchermap.bydcar"
 
-    const-string v13, "format"
+    const-string v14, "format"
 
-    .line 185
-    invoke-virtual {v12, v13}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+    .line 181
+    invoke-virtual {v12, v14}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v13
+    move-result-object v14
 
-    invoke-virtual {v10, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v10
-
-    if-eqz v10, :cond_230
-
-    const-string v10, "formatVersion"
-
-    const/4 v13, -0x1
-
-    .line 186
-    invoke-virtual {v12, v10, v13}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
-
-    move-result v10
-
-    const/4 v13, 0x1
-
-    if-ne v10, v13, :cond_230
-
-    const-string v10, "model"
-
-    .line 187
-    invoke-virtual {v12, v10}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
-
-    move-result-object v10
-
-    .line 188
-    invoke-virtual {v10, v2}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v13
-
-    invoke-virtual {v4, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v13, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v13
 
-    if-eqz v13, :cond_228
+    if-eqz v13, :cond_24a
 
-    const-wide/16 v13, -0x1
+    const-string v13, "formatVersion"
 
-    .line 189
-    invoke-virtual {v10, v1, v13, v14}, Lorg/json/JSONObject;->optLong(Ljava/lang/String;J)J
+    const/4 v14, -0x1
 
-    move-result-wide v15
+    .line 182
+    invoke-virtual {v12, v13, v14}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
 
-    array-length v13, v11
+    move-result v13
 
-    int-to-long v13, v13
+    const/4 v14, 0x1
 
-    cmp-long v13, v15, v13
+    if-ne v13, v14, :cond_24a
 
-    if-nez v13, :cond_228
+    const-string v13, "model"
 
-    .line 190
-    invoke-static {v11}, Lcom/byd/carmodel/CarModelPackageManager;->hash([B)Ljava/lang/String;
+    .line 183
+    invoke-virtual {v12, v13}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v13
 
-    invoke-virtual {v10, v0}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+    .line 184
+    invoke-virtual {v13, v2}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v10
+    move-result-object v14
 
-    invoke-virtual {v13, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v10
+    move-result v14
 
-    if-eqz v10, :cond_228
+    if-eqz v14, :cond_240
 
-    .line 193
-    new-instance v10, Ljava/util/HashSet;
+    const-wide/16 v14, -0x1
 
-    invoke-direct {v10}, Ljava/util/HashSet;-><init>()V
+    .line 185
+    invoke-virtual {v13, v1, v14, v15}, Lorg/json/JSONObject;->optLong(Ljava/lang/String;J)J
 
-    .line 194
-    invoke-interface {v10, v3}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
+    move-result-wide v16
 
-    .line 195
-    invoke-interface {v10, v4}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
+    array-length v14, v11
+
+    int-to-long v14, v14
+
+    cmp-long v14, v16, v14
+
+    if-nez v14, :cond_240
+
+    .line 186
+    invoke-static {v11}, Lcom/byd/carmodel/CarModelPackageManager;->hash([B)Ljava/lang/String;
+
+    move-result-object v14
+
+    invoke-virtual {v13, v0}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v13
+
+    invoke-virtual {v14, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v13
+
+    if-eqz v13, :cond_240
+
+    .line 189
+    new-instance v13, Ljava/util/HashSet;
+
+    invoke-direct {v13}, Ljava/util/HashSet;-><init>()V
+
+    .line 190
+    invoke-interface {v13, v4}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
+
+    .line 191
+    invoke-interface {v13, v3}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     const-string v3, "resources"
 
-    .line 196
+    .line 192
     invoke-virtual {v12, v3}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object v3
 
-    if-eqz v3, :cond_14e
+    if-eqz v3, :cond_153
 
-    const/4 v13, 0x0
+    const/4 v15, 0x0
 
-    .line 198
-    :goto_fd
+    .line 194
+    :goto_fa
     invoke-virtual {v3}, Lorg/json/JSONArray;->length()I
 
     move-result v14
 
-    if-ge v13, v14, :cond_14e
+    if-ge v15, v14, :cond_153
 
-    .line 199
-    invoke-virtual {v3, v13}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
+    .line 195
+    invoke-virtual {v3, v15}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v14
 
-    .line 200
+    move-object/from16 v16, v3
+
+    .line 196
     invoke-virtual {v14, v2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v15
+    move-result-object v3
 
-    .line 201
-    invoke-interface {v6, v15}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 197
+    invoke-interface {v6, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v16
+    move-result-object v17
 
-    move-object/from16 v4, v16
+    move-object/from16 v20, v2
 
-    check-cast v4, [B
+    move-object/from16 v2, v17
 
-    move-object/from16 v16, v2
+    check-cast v2, [B
+    :try_end_114
+    .catchall {:try_start_77 .. :try_end_114} :catchall_260
 
-    .line 202
-    sget-object v2, Lcom/byd/carmodel/CarModelPackageManager;->ALLOWED:Ljava/util/Set;
+    move-object/from16 v17, v5
 
-    invoke-interface {v2, v15}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+    .line 198
+    :try_start_116
+    sget-object v5, Lcom/byd/carmodel/CarModelPackageManager;->ALLOWED:Ljava/util/Set;
 
-    move-result v2
+    invoke-interface {v5, v3}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
-    if-eqz v2, :cond_146
+    move-result v5
 
-    if-eqz v4, :cond_146
+    if-eqz v5, :cond_14b
 
-    invoke-interface {v10, v15}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
+    if-eqz v2, :cond_14b
 
-    move-result v2
+    invoke-interface {v13, v3}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    if-eqz v2, :cond_146
+    move-result v3
 
-    move-object v15, v3
+    if-eqz v3, :cond_14b
 
-    const-wide/16 v2, -0x1
+    move-object v5, v4
 
-    .line 203
-    invoke-virtual {v14, v1, v2, v3}, Lorg/json/JSONObject;->optLong(Ljava/lang/String;J)J
+    const-wide/16 v3, -0x1
 
-    move-result-wide v17
+    .line 199
+    invoke-virtual {v14, v1, v3, v4}, Lorg/json/JSONObject;->optLong(Ljava/lang/String;J)J
 
-    array-length v2, v4
+    move-result-wide v18
 
-    int-to-long v2, v2
+    array-length v3, v2
 
-    cmp-long v2, v17, v2
+    int-to-long v3, v3
 
-    if-nez v2, :cond_146
+    cmp-long v3, v18, v3
 
-    .line 204
-    invoke-static {v4}, Lcom/byd/carmodel/CarModelPackageManager;->hash([B)Ljava/lang/String;
+    if-nez v3, :cond_14b
+
+    .line 200
+    invoke-static {v2}, Lcom/byd/carmodel/CarModelPackageManager;->hash([B)Ljava/lang/String;
 
     move-result-object v2
 
@@ -973,18 +950,22 @@
 
     move-result v2
 
-    if-eqz v2, :cond_146
+    if-eqz v2, :cond_14b
 
-    add-int/lit8 v13, v13, 0x1
+    add-int/lit8 v15, v15, 0x1
 
-    move-object v3, v15
+    move-object v4, v5
 
-    move-object/from16 v2, v16
+    move-object/from16 v3, v16
 
-    goto :goto_fd
+    move-object/from16 v5, v17
 
-    .line 205
-    :cond_146
+    move-object/from16 v2, v20
+
+    goto :goto_fa
+
+    .line 201
+    :cond_14b
     new-instance v0, Ljava/lang/Exception;
 
     const-string v1, "RESOURCE_HASH_MISMATCH"
@@ -993,72 +974,76 @@
 
     throw v0
 
-    .line 209
-    :cond_14e
+    :cond_153
+    move-object/from16 v17, v5
+
+    move-object v5, v4
+
+    .line 205
     invoke-interface {v6}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
     move-result-object v0
 
-    invoke-interface {v10, v0}, Ljava/util/Set;->equals(Ljava/lang/Object;)Z
+    invoke-interface {v13, v0}, Ljava/util/Set;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_220
+    if-eqz v0, :cond_238
 
     const-string v0, "payload/Texture/CarSelf_Main.png"
 
-    .line 210
-    invoke-interface {v10, v0}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+    .line 206
+    invoke-interface {v13, v0}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_220
+    if-eqz v0, :cond_238
 
-    .line 213
+    .line 209
     invoke-static {v11}, Lcom/byd/carmodel/CarSelfDatValidator;->validate([B)V
 
-    .line 214
+    .line 210
     invoke-static {v11}, Lcom/byd/carmodel/CarModelPackageManager;->hash([B)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 215
+    .line 211
     new-instance v1, Ljava/io/File;
 
     invoke-direct {v1, v8, v0}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 216
+    .line 212
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
 
     move-result v2
 
-    if-nez v2, :cond_1db
+    if-nez v2, :cond_1eb
 
-    .line 217
+    .line 213
     invoke-virtual {v8}, Ljava/io/File;->mkdirs()Z
 
     move-result v2
 
-    if-nez v2, :cond_185
+    if-nez v2, :cond_18d
 
     invoke-virtual {v8}, Ljava/io/File;->isDirectory()Z
 
     move-result v2
 
-    if-eqz v2, :cond_17f
+    if-eqz v2, :cond_187
 
-    goto :goto_185
+    goto :goto_18d
 
-    :cond_17f
+    :cond_187
     new-instance v0, Ljava/lang/Exception;
 
     invoke-direct {v0, v9}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
     throw v0
 
-    .line 218
-    :cond_185
-    :goto_185
+    .line 214
+    :cond_18d
+    :goto_18d
     new-instance v2, Ljava/io/File;
 
     const-string v3, "CarSelf.dat"
@@ -1067,7 +1052,14 @@
 
     invoke-static {v2, v11}, Lcom/byd/carmodel/CarModelPackageManager;->writeFile(Ljava/io/File;[B)V
 
-    .line 219
+    .line 215
+    new-instance v2, Ljava/io/File;
+
+    invoke-direct {v2, v7, v5}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    invoke-static {v2, v10}, Lcom/byd/carmodel/CarModelPackageManager;->writeFile(Ljava/io/File;[B)V
+
+    .line 216
     invoke-interface {v6}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object v2
@@ -1076,13 +1068,13 @@
 
     move-result-object v2
 
-    :cond_197
-    :goto_197
+    :cond_1a7
+    :goto_1a7
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v3
 
-    if-eqz v3, :cond_1cc
+    if-eqz v3, :cond_1dc
 
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -1090,38 +1082,38 @@
 
     check-cast v3, Ljava/util/Map$Entry;
 
-    .line 220
+    .line 217
     invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Ljava/lang/String;
 
-    const-string v6, "payload/Texture/"
+    const-string v5, "payload/Texture/"
 
-    invoke-virtual {v4, v6}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    invoke-virtual {v4, v5}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v4
 
-    if-eqz v4, :cond_197
+    if-eqz v4, :cond_1a7
 
-    .line 221
+    .line 218
     invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Ljava/lang/String;
 
-    const/16 v6, 0x8
+    const/16 v5, 0x8
 
-    invoke-virtual {v4, v6}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+    invoke-virtual {v4, v5}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 222
-    new-instance v6, Ljava/io/File;
+    .line 219
+    new-instance v5, Ljava/io/File;
 
-    invoke-direct {v6, v7, v4}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    invoke-direct {v5, v7, v4}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
     invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -1129,21 +1121,21 @@
 
     check-cast v3, [B
 
-    invoke-static {v6, v3}, Lcom/byd/carmodel/CarModelPackageManager;->writeFile(Ljava/io/File;[B)V
+    invoke-static {v5, v3}, Lcom/byd/carmodel/CarModelPackageManager;->writeFile(Ljava/io/File;[B)V
 
-    goto :goto_197
+    goto :goto_1a7
 
-    .line 225
-    :cond_1cc
+    .line 222
+    :cond_1dc
     invoke-virtual {v7, v1}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_1d3
+    if-eqz v1, :cond_1e3
 
-    goto :goto_1db
+    goto :goto_1f3
 
-    :cond_1d3
+    :cond_1e3
     new-instance v0, Ljava/lang/Exception;
 
     const-string v1, "INSTALL_RENAME_FAILED"
@@ -1152,88 +1144,95 @@
 
     throw v0
 
-    :cond_1db
-    :goto_1db
+    .line 226
+    :cond_1eb
+    new-instance v2, Ljava/io/File;
+
+    invoke-direct {v2, v1, v5}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    invoke-static {v2, v10}, Lcom/byd/carmodel/CarModelPackageManager;->writeFile(Ljava/io/File;[B)V
+
+    :goto_1f3
     const-string v1, "name"
 
     const-string v2, "\u81ea\u5b9a\u4e49"
 
-    .line 227
+    .line 228
     invoke-virtual {v12, v1, v2}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     move-object/from16 v2, p0
 
-    .line 228
+    .line 229
     invoke-static {v2, v0, v1}, Lcom/byd/carmodel/CarModelResolver;->activate(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_218
+    if-eqz v2, :cond_230
 
-    .line 229
+    .line 230
     invoke-virtual {v8}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
     move-result-object v2
 
-    if-eqz v2, :cond_207
-
-    .line 231
-    array-length v3, v2
-
-    const/4 v4, 0x0
-
-    :goto_1f3
-    if-ge v4, v3, :cond_207
-
-    aget-object v6, v2, v4
+    if-eqz v2, :cond_21f
 
     .line 232
-    invoke-virtual {v6}, Ljava/io/File;->getName()Ljava/lang/String;
+    array-length v3, v2
 
-    move-result-object v8
+    const/4 v14, 0x0
 
-    invoke-virtual {v0, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :goto_20b
+    if-ge v14, v3, :cond_21f
 
-    move-result v8
-
-    if-nez v8, :cond_204
+    aget-object v4, v2, v14
 
     .line 233
-    invoke-static {v6}, Lcom/byd/carmodel/CarModelPackageManager;->deleteTree(Ljava/io/File;)V
+    invoke-virtual {v4}, Ljava/io/File;->getName()Ljava/lang/String;
 
-    :cond_204
-    add-int/lit8 v4, v4, 0x1
+    move-result-object v5
 
-    goto :goto_1f3
+    invoke-virtual {v0, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    .line 237
-    :cond_207
+    move-result v5
+
+    if-nez v5, :cond_21c
+
+    .line 234
+    invoke-static {v4}, Lcom/byd/carmodel/CarModelPackageManager;->deleteTree(Ljava/io/File;)V
+
+    :cond_21c
+    add-int/lit8 v14, v14, 0x1
+
+    goto :goto_20b
+
+    .line 238
+    :cond_21f
     filled-new-array {v0, v1}, [Ljava/lang/String;
 
     move-result-object v0
-    :try_end_20b
-    .catchall {:try_start_77 .. :try_end_20b} :catchall_240
-
-    .line 239
-    invoke-static {v7}, Lcom/byd/carmodel/CarModelPackageManager;->deleteTree(Ljava/io/File;)V
+    :try_end_223
+    .catchall {:try_start_116 .. :try_end_223} :catchall_25e
 
     .line 240
-    invoke-virtual {v5}, Ljava/io/File;->exists()Z
+    invoke-static {v7}, Lcom/byd/carmodel/CarModelPackageManager;->deleteTree(Ljava/io/File;)V
+
+    .line 241
+    invoke-virtual/range {v17 .. v17}, Ljava/io/File;->exists()Z
 
     move-result v1
 
-    if-eqz v1, :cond_217
+    if-eqz v1, :cond_22f
 
-    invoke-virtual {v5}, Ljava/io/File;->delete()Z
+    invoke-virtual/range {v17 .. v17}, Ljava/io/File;->delete()Z
 
-    :cond_217
+    :cond_22f
     return-object v0
 
-    .line 228
-    :cond_218
-    :try_start_218
+    .line 229
+    :cond_230
+    :try_start_230
     new-instance v0, Ljava/lang/Exception;
 
     const-string v1, "PREFERENCE_FAILED"
@@ -1242,8 +1241,8 @@
 
     throw v0
 
-    .line 211
-    :cond_220
+    .line 207
+    :cond_238
     new-instance v0, Ljava/lang/Exception;
 
     const-string v1, "PACKAGE_FILE_LIST_INVALID"
@@ -1252,8 +1251,10 @@
 
     throw v0
 
-    .line 191
-    :cond_228
+    :cond_240
+    move-object/from16 v17, v5
+
+    .line 187
     new-instance v0, Ljava/lang/Exception;
 
     const-string v1, "HASH_MISMATCH"
@@ -1262,8 +1263,10 @@
 
     throw v0
 
-    .line 186
-    :cond_230
+    :cond_24a
+    move-object/from16 v17, v5
+
+    .line 182
     new-instance v0, Ljava/lang/Exception;
 
     const-string v1, "MANIFEST_VERSION_UNSUPPORTED"
@@ -1272,8 +1275,10 @@
 
     throw v0
 
-    .line 183
-    :cond_238
+    :cond_254
+    move-object/from16 v17, v5
+
+    .line 179
     new-instance v0, Ljava/lang/Exception;
 
     const-string v1, "PACKAGE_FILES_MISSING"
@@ -1281,26 +1286,34 @@
     invoke-direct {v0, v1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
     throw v0
-    :try_end_240
-    .catchall {:try_start_218 .. :try_end_240} :catchall_240
+    :try_end_25e
+    .catchall {:try_start_230 .. :try_end_25e} :catchall_25e
 
-    :catchall_240
+    :catchall_25e
     move-exception v0
 
-    .line 239
-    invoke-static {v7}, Lcom/byd/carmodel/CarModelPackageManager;->deleteTree(Ljava/io/File;)V
+    goto :goto_263
+
+    :catchall_260
+    move-exception v0
+
+    move-object/from16 v17, v5
 
     .line 240
-    invoke-virtual {v5}, Ljava/io/File;->exists()Z
+    :goto_263
+    invoke-static {v7}, Lcom/byd/carmodel/CarModelPackageManager;->deleteTree(Ljava/io/File;)V
+
+    .line 241
+    invoke-virtual/range {v17 .. v17}, Ljava/io/File;->exists()Z
 
     move-result v1
 
-    if-eqz v1, :cond_24d
+    if-eqz v1, :cond_26f
 
-    invoke-virtual {v5}, Ljava/io/File;->delete()Z
+    invoke-virtual/range {v17 .. v17}, Ljava/io/File;->delete()Z
 
-    .line 241
-    :cond_24d
+    .line 242
+    :cond_26f
     throw v0
 .end method
 
@@ -1311,7 +1324,7 @@
 
     return-void
 
-    .line 76
+    .line 72
     :cond_3
     new-instance v0, Landroid/content/Intent;
 
@@ -1319,17 +1332,17 @@
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 77
+    .line 73
     instance-of v1, p0, Landroid/app/Activity;
 
     if-nez v1, :cond_13
 
     const/high16 v1, 0x10000000
 
-    .line 78
+    .line 74
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 81
+    .line 77
     :cond_13
     :try_start_13
     invoke-virtual {p0, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
@@ -1341,22 +1354,22 @@
     :catchall_17
     const-string v0, "\u65e0\u6cd5\u6253\u5f00\u8f66\u6a21\u5bfc\u5165\u9875\u9762"
 
-    .line 83
+    .line 79
     invoke-static {p0, v0}, Lcom/byd/carmodel/CarModelPackageManager;->toast(Landroid/content/Context;Ljava/lang/String;)V
 
     :goto_1c
     return-void
 .end method
 
-.method private static readLimited(Ljava/io/InputStream;J)[B
-    .registers 10
+.method private static readAll(Ljava/io/InputStream;)[B
+    .registers 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
         }
     .end annotation
 
-    .line 283
+    .line 278
     new-instance v0, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v0}, Ljava/io/ByteArrayOutputStream;-><init>()V
@@ -1365,45 +1378,25 @@
 
     new-array v1, v1, [B
 
-    const-wide/16 v2, 0x0
-
-    .line 287
-    :goto_b
+    .line 281
+    :goto_9
     invoke-virtual {p0, v1}, Ljava/io/InputStream;->read([B)I
 
-    move-result v4
+    move-result v2
 
-    const/4 v5, -0x1
+    const/4 v3, -0x1
 
-    if-eq v4, v5, :cond_25
+    if-eq v2, v3, :cond_15
 
-    int-to-long v5, v4
+    const/4 v3, 0x0
 
-    add-long/2addr v2, v5
+    .line 282
+    invoke-virtual {v0, v1, v3, v2}, Ljava/io/ByteArrayOutputStream;->write([BII)V
 
-    cmp-long v5, v2, p1
+    goto :goto_9
 
-    if-gtz v5, :cond_1d
-
-    const/4 v5, 0x0
-
-    .line 290
-    invoke-virtual {v0, v1, v5, v4}, Ljava/io/ByteArrayOutputStream;->write([BII)V
-
-    goto :goto_b
-
-    .line 289
-    :cond_1d
-    new-instance p0, Ljava/lang/Exception;
-
-    const-string p1, "ZIP_ENTRY_TOO_LARGE"
-
-    invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
-
-    throw p0
-
-    .line 292
-    :cond_25
+    .line 284
+    :cond_15
     invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object p0
@@ -1412,7 +1405,7 @@
 .end method
 
 .method private static readZip(Ljava/io/File;)Ljava/util/Map;
-    .registers 8
+    .registers 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1430,7 +1423,7 @@
         }
     .end annotation
 
-    .line 245
+    .line 246
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -1445,115 +1438,58 @@
 
     invoke-direct {p0, v1}, Ljava/util/zip/ZipInputStream;-><init>(Ljava/io/InputStream;)V
 
-    const-wide/16 v1, 0x0
-
     .line 251
-    :goto_11
-    :try_start_11
+    :goto_f
+    :try_start_f
     invoke-virtual {p0}, Ljava/util/zip/ZipInputStream;->getNextEntry()Ljava/util/zip/ZipEntry;
 
-    move-result-object v3
+    move-result-object v1
 
-    if-eqz v3, :cond_72
+    if-eqz v1, :cond_43
 
     .line 252
-    invoke-virtual {v3}, Ljava/util/zip/ZipEntry;->getName()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/util/zip/ZipEntry;->getName()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v2
 
     .line 253
-    invoke-static {v4}, Lcom/byd/carmodel/CarModelPackageManager;->validateName(Ljava/lang/String;)V
+    invoke-static {v2}, Lcom/byd/carmodel/CarModelPackageManager;->validateName(Ljava/lang/String;)V
 
     .line 254
-    sget-object v5, Lcom/byd/carmodel/CarModelPackageManager;->ALLOWED:Ljava/util/Set;
+    sget-object v3, Lcom/byd/carmodel/CarModelPackageManager;->ALLOWED:Ljava/util/Set;
 
-    invoke-interface {v5, v4}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_6a
-
-    invoke-virtual {v3}, Ljava/util/zip/ZipEntry;->isDirectory()Z
+    invoke-interface {v3, v2}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
     move-result v3
 
-    if-nez v3, :cond_6a
+    if-eqz v3, :cond_3b
 
-    invoke-interface {v0, v4}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v1}, Ljava/util/zip/ZipEntry;->isDirectory()Z
 
-    move-result v3
+    move-result v1
 
-    if-nez v3, :cond_6a
+    if-nez v1, :cond_3b
 
-    const-string v3, "payload/CarSelf.dat"
+    invoke-interface {v0, v2}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_3b
 
     .line 257
-    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-static {p0}, Lcom/byd/carmodel/CarModelPackageManager;->readAll(Ljava/io/InputStream;)[B
 
-    move-result v3
+    move-result-object v1
 
-    if-eqz v3, :cond_3e
-
-    const-wide/32 v5, 0x2000000
-
-    goto :goto_4d
-
-    :cond_3e
-    const-string v3, ".png"
+    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 258
-    invoke-virtual {v4, v3}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_4a
-
-    const-wide/32 v5, 0x1000000
-
-    goto :goto_4d
-
-    :cond_4a
-    const-wide/32 v5, 0x10000
-
-    .line 259
-    :goto_4d
-    invoke-static {p0, v5, v6}, Lcom/byd/carmodel/CarModelPackageManager;->readLimited(Ljava/io/InputStream;J)[B
-
-    move-result-object v3
-
-    .line 260
-    array-length v5, v3
-
-    int-to-long v5, v5
-
-    add-long/2addr v1, v5
-
-    const-wide/32 v5, 0x3000000
-
-    cmp-long v5, v1, v5
-
-    if-gtz v5, :cond_62
-
-    .line 262
-    invoke-interface {v0, v4, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 263
     invoke-virtual {p0}, Ljava/util/zip/ZipInputStream;->closeEntry()V
 
-    goto :goto_11
-
-    .line 261
-    :cond_62
-    new-instance v0, Ljava/lang/Exception;
-
-    const-string v1, "PACKAGE_UNCOMPRESSED_LIMIT"
-
-    invoke-direct {v0, v1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    goto :goto_f
 
     .line 255
-    :cond_6a
+    :cond_3b
     new-instance v0, Ljava/lang/Exception;
 
     const-string v1, "ZIP_ENTRY_INVALID"
@@ -1561,21 +1497,21 @@
     invoke-direct {v0, v1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
     throw v0
-    :try_end_72
-    .catchall {:try_start_11 .. :try_end_72} :catchall_76
+    :try_end_43
+    .catchall {:try_start_f .. :try_end_43} :catchall_47
 
-    .line 266
-    :cond_72
+    .line 261
+    :cond_43
     invoke-virtual {p0}, Ljava/util/zip/ZipInputStream;->close()V
 
     return-object v0
 
-    :catchall_76
+    :catchall_47
     move-exception v0
 
     invoke-virtual {p0}, Ljava/util/zip/ZipInputStream;->close()V
 
-    .line 267
+    .line 262
     throw v0
 .end method
 
@@ -1586,7 +1522,7 @@
 
     const/4 v0, 0x1
 
-    .line 342
+    .line 331
     invoke-static {p0, p1, v0}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
     move-result-object p0
@@ -1609,7 +1545,7 @@
 
     if-eqz p0, :cond_53
 
-    .line 272
+    .line 267
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -1626,7 +1562,7 @@
 
     const-string v1, "/"
 
-    .line 273
+    .line 268
     invoke-virtual {p0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v2
@@ -1643,12 +1579,12 @@
 
     const/4 v3, -0x1
 
-    .line 274
+    .line 269
     invoke-virtual {p0, v1, v3}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
 
     move-result-object p0
 
-    .line 275
+    .line 270
     array-length v1, p0
 
     :goto_27
@@ -1656,7 +1592,7 @@
 
     aget-object v3, p0, v2
 
-    .line 276
+    .line 271
     invoke-virtual {v3}, Ljava/lang/String;->length()I
 
     move-result v4
@@ -1691,7 +1627,7 @@
 
     goto :goto_27
 
-    .line 277
+    .line 272
     :cond_4c
     new-instance p0, Ljava/lang/Exception;
 
@@ -1702,7 +1638,7 @@
     :cond_52
     return-void
 
-    .line 273
+    .line 268
     :cond_53
     new-instance p0, Ljava/lang/Exception;
 
@@ -1719,14 +1655,14 @@
         }
     .end annotation
 
-    .line 319
+    .line 308
     invoke-virtual {p0}, Ljava/io/File;->getParentFile()Ljava/io/File;
 
     move-result-object v0
 
     if-eqz v0, :cond_1b
 
-    .line 320
+    .line 309
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v1
@@ -1750,14 +1686,14 @@
 
     throw p0
 
-    .line 321
+    .line 310
     :cond_1b
     :goto_1b
     new-instance v0, Ljava/io/FileOutputStream;
 
     invoke-direct {v0, p0}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
-    .line 322
+    .line 311
     :try_start_20
     invoke-virtual {v0, p1}, Ljava/io/FileOutputStream;->write([B)V
 

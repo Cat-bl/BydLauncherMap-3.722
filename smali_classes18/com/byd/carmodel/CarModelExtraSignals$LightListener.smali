@@ -18,7 +18,7 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 256
+    .line 306
     invoke-direct {p0}, Landroid/hardware/bydauto/light/AbsBYDAutoLightListener;-><init>()V
 
     return-void
@@ -27,7 +27,7 @@
 .method synthetic constructor <init>(Lcom/byd/carmodel/CarModelExtraSignals$1;)V
     .registers 2
 
-    .line 256
+    .line 306
     invoke-direct {p0}, Lcom/byd/carmodel/CarModelExtraSignals$LightListener;-><init>()V
 
     return-void
@@ -40,7 +40,7 @@
 
     if-eqz p2, :cond_7
 
-    .line 261
+    .line 311
     iget p2, p2, Landroid/hardware/bydauto/BYDAutoEventValue;->intValue:I
 
     invoke-static {p1, p2}, Lcom/byd/carmodel/CarModelExtraSignals;->onFogChanged(II)V
@@ -52,7 +52,7 @@
 .method public onDayRunningLightStateChanged(I)V
     .registers 4
 
-    .line 273
+    .line 326
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "\u65e5\u884c\u706f = "
@@ -81,19 +81,27 @@
     :goto_18
     const-string p1, "CS_Daytime"
 
+    .line 328
+    invoke-static {p1, v0}, Lcom/byd/carmodel/CarModelEventBindings;->play(Ljava/lang/String;Z)Z
+
+    move-result v1
+
+    if-nez v1, :cond_25
+
     const/16 v1, 0x3f6
 
-    .line 274
+    .line 329
     # invokes: Lcom/byd/carmodel/CarModelExtraSignals;->setLamp(Ljava/lang/String;IZ)V
     invoke-static {p1, v1, v0}, Lcom/byd/carmodel/CarModelExtraSignals;->access$200(Ljava/lang/String;IZ)V
 
+    :cond_25
     return-void
 .end method
 
 .method public onReversingLightStateChanged(I)V
     .registers 4
 
-    .line 267
+    .line 317
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "\u5012\u8f66\u706f = "
@@ -122,11 +130,19 @@
     :goto_18
     const-string p1, "CS_Backup"
 
+    .line 319
+    invoke-static {p1, v0}, Lcom/byd/carmodel/CarModelEventBindings;->play(Ljava/lang/String;Z)Z
+
+    move-result v1
+
+    if-nez v1, :cond_25
+
     const/16 v1, 0x3f4
 
-    .line 268
+    .line 320
     # invokes: Lcom/byd/carmodel/CarModelExtraSignals;->setLamp(Ljava/lang/String;IZ)V
     invoke-static {p1, v1, v0}, Lcom/byd/carmodel/CarModelExtraSignals;->access$200(Ljava/lang/String;IZ)V
 
+    :cond_25
     return-void
 .end method

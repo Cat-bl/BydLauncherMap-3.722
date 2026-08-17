@@ -52,7 +52,7 @@
 .method private constructor <init>()V
     .registers 1
 
-    .line 58
+    .line 59
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -61,7 +61,7 @@
 .method static synthetic access$200(Ljava/lang/String;IZ)V
     .registers 3
 
-    .line 33
+    .line 34
     invoke-static {p0, p1, p2}, Lcom/byd/carmodel/CarModelExtraSignals;->setLamp(Ljava/lang/String;IZ)V
 
     return-void
@@ -124,31 +124,34 @@
 
     const-string v0, "\u8f66\u95e8\u4fe1\u53f7\u6570\u91cf "
 
-    .line 62
+    .line 63
     const-class v1, Lcom/byd/carmodel/CarModelExtraSignals;
 
     monitor-enter v1
 
-    .line 63
+    .line 64
     :try_start_5
     sget-boolean v2, Lcom/byd/carmodel/CarModelExtraSignals;->installed:Z
 
-    if-nez v2, :cond_d9
+    if-nez v2, :cond_dc
 
     if-nez p0, :cond_d
 
-    goto/16 :goto_d9
+    goto/16 :goto_dc
 
     :cond_d
     const/4 v2, 0x1
 
-    .line 66
+    .line 67
     sput-boolean v2, Lcom/byd/carmodel/CarModelExtraSignals;->installed:Z
 
-    .line 67
+    .line 68
     monitor-exit v1
     :try_end_11
-    .catchall {:try_start_5 .. :try_end_11} :catchall_db
+    .catchall {:try_start_5 .. :try_end_11} :catchall_de
+
+    .line 69
+    invoke-static {p0}, Lcom/byd/carmodel/CarModelEventBindings;->reload(Landroid/content/Context;)V
 
     const/4 v1, 0x0
 
@@ -160,21 +163,21 @@
 
     const/4 v6, 0x0
 
-    .line 69
-    :try_start_16
+    .line 71
+    :try_start_19
     sget v7, Landroid/hardware/bydauto/BYDAutoFeatureIds;->LIGHT_FRONT_FOG_LIGHT:I
 
     sput v7, Lcom/byd/carmodel/CarModelExtraSignals;->frontFogId:I
 
-    .line 70
+    .line 72
     sget v7, Landroid/hardware/bydauto/BYDAutoFeatureIds;->LIGHT_REAR_FOG_LIGHT:I
 
     sput v7, Lcom/byd/carmodel/CarModelExtraSignals;->rearFogId:I
 
-    .line 71
+    .line 73
     sget v7, Landroid/hardware/bydauto/BYDAutoFeatureIds;->LIGHT_CMD_DAY_RUNNING_LIGHT_STATE:I
 
-    .line 72
+    .line 74
     sget v8, Landroid/hardware/bydauto/BYDAutoFeatureIds;->LIGHT_CMD_REVERSING_LIGHT_STATE:I
 
     const-string v9, "CarModelExtraSignals"
@@ -183,10 +186,10 @@
 
     new-array v11, v4, [Ljava/lang/Object;
 
-    .line 73
+    .line 75
     sget v12, Lcom/byd/carmodel/CarModelExtraSignals;->frontFogId:I
 
-    .line 74
+    .line 76
     invoke-static {v12}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v12
@@ -213,23 +216,23 @@
 
     aput-object v12, v11, v3
 
-    .line 73
+    .line 75
     invoke-static {v10, v11}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v10
 
     invoke-static {v9, v10}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 76
+    .line 78
     invoke-static {p0}, Landroid/hardware/bydauto/light/BYDAutoLightDevice;->getInstance(Landroid/content/Context;)Landroid/hardware/bydauto/light/BYDAutoLightDevice;
 
     move-result-object v9
 
-    if-eqz v9, :cond_72
+    if-eqz v9, :cond_75
 
     new-array v10, v4, [I
 
-    .line 78
+    .line 80
     sget v11, Lcom/byd/carmodel/CarModelExtraSignals;->frontFogId:I
 
     aput v11, v10, v6
@@ -246,53 +249,53 @@
 
     move-result-object v10
 
-    .line 79
+    .line 81
     array-length v11, v10
 
-    if-lez v11, :cond_6e
+    if-lez v11, :cond_71
 
-    .line 80
+    .line 82
     new-instance v11, Lcom/byd/carmodel/CarModelExtraSignals$LightListener;
 
     invoke-direct {v11, v1}, Lcom/byd/carmodel/CarModelExtraSignals$LightListener;-><init>(Lcom/byd/carmodel/CarModelExtraSignals$1;)V
 
     invoke-virtual {v9, v11, v10}, Landroid/hardware/bydauto/light/BYDAutoLightDevice;->registerListener(Landroid/hardware/bydauto/light/AbsBYDAutoLightListener;[I)V
 
-    .line 82
-    :cond_6e
+    .line 84
+    :cond_71
     invoke-static {v9, v7, v8}, Lcom/byd/carmodel/CarModelExtraSignals;->syncLightsFrom(Landroid/hardware/bydauto/light/BYDAutoLightDevice;II)V
 
-    goto :goto_82
+    goto :goto_85
 
-    :cond_72
+    :cond_75
     const-string v7, "CarModelExtraSignals"
 
     const-string v8, "\u706f\u5149\u8bbe\u5907\u4e0d\u53ef\u7528"
 
-    .line 84
+    .line 86
     invoke-static {v7, v8}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_79
-    .catchall {:try_start_16 .. :try_end_79} :catchall_7a
+    :try_end_7c
+    .catchall {:try_start_19 .. :try_end_7c} :catchall_7d
 
-    goto :goto_82
+    goto :goto_85
 
-    :catchall_7a
+    :catchall_7d
     move-exception v7
 
     const-string v8, "CarModelExtraSignals"
 
     const-string v9, "\u6ce8\u518c\u706f\u5149\u4fe1\u53f7\u5931\u8d25"
 
-    .line 87
+    .line 89
     invoke-static {v8, v9, v7}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    :goto_82
+    :goto_85
     const/4 v7, 0x6
 
-    :try_start_83
+    :try_start_86
     new-array v7, v7, [I
 
-    .line 90
+    .line 92
     sget v8, Landroid/hardware/bydauto/BYDAutoFeatureIds;->BODYWORK_LEFT_HAND_FRONT_DOOR:I
 
     aput v8, v7, v6
@@ -325,7 +328,7 @@
 
     const-string v3, "CarModelExtraSignals"
 
-    .line 97
+    .line 99
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -340,83 +343,109 @@
 
     invoke-static {v3, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 98
+    .line 100
     invoke-static {p0}, Landroid/hardware/bydauto/bodywork/BYDAutoBodyworkDevice;->getInstance(Landroid/content/Context;)Landroid/hardware/bydauto/bodywork/BYDAutoBodyworkDevice;
 
     move-result-object p0
 
-    if-eqz p0, :cond_c6
+    if-eqz p0, :cond_c9
 
-    .line 99
+    .line 101
     array-length v0, v2
 
-    if-lez v0, :cond_c6
+    if-lez v0, :cond_c9
 
-    .line 100
+    .line 102
     new-instance v0, Lcom/byd/carmodel/CarModelExtraSignals$BodyworkListener;
 
     invoke-direct {v0, v1}, Lcom/byd/carmodel/CarModelExtraSignals$BodyworkListener;-><init>(Lcom/byd/carmodel/CarModelExtraSignals$1;)V
 
     invoke-virtual {p0, v0, v2}, Landroid/hardware/bydauto/bodywork/BYDAutoBodyworkDevice;->registerListener(Landroid/hardware/bydauto/bodywork/AbsBYDAutoBodyworkListener;[I)V
 
-    goto :goto_d8
+    goto :goto_db
 
-    :cond_c6
-    if-nez p0, :cond_d8
+    :cond_c9
+    if-nez p0, :cond_db
 
     const-string p0, "CarModelExtraSignals"
 
     const-string v0, "\u8f66\u8eab\u8bbe\u5907\u4e0d\u53ef\u7528"
 
-    .line 102
+    .line 104
     invoke-static {p0, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_cf
-    .catchall {:try_start_83 .. :try_end_cf} :catchall_d0
+    :try_end_d2
+    .catchall {:try_start_86 .. :try_end_d2} :catchall_d3
 
-    goto :goto_d8
+    goto :goto_db
 
-    :catchall_d0
+    :catchall_d3
     move-exception p0
 
     const-string v0, "CarModelExtraSignals"
 
     const-string v1, "\u6ce8\u518c\u8f66\u8eab\u4fe1\u53f7\u5931\u8d25"
 
-    .line 105
+    .line 107
     invoke-static {v0, v1, p0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    :cond_d8
-    :goto_d8
+    :cond_db
+    :goto_db
     return-void
 
-    .line 64
-    :cond_d9
-    :goto_d9
-    :try_start_d9
+    .line 65
+    :cond_dc
+    :goto_dc
+    :try_start_dc
     monitor-exit v1
 
     return-void
 
-    :catchall_db
+    :catchall_de
     move-exception p0
 
-    .line 67
+    .line 68
     monitor-exit v1
-    :try_end_dd
-    .catchall {:try_start_d9 .. :try_end_dd} :catchall_db
+    :try_end_e0
+    .catchall {:try_start_dc .. :try_end_e0} :catchall_de
 
     throw p0
+.end method
+
+.method public static onBuiltInEvent(Ljava/lang/String;Z)V
+    .registers 3
+
+    .line 184
+    invoke-static {p0, p1}, Lcom/byd/carmodel/CarModelEventBindings;->play(Ljava/lang/String;Z)Z
+
+    const-string v0, "CS_WF"
+
+    .line 185
+    invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_12
+
+    xor-int/lit8 p0, p1, 0x1
+
+    const-string p1, "CS_Idle"
+
+    .line 186
+    invoke-static {p1, p0}, Lcom/byd/carmodel/CarModelEventBindings;->play(Ljava/lang/String;Z)Z
+
+    :cond_12
+    return-void
 .end method
 
 .method static onDoorStateChanged(II)V
     .registers 5
 
-    .line 159
+    .line 173
     invoke-static {p0}, Lcom/byd/carmodel/CarModelExtraSignals;->doorPartOf(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 160
+    .line 174
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "\u8f66\u95e8 area="
@@ -445,25 +474,42 @@
 
     invoke-static {v1, p0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    if-eqz v0, :cond_42
+    if-eqz v0, :cond_4d
 
-    .line 162
+    if-eqz p1, :cond_2d
+
+    const/4 p0, 0x1
+
+    goto :goto_2e
+
+    :cond_2d
+    const/4 p0, 0x0
+
+    .line 176
+    :goto_2e
+    invoke-static {v0, p0}, Lcom/byd/carmodel/CarModelEventBindings;->play(Ljava/lang/String;Z)Z
+
+    move-result p0
+
+    if-nez p0, :cond_4d
+
+    .line 177
     new-instance p0, Ljava/lang/StringBuilder;
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    if-eqz p1, :cond_36
+    if-eqz p1, :cond_41
 
     const-string p1, "_Open"
 
-    goto :goto_38
+    goto :goto_43
 
-    :cond_36
+    :cond_41
     const-string p1, "_Close"
 
-    :goto_38
+    :goto_43
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -472,7 +518,7 @@
 
     invoke-static {v0, p0}, Lcom/byd/carmodel/CarModelExtraSignals;->playOnce(Ljava/lang/String;Ljava/lang/String;)V
 
-    :cond_42
+    :cond_4d
     return-void
 .end method
 
@@ -492,27 +538,27 @@
     :cond_6
     move v2, v0
 
-    .line 146
+    .line 157
     :goto_7
     sget v3, Lcom/byd/carmodel/CarModelExtraSignals;->frontFogId:I
 
     if-ne p0, v3, :cond_e
 
-    .line 147
+    .line 158
     sput-boolean v2, Lcom/byd/carmodel/CarModelExtraSignals;->frontFogOn:Z
 
     goto :goto_14
 
-    .line 148
+    .line 159
     :cond_e
     sget v3, Lcom/byd/carmodel/CarModelExtraSignals;->rearFogId:I
 
-    if-ne p0, v3, :cond_43
+    if-ne p0, v3, :cond_49
 
-    .line 149
+    .line 160
     sput-boolean v2, Lcom/byd/carmodel/CarModelExtraSignals;->rearFogOn:Z
 
-    .line 153
+    .line 164
     :goto_14
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -540,7 +586,7 @@
 
     invoke-static {p1, p0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 155
+    .line 166
     sget-boolean p0, Lcom/byd/carmodel/CarModelExtraSignals;->frontFogOn:Z
 
     if-nez p0, :cond_3b
@@ -555,18 +601,26 @@
     :cond_3c
     const-string p0, "CS_Fog"
 
+    .line 167
+    invoke-static {p0, v0}, Lcom/byd/carmodel/CarModelEventBindings;->play(Ljava/lang/String;Z)Z
+
+    move-result p1
+
+    if-nez p1, :cond_49
+
     const/16 p1, 0x3f5
 
+    .line 168
     invoke-static {p0, p1, v0}, Lcom/byd/carmodel/CarModelExtraSignals;->setLamp(Ljava/lang/String;IZ)V
 
-    :cond_43
+    :cond_49
     return-void
 .end method
 
 .method private static varargs packIds([I)[I
     .registers 7
 
-    .line 112
+    .line 114
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -589,11 +643,11 @@
 
     goto :goto_4
 
-    .line 117
+    .line 119
     :cond_f
     new-array v0, v3, [I
 
-    .line 119
+    .line 121
     array-length v2, p0
 
     move v3, v1
@@ -607,7 +661,7 @@
 
     add-int/lit8 v5, v3, 0x1
 
-    .line 121
+    .line 123
     aput v4, v0, v3
 
     move v3, v5
@@ -626,12 +680,12 @@
 
     const-string v0, "\u64ad\u653e\u8f66\u95e8\u52a8\u753b\u5931\u8d25:"
 
-    .line 208
+    .line 257
     sget-object v1, Lf/k/l/i/b;->a:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 210
+    .line 259
     :try_start_5
     invoke-static {}, Lf/k/l/i/b;->b()Lf/k/l/i/b;
 
@@ -643,41 +697,41 @@
 
     goto :goto_f
 
-    .line 211
+    .line 260
     :cond_d
     iget-object v3, v2, Lf/k/l/i/b;->b:Lcom/autonavi/gbl/lane/model/CarStyleInfo;
 
     :goto_f
     if-eqz v3, :cond_55
 
-    .line 212
+    .line 261
     iget-object v4, v3, Lcom/autonavi/gbl/lane/model/CarStyleInfo;->partsAnimation:Ljava/util/ArrayList;
 
     if-nez v4, :cond_16
 
     goto :goto_55
 
-    .line 215
+    .line 264
     :cond_16
     new-instance v4, Lcom/byd/lane/common/data/MyCarPartsAnimation;
 
     invoke-direct {v4}, Lcom/byd/lane/common/data/MyCarPartsAnimation;-><init>()V
 
-    .line 216
+    .line 265
     iput-object p0, v4, Lcom/autonavi/gbl/lane/model/CarPartsAnimation;->name:Ljava/lang/String;
 
-    .line 217
+    .line 266
     iput-object p1, v4, Lcom/autonavi/gbl/lane/model/CarPartsAnimation;->animationName:Ljava/lang/String;
 
     const/4 v5, 0x1
 
-    .line 218
+    .line 267
     iput v5, v4, Lcom/autonavi/gbl/lane/model/CarPartsAnimation;->animationType:I
 
-    .line 219
+    .line 268
     iput v5, v4, Lcom/autonavi/gbl/lane/model/CarPartsAnimation;->repeatTimes:I
 
-    .line 221
+    .line 270
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -694,7 +748,7 @@
 
     invoke-virtual {v2, v5}, Lf/k/l/i/b;->f(Ljava/lang/String;)V
 
-    .line 222
+    .line 271
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -711,19 +765,19 @@
 
     invoke-virtual {v2, p0}, Lf/k/l/i/b;->f(Ljava/lang/String;)V
 
-    .line 223
+    .line 272
     iget-object p0, v3, Lcom/autonavi/gbl/lane/model/CarStyleInfo;->partsAnimation:Ljava/util/ArrayList;
 
     invoke-virtual {p0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 224
+    .line 273
     invoke-virtual {v2}, Lf/k/l/i/b;->s()V
     :try_end_54
     .catchall {:try_start_5 .. :try_end_54} :catchall_57
 
     goto :goto_69
 
-    .line 213
+    .line 262
     :cond_55
     :goto_55
     :try_start_55
@@ -736,7 +790,7 @@
 
     const-string v2, "CarModelExtraSignals"
 
-    .line 226
+    .line 275
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -749,7 +803,7 @@
 
     invoke-static {v2, p1, p0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 228
+    .line 277
     :goto_69
     monitor-exit v1
 
@@ -768,57 +822,60 @@
 .method public static reset()V
     .registers 9
 
-    .line 233
+    .line 282
+    invoke-static {}, Lcom/byd/carmodel/CarModelEventBindings;->resetAnimations()V
+
+    .line 283
     sget-object v0, Lf/k/l/i/b;->a:Ljava/lang/Object;
 
     monitor-enter v0
 
     const/4 v1, 0x0
 
-    .line 235
-    :try_start_4
+    .line 285
+    :try_start_7
     invoke-static {}, Lf/k/l/i/b;->b()Lf/k/l/i/b;
 
     move-result-object v2
 
-    if-nez v2, :cond_c
+    if-nez v2, :cond_f
 
     const/4 v3, 0x0
 
-    goto :goto_e
+    goto :goto_11
 
-    .line 236
-    :cond_c
+    .line 286
+    :cond_f
     iget-object v3, v2, Lf/k/l/i/b;->b:Lcom/autonavi/gbl/lane/model/CarStyleInfo;
-    :try_end_e
-    .catchall {:try_start_4 .. :try_end_e} :catchall_74
-
-    :goto_e
-    if-nez v3, :cond_12
-
-    .line 238
-    :try_start_10
-    monitor-exit v0
     :try_end_11
-    .catchall {:try_start_10 .. :try_end_11} :catchall_7a
+    .catchall {:try_start_7 .. :try_end_11} :catchall_77
+
+    :goto_11
+    if-nez v3, :cond_15
+
+    .line 288
+    :try_start_13
+    monitor-exit v0
+    :try_end_14
+    .catchall {:try_start_13 .. :try_end_14} :catchall_7d
 
     return-void
 
-    :cond_12
-    :try_start_12
+    :cond_15
+    :try_start_15
     const-string v3, "CS_Fog"
 
-    .line 240
+    .line 290
     invoke-virtual {v2, v3}, Lf/k/l/i/b;->g(Ljava/lang/String;)V
 
     const-string v3, "CS_Daytime"
 
-    .line 241
+    .line 291
     invoke-virtual {v2, v3}, Lf/k/l/i/b;->g(Ljava/lang/String;)V
 
     const-string v3, "CS_Backup"
 
-    .line 242
+    .line 292
     invoke-virtual {v2, v3}, Lf/k/l/i/b;->g(Ljava/lang/String;)V
 
     const/4 v3, 0x6
@@ -861,13 +918,13 @@
 
     move v5, v1
 
-    :goto_42
-    if-ge v5, v3, :cond_71
+    :goto_45
+    if-ge v5, v3, :cond_74
 
-    .line 244
+    .line 294
     aget-object v6, v4, v5
 
-    .line 245
+    .line 295
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
@@ -884,7 +941,7 @@
 
     invoke-virtual {v2, v7}, Lf/k/l/i/b;->f(Ljava/lang/String;)V
 
-    .line 246
+    .line 296
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
@@ -903,37 +960,37 @@
 
     add-int/lit8 v5, v5, 0x1
 
-    goto :goto_42
+    goto :goto_45
 
-    .line 248
-    :cond_71
+    .line 298
+    :cond_74
     invoke-virtual {v2}, Lf/k/l/i/b;->s()V
-    :try_end_74
-    .catchall {:try_start_12 .. :try_end_74} :catchall_74
+    :try_end_77
+    .catchall {:try_start_15 .. :try_end_77} :catchall_77
 
-    .line 251
-    :catchall_74
-    :try_start_74
+    .line 301
+    :catchall_77
+    :try_start_77
     monitor-exit v0
-    :try_end_75
-    .catchall {:try_start_74 .. :try_end_75} :catchall_7a
+    :try_end_78
+    .catchall {:try_start_77 .. :try_end_78} :catchall_7d
 
-    .line 252
+    .line 302
     sput-boolean v1, Lcom/byd/carmodel/CarModelExtraSignals;->frontFogOn:Z
 
-    .line 253
+    .line 303
     sput-boolean v1, Lcom/byd/carmodel/CarModelExtraSignals;->rearFogOn:Z
 
     return-void
 
-    :catchall_7a
+    :catchall_7d
     move-exception v1
 
-    .line 251
-    :try_start_7b
+    .line 301
+    :try_start_7e
     monitor-exit v0
-    :try_end_7c
-    .catchall {:try_start_7b .. :try_end_7c} :catchall_7a
+    :try_end_7f
+    .catchall {:try_start_7e .. :try_end_7f} :catchall_7d
 
     throw v1
 .end method
@@ -943,12 +1000,12 @@
 
     const-string v0, "\u8bbe\u7f6e\u8f66\u706f\u5931\u8d25:"
 
-    .line 187
+    .line 236
     sget-object v1, Lf/k/l/i/b;->a:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 189
+    .line 238
     :try_start_5
     invoke-static {}, Lf/k/l/i/b;->b()Lf/k/l/i/b;
 
@@ -960,27 +1017,27 @@
 
     goto :goto_f
 
-    .line 190
+    .line 239
     :cond_d
     iget-object v3, v2, Lf/k/l/i/b;->b:Lcom/autonavi/gbl/lane/model/CarStyleInfo;
 
     :goto_f
     if-eqz v3, :cond_2f
 
-    .line 191
+    .line 240
     iget-object v4, v3, Lcom/autonavi/gbl/lane/model/CarStyleInfo;->partsStyle:Ljava/util/ArrayList;
 
     if-nez v4, :cond_16
 
     goto :goto_2f
 
-    .line 194
+    .line 243
     :cond_16
     new-instance v4, Lcom/byd/lane/common/data/MyCarPartsStyle;
 
     invoke-direct {v4}, Lcom/byd/lane/common/data/MyCarPartsStyle;-><init>()V
 
-    .line 195
+    .line 244
     iput-object p0, v4, Lcom/autonavi/gbl/lane/model/CarPartsStyle;->name:Ljava/lang/String;
 
     if-eqz p2, :cond_20
@@ -990,26 +1047,26 @@
     :cond_20
     const/4 p1, -0x1
 
-    .line 196
+    .line 245
     :goto_21
     iput p1, v4, Lcom/autonavi/gbl/lane/model/CarPartsStyle;->textureId:I
 
-    .line 197
+    .line 246
     invoke-virtual {v2, p0}, Lf/k/l/i/b;->g(Ljava/lang/String;)V
 
-    .line 198
+    .line 247
     iget-object p1, v3, Lcom/autonavi/gbl/lane/model/CarStyleInfo;->partsStyle:Ljava/util/ArrayList;
 
     invoke-virtual {p1, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 199
+    .line 248
     invoke-virtual {v2}, Lf/k/l/i/b;->s()V
     :try_end_2e
     .catchall {:try_start_5 .. :try_end_2e} :catchall_31
 
     goto :goto_43
 
-    .line 192
+    .line 241
     :cond_2f
     :goto_2f
     :try_start_2f
@@ -1022,7 +1079,7 @@
 
     const-string p2, "CarModelExtraSignals"
 
-    .line 201
+    .line 250
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -1035,7 +1092,7 @@
 
     invoke-static {p2, p0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 203
+    .line 252
     :goto_43
     monitor-exit v1
 
@@ -1052,137 +1109,270 @@
 .end method
 
 .method private static syncLightsFrom(Landroid/hardware/bydauto/light/BYDAutoLightDevice;II)V
-    .registers 8
+    .registers 10
 
-    .line 130
-    :try_start_0
-    sget v0, Lcom/byd/carmodel/CarModelExtraSignals;->frontFogId:I
+    const-string v0, "CS_Backup"
 
-    const/4 v1, 0x0
+    const-string v1, "CS_Daytime"
 
-    const/4 v2, 0x1
-
-    if-eqz v0, :cond_e
-
-    invoke-virtual {p0, v0}, Landroid/hardware/bydauto/light/BYDAutoLightDevice;->getLightStatus(I)I
-
-    move-result v0
-
-    if-ne v0, v2, :cond_e
-
-    move v0, v2
-
-    goto :goto_f
-
-    :cond_e
-    move v0, v1
-
-    :goto_f
-    sput-boolean v0, Lcom/byd/carmodel/CarModelExtraSignals;->frontFogOn:Z
-
-    .line 131
-    sget v0, Lcom/byd/carmodel/CarModelExtraSignals;->rearFogId:I
-
-    if-eqz v0, :cond_1d
-
-    invoke-virtual {p0, v0}, Landroid/hardware/bydauto/light/BYDAutoLightDevice;->getLightStatus(I)I
-
-    move-result v0
-
-    if-ne v0, v2, :cond_1d
-
-    move v0, v2
-
-    goto :goto_1e
-
-    :cond_1d
-    move v0, v1
-
-    :goto_1e
-    sput-boolean v0, Lcom/byd/carmodel/CarModelExtraSignals;->rearFogOn:Z
-
-    const-string v3, "CS_Fog"
+    const-string v2, "CS_Fog"
 
     .line 132
-    sget-boolean v4, Lcom/byd/carmodel/CarModelExtraSignals;->frontFogOn:Z
+    :try_start_6
+    sget v3, Lcom/byd/carmodel/CarModelExtraSignals;->frontFogId:I
 
-    if-nez v4, :cond_2b
+    const/4 v4, 0x0
 
-    if-eqz v0, :cond_29
+    const/4 v5, 0x1
 
-    goto :goto_2b
+    if-eqz v3, :cond_14
 
-    :cond_29
-    move v0, v1
+    invoke-virtual {p0, v3}, Landroid/hardware/bydauto/light/BYDAutoLightDevice;->getLightStatus(I)I
 
-    goto :goto_2c
+    move-result v3
 
-    :cond_2b
-    :goto_2b
-    move v0, v2
+    if-ne v3, v5, :cond_14
 
-    :goto_2c
-    const/16 v4, 0x3f5
+    move v3, v5
 
-    invoke-static {v3, v4, v0}, Lcom/byd/carmodel/CarModelExtraSignals;->setLamp(Ljava/lang/String;IZ)V
+    goto :goto_15
 
-    if-eqz p1, :cond_43
+    :cond_14
+    move v3, v4
 
-    const-string v0, "CS_Daytime"
+    :goto_15
+    sput-boolean v3, Lcom/byd/carmodel/CarModelExtraSignals;->frontFogOn:Z
+
+    .line 133
+    sget v3, Lcom/byd/carmodel/CarModelExtraSignals;->rearFogId:I
+
+    if-eqz v3, :cond_23
+
+    invoke-virtual {p0, v3}, Landroid/hardware/bydauto/light/BYDAutoLightDevice;->getLightStatus(I)I
+
+    move-result v3
+
+    if-ne v3, v5, :cond_23
+
+    move v3, v5
+
+    goto :goto_24
+
+    :cond_23
+    move v3, v4
+
+    :goto_24
+    sput-boolean v3, Lcom/byd/carmodel/CarModelExtraSignals;->rearFogOn:Z
 
     .line 134
+    sget-boolean v6, Lcom/byd/carmodel/CarModelExtraSignals;->frontFogOn:Z
+
+    if-nez v6, :cond_2f
+
+    if-eqz v3, :cond_2d
+
+    goto :goto_2f
+
+    :cond_2d
+    move v3, v4
+
+    goto :goto_30
+
+    :cond_2f
+    :goto_2f
+    move v3, v5
+
+    .line 135
+    :goto_30
+    invoke-static {v2, v3}, Lcom/byd/carmodel/CarModelEventBindings;->play(Ljava/lang/String;Z)Z
+
+    move-result v6
+
+    if-nez v6, :cond_3b
+
+    const/16 v6, 0x3f5
+
+    .line 136
+    invoke-static {v2, v6, v3}, Lcom/byd/carmodel/CarModelExtraSignals;->setLamp(Ljava/lang/String;IZ)V
+
+    :cond_3b
+    if-eqz p1, :cond_51
+
+    .line 139
     invoke-virtual {p0, p1}, Landroid/hardware/bydauto/light/BYDAutoLightDevice;->getLightStatus(I)I
 
     move-result p1
 
-    if-ne p1, v2, :cond_3d
+    if-ne p1, v5, :cond_45
 
-    move p1, v2
+    move p1, v5
 
-    goto :goto_3e
+    goto :goto_46
 
-    :cond_3d
-    move p1, v1
+    :cond_45
+    move p1, v4
 
-    :goto_3e
-    const/16 v3, 0x3f6
+    .line 140
+    :goto_46
+    invoke-static {v1, p1}, Lcom/byd/carmodel/CarModelEventBindings;->play(Ljava/lang/String;Z)Z
 
-    invoke-static {v0, v3, p1}, Lcom/byd/carmodel/CarModelExtraSignals;->setLamp(Ljava/lang/String;IZ)V
+    move-result v2
 
-    :cond_43
-    if-eqz p2, :cond_5c
+    if-nez v2, :cond_51
 
-    const-string p1, "CS_Backup"
+    const/16 v2, 0x3f6
 
-    .line 137
+    .line 141
+    invoke-static {v1, v2, p1}, Lcom/byd/carmodel/CarModelExtraSignals;->setLamp(Ljava/lang/String;IZ)V
+
+    :cond_51
+    if-eqz p2, :cond_6e
+
+    .line 145
     invoke-virtual {p0, p2}, Landroid/hardware/bydauto/light/BYDAutoLightDevice;->getLightStatus(I)I
 
     move-result p0
 
-    if-ne p0, v2, :cond_4e
+    if-ne p0, v5, :cond_5a
 
-    move v1, v2
+    move v4, v5
 
-    :cond_4e
+    .line 146
+    :cond_5a
+    invoke-static {v0, v4}, Lcom/byd/carmodel/CarModelEventBindings;->play(Ljava/lang/String;Z)Z
+
+    move-result p0
+
+    if-nez p0, :cond_6e
+
     const/16 p0, 0x3f4
 
-    invoke-static {p1, p0, v1}, Lcom/byd/carmodel/CarModelExtraSignals;->setLamp(Ljava/lang/String;IZ)V
-    :try_end_53
-    .catchall {:try_start_0 .. :try_end_53} :catchall_54
+    .line 147
+    invoke-static {v0, p0, v4}, Lcom/byd/carmodel/CarModelExtraSignals;->setLamp(Ljava/lang/String;IZ)V
+    :try_end_65
+    .catchall {:try_start_6 .. :try_end_65} :catchall_66
 
-    goto :goto_5c
+    goto :goto_6e
 
-    :catchall_54
+    :catchall_66
     move-exception p0
 
     const-string p1, "CarModelExtraSignals"
 
     const-string p2, "\u540c\u6b65\u706f\u5149\u521d\u59cb\u72b6\u6001\u5931\u8d25"
 
-    .line 140
+    .line 151
     invoke-static {p1, p2, p0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    :cond_5c
-    :goto_5c
+    :cond_6e
+    :goto_6e
+    return-void
+.end method
+
+.method public static syncMovementFromSpeed()V
+    .registers 6
+
+    const-string v0, "CarModelExtraSignals"
+
+    const-string v1, "\u540c\u6b65\u79fb\u52a8\u521d\u59cb\u72b6\u6001 speed="
+
+    .line 197
+    :try_start_4
+    invoke-static {}, Lf/k/l/i/b;->b()Lf/k/l/i/b;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_46
+
+    .line 198
+    iget-object v3, v2, Lf/k/l/i/b;->f:Lcom/autosdk/bussiness/vehicle/BydAutoSpeed;
+
+    if-eqz v3, :cond_46
+
+    iget-object v3, v2, Lf/k/l/i/b;->b:Lcom/autonavi/gbl/lane/model/CarStyleInfo;
+
+    if-nez v3, :cond_13
+
+    goto :goto_46
+
+    .line 202
+    :cond_13
+    iget-object v3, v2, Lf/k/l/i/b;->f:Lcom/autosdk/bussiness/vehicle/BydAutoSpeed;
+
+    invoke-virtual {v3}, Lcom/autosdk/bussiness/vehicle/BydAutoSpeed;->obtainSpeedInfo()Lcom/autosdk/bussiness/vehicle/BydAutoSpeed$Speed;
+
+    move-result-object v3
+
+    if-nez v3, :cond_21
+
+    const-string v1, "\u540c\u6b65\u79fb\u52a8\u521d\u59cb\u72b6\u6001\uff1a\u6682\u65e0\u901f\u5ea6\u6570\u636e"
+
+    .line 204
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+
+    .line 207
+    :cond_21
+    iget v4, v3, Lcom/autosdk/bussiness/vehicle/BydAutoSpeed$Speed;->currentSpeed:F
+
+    float-to-int v4, v4
+
+    if-eqz v4, :cond_28
+
+    const/4 v4, 0x1
+
+    goto :goto_29
+
+    :cond_28
+    const/4 v4, 0x0
+
+    .line 208
+    :goto_29
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget v1, v3, Lcom/autosdk/bussiness/vehicle/BydAutoSpeed$Speed;->currentSpeed:F
+
+    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    const-string v1, " moving="
+
+    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 209
+    invoke-virtual {v2, v4}, Lf/k/l/i/b;->p(Z)V
+
+    goto :goto_52
+
+    :cond_46
+    :goto_46
+    const-string v1, "\u540c\u6b65\u79fb\u52a8\u521d\u59cb\u72b6\u6001\uff1a\u63a7\u5236\u5668\u5c1a\u672a\u5c31\u7eea"
+
+    .line 199
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_4b
+    .catchall {:try_start_4 .. :try_end_4b} :catchall_4c
+
+    return-void
+
+    :catchall_4c
+    move-exception v1
+
+    const-string v2, "\u540c\u6b65\u79fb\u52a8\u521d\u59cb\u72b6\u6001\u5931\u8d25"
+
+    .line 211
+    invoke-static {v0, v2, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    :goto_52
     return-void
 .end method

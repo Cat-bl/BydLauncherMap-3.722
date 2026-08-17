@@ -34,7 +34,7 @@
         }
     .end annotation
 
-    .line 132
+    .line 128
     iput-object p1, p0, Lcom/byd/carmodel/CarModelPackageManager$1;->val$context:Landroid/content/Context;
 
     iput-object p2, p0, Lcom/byd/carmodel/CarModelPackageManager$1;->val$uri:Landroid/net/Uri;
@@ -59,7 +59,7 @@
 
     const/4 v3, 0x0
 
-    .line 139
+    .line 135
     :try_start_5
     iget-object v4, p0, Lcom/byd/carmodel/CarModelPackageManager$1;->val$context:Landroid/content/Context;
 
@@ -70,10 +70,10 @@
 
     move-result-object v4
 
-    .line 140
+    .line 136
     aget-object v2, v4, v1
 
-    .line 141
+    .line 137
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -99,7 +99,7 @@
     :catchall_24
     move-exception v0
 
-    .line 144
+    .line 140
     new-instance v4, Ljava/lang/StringBuilder;
 
     const-string v5, "\u8f66\u6a21\u5305\u65e0\u6548\uff1a"
@@ -118,29 +118,29 @@
 
     move v4, v3
 
-    .line 149
+    .line 145
     :goto_38
     const-class v5, Lcom/byd/carmodel/CarModelPackageManager;
 
     monitor-enter v5
 
-    .line 150
+    .line 146
     :try_start_3b
     # setter for: Lcom/byd/carmodel/CarModelPackageManager;->importing:Z
     invoke-static {v3}, Lcom/byd/carmodel/CarModelPackageManager;->access$102(Z)Z
 
-    .line 151
+    .line 147
     monitor-exit v5
     :try_end_3f
     .catchall {:try_start_3b .. :try_end_3f} :catchall_56
 
     if-eqz v4, :cond_44
 
-    .line 153
+    .line 149
     # setter for: Lcom/byd/carmodel/CarModelPackageManager;->restartPromptPending:Z
     invoke-static {v1}, Lcom/byd/carmodel/CarModelPackageManager;->access$202(Z)Z
 
-    .line 155
+    .line 151
     :cond_44
     new-instance v1, Landroid/os/Handler;
 
@@ -161,7 +161,7 @@
     :catchall_56
     move-exception v0
 
-    .line 151
+    .line 147
     :try_start_57
     monitor-exit v5
     :try_end_58

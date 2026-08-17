@@ -6,22 +6,12 @@
 # static fields
 .field private static final HEADER_SIZE:I = 0x74
 
-.field private static final MAX_JSON_SIZE:I = 0x100000
-
-.field private static final MAX_MATERIALS:I = 0x20
-
-.field private static final MAX_MESHES:I = 0x80
-
-.field private static final MAX_NODES:I = 0x100
-
-.field private static final MAX_TEXTURES:I = 0x10
-
 
 # direct methods
 .method private constructor <init>()V
     .registers 1
 
-    .line 20
+    .line 15
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -39,14 +29,14 @@
 
     if-ltz p2, :cond_14
 
-    .line 176
+    .line 162
     array-length v0, p0
 
     sub-int/2addr v0, p2
 
     if-gt p1, v0, :cond_14
 
-    .line 179
+    .line 165
     new-instance v0, Ljava/lang/String;
 
     const-string v1, "ISO-8859-1"
@@ -59,7 +49,7 @@
 
     return-object v0
 
-    .line 177
+    .line 163
     :cond_14
     new-instance p0, Ljava/lang/Exception;
 
@@ -70,42 +60,10 @@
     throw p0
 .end method
 
-.method private static checkLimit(Lorg/json/JSONArray;ILjava/lang/String;)V
-    .registers 3
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-
-    if-eqz p0, :cond_f
-
-    .line 160
-    invoke-virtual {p0}, Lorg/json/JSONArray;->length()I
-
-    move-result p0
-
-    if-gt p0, p1, :cond_9
-
-    goto :goto_f
-
-    .line 161
-    :cond_9
-    new-instance p0, Ljava/lang/Exception;
-
-    invoke-direct {p0, p2}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
-
-    throw p0
-
-    :cond_f
-    :goto_f
-    return-void
-.end method
-
 .method private static trimPadding(Ljava/lang/String;)Ljava/lang/String;
     .registers 4
 
-    .line 183
+    .line 169
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -115,7 +73,7 @@
 
     add-int/lit8 v1, v0, -0x1
 
-    .line 185
+    .line 171
     invoke-virtual {p0, v1}, Ljava/lang/String;->charAt(I)C
 
     move-result v1
@@ -137,7 +95,7 @@
     :goto_16
     const/4 v1, 0x0
 
-    .line 191
+    .line 177
     invoke-virtual {p0, v1, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object p0
@@ -155,14 +113,14 @@
 
     if-ltz p1, :cond_2c
 
-    .line 166
+    .line 152
     array-length v0, p0
 
     add-int/lit8 v0, v0, -0x4
 
     if-gt p1, v0, :cond_2c
 
-    .line 169
+    .line 155
     aget-byte v0, p0, p1
 
     int-to-long v0, v0
@@ -215,7 +173,7 @@
 
     return-wide p0
 
-    .line 167
+    .line 153
     :cond_2c
     new-instance p0, Ljava/lang/Exception;
 
@@ -236,7 +194,7 @@
 
     if-eqz p0, :cond_b2
 
-    .line 24
+    .line 19
     array-length v0, p0
 
     const/16 v1, 0x8c
@@ -245,7 +203,7 @@
 
     const/4 v0, 0x4
 
-    .line 27
+    .line 22
     aget-byte v1, p0, v0
 
     and-int/lit16 v1, v1, 0xff
@@ -286,7 +244,7 @@
 
     const/16 v2, 0x8
 
-    .line 31
+    .line 26
     invoke-static {p0, v1, v2}, Lcom/byd/carmodel/CarSelfDatValidator;->ascii([BII)Ljava/lang/String;
 
     move-result-object v1
@@ -301,19 +259,19 @@
 
     const/16 v1, 0xc
 
-    .line 34
+    .line 29
     invoke-static {p0, v1}, Lcom/byd/carmodel/CarSelfDatValidator;->u32([BI)J
 
     move-result-wide v1
 
     const/16 v3, 0x70
 
-    .line 35
+    .line 30
     invoke-static {p0, v3}, Lcom/byd/carmodel/CarSelfDatValidator;->u32([BI)J
 
     move-result-wide v3
 
-    .line 36
+    .line 31
     array-length v5, p0
 
     int-to-long v5, v5
@@ -340,7 +298,7 @@
 
     const/16 v1, 0x64
 
-    .line 37
+    .line 32
     invoke-static {p0, v1}, Lcom/byd/carmodel/CarSelfDatValidator;->u32([BI)J
 
     move-result-wide v5
@@ -355,7 +313,7 @@
 
     const/16 v1, 0x6c
 
-    .line 38
+    .line 33
     invoke-static {p0, v1}, Lcom/byd/carmodel/CarSelfDatValidator;->u32([BI)J
 
     move-result-wide v5
@@ -368,12 +326,12 @@
 
     if-nez v1, :cond_9a
 
-    .line 41
+    .line 36
     array-length v1, p0
 
     sub-int/2addr v1, v0
 
-    .line 42
+    .line 37
     aget-byte v0, p0, v1
 
     and-int/lit16 v0, v0, 0xff
@@ -402,12 +360,12 @@
 
     long-to-int v0, v3
 
-    .line 46
+    .line 41
     invoke-static {p0, v2, v0}, Lcom/byd/carmodel/CarSelfDatValidator;->validateGlb([BII)V
 
     return-void
 
-    .line 44
+    .line 39
     :cond_92
     new-instance p0, Ljava/lang/Exception;
 
@@ -417,7 +375,7 @@
 
     throw p0
 
-    .line 39
+    .line 34
     :cond_9a
     new-instance p0, Ljava/lang/Exception;
 
@@ -427,7 +385,7 @@
 
     throw p0
 
-    .line 32
+    .line 27
     :cond_a2
     new-instance p0, Ljava/lang/Exception;
 
@@ -437,7 +395,7 @@
 
     throw p0
 
-    .line 29
+    .line 24
     :cond_aa
     new-instance p0, Ljava/lang/Exception;
 
@@ -447,7 +405,7 @@
 
     throw p0
 
-    .line 25
+    .line 20
     :cond_b2
     new-instance p0, Ljava/lang/Exception;
 
@@ -474,7 +432,7 @@
 
     const/4 v3, 0x4
 
-    .line 50
+    .line 45
     invoke-static {v0, v1, v3}, Lcom/byd/carmodel/CarSelfDatValidator;->ascii([BII)Ljava/lang/String;
 
     move-result-object v4
@@ -485,7 +443,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_1e9
+    if-eqz v4, :cond_1bf
 
     add-int/lit8 v4, v1, 0x4
 
@@ -497,11 +455,11 @@
 
     cmp-long v4, v4, v6
 
-    if-nez v4, :cond_1e9
+    if-nez v4, :cond_1bf
 
     add-int/lit8 v4, v1, 0x8
 
-    .line 51
+    .line 46
     invoke-static {v0, v4}, Lcom/byd/carmodel/CarSelfDatValidator;->u32([BI)J
 
     move-result-wide v4
@@ -510,7 +468,7 @@
 
     cmp-long v4, v4, v6
 
-    if-nez v4, :cond_1e9
+    if-nez v4, :cond_1bf
 
     add-int/2addr v2, v1
 
@@ -518,9 +476,9 @@
 
     add-int/lit8 v4, v1, 0x8
 
-    if-gt v4, v2, :cond_1e1
+    if-gt v4, v2, :cond_1b7
 
-    .line 59
+    .line 54
     invoke-static {v0, v1}, Lcom/byd/carmodel/CarSelfDatValidator;->u32([BI)J
 
     move-result-wide v5
@@ -529,44 +487,44 @@
 
     cmp-long v9, v5, v7
 
-    if-lez v9, :cond_1d9
+    if-lez v9, :cond_1af
 
-    const-wide/32 v9, 0x100000
+    const-wide/32 v9, 0x7fffffff
 
-    cmp-long v9, v5, v9
+    cmp-long v11, v5, v9
 
-    if-gtz v9, :cond_1d9
+    if-gtz v11, :cond_1af
 
-    const-wide/16 v9, 0x3
+    const-wide/16 v11, 0x3
 
-    and-long v11, v5, v9
+    and-long v13, v5, v11
 
-    cmp-long v11, v11, v7
+    cmp-long v13, v13, v7
 
-    if-nez v11, :cond_1d9
+    if-nez v13, :cond_1af
 
     add-int/2addr v1, v3
 
-    .line 61
+    .line 56
     invoke-static {v0, v1, v3}, Lcom/byd/carmodel/CarSelfDatValidator;->ascii([BII)Ljava/lang/String;
 
     move-result-object v1
 
-    const-string v11, "JSON"
+    const-string v13, "JSON"
 
-    invoke-virtual {v11, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v13, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_1d9
+    if-eqz v1, :cond_1af
 
     long-to-int v1, v5
 
     sub-int v5, v2, v1
 
-    if-gt v4, v5, :cond_1d1
+    if-gt v4, v5, :cond_1a7
 
-    .line 69
+    .line 64
     new-instance v5, Ljava/lang/String;
 
     const-string v6, "UTF-8"
@@ -577,163 +535,120 @@
 
     invoke-direct {v5, v0, v4, v1, v6}, Ljava/lang/String;-><init>([BIILjava/nio/charset/Charset;)V
 
-    .line 70
+    .line 65
     invoke-static {v5}, Lcom/byd/carmodel/CarSelfDatValidator;->trimPadding(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
-    .line 71
+    .line 66
     new-instance v6, Lorg/json/JSONObject;
 
     invoke-direct {v6, v5}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
     const-string v5, "asset"
 
-    .line 72
+    .line 67
     invoke-virtual {v6, v5}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v5
 
-    if-eqz v5, :cond_1c9
+    if-eqz v5, :cond_19f
 
-    const-string v11, "version"
+    const-string v13, "version"
 
-    .line 73
-    invoke-virtual {v5, v11}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+    .line 68
+    invoke-virtual {v5, v13}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
-    const-string v11, "2.0"
+    const-string v13, "2.0"
 
-    invoke-virtual {v11, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v13, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v5
 
-    if-eqz v5, :cond_1c9
+    if-eqz v5, :cond_19f
 
     const-string v5, "scenes"
 
-    .line 76
+    .line 71
     invoke-virtual {v6, v5}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object v5
 
-    const-string v11, "nodes"
+    const-string v13, "nodes"
 
-    .line 77
-    invoke-virtual {v6, v11}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
-
-    move-result-object v12
-
-    const-string v13, "meshes"
-
-    .line 78
+    .line 72
     invoke-virtual {v6, v13}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
-    move-result-object v13
+    move-result-object v14
 
-    if-eqz v5, :cond_1c1
+    const-string v15, "meshes"
 
-    .line 79
+    .line 73
+    invoke-virtual {v6, v15}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+
+    move-result-object v15
+
+    if-eqz v5, :cond_197
+
+    .line 74
     invoke-virtual {v5}, Lorg/json/JSONArray;->length()I
 
-    move-result v14
+    move-result v9
 
-    const/4 v15, 0x1
+    const/4 v10, 0x1
 
-    if-ne v14, v15, :cond_1c1
+    if-ne v9, v10, :cond_197
 
-    if-eqz v12, :cond_1c1
+    if-eqz v14, :cond_197
 
-    if-eqz v13, :cond_1c1
+    if-eqz v15, :cond_197
 
-    .line 80
-    invoke-virtual {v12}, Lorg/json/JSONArray;->length()I
+    .line 75
+    invoke-virtual {v14}, Lorg/json/JSONArray;->length()I
 
-    move-result v14
+    move-result v9
 
-    if-eqz v14, :cond_1c1
+    if-eqz v9, :cond_197
 
-    invoke-virtual {v12}, Lorg/json/JSONArray;->length()I
+    invoke-virtual {v15}, Lorg/json/JSONArray;->length()I
 
-    move-result v14
+    move-result v9
 
-    const/16 v3, 0x100
+    if-eqz v9, :cond_197
 
-    if-gt v14, v3, :cond_1c1
+    const-string v9, "scene"
+
+    const/4 v15, -0x1
+
+    .line 78
+    invoke-virtual {v6, v9, v15}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
+
+    move-result v9
+
+    if-nez v9, :cond_18f
+
+    const-string v9, "extensionsRequired"
 
     .line 81
-    invoke-virtual {v13}, Lorg/json/JSONArray;->length()I
+    invoke-virtual {v6, v9}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
-    move-result v3
+    move-result-object v9
 
-    if-eqz v3, :cond_1c1
+    if-eqz v9, :cond_d1
 
-    invoke-virtual {v13}, Lorg/json/JSONArray;->length()I
+    .line 82
+    invoke-virtual {v9}, Lorg/json/JSONArray;->length()I
 
-    move-result v3
+    move-result v9
 
-    const/16 v13, 0x80
+    if-gtz v9, :cond_c9
 
-    if-gt v3, v13, :cond_1c1
+    goto :goto_d1
 
-    const-string v3, "scene"
-
-    const/4 v13, -0x1
-
-    .line 84
-    invoke-virtual {v6, v3, v13}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
-
-    move-result v3
-
-    if-nez v3, :cond_1b9
-
-    const-string v3, "materials"
-
-    .line 87
-    invoke-virtual {v6, v3}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
-
-    move-result-object v3
-
-    const/16 v14, 0x20
-
-    const-string v7, "MODEL_MATERIAL_LIMIT"
-
-    invoke-static {v3, v14, v7}, Lcom/byd/carmodel/CarSelfDatValidator;->checkLimit(Lorg/json/JSONArray;ILjava/lang/String;)V
-
-    const-string v3, "textures"
-
-    .line 88
-    invoke-virtual {v6, v3}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
-
-    move-result-object v3
-
-    const/16 v7, 0x10
-
-    const-string v8, "MODEL_TEXTURE_LIMIT"
-
-    invoke-static {v3, v7, v8}, Lcom/byd/carmodel/CarSelfDatValidator;->checkLimit(Lorg/json/JSONArray;ILjava/lang/String;)V
-
-    const-string v3, "extensionsRequired"
-
-    .line 89
-    invoke-virtual {v6, v3}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
-
-    move-result-object v3
-
-    if-eqz v3, :cond_fb
-
-    .line 90
-    invoke-virtual {v3}, Lorg/json/JSONArray;->length()I
-
-    move-result v3
-
-    if-gtz v3, :cond_f3
-
-    goto :goto_fb
-
-    .line 91
-    :cond_f3
+    .line 83
+    :cond_c9
     new-instance v0, Ljava/lang/Exception;
 
     const-string v1, "GLTF_EXTENSION_UNSUPPORTED"
@@ -742,57 +657,57 @@
 
     throw v0
 
-    :cond_fb
-    :goto_fb
-    const-string v3, "images"
+    :cond_d1
+    :goto_d1
+    const-string v9, "images"
 
-    .line 93
-    invoke-virtual {v6, v3}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+    .line 85
+    invoke-virtual {v6, v9}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
-    move-result-object v3
+    move-result-object v6
 
-    const/4 v6, 0x0
+    const/4 v9, 0x0
 
-    if-eqz v3, :cond_12a
+    if-eqz v6, :cond_100
 
-    move v7, v6
+    move v3, v9
 
-    .line 95
-    :goto_105
-    invoke-virtual {v3}, Lorg/json/JSONArray;->length()I
+    .line 87
+    :goto_db
+    invoke-virtual {v6}, Lorg/json/JSONArray;->length()I
 
-    move-result v8
+    move-result v7
 
-    if-ge v7, v8, :cond_12a
+    if-ge v3, v7, :cond_100
 
-    .line 96
-    invoke-virtual {v3, v7}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
+    .line 88
+    invoke-virtual {v6, v3}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
-    move-result-object v8
+    move-result-object v7
 
-    const-string v14, "uri"
+    const-string v8, "uri"
 
-    .line 97
-    invoke-virtual {v8, v14}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
-
-    move-result v14
-
-    if-nez v14, :cond_122
-
-    const-string v14, "bufferView"
-
-    invoke-virtual {v8, v14, v13}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
+    .line 89
+    invoke-virtual {v7, v8}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v8
 
-    if-ltz v8, :cond_122
+    if-nez v8, :cond_f8
 
-    add-int/lit8 v7, v7, 0x1
+    const-string v8, "bufferView"
 
-    goto :goto_105
+    invoke-virtual {v7, v8, v15}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
 
-    .line 98
-    :cond_122
+    move-result v7
+
+    if-ltz v7, :cond_f8
+
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_db
+
+    .line 90
+    :cond_f8
     new-instance v0, Ljava/lang/Exception;
 
     const-string v1, "GLTF_EXTERNAL_IMAGE"
@@ -801,88 +716,88 @@
 
     throw v0
 
-    .line 102
-    :cond_12a
-    invoke-virtual {v12}, Lorg/json/JSONArray;->length()I
+    .line 94
+    :cond_100
+    invoke-virtual {v14}, Lorg/json/JSONArray;->length()I
 
     move-result v3
 
     new-array v3, v3, [I
 
-    new-array v7, v15, [I
+    new-array v6, v10, [I
 
-    .line 104
-    invoke-virtual {v5, v6}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
-
-    move-result-object v5
-
-    invoke-virtual {v5, v11}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+    .line 96
+    invoke-virtual {v5, v9}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v5
 
-    if-eqz v5, :cond_1b1
+    invoke-virtual {v5, v13}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
-    .line 105
+    move-result-object v5
+
+    if-eqz v5, :cond_187
+
+    .line 97
+    invoke-virtual {v5}, Lorg/json/JSONArray;->length()I
+
+    move-result v7
+
+    if-eqz v7, :cond_187
+
+    move v7, v9
+
+    .line 100
+    :goto_119
     invoke-virtual {v5}, Lorg/json/JSONArray;->length()I
 
     move-result v8
 
-    if-eqz v8, :cond_1b1
+    if-ge v7, v8, :cond_129
 
-    move v8, v6
+    .line 101
+    invoke-virtual {v5, v7}, Lorg/json/JSONArray;->getInt(I)I
 
-    .line 108
-    :goto_143
-    invoke-virtual {v5}, Lorg/json/JSONArray;->length()I
+    move-result v8
 
-    move-result v11
+    invoke-static {v8, v14, v3, v6}, Lcom/byd/carmodel/CarSelfDatValidator;->walkNode(ILorg/json/JSONArray;[I[I)V
 
-    if-ge v8, v11, :cond_153
+    add-int/lit8 v7, v7, 0x1
 
-    .line 109
-    invoke-virtual {v5, v8}, Lorg/json/JSONArray;->getInt(I)I
+    goto :goto_119
 
-    move-result v11
+    :cond_129
+    aget v3, v6, v9
 
-    invoke-static {v11, v12, v3, v7}, Lcom/byd/carmodel/CarSelfDatValidator;->walkNode(ILorg/json/JSONArray;[I[I)V
-
-    add-int/lit8 v8, v8, 0x1
-
-    goto :goto_143
-
-    :cond_153
-    aget v3, v7, v6
-
-    if-ne v3, v15, :cond_1a9
+    if-ne v3, v10, :cond_17f
 
     add-int/2addr v4, v1
 
-    if-ge v4, v2, :cond_19e
+    if-ge v4, v2, :cond_174
 
     add-int/lit8 v1, v4, 0x8
 
     const-string v3, "GLB_BIN_INVALID"
 
-    if-gt v1, v2, :cond_198
+    if-gt v1, v2, :cond_16e
 
-    .line 119
+    .line 111
     invoke-static {v0, v4}, Lcom/byd/carmodel/CarSelfDatValidator;->u32([BI)J
 
     move-result-wide v5
 
-    and-long v7, v5, v9
+    and-long v7, v5, v11
 
     const-wide/16 v9, 0x0
 
     cmp-long v7, v7, v9
 
-    if-nez v7, :cond_192
+    if-nez v7, :cond_168
 
     add-int/lit8 v4, v4, 0x4
 
     const/4 v7, 0x4
 
-    .line 120
+    .line 112
     invoke-static {v0, v4, v7}, Lcom/byd/carmodel/CarSelfDatValidator;->ascii([BII)Ljava/lang/String;
 
     move-result-object v0
@@ -893,26 +808,26 @@
 
     move-result v0
 
-    if-eqz v0, :cond_192
+    if-eqz v0, :cond_168
 
-    const-wide/32 v3, 0x7fffffff
+    const-wide/32 v7, 0x7fffffff
 
-    cmp-long v0, v5, v3
+    cmp-long v0, v5, v7
 
-    if-gtz v0, :cond_18a
+    if-gtz v0, :cond_160
 
     long-to-int v0, v5
 
     sub-int v3, v2, v0
 
-    if-gt v1, v3, :cond_18a
+    if-gt v1, v3, :cond_160
 
     add-int v4, v1, v0
 
-    goto :goto_19e
+    goto :goto_174
 
-    .line 125
-    :cond_18a
+    .line 117
+    :cond_160
     new-instance v0, Ljava/lang/Exception;
 
     const-string v1, "GLB_BIN_BOUNDS"
@@ -921,30 +836,30 @@
 
     throw v0
 
-    .line 121
-    :cond_192
+    .line 113
+    :cond_168
     new-instance v0, Ljava/lang/Exception;
 
     invoke-direct {v0, v3}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
     throw v0
 
-    .line 117
-    :cond_198
+    .line 109
+    :cond_16e
     new-instance v0, Ljava/lang/Exception;
 
     invoke-direct {v0, v3}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
     throw v0
 
-    :cond_19e
-    :goto_19e
-    if-ne v4, v2, :cond_1a1
+    :cond_174
+    :goto_174
+    if-ne v4, v2, :cond_177
 
     return-void
 
-    .line 130
-    :cond_1a1
+    .line 122
+    :cond_177
     new-instance v0, Ljava/lang/Exception;
 
     const-string v1, "GLB_TRAILING_DATA"
@@ -953,8 +868,8 @@
 
     throw v0
 
-    .line 112
-    :cond_1a9
+    .line 104
+    :cond_17f
     new-instance v0, Ljava/lang/Exception;
 
     const-string v1, "CS_CAR_MISSING"
@@ -963,8 +878,8 @@
 
     throw v0
 
-    .line 106
-    :cond_1b1
+    .line 98
+    :cond_187
     new-instance v0, Ljava/lang/Exception;
 
     const-string v1, "GLTF_SCENE_EMPTY"
@@ -973,8 +888,8 @@
 
     throw v0
 
-    .line 85
-    :cond_1b9
+    .line 79
+    :cond_18f
     new-instance v0, Ljava/lang/Exception;
 
     const-string v1, "GLTF_SCENE_INVALID"
@@ -983,8 +898,8 @@
 
     throw v0
 
-    .line 82
-    :cond_1c1
+    .line 76
+    :cond_197
     new-instance v0, Ljava/lang/Exception;
 
     const-string v1, "GLTF_STRUCTURE_INVALID"
@@ -993,8 +908,8 @@
 
     throw v0
 
-    .line 74
-    :cond_1c9
+    .line 69
+    :cond_19f
     new-instance v0, Ljava/lang/Exception;
 
     const-string v1, "GLTF_VERSION_INVALID"
@@ -1003,8 +918,8 @@
 
     throw v0
 
-    .line 67
-    :cond_1d1
+    .line 62
+    :cond_1a7
     new-instance v0, Ljava/lang/Exception;
 
     const-string v1, "GLB_JSON_BOUNDS"
@@ -1013,8 +928,8 @@
 
     throw v0
 
-    .line 62
-    :cond_1d9
+    .line 57
+    :cond_1af
     new-instance v0, Ljava/lang/Exception;
 
     const-string v1, "GLB_JSON_INVALID"
@@ -1023,8 +938,8 @@
 
     throw v0
 
-    .line 57
-    :cond_1e1
+    .line 52
+    :cond_1b7
     new-instance v0, Ljava/lang/Exception;
 
     const-string v1, "GLB_CHUNK_INVALID"
@@ -1033,8 +948,8 @@
 
     throw v0
 
-    .line 52
-    :cond_1e9
+    .line 47
+    :cond_1bf
     new-instance v0, Ljava/lang/Exception;
 
     const-string v1, "GLB_HEADER_INVALID"
@@ -1054,14 +969,14 @@
 
     if-ltz p0, :cond_4e
 
-    .line 136
+    .line 128
     invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
 
     move-result v0
 
     if-ge p0, v0, :cond_4e
 
-    .line 139
+    .line 131
     aget v0, p2, p0
 
     const/4 v1, 0x1
@@ -1074,18 +989,18 @@
 
     return-void
 
-    .line 145
+    .line 137
     :cond_11
     aput v1, p2, p0
 
-    .line 146
+    .line 138
     invoke-virtual {p1, p0}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v0
 
     const-string v3, "name"
 
-    .line 147
+    .line 139
     invoke-virtual {v0, v3}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
@@ -1100,7 +1015,7 @@
 
     if-eqz v3, :cond_2b
 
-    .line 148
+    .line 140
     aget v3, p3, v4
 
     add-int/2addr v3, v1
@@ -1110,14 +1025,14 @@
     :cond_2b
     const-string v1, "children"
 
-    .line 150
+    .line 142
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object v0
 
     if-eqz v0, :cond_43
 
-    .line 152
+    .line 144
     :goto_33
     invoke-virtual {v0}, Lorg/json/JSONArray;->length()I
 
@@ -1125,7 +1040,7 @@
 
     if-ge v4, v1, :cond_43
 
-    .line 153
+    .line 145
     invoke-virtual {v0, v4}, Lorg/json/JSONArray;->getInt(I)I
 
     move-result v1
@@ -1136,13 +1051,13 @@
 
     goto :goto_33
 
-    .line 156
+    .line 148
     :cond_43
     aput v2, p2, p0
 
     return-void
 
-    .line 140
+    .line 132
     :cond_46
     new-instance p0, Ljava/lang/Exception;
 
@@ -1152,7 +1067,7 @@
 
     throw p0
 
-    .line 137
+    .line 129
     :cond_4e
     new-instance p0, Ljava/lang/Exception;
 

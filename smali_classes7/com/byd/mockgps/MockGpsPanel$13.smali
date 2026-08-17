@@ -3,12 +3,12 @@
 .source "MockGpsPanel.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/byd/mockgps/MockGpsPanel;->startTicker()V
+    value = Lcom/byd/mockgps/MockGpsPanel;->askMockTime(Landroid/content/Context;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,11 +17,22 @@
 .end annotation
 
 
-# direct methods
-.method constructor <init>()V
-    .registers 1
+# instance fields
+.field final synthetic val$ctx:Landroid/content/Context;
 
-    .line 367
+
+# direct methods
+.method constructor <init>(Landroid/content/Context;)V
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 292
+    iput-object p1, p0, Lcom/byd/mockgps/MockGpsPanel$13;->val$ctx:Landroid/content/Context;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,31 +40,23 @@
 
 
 # virtual methods
-.method public run()V
-    .registers 4
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .registers 3
 
-    .line 370
+    .line 295
+    invoke-static {}, Lcom/byd/mockgps/MockTime;->disable()V
+
+    .line 296
+    iget-object p0, p0, Lcom/byd/mockgps/MockGpsPanel$13;->val$ctx:Landroid/content/Context;
+
+    const-string p1, "\u5df2\u6062\u590d\u771f\u5b9e\u65f6\u95f4"
+
+    # invokes: Lcom/byd/mockgps/MockGpsPanel;->toast(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Lcom/byd/mockgps/MockGpsPanel;->access$200(Landroid/content/Context;Ljava/lang/String;)V
+
+    .line 297
     # invokes: Lcom/byd/mockgps/MockGpsPanel;->refresh()V
     invoke-static {}, Lcom/byd/mockgps/MockGpsPanel;->access$000()V
 
-    .line 371
-    # getter for: Lcom/byd/mockgps/MockGpsPanel;->handler:Landroid/os/Handler;
-    invoke-static {}, Lcom/byd/mockgps/MockGpsPanel;->access$600()Landroid/os/Handler;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_12
-
-    .line 372
-    # getter for: Lcom/byd/mockgps/MockGpsPanel;->handler:Landroid/os/Handler;
-    invoke-static {}, Lcom/byd/mockgps/MockGpsPanel;->access$600()Landroid/os/Handler;
-
-    move-result-object v0
-
-    const-wide/16 v1, 0x3e8
-
-    invoke-virtual {v0, p0, v1, v2}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    :cond_12
     return-void
 .end method

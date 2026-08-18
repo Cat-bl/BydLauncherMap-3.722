@@ -88,12 +88,6 @@
 
     iput-object v4, p1, Lcom/autonavi/gbl/util/model/DateTime;->time:Lcom/autonavi/gbl/util/model/Time;
 
-    const-string v1, "DynamicSkyTrace"
-
-    const-string v2, "getDateTime accepted: mock time"
-
-    invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
     const/4 v1, 0x1
 
     return v1
@@ -103,21 +97,9 @@
 
     if-nez v1, :cond_1
 
-    invoke-static {}, Lcom/autosdk/bussiness/map/RenderSettings;->isDynamicSkyEnabled()Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
     return v0
 
     :cond_1
-    const-string v1, "DynamicSkyTrace"
-
-    const-string v2, "getDateTime accepted: 3D map or dynamic-sky setting"
-
-    invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
     invoke-static {}, Lcom/autonavi/gbl/util/TimeUtil;->getLocalTime2()Lcom/autonavi/gbl/util/model/DateTime;
 
     move-result-object v1
@@ -384,7 +366,7 @@
 
     invoke-direct {v1}, Lcom/autonavi/gbl/common/model/Coord2DDouble;-><init>()V
 
-    if-eqz v0, :cond_no_location
+    if-eqz v0, :cond_0
 
     invoke-virtual {v0}, Landroid/location/Location;->getLatitude()D
 
@@ -398,22 +380,6 @@
 
     iput-wide v2, v1, Lcom/autonavi/gbl/common/model/Coord2DDouble;->lon:D
 
-    const-string v0, "DynamicSkyTrace"
-
-    const-string v2, "getLonLat accepted: last location available"
-
-    invoke-static {v0, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_location_done
-
-    :cond_no_location
-    const-string v0, "DynamicSkyTrace"
-
-    const-string v2, "getLonLat fallback: no last location, returning 0/0"
-
-    invoke-static {v0, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
     :cond_0
-    :goto_location_done
     return-object v1
 .end method

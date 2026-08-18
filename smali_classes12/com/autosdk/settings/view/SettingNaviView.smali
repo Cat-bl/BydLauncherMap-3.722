@@ -45,6 +45,8 @@
 
 .field private mBuildingSwitchId:I
 
+.field private mWeatherSwitchId:I
+
 .field private mMockGpsSwitchId:I
 
 .field private mCarHeadUpView:Lcom/autonavi/skin/view/SkinTextView;
@@ -1392,6 +1394,157 @@
     move-result-object v0
 
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+    return-void
+.end method
+
+.method private isWeatherEnabled()Z
+    .locals 4
+
+    invoke-static {}, Lf/h/c/n0/l2;->g()Landroid/content/Context;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return v1
+
+    :cond_0
+    const-string v2, "byd_dynamic_weather"
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v0, v2, v3}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v0
+
+    const-string v2, "enabled"
+
+    invoke-interface {v0, v2, v1}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method private setWeatherEnabled(Z)V
+    .locals 3
+
+    invoke-static {}, Lf/h/c/n0/l2;->g()Landroid/content/Context;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    const-string v1, "byd_dynamic_weather"
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v0
+
+    const-string v1, "enabled"
+
+    invoke-interface {v0, v1, p1}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+    return-void
+.end method
+
+.method private initWeatherSwitch()V
+    .locals 4
+
+    invoke-static {}, Lf/h/c/n0/l2;->g()Landroid/content/Context;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    const-string v2, "btn_dynamic_weather"
+
+    const-string v3, "id"
+
+    invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v1, v2, v3, v0}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/autosdk/settings/view/SettingNaviView;->mWeatherSwitchId:I
+
+    if-nez v0, :cond_1
+
+    return-void
+
+    :cond_1
+    invoke-virtual {p0, v0}, Lcom/autosdk/settings/view/BaseSettingView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    if-nez v0, :cond_2
+
+    return-void
+
+    :cond_2
+    invoke-virtual {p0, v0, p0}, Lcom/autosdk/settings/view/SettingNaviView;->setOnClickListener(Landroid/view/View;Landroid/view/View$OnClickListener;)Z
+
+    invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->isWeatherEnabled()Z
+
+    move-result v1
+
+    invoke-virtual {p0, v0, v1}, Lcom/autosdk/settings/view/SettingNaviView;->setViewSelected(Landroid/view/View;Z)V
+
+    invoke-static {v1}, Lcom/byd/weather/DynamicWeather;->setEnabled(Z)V
+
+    return-void
+.end method
+
+.method private refreshWeatherSwitch()V
+    .locals 2
+
+    iget v0, p0, Lcom/autosdk/settings/view/SettingNaviView;->mWeatherSwitchId:I
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-virtual {p0, v0}, Lcom/autosdk/settings/view/BaseSettingView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    if-nez v0, :cond_1
+
+    return-void
+
+    :cond_1
+    invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->isWeatherEnabled()Z
+
+    move-result v1
+
+    invoke-virtual {p0, v0, v1}, Lcom/autosdk/settings/view/SettingNaviView;->setViewSelected(Landroid/view/View;Z)V
 
     return-void
 .end method
@@ -4667,6 +4820,8 @@
 
     invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->initBuildingSwitch()V
 
+    invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->initWeatherSwitch()V
+
     invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->initMockGpsSwitch()V
 
     invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->initCarModelSelector()V
@@ -4962,6 +5117,8 @@
 
     invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->refreshBuildingSwitch()V
 
+    invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->refreshWeatherSwitch()V
+
     invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->refreshMockGpsSwitch()V
 
     invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->applyCarModelSelection()V
@@ -5140,6 +5297,35 @@
     return-void
 
     :cond_building_skip
+    iget v0, p0, Lcom/autosdk/settings/view/SettingNaviView;->mWeatherSwitchId:I
+
+    if-eqz v0, :cond_weather_skip
+
+    if-ne p1, v0, :cond_weather_skip
+
+    invoke-virtual {p0, p1}, Lcom/autosdk/settings/view/BaseSettingView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/autonavi/view/custom/CustomBtnSwitchView;
+
+    if-eqz v0, :cond_weather_skip
+
+    invoke-virtual {v0}, Lcom/autonavi/view/custom/CustomBtnSwitchView;->isSelected()Z
+
+    move-result v1
+
+    xor-int/lit8 v1, v1, 0x1
+
+    invoke-virtual {v0, v1}, Lcom/autonavi/view/custom/CustomBtnSwitchView;->setSelected(Z)V
+
+    invoke-direct {p0, v1}, Lcom/autosdk/settings/view/SettingNaviView;->setWeatherEnabled(Z)V
+
+    invoke-static {v1}, Lcom/byd/weather/DynamicWeather;->setEnabled(Z)V
+
+    return-void
+
+    :cond_weather_skip
     iget v0, p0, Lcom/autosdk/settings/view/SettingNaviView;->mMockGpsSwitchId:I
 
     if-eqz v0, :cond_mockgps_skip

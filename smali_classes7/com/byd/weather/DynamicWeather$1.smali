@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .registers 1
 
-    .line 207
+    .line 247
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,13 +32,26 @@
 .method public run()V
     .registers 4
 
-    .line 210
+    .line 250
     # invokes: Lcom/byd/weather/DynamicWeather;->pollLocal()V
     invoke-static {}, Lcom/byd/weather/DynamicWeather;->access$000()V
 
-    .line 211
+    .line 251
+    # invokes: Lcom/byd/weather/DynamicWeather;->handler()Landroid/os/Handler;
+    invoke-static {}, Lcom/byd/weather/DynamicWeather;->access$200()Landroid/os/Handler;
+
+    move-result-object v0
+
+    # getter for: Lcom/byd/weather/DynamicWeather;->ALIVE_CHECK:Ljava/lang/Runnable;
+    invoke-static {}, Lcom/byd/weather/DynamicWeather;->access$100()Ljava/lang/Runnable;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    .line 252
     # invokes: Lcom/byd/weather/DynamicWeather;->worker()Landroid/os/Handler;
-    invoke-static {}, Lcom/byd/weather/DynamicWeather;->access$100()Landroid/os/Handler;
+    invoke-static {}, Lcom/byd/weather/DynamicWeather;->access$300()Landroid/os/Handler;
 
     move-result-object v0
 

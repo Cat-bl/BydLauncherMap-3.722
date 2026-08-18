@@ -5316,4 +5316,9 @@
     <item type="id" name="tv_mock_gps_title" />
     <item type="id" name="tv_mock_gps_desc" />
     <item type="id" name="btn_mock_gps" />
+    <item type="id" name="dynamic_weather_card" />
+    <item type="id" name="dynamic_weather_text_box" />
+    <item type="id" name="tv_dynamic_weather_title" />
+    <item type="id" name="tv_dynamic_weather_desc" />
+    <item type="id" name="btn_dynamic_weather" />
 </resources>

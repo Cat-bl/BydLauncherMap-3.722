@@ -1,4 +1,4 @@
-.class Lcom/byd/weather/DynamicWeather$2;
+.class Lcom/byd/weather/DynamicWeather$5;
 .super Ljava/lang/Object;
 .source "DynamicWeather.java"
 
@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .registers 1
 
-    .line 257
+    .line 532
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,9 +32,9 @@
 .method public run()V
     .registers 1
 
-    .line 260
-    # invokes: Lcom/byd/weather/DynamicWeather;->checkAlive()V
-    invoke-static {}, Lcom/byd/weather/DynamicWeather;->access$400()V
+    .line 535
+    # invokes: Lcom/byd/weather/DynamicWeather;->watch()V
+    invoke-static {}, Lcom/byd/weather/DynamicWeather;->access$700()V
 
     return-void
 .end method

@@ -7,8 +7,8 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/byd/weather/DynamicWeather;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/byd/weather/DynamicWeather;->post()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .registers 1
 
-    .line 436
+    .line 406
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,9 +32,9 @@
 .method public run()V
     .registers 1
 
-    .line 439
-    # invokes: Lcom/byd/weather/DynamicWeather;->startPending()V
-    invoke-static {}, Lcom/byd/weather/DynamicWeather;->access$300()V
+    .line 409
+    # invokes: Lcom/byd/weather/DynamicWeather;->apply()V
+    invoke-static {}, Lcom/byd/weather/DynamicWeather;->access$500()V
 
     return-void
 .end method

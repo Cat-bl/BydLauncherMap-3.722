@@ -429,6 +429,8 @@
     <string name="basic_function_package">基础功能包</string>
     <string name="batch_active">批量激活</string>
     <string name="bd_building_show">显示建筑物</string>
+    <string name="bd_dynamic_weather_title">动态天气特效</string>
+    <string name="bd_dynamic_weather_desc">开启后导航时地图按沿途实时天气下雨、下雪（中雨、中雪及以上）；关闭后不显示任何天气特效</string>
     <string name="bd_car_model_title">车道级车模</string>
     <string name="bd_car_model_default">默认</string>
     <string name="bd_car_model_hc">HcModel</string>

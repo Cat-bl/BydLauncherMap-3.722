@@ -1178,7 +1178,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v2, v1}, Lcom/autosdk/bussiness/map/MapController;->set3Dobj(IZ)V
+    invoke-static {}, Lcom/autosdk/bussiness/map/BuildingPref;->applyMeter()V
 
     return-void
 .end method

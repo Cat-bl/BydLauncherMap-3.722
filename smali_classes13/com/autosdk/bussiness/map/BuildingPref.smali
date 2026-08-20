@@ -42,31 +42,6 @@
     return-void
 .end method
 
-.method public static applyMeter()V
-    .locals 3
-
-    invoke-static {}, Lcom/autosdk/bussiness/map/MapController;->getInstance()Lcom/autosdk/bussiness/map/MapController;
-
-    move-result-object v0
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    :cond_0
-    invoke-static {}, Lcom/autosdk/bussiness/map/BuildingPref;->getShow()Z
-
-    move-result v1
-
-    const/4 v2, 0x2
-
-    invoke-virtual {v0, v2, v1}, Lcom/autosdk/bussiness/map/MapController;->set3Dobj(IZ)V
-
-    invoke-virtual {v0, v2, v1}, Lcom/autosdk/bussiness/map/MapController;->setBuildingNormal(IZ)V
-
-    return-void
-.end method
-
 .method public static getShow()Z
     .locals 4
 

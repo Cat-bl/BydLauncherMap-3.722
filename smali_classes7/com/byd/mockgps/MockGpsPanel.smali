@@ -32,6 +32,12 @@
 
 .field private static weatherView:Landroid/widget/TextView;
 
+.field private static collapsed:Z
+
+.field private static final paramAdjs:Ljava/util/ArrayList;
+
+.field private static paramTitle:Landroid/widget/TextView;
+
 
 # direct methods
 .method static constructor <clinit>()V
@@ -51,6 +57,12 @@
     move-result-object v0
 
     sput-object v0, Lcom/byd/mockgps/MockGpsPanel;->WEATHER_CYCLE:[I
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    sput-object v0, Lcom/byd/mockgps/MockGpsPanel;->paramAdjs:Ljava/util/ArrayList;
 
     return-void
 .end method
@@ -817,10 +829,419 @@
     .line 277
     invoke-virtual {v1, p0}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
+    # 标题行插入展开/收起按钮
+    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object p0
+
+    new-instance v1, Landroid/widget/TextView;
+
+    invoke-direct {v1, p0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
+
+    const-string v2, "收起"
+
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    const/4 v2, -0x1
+
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setTextColor(I)V
+
+    const/4 v2, 0x2
+
+    const/high16 v3, 0x41600000    # 14.0f
+
+    invoke-virtual {v1, v2, v3}, Landroid/widget/TextView;->setTextSize(IF)V
+
+    const/16 v2, 0x11
+
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setGravity(I)V
+
+    const/high16 v2, 0x41000000    # 8.0f
+
+    invoke-static {p0, v2}, Lcom/byd/mockgps/MockGpsPanel;->dp(Landroid/content/Context;F)I
+
+    move-result v2
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v1, v2, v3, v2, v3}, Landroid/widget/TextView;->setPadding(IIII)V
+
+    new-instance v2, Lcom/byd/mockgps/PanelToggle;
+
+    invoke-direct {v2, v1}, Lcom/byd/mockgps/PanelToggle;-><init>(Landroid/widget/TextView;)V
+
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v4, v1, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;I)V
+
     .line 279
     invoke-static {v4, v0}, Lcom/byd/mockgps/MockGpsPanel;->makeDraggable(Landroid/view/View;Landroid/view/View;)V
 
+    # 仪表视角参数：标题行 + 重置
+    sget-object v1, Lcom/byd/mockgps/MockGpsPanel;->paramAdjs:Ljava/util/ArrayList;
+
+    invoke-virtual {v1}, Ljava/util/ArrayList;->clear()V
+
+    new-instance v1, Landroid/widget/LinearLayout;
+
+    invoke-direct {v1, p0}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setOrientation(I)V
+
+    const/16 v2, 0x10
+
+    invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setGravity(I)V
+
+    new-instance v2, Landroid/widget/LinearLayout$LayoutParams;
+
+    const/4 v3, -0x2
+
+    invoke-direct {v2, v3, v3}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
+
+    const/high16 v3, 0x41200000    # 10.0f
+
+    invoke-static {p0, v3}, Lcom/byd/mockgps/MockGpsPanel;->dp(Landroid/content/Context;F)I
+
+    move-result v3
+
+    iput v3, v2, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
+
+    invoke-virtual {v0, v1, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+
+    new-instance v2, Landroid/widget/TextView;
+
+    invoke-direct {v2, p0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
+
+    const-string v3, "仪表视角"
+
+    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    const v3, -0x333334
+
+    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setTextColor(I)V
+
+    const/4 v3, 0x2
+
+    const/high16 v5, 0x41400000    # 12.0f
+
+    invoke-virtual {v2, v3, v5}, Landroid/widget/TextView;->setTextSize(IF)V
+
+    const/high16 v3, 0x41000000    # 8.0f
+
+    invoke-static {p0, v3}, Lcom/byd/mockgps/MockGpsPanel;->dp(Landroid/content/Context;F)I
+
+    move-result v3
+
+    const/4 v5, 0x0
+
+    invoke-virtual {v2, v5, v5, v3, v5}, Landroid/widget/TextView;->setPadding(IIII)V
+
+    sput-object v2, Lcom/byd/mockgps/MockGpsPanel;->paramTitle:Landroid/widget/TextView;
+
+    invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+
+    new-instance v2, Lcom/byd/mockgps/ParamReset;
+
+    invoke-direct {v2}, Lcom/byd/mockgps/ParamReset;-><init>()V
+
+    const-string v3, "重置"
+
+    invoke-static {p0, v3, v2}, Lcom/byd/mockgps/MockGpsPanel;->button(Landroid/content/Context;Ljava/lang/String;Landroid/view/View$OnClickListener;)Landroid/widget/TextView;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+
+    move-object v2, p0
+
+    move-object v3, v0
+
+    const-string v4, "缩放"
+
+    const-string v5, "zoom"
+
+    const v6, 0x3e800000    # 0.25f
+
+    const v7, 0x41400000    # 12.0f
+
+    const v8, 0x41a00000    # 20.0f
+
+    invoke-static/range {v2 .. v8}, Lcom/byd/mockgps/MockGpsPanel;->paramRow(Landroid/content/Context;Landroid/widget/LinearLayout;Ljava/lang/String;Ljava/lang/String;FFF)V
+
+    move-object v2, p0
+
+    move-object v3, v0
+
+    const-string v4, "俯仰角"
+
+    const-string v5, "pitch"
+
+    const v6, 0x3f800000    # 1.0f
+
+    const v7, 0x41a00000    # 20.0f
+
+    const v8, 0x42b40000    # 90.0f
+
+    invoke-static/range {v2 .. v8}, Lcom/byd/mockgps/MockGpsPanel;->paramRow(Landroid/content/Context;Landroid/widget/LinearLayout;Ljava/lang/String;Ljava/lang/String;FFF)V
+
+    move-object v2, p0
+
+    move-object v3, v0
+
+    const-string v4, "车模左右"
+
+    const-string v5, "proj_x"
+
+    const v6, 0x3ca3d70a    # 0.02f
+
+    const v7, 0x3dcccccd    # 0.1f
+
+    const v8, 0x3f666666    # 0.9f
+
+    invoke-static/range {v2 .. v8}, Lcom/byd/mockgps/MockGpsPanel;->paramRow(Landroid/content/Context;Landroid/widget/LinearLayout;Ljava/lang/String;Ljava/lang/String;FFF)V
+
+    move-object v2, p0
+
+    move-object v3, v0
+
+    const-string v4, "车模上下"
+
+    const-string v5, "proj_y"
+
+    const v6, 0x3ca3d70a    # 0.02f
+
+    const v7, 0x3e4ccccd    # 0.2f
+
+    const v8, 0x3f733333    # 0.95f
+
+    invoke-static/range {v2 .. v8}, Lcom/byd/mockgps/MockGpsPanel;->paramRow(Landroid/content/Context;Landroid/widget/LinearLayout;Ljava/lang/String;Ljava/lang/String;FFF)V
+
+    move-object v2, p0
+
+    move-object v3, v0
+
+    const-string v4, "面板左右"
+
+    const-string v5, "panel_dx"
+
+    const/high16 v6, 0x41200000    # 10.0f
+
+    const/high16 v7, -0x3bea0000    # -600.0f
+
+    const/high16 v8, 0x44160000    # 600.0f
+
+    invoke-static/range {v2 .. v8}, Lcom/byd/mockgps/MockGpsPanel;->paramRow(Landroid/content/Context;Landroid/widget/LinearLayout;Ljava/lang/String;Ljava/lang/String;FFF)V
+
+    move-object v2, p0
+
+    move-object v3, v0
+
+    const-string v4, "面板上下"
+
+    const-string v5, "panel_dy"
+
+    const/high16 v6, 0x41200000    # 10.0f
+
+    const/high16 v7, -0x3bea0000    # -600.0f
+
+    const/high16 v8, 0x44160000    # 600.0f
+
+    invoke-static/range {v2 .. v8}, Lcom/byd/mockgps/MockGpsPanel;->paramRow(Landroid/content/Context;Landroid/widget/LinearLayout;Ljava/lang/String;Ljava/lang/String;FFF)V
+
+
+    const/4 v1, 0x0
+
+    sput-boolean v1, Lcom/byd/mockgps/MockGpsPanel;->collapsed:Z
+
     return-object v0
+.end method
+
+.method public static toggleCollapse(Landroid/widget/TextView;)V
+    .locals 5
+
+    sget-object v0, Lcom/byd/mockgps/MockGpsPanel;->panel:Landroid/view/View;
+
+    instance-of v1, v0, Landroid/view/ViewGroup;
+
+    if-nez v1, :cond_0
+
+    return-void
+
+    :cond_0
+    check-cast v0, Landroid/view/ViewGroup;
+
+    sget-boolean v1, Lcom/byd/mockgps/MockGpsPanel;->collapsed:Z
+
+    xor-int/lit8 v1, v1, 0x1
+
+    sput-boolean v1, Lcom/byd/mockgps/MockGpsPanel;->collapsed:Z
+
+    if-eqz v1, :cond_1
+
+    const/16 v2, 0x8
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v2, 0x0
+
+    :goto_0
+    const/4 v3, 0x1
+
+    :goto_1
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->getChildCount()I
+
+    move-result v4
+
+    if-ge v3, v4, :cond_2
+
+    invoke-virtual {v0, v3}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v2}, Landroid/view/View;->setVisibility(I)V
+
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_1
+
+    :cond_2
+    if-eqz p0, :cond_5
+
+    if-eqz v1, :cond_3
+
+    const-string v0, "展开"
+
+    goto :goto_2
+
+    :cond_3
+    const-string v0, "收起"
+
+    :goto_2
+    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    :cond_5
+    return-void
+.end method
+
+.method private static paramRow(Landroid/content/Context;Landroid/widget/LinearLayout;Ljava/lang/String;Ljava/lang/String;FFF)V
+    .locals 9
+
+    new-instance v0, Landroid/widget/LinearLayout;
+
+    invoke-direct {v0, p0}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setOrientation(I)V
+
+    const/16 v2, 0x10
+
+    invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->setGravity(I)V
+
+    new-instance v2, Landroid/widget/LinearLayout$LayoutParams;
+
+    const/4 v3, -0x2
+
+    invoke-direct {v2, v3, v3}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
+
+    const/high16 v3, 0x40c00000    # 6.0f
+
+    invoke-static {p0, v3}, Lcom/byd/mockgps/MockGpsPanel;->dp(Landroid/content/Context;F)I
+
+    move-result v3
+
+    iput v3, v2, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
+
+    invoke-virtual {p1, v0, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+
+    new-instance v8, Landroid/widget/TextView;
+
+    invoke-direct {v8, p0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
+
+    const/4 v2, -0x1
+
+    invoke-virtual {v8, v2}, Landroid/widget/TextView;->setTextColor(I)V
+
+    const/4 v2, 0x2
+
+    const/high16 v3, 0x41500000    # 13.0f
+
+    invoke-virtual {v8, v2, v3}, Landroid/widget/TextView;->setTextSize(IF)V
+
+    const/16 v2, 0x11
+
+    invoke-virtual {v8, v2}, Landroid/widget/TextView;->setGravity(I)V
+
+    const/high16 v2, 0x41000000    # 8.0f
+
+    invoke-static {p0, v2}, Lcom/byd/mockgps/MockGpsPanel;->dp(Landroid/content/Context;F)I
+
+    move-result v2
+
+    invoke-virtual {v8, v2, v1, v2, v1}, Landroid/widget/TextView;->setPadding(IIII)V
+
+    new-instance v1, Lcom/byd/mockgps/ParamAdj;
+
+    move-object v2, p3
+
+    move-object v3, p2
+
+    neg-float v4, p4
+
+    move v5, p5
+
+    move v6, p6
+
+    move-object v7, v8
+
+    invoke-direct/range {v1 .. v7}, Lcom/byd/mockgps/ParamAdj;-><init>(Ljava/lang/String;Ljava/lang/String;FFFLandroid/widget/TextView;)V
+
+    const-string v2, "−"
+
+    invoke-static {p0, v2, v1}, Lcom/byd/mockgps/MockGpsPanel;->button(Landroid/content/Context;Ljava/lang/String;Landroid/view/View$OnClickListener;)Landroid/widget/TextView;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+
+    invoke-virtual {v0, v8}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+
+    new-instance v1, Lcom/byd/mockgps/ParamAdj;
+
+    move-object v2, p3
+
+    move-object v3, p2
+
+    move v4, p4
+
+    move v5, p5
+
+    move v6, p6
+
+    move-object v7, v8
+
+    invoke-direct/range {v1 .. v7}, Lcom/byd/mockgps/ParamAdj;-><init>(Ljava/lang/String;Ljava/lang/String;FFFLandroid/widget/TextView;)V
+
+    sget-object v2, Lcom/byd/mockgps/MockGpsPanel;->paramAdjs:Ljava/util/ArrayList;
+
+    invoke-virtual {v2, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    invoke-virtual {v1}, Lcom/byd/mockgps/ParamAdj;->sync()V
+
+    const-string v2, "+"
+
+    invoke-static {p0, v2, v1}, Lcom/byd/mockgps/MockGpsPanel;->button(Landroid/content/Context;Ljava/lang/String;Landroid/view/View$OnClickListener;)Landroid/widget/TextView;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+
+    return-void
 .end method
 
 .method private static button(Landroid/content/Context;Ljava/lang/String;ILandroid/view/View$OnClickListener;)Landroid/widget/TextView;
@@ -1275,6 +1696,51 @@
 .method private static refresh()V
     .registers 5
 
+    sget-object v0, Lcom/byd/mockgps/MockGpsPanel;->paramTitle:Landroid/widget/TextView;
+
+    if-eqz v0, :cond_pt_end
+
+    invoke-static {}, Lcom/byd/lane/ClusterLaneMode;->isInLane()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_pt_norm
+
+    const-string v1, "仪表视角 · 车道级"
+
+    goto :goto_pt
+
+    :cond_pt_norm
+    const-string v1, "仪表视角 · 普通"
+
+    :goto_pt
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    :cond_pt_end
+    sget-object v0, Lcom/byd/mockgps/MockGpsPanel;->paramAdjs:Ljava/util/ArrayList;
+
+    const/4 v1, 0x0
+
+    :goto_pa
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v2
+
+    if-ge v1, v2, :cond_pa_end
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/byd/mockgps/ParamAdj;
+
+    invoke-virtual {v2}, Lcom/byd/mockgps/ParamAdj;->sync()V
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_pa
+
+    :cond_pa_end
     .line 482
     sget-object v0, Lcom/byd/mockgps/MockGpsPanel;->timeView:Landroid/widget/TextView;
 
@@ -1389,7 +1855,7 @@
 .end method
 
 .method public static show(Landroid/content/Context;)V
-    .registers 4
+    .registers 5
 
     const-string v0, "BydMockGps"
 
@@ -1453,12 +1919,24 @@
     .line 87
     iput v2, v1, Landroid/widget/FrameLayout$LayoutParams;->gravity:I
 
-    const/high16 v2, 0x41c00000    # 24.0f
-
     .line 88
-    invoke-static {p0, v2}, Lcom/byd/mockgps/MockGpsPanel;->dp(Landroid/content/Context;F)I
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    move-result v2
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    move-result-object v2
+
+    iget v2, v2, Landroid/util/DisplayMetrics;->widthPixels:I
+
+    int-to-float v2, v2
+
+    const v3, 0x3f19999a    # 0.6f
+
+    mul-float/2addr v2, v3
+
+    float-to-int v2, v2
 
     iput v2, v1, Landroid/widget/FrameLayout$LayoutParams;->leftMargin:I
 

@@ -5332,6 +5332,30 @@
 .method public setMapMode(ILcom/autonavi/gbl/map/model/MapviewModeParam;Z)V
     .locals 12
 
+    # 仪表的缩放/俯仰以悬浮面板参数为准
+    const/4 v0, 0x2
+
+    if-ne p1, v0, :cond_keep_lane
+
+    if-eqz p2, :cond_keep_lane
+
+    const-string v0, "zoom"
+
+    invoke-static {v0}, Lcom/byd/lane/ClusterLaneMode;->getAuto(Ljava/lang/String;)F
+
+    move-result v0
+
+    iput v0, p2, Lcom/autonavi/gbl/map/model/MapviewModeParam;->mapZoomLevel:F
+
+    const-string v0, "pitch"
+
+    invoke-static {v0}, Lcom/byd/lane/ClusterLaneMode;->getAuto(Ljava/lang/String;)F
+
+    move-result v0
+
+    iput v0, p2, Lcom/autonavi/gbl/map/model/MapviewModeParam;->pitchAngle:F
+
+    :cond_keep_lane
     const/4 v0, 0x2
 
     const/4 v1, 0x0

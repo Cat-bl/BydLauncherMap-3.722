@@ -91,6 +91,52 @@
 
     iput-object p1, p0, Lcom/byd/lane/LaneSdkServiceImp;->laneLayers:Ljava/util/Map;
 
+    invoke-static {p0}, Lcom/byd/lane/ClusterLaneMode;->attach(Lcom/byd/lane/LaneSdkServiceImp;)V
+
+    return-void
+.end method
+
+.method public applyClusterLaneMode()V
+    .locals 3
+
+    iget-object v0, p0, Lcom/byd/lane/LaneSdkServiceImp;->laneObservers:Ljava/util/Map;
+
+    const/4 v1, 0x2
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/byd/lane/observer/BydLaneObserverImp;
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-static {}, Lcom/byd/lane/ClusterLaneMode;->getMode()I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    if-ne v1, v2, :cond_1
+
+    invoke-virtual {v0}, Lcom/byd/lane/observer/BydLaneObserverImp;->isSDKInLane()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    const/4 v2, 0x0
+
+    :cond_1
+    invoke-virtual {v0, v2}, Lcom/byd/lane/observer/BydLaneObserverImp;->doDnpRoadControl(I)V
+
     return-void
 .end method
 
@@ -691,25 +737,46 @@
 
     if-ne p1, v1, :cond_2
 
-    iget-object v0, p0, Lcom/byd/lane/LaneSdkServiceImp;->laneObservers:Ljava/util/Map;
+    invoke-static {}, Lcom/byd/lane/ClusterLaneMode;->getMode()I
 
-    const/4 v1, 0x2
+    move-result v0
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    const/4 v2, 0x2
+
+    if-eq v0, v2, :cond_2
+
+    iget-object v1, p0, Lcom/byd/lane/LaneSdkServiceImp;->laneObservers:Ljava/util/Map;
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-interface {v1, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    check-cast v1, Lcom/byd/lane/observer/BydLaneObserverImp;
 
-    move-result-object v0
+    if-eqz v1, :cond_2
 
-    check-cast v0, Lcom/byd/lane/observer/BydLaneObserverImp;
+    invoke-virtual {v1, p3, p4}, Lcom/byd/lane/observer/BydLaneObserverImp;->setMapCenter(FF)V
 
-    if-eqz v0, :cond_2
+    const/4 v2, 0x1
 
-    invoke-virtual {v0, p3, p4}, Lcom/byd/lane/observer/BydLaneObserverImp;->setMapCenter(FF)V
+    if-ne v0, v2, :cond_3
 
-    invoke-virtual {v0, v3}, Lcom/byd/lane/observer/BydLaneObserverImp;->doDnpRoadControl(I)V
+    const/4 v3, 0x1
+
+    invoke-virtual {v1}, Lcom/byd/lane/observer/BydLaneObserverImp;->isSDKInLane()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    const/4 v3, 0x0
+
+    :cond_3
+    invoke-virtual {v1, v3}, Lcom/byd/lane/observer/BydLaneObserverImp;->doDnpRoadControl(I)V
 
     :cond_2
     return-void

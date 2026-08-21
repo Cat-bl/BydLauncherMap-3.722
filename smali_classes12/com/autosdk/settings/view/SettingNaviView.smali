@@ -2252,6 +2252,182 @@
     return-void
 .end method
 
+.method private static clusterLaneIdNames()[Ljava/lang/String;
+    .locals 3
+
+    const/4 v0, 0x3
+
+    new-array v0, v0, [Ljava/lang/String;
+
+    const/4 v1, 0x0
+
+    const-string v2, "tv_cluster_lane_follow"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    const-string v2, "tv_cluster_lane_always"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
+
+    const-string v2, "tv_cluster_lane_off"
+
+    aput-object v2, v0, v1
+
+    return-object v0
+.end method
+
+.method private applyClusterLaneSelection()V
+    .locals 5
+
+    iget-object v0, p0, Lcom/autosdk/settings/view/BaseUIView;->mMainView:Landroid/view/View;
+
+    if-nez v0, :cond_view_ready
+
+    return-void
+
+    :cond_view_ready
+    invoke-static {}, Lcom/byd/lane/ClusterLaneMode;->getMode()I
+
+    move-result v0
+
+    invoke-static {}, Lcom/autosdk/settings/view/SettingNaviView;->clusterLaneIdNames()[Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    :goto_0
+    array-length v3, v1
+
+    if-ge v2, v3, :cond_end
+
+    aget-object v3, v1, v2
+
+    invoke-static {v3}, Lcom/autosdk/settings/view/SettingNaviView;->carModelViewId(Ljava/lang/String;)I
+
+    move-result v3
+
+    if-eqz v3, :cond_next
+
+    invoke-virtual {p0, v3}, Lcom/autosdk/settings/view/BaseSettingView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v3
+
+    if-eqz v3, :cond_next
+
+    if-ne v2, v0, :cond_unselected
+
+    const/4 v4, 0x1
+
+    goto :goto_1
+
+    :cond_unselected
+    const/4 v4, 0x0
+
+    :goto_1
+    invoke-virtual {p0, v3, v4}, Lcom/autosdk/settings/view/SettingNaviView;->setViewSelected(Landroid/view/View;Z)V
+
+    :cond_next
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    :cond_end
+    return-void
+.end method
+
+.method private initClusterLaneSelector()V
+    .locals 3
+
+    invoke-static {}, Lcom/autosdk/settings/view/SettingNaviView;->clusterLaneIdNames()[Ljava/lang/String;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    :goto_0
+    array-length v2, v0
+
+    if-ge v1, v2, :cond_end
+
+    aget-object v2, v0, v1
+
+    invoke-static {v2}, Lcom/autosdk/settings/view/SettingNaviView;->carModelViewId(Ljava/lang/String;)I
+
+    move-result v2
+
+    if-eqz v2, :cond_next
+
+    invoke-virtual {p0, v2}, Lcom/autosdk/settings/view/BaseSettingView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_next
+
+    invoke-virtual {p0, v2, p0}, Lcom/autosdk/settings/view/SettingNaviView;->setOnClickListener(Landroid/view/View;Landroid/view/View$OnClickListener;)Z
+
+    :cond_next
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_end
+    invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->applyClusterLaneSelection()V
+
+    return-void
+.end method
+
+.method private handleClusterLaneClick(Landroid/view/View;)Z
+    .locals 4
+
+    invoke-virtual {p1}, Landroid/view/View;->getId()I
+
+    move-result v0
+
+    invoke-static {}, Lcom/autosdk/settings/view/SettingNaviView;->clusterLaneIdNames()[Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    :goto_0
+    array-length v3, v1
+
+    if-ge v2, v3, :cond_end
+
+    aget-object v3, v1, v2
+
+    invoke-static {v3}, Lcom/autosdk/settings/view/SettingNaviView;->carModelViewId(Ljava/lang/String;)I
+
+    move-result v3
+
+    if-eqz v3, :cond_next
+
+    if-ne v0, v3, :cond_next
+
+    invoke-static {v2}, Lcom/byd/lane/ClusterLaneMode;->setMode(I)V
+
+    invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->applyClusterLaneSelection()V
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_next
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    :cond_end
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
 .method private updateLaneSwitchState(Landroid/view/View;)V
     .locals 4
 
@@ -4826,6 +5002,8 @@
 
     invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->initCarModelSelector()V
 
+    invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->initClusterLaneSelector()V
+
     invoke-static {}, Lf/h/c/n0/p2;->n()Z
 
     move-result v0
@@ -5123,6 +5301,8 @@
 
     invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->applyCarModelSelection()V
 
+    invoke-direct {p0}, Lcom/autosdk/settings/view/SettingNaviView;->applyClusterLaneSelection()V
+
     return-void
 .end method
 
@@ -5255,6 +5435,15 @@
         }
     .end annotation
 
+    invoke-direct {p0, p1}, Lcom/autosdk/settings/view/SettingNaviView;->handleClusterLaneClick(Landroid/view/View;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_cluster_skip
+
+    return-void
+
+    :cond_cluster_skip
     invoke-direct {p0, p1}, Lcom/autosdk/settings/view/SettingNaviView;->handleCarModelClick(Landroid/view/View;)Z
 
     move-result v0

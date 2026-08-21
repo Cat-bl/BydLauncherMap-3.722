@@ -645,6 +645,12 @@
 
     invoke-static {v0, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
+    invoke-static {}, Lcom/byd/lane/aos/LaneAosManager;->getInstance()Lcom/byd/lane/aos/LaneAosManager;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/byd/lane/aos/LaneAosManager;->initLaneServiceForCluster()V
+
     const/4 p1, 0x2
 
     return p1
@@ -1277,6 +1283,8 @@
     iput v1, v0, Lcom/autonavi/gbl/map/model/DeviceAttribute;->deviceWorkMode:I
 
     iput-boolean v3, v0, Lcom/autonavi/gbl/map/model/DeviceAttribute;->isRecordeable:Z
+
+    iput v3, v0, Lcom/autonavi/gbl/map/model/DeviceAttribute;->renderVendorType:I
 
     if-lez p1, :cond_1
 

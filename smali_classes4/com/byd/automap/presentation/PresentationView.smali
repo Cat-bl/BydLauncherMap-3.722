@@ -1146,7 +1146,8 @@
     move-result-object v0
 
     #const/high16 v1, 0x41800000    # 16.0f
-    const/high16 v1, 0x41880000    # 17.0f
+    #const/high16 v1, 0x41880000    # 17.0f
+    const/high16 v1, 0x41A00000    # 20.0f
 
     invoke-virtual {v0, v5, v1}, Lcom/autosdk/bussiness/map/MapController;->setMaxZoomLevel(IF)V
 
@@ -4860,7 +4861,8 @@
     move-result-object v3
 
     #const/high16 v4, 0x41800000    # 16.0f
-    const/high16 v4, 0x41880000    # 17.0f
+    #const/high16 v4, 0x41880000    # 17.0f
+    const/high16 v4, 0x41a00000    # 20.0f
 
     invoke-virtual {v3, v2, v4}, Lcom/autosdk/bussiness/map/MapController;->setZoomLevel(IF)V
 

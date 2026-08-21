@@ -685,10 +685,33 @@
 
     invoke-virtual {v2, p3, p4}, Lcom/byd/lane/observer/BydLaneObserverImp;->setMapCenter(FF)V
 
-    xor-int/lit8 p1, p2, 0x1
+    xor-int/lit8 v3, p2, 0x1
 
-    invoke-virtual {v2, p1}, Lcom/byd/lane/observer/BydLaneObserverImp;->doDnpRoadControl(I)V
+    invoke-virtual {v2, v3}, Lcom/byd/lane/observer/BydLaneObserverImp;->doDnpRoadControl(I)V
 
+    if-ne p1, v1, :cond_2
+
+    iget-object v0, p0, Lcom/byd/lane/LaneSdkServiceImp;->laneObservers:Ljava/util/Map;
+
+    const/4 v1, 0x2
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/byd/lane/observer/BydLaneObserverImp;
+
+    if-eqz v0, :cond_2
+
+    invoke-virtual {v0, p3, p4}, Lcom/byd/lane/observer/BydLaneObserverImp;->setMapCenter(FF)V
+
+    invoke-virtual {v0, v3}, Lcom/byd/lane/observer/BydLaneObserverImp;->doDnpRoadControl(I)V
+
+    :cond_2
     return-void
 
     :cond_0
@@ -1141,3 +1164,4 @@
 
     return-void
 .end method
+

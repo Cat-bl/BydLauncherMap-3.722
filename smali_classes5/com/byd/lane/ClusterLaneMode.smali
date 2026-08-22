@@ -19,6 +19,8 @@
 
 .field private static final sAutoEnter:Lcom/byd/lane/ClusterLaneMode;
 
+.field private static sCruiseLane:Landroid/view/View;
+
 .field private static sBusy:Z
 
 .field private static sMode:I
@@ -313,6 +315,91 @@
     return v0
 .end method
 
+.method public static bindCruiseLane(Landroid/view/View;)V
+    .locals 0
+
+    sput-object p0, Lcom/byd/lane/ClusterLaneMode;->sCruiseLane:Landroid/view/View;
+
+    invoke-static {}, Lcom/byd/lane/ClusterLaneMode;->applyCruiseOffset()V
+
+    return-void
+.end method
+
+.method public static applyCruiseOffset()V
+    .locals 5
+
+    sget-object v0, Lcom/byd/lane/ClusterLaneMode;->sCruiseLane:Landroid/view/View;
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    const-string v1, "cruise_dx"
+
+    invoke-static {v1}, Lcom/byd/lane/ClusterLaneMode;->getAuto(Ljava/lang/String;)F
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setTranslationX(F)V
+
+    const-string v1, "cruise_dy"
+
+    invoke-static {v1}, Lcom/byd/lane/ClusterLaneMode;->getAuto(Ljava/lang/String;)F
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setTranslationY(F)V
+
+    # 平移会超出父容器边界被裁切，且不触发完整重绘，需关掉祖先裁剪并强制刷新
+    move-object v4, v0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x3
+
+    :goto_0
+    if-ge v1, v2, :cond_2
+
+    invoke-virtual {v4}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v3
+
+    instance-of v0, v3, Landroid/view/ViewGroup;
+
+    if-eqz v0, :cond_2
+
+    check-cast v3, Landroid/view/ViewGroup;
+
+    const/4 v0, 0x0
+
+    invoke-virtual {v3, v0}, Landroid/view/ViewGroup;->setClipChildren(Z)V
+
+    invoke-virtual {v3, v0}, Landroid/view/ViewGroup;->setClipToPadding(Z)V
+
+    move-object v4, v3
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    sget-object v0, Lcom/byd/lane/ClusterLaneMode;->sCruiseLane:Landroid/view/View;
+
+    invoke-virtual {v0}, Landroid/view/View;->requestLayout()V
+
+    invoke-virtual {v0}, Landroid/view/View;->getRootView()Landroid/view/View;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_3
+
+    invoke-virtual {v0}, Landroid/view/View;->invalidate()V
+
+    :cond_3
+    return-void
+.end method
+
 .method public static isInLane()Z
     .locals 1
 
@@ -340,8 +427,16 @@
 .method public static fullKey(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
 
-    # 卡片位置：普通模式与车道级共用一份，也不分导航类型
+    # 卡片/巡航条位置：普通模式与车道级共用一份，也不分导航类型
     const-string v0, "panel_"
+
+    invoke-virtual {p0, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_raw
+
+    const-string v0, "cruise_"
 
     invoke-virtual {p0, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -349,6 +444,7 @@
 
     if-eqz v0, :cond_shared
 
+    :cond_raw
     return-object p0
 
     :cond_shared
@@ -503,6 +599,19 @@
     return v2
 
     :cond_dy_end
+    const-string v1, "cruise_dy"
+
+    invoke-virtual {v1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_cdy_end
+
+    const/high16 v2, 0x42c80000    # 100.0f
+
+    return v2
+
+    :cond_cdy_end
     const/4 v2, 0x0
 
     return v2
@@ -559,6 +668,19 @@
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
     :cond_0
+    const-string v0, "cruise_"
+
+    invoke-virtual {p0, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_cruise_end
+
+    invoke-static {}, Lcom/byd/lane/ClusterLaneMode;->applyCruiseOffset()V
+
+    return-void
+
+    :cond_cruise_end
     const-string v0, "panel_"
 
     invoke-virtual {p0, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
@@ -580,7 +702,7 @@
 .method public static paramKeys()[Ljava/lang/String;
     .locals 3
 
-    const/4 v0, 0x6
+    const/16 v0, 0x8
 
     new-array v0, v0, [Ljava/lang/String;
 
@@ -617,6 +739,18 @@
     const/4 v1, 0x5
 
     const-string v2, "panel_dy"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x6
+
+    const-string v2, "cruise_dx"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x7
+
+    const-string v2, "cruise_dy"
 
     aput-object v2, v0, v1
 
